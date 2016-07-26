@@ -1,0 +1,81 @@
+{
+    "_id": "BH2",
+    "_type": "human_gut_metagenomic_detection",
+    "name": "Human Gut Metagenomic Detection",
+    "description": "Identification of microbial composition of the human gut using fecal WGS",
+    "validation:": "manual",
+    "creation_date": "Mon Jul 25 13:25:21 EDT 2016",
+    "modification_date": "",
+    "publication_status": "draft",
+    "keywords": [
+        "metagenome",
+        "metagenomic analysis"
+    ],
+    "_usability_domain": [
+        "Identify the most common oganisms present in a metagenomic sample",
+        "Identify the general community composition of organisms in a human fecal sample",
+        ""
+    ],
+    "authors": [
+        {
+            "first_name": "Charles",
+            "middle_name": "Hadley",
+            "last_name": "King",
+            "affiliation": "GW"
+        },
+        {
+            "first_name": "Naila",
+            "last_name": "",
+            "affiliation": "Gulzar"
+        }
+    ],
+    "pipeline": {
+        "name": "Human Gut Metagenome",
+        "version": 1.1,
+        "id": 2
+    },
+    "svc-align-hexagon": {
+        "svcTitle": "HIVE-hexagon Alignment",
+        "_role": "input",
+        "minMatchLen": 45,
+        "keepAllMatches": 3,
+        "keepMarkovnikovMatches": 1,
+        "complexityRefEntropy": 1.2,
+        "complexityRefWindow": 30,
+        "acceptNNNQuaTrheshold": 1,
+        "complexityEntropy": 1.2,
+        "complexityWindow": 30,
+        "maximumPercentLowQualityAllowed": 0
+    },
+    "svc-dna-screening": {
+        "svcTitle": "CensuScope",
+        "_role": "input",
+        "taxDepth": "species",
+        "storeAlignments": 1,
+        "CensuslimitIterations": 5,
+        "Sample": 2500,
+        "selfStopping": 0
+    },
+    "hit_list" : {
+        "_role": "output",
+        "description": "The output file containing the ....",
+        "format ": ".csv",
+        "name": "",
+        "filename ": ".csv"
+
+    },
+    "acc_Results" : {
+        "_role": "output", 
+        "description": "The output file containing the ....",
+        "format": "",
+        "name": "_",
+        "filename": "_-dnaAccessionBasedResult.csv",
+    },
+    "uA_Reads" : {
+        "_role": "output", 
+        "description": "The unaligned reads",
+        "format": ".fastQ",
+        "name": "_",
+        "filename": "_UnalignedReads",
+    },
+}

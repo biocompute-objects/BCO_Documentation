@@ -1,0 +1,300 @@
+<table><tr style="background:#f1f1f1;"><td style="padding:0 0 0 50;">
+<pre>
+<br>
+{
+    "<a href="#_id">_id</a>": "BH1",
+    "<a href="#_type">_type</a>": "antiviral_resistance_detection",
+    "<a href="#name">name</a>": "Antiviral Resistance Detection",
+    "<a href="#description">description</a>": "Identification of Antiviral Drug Resistance-Associated Substitutions in NGS Clinical Trial Data",
+    "<a href="#validation">validation</a>": "manual",
+    "<a href="#creation_date">creation_date</a>": "Mon Jun 6 13:25:21 EDT 2016",
+    "<a href="#modification_date">modification_date</a>": "Thu Jun 9 08:12:14 EDT 2016",
+    "<a href="#publication_status">publication_status</a>": "draft",
+    "<a href="#keywords">keywords</a>": [
+        "antiviral",
+        "antiviral resistance",
+        "mutation"
+    ],
+    "<a href="#usability_domain">usability_domain</a>": [
+        "Identify baseline single nucleotide polymorphisms (SNPs), insertions, and deletions 
+	 that correlate with reduced ledipasvir antiviral drug efficacy in Hepatitus C virus 
+         subtype 1",
+        "Identify treatment emergent amino acid substitutions that correlate with antiviral 
+         drug treatment failure",
+        "Determine whether the treatment emergent amino acid substitutions identified 
+         correlate with treatment failure involving other drugs against the same virus"
+    ],
+    "<a href="#authors">authors</a>": [
+        {
+            "first_name": "Charles",
+            "last_name": "Darwin",
+            "affiliation": "HMS Beagle"
+        },
+        {
+            "first_name": "Rosalind",
+            "last_name": "Franklin",
+            "affiliation": "King's College, London"
+        }
+    ],
+    "<a href="#pipeline">pipeline</a>": {
+        "<a href="#name_pipe">name</a>": "Viral Mutation Detection Pipeline",
+        "<a href="#version">version</a>": 1.2,
+        "<a href="#id_pipe">id</a>": 1
+    },
+    "<a href="#svc-align-hexagon">svc-align-hexagon</a>": {
+        "<a href="#_row">_row</a>": "input",
+        "<a href="#minimum_match_len">minimum_match_len</a>": 100,
+        "<a href="#mismatch_allowed">mismatch_allowed</a>": 10
+    },
+    "<a href="#svc-dna-heptagon">svc-dna-heptagon</a>": {
+        "<a href="#_row">_row</a>": "input",
+        "<a href="#min_coverage">min_coverage</a>": 10,
+        "<a href="#freq_cutoff">freq_cutoff</a>": 0.10
+    },
+    "<a href="#subject">subject</a>": {
+        "<a href="#_row">_row</a>": "input", 
+        "sequence": [
+            "AF011753",
+            "AJ238799",
+            "D14853",
+            "AB047639",
+            "AF238486",
+            "GU814263"
+            ]
+    },
+    "<a href="#query">query</a>": {
+        "<a href="#_row">_row</a>": "input",
+        "sequence:[
+            3456,
+            3457
+            ]
+    },
+    "<a href="#snv_profile">snv_profile</a>": {
+        "<a href="#_row">_row</a>": "output",
+        "filename": "SNPProfile.csv"
+    },
+    "<a href="#alignment_file">alignment_file</a>": {
+        "<a href="#_row">_row</a>": "output",
+        "filename": "_.sam"
+    },
+    "<a href="#aminoacid_calls">aminoacid_calls</a>": {
+        "<a href="#_row">_row</a>": "output",
+        "filename": "AAcalls.csv" 
+    }
+}
+</pre>
+
+      
+
+</td><tr>
+
+<tr height=40><td>&nbsp;</td></tr>
+<tr><td style="padding:0 0 0 50;background:#ccc;">
+<br><br>
+                         
+<DIV style="width:800px;white-space:pre-wrap;">
+Type definition of biocompute objects
+ 
+Descriptions:
+'line': refers to line types in the biocompute object. Line types preceeded by '_' means that the field is not mutable by a user who is running the biocompute object.
+'name': refers to human readable name of the line type. This field can be empty.
+'note': refers to description of the line type.
+________________________________________________________________________________
+
+</DIV>
+
+<a name="_id">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: _id
+name: id
+note: This is the biocompute object id. The id is a unique identifying value assigned to each object. This value is used for all references to this object.
+</DIV>
+
+<a name="_type">
+<DIV style="width:800px;white-space:pre-wrap;"> 
+line: _type
+name: Type
+note: This field defines the type of the object.
+</DIV>
+
+<a name="name">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: name
+name: Name
+note: The user-defined name of the object. It can be any type of text.
+</DIV>
+
+<a name="description">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: description
+name: Description
+note: The creator-specified description of the object or field in a type. Information in this field lets other users know the function and purpose of the object.
+</DIV>
+
+<a name="validation">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: validation
+name: Validation
+note: Describes the position of an object in the validation process. The 'unreviewed' flag indicates that the object has been submitted, but no further evaluatation or validation has occurred. The 'in_progress' flag indicates that validation is underway. the 'reviewed' flag indicates that the biocompute object has been validated and reviewed. The 'manual' flag indicates that the object has been manually validated. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'error' flag indicates that an error was detected with the biocompute object.
+</DIV>
+
+<a name="creation_date">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: creation_date
+name: Creation Date
+note: The time and date that the biocompute object is created.
+</DIV>
+
+<a name="modification_date">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: modification_date
+name: Modification Date
+note: This field will list all the dates and time when an object is modified.
+</DIV>
+
+<a name="publication_status">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: publication_status
+name: Publication Status
+note: This is a choice field with four options. The 'draft' flag indicates that an object is in draft form and is still being edited. The 'open access' flag indicates that an object has been published and is freely available to anyone. The objects with the 'private' flag have restrictions on who can view and access them. This is a way for researchers using restricted data or metadata to insure the confidentially is maintained.
+</DIV>
+
+<a name="keywords">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: keywords
+name: Keywords
+note: Keywords to aid in search-ability and description of the object. These is a set of controlled vocabulary.
+</DIV>
+
+<a name="usability_domain">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: usability_domain
+name: Usability Domain
+note: Usability domain along with keywords can help determine when and how the biocompute object can be used. Novel use of the biocompute object should result in the creation of a new entry.  
+</DIV>
+
+<a name="authors">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: authors
+name: Authors
+note: Authors who created the initial biocompute object.
+</DIV>
+
+<a name="pipeline">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: pipeline
+name: Pipeline
+note: Pipeline that is used to run the biocompute object.
+</DIV>
+
+<a name="name_pipe">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: pipeline, name
+name: Pipeline Name
+note: The name of the pipeline that is used to run the biocompute object.
+</DIV>
+
+<a name="version">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: pipeline, version
+name: Pipeline Version
+note: Version of the pipeline
+</DIV>
+
+<a name="id_pipe">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: pipeline, id 
+name: Pipeline Id
+note: Pipeline ID.
+</DIV>
+
+<a name="svc-align-hexagon">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: svc-align-hexagon
+name: HIVE-Hexagon DNA Sequence Alignment
+note: Arguments for alignment using Hexagon. HIVE-hexagon is an alignment algorithm that finds short read alignments by seeding, extension and optimal alignment. The hexagon algorithm runs faster than other industry favorite-algorithms and therefore is able to use a smaller seed size, increasing sensitivity without sacrificing performance.
+</DIV>
+
+<a name="_row">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: row
+name: Row
+note: Row indicates the role a field has in the computation. If the field is a parametric field then it will not have a row value. If it is an input or output value then it will have those flages, respectivly. 
+</DIV>
+
+<a name="minimum_match_len">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: svc-align-hexagon, minimum_match_len
+name: Minimum Match Length
+note: Minimum match length needed to be considered for the alignment.
+</DIV>
+
+<a name="mismatch_allowed">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: svc-align-hexagon, mismatch_allowed
+name: Mismatch Allowed
+note: Mismatches allowed to be considered for the alignment.
+</DIV>
+
+<a name="svc-dna-heptagon">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: svc-dna-heptagon
+name: HIVE-heptagon Profiling Tool
+note: Arguments for variant calling. Heptagon allows the user to view and download summaries, profile graphs, SNP calls. Profiling results are summarized in the interface in various tables and charts and also through a variety of downloads. </DIV>
+
+<a name="min_coverage">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: svc-dna-heptagon, min_coverage
+name: Varient Calling Minimum Coverage
+note: Minimum depth of read coverage required for variant calling. 
+</DIV>
+
+<a name="freq_cutoff">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: svc-dna-heptagon, freq_cutoff
+name: Varient Calling Frequency Cutoff
+note: Percent of reads that should have the single nucleotide variation for variant calling.
+</DIV>
+
+<a name="subject">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: subject
+name: Reference Sequences
+note: Nucleotide sequences to which the NGS reads are to be mapped.
+</DIV>
+
+<a name="query">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: query
+name: Read File
+note: Nucleotide reads to be alinged.
+</DIV>
+
+<a name="snv_profile">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: snv_profile
+name: SNV Profile
+note: Output of variant calling.
+</DIV>
+
+<a name="alignment_file">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: alignment_file
+name: Alignemnt File
+note: Output of alignment.
+</DIV>
+
+<a name="aminoacid_calls">
+<DIV style="width:800px;white-space:pre-wrap;">
+line: aminoacid_calls
+name: Amino Acid Calls
+note: Output of amino acid calls.
+</DIV>
+
+
+
+<br><br>
+<br><br>
+<br><br>
+
+</td><tr></table>

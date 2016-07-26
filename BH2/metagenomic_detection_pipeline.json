@@ -1,0 +1,12 @@
+{
+	"_type": "metagenomic_detection_pipeline",
+	"name": "Metagenomic Detection Pipeline",
+	"description": "",
+	"_feilds": {
+		"": "",
+		"": "",
+		"": ""
+		
+	},
+	"inherits": "base_biocompute_type"
+}

@@ -1,0 +1,59 @@
+{
+    "_type": "type",
+    "name": "metagenomic_analysis_pipeline",
+    "description": "This pipeline uses a screener than an aligner to detect organisms present in a metagenomic sample.",
+    "_fields": {
+        "subject": {
+            "description": "reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
+            "name": "Reference Sequencs",
+            "_role": "input",
+            "_type": "string",
+            "_vital": "true",
+            "_plural": "true"
+        },
+        "query": {
+            "description": "sequences can be either FASTA from experimental sources or identifiers from HIVE database. These must be saved as a 'nuc_read' type in HIVE to use in this field",
+            "name": "Nucleotide Read",
+            "_role": "input",
+            "_type": "string",
+            "_vital": "true",
+            "_plural": "true"
+        },
+		"svc-dna-screening" : {
+            "description": "list of arguments for CensuScope Detection",
+			"svcTitle": "CensuScope",
+	        "_role": {
+				"input"
+			},
+			"taxDepth": {
+				"species"
+			},
+			"storeAlignments": {
+				""
+			},
+			"CensuslimitIterations": {
+				"5"
+			},
+			"Sample": {
+				"2500,"
+			},
+			"selfStopping": {
+				"0"
+			}
+		},
+        "svc-align-hexagon": {
+            "description": "list of arguments for HIVE-hexagon aligner",
+            "svcTitle": "HIVE Hexagon Alignment Engine",
+            "maxMissQueryPercent": {
+                "_type": "integer",
+                "_default": 16
+            },
+            "minMatchLen,": {
+                "_type": "integer",
+                "_default": 45
+            },
+            "divergence_threshold_percent": {
+                "_type": "real",
+                "_default": 15
+            }
+        },
