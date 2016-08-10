@@ -67,7 +67,7 @@
 		},
 		"alignment_file": {
 			"description": "The resulting alignment file from the Hexagon computation",
-			"title": "Alignement File",
+			"title": "Alignment File",
 			"_type": "outfile"
 		},
 		"aminoacid_calls": {
