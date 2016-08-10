@@ -1,0 +1,111 @@
+{
+
+	"_type": "type",
+	"name": "human_gut_metagenomic_detection",
+	"description": "This pipeline uses an a screener and then an aligner to detect organisms present in a metagenomic sample",
+	"_fields": {
+		"reference_sequence": {
+			"description": "reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
+			"title": "Reference Sequences",
+			"_type": "xref",
+			"_role": "input",
+			"_vital": "true",
+			"_plural": "true"
+			},
+		"sequence_reads": {
+			"description": "sequences can be either FASTA from experimental sources or identifiers from HIVE database. These must be saved as a 'nuc_read' type in HIVE to use in this field",
+			"title": "Nucleotide Read",
+			"_type": "xref",
+			"_role": "input",
+			"_vital": "true",
+			"_plural": "true"
+			},
+			"reference_db": {
+				"description": "",
+				"title": "",
+				"_type": "",
+				"_role": "input",
+				"_vital": "true",
+				"_plural": "true"
+				},
+		"dna-screening":{
+			"description": "Arguments for the DNA_screening, HIVE CensuScope",
+			"title": "CensuScope",
+			"taxDepth": {
+				"_type": "string",
+				"_default": "species"
+			},
+			"storeAlignments": {
+				"_type": "integer",
+				"_default": 0
+			},
+			"CensuslimitIterations": {
+				"_type": "integer",
+				"_default": 10
+			},
+			"Sample": {
+				"_type": "integer",
+				"_default": 1000
+			},
+			"selfStopping": {
+				"_type": "integer",
+				"_default": 1
+			}
+		},
+		"alignment": {
+			"description": "Arguments for the alignment, HIVE Hexagon",
+			"title": "HIVE-hexagon Alignment",
+			"minimum_match_len,": {
+				"_type": "integer",
+				"_default": 75
+			},
+			"keepAllMatches": {
+				"_type": "integer",
+				"_default": 1
+			},
+			"keepMarkovnikovMatches": {
+				"_type": "integer",
+				"_default": 0
+			},
+			"complexityRefEntropy": {
+				"_type": "integer",
+				"_default": 1.0
+			},
+			"complexityRefWindow": {
+				"_type": "integer",
+				"_default": 0
+			},
+			"acceptNNNQuaTrheshold": {
+				"_type": "integer",
+				"_default": 0
+			},
+			"complexityEntropy": {
+				"_type": "integer",
+				"_default": 1.0
+			},
+			"complexityWindow": {
+				"_type": "integer",
+				"_default": 0
+			},
+			"maximumPercentLowQualityAllowed": {
+				"_type": "integer",
+				"_default": 30
+			},
+		"accession_based_results": {
+			"description": "",
+			"_role": "output",
+			"_type": "outfile"
+		},
+		"unalignedReads": {
+			"description": "",
+			"_role": "output",
+			"_type": "outfile"
+		},
+		"hit_list": {
+			"description": "",
+			"_role": "output",
+			"_type": "outfile"
+		}
+	},
+	"_inherits": ["base_biocompute_type"]
+}
