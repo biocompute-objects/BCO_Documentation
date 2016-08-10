@@ -12,7 +12,7 @@
 		"metagenomic analysis"
 	],
 	"_usability_domain": [
-		"Identify the most common oganisms present in a metagenomic sample",
+		"Identify the most common organism present in a metagenomic sample",
 		"Identify the general community composition of organisms in a human fecal sample"
 	],
 	"authors": [
@@ -36,7 +36,7 @@
 		"Sample": 2500,
 		"selfStopping": 0
 	},
-	"alignemnt": {
+	"alignment": {
 			"minMatchLen": 45,
 			"keepAllMatches": 3,
 			"keepMarkovnikovMatches": 1,
