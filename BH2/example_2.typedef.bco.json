@@ -1,11 +1,10 @@
 {
-
 	"_type": "type",
 	"name": "human_gut_metagenomic_detection",
 	"description": "This pipeline uses an a screener and then an aligner to detect organisms present in a metagenomic sample",
 	"_fields": {
 		"reference_sequence": {
-			"description": "reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
+			"description": "Reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
 			"title": "Reference Sequences",
 			"_type": "xref",
 			"_role": "input",
@@ -13,21 +12,21 @@
 			"_plural": "true"
 			},
 		"sequence_reads": {
-			"description": "sequences can be either FASTA from experimental sources or identifiers from HIVE database. These must be saved as a 'nuc_read' type in HIVE to use in this field",
+			"description": "Sequences can be either FASTA from experimental sources or identifiers from HIVE database. These must be saved as a 'nuc_read' type in HIVE to use in this field",
 			"title": "Nucleotide Read",
 			"_type": "xref",
 			"_role": "input",
 			"_vital": "true",
 			"_plural": "true"
 			},
-			"reference_db": {
-				"description": "",
-				"title": "",
-				"_type": "",
-				"_role": "input",
-				"_vital": "true",
-				"_plural": "true"
-				},
+		"reference_db": {
+			"description": "The db is a collection of sequences that have been flagged as a genome and are indexed.",
+			"title": "Database",
+			"_type": "xref",
+			"_role": "input",
+			"_vital": "true",
+			"_plural": "true"
+			},
 		"dna-screening":{
 			"description": "Arguments for the DNA_screening, HIVE CensuScope",
 			"title": "CensuScope",
@@ -90,19 +89,23 @@
 			"maximumPercentLowQualityAllowed": {
 				"_type": "integer",
 				"_default": 30
-			},
+			}
+		},
 		"accession_based_results": {
-			"description": "",
+			"description": "A list of the number of alignemnts matched to a refrence sequence in a database object",
+			"title": "Accession Based Results",
 			"_role": "output",
 			"_type": "outfile"
 		},
 		"unalignedReads": {
-			"description": "",
+			"description": "A sequence object of the unaligned reads from an alignment",
+			"title": "Unaligned Reads",
 			"_role": "output",
 			"_type": "outfile"
 		},
 		"hit_list": {
-			"description": "",
+			"description": "A list of all the alignments matched to a reference",
+			"title": "Hit List",
 			"_role": "output",
 			"_type": "outfile"
 		}

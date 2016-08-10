@@ -1,0 +1,22 @@
+{
+	"_id": "obj.20001",
+	"_type": "pipeline_definition",
+	"name": "Human Gut Metagenomic Detection Pipeline",
+	"description": [""],
+	"workflow": {
+		"launcher": "",
+		"script": ""
+	},
+	"tool_used": [
+		{
+			"name": "",
+			"version": "",
+			"arguments": [
+				{
+					"parameter":  "",
+					"value": ""
+				}
+			]
+		}
+	]
+}
