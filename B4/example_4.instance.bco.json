@@ -1,86 +1,80 @@
 {
-    "_id": "B4",
-    "_type": "metavisitor_GalaxyWorkflow ",
-    "name": "Rapid detection and discovery of viruses in deep sequence data",
-    "version": "1.0",
-    "description": "Small RNA sequencing from D. melanogaster infected by Nora Virus",
-    "validation": "manual",
-    "creation_date": "Wed Jul 27 19:06:11 EDT 2016",
-    "modification_date": "Tue Aug 2 10:12:14 EDT 2016",
-    "publication_status": "draft",
-    "keywords": [
-        "RNA-Seq virus detection",
-        "virus discovery small RNA sequencing",
-        "Virus deep sequence data"
-    ],
-    "usability_domain": [
-        "Detect and reconstruct viral genomes from sequencing datasets",
-        "Works with DNA, RNA or small RNA sequencing data that provide different read lengths and can use a combination of a de novo and guided approaches to assemble viral genomes from sequencing reads",
-        "workflow has the potential for quick diagnosis as well as discovery of viruses (or other pathogens) from a vast array of organisms"
-    ],
-    "authors": [
-        {
-            "first_name": "Christophe",
-            "last_name": "Antoniewski",
-            "affiliation": "CNRS - Institut de Biologie Paris Seine"
-        },
-        {
-            "first_name": "Marius",
-            "last_name": "van den Beek",
-            "affiliation": "IBPS / Universite Pierre et Marie Curie"
-        },
-        { 	
-        	"first_name": "Kenneth",
-        	"last_name": "Vernick",
-        	"affiliation": "Institut Pasteur"
-        },
-        { 	"first_name": "Juliana",
-        	"last_name": "Pegoraro",
-        	"affiliation": "Institut Pasteur"
-        },
-        {
-        	"first_name": "Guillaume",
-        	"last_name": "Carissimo",
-        	"affiliation": "Institut Pasteur"
-        }   	
-    ],
-    "pipeline": {
- 	"_id":"obj.10004",
- 	"name": "Rapid detection and discovery of viruses in deep sequence data"
-     },
-    "user_pipeline_parameters": [
-         {
-         	"query_virus": " only viruses",
-         	"exclude": "phage"
-         },
-         {
-	         "typeMatchingPerformed": "match DNA - RNA-seq mode",
-	         "mismatch_allowed": 2,
-	         "reference_genome" : "built-in"
-         },
-         {
-	         "max_target_sequences": 10,
-	         "expect_threshold": 1,
-	         "mismatch_scores": "1/-1"
-         }
-    ],
-    "validation_kit":{
-       "reference_accessions": [
-               "NC_007919",
-               "JX220408"
-               ]
-       },
-       "sra_accessions": [
-               "SRR515090",
-               "SRR513993",
-               "SRR513992",
-               "SRR513990",
-               "SRR513989",
-               "SRR513981",
-               "SRR513901"
-               ]
-       },
-       "virus_profile": "parse_blastoutput.csv"
-       
-    }
+	"_id": "B4",
+	"_type": "metavisitor_GalaxyWorkflow ",
+	"name": "Rapid detection and discovery of viruses in deep sequence data",
+	"version": "1.0",
+	"description": "Small RNA sequencing from D. melanogaster infected by Nora Virus",
+	"validation": "manual",
+	"creation_date": "Wed Jul 27 19:06:11 EDT 2016",
+	"modification_date": "Tue Aug 2 10:12:14 EDT 2016",
+	"publication_status": "draft",
+	"keywords": [
+		"RNA-Seq virus detection",
+		"virus discovery small RNA sequencing",
+		"Virus deep sequence data"
+	],
+	"usability_domain": [
+		"Detect and reconstruct viral genomes from sequencing datasets",
+		"Works with DNA, RNA or small RNA sequencing data that provide different read lengths and can use a combination of a de novo and guided approaches to assemble viral genomes from sequencing reads",
+		"workflow has the potential for quick diagnosis as well as discovery of viruses (or other pathogens) from a vast array of organisms"
+	],
+	"authors": [
+		{
+			"first_name": "Christophe",
+			"last_name": "Antoniewski",
+			"affiliation": "CNRS - Institut de Biologie Paris Seine"
+		},
+		{
+			"first_name": "Marius",
+			"last_name": "van den Beek",
+			"affiliation": "IBPS / Universite Pierre et Marie Curie"
+		},
+		{	
+			"first_name": "Kenneth",
+			"last_name": "Vernick",
+			"affiliation": "Institut Pasteur"
+		},
+		{	"first_name": "Juliana",
+			"last_name": "Pegoraro",
+			"affiliation": "Institut Pasteur"
+		},
+		{
+			"first_name": "Guillaume",
+			"last_name": "Carissimo",
+			"affiliation": "Institut Pasteur"
+		}
+	],
+	"pipeline": "obj.10004",
+	"NCBI_query": [
+		{
+			"query": "only viruses",
+			"exclude": "phage"
+		},
+		{
+			 "typeMatchingPerformed": "match DNA - RNA-seq mode",
+			 "mismatch_allowed": 2,
+			 "reference_genome" : "built-in"
+		},
+		{
+			 "max_target_sequences": 10,
+			 "expect_threshold": 1,
+			 "mismatch_scores": "1/-1"
+		}
+	],
+	"validation_kit":{
+		"reference_accessions": [
+			"NC_007919",
+			"JX220408"
+		]
+	},
+	"sra_accessions": [
+		"SRR515090",
+		"SRR513993",
+		"SRR513992",
+		"SRR513990",
+		"SRR513989",
+		"SRR513981",
+		"SRR513901"
+	],
+	"virus_profile": "parse_blastoutput.csv"
 }

@@ -1,0 +1,52 @@
+{
+	"_id": "obj.",
+	"_type": "",
+	"name": "",
+	"description": "",
+	"verifacation:": "manual",
+	"creation_date": "",
+	"modification_date": "",
+	"publication_status": "draft",
+	"keywords": [
+		"",
+		""
+	],
+	"usability_domain": [
+		"",
+		""
+	],
+	"authors": [
+		{
+			"first_name": "",
+			"middle_name": "",
+			"last_name": "",
+			"affiliation": ""
+		}
+	],
+	"pipeline": "obj.",
+	"tool": {
+		"arg": "",
+		"arg": ""
+	},
+	"tool": {
+		"arg": "",
+		"arg": ""
+	},
+	"verification_kit": {
+		"input": [
+			{
+				"source": "",
+				"db": "",
+				"id": [
+					"",
+					"",
+					""
+				]
+			}
+		],
+		"out file": {
+			"format": "",
+			"filename": ""
+		}
+	}
+}

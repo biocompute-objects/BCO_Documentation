@@ -1,7 +1,7 @@
 {
 	"_type": "type",
-	"name": "antiviral_resistance_pipeline",
-	"description": "This pipeline uses an aligner and then a profiler to detect possible mutations involved in drug resistance.",
+	"name": "",
+	"description": "",
 	"_fields": {
 		"reference_sequence": {
 			"description": "reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
@@ -26,7 +26,7 @@
 				"_type": "integer",
 				"_default": 11,
 				"_limit": { 
-					"eval-js" : {"$seed>8 && $seed<12"}
+					"eval-js": "$seed>8 && $seed<12"
 				}
 			},
 			"minimum_match_len,": {
@@ -35,9 +35,9 @@
 			},
 			"divergence_threshold_percent": {
 				"_type": "real",
-				"_default": 15
-				"_limit:" {
-					"eval-js" : {"$divergence_threshold_percent>10 && $divergence_threshold_percent<40"}
+				"_default": 15,
+				"_limit:":{
+					"eval-js": ["$divergence_threshold_percent>10 && $divergence_threshold_percent<40"]
 				}
 			}
 		},
@@ -48,14 +48,14 @@
 				"_type": "integer",
 				"_default": 10,
 				"_limit": { 
-					"eval-js" : {"$minimum_coverage>=0"}
+					"eval-js": ["$minimum_coverage>=0"]
 				}
 			},
 			"frequency_cutoff": {
 				"_type": "real",
 				"_default": 0.10,
 				"_limit": { 
-					"eval-js" : {"$frequency_cutoff>=0 && $frequency_cutoff<=1.0"}
+					"eval-js": ["$frequency_cutoff>=0 && $frequency_cutoff<=1.0"]
 				}
 			}
 		},
@@ -64,20 +64,7 @@
 			"title": "SNPProfile Output File",
 			"_role": "output",
 			"_type": "outfile"
-		},
-		"alignment_file": {
-			"description": "The resulting alignment file from the Hexagon computation",
-			"title": "Alignement File",
-			"_type": "outfile"
-		},
-		"aminoacid_calls": {
-			"description": "the amino acid calls from Heptagon",
-			"title": "Amino Acid Calls",
-			"_role": "output",
-			"_type": "outfile"
 		}
 	},
-	"_inherits": [
-		"base_biocompute_type"
-	]
+	"_inherits": ["base_biocompute_type"]
 }

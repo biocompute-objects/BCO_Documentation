@@ -1,0 +1,16 @@
+{
+	"_type": "type",
+	"name": "",
+	"description": "",
+	"_fields": {
+		"field_name": {
+			"description": "",
+			"title": "",
+			"_type": "",
+			"_role": "",
+			"_vital": "",
+			"_plural": ""
+		}
+	},
+	"_inherits": ["base_biocompute_type"]
+}
