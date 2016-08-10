@@ -35,8 +35,8 @@
 		"seed": 14,
 		"minimum_match_len": 50,
 		"divergence_threshold_percent": 10
-	 	},
-		"variant_calling" : {
+		},
+	"variant_calling" : {
 		"minimum_coverage": 20,
 		"frequency_cutoff": 0.20
 		},

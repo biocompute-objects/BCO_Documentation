@@ -1,22 +1,49 @@
 {
-	"_id": "obj.20001",
+	"_id": "obj.20004",
 	"_type": "pipeline_definition",
-	"name": "Human Gut Metagenomic Detection Pipeline",
-	"description": [""],
+	"name": "Metavisitor Galaxy pipeline",
+	"description": ["Small RNA sequencing from D. melanogaster infected by Nora Virus"],
 	"workflow": {
-		"launcher": "",
-		"script": ""
+		"launcher": "system",
+		"script": "obj.20041"
 	},
 	"tool_used": [
 		{
-			"name": "",
-			"version": "",
+			"name": "sr_bowtie_v1.1.2",
+			"version": "v1.1.2",
 			"arguments": [
 				{
-					"parameter":  "",
-					"value": ""
+					"parameter": "typeMatchingPerformed",
+					"value": "match DNA - RNA-seq mode"
+				},
+				{
+					"parameter": "mismatch_allowed",
+					"value": 2
+				},
+				{
+					"parameter": "reference_genome",
+					"value": "built-in"
+				}
+			]
+		},
+		{
+			"name": "ncbi_blastn",
+			"version": "2.4.0",
+			"arguments": [
+				{
+					"parameter": "max_target_sequences",
+					"value": 10
+				},
+				{
+					"parameter": "expect_threshold",
+					"value": 1
+				},
+				{
+					"parameter":  "mismatch_scores",
+					"value": "1/-1"
 				}
 			]
 		}
+
 	]
 }
