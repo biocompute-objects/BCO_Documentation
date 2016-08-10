@@ -1,0 +1,46 @@
+{
+	"_id": "obj.10001",
+	"_type": "pipeline_definition",
+	"name": "HIVE-Viral Mutation Detection Pipeline",
+	"description": "HIVE-Viral Mutation Detection uses two HIVE tools: Hexagon for alignment and Heptagon for variant calling. Only the options that need to be selected or changed are listed.",
+	"workflow": {
+		"launcher": "system",
+		"script": "obj.123123"
+	},
+	"tool_used": [
+		{
+			"name": "HIVE-hexagon",
+			"version": "1.3",
+			"arguments": [ 
+				{
+					"parameter": "seed", 
+					"value": 16
+				},
+				{	
+					"parameter": "divergence_threshold_percent",
+					"value":  15
+				},
+				{
+					"parameter": "minimum_match_len",
+					"value":  100
+				}
+			]
+		},
+		{
+			"name": "HIVE-heptagon",
+			"version": "1.1", 
+			"arguments": [
+				{
+					"parameter": "min_coverage",
+					"value": 10 
+				},
+				{
+					"parameter": "freq_cutoff",
+					"value": 0.10 
+				}
+			]
+		}
+	]
+}
+
+

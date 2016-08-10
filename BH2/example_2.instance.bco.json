@@ -1,0 +1,95 @@
+{
+	"_id": "obj.20001",
+	"_type":"human_gut_metagenomic_detection",
+	"name": "Human Gut Metagenomic Detection",
+	"description": "Identification of microbial composition of the human gut using fecal WGS",
+	"verifacation:": "manual",
+	"creation_date": "Mon Jul 25 13:25:21 EDT 2016",
+	"modification_date": "Mon Jul 25 13:25:21 EDT 2016",
+	"publication_status": "draft",
+	"keywords": [
+		"metagenome",
+		"metagenomic analysis"
+	],
+	"_usability_domain": [
+		"Identify the most common oganisms present in a metagenomic sample",
+		"Identify the general community composition of organisms in a human fecal sample"
+	],
+	"authors": [
+		{
+			"first_name": "Charles",
+			"middle_name": "Hadley",
+			"last_name": "King",
+			"affiliation": "GW"
+		},
+		{
+			"first_name": "Naila",
+			"last_name": "Gulzar",
+			"affiliation": "GW"
+		}
+	],
+	"pipeline": "obj.20001",
+	"DNA_screening": {
+		"taxDepth": "leaf",
+		"storeAlignments": 1,
+		"CensuslimitIterations": 5,
+		"Sample": 2500,
+		"selfStopping": 0
+	},
+	"alignemnt": {
+			"minMatchLen": 45,
+			"keepAllMatches": 3,
+			"keepMarkovnikovMatches": 1,
+			"complexityRefEntropy": 1.2,
+			"complexityRefWindow": 30,
+			"acceptNNNQuaTrheshold": 1,
+			"complexityEntropy": 1.2,
+			"complexityWindow": 30,
+			"maximumPercentLowQualityAllowed": 0
+	},
+	"verification_kit": {
+		"reference_sequence": [
+			{
+				"source": "NCBI",
+				"db": "genbank",
+				"id": [
+					"CP000139.1",
+					"FP929042.1",
+					"FP929046.1",
+					"FP929045.1",
+					"FP929043.1",
+					"FP929048.1"
+				]
+			}
+		],
+		"sequence_reads": [
+			{
+				"source": "HIVE",
+				"db": "Honeycomb",
+				"id": [
+					"514683",
+					"514682"
+				]
+			}
+		],
+		"reference_db": [
+			{
+				"source": "HIVE",
+				"db": "Honeycomb",
+				"id": "513957"
+			}
+		],
+		"accession_based_results": {
+			"format": ".csv",
+			"filename": "dnaAccessionBasedResult.csv"
+		},
+		"unalignedReads": {
+			"format": ".fasta",
+			"filename": "Unaligned Reads (HIVE_ID).fasta"
+		},
+		"hit_list": {
+			"format": ".csv",
+			"filename": "alCount-Unalignedo541205-alCount--1.csv"
+		}
+	}
+}
