@@ -1,15 +1,62 @@
 {
 	"_type": "type",
-	"name": "",
-	"description": "",
+	"name": "metavisitor_GalaxyWorkflow",
+	"description": "Small RNA sequencing from D. melanogaster infected by Nora Virus",
 	"_fields": {
-		"field_name": {
-			"description": "",
-			"title": "",
-			"_type": "",
-			"_role": "",
-			"_vital": "",
-			"_plural": ""
+		"reference_accessions": {
+			"description": "reference sequences taken from NCBI's RefSeq",
+			"title": "Reference Sequences",
+			"_type": "xref",
+			"_role": "input",
+			"_vital": "true",
+			"_plural": "true"
+		},
+		"sra_accessions": {
+			"description": "sequences obtained from NCBI's SRA ",
+			"title": "SRA Reads",
+			"_type": "xref",
+			"_role": "input",
+			"_vital": "true",
+			"_plural": "true"
+		},
+		"sr_bowtie_v1.1.2": {
+			"description": "Bowtie is an ultrafast, memory-efficient short read aligner geared toward quickly aligning large sets of short DNA sequences (reads) to large genomes. It aligns 35-base-pair reads to the human genome at a rate of 25 million reads per hour on a typical workstation.",
+			"title": "Bowtie",
+			"typeMatchingPerformed": {
+				"type": "string",
+				"default": "match DNA - DNA mode",
+				"_limit": "NA"
+			},
+			"mismatch_allowed": {
+				"_type": "integer",
+				"_default": 0,
+			},
+			"reference_genome" : {
+				"_type": "string",
+				"_default": "select from list"
+			}
+		},
+		"ncbi_blastn": {
+			"description": "BLAST finds regions of similarity between biological sequences. The program compares nucleotide or protein	sequences to sequence databases and calculates the statistical significance.",
+			"title": "Basic Local Alignment Search Tool",
+			"max_target_sequences": {
+				"_type": "integer",
+				"_default": 10
+			},
+			"expect_threshold": {
+				"_type": "integer",
+				"_default": 0
+			},
+			"mismatch_scores": {
+				"_type": "string",
+				"_defualt": "1"
+			}
+		},
+		"virus_profile": {
+			"description": "The output file containing the virus profile",
+			"title": "parse_blastoutput.csv",
+			"_role": "output",
+			"_type": "outfile"
 		}
 	},
 	"_inherits": ["base_biocompute_type"]

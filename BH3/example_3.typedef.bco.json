@@ -1,7 +1,7 @@
 {
 	"_type": "type",
-	"name": "",
-	"description": "",
+	"name": "HIVE_huntingtons_disease_detection",
+	"description": "Pipeline to determine the risk of huntington's disease in a gene sequence",
 	"_fields": {
 		"reference_sequence": {
 			"description": "reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
