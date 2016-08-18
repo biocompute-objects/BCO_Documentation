@@ -2,9 +2,9 @@
 	"_id": "obj.20001",
 	"_type":"human_gut_metagenomic_detection",
 	"name": "Human Gut Metagenomic Detection",
-	"version": "1.0"
+	"version": "1.0",
 	"description": "Identification of microbial composition of the human gut using fecal WGS",
-	"verifacation:": "manual",
+	"verification:": "manual",
 	"creation_date": "Mon Jul 25 13:25:21 EDT 2016",
 	"modification_date": "Mon Jul 25 13:25:21 EDT 2016",
 	"publication_status": "draft",
