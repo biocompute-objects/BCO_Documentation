@@ -75,7 +75,7 @@
 			}
 		],
 		"virus_profile": {
-			"format": ".csv",
+			"format": [".csv"],
 			"filename": "parse_blastoutput.csv"
 		}
 	}
