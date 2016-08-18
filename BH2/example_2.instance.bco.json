@@ -12,7 +12,7 @@
 		"metagenome",
 		"metagenomic analysis"
 	],
-	"_usability_domain": [
+	"usability_domain": [
 		"Identify the most common organism present in a metagenomic sample",
 		"Identify the general community composition of organisms in a human fecal sample"
 	],
@@ -77,11 +77,11 @@
 			{
 				"source": "HIVE",
 				"db": "Honeycomb",
-				"id": "513957"
+				"id": ["513957"]
 			}
 		],
 		"accession_based_results": {
-			"format": ".csv",
+			"format": [".csv"],
 			"filename": "dnaAccessionBasedResult.csv"
 		},
 		"unalignedReads": {
