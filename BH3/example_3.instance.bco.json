@@ -42,7 +42,7 @@
 		"minimum_coverage": 20,
 		"frequency_cutoff": 0.20
 	},
-	"validation_kit":{
+	"verification_kit":{
 	   "reference_sequence":
 	   {
 			"source": "NCBI",
