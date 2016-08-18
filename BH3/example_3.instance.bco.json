@@ -55,10 +55,10 @@
 		"sequence_reads": {
 			"source": "HIVE",
 			"db": "Honeycomb",
-			"id": "obj.00001"
+			"id": ["obj.00001"]
 		},
 		"snp_profile_file": {
-			"format": ".csv",
+			"format": [".csv"],
 			"filename": "SNPProfile.csv"
 	   }
 	}
