@@ -1,0 +1,27 @@
+{
+    "_type": "type",
+    "name": "pipeline_definition",
+    "description": "This type defines the elements that can be present in the pipeline_definition objects.  pipeline_definition objects list all of the system information and tools needed to execute an established pipeline.",
+    "_fields": {
+        "system": {
+            "description": "The system field is for listing all system OS versions as well as hardware requirements and settings.",
+            "_type": "string"
+        },
+        "tool_used": {
+            "description": "This feild is for describing all information about the specific bioinformatic tools used. name and version fields are present, as well as the argument field. The argument field is a plural field and should be used for each individual argument of each tool.",
+            "name": {
+                "_type": "string",
+                "_vital": "true"
+            },
+            "version": {
+                "_type": "string",
+                "_vital": "true"
+            },
+            "arguments": {
+                "_type": "string",
+                "_vital": "true",
+                "_plural": "true"
+            }
+        }
+    }
+}

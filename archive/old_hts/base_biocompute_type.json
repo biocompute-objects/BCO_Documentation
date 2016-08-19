@@ -1,0 +1,45 @@
+{
+    "_type": "type",
+    "name": "base_biocompute_type",
+    "description": "Provides the base fields to populate in a biocompute object",
+    "_fields": {
+        "validation": {
+            "description": "Describes the position of an object in the validation process. The unreviewed flag indicates that the object has been submitted, but no further curation has occurred. The in_progress flag indicates that validation is underway. manual indicates that the object has been manually validated. The suspended flag indicates an object that was once valid is no longer considered valid. The error flag indicates that an error was detected with the biocompute object.",
+            "_ type": "string",
+            "_limit": {
+                "choice": [
+                    "unreviewed",
+                    "in_progress",
+                    "manual",
+                    "suspended",
+                    "error"
+                    ]
+            }
+        },
+        "usability_domain": {
+            "description": "Provides a space for the author to define the usability domane of an object.",
+            "_type": "string",
+            "_vital": "true",
+            "_plural": "true"
+        },
+        "pipeline" : {
+                "description": "defines the fields that have to be populated for a tool description in the pipeline of a biocompute object",
+            "tool": {
+                "name": {
+                    "_ type": "string",
+                    "_vital": "true"
+                },
+                "version" : {
+                    "_ type": "string",
+                    "_vital": "true"
+                },
+                "arguments" : {
+                    "_ type": "string",
+                    "_vital": "true",
+                    "_plural": "true"
+                }
+            }
+        }
+    }, 
+    "_inherits": ["base_metadata_type"]
+}

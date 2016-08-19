@@ -1,0 +1,75 @@
+{
+    "_type": "type",
+    "name": "antiviral_resistance_pipeline",
+    "description": "This pipeline uses an aligner and then a profiler to detect possible mutations involved in drug resistance.",
+    "_fields": {
+        "subject": {
+            "description": "reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
+            "name": "Reference Sequencs",
+            "_role": "input",
+            "_type": "string",
+            "_vital": "true",
+            "_plural": "true"
+        },
+        "query": {
+            "description": "sequences can be either FASTA from experimental sources or identifiers from HIVE database. These must be saved as a 'nuc_read' type in HIVE to use in this field",
+            "name": "Nucleotide Read",
+            "_role": "input",
+            "_type": "string",
+            "_vital": "true",
+            "_plural": "true"
+        },
+        "svc-align-hexagon": {
+            "description": "Non-default arguments for the alignment, HIVE Hexagon",
+            "name": "HIVE Hexagon Alignment Engine",
+            "seed": {
+                "_type": "integer",
+                "_default": 16
+            },
+            "minimum_match_len,": {
+                "_type": "integer",
+                "_default": 75
+            },
+            "divergence_threshold_percent": {
+                "_type": "real",
+                "_default": 15
+            }
+        },
+        "svc-profiler-heptagon": {
+            "description": "arguments for the engine to perform coverage analysis, base-calling, SNP calling",
+            "name": "Sequence Profiling Engine",
+            "minimum_coverage": { 
+                "_type": "integer",
+                "_default": 10
+            },
+            "frequency_cutoff": {
+                "_type": "real",
+                "_default": 0.10
+            }
+        },
+        "snv_profile": {
+            "description": "The output file containing the SNP Profile",
+            "name": "SNPProfile Output File",
+            "_role": "output",
+            "format ": ".csv",
+            "filename ": "SNPProfile.csv"
+        },
+        "alignment_file": { 
+            "description": "The resulting alignment file from the Hexagon computation",
+            "name": "Alignement File",
+            "_role": "output",
+            "format ": "sam",
+            "filename ": "_.sam"
+        },
+        "aminoacid_calls": { 
+            "description": "the amino acid calls from Heptagon",
+            "name": "Amino Acid Calls",
+            "_role": "output",
+            "format ": ".csv",
+            "filename ":"AAcalls.csv"
+        }
+    },
+    "_inherits": [
+		"base_biocompute_type"
+	]
+}

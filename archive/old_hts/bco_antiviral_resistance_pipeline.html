@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+    background-color:#1C75BC;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+td.cell1{
+    border: 1px solid black;
+    text-align:center;
+    font-size:20px;
+    color:grey;
+}
+td.cell2{
+    border: 1px solid grey;
+    font-size: 16px;
+    background:lightgrey;    
+}
+td.cell3{
+    border: 1px solid black;
+    font-size:11px;
+    text-align:right;
+}
+td.cell4{
+    border: 1px solid black;
+    font-size:11px;
+    text-align:center;
+}
+#p01 {
+    color:grey;
+    text-align:left;
+    font-size: 25px;
+    padding: 10px;
+    margin: 30px;
+}
+#p02 {
+    background-color:lightgrey;
+    border: 3px #ffd180;
+    padding: 10px;
+    font-size: 16px;
+    margin: 30px;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+#p03 {
+    color:black;
+    text-align:left;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px;
+}
+#p04 {
+    text-align:left;
+    background-color:lightgrey;
+    color:black;
+    padding: 10px;
+    margin: 30px;
+    font-size: 16px;
+}
+#p05{
+    background-color:#1C75BC;
+    color: white;
+    text-align:center;
+    font-size: 30px;
+    border: 3px solid grey;
+    padding: 10px;
+    margin: 30px;
+}
+section {
+    width:350px;
+    float:left;
+    padding:15px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+footer {
+    background-color:#eee;
+    color:grey;
+    clear:both;
+    text-align:center;
+}
+</style>
+</head>
+<ul>
+    
+    <li><a href="#top">Top of Page</a></li>
+    <li><a href="#object">Object Instance: Antiviral Resistance Detection</a></li>
+    <li><a href="#pipeline">Object Instance:<br />Viral Mutation Detection Pipeline</a></li>
+    <li><a href="#type">Type Definition:<br />Antiviral Resistance Pipeline</a></li>
+    <li><a href="#definition">Type Definition:<br />Pipeline Definition Type</a></li>
+    <li><a href="#biocompute">Type Definition:<br />Base Biocompute Type</a></li>
+    <li><a href="#metadata">Type Definition:<br />Base Metadata Type</a></li>
+    <li><a href="#attribute">Object Attribute Descriptions:<br />Descriptions of the various fields and their function</a></li>
+    
+</ul>
+                        <a name="top">
+<body>
+    <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+<header>
+    <h1>Biocompute Object Example Draft 01</h1>
+    <h2>Antiviral Resistance Detection</h2>
+</header>
+<h3>
+    <p id="p01">
+        Explanation
+    </p>
+</h3>
+<p id="p03">
+A biocompute object is a metadata record of an experimental instance; it has everything needed to reproduce a single <i>in silico</i> experiment. It contains references to all input data, all arguments of the underlying software application, and all version information of the executable program/programs used to run the bioinformatics computations.<br />
+Extending this idea, a complex web of separate objects is still a single instance where ALL the input, output, and parameters serve the same function as in a singular instance, and can therefore be joined with other similar objects. The biocompute object example used here is a combination of two separate computations that have been joined into one pipeline. This example can serve as inspiration for complex pipelines created by joining the appropriate nodes (inputs and outputs) of other biocompute objects. On this page we demonstrate how all information from one experimental instance can be easily captured in an extensible and human readable format.<br />
+<small><a href="http://www.futuremedicine.com/doi/abs/10.2217/bmm.15.63" target="_blank">This draft object was created using the protocol and results developed by Donaldson, et al. 2015.</a><small>
+</p>
+<hr>
+                        <a name="object">
+<h2>
+    <p id="p05">
+        Object Instance:<br />
+        Antiviral Resistance Detection<br />
+    </p>
+</h2>
+<h3>
+    <p id="p01">
+        Object Instance:
+    </p>
+</h3>
+<p id="p03">
+The objectives of this biocompute object are to:<br /> 
+1) Identify baseline single nucleotide polymorphisms (SNPs), insertions, and deletions that correlate with reduced antiviral drug efficacy,<br /> 
+2) Identify treatment emergent amino acid substitutions that correlate with antiviral drug treatment failure, and <br />
+3) Determine whether the treatment emergent amino acid substitutions identified correlate with treatment failure involving other drugs against the same virus.<br />
+</p>
+
+<section1>
+    <p id="p02">
+{
+    "<a href="#id">id</a>": "BH1",
+    "<a href="#_type">_type</a>": "antiviral_resistance_detection",
+    "<a href="#name">name</a>": "Antiviral Resistance Detection",
+    "<a href="#description">description</a>": "Identification of Antiviral Drug Resistance-Associated Substitutions in NGS Clinical Trial Data",
+    "<a href="#validation">validation</a>:":"manual"
+    "<a href="#creation_date">creation_date</a>": "Mon Jun 6 2016 13:25:21 EDT 2016",
+    "<a href="#modification_date">modification_date</a>": "Thu Jun 9 08:12:14 EDT 2016",
+    "<a href="#publication_status">publication_status</a>": "draft",
+    "<a href="#key_desc">keywords</a>": [
+        "antiviral",
+        "antiviral resistance",
+        "mutation"
+    ],
+    "<a href="#usability_domain">usability_domain</a>": [
+        "Identify baseline single nucleotide polymorphisms (SNPs), insertions, and deletions that correlate with reduced ledipasvir antiviral drug efficacy in Hepatitus C virus subtype 1",
+        "Identify treatment emergent amino acid substitutions that correlate with antiviral drug treatment failure",
+        "Determine whether the treatment emergent amino acid substitutions identified correlate with treatment failure involving other drugs against the same virus"
+    ],
+    "<a href="#authors">authors</a>": [
+        {
+            "first_name": "Charles",
+            "last_name": "Darwin",
+            "affiliation": "HMS Beagle"
+        },
+        {
+            "first_name": "Rosalind",
+            "last_name": "Franklin",
+            "affiliation": "King's College, London"
+        },
+    ],
+    "<a href="#pipeline">pipeline</a>": {
+        "<a href="#name">name</a>": "Viral Mutation Detection Pipeline",
+        "version": 1.2,
+        "id": 0000002
+    },
+    "<a href="#alignment">alignment</a>": {
+        "_row": "input",
+        "<a href="#alignment">minimum_match_len</a>": 100,
+        "<a href="#alignment">mismatch_allowed</a>": 10
+    },
+    "<a href="#variant_calling">variant_calling</a>": {
+        "_row": "input",
+        "<a href="#variant_calling">min_coverage</a>": 10,
+        "<a href="#variant_calling">freq_cutoff</a>": 0.10
+    },
+    "<a href="#reference_sequences">reference_sequences</a>": 
+        "_row": "input", {
+        "sequence": [
+            "ABC123",
+            "CDE234"
+            ]
+    },
+    "<a href="#ngs_reads">ngs_reads</a>": {
+        "_row": "input",
+        "sequence": [
+            3456,
+            3457
+            ]
+    },
+    "<a href="#snv_profile">snv_profile</a>": {
+        "_row": "output",
+        "filename": "SNPProfile.csv"
+    },
+    "<a href="#alignment_file">alignment_file</a>": {
+        "_row": "output",
+        "filename": "_.sam"
+    },
+    "<a href="#aminoacid_calls">aminoacid_calls</a>": {
+        "_row": "output",
+        "filename": "AAcalls.csv" 
+    }
+}
+    </p>
+</section1>
+
+<hr>
+                        <a name="pipeline">
+<h2>
+    <p id="p05">
+        Object Instance:<br />
+        Viral Mutation Detection Pipeline<br />
+    </p>
+</h2>
+<h3>
+    <p id="p01">
+        Object Instance: Pipeline Definition
+    </p>
+</h3>
+<p id="p03">
+This is a demonstration of how one object can link to another. This object is a pipeline definition which contains the system and version information about the pipeline. Rather than having to define these fields for each separate instance, another object can hold the specific information for the instance, and be linked to in the experimental instance. 
+</p>
+
+<section1>
+    <p id="p02">
+{
+    "<a href="#id">_id</a>": "PH2",
+    "<a href="#_type">_type</a>": "pipeline_definition",
+    "<a href="#name">name</a>": "<a name"pipeline">HIVE-Viral Mutation Detection Pipeline</a>",
+    "<a href="#description">description</a>": "HIVE-Viral Mutation Detection uses two HIVE tools: Hexagon for alignment and Heptagon for variant calling. Only the options that need to be selected or changed are listed.",
+    "<a href="#tool_used">tool_used</a>": [ 
+        {
+        "<a href="#name">name</a>": "HIVE-hexagon",
+        "version": 1.3,
+        "arguments": { 
+            "seed": 16,
+            "divergence_threshold_percent": 15,
+            "minimum_match_len":100
+        }
+    },
+    {
+        "<a href="#name">name</a>": "HIVE-heptagon",
+        "version": 1.1, 
+        "arguments": {
+            "min_coverage": 10,
+            "freq_cutoff": 0.10
+        }
+    }
+    ]
+}
+    </p>
+</section1>
+                        <a name="type">
+<h2>
+    <p id="p05">
+        Type Definition:<br />
+        Antiviral Resistance Pipeline <br />
+    </p>
+</h2>
+<h3>
+    <p id="p01">
+        Pipeline Data Type 
+    </p>
+</h3>
+<p id="p03">
+To create an instance (the biocompute object, or experiment record), the data type for that instance first needs to be defined. This is like writing a protocol before you conduct an experiment. A data type is a set of field and attributes related to specific object type, or a list of the input, output, and variables.<br />  
+In a data type, the field-attribute collection is specified and a label is assigned for the collection.<br />In other words, we make a list of the different values and then define what can be put in those values. Then we name the list.<br />
+</p>
+<section1>
+    <p id="p02">
+{
+    "<a href="#_type">_type</a>": "type",
+    "<a href="#name">name</a>": "antiviral_resistance_pipeline",
+    "<a href="#description">description</a>": "This pipeline uses an aligner and then a profiler to detect possible mutations involved in drug resistance.",
+    "<a href="#_fields">_fields</a>": {
+        "<a name="reference_sequences">reference_sequences</a>": {
+            "<a href="#description">description</a>": "reference sequences can be either FASTA from known sources or identifiers from HIVE database",
+            "<a href="#_type">_type</a>": "<a href="#string">string<a/>",
+            "<a href="#_vital">_vital<a/>": "<a href="#true">true<a/>",
+            "<a href="#_plural">_plural<a/>": "<a href="#true">true<a/>"
+        },
+        "<a name="ngs_reads">ngs_reads</a>": {
+            "<a href="#description">description</a>": "sequences can be either FASTA from experimental sources or identifiers from HIVE database",
+            "<a href="#_type">_type</a>": "<a href="#string">string<a/>",
+            "<a href="#_vital">_vital<a/>": "<a href="#true">true<a/>",
+            "<a href="#_plural">_plural<a/>": "<a href="#true">true<a/>"
+        },
+<a name="align_desc">
+        "<a name="alignment">alignment</a>": {
+            "<a href="#description">description</a>": "arguments for the alignment. Defaults are recommended for this type of analysis",
+            "seed": {
+                "<a href="#_type">_type</a>": "<a href="#integer">integer</a>",
+                "<a href="#_default">_default<a/>": 16
+            },
+            "<a name="minimum_match_len">minimum_match_len,</a>": { 
+                "<a href="#_type">_type</a>": "<a href="#integer">integer</a>",
+                "<a href="#_default">_default<a/>": 75
+            },
+            "divergence_threshold_percent": {
+                "<a href="#_type">_type</a>": "<a href="#real">real</a>",
+                "<a href="#_default">_default<a/>": 15
+            }
+        },
+        "<a name="variant_calling">variant_calling</a>": {
+            "<a href="#description">description</a>": "arguments for the variant calling. Defaults are recommended for this type of analysis",
+            "minimum_coverage": { 
+                "<a href="#_type">_type</a>": "<a href="#integer">integer</a>",
+                "<a href="#_default">_default<a/>": 10
+            },
+            "frequency_cutoff": {
+                "<a href="#_type">_type</a>": "<a href="#real">real</a>",
+                "<a href="#_default">_default<a/>": 0.10
+            }
+        },
+        "<a name="snv_profile">snv_profile</a>: {
+            "<a href="#description">description</a>": "The output file containing the SNP Profile",
+            "<a href="#format">format </a>": ".csv",
+            "<a href="#filename">filename </a>": "SNPProfile.csv"
+        },
+        "<a name="alignment_file">alignment_file</a>": { 
+            "<a href="#description">description</a>": "The resulting alignment file from the Hexagon computation",
+            "<a href="#format">format </a>": "sam",
+            "<a href="#filename">filename </a>": "_.sam"
+        },
+        "<a name="aminoacid_calls">aminoacid_calls</a>": { 
+            "<a href="#description">description</a>": "the amino acid calls from Heptagon",
+            "<a href="#format">format </a>": ".csv",
+            "<a href="#filename">filename </a>":"AAcalls.csv"
+        }
+    },
+    "<a href="#_inherits">_inherits</a>": ["<a href="#biocompute">base_biocompute_type</a>",]
+}
+    <p />
+</section1>
+
+
+                        <a name="definition">
+<h2>
+    <p id="p05"> 
+        Type Definition: <br />
+        Pipeline Definition Type
+    </p>
+</h2>
+<h3>
+    <p id="p01">
+            Type: Pipeline Definition
+    </p>
+</h3>
+<p id="p03">
+A pipeline is a set of computations connected in series, where the output of one element can be part or all of the input for the next element. To have the pipline_definition type we used earlier we need to define the elements that make up that type. Then we can use this type to create an object to describe any pipeline. 
+</p>
+<section1>
+    <p id="p02">
+{
+    "<a href="#_type">_type</a>": "type",
+    "<a href="#name">name</a>": "pipeline_definition",
+    "<a href="#description">description</a>": "This type defines the elements that can be present in the pipeline_definition objects.  pipeline_definition objects list all of the system information and tools needed to execute an established pipeline.",
+    "_fields": {
+        "system": {
+            "description": "The system field is for listing all system OS versions as well as hardware requirements and settings.",
+            "_type": "string"
+        },
+        "<a name="tool_used">tool_used</a>": {
+            "<a href="#description">description</a>": "This feild is for describing all information about the specific bioinformatic tools used. name and version fields are present, as well as the argument field. The argument field is a plural field and should be used for each individual argument of each tool.",
+            "<a href="#name">name</a>": {
+                "<a href="#_type">_type</a>": "string",
+                "<a href="#_vital">_vital<a/>": "true"
+            },
+            "version": {
+                "<a href="#_type">_type</a>": "string",
+                "<a href="#_vital">_vital<a/>": "true"
+            },
+            "arguments": {
+                "<a href="#_type">_type</a>": "string",
+                "<a href="#_vital">_vital<a/>": "true",
+                "<a href="#_plural">_plural<a/>": "true"
+            }
+        }
+    }
+}
+    </p>
+</section1>
+                        <a name="biocompute">
+<h2>
+    <p id="p05"> 
+        Type Definition: <br />
+        Base Biocompute Type 
+    </p>
+</h2>
+<h3>
+    <p id="p01">
+        Data Type
+    </p>
+</h3>
+<p id="p03">
+More complex and new types are created by the generation of extensible data types. Inheritance and inclusions are the two ways we use to extend a data format. In the case of inheritance, it is assumed that a more advance data type inherits all the fields from a simpler type and then extends the content only with additional field value pairs. As for inclusion, a particular field which was previously declared complex type includes all of the simpler data type. In this way we define the Base Biocompute Type with the fields necessary for all biocompute objects. This simple type is extended in complexity as needed by creating the pipeline type that is specific for each pipeline.<br />
+</p>
+<section1>
+    <p id="p02">
+{
+    "<a href="#_type">_type</a>": "type",
+    "<a href="#name">name</a>": "base_biocompute_type",
+    "<a href="#description">description</a>": "Provides the base fields to populate in a biocompute object",
+    "<a href="#_fields">_fields</a>": {
+        "<a name="validation">validation</a>": {
+            "<a href="#description">description</a>": "Describes the position of an object in the validation process. The "unreviewed" flag indicates that the object has been submitted, but no further curation has occurred. The "in_progress" flag indicates that validation is underway. "manual" indicates that the object has been manually validated. The "suspended" flag indicates an object that was once valid is no longer considered valid. The "error" flag indicates that an error was detected with the biocompute object.",
+            "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>",
+            "<a href="#_limit">_limit</a>": {
+                "choice": [
+                    "unreviewed",
+                    "in_progress",
+                    "manual",
+                    "suspended",
+                    "error"
+                    ]
+            }
+        },
+        "<a href="#usability_domain">usability_domain</a>": {
+            "<a href="#description">description</a>": "Provides a space for the author to define the usability domane of an object."
+            "_type": "string",
+            "_vital": "true",
+            "_plural": "true"
+        }
+        "pipeline" : {
+                "<a href="#description">description</a>": "defines the fields that have to be populated for a tool description in the pipeline of a biocompute object",
+            "tool": {
+                "<a href="#name">name</a>": {
+                    "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>",
+                    "<a href="#_vital">_vital<a/>": "<a href="#true">true<a/>",
+                },
+                "version" : {
+                    "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>",
+                    "<a href="#_vital">_vital<a/>": "<a href="#true">true<a/>",
+                },
+                "arguments" : {
+                    "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>",
+                    "<a href="#_vital">_vital<a/>": "<a href="#true">true<a/>",
+                    "<a href="#_plural">_plural<a/>": "<a href="#true">true<a/>",
+                }
+            }
+        }
+    }, 
+    "<a href="#_inherits">_inherits</a>": <a href="#metadata">["base_metadata_type"]</a>
+}
+    </p>
+</section1>
+<h2>
+    <p id="p05">
+        Type Definition:<br />
+        Base Metadata Type<br />
+    </p>
+</h2>
+                        <a name="metadata">
+<h3>
+    <p id="p01">
+        Data Type Hierarchy
+    </p>
+</h3>
+<p id="p03">
+A data type hierarchy contains multiple data objects linked to one another. The field attributes from one data object (the parent type) are inherited by one or many of the other data objects (the child types). In addition to the inherited field attributes, a given child type may have additional field attributes specific to that child type, as we saw above. In this example the Base Metadata Type is not only applicable for biocompute objects, but for any almost any other object type. 
+</p>
+<section1>
+    <p id="p02">
+{
+    "<a href="#_type">_type</a>": "type",
+    "<a href="#name">name</a>": "base_metadata_type",
+    "<a href="#description">description</a>": "Definition of the base metadata type providing fields for the inclusion of outside links, submissions, and information pertinent to the experiment but not critical for the computation.",
+    "<a href="#_fields">_fields</a>": {
+        "<a href="#name">name</a>": {
+            "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>"
+        },
+        "<a name="creation_date">creation_date</a>": {
+            "<a href="#description">description</a>": "The time and date that the object is created/computation was run",
+            "<a href="#_type">_ type<a/>": "<a href="#datetime"> datetime<a/>"
+        },
+        "<a name="modification_date">modification_date</a>: {
+            "<a href="#description">description</a>": "This field will list all the dates and time an object ismodified.",
+            "<a href="#_type">_type</a>":"<a href="#datetime"> datetime<a/>",
+            "<a href="#_plural">_plural<a/>": "<a href="#true">true<a/>"
+        },
+        "<a name="publication_status">publication_status</a>": {
+            "<a href="#description">description</a>": "This is a choice field with four options. The "draft" flag indicates that an object is in draft form and is still being added to or changed. The "open access" flag indicates that an object has been published and is freely available to anyone. The objects with the "private" flag have restrictions on who can view and access them. This is a way for researchers using restricted data or metadata to insure the confidentially is maintained.",
+            "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>",
+            "<a href="#_limit">_limit</a>": {
+                "choice": ["draft", "open access",  "private", "recalled"]
+            }
+        },
+        "<a name="authors">authors</a>: {
+            "<a href="#description">description</a>": "This is the list of authors submitting this object. First and last name are required, middle name and affiliation are not. The affiliation field is for listing the academic,
+governmental, or private entity that supported the project responsible for generating the biocompute object.",
+            "<a href="#_plural">_plural<a/>": "<a href="#true">true<a/>",
+            "first_name": {
+                "<a href="#_type">_ type<a/>":"<a href="#string">string<a/>",
+                "<a href="#_vital">_vital<a/>": "<a href="#true">true<a/>"
+            },
+            "middle_name": {
+                "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>"
+            },
+            "last_name": {
+                "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>",
+                "<a href="#_vital">_vital<a/>": "<a href="#true">true<a/>"
+            },
+            "affiliation": {
+                "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>"
+            }
+        },<a name="key_desc">
+        "<a href="#keywords">keywords</a>": {
+            "<a href="#description">description</a>": "Keywords to aid in search-ability and description of the object. These are a controlled vocabulary.",
+            "<a href="#_type">_ type<a/>": "<a href="#string">string<a/>",
+            "<a href="#_plural">_plural<a/>": "<a href="#true">true<a/>"
+        } 
+    }
+}
+    </p>
+</section>
+                        <a name="attribute">
+<h2>
+    <p id="p05"><br />Object attribute Descriptions<br /><br /></p>
+</h2>
+
+<p id="p01">
+<a name="_type">_type</a>
+</p>
+<p id="p04">
+Object Type:
+This field defines the type of the object.</p>
+
+
+<p id="p01">
+<a name="_inherits">_inherits</a>
+</p>
+<p id="p04">
+Inheritance:
+This field indicates from which object or type the current object or type inherits properties from. Inheritance is when an object or type (class) is based on another object or type. This relationship between objects and types is what gives rise to inheritance. </p>
+
+
+<p id="p01">
+<a name="_limit">_limit</a>
+</p>
+<p id="p04">
+Limited Field:
+This field indicates that only specific values are accepted for entry. If the "choice" is the sub field then the options listed wil be the ones available for selection.</p>
+
+
+<p id="p01">
+<a name="_fields">_fields</a>
+</p>
+<p id="p04">
+Field:
+This is used in the defining of a data type.</p>
+
+
+<p id="p01">
+<a name="_vital">_vital</a>
+</p>
+<p id="p04">
+Vital Field:
+This field indicates that this is a required field.</p>
+
+
+<p id="p01">
+<a name="_plural">_plural</a>
+</p>
+<p id="p04">
+Plural Field:
+This field indicates that this is a field that can take multiple values. Multiple values are permitted, but not required.</p>
+
+
+<p id="p01">
+<a name="_default">_default</a>
+</p>
+<p id="p04">
+Default Value:
+This field indicates that there is a specified default value for this field. This is included to show that the default was not used in the instance</p>
+
+
+<p id="p01">
+<a name="id">id</a>
+</p>
+<p id="p04">
+Object id:
+The object id is a unique identifying value assigned to each object. This value is used for all references to this object and it is not mutable. Unique object ids form the bases of object oriented programing. The unique identity of an abject allows that object to be treated</p>
+
+
+<p id="p01">
+<a name="name">name</a>
+</p>
+<p id="p04">
+Name:
+The user-defined name of the object. This is mutable and has no value other than to the users. It can be any type of text.</p>
+
+
+<p id="p01">
+<a name="description">description</a>
+</p>
+<p id="p04">
+Description:
+The creator-specified description of the object or field in a type. This is mutable and has no value other than to the users. It can be any type of text. This is where documentation type information should be included by the users. This will let other users know the function and purpose of the field/object.
+</p>
+
+
+<p id="p01">
+<a name="format">format</a>
+</p>
+<p id="p04">
+File Format:
+Defines the output format of a file</p>
+
+
+<p id="p01">
+<a name="filename">filename</a>
+</p>
+<p id="p04">
+File Name:
+Defines the name of the output file</p>
+
+
+<p id="p01">
+<a name="string">string</a>
+</p>
+<p id="p04">
+String:
+A string is a data type that stores a sequence of elements, typically characters or references to other objects. 
+</p>
+
+
+<p id="p01">
+<a name="list">list</a>
+</p>
+<p id="p04">
+List:
+A list is a data type that stores a number of elements, typically characters or references to other objects in a list. 
+</p>
+
+
+<p id="p01">
+<a name="datetime">datetime</a>
+</p>
+<p id="p04">
+Date and time:
+This is the class that returns an instance of time.
+</p>
+
+
+<p id="p01">
+<a name="true">true</a>
+</p>
+<p id="p04">
+True Flag:
+This flag is applied to object fields that have a true/false value. 
+</p>
+
+
+<p id="p01">
+<a name="integer">integer</a>
+</p>
+<p id="p04">
+Integer:
+These are numerical characters that have no fractional componenet, or whole numbers. 
+</p>
+
+
+<p id="p01">
+<a name="real">real</a>
+</p>
+<p id="p04">
+Real Numbers:
+Real numbers include all fraction and decimals, as well as the irrational numbers. If the numerical value is the result of, or going to be part of any operations it needs to be classified as a "real". 
+</p>
+
+</table>
+
+<br />
+<br />
+<hr>
+
+</br>
+</br>
+<div>
+<footer>
+    <tr><td class=footer align=center><table align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>&nbsp; <a href="https://hive.biochemistry.gwu.edu/projects/htscsrs/cgi-bin/servlet.cgi">Home</a>
+</td>
+<td>&nbsp; 
+<a href="https://hive.biochemistry.gwu.edu/dna.cgi?cmd=privacy">Privacy Policy</a>
+</td>
+<td>&nbsp; 
+<a href="https://hive.biochemistry.gwu.edu/dna.cgi?cmd=contact">Contact Us</a>
+</td>
+</tr>
+</table>
+<table align="center" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>Project supported through FDA Broad Agency Announcements (BAA) program</td>
+</tr>
+<table align="center" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>Content on this website dose not bind or obligate FDA or GW</td>
+</tr>
+</table>
+</footer>
