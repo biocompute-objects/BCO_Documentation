@@ -1,0 +1,77 @@
+{
+    "id": "BH_1",
+    "_type": "antiviral_resistance_detection",
+    "name": "Antiviral Resistance Detection",
+    "description": "Identification of Antiviral Drug Resistance-Associated Substitutions in NGS Clinical Trial Data",
+    "validation:": "manual",
+    "creation_date": "Mon Jun 6 13:25:21 EDT 2016",
+    "modification_date": "Thu Jun 9 08:12:14 EDT 2016",
+    "publication_status": "draft",
+    "keywords": [
+        "antiviral",
+        "antiviral resistance",
+        "mutation"
+    ],
+    "usability_domain": [
+        "Identify baseline single nucleotide polymorphisms (SNPs), insertions, and deletions that correlate with reduced ledipasvir antiviral drug efficacy in Hepatitus C virus subtype 1",
+        "Identify treatment emergent amino acid substitutions that correlate with antiviral drug treatment failure",
+        "Determine whether the treatment emergent amino acid substitutions identified correlate with treatment failure involving other drugs against the same virus"
+    ],
+    "authors": [
+        {
+            "first_name": "Charles",
+            "last_name": "Darwin",
+            "affiliation": "HMS Beagle"
+        },
+        {
+            "first_name": "Rosalind",
+            "last_name": "Franklin",
+            "affiliation": "King's College, London"
+        }
+    ],
+    "pipeline": {
+        "name": "Viral Mutation Detection Pipeline",
+        "version": 1.2,
+        "id": 2
+    },
+    "svc-align-hexagon": {
+        "_role": "input",
+        "minimum_match_len": 100,
+        "mismatch_allowed": 10
+    },
+    "variant_calling": {
+        "_role": "input",
+        "min_coverage": 10,
+        "freq_cutoff": 0.10
+    },
+    "reference_sequences": {
+        "_role": "input", 
+        "sequence": [
+            "AF011753",
+            "AJ238799",
+            "D14853",
+            "AB047639",
+            "AF238486",
+            "GU814263"
+            ]
+    },
+    "query": {
+        "_role": "input",
+        "sequence": [
+            3456,
+            3457
+            ]
+    },
+    "snv_profile": {
+        "_role": "output",
+        "filename": "SNPProfile.csv"
+    },
+    "alignment_file": {
+        "_role": "output",
+        "filename": "_.sam"
+    },
+    "aminoacid_calls": {
+        "_role": "output",
+        "filename": "AAcalls.csv" 
+    }
+}

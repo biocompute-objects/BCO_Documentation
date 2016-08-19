@@ -1,0 +1,49 @@
+{
+    "_type": "type",
+    "name": "base_metadata_type",
+    "description": "Definition of the base metadata type providing fields for the inclusion of outside links, submissions, and information pertinent to the experiment but not critical for the computation.",
+    "_fields": {
+        "name": {
+            "_ type": "string"
+        },
+        "creation_date": {
+            "description": "The time and date that the object is created/computation was run",
+            "_ type": " datetime"
+        },
+        "modification_date": {
+            "description": "This field will list all the dates and time an object ismodified.",
+            "_type":" datetime",
+            "_plural": "true"
+        },
+        "publication_status": {
+            "description": "This is a choice field with four options. The draft flag indicates that an object is in draft form and is still being added to or changed. The open access flag indicates that an object has been published and is freely available to anyone. The objects with the private flag have restrictions on who can view and access them. This is a way for researchers using restricted data or metadata to insure the confidentially is maintained.",
+            "_ type": "string",
+            "_limit": {
+                "choice": ["draft", "open access",  "private", "recalled"]
+            }
+        },
+        "authors": {
+            "description": "This is the list of authors submitting this object. First and last name are required, middle name and affiliation are not. The affiliation field is for listing the academic, governmental, or private entity that supported the project responsible for generating the biocompute object.",
+            "_plural": "true",
+            "first_name": {
+                "_ type":"string",
+                "_vital": "true"
+            },
+            "middle_name": {
+                "_ type": "string"
+            },
+            "last_name": {
+                "_ type": "string",
+                "_vital": "true"
+            },
+            "affiliation": {
+                "_ type": "string"
+            }
+        },
+        "keywords": {
+            "description": "Keywords to aid in search-ability and description of the object. These are a controlled vocabulary.",
+            "_ type": "string",
+            "_plural": "true"
+        } 
+    }
+}
