@@ -1,6 +1,6 @@
 {
 	"_id": "B4",
-	"_type": "metavisitor_GalaxyWorkflow ",
+	"_type": "galaxy_workflow_metavisitor",
 	"name": "Rapid detection and discovery of viruses in deep sequence data",
 	"version": "1.0",
 	"description": "Small RNA sequencing from D. melanogaster infected by Nora Virus",
@@ -69,17 +69,13 @@
 				"db": "SRA",
 				"id": [
 					"SRR515090", 
-					"SRR513993", 
-					"SRR513992", 
-					"SRR513990", 
-					"SRR513989", 
-					"SRR513981", 
+					"SRR513993",
 					"SRR513901"
 				]
 			}
 		],
 		"virus_profile": {
-			"format": ".csv",
+			"format": [".csv"],
 			"filename": "parse_blastoutput.csv"
 		}
 	}

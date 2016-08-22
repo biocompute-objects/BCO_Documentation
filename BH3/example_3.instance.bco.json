@@ -4,24 +4,26 @@
 	"name": "HIVE Huntington's Disease Detection",
 	"version": "1.0",
 	"description": "Determine the risk of huntington's disease in a gene sequence",
-	"validation": "manual",
+	"verification": "manual",
 	"creation_date": "Thu Aug 4 10:16:32 EDT 2016",
 	"modification_date": "Thu Aug 4 10:16:32 EDT 2016",
 	"publication_status": "draft",
 	"keywords": [
-		"DOID 12858",
 		"Huntington disease",
 		"Huntington's chorea",
 		"CAG repeats",
-		"repeat regions SOID 0000726",
 		"htt mutation",
 		"huntingtin",
 		"hd"
 	],
+	"X-refs": [
+		"DOID:12858",
+		"SOID:0000726"
+		],
 	"usability_domain": [
-		"Determine CAG repeats in a sequence for htt gene 10 - 35 CAG trinucleotide repeats",
-		"Determine risk for huntington's disease 36 - 39 CAG trinucleotide repeats",
-		"Determine whether patient has developed disease 40 and above CAG trinucleotide repeats"
+		"Determine CAG repeats in a sequence for htt gene 10 - 35 CAG trinucleotide repeats: No Risk",
+		"Determine CAG repeats in a sequence for htt gene 36 - 40 CAG trinucleotide repeats: At Risk ",
+		"Determine CAG repeats in a sequence for htt gene 40 and above trinucleotide repeats: High Risk"
 	],
 	"authors": [
 		{
@@ -40,34 +42,23 @@
 		"minimum_coverage": 20,
 		"frequency_cutoff": 0.20
 	},
-	"validation_kit":{
-	   "sequence_reads":
+	"verification_kit":{
+	   "reference_sequence":
 	   {
 			"source": "NCBI",
-			"db": "SRA",
+			"db": "genbank",
 			"id": [
-				"SRR2028290",
-				"SRR2028289",
-				"SRR2028288",
-				"SRR2028287",
-				"SRR2028286",
-				"SRR2028285",
-				"SRR2028284",
-				"SRR2028283",
-				"SRR2028282",
-				"SRR2028281",
-				"SRR2028280",
-				"SRR2028279",
-				"SRR2028278"
+				"NM_0002111.8",
+				"SRR2028290"
 			]
 		},
-		"reference_sequence": {
-			"source": "NCBI",
-			"db": "SRA",
-			"id": "rs7665116"
+		"sequence_reads": {
+			"source": "HIVE",
+			"db": "Honeycomb",
+			"id": ["obj.00001"]
 		},
 		"snp_profile_file": {
-			"format": ".csv",
+			"format": [".csv"],
 			"filename": "SNPProfile.csv"
 	   }
 	}

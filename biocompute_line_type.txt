@@ -37,9 +37,9 @@ line: description
 name:
 note: The creator-specified description of the object or field in a type. Information in this field lets other users know the function and purpose of the object.
 
-line: _validation
-name: Describes the position of an object in the validation process. The 'unreviewed' flag indicates that the object has been submitted, but no further evalutation or validation has occurred. The 'in_progress' flag indicates that validation is underway. the 'reviewed' flag indicates that the biocompute object has been validated and reviewed. The 'manual' flag indicates that the object has been manually validated. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'error' flag indicates that an error was detected with the biocompute object.
-note:
+line: _verification
+name: Describes the position of an object in the verification process. The 'unreviewed' flag indicates that the object has been submitted, but no further evalutation or verification has occurred. The 'in_progress' flag indicates that verification is underway. the 'reviewed' flag indicates that the biocompute object has been verified and reviewed. The 'manual' flag indicates that the object has been manually verified. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'error' flag indicates that an error was detected with the biocompute object.
+note: 
 
 line: _creation_date
 name:
@@ -56,6 +56,10 @@ note: This is a choice field with four options. The 'draft' flag indicates that 
 line: keywords
 name:
 note: Keywords to aid in search-ability and description of the object. These is a set of controlled vocabulary.
+
+line: x-refs
+name: Disease Ontology, Gene Ontology, Sequence Ontology, etc.
+note: The x-refs allows for the ability to cross reference curated scientific resources associated with a specific workflow
 
 line: usability_domain
 name:
@@ -81,13 +85,13 @@ line: _pipeline, id
 name:
 note: Pipeline ID.
 
-line: alignment??
+line: alignment tools
 name:
-note: Aruguments for alignment
+note: Arguments for alignment and parameter settings
 
-line: alignment, _row??
-name:
-note:??
+line: alignment, seed
+name: 
+note: Part of read which is made of a few base pairs. The size of the seed determines accuracy of the results.
 
 line: alignment, minimum_match_len
 name:
@@ -97,41 +101,94 @@ line: alignment, mismatch_allowed
 name:
 note: Mismatches allowed to be considered an alignment.
 
+line: alignment, divergence_threshold_percent
+name:
+note: A filter for the sequences which are clustered in predefined sequence divergent thresholds
+
+line: alignment, mismatch_allowed
+name:
+note: Mismatches allowed to be considered an alignment
+
 line: variant_calling
 name:
-note: Arguments for variant calling. 
-
-line: variant_calling, _row??
-name:
-note: A way to define sections.
+note: Arguments for variant calling which identifies single nucleotide variants (SNVs)
 
 line: variant_calling, min_coverage
 name:
-note: Minimum depth of read coverage required for variant calling. 
+note: Minimum depth of read coverage required for variant calling
 
 line: variant_calling, freq_cutoff
 name:
-note: Percent of reads that should have the single nucleotide variation for variant calling.
+note: Percent of reads that should have the single nucleotide variation for variant calling
 
 line: reference_sequences
 name:
-note: Nucleotide sequences to which the NGS reads are to be mapped.
+note: Nucleotide sequences to which the NGS reads are to be mapped
 
 line: ngs_reads
 name:
-note: Nucleotide reads.
+note: Nucleotide reads
 
 line: snv_profile
 name:
-note: Output of variant calling.
+note: Output of variant calling
+
+line: snp_profiling
+name:
+note: output of SNPs quantification
 
 line: alignment_file
 name:
-note: Output of alignment.
+note: Output of alignment
 
 line: aminoacid_calls
 name:
-note: Output of amino acid calls.
+note: Output of amino acid calls
+
+line: accession_based_results
+name:
+note: output files based on the accession numbers submitted for the workflow
+
+line: format
+name:
+note: the format of the output files based on the accession numbers submitted for for the workflow
+
+line: filename
+name:
+note: name the file according to the workflow or experiment
+
+line: unalignedReads
+name:
+note: an output file containing unaligned reads of the specific workflow
+
+line: hit_list
+name: 
+note: a list with the number of hits done in the specific experiment
+
+line: aminoacid_calls
+name:
+note: output of amino acid calls
+
+line: verification_kit
+name:
+note: mechanism that allows the user to verify the workflow
+
+line: source
+name:
+note: a scientific resource that experimental data such as sequences can be obtained
+
+line: db, database
+name:
+note: repository which stores the sequences and other scientific data
+
+line: sequence_reads
+name:
+note: analyzing and quantifying the sequence data
+
+line: accession_based_results
+name: 
+note: output file with the results obtained
+
 
 #PIPELINE INSTANCE
 - 
