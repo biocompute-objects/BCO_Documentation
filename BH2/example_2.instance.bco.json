@@ -85,11 +85,11 @@
 			"filename": "dnaAccessionBasedResult.csv"
 		},
 		"unalignedReads": {
-			"format": ".fasta",
+			"format": "[.fasta"],
 			"filename": "Unaligned Reads (HIVE_ID).fasta"
 		},
 		"hit_list": {
-			"format": ".csv",
+			"format": [".csv"],
 			"filename": "alCount-Unalignedo541205-alCount--1.csv"
 		}
 	}
