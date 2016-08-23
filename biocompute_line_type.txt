@@ -73,12 +73,12 @@ line: _pipeline
 name:
 note: Pipeline that is used to run the biocompute object.
 
-line: _pipeline, name
+line: _pipeline
 name:
 note: The name of the pipeline that is used to run the biocompute object.
 
-line: _pipeline, version
-name:
+line: _pipeline
+name: 
 note: Version of the pipeline
 
 line: _pipeline, id 
@@ -89,7 +89,7 @@ line: alignment tools
 name:
 note: Arguments for alignment and parameter settings
 
-line: alignment, seed
+line: alignment
 name: 
 note: Part of read which is made of a few base pairs. The size of the seed determines accuracy of the results.
 
@@ -177,8 +177,8 @@ line: source
 name:
 note: a scientific resource that experimental data such as sequences can be obtained
 
-line: db, database
-name:
+line: db
+name: database
 note: repository which stores the sequences and other scientific data
 
 line: sequence_reads
