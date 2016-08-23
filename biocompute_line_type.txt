@@ -38,8 +38,8 @@ name:
 note: The creator-specified description of the object or field in a type. Information in this field lets other users know the function and purpose of the object.
 
 line: _verification
-name: Describes the position of an object in the verification process. The 'unreviewed' flag indicates that the object has been submitted, but no further evalutation or verification has occurred. The 'in_progress' flag indicates that verification is underway. the 'reviewed' flag indicates that the biocompute object has been verified and reviewed. The 'manual' flag indicates that the object has been manually verified. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'error' flag indicates that an error was detected with the biocompute object.
-note: 
+name:
+note: Describes the position of an object in the verification process. The 'unreviewed' flag indicates that the object has been submitted, but no further evalutation or verification has occurred. The 'in_progress' flag indicates that verification is underway. the 'reviewed' flag indicates that the biocompute object has been verified and reviewed. The 'manual' flag indicates that the object has been manually verified. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'error' flag indicates that an error was detected with the biocompute object.
 
 line: _creation_date
 name:
