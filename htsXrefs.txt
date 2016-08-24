@@ -19,7 +19,7 @@ The DbXR_URL field allows to access an entry in the cross referenced database by
 
 ------------------------------------------------------------------------------------------------------
 BO				    : DBN - 0100
-Abbreviation	: 
+Abbreviation	: (double check with Hads)
 Name			    :
 Reference		  :
 RLT				    :
