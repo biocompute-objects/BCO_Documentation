@@ -18,53 +18,53 @@ It lists databases in XR lines which are used as resources for information relat
 The DbXR_URL field allows to access an entry in the cross referenced database by (we will have to write our own script that allows an identifier found in a cross-reference line by the HTS-CSRS Biocompute object number of the entry.
 
 ------------------------------------------------------------------------------------------------------
-BO				: DBN - 0100
+BO				    : DBN - 0100
 Abbreviation	: 
-Name			:
-Reference		:
-RLT				:
+Name			    :
+Reference		  :
+RLT				    :
 Database_URL	:
-Category		:
+Category		  :
 
-BO 				: DBN - 0200
+BO 				    : DBN - 0200
 Abbreviation	:
-Name			:
-Reference		:
-RLT				:
+Name			    :
+Reference		  :
+RLT				    :
 Database_URL	:
-Category		:
+Category		  :
 
-BO				: DBN - 0300
+BO				    : DBN - 0300
 Abbreviation	: nucleotide
-Name			: Genbank
-Reference		: Accession=NM_00028290
-RLT				: Implicit
+Name			    : Genbank
+Reference		  : Accession=NM_00028290
+RLT				    : Implicit
 Database_URL	: http://www.ncbi.nlm.nih.gov/genbank/
-Category		: Sequence database of all publicly available DNA sequences
+Category		  : Sequence database of all publicly available DNA sequences
 
-BO				: DBN - 0400
+BO				    : DBN - 0400
 Abbreviation	: DO
-Name			: Disease-Ontology, standardized ontology for human disease
-Reference		: DOID=12858	
-RLT				: Implicit Links
+Name			    : Disease-Ontology, standardized ontology for human disease
+Reference		  : DOID=12858	
+RLT				    : Implicit Links
 Database_URL	: http://disease-ontology.org/
-Category		: Disease specific database
+Category		  : Disease specific database
 
-BO				: DBN - 0500
+BO				    : DBN - 0500
 Abbreviation	: SO
-Name			: Sequence-ontology
-Reference		: SOID=0000726
-RLT				: Implicit Links
+Name			    : Sequence-ontology
+Reference		  : SOID=0000726
+RLT				    : Implicit Links
 Database_URL	: http://www.sequenceontology.org/browser/obob.cgi	
-Category		: Ontology database that defines sequence features
+Category		  : Ontology database that defines sequence features
 
-BO				: DBN - 0600
+BO				    : DBN - 0600
 Abbreviation	: SRA
-Name			: Sequence Read Archive
-Reference		: SRA=SRR2028290
-RLY				: Implicit
+Name			    : Sequence Read Archive
+Reference		  : SRA=SRR2028290
+RLY				    : Implicit
 Database_URL	: http://www.ncbi.nlm.nih.gov/sra
-Category		: A database that stores raw sequencing data and alignment information
+Category		  : A database that stores raw sequencing data and alignment information
 
 
 
