@@ -68,7 +68,7 @@ note: Keywords to aid in search-ability and description of the object. These are
 line: verification
 name: verification
 note: Describes the position of an object in the verification process. The 'unreviewed' flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The 'in_progress' flag indicates that verification is underway. the 'reviewed' flag indicates that the biocompute object has been verified and reviewed. The 'manual' flag indicates that the object has been manually verified. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'error' flag indicates that an error was detected with the biocompute object.
-
+\
 line: usability_domain
 name: usability domain
 note: This field provides a space for the author to define the usability domane of an object. The usability domain along with keywords can help determine when and how the biocompute object can be used. Novel use of the biocompute object should result in the creation of a new entry.  
@@ -86,7 +86,7 @@ note: refers to the parent type that the type inherits fields from.
 
 line: tool_used
 name: tool used
-note: This feild is for describing all information about the specific bioinformatic tools used. name and version fields are present, as well as the argument field. The argument field is a plural field and should be used for each individual argument of each tool.
+note: This field is for describing all information about the specific bioinformatic tools used. name and version fields are present, as well as the argument field. The argument field is a plural field and should be used for each individual argument of each tool.
 
 #PIPELINE DATA TYPE
 - To create an instance of a workflow (biocompute object), the data type for that instance first needs to be defined. A data type is a set of field and attributes related to specific object type, or a list of the input, output, and variables. In a data type, the file-attribute collection is specified and a label is assigned for the collection. In other words, a list of the different values is defined and then what can be put in those values is specified.
