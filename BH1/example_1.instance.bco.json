@@ -13,6 +13,10 @@
 		"antiviral resistance",
 		"mutation"
 	],
+	"X-refs": [
+		"",
+		""
+		],
 	"usability_domain": [
 		"Identify baseline single nucleotide polymorphisms (SNPs), insertions, and deletions that correlate with reduced ledipasvir antiviral drug efficacy in Hepatitus C virus subtype 1",
 		"Identify treatment emergent amino acid substitutions that correlate with antiviral drug treatment failure",
