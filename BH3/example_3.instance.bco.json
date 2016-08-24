@@ -16,10 +16,10 @@
 		"huntingtin",
 		"hd"
 	],
-	"X-refs": [
-		"DOID:12858",
-		"SOID:0000726"
-		],
+	"X-refs": {
+		"DOID":["12858"],
+		"SOID":["0000726"]
+		},
 	"usability_domain": [
 		"Determine CAG repeats in a sequence for htt gene 10 - 35 CAG trinucleotide repeats: No Risk",
 		"Determine CAG repeats in a sequence for htt gene 36 - 40 CAG trinucleotide repeats: At Risk ",

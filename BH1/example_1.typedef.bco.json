@@ -20,7 +20,7 @@
 			"_plural": "true"
 		},
 		"alignment": {
-			"description": "Non-default arguments for the alignment, HIVE Hexagon",
+			"description": "Arguments for the alignment, HIVE Hexagon",
 			"title": "HIVE Hexagon Alignment Engine",
 			"seed": {
 				"_type": "integer",

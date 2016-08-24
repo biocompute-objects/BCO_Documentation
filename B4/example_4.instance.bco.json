@@ -13,6 +13,10 @@
 		"virus discovery small RNA sequencing",
 		"Virus deep sequence data"
 	],
+	"X-refs": [
+		"",
+		""
+		],
 	"usability_domain": [
 		"Detect and reconstruct viral genomes from sequencing datasets",
 		"Works with DNA, RNA or small RNA sequencing data that provide different read lengths and can use a combination of a de novo and guided approaches to assemble viral genomes from sequencing reads",
