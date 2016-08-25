@@ -1,0 +1,134 @@
+---------------------------------------------------------------------------------------------------
+High-Throughput Sequencing Computational Standards for Regulatory Sciences (HTS-CSRS)Knowlegebase:
+HTS-CSRS Biocompute Knowledgebase:
+HTS-CSRS George Washington University Washington, DC, USA
+US Food and Drug Administration (FDA) Silverspring, MD, USA
+----------------------------------------------------------------------------------------------------
+
+Description:	Databases cross-references in HTS-CSRS
+Name:			dbxref.txt
+Release:		2016 of Aug-24-2016
+
+-----------------------------------------------------------------------------------------------------
+
+This document lists all the databases that are cross referenced in HTS CSRS biocomputes. The data bases that are specifically mentioned in the "web resource" comment topic of HTS-CSRS are not listed. 
+
+It lists databases in XR lines which are used as resources for information related to biocompute entries and are found in resources other than HTS-CSRS.
+
+The DbXR_URL field allows to access an entry in the cross referenced database by (we will have to write our own script that allows an identifier found in a cross-reference line by the HTS-CSRS Biocompute object number of the entry.
+
+------------------------------------------------------------------------------------------------------
+BO				    : DBN - 0100
+Abbreviation	: (double check with Hads)
+Name			    :
+Reference		  :
+RLT				    :
+Database_URL	:
+Category		  :
+
+BO 				    : DBN - 0200
+Abbreviation	:
+Name			    :
+Reference		  :
+RLT				    :
+Database_URL	:
+Category		  :
+
+BO				    : DBN - 0300
+Abbreviation	: nucleotide
+Name			    : Genbank
+Reference		  : Accession=NM_00028290
+RLT				    : Implicit
+Database_URL	: http://www.ncbi.nlm.nih.gov/genbank/
+Category		  : Sequence database of all publicly available DNA sequences
+
+BO				    : DBN - 0400
+Abbreviation	: DO
+Name			    : Disease-Ontology, standardized ontology for human disease
+Reference		  : DOID=12858	
+RLT				    : Implicit Links
+Database_URL	: http://disease-ontology.org/
+Category		  : Disease specific database
+
+BO				    : DBN - 0500
+Abbreviation	: SO
+Name			    : Sequence-ontology
+Reference		  : SOID=0000726
+RLT				    : Implicit Links
+Database_URL	: http://www.sequenceontology.org/browser/obob.cgi	
+Category		  : Ontology database that defines sequence features
+
+BO				    : DBN - 0600
+Abbreviation	: SRA
+Name			    : Sequence Read Archive
+Reference		  : SRA=SRR2028290
+RLY				    : Implicit
+Database_URL	: http://www.ncbi.nlm.nih.gov/sra
+Category		  : A database that stores raw sequencing data and alignment information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________________________________________________________
+NOTES:
+XR lines denotes cross-reference lines
+BO number - Biocompute object number
+DBN - Denotes database numbers that is assigned by HTS-CSRS 
+RLT - resource link type
+Explicit Link - Information that is stored directly in HTS-CSRS as a flat file
+Implicit links - referencing out of HTS-CSRS
