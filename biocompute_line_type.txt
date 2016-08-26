@@ -1,7 +1,7 @@
 
 ________________________________________________________________________________
         
-                          Biocompute Object
+                          Biocompute Object 
         
 ________________________________________________________________________________
 
@@ -230,4 +230,4 @@ note: Non-default arguments for the tool.
 
 line: _fields
 name:
-note: The fields present in base metadata type.
+note: The fields present in the type.
