@@ -4,7 +4,7 @@
 	"name": "Human Gut Metagenomic Detection Pipeline",
 	"description": [
 		"HIVE-Metagenomic Detection Pipeline uses two HIVE tools: CensuScope for detection and Hexagon for alignment. Only the options that need to be selected or changed are listed.",
-		"Iteration 1: Input is raw paired end read file. Files are un through CensuScope and then the accessions that are detected above our threshold (10 hits) are used for the references and then the same read files are used as the query files. The Hexagon Hit list and unaligned read files are outputs.",
+		"Iteration 1: Input is raw paired end read file. Files are unthourough CensuScope and then the accessions that are detected above our threshold (10 hits) are used for the references and then the same read files are used as the query files. The Hexagon Hit list and unaligned read files are outputs.",
 		"Iteration 2: The unaligned read file from the previous iteration is used as the input for CensuScope and Hexagon, with the resulting accessions from CensuScope serving as references for the alignemnt. A new unaligned read file and a new 'HitList' file is created from this alignemnt.",
 		"Iteration 3: The unaligned read file from the previous iteration is used as the input for CensuScope and Hexagon, with the resulting accessions from CensuScope serving as references for the alignemnt. All three 'HitList' file are combined into one sampel result."],
 	"workflow": {
