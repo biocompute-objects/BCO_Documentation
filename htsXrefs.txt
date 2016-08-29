@@ -46,31 +46,31 @@ Class			: Sequence database of all publicly available DNA sequences
 id				: DBN.0400
 Abbreviation	: DO
 Name			: Disease-Ontology, standardized ontology for human disease
-Reference		: DOID=12858	
+Reference		: Pumed=PMID:25348409	
 Server			:
 Database_URL	: http://disease-ontology.org/
 Class			: Disease specific database
 
 id				: DBN.0500
-Abbreviation	: International Clasification of Diseases (Tenth Edition)
-Name			: ICD10Data
-Reference		: ICD10CM:G10
+Abbreviation	: ICD10
+Name			: International Classification of Disease (Tenth Edition)
+Reference		: Pubmed=PMID24480646
 Server			:http://www.icd10data.com/
 Database_URL	: http://www.icd10data.com/Search.aspx?search=G10
-Class			: A database that consists of all clinical 
+Class			: A database that consists of all clinical codes
 
 id				: DBN.0600
 Abbreviation	: SRA
 Name			: Sequence Read Archive
-Reference		: SRA=SRR2028290
-Server			:
+Reference		: Pubmed=PMID:21062823
+Server			:http://www.ncbi.nlm.nih.gov/
 Database_URL	: http://www.ncbi.nlm.nih.gov/sra
 Class			: A database that stores raw sequencing data and alignment information
 
 id				: DBN.0700
 Abbreviation	: KEGG
 Name			: Kyoto Encyclopedia of Genes and Genomes
-Reference		: KEGG:05016
+Reference		: Pubmed=PMID:9847135
 Server			: http://www.genome.jp/kegg/
 Database_URL	: http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=05016
 Class			: A database resource for understanding high-level and utilities of the biological system
@@ -84,7 +84,22 @@ Database_URL  :
 Class         :
 
 id            :
-Abbreviation
+Abbreviation  :
+Name          :
+Reference     :
+Server        :
+Database_URL  :
+Class         :
+
+id            :
+Abbreviation  :
+Name          :
+Reference     :
+Server        :
+Database_URL  :
+Class         :
+
+
 
 
 
