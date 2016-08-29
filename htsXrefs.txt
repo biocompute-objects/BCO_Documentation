@@ -28,12 +28,12 @@ Database_URL	: https://hive.biochemistry.gwu.edu/dna.cgi?cmd=propget&ids=%s&raw=
 Class			: all
 
 id 				: DBN.0200
-Abbreviation	:
-Name			:
-Reference		:
-Server			:
-Database_URL	:
-Class			:
+Abbreviation	: GO
+Name			: Gene Ontology Consortium
+Reference		: PMID=10802651
+Server			: http://geneontology.org/
+Database_URL	: http://amigo.geneontology.org/amigo/medial_search?q=htt
+Class			: Gene ontology database
 
 id				: DBN.0300
 Abbreviation	: nucleotide
@@ -75,15 +75,15 @@ Server			: http://www.genome.jp/kegg/
 Database_URL	: http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=05016
 Class			: A database resource for understanding high-level and utilities of the biological system
 
-id            :
-Abbreviation  :
-Name          :
-Reference     :
-Server        :
-Database_URL  :
-Class         :
+id            : 0800
+Abbreviation  : OMIM
+Name          : Online Mendalian Inheritance in Man
+Reference     : Pubmed=PMID1062823
+Server        : http://www.ncbi.nlm.nih.gov/
+Database_URL  : http://www.ncbi.nlm.nih.gov/omim
+Class         : Database of human genes and genetic phenotypes
 
-id            :
+id            : 
 Abbreviation  :
 Name          :
 Reference     :
