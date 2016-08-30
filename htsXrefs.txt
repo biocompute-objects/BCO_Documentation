@@ -32,15 +32,15 @@ Abbreviation	: GO
 Name			: Gene Ontology Consortium
 Reference		: PMID=10802651
 Server			: http://geneontology.org/
-Database_URL	: http://amigo.geneontology.org/amigo/medial_search?q=htt
+Database_URL	: http://amigo.geneontology.org/amigo/medial_search?q=%s
 Class			: Gene ontology database
 
 id				: DBN.0300
 Abbreviation	: nucleotide
-Name			: Genbank
+Name			: Nucleotide
 Reference		: Accession=NM_00028290
-Server			:
-Database_URL	: http://www.ncbi.nlm.nih.gov/genbank/
+Server			: http://www.ncbi.nlm.nih.gov/nuccore
+Database_URL	: http://www.ncbi.nlm.nih.gov/nuccore/?term=%s
 Class			: Sequence database of all publicly available DNA sequences
 
 id				: DBN.0400
@@ -56,15 +56,15 @@ Abbreviation	: ICD10
 Name			: International Classification of Disease (Tenth Edition)
 Reference		: Pubmed=PMID24480646
 Server			:http://www.icd10data.com/
-Database_URL	: http://www.icd10data.com/Search.aspx?search=G10
+Database_URL	: http://www.icd10data.com/Search.aspx?search=%s
 Class			: A database that consists of all clinical codes
 
 id				: DBN.0600
 Abbreviation	: SRA
 Name			: Sequence Read Archive
 Reference		: Pubmed=PMID:21062823
-Server			:http://www.ncbi.nlm.nih.gov/
-Database_URL	: http://www.ncbi.nlm.nih.gov/sra
+Server			:http://www.ncbi.nlm.nih.gov/sra
+Database_URL	: http://www.ncbi.nlm.nih.gov/sra/?term=%s
 Class			: A database that stores raw sequencing data and alignment information
 
 id				: DBN.0700
@@ -72,15 +72,15 @@ Abbreviation	: KEGG
 Name			: Kyoto Encyclopedia of Genes and Genomes
 Reference		: Pubmed=PMID:9847135
 Server			: http://www.genome.jp/kegg/
-Database_URL	: http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=05016
+Database_URL	: http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=$s
 Class			: A database resource for understanding high-level and utilities of the biological system
 
 id            : 0800
 Abbreviation  : OMIM
 Name          : Online Mendalian Inheritance in Man
 Reference     : Pubmed=PMID1062823
-Server        : http://www.ncbi.nlm.nih.gov/
-Database_URL  : http://www.ncbi.nlm.nih.gov/omim
+Server        : http://www.ncbi.nlm.nih.gov/omim
+Database_URL  : http://www.ncbi.nlm.nih.gov/omim/?term=%s
 Class         : Database of human genes and genetic phenotypes
 
 id            : 
