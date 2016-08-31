@@ -83,13 +83,13 @@ Server        : http://www.ncbi.nlm.nih.gov/omim
 Database_URL  : http://www.ncbi.nlm.nih.gov/omim/?term=%s
 Class         : Database of human genes and genetic phenotypes
 
-id            : 
-Abbreviation  :
-Name          :
-Reference     :
-Server        :
-Database_URL  :
-Class         :
+id            : 0900
+Abbreviation  : ORCID
+Name          : Open Researcher and Contributor ID
+Reference     : Pubmed=PMID26952357
+Server        : http://orcid.org/
+Database_URL  : https://orcid.org/orcid-search/quick-search?searchQuery=%s
+Class         : Repository that stores codes that uniquely identify scientific and other academic authors and contributors
 
 id            :
 Abbreviation  :
