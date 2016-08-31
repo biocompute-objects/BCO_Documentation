@@ -1,20 +1,16 @@
 ---------------------------------------------------------------------------
-        UniProt Knowledgebase:
-          Swiss-Prot Protein Knowledgebase
-          TrEMBL Protein Database
-        SIB Swiss Institute of Bioinformatics; Geneva, Switzerland
-        European Bioinformatics Institute (EBI); Hinxton, United Kingdom
-        Protein Information Resource (PIR); Washington DC, USA
+        HTS-CSRS Knowledgebase:
+        High-throughput Sequencing Computational Standards for Regulatory Sciences; Washington DC, USA
 ---------------------------------------------------------------------------
 
 Description: Controlled vocabulary of keywords
 Name:        keywlist.txt
-Release:     2016_07 of 06-Jul-2016
+Release:     2016-08-31
 
 ---------------------------------------------------------------------------
 
-  This document lists the keywords and categories used in the UniProt
-  knowledgebase (Swiss-Prot and TrEMBL). The keywords are classified into
+  This document lists the keywords and categories used in the HTS-CSRS
+  knowledgebase (HTS-CSRS Biocompute object). The keywords are classified into
   the following 10 categories:
 
     * Biological process
@@ -36,10 +32,11 @@ Release:     2016_07 of 06-Jul-2016
   ---------  ---------------------------     ------------------------------
   ID         Identifier (keyword)            Once; starts a keyword entry
   IC         Identifier (category)           Once; starts a category entry
-  AC         Accession (KW-xxxx)             Once
+  BO         Biocompute object ID (BO-xxxx)             Once
   DE         Definition                      Once or more
   SY         Synonyms                        Optional; once or more
   GO         Gene ontology (GO) mapping      Optional; once or more
+  DO         Disease Ontology (DO) mapping   Optional; once or more
   HI         Hierarchy                       Optional; once or more
   WW         Relevant WWW site               Optional; once or more
   CA         Category                        Once per keyword entry;
@@ -49,12 +46,12 @@ Release:     2016_07 of 06-Jul-2016
 ___________________________________________________________________________
 
 IC   Disease.
-AC   KW-9995
-DE   Keywords assigned to proteins because they are involved in a specific
+BO   BO_000000
+DE   Keywords assigned to biocompute because they are involved in a specific
 DE   disease.
 //
 ID   Disease mutation.
-AC   KW-0225
+BO   KW-0225
 DE   Protein for which at least one variant, responsible for a disease, is
 DE   described in the feature table of its Swiss-Prot entry.
 HI   Disease: Disease mutation.
