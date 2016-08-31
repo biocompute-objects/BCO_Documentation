@@ -9,20 +9,14 @@
 	"modification_date": "Thu Aug 4 10:16:32 EDT 2016",
 	"publication_status": "draft",
 	"keywords": [
-		"Huntington disease",
-		"Huntington's chorea",
-		"CAG repeats",
-		"htt mutation",
-		"huntingtin",
-		"hd"
+		"disease",
+		"human disease"
 	],
 	"X-refs": [
 		{"DOID":12858},
 		{"GOID":"GO272344"},
 		{"ICD10CM":"G10"},
-		{"KEGG":"05016"},
-		{"OMIM":"143100"},
-		{"NCI":"C82342"} 
+		{"ORCID_ID":"0000-0001-7709-2116, 0000-0002-9676-7032, 0000-0002-9703-9096"}
 		],
 	"usability_domain": [
 		"Determine CAG repeats in a sequence for htt gene 10 - 35 CAG trinucleotide repeats: No Risk",
@@ -31,10 +25,14 @@
 	],
 	"authors": [
 		{
-			 "first_name": "X",
-			 "last_name": "Dong",
-			 "affiliation": "University of Massachusetts"
-		}
+			 "first_name": "Amanda",
+			 "last_name": "Bell",
+			 "affiliation": "George Washington University"
+		},
+		{	"first_name": "Charles",
+			"last_name": "King",
+			"affiliation": "George Washington University"
+		}	
 	],
 	"pipeline": "obj.10003",
 	"alignment" : {
