@@ -4,21 +4,21 @@ HTS-CSRS Biocompute Knowledgebase:
 HTS-CSRS George Washington University Washington, DC, USA
 US Food and Drug Administration (FDA) Silverspring, MD, USA
 --------------------------------------------------------------------------------
-
+//
 Description:	Databases cross-referenced in HTS-CSRS
 Name:			dbxref.txt
 Release:		2016 of Aug-24-2016
-
+//
 --------------------------------------------------------------------------------
-
+//
 This document lists all the databases that are cross referenced in HTS CSRS biocomputes. The data bases that are specifically mentioned in the "web resource" comment topic of HTS-CSRS are not listed. 
-
+//
 It lists databases in XR lines which are used as resources for information related to biocompute entries and are found in resources other than HTS-CSRS.
-
+//
 The DbXR_URL field allows to access an entry in the cross referenced database by (we will have to write our own script that allows an identifier found in a cross-reference line by the HTS-CSRS Biocompute object number of the entry.
-
+//
 --------------------------------------------------------------------------------
-
+//
 id				: DBN.0100
 Abbreviation	: HIVE
 Name			: High-performance integrated virtual environment
@@ -26,7 +26,7 @@ Reference		: PMID=26989153; DOI=10.1093/database/baw022
 Server			: https://hive.biochemistry.gwu.edu/
 Database_URL	: https://hive.biochemistry.gwu.edu/dna.cgi?cmd=propget&ids=%s&raw=1&mode=json
 Class			: all
-
+//
 id 				: DBN.0200
 Abbreviation	: GO
 Name			: Gene Ontology Consortium
@@ -34,7 +34,7 @@ Reference		: PMID=10802651
 Server			: http://geneontology.org/
 Database_URL	: http://amigo.geneontology.org/amigo/medial_search?q=%s
 Class			: Gene ontology database
-
+//
 id				: DBN.0300
 Abbreviation	: nucleotide
 Name			: Nucleotide
@@ -42,7 +42,7 @@ Reference		: Accession=NM_00028290
 Server			: http://www.ncbi.nlm.nih.gov/nuccore
 Database_URL	: http://www.ncbi.nlm.nih.gov/nuccore/?term=%s
 Class			: Sequence database of all publicly available DNA sequences
-
+//
 id				: DBN.0400
 Abbreviation	: DO
 Name			: Disease-Ontology, standardized ontology for human disease
@@ -50,7 +50,7 @@ Reference		: Pumed=PMID:25348409
 Server			:
 Database_URL	: http://disease-ontology.org/
 Class			: Disease specific database
-
+//
 id				: DBN.0500
 Abbreviation	: ICD10
 Name			: International Classification of Disease (Tenth Edition)
@@ -58,7 +58,7 @@ Reference		: Pubmed=PMID24480646
 Server			:http://www.icd10data.com/
 Database_URL	: http://www.icd10data.com/Search.aspx?search=%s
 Class			: A database that consists of all clinical codes
-
+//
 id				: DBN.0600
 Abbreviation	: SRA
 Name			: Sequence Read Archive
@@ -66,7 +66,7 @@ Reference		: Pubmed=PMID:21062823
 Server			:http://www.ncbi.nlm.nih.gov/sra
 Database_URL	: http://www.ncbi.nlm.nih.gov/sra/?term=%s
 Class			: A database that stores raw sequencing data and alignment information
-
+//
 id				: DBN.0700
 Abbreviation	: KEGG
 Name			: Kyoto Encyclopedia of Genes and Genomes
@@ -74,7 +74,7 @@ Reference		: Pubmed=PMID:9847135
 Server			: http://www.genome.jp/kegg/
 Database_URL	: http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=$s
 Class			: A database resource for understanding high-level and utilities of the biological system
-
+//
 id            : 0800
 Abbreviation  : OMIM
 Name          : Online Mendalian Inheritance in Man
@@ -82,7 +82,7 @@ Reference     : Pubmed=PMID1062823
 Server        : http://www.ncbi.nlm.nih.gov/omim
 Database_URL  : http://www.ncbi.nlm.nih.gov/omim/?term=%s
 Class         : Database of human genes and genetic phenotypes
-
+//
 id            : 0900
 Abbreviation  : ORCID
 Name          : Open Researcher and Contributor ID
@@ -90,7 +90,7 @@ Reference     : Pubmed=PMID26952357
 Server        : http://orcid.org/
 Database_URL  : https://orcid.org/orcid-search/quick-search?searchQuery=%s
 Class         : Repository that stores codes that uniquely identify scientific and other academic authors and contributors
-
+//
 id            :
 Abbreviation  :
 Name          :
@@ -98,7 +98,7 @@ Reference     :
 Server        :
 Database_URL  :
 Class         :
-
+//
 
 
 
