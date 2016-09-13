@@ -1,9 +1,9 @@
 {
 	"_id": "obj.20001",
-	"_type":"human_gut_metagenomic_detection",
-	"name": "Human Gut Metagenomic Detection",
+	"_type":"<a href=# id=linkid_humangutmetagenomicdetection_typedef class=typedef>human_gut_metagenomic_detection</a>",
+	"name": "Healthy Human[taxID:9606] Fecal[UBERON:0001988] Metagenomic 
+	Diversity[PCO:0000019]",
 	"version": "1.0",
-	"description": "Identification of microbial composition of the human gut using fecal WGS",
 	"verification:": "manual",
 	"creation_date": "Mon Jul 25 13:25:21 EDT 2016",
 	"modification_date": "Mon Jul 25 13:25:21 EDT 2016",
@@ -12,13 +12,17 @@
 		"metagenome",
 		"metagenomic analysis"
 	],
-	"X-refs": [
-		"",
-		""
+	"xref": [
+		"ORCID_ID:0000-0001-7709-2116,0000-0002-9676-7032,0000-0002-9703-9096",
+		"UBERON:0001988",
+		"taxID:9606",
+		"PCO:0000019"
 		],
 	"usability_domain": [
-		"Identify the most common organism present in a metagenomic sample",
-		"Identify the general community composition of organisms in a human fecal sample"
+		"Identify the most common organism present in a human[taxID:9606] 
+		fecal[UBERON:0001988] sample",
+		"Identify the general community composition of organisms in a 
+		human[taxID:9606] fecal[UBERON:0001988] sample",
 	],
 	"authors": [
 		{
@@ -33,7 +37,7 @@
 			"affiliation": "GW"
 		}
 	],
-	"pipeline": "obj.20001",
+	"pipeline": "<a href=# id=linkid_humangutmetagenomicdetection_pipeline class=typedef>obj.20001</a>",
 	"DNA_screening": {
 		"taxDepth": "leaf",
 		"storeAlignments": 1,
@@ -56,7 +60,7 @@
 		"reference_sequence": [
 			{
 				"source": "NCBI",
-				"db": "genbank",
+				"db": "NucCore",
 				"id": [
 					"CP000139.1",
 					"FP929042.1",

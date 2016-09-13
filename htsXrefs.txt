@@ -25,7 +25,7 @@ Name			: High-performance integrated virtual environment
 Reference		: PMID=26989153; DOI=10.1093/database/baw022
 Server			: https://hive.biochemistry.gwu.edu/
 Database_URL	: https://hive.biochemistry.gwu.edu/dna.cgi?cmd=propget&ids=%s&raw=1&mode=json
-Class			: all
+Description		: all
 //
 id 				: DBN.0200
 Abbreviation	: GO
@@ -33,39 +33,39 @@ Name			: Gene Ontology Consortium
 Reference		: PMID=10802651
 Server			: http://geneontology.org/
 Database_URL	: http://amigo.geneontology.org/amigo/medial_search?q=%s
-Class			: Gene ontology database
+Description		: Gene ontology database
 //
 id				: DBN.0300
-Abbreviation	: nucleotide
+Abbreviation	: NucCore
 Name			: Nucleotide
-Reference		: Accession=NM_00028290
+Reference		: PMID: 26590407
 Server			: http://www.ncbi.nlm.nih.gov/nuccore
 Database_URL	: http://www.ncbi.nlm.nih.gov/nuccore/?term=%s
-Class			: Sequence database of all publicly available DNA sequences
+Description		: Sequence database of all publicly available DNA sequences
 //
 id				: DBN.0400
 Abbreviation	: DO
 Name			: Disease-Ontology, standardized ontology for human disease
 Reference		: Pumed=PMID:25348409	
-Server			:
-Database_URL	: http://disease-ontology.org/
-Class			: Disease specific database
+Server			: http://disease-ontology.org/
+Database_URL	: 
+Description		: Disease specific database
 //
 id				: DBN.0500
-Abbreviation	: ICD10
+Abbreviation	: ICD
 Name			: International Classification of Disease (Tenth Edition)
 Reference		: Pubmed=PMID24480646
-Server			:http://www.icd10data.com/
+Server			: http://www.icd10data.com/
 Database_URL	: http://www.icd10data.com/Search.aspx?search=%s
-Class			: A database that consists of all clinical codes
+Description		: A database that consists of all clinical codes
 //
 id				: DBN.0600
 Abbreviation	: SRA
 Name			: Sequence Read Archive
-Reference		: Pubmed=PMID:21062823
-Server			:http://www.ncbi.nlm.nih.gov/sra
+Reference		: PMID: 21062823
+Server			: http://www.ncbi.nlm.nih.gov/sra
 Database_URL	: http://www.ncbi.nlm.nih.gov/sra/?term=%s
-Class			: A database that stores raw sequencing data and alignment information
+Description		: A database that stores raw sequencing data and alignment information
 //
 id				: DBN.0700
 Abbreviation	: KEGG
@@ -73,87 +73,74 @@ Name			: Kyoto Encyclopedia of Genes and Genomes
 Reference		: Pubmed=PMID:9847135
 Server			: http://www.genome.jp/kegg/
 Database_URL	: http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=$s
-Class			: A database resource for understanding high-level and utilities of the biological system
+Description		: A database resource for understanding high-level and utilities of the biological system
 //
-id            : 0800
-Abbreviation  : OMIM
-Name          : Online Mendalian Inheritance in Man
-Reference     : Pubmed=PMID1062823
-Server        : http://www.ncbi.nlm.nih.gov/omim
-Database_URL  : http://www.ncbi.nlm.nih.gov/omim/?term=%s
-Class         : Database of human genes and genetic phenotypes
+id				: DBN.0800
+Abbreviation	: OMIM
+Name			: Online Mendalian Inheritance in Man
+Reference		: Pubmed=PMID1062823
+Server			: http://www.ncbi.nlm.nih.gov/omim
+Database_URL	: http://www.ncbi.nlm.nih.gov/omim/?term=%s
+Description		: Database of human genes and genetic phenotypes
 //
-id            : 0900
-Abbreviation  : ORCID
-Name          : Open Researcher and Contributor ID
-Reference     : Pubmed=PMID26952357
-Server        : http://orcid.org/
-Database_URL  : https://orcid.org/orcid-search/quick-search?searchQuery=%s
-Class         : Repository that stores codes that uniquely identify scientific and other academic authors and contributors
+id				: DBN.0900
+Abbreviation	: ORCID
+Name			: Open Researcher and Contributor ID
+Reference		: PMID: 26952357
+Server			: http://orcid.org/
+Database_URL	: https://orcid.org/orcid-search/quick-search?searchQuery=%s
+Description		: Repository that stores codes that uniquely identify scientific and other academic authors and contributors
 //
-id            :
-Abbreviation  :
-Name          :
-Reference     :
-Server        :
-Database_URL  :
-Class         :
+id				: DBN.1000
+Abbreviation	: SO
+Name			: Sequence Ontology
+Reference		: PMID: 15892872
+Server			: http://www.sequenceontology.org/
+Database_URL	: http://www.sequenceontology.org/browser/current_svn/term/
+Description		: Description
 //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+id				: DBN.1100
+Abbreviation	: taxID
+Name			: Taxonomy
+Reference		: PMID: 26590407
+Server			: http://www.ncbi.nlm.nih.gov/taxonomy
+Database_URL	: http://www.ncbi.nlm.nih.gov/taxonomy/?term=%s
+Description		: Sequence database of all publicly available DNA sequences
+//
+id				: DBN.1200
+Abbreviation	: PubChem
+Name			: PubChem Compound
+Reference		: PMID: 26400175 
+Server			: https://www.ncbi.nlm.nih.gov/pccompound
+Database_URL	: https://pubchem.ncbi.nlm.nih.gov/compound/%s
+Description		: The PubChem Compound Database contains validated chemical depiction information provided to describe substances in PubChem Substance. Structures stored within PubChem Compounds are pre-clustered and cross-referenced by identity and similarity groups.
+//
+id				: DBN.1300
+Abbreviation	: UBERON
+Name			: Uberon
+Reference		: PMID: 22293552 
+Server			: http://www.ebi.ac.uk/ols/
+Database_URL	: http://www.ebi.ac.uk/ols/search?q=%S&submit=Search+Uberon&ontology=uberon
+Description		: Uberon is an integrated cross-species ontology covering anatomical structures in animals.
+//
+id				: DBN.1400
+Abbreviation	: PCO
+Name			: Population and Community Ontology
+Reference		: 
+Server			: http://www.ontobee.org/ontology/PCO
+Database_URL	: http://www.ontobee.org/search?ontology=PCO&keywords=%s&submit=Search+terms
+Description		: A taxon-neutral ontology of material entities, qualities, and processes related to collections of interacting organisms such as populations and communities.
+//
+id				:
+Abbreviation	:
+Name			:
+Reference		:
+Server			:
+Database_URL	:
+Description		:
+//
+________________________________________________________________________________
+--------------------------------------------------------------------------------
 NOTES:
 id				: id number - db object number
 Abbreviation	: Abreviation used for that db
@@ -162,9 +149,9 @@ Reference		: PubMed and DOI reference (paper)
 RLT				: -----
 Server			: host URL
 Database_URL	: URL for accessing data programatically
-Class			: Classifacation of db
+Description		: Description of db
 
 Questions/comments: (?/!)
--! Changed to 'id' for identifiers and adjusted id# to reflect the convention we are using already
--? IDK if we need the RTL line... I think we could do without
 -! I think we need to maintain the server line and the url line. I them put back. 
+-? Do we need HIVE here? It is not an external ref... I had used it as an example in the begining
+-! Pubmed=PMID1062823 should eb changed to PMID: 15892872 format. This will be easier to parse/code for

@@ -1,6 +1,6 @@
 {
 	"_type": "type",
-	"name": "antiviral_resistance_pipeline",
+	"name": "antiviral_resistance_detection",
 	"description": "This pipeline uses an aligner and then a profiler to detect possible mutations involved in drug resistance.",
 	"_fields": {
 		"reference_sequence": {
