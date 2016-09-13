@@ -14,7 +14,8 @@
 	],
 	"xref": {
 		"NucCore": ["NC_007919", "JX220408"],
-		"SRA": [ "SRR515090", "SRR513993", "SRR513901"]
+		"SRA": [ "SRR515090", "SRR513993", "SRR513901"],
+		"ORCID": ["0000-0001-7709-2116","0000-0002-9676-7032","0000-0002-9703-9096"]
 	},
 	"usability_domain": [
 		"Detect and reconstruct viral genomes from sequencing datasets",
