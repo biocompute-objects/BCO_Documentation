@@ -3,7 +3,7 @@
     "_type": "antiviral_resistance_detection",
     "name": "Antiviral Resistance Detection",
     "description": "Identification of Antiviral Drug Resistance-Associated Substitutions in NGS Clinical Trial Data",
-    "validation:": "manual",
+    "verification:": "manual",
     "creation_date": "Mon Jun 6 13:25:21 EDT 2016",
     "modification_date": "Thu Jun 9 08:12:14 EDT 2016",
     "publication_status": "draft",
@@ -207,8 +207,8 @@
     "name": "base_biocompute_type",
     "description": "Provides the base fields to populate in a biocompute object",
     "_fields": {
-        "validation": {
-            "description": "Describes the position of an object in the validation process. The unreviewed flag indicates that the object has been submitted, but no further curation has occurred. The in_progress flag indicates that validation is underway. manual indicates that the object has been manually validated. The suspended flag indicates an object that was once valid is no longer considered valid. The error flag indicates that an error was detected with the biocompute object.",
+        "verification": {
+            "description": "Describes the position of an object in the verification process. The unreviewed flag indicates that the object has been submitted, but no further curation has occurred. The in_progress flag indicates that verification is underway. manual indicates that the object has been manually validated. The suspended flag indicates an object that was once valid is no longer considered valid. The error flag indicates that an error was detected with the biocompute object.",
             "_type": "string",
             "_limit": {
                 "choice": [
@@ -250,7 +250,7 @@
 
 {
     "_type": "datatype",
-    "name": "base_metadata_type",
+    "name": "verification",
     "description": "Definition of the base metadata type providing fields for the inclusion of outside links, submissions, and information pertinent to the experiment but not critical for the computation.",
     "_fields": {
         "name": {

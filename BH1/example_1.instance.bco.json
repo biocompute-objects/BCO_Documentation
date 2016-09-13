@@ -1,26 +1,25 @@
 {
-	"_id": "obj.1001",
-	"_type":"antiviral_resistance_detection",
-	"name": "Antiviral Resistance Detection",
+	"id": "obj.1001",
+	"type": "antiviral_resistance_detection", 
+	"name": "HCV1a[taxID:31646] ledipasvir[PubChem: 67505836] resistance SNP [SO:0000694]",
 	"version": "1.2",
-	"description": "Identification of antiviral drug resistance-associated substitutions in NGS clinical trial data",
 	"verification": "manual",
 	"creation_date": "Mon Jun 6 13:25:21 EDT 2016",
 	"modification_date": "Thu Jun 9 08:12:14 EDT 2016",
 	"publication_status": "draft",
 	"keywords": [
-		"antiviral",
 		"antiviral resistance",
-		"mutation"
+		"SNP"
 	],
-	"X-refs": [
-		"",
-		""
+	"xref": [
+		"DOID:1883",
+		"ICD:B17",
+		"taxID:9606"
 		],
 	"usability_domain": [
-		"Identify baseline single nucleotide polymorphisms (SNPs), insertions, and deletions that correlate with reduced ledipasvir antiviral drug efficacy in Hepatitus C virus subtype 1",
-		"Identify treatment emergent amino acid substitutions that correlate with antiviral drug treatment failure",
-		"Determine whether the treatment emergent amino acid substitutions identified correlate with treatment failure involving other drugs against the same virus"
+		"Identify baseline single nucleotide polymorphisms (SNPs[SO:0000694]), insertions[SO:0000667], and deletions[SO:0000045] that correlate with reduced ledipasvir[PMID: 24320933] antiviral drug efficacy in Hepatitis C virus subtype 1",
+		"Identify treatment emergent amino acid substitutions[SO:0000048] that correlate with antiviral drug treatment failure",
+		"Determine whether the treatment emergent amino acid substitutions[SO:0000048] identified correlate with treatment failure involving other drugs against the same virus"
 	],
 	"authors": [
 		{
@@ -34,7 +33,7 @@
 				"affiliation": "King's College, London"
 		}
 	],
-	"pipeline": "obj.10001",
+     "pipeline": "obj.10001",
 	"alignment" : {
 		"seed": 14,
 		"minimum_match_len": 50,
@@ -49,7 +48,7 @@
 			{
 				"source": "NCBI",
 				"db": "genbank",
-				"id": ["ABC123", "234"]
+				"id": ["JQ434001.1"]
 			},
 			{
 				"source": "HIVE",

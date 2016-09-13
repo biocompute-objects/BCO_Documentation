@@ -1,9 +1,9 @@
 {
 	"_id": "BH3",
 	"_type": "HIVE_huntingtons_disease_detection",
-	"name": "HIVE Huntington's Disease Detection",
+	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for Huntington's 
+	disease[DOID:12858].",
 	"version": "1.0",
-	"description": "Determine the risk of huntington's disease in a gene sequence",
 	"verification": "manual",
 	"creation_date": "Thu Aug 4 10:16:32 EDT 2016",
 	"modification_date": "Thu Aug 4 10:16:32 EDT 2016",
@@ -12,16 +12,20 @@
 		"disease",
 		"human disease"
 	],
-	"X-refs": [
-		{"DOID":12858},
-		{"GOID":"GO272344"},
-		{"ICD10CM":"G10"},
-		{"ORCID_ID":"0000-0001-7709-2116, 0000-0002-9676-7032, 0000-0002-9703-9096"}
-		],
+	"xref": [
+			"DOID:12858",
+			"GOID:GO272344",
+			"ICD:G10",
+			"ORCID_ID:0000-0001-7709-2116,0000-0002-9676-7032,0000-0002-9703-9096",
+			"SO:0000726",
+			"tax:9606"
+			],
 	"usability_domain": [
-		"Determine CAG repeats in a sequence for htt gene 10 - 35 CAG trinucleotide repeats: No Risk",
-		"Determine CAG repeats in a sequence for htt gene 36 - 40 CAG trinucleotide repeats: At Risk ",
-		"Determine CAG repeats in a sequence for htt gene 40 and above trinucleotide repeats: High Risk"
+		"Determine CAG repeats[SO:0000726] in a sequence for 
+		htt gene[UniProt:P42858]:
+			10 - 35 CAG trinucleotide repeats: No Risk
+			36 - 40 CAG trinucleotide repeats: At Risk
+			40 and above trinucleotide repeats: High Risk"
 	],
 	"authors": [
 		{
@@ -35,12 +39,12 @@
 		}	
 	],
 	"pipeline": "obj.10003",
-	"alignment" : {
+	"alignment": {
 		"seed": 14,
 		"minimum_match_len": 50,
 		"divergence_threshold_percent": 10
 	},
-	"variant_calling" : {
+	"variant_calling": {
 		"minimum_coverage": 20,
 		"frequency_cutoff": 0.20
 	},

@@ -1,9 +1,8 @@
 {
 	"_id": "B4",
 	"_type": "galaxy_workflow_metavisitor",
-	"name": "Rapid detection and discovery of viruses in deep sequence data",
+	"name": "Nora Virus det in D. mel",
 	"version": "1.0",
-	"description": "Small RNA sequencing from D. melanogaster infected by Nora Virus",
 	"verification": "manual",
 	"creation_date": "Wed Jul 27 19:06:11 EDT 2016",
 	"modification_date": "Tue Aug 2 10:12:14 EDT 2016",
@@ -13,10 +12,10 @@
 		"virus discovery small RNA sequencing",
 		"Virus deep sequence data"
 	],
-	"X-refs": [
-		"",
-		""
-		],
+	"xref": {
+		"NucCore": ["NC_007919", "JX220408"],
+		"SRA": [ "SRR515090", "SRR513993", "SRR513901"]
+	},
 	"usability_domain": [
 		"Detect and reconstruct viral genomes from sequencing datasets",
 		"Works with DNA, RNA or small RNA sequencing data that provide different read lengths and can use a combination of a de novo and guided approaches to assemble viral genomes from sequencing reads",
