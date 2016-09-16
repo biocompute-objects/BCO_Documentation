@@ -33,7 +33,7 @@
 				"affiliation": "King's College, London"
 		}
 	],
-     "pipeline": "obj.10001",
+	"pipeline": "obj.10001",
 	"alignment" : {
 		"seed": 14,
 		"minimum_match_len": 50,

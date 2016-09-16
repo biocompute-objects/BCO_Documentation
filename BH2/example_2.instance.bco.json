@@ -1,8 +1,7 @@
 {
 	"_id": "obj.20001",
 	"_type":"<a href=# id=linkid_humangutmetagenomicdetection_typedef class=typedef>human_gut_metagenomic_detection</a>",
-	"name": "Healthy Human[taxID:9606] Fecal[UBERON:0001988] Metagenomic 
-	Diversity[PCO:0000019]",
+	"name": "Healthy Human[taxID:9606] Fecal[UBERON:0001988] Metagenomic Diversity[PCO:0000019]",
 	"version": "1.0",
 	"verification:": "manual",
 	"creation_date": "Mon Jul 25 13:25:21 EDT 2016",
@@ -19,10 +18,8 @@
 		"PCO:0000019"
 		],
 	"usability_domain": [
-		"Identify the most common organism present in a human[taxID:9606] 
-		fecal[UBERON:0001988] sample",
-		"Identify the general community composition of organisms in a 
-		human[taxID:9606] fecal[UBERON:0001988] sample",
+		"Identify the most common organism present in a human[taxID:9606] fecal[UBERON:0001988] sample",
+		"Identify the general community composition of organisms in a human[taxID:9606] fecal[UBERON:0001988] sample"
 	],
 	"authors": [
 		{
