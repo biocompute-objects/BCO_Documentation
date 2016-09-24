@@ -1,5 +1,5 @@
 {
-	"_id": "BH3",
+	"_id": "obj.3001",
 	"_type": "HIVE_huntingtons_disease_detection",
 	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for Huntington's 
 	disease[DOID:12858].",
@@ -24,18 +24,18 @@
 		"Determine CAG repeats[SO:0000726] in a sequence for 
 		htt gene[UniProt:P42858]:
 			10 - 35 CAG trinucleotide repeats: No Risk
-			36 - 40 CAG trinucleotide repeats: At Risk
-			40 and above trinucleotide repeats: High Risk"
+			36 - 40 CAG trinucleotide repeats: Moderate Risk
+			40+ CAG trinucleotide repeats: High Risk"
 	],
 	"authors": [
 		{
-			 "first_name": "Amanda",
-			 "last_name": "Bell",
-			 "affiliation": "George Washington University"
+			 "first_name": "George",
+			 "last_name": "Huntington",
+			 "affiliation": "Columbia University"
 		},
-		{	"first_name": "Charles",
-			"last_name": "King",
-			"affiliation": "George Washington University"
+		{	"first_name": "J",
+			"last_name": "Hoffman",
+			"affiliation": " "
 		}	
 	],
 	"pipeline": "obj.10003",
