@@ -72,7 +72,7 @@ Abbreviation	: KEGG
 Name			: Kyoto Encyclopedia of Genes and Genomes
 Reference		: Pubmed=PMID:9847135
 Server			: http://www.genome.jp/kegg/
-Database_URL	: http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=$s
+Database_URL	: http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=%s
 Description		: A database resource for understanding high-level and utilities of the biological system
 //
 id				: DBN.0800
