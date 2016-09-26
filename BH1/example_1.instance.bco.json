@@ -17,7 +17,7 @@
 		"taxID:9606"
 		],
 	"usability_domain": [
-		"Identify baseline single nucleotide polymorphisms (SNPs[SO:0000694]), insertions[SO:0000667], and deletions[SO:0000045] that correlate with reduced ledipasvir[PMID: 24320933] antiviral drug efficacy in Hepatitis C virus subtype 1",
+		"Identify baseline single nucleotide polymorphisms (SNPs[SO:0000694]), insertions[SO:0000667], and deletions[SO:0000045] that correlate with reduced ledipasvir[PubChem:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1",
 		"Identify treatment emergent amino acid substitutions[SO:0000048] that correlate with antiviral drug treatment failure",
 		"Determine whether the treatment emergent amino acid substitutions[SO:0000048] identified correlate with treatment failure involving other drugs against the same virus"
 	],
