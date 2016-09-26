@@ -48,7 +48,7 @@ Abbreviation	: DO
 Name			: Disease-Ontology, standardized ontology for human disease
 Reference		: Pumed=PMID:25348409	
 Server			: http://disease-ontology.org/
-Database_URL	: 
+Database_URL	: http://disease-ontology.org/
 Description		: Disease specific database
 //
 id				: DBN.0500
