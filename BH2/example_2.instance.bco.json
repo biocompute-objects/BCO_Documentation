@@ -1,4 +1,4 @@
-{
+ {
 	"_id": "obj.20001",
 	"_type":"<a href=# id=linkid_humangutmetagenomicdetection_typedef class=typedef>human_gut_metagenomic_detection</a>",
 	"name": "Healthy Human[taxID:9606] Fecal[UBERON:0001988] Metagenomic Diversity[PCO:0000019]",
@@ -12,7 +12,6 @@
 		"metagenomic analysis"
 	],
 	"xref": [
-		"ORCID_ID:0000-0003-1409-4549",
 		"UBERON:0001988",
 		"taxID:9606",
 		"PCO:0000019"
@@ -23,15 +22,14 @@
 	],
 	"authors": [
 		{
-			"first_name": "Charles",
-			"middle_name": "Hadley",
-			"last_name": "King",
-			"affiliation": "GW"
+			"first_name": "Joshua",
+			"last_name": "Lederberg",
+			"affiliation": "University of Wisconsin"
 		},
 		{
-			"first_name": "Naila",
-			"last_name": "Gulzar",
-			"affiliation": "GW"
+			"first_name": "Margaret",
+			"last_name": "Dayhoff",
+			"affiliation": "Columbia University"
 		}
 	],
 	"pipeline": "<a href=# id=linkid_humangutmetagenomicdetection_pipeline class=typedef>obj.20001</a>",
