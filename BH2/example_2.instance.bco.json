@@ -1,4 +1,4 @@
-{
+-{
 	"_id": "obj.20001",
 	"_type":"<a href=# id=linkid_humangutmetagenomicdetection_typedef class=typedef>human_gut_metagenomic_detection</a>",
 	"name": "Healthy Human[taxID:9606] Fecal[UBERON:0001988] Metagenomic Diversity[PCO:0000019]",
@@ -25,6 +25,11 @@
 			"first_name": "Joshua",
 			"last_name": "Lederberg",
 			"affiliation": "University of Wisconsin"
+		},
+		{
+			"first_name": "Margaret",
+			"last_name": "Dayhoff",
+			"affiliation": "Columbia University"
 		}
 	],
 	"pipeline": "<a href=# id=linkid_humangutmetagenomicdetection_pipeline class=typedef>obj.20001</a>",
