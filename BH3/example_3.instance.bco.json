@@ -2,7 +2,7 @@
 	"_id": "obj.3001",
 	"_type": "<a href=# id=linkid_HIVEhuntingtonsdiseasedetection_typedef class=typedef>Huntingtons_desease[DO:12858]_detection</a>"
 	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for Huntington's 
-	disease[DOID:12858] international diagnistic code[IDC:G10].",
+	disease[DOID:12858].",
 	"version": "1.0",
 	"verification": "manual",
 	"creation_date": "Thu Aug 4 10:16:32 EDT 2016",
@@ -20,8 +20,8 @@
 			"tax:9606"
 			],
 	"usability_domain": [
-		"Determine CAG repeats[SO:0000726] in a sequence for 
-		htt gene[UniProt:P42858]:
+		"Determine CAG repeats[SO:0000726] in a sequence for the diagnosis of Huntington's disease[ICD:G10] for
+		htt gene[GOID:GO272344]:
 			10 - 35 CAG trinucleotide repeats: No Risk
 			36 - 40 CAG trinucleotide repeats: Moderate Risk
 			40+ CAG trinucleotide repeats: High Risk"
