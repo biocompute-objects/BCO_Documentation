@@ -1,6 +1,6 @@
 {
 	"_id": "obj.3001",
-	"_type": "Huntingtons_desease[DO:12858]_detection",
+	"_type": "<a href=# id=linkid_HIVEhuntingtonsdiseasedetection_typedef class=typedef>Huntingtons_desease[DO:12858]_detection</a>"
 	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for Huntington's 
 	disease[DOID:12858] international diagnistic code[IDC:G10].",
 	"version": "1.0",
@@ -33,7 +33,7 @@
 			 "affiliation": "Columbia University"
 		}
 	],
-	"pipeline": "obj.10003",
+	"pipeline": "<a href=# id=linkid_HIVEhuntingtonsdiseasedetection_pipeline class=typedef>obj.10003</a>",
 	"alignment": {
 		"seed": 14,
 		"minimum_match_len": 50,

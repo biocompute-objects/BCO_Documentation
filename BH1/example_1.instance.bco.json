@@ -1,6 +1,6 @@
 {
 	"id": "obj.1001",
-	"type": "antiviral_resistance_detection[ICD:B17]", 
+	"type":"<a href=# id=linkid_antiviralresistancedetection_typedef class=typedef>antiviral_resistance_detection[ICD:B17]</a>", 
 	"name": "HCV1a[taxID:31646] ledipasvir[PubChem: 67505836] resistance SNP [SO:0000694]",
 	"version": "1.2",
 	"verification": "manual",
@@ -33,7 +33,7 @@
 				"affiliation": "King's College, London"
 		}
 	],
-	"pipeline": "obj.10001",
+	"pipeline": "<a href=# id=linkid_antiviralresistancedetection_pipeline class=typedef>obj.10001</a>",
 	"alignment" : {
 		"seed": 14,
 		"minimum_match_len": 50,
