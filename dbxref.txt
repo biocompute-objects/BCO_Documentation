@@ -1,0 +1,151 @@
+________________________________________________________________________________
+
+description:    Databases cross-referenced in HTS-CSRS Biocompute Objects
+title:        dbxref.txt
+Release:    Oct-03-2016
+--------------------------------------------------------------------------------
+High-Throughput Sequencing Computational Standards for Regulatory Sciences
+(HTS-CSRS) Knowlegebase. 
+--------------------------------------------------------------------------------
+George Washington University Washington, DC, USA
+US Food and Drug Administration (FDA) Silverspring, MD, USA
+--------------------------------------------------------------------------------
+NOTES:
+id            : id number - db object number
+name          : Abreviation used for that db
+title         : Full name     of db
+reference     : PubMed and DOI reference (paper)
+serverDomain  : host URL
+recordUrl     : URL for accessing data programmatically
+description   : Description of db
+--------------------------------------------------------------------------------
+
+This document lists all the databases that are cross referenced in HTS-CSRS.
+The databases that are specifically mentioned in the "web resource"
+comment topic of HTS-CSRS are not listed. 
+
+Databases are listed in XR lines which are used as resources for information 
+related to biocompute entries and are found in resources other than HTS-CSRS.
+
+The recordUrl field allows to access an entry in the cross referenced 
+database by substituting the '%s' in the url with an object ID from that DB.
+--------------------------------------------------------------------------------
+
+
+id            : DBN.0100
+name          : HIVE
+title         : High-performance integrated virtual environment
+reference     : PMID=26989153; DOI=10.1093/database/baw022
+serverDomain  : https://hive.biochemistry.gwu.edu/
+recordUrl     : https://hive.biochemistry.gwu.edu/dna.cgi?cmd=propget&ids=%s&raw=1&mode=json
+description   : HIVE is a cloud-based environment optimized for the storage and analysis of extra-large data. 
+
+
+id             : DBN.0200
+name          : GO
+title         : Gene Ontology Consortium
+reference     : PMID:10802651
+serverDomain  : http://geneontology.org/
+recordUrl     : http://amigo.geneontology.org/amigo/medial_search?q=%s
+description   : Gene ontology database
+
+
+id            : DBN.0300
+name          : NucCore
+title         : Nucleotide
+reference     : PMID:26590407
+serverDomain  : http://www.ncbi.nlm.nih.gov/nuccore
+recordUrl     : http://www.ncbi.nlm.nih.gov/nuccore/?term=%s
+description   : Sequence database of all publicly available DNA sequences
+
+
+id            : DBN.0400
+name          : DO
+title         : Disease-Ontology, standardized ontology for human disease
+reference     : PMID:25348409
+serverDomain  : http://disease-ontology.org/
+recordUrl     : http://disease-ontology.org/
+description   : Disease specific database
+
+
+id            : DBN.0500
+name          : ICD
+title         : International Classification of Disease (Tenth Edition)
+reference     : PMID:24480646
+serverDomain  : http://www.icd10data.com/
+recordUrl     : http://www.icd10data.com/Search.aspx?search=%s
+description   : A database that consists of all clinical codes
+
+
+id            : DBN.0600
+name          : SRA
+title         : Sequence Read Archive
+reference     : PMID:21062823
+serverDomain  : http://www.ncbi.nlm.nih.gov/sra
+recordUrl     : http://www.ncbi.nlm.nih.gov/sra/?term=%s
+description   : A database that stores raw sequencing data and alignment 
+               information
+
+
+id            : DBN.0700
+name          : KEGG
+title         : Kyoto Encyclopedia of Genes and Genomes
+reference     : PMID:9847135
+serverDomain  : http://www.genome.jp/kegg/
+recordUrl     : http://www.genome.jp/dbget-bin/www_bfind_sub?mode=bfind&max_hit=1000&dbkey=kegg&keywords=%s
+description   : A database resource for understanding high-level and utilities of the biological system
+
+
+id            : DBN.0800
+name          : OMIM
+title         : Online Mendalian Inheritance in Man
+reference     : PMID:1062823
+serverDomain  : http://www.ncbi.nlm.nih.gov/omim
+recordUrl     : http://www.ncbi.nlm.nih.gov/omim/?term=%s
+description   : Database of human genes and genetic phenotypes
+
+
+id            : DBN.0900
+name          : ORCID
+title         : Open Researcher and Contributor ID
+reference     : PMID:26952357
+serverDomain  : http://orcid.org/
+recordUrl     : https://orcid.org/orcid-search/quick-search?searchQuery=%s
+description   : Repository that stores codes that uniquely identify scientific and other academic authors and contributors
+
+
+id            : DBN.1000
+name          : SO
+title         : Sequence Ontology
+reference     : PMID:15892872
+serverDomain  : http://www.sequenceontology.org/
+recordUrl     : http://www.sequenceontology.org/browser/current_svn/term/%s
+description   : SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation.
+
+
+id            : DBN.1100
+name          : taxID
+title         : Taxonomy
+reference     : PMID: 26590407
+serverDomain  : http://www.ncbi.nlm.nih.gov/taxonomy
+recordUrl     : http://www.ncbi.nlm.nih.gov/taxonomy/?term=%s
+description   : Sequence database of all publicly available DNA sequences
+
+
+id            : DBN.1200
+name          : PubChem
+title         : PubChem Compound
+reference     : PMID:26400175
+serverDomain  : https://www.ncbi.nlm.nih.gov/pccompound
+recordUrl     : https://pubchem.ncbi.nlm.nih.gov/compound/%s
+description   : The PubChem Compound Database contains validated chemical depiction information provided to describe substances in PubChem Substance.
+
+
+id            : DBN.1300
+name          : UBERON
+title         : Uberon
+reference     : PMID: 22293552 
+serverDomain  : http://www.ebi.ac.uk/ols/
+recordUrl     : http://www.ebi.ac.uk/ols/search?q=%S&submit=Search+Uberon&ontology=uberon
+description   : Uberon is an integrated cross-species ontology covering anatomical structures in animals.
+________________________________________________________________________________

@@ -1,0 +1,17 @@
+notes:
+
+Ex2:
+- Needs to be able to represent bool values. How do I do this properly?
+	|- also, needs to offer a drop-down for yes/no
+
+BCO Portal:
+
+	- "creation_date" and "modification_date" and "type" fields need to be displayed AND type
+	- Display "containers" in Json output
+	
+
+Q: For multiple db with complex types, dose the container or the fields have to have the multi flag?
+
+Delete old "test objects" -> HOUSE CLEANING LIST
+
+Enter will cause feild entry...
