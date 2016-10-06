@@ -118,7 +118,7 @@ name:
 note: 
 
 line: verification_kit
-name:
+name: Verification Kit
 note: mechanism that allows the user to verify the workflow
 
 # Island of Misfit Line-Types

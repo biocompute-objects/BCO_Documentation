@@ -92,7 +92,7 @@
 			}
 		},
 		"accession_based_results": {
-			"description": "A list of the number of alignemnts matched to a refrence sequence in a database object",
+			"description": "A list of the number of reads matched to a refrence sequence in a database object",
 			"title": "Accession Based Results",
 			"_role": "output",
 			"_type": "outfile"
@@ -104,7 +104,7 @@
 			"_type": "outfile"
 		},
 		"hit_list": {
-			"description": "A list of all the alignments matched to a reference",
+			"description": "A list of all the reads matched to each reference sequence",
 			"title": "Hit List",
 			"_role": "output",
 			"_type": "outfile"

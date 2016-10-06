@@ -41,15 +41,15 @@
 		"selfStopping": 0
 	},
 	"alignment": {
-			"minMatchLen": 45,
-			"keepAllMatches": 3,
-			"keepMarkovnikovMatches": 1,
-			"complexityRefEntropy": 1.2,
-			"complexityRefWindow": 30,
-			"acceptNNNQuaTrheshold": 1,
-			"complexityEntropy": 1.2,
-			"complexityWindow": 30,
-			"maximumPercentLowQualityAllowed": 0
+		"minMatchLen": 45,
+		"keepAllMatches": 3,
+		"keepMarkovnikovMatches": 1,
+		"complexityRefEntropy": 1.2,
+		"complexityRefWindow": 30,
+		"acceptNNNQuaTrheshold": 1,
+		"complexityEntropy": 1.2,
+		"complexityWindow": 30,
+		"maximumPercentLowQualityAllowed": 0
 	},
 	"verification_kit": {
 		"reference_sequence": [
