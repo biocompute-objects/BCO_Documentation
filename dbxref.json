@@ -2,14 +2,14 @@
     "name": "dbxref.txt",
     "release": "Oct-03-2016",
     "description": "Databases cross-referenced in HTS-CSRS Biocompute Objects",
-    "title": "High-Throughput Sequencing Computational Standards for Regulatory Sciences(HTS-CSRS) Knowlegebase.",
+    "title": "High-Throughput Sequencing Computational Standards for Regulatory Sciences(HTS-CSRS) Knowledgebase.",
     "sponsored_by":[
         "George Washington University Washington, DC, USA",
-        "US Food and Drug Administration (FDA) Silverspring, MD, USA"
+        "US Food and Drug Administration (FDA) Silver Spring, MD, USA"
         ],
     "example": {
         "id": "id number - db object number",
-        "name": "Abreviation used for that db",
+        "name": "Abbreviation used for that db",
         "title": "Full name of db",
         "reference": "PubMed reference (paper)",
         "serverDomain": "host URL",
@@ -88,7 +88,7 @@
         {
             "id": "DBN.0800",
             "name": "OMIM",
-            "title": "Online Mendalian Inheritance in Man",
+            "title": "Online Mendelian Inheritance in Man",
             "reference": "PMID:1062823",
             "serverDomain": "http://www.ncbi.nlm.nih.gov/omim",
             "recordUrl": "http://www.ncbi.nlm.nih.gov/omim/?term=%s",

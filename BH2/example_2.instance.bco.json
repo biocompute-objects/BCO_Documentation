@@ -46,7 +46,7 @@
 		"keepMarkovnikovMatches": 1,
 		"complexityRefEntropy": 1.2,
 		"complexityRefWindow": 30,
-		"acceptNNNQuaTrheshold": 1,
+		"acceptNNNQuaThreshold": 1,
 		"complexityEntropy": 1.2,
 		"complexityWindow": 30,
 		"maximumPercentLowQualityAllowed": 0
