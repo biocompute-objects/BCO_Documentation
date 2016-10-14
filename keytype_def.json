@@ -1,0 +1,278 @@
+{
+"name": "biocompute_line_type.txt",
+"release": "Oct-12-2016",
+"Description":[
+		"line - refers to line types in biocompute objects. Lines preceded by '_' means that the field is not mutable by the user who is runniung the biocompute object",
+		"name - refers to human readable name of the line. This fields can be empty.",
+		"note - refers to the description of the line type"
+		],
+"base_metadata_type":[
+		"A data type hierarchy contains multiple data objects linked to one another.",
+		 "A Field attribute from one data object (the parent type) can be inherited by many other data objects (the child types). In addition to the inherited field attributes, a given child type may have additional field attributes specific to that child type, as we saw above. In this example the base biocompute metadata type is not only applicable for biocompute objects, but for any almost any other object type. This definition provides the fields for the inclusion of outside links, submissions, and information pertinent to the experiment but not critical for the computation."
+		],
+"line_type_def":[
+	{
+		"line": "_id",
+		"name": "id",
+		"note": "This is the object id. The id is a unique identifying value assigned to each object. This value is used for all references to this object."
+	},
+	{
+		"line": "_type",
+		"name": "type",
+		"note": "This field defines the type of the object."
+	},
+	{
+		"line": "name",
+		"name": "name",
+ 		"note": "The user-defined name of the object/type. It can be any type of text."
+	},
+	{
+		"line": "version",
+		"name": "version",
+		"note": "records the versioning of the object"
+	},
+	{
+		"line": "description",
+		"name": "description",
+		"note": "The creator-specified description of the object, type, or field. Information in this field lets other users know the function and purpose of the object."
+	},
+		"line": "creation_date",
+		"name": "creation date",
+		"note": "The time and date that the biocompute object is created."
+	},
+	{
+		"line": "modification_date",
+		"name": "modification date",
+		"note": "This field will list all the dates and time an object is modified."
+	},
+	{
+		"line": "publication_status",
+		"name": "publication status",
+		"note": "This is a choice field with four options. The 'draft' flag indicates that an object is in draft form and is still being edited. The 'open access' flag indicates that an object has been published and is freely available to anyone. The objects with the 'private' flag have restrictions on who can view and access them. This is a way for researchers using restricted data or metadata to insure the confidentially is maintained."
+	},
+	{
+		"line": "x-refs",
+		"name": "cross-references", 
+		"note": "The x-refs allow for the ability to cross reference curated scientific resources associated with a specific workflow. Disease Ontology, Gene Ontology, Sequence Ontology, etc."
+	},
+	{
+		"line": "authors",
+		"name": "authors",
+		"note": "This is the list of authors submitting this object. First and last name are required, middle name and affiliation are not. The affiliation field is for listing the academic, governmental, or private entity that supported the project responsible for generating the biocompute object."
+	},
+	{
+		"line": "keywords",
+		"name": "keywords"
+		"note": "Keywords to aid in search-ability and description of the object. These are a set of controlled vocabulary."
+	},
+"base_biocompute_data_type":[ 
+		"Provides the base fields to populate in a biocompute object."
+	],
+	{
+		"line": "verification",
+		"name": "verification",
+		"note": "Describes the position of an object in the verification process. The 'unreviewed' flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The 'in_progress' flag indicates that verification is underway. the 'reviewed' flag indicates that the biocompute object has been verified and reviewed. The 'manual' flag indicates that the object has been manually verified. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'error' flag indicates that an error was detected with the biocompute object."
+	},
+	{
+		"line": "usability_domain",
+		"name": "usability domain",
+		"note": "This field provides a space for the author to define the usability domane of an object. The usability domain along with keywords can help determine when and how the biocompute object can be used. Novel use of the biocompute object should result in the creation of a new entry."
+	},
+	{
+		"line": "pipeline",
+		"name":
+		"note": "The id of the pipeline that is used to a the biocompute object."
+	},
+	{
+		"line": "_inherits",
+ 		"name": "parent type",
+		"note": "refers to the parent type that the type inherits fields from."
+	},
+	"pipeline_definition":[
+		"A pipeline is a set of computations connected in series, where the output of one element can be part or all of the input for the next element. To have the pipeline instance data type we used earlier we need to define the elements that make up that type. Then we can use this type to create an object to describe any pipeline. Line types in this section refer to a more specific pipeline data type, which inherits from the base pipeline data type. Pipeline instance data type line type descriptions are not included in this document."
+	],
+	{
+		"line": "tool_used",
+		"name": "tool used",
+		"note": "This field is for describing all information about the specific bioinformatic tools used. name and version fields are present, as well as the argument field. The argument field is a plural field and should be used for each individual argument of each tool."
+	},
+	"pipeline_data_type":[
+		"To create an instance of a workflow (biocompute object), the data type for that instance first needs to be defined. A data type is a set of field and attributes related to specific object type, or a list of the input, output, and variables. In a data type, the file-attribute collection is specified and a label is assigned for the collection. In other words, a list of the different values is defined and then what can be put in those values is specified."
+	],
+	{
+		"line": "_fields",
+		"name": "fileds",
+		"note": "This is a container for the list of fields for a type"
+	},
+	{
+		"line": " ",
+		"name":
+		"note": " "
+	},
+	"pipeline_instance":[
+      	"Some descriptive text to go here"
+	],
+	{
+		"line": " ",
+		"name": " ",
+		"note": " "
+	},
+"biocompute_object_instance":[
+		"- A biocompute object is a metadata record of an experimental instance; it has everything needed to reproduce a single in silico experiment. It contains references to all input data, all arguments of the underlying software application, and all version information of the executable program/programs used to run the bioinformatics computations. Extending this idea, a complex web of separate objects is still a single instance where ALL the input, output, and parameters serve the same function as in a singular instance, and can therefore be joined with other similar objects. The biocompute object example used here is a combination of two separate computations that have been joined into one pipeline. This example can serve as inspiration for complex pipelines created by joining the appropriate nodes (inputs and outputs) of other biocompute objects. On this page we demonstrate how all information from one experimental instance can be easily captured in an extensible and human readable format. The first example biocompute object BH_1 was created using protocol and results developed by Donaldson, et al. 2015. For more details you can read: Eric F Donaldson, Damon J Deming, Julian J O'Rear, Lisa K Naeger: Regulatory evaluation of antiviral drug resistance in the era of next-generation sequencing. Biomarkers in Medicine, November 2015, Vol. 9, No. 11, Pages 1047-1051, DOI 10.2217/bmm.15.63 (doi: 10.2217/bmm.15.63)"
+	],
+	{
+		"line": "alignment",
+		"name": " ",
+		"note": 
+	},
+	{
+		"line": "variant_calling",
+		"name": 
+		"note": 
+	},
+	{
+		"line": "verification_kit",
+		"name": "Verification Kit",
+		"note": "mechanism that allows the user to verify the workflow"
+	},
+	{
+"island_of_misfit_line_type": [
+		"- This is where misfit line-types go to die, delete, or get re-purposed into new line-type definitions.."
+	],
+	{
+		"line": "variant_calling, min_coverage",
+		"name":
+		"note": "Minimum depth of read coverage required for variant calling"
+	},
+	{
+		"line": "variant_calling, freq_cutoff",
+		"name":
+		"note": "Percent of reads that should have the single nucleotide variation for variant calling"
+	},
+	{
+		"line": "alignment tools",
+		"name":
+		"note": "Arguments for alignment and parameter settings"
+	},
+	{
+		"line": "alignment, minimum_match_len",
+		"name":
+		"note": "Minimum match length needed to be considered an alignment."
+	},
+	{
+		"line": "alignment, mismatch_allowed",
+		"name":
+		"note": "Mismatches allowed to be considered an alignment."
+	},
+	{
+		"line": "alignment, divergence_threshold_percent",
+		"name":
+		"note": "A filter for sequences that are clustered in predefined sequence divergent thresholds"
+	},
+	{
+		"line": "alignment, mismatch_allowed",
+		"name":
+		"note": "Mismatches allowed to be considered an alignment"
+	},
+	{
+		"line": "reference_sequences",
+		"name":	" ",
+		"note": "Nucleotide sequences to which the NGS reads are to be mapped"
+	},
+	{
+		"line": "ngs_reads",
+		"name": " ",
+		"note": "Nucleotide reads"
+	},
+	{
+		"line": "snv_profile",
+		"name": " ",
+		"note": "Output of variant calling"
+	},
+	{
+		"line": "snp_profiling",
+		"name": " ",
+		"note": "output of SNPs quantification"
+	},
+	{
+		"line": "alignment_file",
+		"name": " ",
+		"note": "Output of alignment"
+	},
+	{
+		"line": "aminoacid_calls",
+		"name": " ",
+		"note": "Output of amino acid calls"
+	},
+	{
+		"line": "accession_based_results",
+		"name": " ",
+		"note": "output files based on the accession numbers submitted for the workflow"
+	},
+	{
+		"line": "format",
+		"name": " ",
+		"note": "the format of the output files based on the accession numbers submitted for the workflow"
+	},
+	{
+		"line": "filename",
+		"name": " ",
+		"note": "name the file according to the workflow or experiment"
+	},
+	{
+		"line": "unalignedReads",
+		"name": " ",
+ 		"note": "an output file containing unaligned reads of the specific workflow"
+	},
+	{
+		"line": "hit_list",
+		"name": " ",
+		"note": "a list with the number of hits done in the specific experiment"
+	},
+	{
+		"line": "aminoacid_calls",
+		"name": " ",
+		"note": "output of amino acid calls"
+	},
+	{
+		"line": "source",
+		"name": " ",
+		"note": "a scientific resource that experimental data such as sequences can be obtained"
+	},
+	{
+		"line": "db",
+		"name": "database",
+		"note": "The repository, which stores the sequences and other scientific data"
+	},
+	{
+		"line": "sequence_reads",
+		"name": " ",
+		"note": "analyzing and quantifying the sequence data"
+	},
+	{
+		"line": "accession_based_results",
+		"name": " ",
+		"note": "output file with the results obtained"
+	},
+	{
+		"line": "tool_used, name",
+		"name":"specified tool name",
+		"note": "Name of tool."
+	},
+	{
+		"line": "tool_used, version",
+		"name": " ",
+		"note": "Version number of tool."
+	},
+	{
+		"line": "tool_used, arguments",
+		"name": " ",
+		"note": "Non-default arguments for the tool."
+	},
+	{
+		"line": "_fields",
+		"name": " ",
+		"note": "The fields present in the type."
+	},
+	}
+	
