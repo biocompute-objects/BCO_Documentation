@@ -1,0 +1,64 @@
+{
+	"_id": "obj.4001",
+	"_type": "Dentatorubral-pallidoluysian atrophy",
+	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for dentatorubral-pallidoluysian atrophy[DOID:0060162].",
+	"version": "1.0",
+	"verification": "manual",
+	"creation_date": "Tue Oct 18 09:23:07 EDT 2016",
+	"modification_date": "Tue Oct 18 09:23:55 EDT 2016",
+	"publication_status": "draft",
+	"keywords": [
+		"disease",
+		"human disease"
+	],
+	"xref": [
+			"DOID:0060162",
+			"GOID:GO0005737",
+			"ICD:R27.0",
+			"SO:0000291",
+			"tax:9606"
+			],
+	"usability_domain": [
+		"Determine CAG repeats[SO:0000291] in a sequence for the diagnosis of Dentatorubral-pallidoluysian atrophy [ICD:G10] for ATN1 gene[GOID:GO0005737]: normal: 6 - 35 CAG trinucleotide repeats, disease state: 48 - 93 CAG trinucleotide repeats"
+	],
+	"authors": [
+		{
+			"first_name": "James",
+			"last_name": "Burke",
+			"affiliation": "Duke"
+		}
+	],
+	"pipeline": "obj.4001",
+	"alignment": {
+		"seed": 14,
+		"minimum_match_len": 50,
+		"divergence_threshold_percent": 10
+	},
+	"variant_calling": {
+		"minimum_coverage": 20,
+		"frequency_cutoff": 0.20
+	},
+	"verification_kit":{
+		"reference_sequence":[
+			{
+				"source": "NCBI",
+				"db": "genbank",
+				"id": [
+					"NM_0002111.8",
+					"SRR2028290"
+				]
+			}
+		],
+		"sequence_reads": [
+			{
+				"source": "HIVE",
+				"db": "Honeycomb",
+				"id": ["obj.00001"]
+			}
+		],
+		"snp_profile_file": {
+			"format": [".csv"],
+			"filename": "SNPProfile.csv"
+		}
+	}
+}
