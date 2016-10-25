@@ -1,0 +1,102 @@
+{
+*   "id": 1173,
+*   "name": "Healthy Human[taxID:9606] Fecal[UBERON:0001988] Metagenomic Diversity[PCO:0000019]",
+*   "_type": "human_gut_metagenomic_detection"
+	"fields": {
+        "version": "1.0",
+        "keepAllMatches": "3",
+        "census_sample": "2500",
+        "keywords": "metagenomic analysis",
+        "keepMarkovnikovMatches": "1",
+        "hit_list_file": [
+            "1179=o516385_06-1_R1.csv"
+        ],
+        "accession_based_results": [
+            "1178=06-1-R2-516417-dnaAccessionBasedResult.csv"
+        ],
+        "complexityWindow": "30",
+        "minimum_match_len": "45",
+        "refsequencedata_id_list": [
+            "CP000139.1",
+            "FP929042.1",
+            "FP929046.1",
+            "FP929045.1"
+        ],
+        "verifi": "unreviewed",
+        "complexityRefWindow": "30///30",
+        "taxDepth": "leaf",
+        "status": "unreviewed",
+        "complexityRefEntropy": "strict///1.6",
+        "reference_NT": "HIVE:513957",
+        "aut_obj": "1177",
+        "usability_domain": "Identify the general community composition of organisms in a human[taxID:9606] fecal[UBERON:0001988] sample",
+        "complexityEntropy": "lenient///1|",
+        "census_iterations": "5",
+        "readsequencedata_archive": [
+            "High-performance Interactive Virtual Environment (HIVE);PMID:10802651"
+        ],
+        "refsequencedata_archive": [
+            "Nucleotide (NucCore);PMID: 26590407"
+        ],
+        "pipeline": "1163",
+        "maximumPercentLowQualityAllowed": "0",
+        "storeAlignments": "1",
+        "readsequencedata_id_list": [
+            "514683",
+            "514682"
+        ],
+        "census_selfStop": "0",
+        "db_id_list": "taxID:9606",
+        "acceptNNNQuaTrheshold": "filter Ns only///1"
+    }
+}
+
+{
+*   "id": 1163,
+*   "Name": "Human Gut Metagenomic Detection Pipeline",
+    "_type": "pipeline_definition"
+	"fields": {
+        "launcher": "system",
+        "tool_used": [
+            "1160",
+            "1161"
+        ],
+        "script": [
+            "1162=exampleScript.sh"
+        ]
+    }
+}
+
+{
+*   "id": 1161,
+*   "name": "HIVE-hexagon",
+*   "version": "1.3",
+    "fields": {
+        "tool_arguments": [
+            "minMatchLen:45",
+            "keepAllMatches:3",
+            "keepMarkovnikovMatches:1",
+            "complexityRefEntropy:1.2",
+            "complexityRefWindow:30",
+            "acceptNNNQuaTrheshold:1",
+            "complexityEntropy:1.2",
+            "complexityWindow:30",
+            "maximumPercentLowQualityAllowed:0"
+        ]
+    }
+}
+
+{
+*   "id": 1160,
+*   "name": "CensuScope",
+*   "version": "1.1",
+    "fields": {
+        "tool_arguments": [
+            "taxDepth:leaf",
+            "storeAlignments:1",
+            "CensuslimitIterations:10",
+            "Sample:1000",
+            "selfStopping:0"
+        ],
+    }
+}
