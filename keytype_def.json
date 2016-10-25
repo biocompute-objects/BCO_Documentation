@@ -36,6 +36,7 @@
 		"name": "description",
 		"note": "The creator-specified description of the object, type, or field. Information in this field lets other users know the function and purpose of the object."
 	},
+	{
 		"line": "creation_date",
 		"name": "creation date",
 		"note": "The time and date that the biocompute object is created."
@@ -62,12 +63,12 @@
 	},
 	{
 		"line": "keywords",
-		"name": "keywords"
+		"name": "keywords",
 		"note": "Keywords to aid in search-ability and description of the object. These are a set of controlled vocabulary."
 	},
-"base_biocompute_data_type":[ 
-		"Provides the base fields to populate in a biocompute object."
-	],
+	{
+		"base_biocompute_data_type": "Provides the base fields to populate in a biocompute object."
+	},
 	{
 		"line": "verification",
 		"name": "verification",
@@ -80,7 +81,7 @@
 	},
 	{
 		"line": "pipeline",
-		"name":
+		"name": " ",
 		"note": "The id of the pipeline that is used to a the biocompute object."
 	},
 	{
@@ -88,17 +89,17 @@
  		"name": "parent type",
 		"note": "refers to the parent type that the type inherits fields from."
 	},
-	"pipeline_definition":[
-		"A pipeline is a set of computations connected in series, where the output of one element can be part or all of the input for the next element. To have the pipeline instance data type we used earlier we need to define the elements that make up that type. Then we can use this type to create an object to describe any pipeline. Line types in this section refer to a more specific pipeline data type, which inherits from the base pipeline data type. Pipeline instance data type line type descriptions are not included in this document."
-	],
+	{
+	"pipeline_definition": "A pipeline is a set of computations connected in series, where the output of one element can be part or all of the input for the next element. To have the pipeline instance data type we used earlier we need to define the elements that make up that type. Then we can use this type to create an object to describe any pipeline. Line types in this section refer to a more specific pipeline data type, which inherits from the base pipeline data type. Pipeline instance data type line type descriptions are not included in this document."
+	},
 	{
 		"line": "tool_used",
 		"name": "tool used",
 		"note": "This field is for describing all information about the specific bioinformatic tools used. name and version fields are present, as well as the argument field. The argument field is a plural field and should be used for each individual argument of each tool."
 	},
-	"pipeline_data_type":[
-		"To create an instance of a workflow (biocompute object), the data type for that instance first needs to be defined. A data type is a set of field and attributes related to specific object type, or a list of the input, output, and variables. In a data type, the file-attribute collection is specified and a label is assigned for the collection. In other words, a list of the different values is defined and then what can be put in those values is specified."
-	],
+	{
+		"pipeline_data_type": "To create an instance of a workflow (biocompute object), the data type for that instance first needs to be defined. A data type is a set of field and attributes related to specific object type, or a list of the input, output, and variables. In a data type, the file-attribute collection is specified and a label is assigned for the collection. In other words, a list of the different values is defined and then what can be put in those values is specified."
+	},
 	{
 		"line": "_fields",
 		"name": "fileds",
@@ -106,29 +107,29 @@
 	},
 	{
 		"line": " ",
-		"name":
+		"name": " ",
 		"note": " "
 	},
-	"pipeline_instance":[
-      	"Some descriptive text to go here"
-	],
+	{
+		"pipeline_instance": "Some descriptive text to go here"
+	},
 	{
 		"line": " ",
 		"name": " ",
 		"note": " "
 	},
-"biocompute_object_instance":[
-		"- A biocompute object is a metadata record of an experimental instance; it has everything needed to reproduce a single in silico experiment. It contains references to all input data, all arguments of the underlying software application, and all version information of the executable program/programs used to run the bioinformatics computations. Extending this idea, a complex web of separate objects is still a single instance where ALL the input, output, and parameters serve the same function as in a singular instance, and can therefore be joined with other similar objects. The biocompute object example used here is a combination of two separate computations that have been joined into one pipeline. This example can serve as inspiration for complex pipelines created by joining the appropriate nodes (inputs and outputs) of other biocompute objects. On this page we demonstrate how all information from one experimental instance can be easily captured in an extensible and human readable format. The first example biocompute object BH_1 was created using protocol and results developed by Donaldson, et al. 2015. For more details you can read: Eric F Donaldson, Damon J Deming, Julian J O'Rear, Lisa K Naeger: Regulatory evaluation of antiviral drug resistance in the era of next-generation sequencing. Biomarkers in Medicine, November 2015, Vol. 9, No. 11, Pages 1047-1051, DOI 10.2217/bmm.15.63 (doi: 10.2217/bmm.15.63)"
-	],
+	{
+		"biocompute_object_instance": "- A biocompute object is a metadata record of an experimental instance; it has everything needed to reproduce a single in silico experiment. It contains references to all input data, all arguments of the underlying software application, and all version information of the executable program/programs used to run the bioinformatics computations. Extending this idea, a complex web of separate objects is still a single instance where ALL the input, output, and parameters serve the same function as in a singular instance, and can therefore be joined with other similar objects. The biocompute object example used here is a combination of two separate computations that have been joined into one pipeline. This example can serve as inspiration for complex pipelines created by joining the appropriate nodes (inputs and outputs) of other biocompute objects. On this page we demonstrate how all information from one experimental instance can be easily captured in an extensible and human readable format. The first example biocompute object BH_1 was created using protocol and results developed by Donaldson, et al. 2015. For more details you can read: Eric F Donaldson, Damon J Deming, Julian J O'Rear, Lisa K Naeger: Regulatory evaluation of antiviral drug resistance in the era of next-generation sequencing. Biomarkers in Medicine, November 2015, Vol. 9, No. 11, Pages 1047-1051, DOI 10.2217/bmm.15.63 (doi: 10.2217/bmm.15.63)"
+	},
 	{
 		"line": "alignment",
 		"name": " ",
-		"note": 
+		"note": " "
 	},
 	{
 		"line": "variant_calling",
-		"name": 
-		"note": 
+		"name": " ",
+		"note": " "
 	},
 	{
 		"line": "verification_kit",
@@ -136,42 +137,41 @@
 		"note": "mechanism that allows the user to verify the workflow"
 	},
 	{
-"island_of_misfit_line_type": [
-		"- This is where misfit line-types go to die, delete, or get re-purposed into new line-type definitions.."
-	],
+		"island_of_misfit_line_type": "- This is where misfit line-types go to die, delete, or get re-purposed into new line-type definitions.."
+	},
 	{
 		"line": "variant_calling, min_coverage",
-		"name":
+		"name": " ",
 		"note": "Minimum depth of read coverage required for variant calling"
 	},
 	{
 		"line": "variant_calling, freq_cutoff",
-		"name":
+		"name": " ",
 		"note": "Percent of reads that should have the single nucleotide variation for variant calling"
 	},
 	{
 		"line": "alignment tools",
-		"name":
+		"name": " ",
 		"note": "Arguments for alignment and parameter settings"
 	},
 	{
 		"line": "alignment, minimum_match_len",
-		"name":
+		"name": " ",
 		"note": "Minimum match length needed to be considered an alignment."
 	},
 	{
 		"line": "alignment, mismatch_allowed",
-		"name":
+		"name": " ",
 		"note": "Mismatches allowed to be considered an alignment."
 	},
 	{
 		"line": "alignment, divergence_threshold_percent",
-		"name":
+		"name": " ",
 		"note": "A filter for sequences that are clustered in predefined sequence divergent thresholds"
 	},
 	{
 		"line": "alignment, mismatch_allowed",
-		"name":
+		"name": " ",
 		"note": "Mismatches allowed to be considered an alignment"
 	},
 	{
@@ -273,6 +273,7 @@
 		"line": "_fields",
 		"name": " ",
 		"note": "The fields present in the type."
-	},
+	}
+	}
 	}
 	
