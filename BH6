@@ -1,34 +1,33 @@
 {
-	"_id": "obj.5001",
-	"_type": "Dentatorubral-pallidoluysian atrophy",
-	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for dentatorubral-pallidoluysian atrophy[DOID:0060162].",
+	"_id": "obj.6001",
+	"_type": "fragile X syndrome",
+	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for fragile X sybdrome atrophy[DOID:14261].",
 	"version": "1.0",
 	"verification": "manual",
-	"creation_date": "Tue Oct 18 09:23:07 EDT 2016",
-	"modification_date": "Tue Oct 18 09:23:55 EDT 2016",
+	"creation_date": "Tue Oct 27 05:01:03 EDT 2016",
+	"modification_date": "Tue Oct 27 05:08:36 EDT 2016",
 	"publication_status": "draft",
 	"keywords": [
 		"disease",
 		"human disease"
 	],
 	"xref": [
-			"DOID:0060162",
+			"DOID:14261",
 			"GOID:GO0005737",
-			"ICD:R27.0",
+			"ICD:Q99.2",
 			"SO:0000291",
 			"tax:9606"
 			],
 	"usability_domain": [
-		"Determine CAG repeats[SO:0000291] in a sequence for the diagnosis of Dentatorubral-pallidoluysian atrophy [ICD:G10] for ATN1 gene[GOID:GO0005737]: normal: 6 - 35 CAG trinucleotide repeats, disease state: 48 - 93 CAG trinucleotide repeats"
+		"Determine CGG repeats[SO:0000291] in a sequence for the diagnosis of Fragile X Syndrome [ICD:Q99.2] for FMR1 gene[GOID:GO0003723]: normal: 5 - 40 CGG trinucleotide repeats, disease state: 55 - 200 trinucleotide repeats"
 	],
 	"authors": [
 		{
-			"first_name": "James",
-			"last_name": "Burke",
-			"affiliation": "Duke"
+			"first_name": "Herbert",
+			"last_name": "Lubs",
 		}
 	],
-	"pipeline": "obj.5001",
+	"pipeline": "obj.6001",
 	"alignment": {
 		"seed": 14,
 		"minimum_match_len": 50,
@@ -44,8 +43,8 @@
 				"source": "NCBI",
 				"db": "genbank",
 				"id": [
-					" NM_001940.3",
-					"rs7969685"
+					"NG_007529.2",
+					"SRR869677"
 				]
 			}
 		],
