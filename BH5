@@ -1,5 +1,5 @@
 {
-	"_id": "obj.4001",
+	"_id": "obj.5001",
 	"_type": "Dentatorubral-pallidoluysian atrophy",
 	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for dentatorubral-pallidoluysian atrophy[DOID:0060162].",
 	"version": "1.0",
@@ -28,7 +28,7 @@
 			"affiliation": "Duke"
 		}
 	],
-	"pipeline": "obj.4001",
+	"pipeline": "obj.5001",
 	"alignment": {
 		"seed": 14,
 		"minimum_match_len": 50,
@@ -44,8 +44,8 @@
 				"source": "NCBI",
 				"db": "genbank",
 				"id": [
-					"NM_0002111.8",
-					"SRR2028290"
+					" NM_001940.3",
+					"rs7969685"
 				]
 			}
 		],
