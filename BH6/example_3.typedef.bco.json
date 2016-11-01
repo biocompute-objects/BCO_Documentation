@@ -1,0 +1,70 @@
+{
+	"_type": "type",
+	"name": "HIVE_huntingtons_disease_detection",
+	"description": "Pipeline to determine the risk of huntington's disease in a gene sequence",
+	"_fields": {
+		"reference_sequence": {
+			"description": "reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
+			"title": "Reference Sequences",
+			"_type": "xref",
+			"_role": "input",
+			"_vital": "true",
+			"_plural": "true"
+		},
+		"sequence_reads": {
+			"description": "sequences can be either FASTA from experimental sources or identifiers from HIVE database. These must be saved as a 'nuc_read' type in HIVE to use in this field",
+			"title": "Nucleotide Read",
+			"_type": "xref",
+			"_role": "input",
+			"_vital": "true",
+			"_plural": "true"
+		},
+		"alignment": {
+			"description": "Non-default arguments for the alignment, HIVE Hexagon",
+			"title": "HIVE Hexagon Alignment Engine",
+			"seed": {
+				"_type": "integer",
+				"_default": 11,
+				"_limit": { 
+					"eval-js": "$seed>8 && $seed<12"
+				}
+			},
+			"minimum_match_len,": {
+				"_type": "integer",
+				"_default": 75
+			},
+			"divergence_threshold_percent": {
+				"_type": "real",
+				"_default": 15,
+				"_limit:":{
+					"eval-js": ["$divergence_threshold_percent>10 && $divergence_threshold_percent<40"]
+				}
+			}
+		},
+		"variant_calling": {
+			"description": "arguments for the engine to perform coverage analysis, base-calling, SNP calling",
+			"title": "Sequence Profiling Engine",
+			"minimum_coverage": {
+				"_type": "integer",
+				"_default": 10,
+				"_limit": { 
+					"eval-js": ["$minimum_coverage>=0"]
+				}
+			},
+			"frequency_cutoff": {
+				"_type": "real",
+				"_default": 0.10,
+				"_limit": { 
+					"eval-js": ["$frequency_cutoff>=0 && $frequency_cutoff<=1.0"]
+				}
+			}
+		},
+		"snv_profile": {
+			"description": "The output file containing the SNP Profile",
+			"title": "SNPProfile Output File",
+			"_role": "output",
+			"_type": "outfile"
+		}
+	},
+	"_inherits": ["base_biocompute_type"]
+}

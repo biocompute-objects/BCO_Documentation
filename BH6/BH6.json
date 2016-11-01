@@ -1,0 +1,63 @@
+{
+	"_id": "obj.6001",
+	"_type": "fragile X syndrome",
+	"name": "Human[tax:9606] CAG repeats[SO:0000726] detection for fragile X sybdrome atrophy[DOID:14261].",
+	"version": "1.0",
+	"verification": "manual",
+	"creation_date": "Tue Oct 27 05:01:03 EDT 2016",
+	"modification_date": "Tue Oct 27 05:08:36 EDT 2016",
+	"publication_status": "draft",
+	"keywords": [
+		"disease",
+		"human disease"
+	],
+	"xref": [
+			"DOID:14261",
+			"GOID:GO0005737",
+			"ICD:Q99.2",
+			"SO:0000291",
+			"tax:9606"
+			],
+	"usability_domain": [
+		"Determine CGG repeats[SO:0000291] in a sequence for the diagnosis of Fragile X Syndrome [ICD:Q99.2] for FMR1 gene[GOID:GO0003723]: normal: 5 - 40 CGG trinucleotide repeats, disease state: 55 - 200 trinucleotide repeats"
+	],
+	"authors": [
+		{
+			"first_name": "Herbert",
+			"last_name": "Lubs",
+		}
+	],
+	"pipeline": "obj.6001",
+	"alignment": {
+		"seed": 14,
+		"minimum_match_len": 50,
+		"divergence_threshold_percent": 10
+	},
+	"variant_calling": {
+		"minimum_coverage": 20,
+		"frequency_cutoff": 0.20
+	},
+	"verification_kit":{
+		"reference_sequence":[
+			{
+				"source": "NCBI",
+				"db": "genbank",
+				"id": [
+					"NG_007529.2",
+					"SRR869677"
+				]
+			}
+		],
+		"sequence_reads": [
+			{
+				"source": "HIVE",
+				"db": "Honeycomb",
+				"id": ["obj.00001"]
+			}
+		],
+		"snp_profile_file": {
+			"format": [".csv"],
+			"filename": "SNPProfile.csv"
+		}
+	}
+}
