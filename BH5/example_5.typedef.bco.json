@@ -1,7 +1,7 @@
 {
 	"_type": "type",
-	"name": "HIVE_huntingtons_disease_detection",
-	"description": "Pipeline to determine the risk of huntington's disease in a gene sequence",
+	"name": "HIVE_Dentatorubral_pallidoluysian_atrophy",
+	"description": "Pipeline to determine the risk of Dentatorubral_pallidoluysian_atrophy in a gene sequence",
 	"_fields": {
 		"reference_sequence": {
 			"description": "reference sequences can be either FASTA from known sources or identifiers from HIVE database. These must be saved as a 'genome' type in HIVE to use in this field",
