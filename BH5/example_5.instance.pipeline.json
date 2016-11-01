@@ -1,8 +1,8 @@
 {
-	"_id": "obj.20003",
+	"_id": "obj.5001",
 	"_type": "pipeline_definition",
-	"name": "HIVE Huntington's Disease Detection Pipeline",
-	"description": ["This pipeline uses an aligner and then a profiler to detect possible mutations indicating risk of huntington's disease in a gene sequence. "],
+	"name": "Dentatorubral-pallidoluysian atrophy",
+	"description": ["This pipeline uses an aligner and then a profiler to detect possible mutations indicating risk of dentatorubral-palldoluysian atrophy in a gene sequence. "],
 	"workflow": {
 		"launcher": "system",
 		"script": "013324"
