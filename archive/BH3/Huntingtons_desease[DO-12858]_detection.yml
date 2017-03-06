@@ -1,0 +1,14 @@
+seed: 14
+minimum_match_len: 50
+divergence_threshold_percent: 10
+minimum_coverage: 20
+frequency_cutoff: 0.20
+reference_sequence1:
+    class: File
+    source: https://www.ncbi.nlm.nih.gov/nuccore/NM_0002111.8
+reference_sequence2:
+    class: File
+    source: https://www.ncbi.nlm.nih.gov/nuccore/SRR2028290
+sequence_reads: 
+    class: File
+    source: HIVE https://hive.biochemistry.gwu.edu/dna.cgi?cmd=obj.00001.csv

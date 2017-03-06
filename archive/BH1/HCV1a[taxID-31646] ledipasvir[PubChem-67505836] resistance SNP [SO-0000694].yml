@@ -1,0 +1,12 @@
+divergence_threshold_percent:10
+minimum_coverage:50
+frequency_cutoff:10
+reference_sequence:
+    class: File
+    path: https://www.ncbi.nlm.nih.gov/nuccore/JQ434001
+sequence_reads1:
+    class: File
+    path: https://hive.biochemistry.gwu.edu/dna.cgi?cmd=10065
+sequence_reads2:
+    class: File
+    path: https://hive.biochemistry.gwu.edu/dna.cgi?cmd=10066

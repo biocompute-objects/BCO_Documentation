@@ -1,0 +1,45 @@
+make_vcfs.py
+	steps:
+1	- samtools faidx <ref.fasta>
+		Index reference sequence in the FASTA format
+2	- picard CreateSequenceDictionary -
+		Creates a sequence dictionary for a reference sequence
+3	- samtools_sort
+		Sort alignments by leftmost coordinates
+4	- picard_MarkDuplicates REMOVE_DUPLICATES=F
+		This tool locates and tags duplicate reads in a BAM or SAM file
+			- REMOVE_DUPLICATES=F'alse'
+5	- picard_AddOrReplaceReadGroups 'RGLB=lib1','RGPL=Illumina','RGPU=unit1','RGSM=20'
+		Replace read groups in a BAM file.T
+			- RGLB=lib1 -> Read Group library *Required.
+			- RGPL=Illumina -> Read Group platform *Required.
+			- RGPU=unit1 -> Read Group platform unit (eg. run barcode) *Required.
+			- RGSM=20 -> Read Group sample name *Required.
+6	- GenomeAnalysisTK_RealignerTargetCreator
+		Determining (small) suspicious intervals which are likely in need of realignment 
+			- nt 22 -> ??
+7	- GenomeAnalysisTK_IndelRealigner
+		Perform local realignment of reads around indels
+8	- GenomeAnalysisTK HaplotypeCaller
+		Call germline SNPs and indels via local re-assembly of haplotypes
+			- L X -> Directs the GATK engine to restrict processing to specific genomic intervals
+
+combine_vcfs_gatk.2.py
+	steps:
+	- 
+
+Notes on biology  	
+	hai - inhib
+	hawi - without inhib
+	
+are SNP in sequence case of imune response to drugs they have been give recombanants factor 8(hemophilia A). 
+
+recombinant antihemophilic factor
+
+Drugs -> https://www.drugs.com/condition/hemophilia-a.html
+	Advate pubChem:6083 
+	N8 
+	Recombinate -> https://www.drugs.com/cdi/recombinate.html 
+	xyntha 
+	Helixate pubChem:104815 
+	Alphanate 

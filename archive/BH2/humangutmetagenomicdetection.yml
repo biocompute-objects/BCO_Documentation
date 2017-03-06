@@ -1,0 +1,38 @@
+taxDepth: leaf
+storeAlignments: 1
+CensuslimitIterations: 5
+Sample: 2500
+selfStopping: 0
+minMatchLen: 45
+keepAllMatches: 3
+keepMarkovnikovMatches: 1
+complexityRefEntropy: 1.2
+complexityRefWindow: 30
+acceptNNNQuaThreshold: 1
+complexityEntropy: 1.2
+complexityWindow: 30
+maximumPercentLowQualityAllowed: 0
+reference_sequence1:
+    class: File
+    source: https://www.ncbi.nlm.nih.gov/nuccore/CP000139.1
+reference_sequence2:
+    class: File
+    source: https://www.ncbi.nlm.nih.gov/nuccore/FP929042.1
+reference_sequence3:
+    class: File
+    source: https://www.ncbi.nlm.nih.gov/nuccore/FP929046.1
+reference_sequence4:
+    class: File
+    source: https://www.ncbi.nlm.nih.gov/nuccore/FP929045.1
+reference_sequence5:
+    class: File
+    source: https://www.ncbi.nlm.nih.gov/nuccore/FP929043.1
+reference_sequence6:
+    class: File
+    source: https://www.ncbi.nlm.nih.gov/nuccore/FP929048.1
+sequence_reads:
+    class: File
+    source: https://hive.biochemistry.gwu.edu/dna.cgi?cmd=539022.fastq
+reference_db:
+    class: File
+    source: https://hive.biochemistry.gwu.edu/dna.cgi?cmd=509956/bc

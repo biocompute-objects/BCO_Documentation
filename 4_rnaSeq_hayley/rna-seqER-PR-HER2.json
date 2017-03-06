@@ -1,0 +1,143 @@
+{
+    "id": "obj.1275", 
+    "name": "RNA-seq analysis of ER [HGNC:3467], PR [HGNC:8910], and HER2 [HGNC:3430] status in human [taxID:9606] breast cancer [DOID:1612]", 
+    "version": "1.0", 
+    "createdby": "hadley_king@gwmail.gwu.edu", 
+    "created": "Jan 25, 2017 11:19:27", 
+    "modified": "Mar 03, 2017 14:08:12", 
+    "digital_signature": "7LGk9QfzKQ40qdz5b8pS", 
+    "verification_status": "unreviewed", 
+    "publication_status": "draft", 
+    "usability_domain": [
+        "RNA-seq data analysis to identify the status of ER, PR and HER2 
+		expression.", 
+        "Diagnostic analysis of breast cancer samples for drug treatment.", 
+        "Quantitation of RNA-seq derived expression of ER, PR and HER2 in breast 
+		cancer samples to predict therapeutic efficacy based on presence of 
+		available receptors."
+    ], 
+    "description_domain": {
+        "keywords": [
+            "breast cancer", 
+            "RNA-seq", 
+            "receptor", 
+            "ER", 
+            "PR", 
+            "HER2", 
+            "biomarker", 
+            "therapy"
+        ], 
+        "xref": [
+            "HGNC:3467", 
+            "HGNC:8910", 
+            "HGNC:3430", 
+            "taxID:9606", 
+            "DOID:1612"
+        ], 
+        "pipeline_steps": [
+            {
+                "tool_name": "Cufflinks", 
+                "tool_desc": "assembles transcripts from RNA-seq data", 
+                "tool_version": "cufflinks v2.2.1", 
+                "tool_package": "boost, samtools", 
+                "step_number": "2", 
+                "input_uri_list": [
+                    "/home/hmhamilt/BRCA/accepted_hits.bam"
+                ], 
+                "output_uri_list": [
+                    "/home/hmhamilt/BRCA/assemblies.txt]"
+                ]
+            }, 
+            {
+                "tool_name": "TopHat", 
+                "tool_desc": "Maps short sequences from spliced transcripts to 
+					whole genomes", 
+                "tool_version": "TopHat v2.0.13", 
+                "tool_package": "bowtie2, bowtie2-align, bowtie2-inspect, 
+					bowtie2-build, samtools", 
+                "step_number": "1", 
+                "input_uri_list": [
+                    "/home/hamilt/GRCH38/GRCH38.fa", 
+                    "/home/hmhamilt/GRCH38/GRCH38annots.gtf", 
+                    "/home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_1.fastq", 
+                    "/home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_2.fastq", 
+                    "/home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_1.fastq",
+		    "/home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_2.fastq",
+		    "/home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_1.fastq", 
+                    "/home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_2.fastq"
+                ], 
+                "output_uri_list": [
+                    "/home/hmhamilt/BRCA/accepted_hits.bam"
+                ]
+            }, 
+            {
+                "tool_name": "Cuffmerge", 
+                "tool_desc": "merge reported transcripts with gtf annotations", 
+                "tool_version": "cufflinks v2.2.1", 
+                "tool_package": "boost, samtools", 
+                "step_number": "3", 
+                "input_uri_list": [
+                    "/home/hmhamilt/BRCA/assemblies.txt"
+                ], 
+                "output_uri_list": [
+                    "/home/hmhamilt/BRCA/merged.gtf"
+                ]
+            }, 
+            {
+                "tool_name": "Cuffdiff", 
+                "tool_desc": "perform differential expression tests", 
+                "tool_version": "cufflinks v2.2.1", 
+                "tool_package": "boost, samtools", 
+                "step_number": "4", 
+                "input_uri_list": [
+                    "/home/hmhamilt/BRCA/merged.gtf"
+                ], 
+                "output_uri_list": [
+                    "/home/hmhamilt/BRCA/genes.fpkm_tracking"
+                ]
+            }
+        ]
+    }, 
+    "execution_domain": {
+        "script": "http://128.164.35.92/home/hmhamilt/BRCA/rna-seq.cwl", 
+        "pipeline_version": "0.0", 
+        "pipeline_url": "https://hive.biochemistry.gwu.edu/$pipelineName", 
+        "platform": "HIVE", 
+        "driver": "http://128.164.35.92/cwl-tool", 
+        "prerequisites": [
+            "TopHat2", 
+            "Cufflinks", 
+            "Cuffmerge", 
+            "Cuffdif", 
+            "cwl-tool"
+        ], 
+        "env_parameters": [
+            "cwlVersion: cwl:draft-3"
+        ]
+    }, 
+    "parametric_domain": {
+        "tophat_threads": "4", 
+        "tophat_no-coverage-search": "on", 
+        "cufflinks_threads": "4", 
+        "cuffmerge_threads": "4"
+    }, 
+    "io_domain": {
+        "reference_uri_list": [
+            "ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Eukaryotes/vertebrates_mammals/Homo_sapiens/GRCh38/GRCH38annots.gtf", 
+            "ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Eukaryotes/vertebrates_mammals/Homo_sapiens/GRCh38/GRCH38annots.fa"
+        ], 
+        "input_uri_list": [
+            "http://128.164.35.92/home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_1.fastq", 
+            "http://128.164.35.92/home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_2.fastq"
+        ], 
+        "output_uri_list": [
+            "http://128.164.35.92/home/hmhamilt/BRCA/merged.gtf"
+        ]
+    }, 
+    "error_domain": [
+        "Threshold of quantifiable expression is determined by summary statistics. ", 
+        "Samples with FPKM reported below designated threshold for a given receptor gene will not be subject to diagnostic analysis.", 
+        "false positive discovery <= 0.05", 
+        "false negative discovery <= 0.10"
+    ]
+}
