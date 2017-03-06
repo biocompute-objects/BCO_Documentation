@@ -1,14 +1,25 @@
 {
     "id": "", 
-    "name": "Identification of recombinant antihemophilic factor [Uniprot:P00451] inhibitor SNPs in human [taxID:9606] Hemophilia A [DOID:12134] patients ", 
-    "version": "", 
-    "digital_signature": "", 
+    "name": "Identification of recombinant antihemophilic factor [Uniprot:P00451] inhibitor SNPs [SO:0000694] in human [taxID:9606] blood [UBERON:0000178} extracted from patients with Hemophilia A [DOID:12134]", 
+    "version": "0.1", 
+    "digital_signature": null, 
     "verification_status": "unreviewed",
     "publication_status": "draft",
-    "usability_domain": ["used to identify SNPs present in patiens with hemophilia A who have developed inhibitory resistance to ecombinant antihemophilic factor"],
-    "authors": [{}],
+    "usability_domain": [
+		"Identify SNPs [SO:0000694] that corrilate with the development of an inhibitory response to recombinant antihemophilic factor VII in patiens with hemophilia A [DOID:12134]"
+	],
+    "authors": [
+		{"name": "Joe Mcgill"}, 
+		{"orcid":"0000-0003-1409-4549"}
+	],
     "description_domain":{
-        "xref":[],
+        "xref":[
+        	"taxID:9606",
+			"Uniprot:P00451",
+			"UBERON:0000178",
+			"DB:00025",
+			"SO:0000694"
+        ],
         "keywords": [], 
         "pipeline_steps": {
             "samtools_faidx": {
@@ -260,12 +271,12 @@
         }
     },
     "execution_domain": {
-        "platform": "", 
-        "url": "", 
+        "platform": "Lynix/Unix",
+        "url": "https://github.com/biocompute-objects/HTS-CSRS/tree/master/8_gatk_JoeMcG", 
         "pipeline_version": "1.0", 
         "env_parameters": [""], 
         "driver": "bash", 
-        "script": "/home/jmcgill/Desktop/biocompute/make_vcfs.py", 
+        "script": "https://github.com/biocompute-objects//HTS-CSRS/tree/master/8_gatk_JoeMcG/make_vcfs.py", 
         "prerequisites": [
             {"name":"GenomAnalysisToolKit","version":"3.6"},
             {"name":"Picard","version":"v2.6.0"},
