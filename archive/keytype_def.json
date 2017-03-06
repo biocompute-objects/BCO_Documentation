@@ -1,0 +1,135 @@
+{
+	"title": "biocompute_line_type.txt",
+	"release": "V2, Jan 6th 2017",
+	"Description":[
+			"name - refers to line types in biocompute objects. Lines preceded by '_' means that the field is not mutable by the user who is runniung the biocompute object",
+			"title - refers to human readable name of the line. This fields can be empty.",
+			"description - refers to the description of the line type"
+			],
+	"biocompute_object":[
+		{
+			"name": "id",
+			"title": "id",
+			"description": "This is the object id. The id is a unique identifying value assigned to each object. This value is used for all references to this object."
+		},
+		{
+			"name": "type",
+			"title": "type",
+			"description": "This field defines the type of the object."
+		},
+		{
+			"name": "title",
+			"title": "title",
+	 		"description": "The user-defined name of the object/type. It can be any type of text."
+		},
+		{
+			"name": "version",
+			"title": "version",
+			"description": "records the versioning of the object"
+		},
+		{
+			"name": "creation_date",
+			"title": "creation date",
+			"description": "The time and date that the biocompute object is created."
+		},
+		{
+			"name": "modification_date",
+			"title": "modification date",
+			"description": "This field will list all the dates and time an object is modified."
+		},
+		{
+			"name": "verification_status",
+			"title": "Verification Status",
+			"description": "Describes the position of an object in the verification process. The 'unreviewed' flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The 'in_progress' flag indicates that verification is underway. the 'reviewed' flag indicates that the biocompute object has been verified and reviewed. The 'manual' flag indicates that the object has been manually verified. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'error' flag indicates that an error was detected with the biocompute object."
+		},
+		{
+			"name": "publication_status",
+			"title": "publication status",
+			"description": "This is a choice field with four options. The 'draft' flag indicates that an object is in draft form and is still being edited. The 'open access' flag indicates that an object has been published and is freely available to anyone. The objects with the 'private' flag have restrictions on who can view and access them. This is a way for researchers using restricted data or metadata to insure the confidentially is maintained."
+		},
+		{
+			"name": "usability_domain",
+			"title": "usability domain",
+			"description": "This field provides a space for the author to define the usability domane of an object. The usability domain along with keywords can help determine when and how the biocompute object can be used. Novel use of the biocompute object should result in the creation of a new entry."
+		},
+		{
+			"name": "authors",
+			"title": "Authors",
+			"description": "This is the list of authors submitting this object. First and last name are required, middle name and affiliation are not. The affiliation field is for listing the academic, governmental, or private entity that supported the project responsible for generating the biocompute object."
+		},
+		{
+			"name": "keywords",
+			"title": "Keywords",
+			"description": "Keywords to aid in search-ability and description of the object. These are a set of controlled vocabulary."
+		},
+		{
+			"name": "db_id_list",
+			"title": "Database ID key-value list", 
+			"description": "The db_id_list allow for the ability to cross reference curated scientific resources associated with a specific workflow. Disease Ontology, Gene Ontology, Sequence Ontology, etc."
+		},
+		{
+			"name": "pipeline",
+			"title": "Pipeline",
+			"description": "The id of the pipeline that is used to a the biocompute object."
+		},
+		{
+			"name": "parameters",
+			"title": "Parameters",
+			"description": "A list of the parmaeters that are accessable by the user for this biocompute object."
+		},
+		{
+			"name": "verification_kit",
+			"title": "Verification Kit",
+			"description": "mechanism that allows the user to verify the workflow"
+		}
+	],
+	"author":[
+		{
+			"name": "first",
+			"title": "First Name",
+			"description": "First name of author."
+		},
+		{
+			"name": "last",
+			"title": "Last Name",
+			"description": "Last name of the author"
+		},
+		{
+			"name": "middle",
+			"title": "Middle Name/Other Name",
+			"description": "Middle or other name of author"
+		},
+		{
+			"name": "orcid",
+			"title": "ORCID ID",
+			"description": "A unique identifier for researchers and scholars"
+		}
+	],
+	"pipeline_definition": [
+		{
+			"name": "Name",
+			"title": "Name",
+			"description": "Name of Pipeline"
+		},
+		{
+			"name": "workflow",
+			"title": "Workflow",
+			"description": "Workflow features for the pipeline object"
+		},
+		{
+			"name":"launcher",
+			"title":"Process Launcher",
+			"description":"Launches the pipeline process"
+		},
+		{
+			"name":"script",
+			"title":"Launcher Script",
+			"description":"Script used to launch the process"
+		},
+		{
+			"name":"tool_used",
+			"title":"Tool Used",
+			"description": "This field is for describing all information about the specific bioinformatic tools used. name and version fields are present, as well as the argument field. The argument field is a plural field and should be used for each individual argument of each tool."
+		}
+	]
+}

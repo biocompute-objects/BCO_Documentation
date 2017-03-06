@@ -1,0 +1,50 @@
+{
+    "id": "", 
+    "name": "", 
+    "version": "", 
+    "digital_signature": "", 
+    "verification_status": "unreviewed", 
+    "publication_status": "draft", 
+    "usability_domain": [], 
+    "authors": [{}],
+    "description_domain":{
+        "xref":[],
+        "keywords": [], 
+        "pipeline_steps": {
+            "name":{
+                "description": "description",
+                "version": "",
+                "step_number": 999,
+                "package":["sbg:links:Download", "OR", "appUrl"],
+                "input":[],
+                "output":[]
+            }
+        }
+	},
+    "execution_domain": {
+        "platform": "", 
+        "url": "", 
+        "pipeline_version": "", 
+        "env_parameters": [""], 
+        "driver": "", 
+        "script": "", 
+        "prerequisites": [
+            {"name":"","version":""}
+        ]
+    },
+    "parametric_domain": {
+        "": ""
+    }, 
+    "io_domain": {
+        "reference_uri": [
+            ""
+        ],
+        "input_uri_list": [
+            ""
+        ],
+        "output_uri_list": [
+            ""
+        ]
+    },
+    "error_domain": [""]
+}

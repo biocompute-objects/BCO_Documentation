@@ -1,0 +1,87 @@
+{
+	"_id": "",
+	"_type": "pipeline_definition",
+	"name": "",
+	"description": [
+	],
+	"workflow": {
+		"launcher": "",
+		"script": ""
+	},
+	"tool_used": [
+		{
+			"name": "hiveseq",
+			"version": "",
+			"arguments": [
+				{
+					"parameter":  "trimMaximum",
+					"value": 110
+				},
+				{
+					"parameter":  "trimMinimum",
+					"value": 10
+				}
+			]
+		},
+		{
+			"name": "align-hexagon",
+			"version": "1.1",
+			"arguments": [
+				{
+					"parameter":  "seed",
+					"value": 14
+				},
+				{
+					"parameter": "minMatchLen", 
+					"value": 85
+				},
+				{
+					"parameter": "keepAllMatches",
+					"value": 3
+				},
+				{
+					"parameter": "keepMarkovnikovMatches",
+					"value": 1
+				},
+				{	
+					"parameter": "complexityRefEntropy",
+					"value": 1.2
+				},
+				{
+					"parameter": "complexityRefWindow",
+					"value": 20
+				},
+				{
+					"parameter": "acceptNNNQuaTrheshold",
+					"value": 1
+				},
+				{
+					"parameter": "complexityEntropy",
+					"value": 1.2
+				},
+				{
+					"parameter": "complexityWindow", 
+					"value": 30
+				},
+				{
+					"parameter": "maximumPercentLowQualityAllowed",
+					"value": 0
+				}
+			]
+		},
+		{
+			"name": "profiler-heptagon",
+			"version": "",
+			"arguments": [
+				{}
+			]
+		},
+		{
+			"name": "ibda-ud",
+			"version": "",
+			"arguments": [
+				{}
+			]
+		}
+	]
+}

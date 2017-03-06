@@ -1,0 +1,104 @@
+TopHat2
+
+tophat_output_directory:/home/hmhamilt/BRCA
+tophat_reference_directory:/home/hmhamilt/GRCH38
+tophat_number_threads:4
+tophat_annotations_gtf:/home/hmhamilt/GRCH38/GRCH38annots.gtf
+reference_genome:
+	class: File
+	path: /home/hamilt/GRCH38/GRCH38.fa
+reference_gtf:
+	class: File
+	path: /home/hmhamilt/GRCH38/GRCH38annots.gtf
+sequence_reads_sample1_pair1_read1:
+	class: File
+	path: /home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_1.fastq
+sequence_reads_sample1_pair1_read2:
+	class: File
+	path: /home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_2.fastq
+sequence_reads_sample2_pair1_read1:
+	class: File
+	path: /home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_1.fastq
+sequence_reads_sample2_pair1_read2:
+	class: File
+	path: /home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_2.fastq	
+sequence_reads_sample3_pair1_read1:
+	class: File
+	path: /home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_1.fastq
+sequence_reads_sample3_pair1_read1:
+	class: File
+	path: /home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_2.fastq
+
+-->output file will be /home/hmhamilt/BRCA/accepted_hits.bam (for each sample)
+
+
+
+Cufflinks
+
+cufflinks_output_directory:/home/hmhamilt/BRCA
+cufflinks_number_threads:4
+
+-->output file will be /home/hmhamilt/BRCA/transcripts.gtf (for each sample)
+
+
+
+*Create list of cufflinks output files* - human intervention or need to actually write shell script to do it
+
+-->output file will be /home/hmhamilt/BRCA/assemblies.txt
+
+
+
+Cuffmerge
+
+cuffmerge_output_directory:/home/hmhamilt/BRCA
+cuffmerge_reference_gtf:/home/hmhamilt/GRCH38/GRCH38annots.gtf
+cuffmerge_number_threads:4
+
+-->output file will be /home/hmhamilt/BRCA/merged.gtf
+
+
+
+Cuffdiff
+
+cuffdiff_output_directory:/home/hmhamilt/BRCA
+cuffdiff_bias_correction:/home/hmhamilt/GRCH38/GRCH38.fa
+cuffdiff_number_threads:4
+
+-->output file of interest is /home/hmhamilt/BRCA/genes.fpkm_tracking
+*Create means of differentiating between FPKMs in samples* - human intervention or new script
+
+
+"tool_name": "TopHat", 
+                "tool_desc": "Maps short sequences from spliced transcripts to whole genomes", 
+                "tool_version": "TopHat v2.0.13", 
+                "tool_package": "bowtie2, bowtie2-align, bowtie2-inspect, bowtie2-build, samtools", 
+                "step_number": "1", 
+                "input_uri_list": [/home/hamilt/GRCH38/GRCH38.fa, /home/hmhamilt/GRCH38/GRCH38annots.gtf, /home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_1.fastq, /home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_2.fastq, /home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_1.fastq, /home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_2.fastq, /home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_1.fastq,  /home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_2.fastq], 
+                "output_uri_list": [/home/hmhamilt/BRCA/accepted_hits.bam]
+
+"tool_name": "Cufflinks", 
+                "tool_desc": "assembles transcripts from RNA-seq data", 
+                "tool_version": "cufflinks v2.2.1", 
+                "tool_package": "boost, samtools", 
+                "step_number": "2", 
+                "input_uri_list": [/home/hmhamilt/BRCA/accepted_hits.bam], 
+                "output_uri_list": [/home/hmhamilt/BRCA/assemblies.txt]
+            
+"tool_name": "Cuffmerge", 
+                "tool_desc": "merge reported transcripts with gtf annotations", 
+                "tool_version": "cufflinks v2.2.1", 
+                "tool_package": "boost, samtools", 
+                "step_number": "3", 
+                "input_uri_list": [/home/hmhamilt/BRCA/assemblies.txt], 
+                "output_uri_list": [/home/hmhamilt/BRCA/merged.gtf]
+
+"tool_name": "Cuffdiff", 
+                "tool_desc": "perform differential expression tests", 
+                "tool_version": "cufflinks v2.2.1", 
+                "tool_package": "boost, samtools", 
+                "step_number": "4", 
+                "input_uri_list": [/home/hmhamilt/BRCA/merged.gtf], 
+                "output_uri_list": [/home/hmhamilt/BRCA/genes.fpkm_tracking]
+}
+
+https://hive.biochemistry.gwu.edu/tst/htscsrs/bcoexample_4
