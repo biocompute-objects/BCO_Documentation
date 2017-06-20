@@ -1,0 +1,156 @@
+{
+    "_core_descriptions" : {
+        "_type" : "type of the object",
+        "_id" : "identifier of the object",
+        "_field" : "list of fields",
+        "_abstr" : "abstract type",
+         
+        "_limit" :  { 
+             "descr" : "constraints on fields",
+             "eval-c/c++" : "C/C++ evaluation constructs",
+             "eval-js" : "Javascript evaluation constructs",
+             
+             "choice" : [ 
+                "element1" , 
+                "element2" , 
+                { 
+                    "title" : "Title here",
+                    "value" : "Value here" 
+                }
+             ],
+             "choice+" : [
+                "element1", 
+                "element2"
+             ],
+             "search+" : {
+                "url" : "http://domain.com/location/file.csv",
+                "value" : "column name in CSV or field name of JSON where value is located",
+                "title" : "column name in CSV of field name of JSON where title is located. This can be eval-js:$id+':'+$name",
+                "show" : [ "name of columns to show in selection table", "another column" ],
+                "format" : "json or csv" 
+             }  
+        },
+        "_write" :  "writeability of the fields can be once|true|false|onlyauto|noresub. Default for this field is true.",
+        
+        "_vital" : "mandatory fields, can be true|false. Default for this field is true.",
+        "_default" : "default value. No default value exists for this field",
+        "_plural" : "multivalue field can be true|false. Default for this field is false.",
+        "_layout" : "complex fields can be eithe array|list, the default is list",      
+        
+        "_public" : "public fields can be true|false. Default for this field is false.",
+        "_hidden" : "hidden fields can be true|false. Default for this field is false.",
+        "_role" : "can be input|output|parameter|etc. parameter is default",
+        "_order" : "order by which elements are sorted during visualizations",
+        
+        "_inherit" : "list of types this type inherits from",
+        "_infect" : "list of fields used for propagation of rules",
+                
+         "descr" : "description of system variables" 
+    },
+    "primitives" : {
+        "descrition": "primitives branch",
+        "bool" : {
+            "_type": "core", 
+            "_limit" : {
+                    "true" : 1,
+                    "false" : 0
+                }
+            },
+        "int" : {
+            "_type" : "core"
+        },
+        "uint" : {
+            "_type" : "int",
+            "_limit" : {
+                "eval-c/c++" : "$val>=0" 
+            }
+        },
+        "percent" : {
+            "_type" : "uint",
+            "_limit" : {
+                "eval-c/c++" : "$val<=100 && $val>=0" 
+            }
+        },
+        "string" : {
+            "_type" : "core"
+        },
+        "text" : {
+            "_type" : "core"
+        },
+        "memory" : {
+            "_type" : "uint"
+        },
+        "cmdline" : {
+            "_type" : "text"
+        },
+        "url" : {
+            "_type" : "text"
+        },
+        "file" : {
+            "_type" : "string"
+        },
+        "date" : {
+            "_type" : "core",
+            "_default" : "$datenow()"
+        },
+        "time" : {
+            "_type" : "core",
+            "_default" : "$timenow()"
+        },
+        "datetime" : {
+            "_type" : "core",
+            
+            "date": {
+                "_type": "date",
+                "_default" : "$datenow()"
+            }, 
+            "time": {
+                "_type": "time",
+                "_default" : "$timenow()"                   
+            }
+        },
+        "timespan" : {
+            "_type" : "core",
+            
+            "start" : {
+                "_type" : "datetime"
+            },  
+            "end" : {
+                "_type" : "datetime"
+            }       
+        },
+        "ref" : {
+            "_type" : "core",
+            
+            "source" : {
+                "_type" : "string"
+            },
+            "db" : {
+                "_type" : "string" 
+            },
+            "id" : {
+                "_type" : "string",
+                "_vital": true
+            } 
+        },
+        "password" : {
+            "_type" : "string" 
+        },
+        "email" : {
+            "_type" : "string"
+        },
+        "keyval" : {
+            
+            "_type" : "core",
+            
+            "key" : {
+                "_type" : "string"   
+            },
+            
+            "value" : {
+                "_type" : "string",
+                "_plural" : true
+            }  
+        }
+    }
+}

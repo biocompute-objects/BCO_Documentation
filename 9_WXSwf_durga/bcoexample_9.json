@@ -1,15 +1,15 @@
 {
     "id": "obj.1481139873", 
-*    "name": "Exome Sequence Analysis", 
+    "name": "Exome Sequence Analysis", 
     "version": "5", 
     "digital_signature": "", 
     "verification_status": "unreviewed", 
     "publication_status": "draft", 
-*    "usability_domain": [], 
+    "usability_domain": ["For use in analysis of xome sequence data"], 
     "authors": [{"name": "Durga"}],
     "description_domain": {
-*        "xref":[],
-*        "keywords": [], 
+        "xref":[],
+        "keywords": [], 
         "pipeline_steps": {
             "FastQC":{
                 "description": "A quality control tool for high throughput sequence data.",
@@ -194,8 +194,5 @@
 			"sbg://Durga/exome-sequencing/Freebayes.variants",
 			"sbg://Durga/exome-sequencing/Sambamba_Merge.merged_bam"
         ]
-    },
-    "error_domain": [
-        ""
-    ]
+		}
 }

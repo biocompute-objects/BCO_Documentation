@@ -1,0 +1,176 @@
+{
+    "biocompute_base_type": {
+        "_type" : "type",
+        "_id" : "$newid()",
+        "_field": {
+            "id": {
+                "_type" :"string",
+                "title" : "Identifier of the object",
+                "_public" : true,
+                "_write" : false
+            },
+            "name": {
+                "_type" :"string",
+                "title" : "public searchable name for biocompute objects",
+                "_public" : true
+            },
+            "structured_name": {
+                "_type" :"string",
+                "title" : "public searchable name for biocompute objects",
+                "_public" : true,
+                "_vital" : false
+            },
+            "version": {
+                "_type" :"string",
+                "title" : "version for biocompute object",
+                "_public" : true
+            },
+            "digital_signature": {
+                "_type" : "string",
+                "title" : "digital signature of the biocompute object",
+                "_write":false,
+                "_vital" : false
+            },
+            "verification_status": {
+                "_type" : "string",
+                "_limit": {
+                    "choice ": ["in_progress", "unreviewed", "reviewed" , "published", "rejected" ] 
+                },
+                "title" : "the current verification status of the biocompuite object",
+                "_default" : "in_progress"
+            },
+            "publications_status": {
+                "_type" : "string",
+                "_limit": {
+                    "choice ": ["draft", "in_progress", "published", "embargoed" ] 
+                },
+                "title" : "the current publication status opf the biocompuite object",
+                "_default" : "draft"
+            },
+            "authors": {
+                "_type" : "core",
+                "name": {
+                    "_type" : "string",
+                    "_hidden" : "eval-js: orcid===undefined"
+                },
+                "orcid": {
+                    "_type" : "string",
+                    "_hidden" : "eval-js: name===undefined"
+                },
+                "_plural": true
+            },
+            "usability_domain": {
+                "_type" : " string",
+                "_plural": true,
+                "descr" : "text from biospec"  
+            },
+            "description domain": {
+                "keywords": {
+                    "_type": "keyval",
+                    "_plural": true,
+                    "vital": false
+                }, 
+                "xref": {
+                    "_type": "xref",
+                    "_plural": true,
+                    "vital": false
+                },
+                "pipeline_steps": {
+                    "tool_name" : {
+                        "_type": "string",
+                        "descr" : "this is a reecognized name of the software tool" 
+                    },
+                    "tool_desc" : {
+                       "_type": "text"
+                    },
+                    "tool_version": {
+                       "_type": "string"
+                    },
+                    "tool_package" : {
+                       "_type": "string",
+                        "_plural": true
+                    },
+                    "step_number": {
+                       "_type": "uint",
+                        "_limit": {
+                            "eval-js": "$step_number >= 1"
+                        }
+                    },
+                    "input_uri_list" : {
+                        "_type" : "url",
+                       " _vital": false
+                    },
+                    "output_uri_list" : {
+                        "_type" : "url",
+                       " _vital": false
+                    },
+                    "_plural": true
+                },
+                "_vital": false
+            },
+            "execution_domain": {
+                "script_type": {
+                   "_type":"string",
+                    "_limit": {
+                        "choice": ["uri","text" ]
+                    }
+                },
+                "script": {
+                   "_type": "$script_type"
+                },
+                "script_driver": {
+                   "_type": "string"
+                },
+                "pipeline_version": {
+                    "_type": "string"
+                },
+                "platform": {
+                    "_type": "string"
+                },
+                "software_prerequisites": {
+                    "name": {
+                        "_type": "string"
+                    }, 
+                    "version": {
+                        "_type": "string"
+                    },  
+                    "url": {
+                        "_type": "url",
+                        "_vital": false
+                    }, 
+                    "_plural": true
+                     
+                },
+                "access_prerequisites": {
+                    "name": {
+                        "_type": "string"
+                    }, 
+                    "url": {
+                        "_type": "url",
+                        "_plural" : true
+                    }
+                },
+                "environmental_parameters": {
+                    "_type": "keyval",
+                    "_plural" : true 
+                },
+                "_vital" : true
+            },
+            "parametric_domain": {
+                "descr" : "all fields in this domain should be defined in inheriting biocompute subtypes"  
+            },
+            "io_domain": {
+                "input_subdomain": {
+                    "descr" : "all fields in this subdomain are specific biocompute specific and should be defined in inheriting biocompute subtypes"  
+                },
+                "output_subdomain":{
+                    "descr" : "all fields in this subdomain are specific biocompute specific and should be defined in inheriting biocompute subtypes"
+                }
+            }
+        },
+        "_inherit" : "base_database_object",
+        "name" : "biocompute_base_type",
+        "title" : "Base type for all biocompute objects",
+        "descr" : "all biocomputes must inherit from this type in ordser to be compliant with biocompute framework"
+    }
+}

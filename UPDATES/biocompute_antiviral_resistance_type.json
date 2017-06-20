@@ -1,0 +1,34 @@
+{
+    "biocompute_antiviral_resistance_type": {
+        "_type" : "type",
+        "_id" : "$newid()",
+        "name": "antiviral_resistance_detection",
+        "description": "This pipeline uses an aligner and then a profiler to detect possible mutations involved in drug resistance.",
+        "_field" : {
+            "parametric_domain": {
+                "heptagon_divergence_threshold_percent": {
+                   "_type": "percent"
+                },
+                "hexagon_minimum_coverage": {
+                   "_type": "uint"
+                },
+                "hexagon_seed": {
+                   "_type": "uint"
+                
+                }, 
+                "heptagon_freq_cutoff": {
+                   "_type": "real",
+                    "_limit": {
+                        "eval-js" : "heptagon_freq_cutoff >= 0 && heptagon_freq_cutoff <=1"
+                    }
+                }, 
+                "hexagon_minimum_match_len": {
+                   "_type": "uint",
+                    "_limit": {
+                        "eval-js" : "$hexagon_minimum_match_len > $hexagon_seed"
+                    }
+                }
+            }
+        }
+    }
+}

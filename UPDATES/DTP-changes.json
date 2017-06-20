@@ -1,0 +1,49 @@
+{
+    "software_prerequisitesDEF": {
+            "name": {
+                "_type": "string"
+            }, 
+            "version": {
+                "_type": "string"
+            },  
+            "url": {
+                "_type": "url",
+                "_vital": false
+            }, 
+            "_plural": true
+        },
+    "software_prerequisites": [
+            {
+                "name":"HIVE_hexagon",
+                "version":"1.3"
+            },
+            {
+                "name":"HIVE_heptagon",
+                "version":"1.3"
+            }
+        ],
+    "access_prerequisitesDEF": {
+            "name": {
+                "_type": "string"
+            }, 
+            "url": {
+                "_type": "url",
+                "_plural" : true
+            }
+        },
+    "access_prerequisites": [
+            {"url":"protocol://domain:port/application/path", 
+            "name":"generic name"},
+            {"url":"ftp://:22/", 
+            "name": "access to ftp"},
+            {"url":"http://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+            "name":"access to e-utils"}
+        ],
+    "env_parametersDEF":{
+        "environmental_parameters": {
+            "_type": "keyval",
+            "_plural" : true 
+        }
+    },
+    "env_parameters": [{"OSTYPE":"linux"},{"QPRIDE_BIN":"~qpride/bin"}]
+}
