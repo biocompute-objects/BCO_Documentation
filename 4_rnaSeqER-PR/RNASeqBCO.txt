@@ -1,0 +1,132 @@
+RNA-SEQ BIOCOMPUTE OBJECT OVERVIEW
+
+INTRO
+
+An RNA-Seq analysis pipeline to quantify abundance of transcripts typically involves the following general steps:
+
+1) Setup - including generation of experimental data, selection of reference, and software configuration
+2) Quality checks - for sequencing data (think HIVE QC)
+3) Metadata collection - BCO, but clinical information would also be beneficial
+4) Mapping reads - TopHat2 (or STAR, HiSAT, Kallisto)
+5) Organizing reads - samtools (generally sorting, NOT required if going directly to Cufflinks)
+6) Counting features - cufflinks (or htseqcount)
+7) Differential expression - cuffdiff ( or DeSEQ, EdgeR)
+
+For overarching cufflinks pipeline, see http://cole-trapnell-lab.github.io/cufflinks/manual/. For a good reference with other options, consider article https://www.ncbi.nlm.nih.gov/pubmed/?term=23975260.
+
+For the specific application of using RNA-Seq to quantify FPKMs in human tumor subtypes, inputs should be simply human refererence (choice of genome/exome/transcriptome will have downstream implications) and fasta/fastq(s) of samples. 
+
+DETAILS
+
+Step 1. Setup - including generation of experimental data, selection of reference genome, and software configuration
+a) Generation of experimental data
+	- presumably link to BCO for RNA-Seq protocol 
+b) Selection of reference genome
+	- if looking at specific known transcript abundance, transcriptome could be chosen
+	- if caring only about gene-level mapping, exome could be used, but will be unable to definitively identify participation by specific variants and may lose some mapping fidelity due to alternative splicing between transcripts
+	- using genome could identify if material thought to be noncoding is actually translated and new splice sites, but there are many big assumptions here; genome could also provide gene-level identification but will again lose mappings due to splicing boundaries
+	- accompanying GTF can be retrieved (optional, but recommended)
+	- NOTE: exome is computationally cheapest, transcriptome is dense and more expensive due to redundancy between transcripts but provides greatest resolution for KNOWN transcripts, genome is most expensive; however, part of TopHat's appeal is that it is able to search across genomic references and recover mappings with large gaps (presumably due to splicing), so the intended alignment method is to specify a genome; -G option in TopHat allows designation of GTF file for program to basically build virtual transcriptome on genome provided, forcing only reads that don't fully align to a transcript to undergo alignment on full genome
+
+Step 2. Quality checks - for sequencing data
+This can involve any number of currently undefined filters for length/redundancy/Phred scores, etc. 
+
+Step 3. Metadata collection - related protocol objects, clinical data
+At this point, metadata is not necessary for immediate analysis under consideration. In ideal scenario, all metadata would be linked to in BCO. 
+
+--> INPUTS FOR OVERARCHING PIPELINE ARE
+a) REFERENCE (fasta)
+b) REFERENCE ANNOTATION (gtf, option but recommended)
+c) READS (fasta/q) passing QC criteria
+
+Step 4. Mapping reads - tophat
+Specifically, we use TopHat2 at this time. Most basic version of command is:
+
+tophat path_to_reference/base_genome_name path_to_reads_pair_1.fastq path_to_reads_pair_2.fastq
+
+Last time I ran it on MGPC, ran it as the following:
+
+tophat -o LIHC/Pairs/01Normal/01Normaltophatout --no-coverage-search -p4 GRCH38/GRCH38 LIHC/Pairs/01Normal/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_L002_1.fastq LIHC/Pairs/01Normal/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_L002_2.fastq
+
+where 
+-o	path_to_output
+--no-coverage-search	disables coverage based search for junctions (decreases memory required, coverage search probably not required for alignments to transcriptome unless looking for new splicing patterns)
+-p	specify number of threads (NOTE: tophat is heuristic and threading will slightly change overall numbers of reads mapped, maximum value I think is 8 - not a true max but get diminishing returns on results thereafter)
+
+Other useful parameters:
+-G 	supply GTF2 or GFF3.3 when reference is whole genome to infer transcriptome boundaries and align reads to transcripts first; those not aligning to transcript will align to whole genome
+--no-novel-juncs 	disable junction discovery
+
+Single-ended sequencing files can also be analyzed by specifying the single file instead of both. If two are specified, TopHat assumes they are a pair. 
+
+Default output file to continue in analysis is called accepted_hits.bam
+
+Also note: "TopHat 2.1.1 release 2/23/2016 - Please note that TopHat has entered a low maintenance, low support stage as it is now largely superseded by HISAT2 which provides the same core functionality (i.e. spliced alignment of RNA-Seq reads), in a more accurate and much more efficient way."
+
+This notice is directly from TopHat developers on webpage at https://ccb.jhu.edu/software/tophat/index.shtml. Full manual with all options can be found at https://ccb.jhu.edu/software/tophat/manual.shtml.
+
+Step 5. Organizing reads 
+This step is required for many of the alternative analysis pipelines, but since cufflinks and TopHat were built as part of the same Tuxedo suite, output from TopHat can go directly to cufflinks. 
+
+Step 6. Counting features - Cufflinks
+a) Transcriptome assembly
+Cufflinks assembles transfrags, or full-length transcription fragments, then quantifies expression of transfrags. Most basic command is:
+
+cufflinks path_to_tophatout_accepted_hits.bam
+
+For example, 
+
+cufflinks -p 8 -o C1_R1_clout C1_R1_thout/accepted_hits.bam
+
+where
+-p	again, specify threading
+-o	path_to_output
+
+Other helpful parameters:
+-g	use GTF to guide assembly
+-M	supply GTF with annotations you want to mask
+
+Default output file is transcripts.gtf.
+
+Note: if in TopHat step you turned off discovery, you can skip to cuffmerge step below. 
+
+b) Create list of all assemblies containing lines like
+
+./path_to_sample1/transcripts.gtf
+./path_to_sample2/transcripts.gtf
+./path_to_samplen/transcripts.gtf
+
+This file becomes input to cuffmerge, let's call it assemblies.txt. 
+
+c) Cuffmerge
+Create a single merged transcriptome annotation, as follows:
+
+cuffmerge path_to_assemblies.txt
+
+For example, 
+
+cuffmerge -g genes.gtf -s genome.fa -p 8 assemblies.txt
+
+where 
+-g	specify reference gtf with which to merge transcripts
+-s	path_to_reference.fa to help eliminate artifacts
+-p 	specify threading
+
+Default output is merged.gtf
+
+Step 7. Differential expression
+Use Cuffdiff to identify differential expression with basic command: 
+
+cuffdiff path_to_merged.gtf \ path_to_sample1_alignment_replicate1/accepted_hits.bam,path_to_sample1_aln_repN/accepted_hits.bam \ path_to_sampleX_aln_rep1/accepted_hits.bam,path_to_sampleX_aln_repY/accepted_hits.bam
+
+For example, 
+
+cuffdiff -o diff_out -b genome.fa -p 8 -u genes.gtf \
+./C1_R1_thout/accepted_hits.bam,./C1_R2_thout/accepted_hits.bam,./C1_R3_thout/accepted_hits.
+bam \
+./C2_R1_thout/accepted_hits.bam,./C2_R3_thout/accepted_hits.bam,./C2_R2_thout/accepted_hits.
+bam
+
+Default output files are a number of FPKM and Count tracking files, as well as read group tracking and differential expression, splicing, coding, and promoter tests, as described here. http://cole-trapnell-lab.github.io/cufflinks/cuffdiff/index.html. Based on abstract from JCO http://ascopubs.org/doi/abs/10.1200/jco.2011.29.27_suppl.46, I think all we need is the genes.fpkm_tracking output file, but I'll need to read the whole paper to verify this.
+
+Seminal cufflinks paper http://www.nature.com/nprot/journal/v7/n3/pdf/nprot.2012.016.pdf. Optional visualization can be performed using CummeRbund. 

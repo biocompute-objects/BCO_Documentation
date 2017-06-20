@@ -1,0 +1,74 @@
+{
+    "id": "", 
+    "name": "HTS (NGS) generation of Bordetella pertussis strain ATCC:BAA-1335D-5 [taxID:520] genome for FDA-ARGOS microbial reference genomes", 
+    "version": "1.0", 
+    "digital_signature": "", 
+    "verification_status": "unreviewed", 
+    "publication_status": "draft", 
+    "usability_domain": [
+        "Phase 1: Collection of a previously identified microbe and nucleic acid extraction. Recommended Requirements: Bacterial extractions: ~15ug minimum (PacBio, Illumina); Viral extractions: ~25 ng minimum (RACE, amplicon, shotgun approach); Large genome extractions: >20ug.",
+        "Phase 2: The microbial nucleic acids are sequenced and de-novo assembled using Illumina and Pac Bio sequencing platforms at the Institute for Genome Sciences at the University of Maryland (UMD-IGS)",
+        "Phase 3:  De-novo assembled genomes are vetted by an ID-NGS subject matter expert working group consisting of FDA personnel and collaborators. These genomes meet the quality metrics for reference-grade genomes for regulatory use. Data are deposited in NCBI databases.",
+        "FDA-ARGOS  genomes meet the quality metrics for reference-grade genomes for regulatory use. FDA-ARGOS reference genomes have been de novo assembled with high depth of base coverage and placed within a pre-established phylogenetic tree. Each microbial isolate in the database is covered at a minimum of 20X over 95 percent of the assembled core genome.",
+        "Hybrid sequencing approach using Illumina PE HiSeq4000 (~300x cov of 5Mbp genome) and the PacBio RS II (P6-C4, ~100x cov of 5Mbp genome) platform to generate industry standard high quality sequences. Use of multiple assemblers.  3 sets of de novo genome assemblies will be produced 1) Illumina only, 2) BioPac only, and 3) Illumina/BioPac hybrid"
+    ], 
+    "authors": [{"name":"Heike Sichtig"}],
+    "description_domain":{
+        "xref":[],
+        "keywords": [], 
+        "pipeline_steps": {
+            "Celera_Genome-Assembly":{
+                "description": "Celera Assembler is a de novo whole-genome shotgun (WGS) DNA sequence assembler. It reconstructs long sequences of genomic DNA from fragmentary data produced by whole-genome shotgun sequencing",
+                "version": "8.2",
+                "step_number": 1,
+                "package":[],
+                "input":["example.fastq"],
+                "output":["exampleOutput.fasta"]
+            },
+            "NCBIProkaryoticGenomeAnnotationPipeline":{
+                "description": "Celera Assembler is a de novo whole-genome shotgun (WGS) DNA sequence assembler. It reconstructs long sequences of genomic DNA from fragmentary data produced by whole-genome shotgun sequencing",
+                "version": ".3.1",
+                "step_number": 2,
+                "package":[],
+                "input":["example.fasta"],
+                "output":[
+                    "https://www.ncbi.nlm.nih.gov/biosample/SAMN03996260",
+                    "https://www.ncbi.nlm.nih.gov/sra?LinkName=biosample_sra&from_uid=3996260",
+                    "https://www.ncbi.nlm.nih.gov/nuccore/991852837"
+                ]
+            }
+        }
+    },
+    "execution_domain": {
+        "platform": "unix", 
+        "pipeline_version": "1.0", 
+        "env_parameters": [
+            "64-bit processor",
+            "2GB RAM"
+        ],
+        "driver": "perl5.6", 
+        "script": "https://github.com/biocompute-objects//HTS-CSRS/tree/master/11_argos/argos.pl", 
+        "prerequisites": [
+            {"name":"Celera","version":"8.2"},
+            {"name":"NCBIProkaryoticGenomeAnnotationPipeline","version":"3.1"}
+        ]
+    },
+    "parametric_domain": {
+        "celera_coverage": "20X",
+        "NCBI_Best-placed_reference_protein_set":"GeneMarkS+"
+    }, 
+    "io_domain": {
+        "reference_uri": [
+            "NA"
+        ],
+        "input_uri_list": [
+            "example.fasta"
+        ],
+        "output_uri_list": [
+            "https://www.ncbi.nlm.nih.gov/biosample/SAMN03996260",
+            "https://www.ncbi.nlm.nih.gov/sra?LinkName=biosample_sra&from_uid=3996260",
+            "https://www.ncbi.nlm.nih.gov/nuccore/991852837"
+        ]
+    },
+    "error_domain": [""]
+}

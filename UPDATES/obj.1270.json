@@ -1,0 +1,140 @@
+{
+    "id": "obj.1270", 
+    "name": "HCV1a [taxID:31646] ledipasvir [PubChem:67505836] resistance SNP [SO:0000694] detection", 
+    "version": "1.1", 
+    "createdby": "hadley_king@gwmail.gwu.edu", 
+    "created": "Jan 24, 2017 09:40:17", 
+    "modified": "Mar 27, 2017 13:27:02", 
+    "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658", 
+    "verification_status": "unreviewed", 
+    "publication_status": "draft", 
+    "usability_domain": [
+        "Identify baseline single nucleotide polymorphisms (SNPs[SO:0000694]), insertions[SO:0000667], and deletions[SO:0000045] that correlate with reduced ledipasvir[PubChem:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1", 
+        "Identify treatment emergent amino acid substitutions[SO:0000048] that correlate with antiviral drug treatment failure", 
+        "Determine whether the treatment emergent amino acid substitutions[SO:0000048] identified correlate with treatment failure involving other drugs against the same virus", 
+        "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"
+    ], 
+    "authors": [
+        {
+            "name": "Charles Darwin"
+        }, 
+        {
+            "orcid": "0000-0000-0000-0000"
+        }
+    ], 
+    "description_domain": {
+        "keywords": [
+            "antiviral_resistance", 
+            "SNP"
+        ], 
+        "xref": [
+            "SO:0000694", 
+            "SO:0000667", 
+            "SO:0000045", 
+            "PubChem:67505836", 
+            "SO:0000048", 
+            "taxID:31646", 
+            "PMID:25123381", 
+            "PMID:26508693"
+        ], 
+        "pipeline_steps": [
+            {
+                "tool_name": "HIVE_hexagon", 
+                "tool_desc": "Alignment of reads to a set of references", 
+                "tool_version": "1.3", 
+                "tool_package": "", 
+                "step_number": "1", 
+                "input_uri_list": [
+                    "http://www.ncbi.nlm.nih.gov/nuccore/22129792", 
+                    "http://www.ncbi.nlm.nih.gov/nuccore/5420376", 
+                    "http://www.ncbi.nlm.nih.gov/nuccore/13122261", 
+                    "http://www.ncbi.nlm.nih.gov/nuccore/386646758", 
+                    "http://www.ncbi.nlm.nih.gov/nuccore/295311559", 
+                    "hive://nuc-read/514683", 
+                    "hive://nuc-read/514682"
+                ], 
+                "output_uri_list": [
+                    "hive://data/514769/allCount-aligned.csv"
+                ]
+            }, 
+            {
+                "tool_name": "HIVE_heptagon", 
+                "tool_desc": "variant calling", 
+                "tool_version": "1.3", 
+                "tool_package": "", 
+                "step_number": "2", 
+                "input_uri_list": [
+                    "hive://data/514769/dnaAccessionBased.csv"
+                ], 
+                "output_uri_list": [
+                    "hive://data/514801/SNPProfile.csv", 
+                    "hive://data/14769/allCount-aligned.csv"
+                ]
+            }
+        ]
+    }, 
+    "execution_domain": {
+        "script_type": "URI",
+        "script": "https://hive.biochemistry.gwu.edu/workflows/antiviral_resistance_detection_hive.sh", 
+        "pipeline_version": "2.0", 
+        "platform": "hive", 
+        "driver": "shell", 
+        "software_prerequisites": [
+        {"name":"HIVE_hexagon","version":"1.3"},
+        {"name":"HIVE_heptagon","version":"1.3"}
+        ],
+        "access_prerequisites": [
+            {
+                "url":"protocol://domain:port/application/path",
+                "name":"generic name"
+            },
+            {
+                "url":"ftp://:22/",
+                "name": "access to ftp"
+            },
+            {
+                "url":"http://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+                "name":"access to e-utils"
+            }
+        ],
+        "env_parameters": [
+            {"OSTYPE":"linux"},
+            {"QPRIDE_BIN":"~qpride/bin"}
+        ]
+    }, 
+    "parametric_domain": {
+        "heptagon_divergence_threshold_percent": "30", 
+        "hexagon_minimum_coverage": "0.15", 
+        "hexagon_seed": "14", 
+        "heptagon_freq_cutoff": "0.10", 
+        "hexagon_minimum_match_len": "66"
+    }, 
+    "io_domain": {
+        "input_subdomain": {
+            "HCV_Genome_to_detect_variations":[
+                "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                "http://www.ncbi.nlm.nih.gov/nuccore/5420376"
+            ],
+            "read_files": [
+                "hive://nuc-read/514683",
+                "hive://nuc-read/514682"
+            ]
+    },
+        "output_subdomain": {
+            "hit_list": {
+                "title": "hit list", 
+                "uri": "hive://data/514769/dnaAccessionBased.csv", 
+                "mime-type" : "text/csv"
+            },
+            "mutation_profile": {
+                "title": "mutation profile",
+                "uri": "hive://data/514801/SNPProfile*.csv",
+                "mime-type": "text/csv"
+            }
+        }
+    }, 
+    "error_domain": [
+        "false negative alignment hits < 0.0010", 
+        "false positive mutation calls discovery < 0.0005"
+    ]
+}

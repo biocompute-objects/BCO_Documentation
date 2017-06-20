@@ -4,17 +4,22 @@
     "version": "1.0", 
     "createdby": "hadley_king@gwmail.gwu.edu", 
     "created": "Jan 25, 2017 11:19:27", 
-    "modified": "Mar 03, 2017 14:08:12", 
+    "modified": "Mar 13, 2017 16:33:52", 
     "digital_signature": "7LGk9QfzKQ40qdz5b8pS", 
     "verification_status": "unreviewed", 
     "publication_status": "draft", 
     "usability_domain": [
-        "RNA-seq data analysis to identify the status of ER, PR and HER2 
-		expression.", 
+        "RNA-seq data analysis to identify the status of ER, PR and HER2 expression.", 
         "Diagnostic analysis of breast cancer samples for drug treatment.", 
-        "Quantitation of RNA-seq derived expression of ER, PR and HER2 in breast 
-		cancer samples to predict therapeutic efficacy based on presence of 
-		available receptors."
+        "Quantitation of RNA-seq derived expression of ER, PR and HER2 in breast cancer samples to predict therapeutic efficacy based on presence of available receptors."
+    ], 
+    "authors": [
+        {
+            "orcid": "0000-0003-1409-4549"
+        }, 
+        {
+            "name": "Hayley Dingerdissen"
+        }
     ], 
     "description_domain": {
         "keywords": [
@@ -50,20 +55,16 @@
             }, 
             {
                 "tool_name": "TopHat", 
-                "tool_desc": "Maps short sequences from spliced transcripts to 
-					whole genomes", 
+                "tool_desc": "Maps short sequences from spliced transcripts to whole genomes", 
                 "tool_version": "TopHat v2.0.13", 
-                "tool_package": "bowtie2, bowtie2-align, bowtie2-inspect, 
-					bowtie2-build, samtools", 
+                "tool_package": "bowtie2, bowtie2-align, bowtie2-inspect, bowtie2-build, samtools", 
                 "step_number": "1", 
                 "input_uri_list": [
                     "/home/hamilt/GRCH38/GRCH38.fa", 
                     "/home/hmhamilt/GRCH38/GRCH38annots.gtf", 
                     "/home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_1.fastq", 
                     "/home/hmhamilt/BRCA/ER_ve_HER2_no_ve/111219_UNC11-SN627_0174_AD0JRJACXX_GGCTAC_LOO2_2.fastq", 
-                    "/home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_1.fastq",
-		    "/home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_2.fastq",
-		    "/home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_1.fastq", 
+                    "/home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_1.fastq /home/hmhamilt/BRCA/HER2_ve/111304_UNC11-SN456_0325_KE2KTLCANN_GGCTAC_LOO3_2.fastq /home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_1.fastq", 
                     "/home/hmhamilt/BRCA/ER_HER2_no_ve/111267_UNC11-SN897_2134_JL9FIWCLLS_GGCTAC_LOO1_2.fastq"
                 ], 
                 "output_uri_list": [
@@ -101,7 +102,6 @@
     "execution_domain": {
         "script": "http://128.164.35.92/home/hmhamilt/BRCA/rna-seq.cwl", 
         "pipeline_version": "0.0", 
-        "pipeline_url": "https://hive.biochemistry.gwu.edu/$pipelineName", 
         "platform": "HIVE", 
         "driver": "http://128.164.35.92/cwl-tool", 
         "prerequisites": [
