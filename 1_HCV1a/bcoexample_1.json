@@ -4,20 +4,15 @@
     "version": "1.1", 
     "createdby": "hadley_king@gwmail.gwu.edu", 
     "created": "Jan 24, 2017 09:40:17", 
-    "modified": "Mar 02, 2017 11:58:20", 
+    "modified": "Jun 02, 2017 15:35:09", 
     "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658", 
     "verification_status": "unreviewed", 
     "publication_status": "draft", 
     "usability_domain": [
-        "Identify baseline single nucleotide polymorphisms (SNPs[SO:0000694]),
-        insertions[SO:0000667], and deletions[SO:0000045] that correlate with
-        reduced ledipasvir[PubChem:67505836] antiviral drug efficacy in Hepatitis C
-        virus subtype 1", 
-        "Identify treatment emergent amino acid substitutions[SO:0000048] that 
-        correlate with antiviral drug treatment failure", 
-        "Determine whether the treatment emergent amino acid substitutions[SO:0000048] 
-        identified correlate with treatment failure involving other drugs against 
-        the same virus"
+        "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [SO:0000667], and deletions [SO:0000045] that correlate with reduced ledipasvir [PubChem:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxID:31646]", 
+        "Identify treatment emergent amino acid substitutions [SO:0000048] that correlate with antiviral drug treatment failure", 
+        "Determine whether the treatment emergent amino acid substitutions [SO:0000048] identified correlate with treatment failure involving other drugs against the same virus", 
+        "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"
     ], 
     "authors": [
         {
@@ -29,8 +24,11 @@
     ], 
     "description_domain": {
         "keywords": [
-            "antiviral_resistance", 
-            "SNP"
+            "HCV1a", 
+            "Ledipasvir", 
+            "antiviral resistance", 
+            "SNP", 
+            "amino acid substitutions"
         ], 
         "xref": [
             "SO:0000694", 
@@ -44,37 +42,32 @@
         ], 
         "pipeline_steps": [
             {
-                "tool_name": "HIVE_hexagon", 
-                "tool_desc": "Alignment of reads to a set of references", 
+                "tool_name": "HIVE-hexagon", 
+                "tool_desc": "The tool is used for alignment of reads to a set of references", 
                 "tool_version": "1.3", 
-                "tool_package": "", 
+                "tool_package": "HIVE", 
                 "step_number": "1", 
                 "input_uri_list": [
-                    "http://www.ncbi.nlm.nih.gov/nuccore/CP000139.1", 
-                    "http://www.ncbi.nlm.nih.gov/nuccore/FP929042.1", 
-                    "http://www.ncbi.nlm.nih.gov/nuccore/FP929046.1", 
-                    "http://www.ncbi.nlm.nih.gov/nuccore/FP929045.1", 
-                    "http://www.ncbi.nlm.nih.gov/nuccore/FP929043.1", 
-                    "http://www.ncbi.nlm.nih.gov/nuccore/FP929048.1", 
-                    "hive://nuc-read/514683", 
-                    "hive://nuc-read/514682"
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NC_004102.1", 
+                    "https://www.ncbi.nlm.nih.gov/nuccore/AJ238799.1", 
+                    "https://hive/nuc-read/557406", 
+                    "https://hive/nuc-read/557407"
                 ], 
                 "output_uri_list": [
-                    "hive://data/514769/allCount-aligned.csv"
+                    "https://hive/data/557413/allCount-aligned.csv"
                 ]
             }, 
             {
-                "tool_name": "HIVE_heptagon", 
-                "tool_desc": "variant calling", 
+                "tool_name": "HIVE-heptagon", 
+                "tool_desc": "This tool is used for variant calling", 
                 "tool_version": "1.3", 
-                "tool_package": "", 
+                "tool_package": "HIVE", 
                 "step_number": "2", 
                 "input_uri_list": [
-                    "hive://data/514769/dnaAccessionBased.csv"
+                    "https://hive/data/557413/allCount-aligned.csv"
                 ], 
                 "output_uri_list": [
-                    "hive://data/514801/SNPProfile.csv", 
-                    "hive://data/14769/allCount-aligned.csv"
+                    "https://hive/data/557416/SNPProfile.csv"
                 ]
             }
         ]
@@ -82,43 +75,47 @@
     "execution_domain": {
         "script": "https://hive.biochemistry.gwu.edu/workflows/antiviral_resistance_detection_hive.sh", 
         "pipeline_version": "2.0", 
-        "platform": "hive", 
+        "platform": "HIVE", 
         "driver": "shell", 
         "prerequisites": [
-            {"name":"HIVE_hexagon","version":"1.3"}, 
-            {"name":"HIVE_heptagon","version":"1.3"}
+            "name:HIVE-hexagon", 
+            "version:1.3 ", 
+            "name:HIVE-heptagon", 
+            "version:1.3"
         ], 
         "env_parameters": [
             "HIVEv1.3"
-        ]
+        ], 
+        "script_type": "URI"
     }, 
     "parametric_domain": {
         "heptagon_divergence_threshold_percent": "30", 
-        "hexagon_minimum_coverage": "0.15", 
+        "hexagon_minimum_coverage": "15", 
         "hexagon_seed": "14", 
         "heptagon_freq_cutoff": "0.10", 
         "hexagon_minimum_match_len": "66"
     }, 
     "io_domain": {
         "reference_uri_list": [
-            "http://www.ncbi.nlm.nih.gov/nuccore/CP000139.1", 
-            "http://www.ncbi.nlm.nih.gov/nuccore/FP929042.1", 
-            "http://www.ncbi.nlm.nih.gov/nuccore/FP929046.1", 
-            "http://www.ncbi.nlm.nih.gov/nuccore/FP929045.1", 
-            "http://www.ncbi.nlm.nih.gov/nuccore/FP929043.1", 
-            "http://www.ncbi.nlm.nih.gov/nuccore/FP929048.1"
+            "https://www.ncbi.nlm.nih.gov/nuccore/NC_004102.1", 
+            "https://www.ncbi.nlm.nih.gov/nuccore/AJ238799.1"
         ], 
         "input_uri_list": [
-            "hive://nuc-read/514683", 
-            "hive://nuc-read/514682"
+            "https://hive/data/nuc-read/557406\nhttps://hive/data/nuc-read/557407\nhttps://hive/data/557413/allCount-aligned.csv\n"
         ], 
         "output_uri_list": [
-            "hive://data/514769/dnaAccessionBased.csv", 
-            "hive://data/514801/SNPProfile.csv", 
-            "hive://data/514769/allCount-aligned.csv"
+            "https://hive/data/557413/allCount-aligned.csv", 
+            "https//hive/data/557416/SNPProfile.csv"
+        ], 
+        "output_subdomain": [
+            "hit_list \ntitle:hit list\nuri:https://hive/data/557413/allCount-aligned.csv\nmime-type:csv\nmutation_profile:\ntitle:mutation profile\nuri:https//hive/data/557416/SNPProfile.csv\nmime-type:csv"
+        ], 
+        "input_subdomain": [
+            "HCV1a_reference genome\nhttps://www.ncbi.nlm.nih.gov/nuccore/NC_004102.1        https://www.ncbi.nlm.nih.gov/nuccore/AJ238799.1\n\nHCV1a_reads\nhttps://hive/data/nuc-read/557406\nhttps://hive/data/nuc-read/557407\n\n"
         ]
     }, 
     "error_domain": [
-        "false negative discovery < 0.000001"
+        "false negative alignment hits < 0.0010", 
+        "false positive mutation calls discovery < 0.0005"
     ]
 }

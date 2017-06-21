@@ -1,11 +1,11 @@
 {
     "id": "obj.1279", 
-    "name": "Viral [taxID:10239] screening of cell culture supernatants from Vero cells[cellosaurus:CVCL_0059]", 
+    "name": "Viral [taxID:10239] screening of cell culture supernatants from Vero cells [cellosaurus:CVCL_0059]", 
     "title": "Viral Screening", 
     "version": "1.0", 
     "createdby": "krista.michelle.smith7@gmail.com", 
     "created": "Feb 01, 2017 15:55:11", 
-    "modified": "Mar 02, 2017 12:24:56", 
+    "modified": "Jun 16, 2017 13:35:36", 
     "digital_signature": "z0d0ut7l66q4culk3fdy", 
     "verification_status": "unreviewed", 
     "publication_status": "draft", 
@@ -19,7 +19,10 @@
     ], 
     "description_domain": {
         "keywords": [
-            "viral detection"
+            "viral detection", 
+            "verocells", 
+            "supernatant", 
+            "viral contamination"
         ], 
         "xref": [
             "Cellosaurus:CVCL_0059", 
@@ -27,81 +30,82 @@
         ], 
         "pipeline_steps": [
             {
-                "tool_name": "hiveSeq", 
+                "tool_name": "HIVE-seq", 
                 "tool_desc": "Utility set that allows sequence manipulation", 
                 "tool_version": "1.3", 
-                "tool_package": "null", 
+                "tool_package": "HIVE", 
                 "step_number": "1", 
                 "input_uri_list": [
-                    "hive://nuc-read/111111", 
-                    "hive://nuc-read/111112"
+                    "https://hive/data/nuc-read/664899", 
+                    "https://hive/data/nuc-read/664897"
                 ], 
                 "output_uri_list": [
-                    "hive://nuc-read/111113", 
-                    "hive://nuc-read/111114"
+                    "https://hive/data/seq-trim/556723", 
+                    "https://hive/data/seq-trim/556725"
                 ]
             }, 
             {
-                "tool_name": "HIVE_IDBA-UD", 
-                "tool_desc": "DeNovo assembler", 
+                "tool_name": "HIVE-IDBA-UD", 
+                "tool_desc": "DeNovo Assembler", 
                 "tool_version": "1.3", 
-                "tool_package": "null", 
+                "tool_package": "HIVE", 
                 "step_number": "2", 
                 "input_uri_list": [
-                    "hive://nuc-read/111113", 
-                    "hive://nuc-read/111114"
+                    "https://hive/data/seq-trim/556723", 
+                    "https://hive/data/seq-trim/556725"
                 ], 
                 "output_uri_list": [
-                    "hive://nuc-read/111115", 
-                    "hive://nuc-read/111116", 
-                    "hive://nuc-read/111117"
+                    "https://hive/data/556747-contig.fa"
                 ]
             }, 
             {
-                "tool_name": "HIVE_hexagon", 
-                "tool_desc": "Alignment of reads to a set of references", 
+                "tool_name": "HIVE-hexagon", 
+                "tool_desc": "Aligns reads to a set of references", 
                 "tool_version": "1.3", 
-                "tool_package": "null", 
+                "tool_package": "HIVE", 
                 "step_number": "3", 
                 "input_uri_list": [
-                    "hive://genomes/Filtered_Virus_NT", 
-                    "hive://nuc-read/111115", 
-                    "hive://nuc-read/111116", 
-                    "hive://nuc-read/111117"
+                    "https://hive/data/556747-contig.fa", 
+                    "https://hive/data/nuc-genome/544912", 
+                    "https://hive/data/nuc-genome/544909", 
+                    "https://hive/data/nuc-genome/544907", 
+                    "https://hive/data/nuc-genome/544904", 
+                    "https://hive/data/nuc-genome/544902"
                 ], 
                 "output_uri_list": [
-                    "hive://data/111118/allCount-aligned.csv"
+                    "https://hive/data/556748/allcounts-aligned.csv"
                 ]
             }, 
             {
-                "tool_name": "HIVE_heptagon", 
-                "tool_desc": "variant calling", 
+                "tool_name": "HIVE-heptagon", 
+                "tool_desc": "Variant Caller", 
                 "tool_version": "1.3", 
-                "tool_package": "null", 
+                "tool_package": "HIVE", 
                 "step_number": "4", 
                 "input_uri_list": [
-                    "hive://data/111118/allCount-aligned.csv"
+                    "https://hive/data/556748/allcounts-aligned.csv"
                 ], 
                 "output_uri_list": [
-                    "hive://data/111118/SNPProfile.csv"
+                    "https://hive/data/556749/SNPProfile.csv"
                 ]
             }
         ]
     }, 
     "execution_domain": {
-        "script": "https:hive.biochemistry.gwu.edu/workflows/antiviral_resistance_detection_hive.sh", 
+        "script": "hive://workflows/antiviral_resistance_detection_hive.py", 
         "pipeline_version": "2.0", 
         "platform": "HIVE", 
         "driver": "shell", 
         "prerequisites": [
-            "hiveSeq", 
-            "HIVE_IDBA-UD", 
-            "HIVE_hexagon", 
-            "HIVE_heptagon"
+            "HIVE-seq, version1.3", 
+            "HIVE-IDBA-UD, version1.3", 
+            "HIVE-hexagon, version 1.3", 
+            "HIVE-heptagon, version 1.3"
         ], 
         "env_parameters": [
             "HIVEv1.3"
-        ]
+        ], 
+        "script_type": "URI"
     }, 
     "parametric_domain": {
         "IDBA-UD_maxk": "100", 
@@ -123,15 +127,60 @@
     }, 
     "io_domain": {
         "reference_uri_list": [
-            "hive://genomes/Filtered_Virus_NT"
+            "https://hive/data/nuc-genome/544912", 
+            "https://hive/data/nuc-genome/544909", 
+            "https://hive/data/nuc-genome/544907", 
+            "https://hive/data/nuc-genome/544904", 
+            "https://hive/data/nuc-genome/544902"
         ], 
         "input_uri_list": [
-            "hive://nuc-read/111111", 
-            "hive://nuc-read/111112"
+            "https://hive/data/nuc-read/544899", 
+            "https://hive/data/nuc-read/544897", 
+            "https://hive/data/seq-trim/556723", 
+            "https://hive/data/seq-trim/556725", 
+            "https://hive/data/556747-contig.fa"
         ], 
         "output_uri_list": [
-            "hive://data/111118/allCount-aligned.csv", 
-            "hive://data/111118/SNPProfile.csv"
+            "https://hive/data/seq-trim/556723", 
+            "https://hive/data/seq-trim/556725", 
+            "https://hive/data/seq-trim/556723", 
+            "https://hive/data/seq-trim/556725", 
+            "https://hive/data/556748/allcounts-aligned.csv", 
+            "https://hive/data/556749/SNPProfile.csv"
+        ], 
+        "output_subdomain": [
+            "seq_trim:{ ", 
+            "title: seq trim", 
+            "uri: https://hive/data/seq-trim/556723", 
+            "https://hive/data/seq-trim/556725", 
+            "}", 
+            "hit_list:{", 
+            "title: hit list", 
+            "uri: https://hive/data/556748/allcounts-aligned.csv", 
+            "mime-type: csv", 
+            "}", 
+            "mutation_profile:{", 
+            "title: mutation profile", 
+            "uri: https://hive/data/556749/SNPProfile.csv ", 
+            "mime-type: csv", 
+            "}"
+        ], 
+        "input_subdomain": [
+            "Read Files for trimming:{", 
+            "https://hive/data/nuc-read/544899", 
+            "https://hive/data/nuc-read/544897", 
+            "}", 
+            "DeNovo Assembling Files:[", 
+            "https://hive/data/seq-trim/556723", 
+            "https://hive/data/seq-trim/556725", 
+            "}", 
+            "Read files for alignment:{", 
+            "https://hive/data/556747-contig.fa", 
+            "}"
         ]
-    }
+    }, 
+    "error_domain": [
+        "false negative discovery < 0.10", 
+        "false positive discovery < 0.05"
+    ]
 }
