@@ -1,0 +1,145 @@
+{
+  "id": "obj.0001",
+  "type": "molecular diagnosis of cancer",
+  "name": "Detection of BRCA1 and BRCA2 mutations for hereditary breast [DO:1612] and ovarian [DO:2394] cancer diagnosis",
+  "version": "1.0",
+  "createdby": "jeetvora@gwu.edu",
+  "created": "Jan 15, 2017 10:40:17",
+  "modified": "Jan 16, 2017 11:50:57",
+  "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658",
+  "verification_status": "unreviewed",
+  "publication_status": "draft",
+  "usability_domain": "Analysis of SNPs [SO:0000694], insertions [SO:0000667], and deletions [SO:0000045] in BRCA1 and BRCA2",
+  "authors": {
+    "id": "obj.0011",
+    "first": "Dominque ",
+    "middle": "",
+    "last": "Vaur",
+    "orcid": ""
+  },
+  "keywords": [
+    "molecular diagnosis",
+    "NGS",
+    "breast",
+    "ovary",
+    "cancer",
+    "SNP"
+  ],
+  "external_references": [
+    {
+      "id": "obj.0012",
+      "name": "DO",
+      "title": "Disease-Ontology",
+      "url": "http://disease-ontology.org/",
+      "pub_med": "PMID:25348409"
+    },
+    {
+      "id": "obj.0013",
+      "name": "SO",
+      "title": "Sequence Ontology",
+      "url": "http://www.sequenceontology.org/",
+      "pub_med": "PMID:15892872"
+    }
+  ],
+  "execution_domain": [
+    {
+      "id": "obj.0014",
+      "name": "molecular_diagnosis_of_cancer",
+      "title": "molecular diagnosis of cancer",
+      "platform":"null",
+      "package": [
+        "CASAVA",
+        "NextGENe"
+      ],
+      "location": "",
+      "version": "",
+      "env_parameters": "",
+      "script_driver": "",
+      "script": "",
+      "execution_steps": [
+        {
+          "id": "obj.0015",
+          "tool": "CASAVA suite",
+          "step_order": "1",
+          "version": "1.8",
+          "packages": [null],
+          "parametric_domain": {
+            "Varaint calling": "variantsNoCovCutoff"
+          }
+        },
+        {
+          "id": "obj.0016",
+          "tool": "NextGENe",
+          "step_order": "1",
+          "version": "2.0",
+          "parametric_domain": {
+            "reads": "single-end read analysis",
+            "Seed bases": "15 base seeds",
+            "move step bases": "15 base seeds",
+            "maching base percentage": "≥70",
+            "detect large indels option ": "On",
+            "mutation percentage": "≥10"
+          }
+        },
+        {
+          "id": "obj.0016",
+          "tool": "CNVSeq",
+          "step_order": "2",
+          "version": "null",
+          "parametric_domain": {
+            "window size": "500bp",
+            "Data filtration with log2 ratio for duplication": "≥0.4",
+            "Data filtration with log2 ratio for deletion": "≥-0.5"
+          }
+        },
+        {
+          "id": "obj.0017",
+          "tool": "SAMtools",
+          "step_order": "2",
+          "version": "null",
+          "parametric_domain": "null"
+        },
+        {
+          "id": "obj.0017",
+          "tool": "Alamut HT",
+          "step_order": "2",
+          "version": "null",
+          "parametric_domain": "null"
+        }
+      ]
+    }
+  ],
+  "io_domain": {
+    "step_1": {
+      "output_uri_list": [
+        "http://ncbi.gov/NC0001",
+        " http://ncbi.gov/NC0001"
+      ],
+      "reference_uri_list": [
+        "http://ncbi.gov/NC0001",
+        " http://ncbi.gov/NC0001"
+      ],
+      "input_uri_list": [
+        "http://ncbi.gov/NC0001",
+        " http://ncbi.gov/NC0001"
+      ]
+    },
+    "step_2": {
+      "output_uri_list": [
+        "http://ncbi.gov/NC0001",
+        " http://ncbi.gov/NC0001"
+      ],
+      "reference_uri_list": [
+        "http://ncbi.gov/NC0001",
+        " http://ncbi.gov/NC0001"
+      ],
+      "input_uri_list": [
+        "http://ncbi.gov/NC0001",
+        "http://ncbi.gov/NC0001"
+      ]
+    }
+  },
+  "error_domain": [
+    "For quality control If the coverage was below 20x the corresponding genomic region was checked by conventional methods DHPLC-HRM-MLPA-Sanger sequencing"
+  ]
+}
