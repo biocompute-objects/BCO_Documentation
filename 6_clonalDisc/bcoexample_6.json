@@ -1,11 +1,12 @@
 {
     "id": "obj.1283", 
-    "name": "Quasispecies_analysis_of_HIV-1_viruses", 
-    "title": "Quasispecies analysis of HIV-1 [taxid:12721, DOID:526] samples taken from H1V-1 infected individuals [taxid:9606] and detection of novel HIV-1 recombinant subtypes", 
+    "name": "Quasispecies analysis of HIV-1 [taxID:12721] samples taken from H1V-1 infected individuals [taxID:9606] and detection of novel HIV-1 recombinant subtypes", 
+    "title": "Quasispecies analysis of HIV-1", 
     "version": "1.0", 
     "createdby": "naila_gulzar@gwu.edu", 
     "created": "Feb 02, 2017 14:37:50", 
-    "modified": "Mar 13, 2017 15:06:51", 
+    "modified": "Jun 16, 2017 15:04:43", 
+    "digital_signature": "324kjhgiufgioerfhlsjdhbfalskjd", 
     "verification_status": "unreviewed", 
     "publication_status": "draft", 
     "usability_domain": [
@@ -35,87 +36,80 @@
         "keywords": [
             "clonal discovery", 
             "quasispecies", 
-            "clonal contigs"
+            "clonal contigs", 
+            "HIV-1"
         ], 
         "xref": [
-            "taxid:9606", 
             "UBERON:0001969", 
-            "taxid:12721", 
-            "DOID:526"
+            "taxID:9606", 
+            "taxID:12721"
         ], 
         "pipeline_steps": [
             {
-                "tool_name": "HIVE-Hexagon", 
-                "tool_desc": "Alignment of reads to a set of references", 
-                "tool_version": "1.0", 
-                "tool_package": "null", 
+                "tool_name": "HIVE-hexagon", 
+                "tool_desc": "Aligns reads to a set of reference", 
+                "tool_version": "1.4.3", 
+                "tool_package": "HIVE", 
                 "step_number": "1", 
                 "input_uri_list": [
-                    "hive://nuc-read/111111", 
-                    "hive://nuc-read/222222", 
-                    "hive://genomes/333333"
+                    "https://hive/data/nuc-read/645175", 
+                    "https://hive/data/nuc-read/645176", 
+                    "https://hive/data/nuc-genome/545173"
                 ], 
                 "output_uri_list": [
-                    "hive://data/444444/allCount-aligned.csv"
+                    "https://hive/data/hitlist/557006.csv"
                 ]
             }, 
             {
-                "tool_name": "HIVE-seq", 
+                "tool_name": "HIve-seq", 
                 "tool_desc": "Utility set that allows sequence manipulation", 
-                "tool_version": "1.0", 
-                "tool_package": "null", 
+                "tool_version": "1.4.3", 
+                "tool_package": "HIVE", 
                 "step_number": "2", 
                 "input_uri_list": [
-                    "hive://genomes/333333"
+                    "https://hive/data/hitlist/557006.csv"
                 ], 
                 "output_uri_list": [
-                    "hive://genomes/555555"
+                    "https://hive/data/seqtrim/557007.fasta"
                 ]
             }, 
             {
-                "tool_name": "MAFFT", 
-                "tool_desc": "multiple sequence alignment tool", 
-                "tool_version": "1.0", 
-                "tool_package": "null", 
+                "tool_name": "HIVE-MAFFT", 
+                "tool_desc": "Multiple sequence alignment tool", 
+                "tool_version": "1.4.3", 
+                "tool_package": "HIVE", 
                 "step_number": "3", 
                 "input_uri_list": [
-                    "https://genomes/555555"
+                    "https://hive/data/seqtrim/557007.fasta"
                 ], 
                 "output_uri_list": [
-                    "https://data/666666/alStack"
+                    "https://hive/data/MAFFT/557008.fasta"
                 ]
             }, 
             {
-                "tool_name": "Hexagon", 
-                "tool_desc": "Alignment of reads to a set of references", 
-                "tool_version": "1.0", 
-                "tool_package": "null", 
+                "tool_name": "HIVE-hexagon", 
+                "tool_desc": "Aligns reads to the reference", 
+                "tool_version": "1.4.3", 
+                "tool_package": "HIVE", 
                 "step_number": "4", 
                 "input_uri_list": [
-                    "https://nuc-read/111111", 
-                    "https://nuc-read/222222", 
-                    "hive://genomes/555555"
+                    "https://hive/data/MAFFT/557008.fasta"
                 ], 
                 "output_uri_list": [
-                    "hive://data/alView/777777"
+                    "https://hive/data/hexagon/557009/allcounts-aligned.csv"
                 ]
             }, 
             {
-                "tool_name": "HIVE-Hexahedron", 
+                "tool_name": "HIVE-popolation_analysis", 
                 "tool_desc": "clone discovery tool", 
-                "tool_version": "1.0", 
-                "tool_package": "null", 
+                "tool_version": "1.4.3", 
+                "tool_package": "HIVE", 
                 "step_number": "5", 
                 "input_uri_list": [
-                    "hive://data/777777/alView", 
-                    "https://data/666666/alStack"
+                    "https://hive/data/hexagon/557009/allcounts-aligned.csv"
                 ], 
                 "output_uri_list": [
-                    "hive://data/888880/popContig", 
-                    "hive://data/888881/popAlignment", 
-                    "hive://data/888882/popCoverage", 
-                    "hive://data/888883/popBreakpoints", 
-                    "hive://data/888884/popSummary"
+                    "https://hive/data/557010/popContig.fasta"
                 ]
             }
         ]
@@ -126,19 +120,19 @@
         "platform": "HIVE", 
         "driver": "//hive.biochemistry.gwu.edu/hive-driver", 
         "prerequisites": [
-            "HIVE_Hexagon", 
-            "HIVE_Seq", 
-            "MAFFT", 
-            "HIVE_Hexahedron"
+            "HIVE-hexagon, version1.4.3", 
+            "HIVE-seq, version1.4.3", 
+            "HIVE-MAFFT, version1.4.3", 
+            "HIVE-hexagon, version1.4.3", 
+            "HIVE-population analysis, version1.4.3"
         ], 
         "env_parameters": [
             "HIVEv1.4.3"
-        ]
+        ], 
+        "script_type": "URI"
     }, 
     "parametric_domain": {
-        "Hex_2_minMatchLen": "45", 
-        "hexagon_seed": "0.01", 
-        "Hex_2_maxMissQueryPercent": "15"
+        "hexagon_seed": "0.01"
     }, 
     "io_domain": {
         "reference_uri_list": [

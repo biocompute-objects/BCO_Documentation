@@ -1,17 +1,17 @@
 {
     "id": "obj.1275", 
-    "name": "RNA-seq analysis of ER [HGNC:3467], PR [HGNC:8910], and HER2 [HGNC:3430] status in human [taxID:9606] breast cancer [DOID:1612]", 
+    "name": "RNA-seq analysis of ER [HGNC:3467], PR [HGNC:8910], and HER2 [HGNC:3430] status in human [taxID:9606] breast cancer [DOID:1612] patients", 
     "version": "1.0", 
     "createdby": "hadley_king@gwmail.gwu.edu", 
     "created": "Jan 25, 2017 11:19:27", 
-    "modified": "Mar 13, 2017 16:33:52", 
+    "modified": "May 11, 2017 11:36:55", 
     "digital_signature": "7LGk9QfzKQ40qdz5b8pS", 
     "verification_status": "unreviewed", 
     "publication_status": "draft", 
     "usability_domain": [
-        "RNA-seq data analysis to identify the status of ER, PR and HER2 expression.", 
-        "Diagnostic analysis of breast cancer samples for drug treatment.", 
-        "Quantitation of RNA-seq derived expression of ER, PR and HER2 in breast cancer samples to predict therapeutic efficacy based on presence of available receptors."
+        "RNA-seq data analysis to identify the status of ER [HGNC:3467], PR [HGNC:8910] and HER2 [HGNC:3430] expression status in human [taxID:9606] breast cancer [DOID:1612] patients. ", 
+        "Diagnostic analysis of human [taxID:9606] breast cancer [DOID:1612] samples for drug treatment. ", 
+        "Quantitation of RNA-seq derived expression of ER [HGNC:3467], PR [HGNC:8910] and HER2 [HGNC:3430] in breast cancer [DOID:1612] samples to predict therapeutic efficacy based on the presence of available receptors."
     ], 
     "authors": [
         {
