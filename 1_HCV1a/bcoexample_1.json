@@ -27,8 +27,10 @@
             "HCV1a", 
             "Ledipasvir", 
             "antiviral resistance", 
-            "SNP", 
+            "SNP",
+		 "tst", 
             "amino acid substitutions"
+            "test2"
         ], 
         "xref": [
             "SO:0000694", 
