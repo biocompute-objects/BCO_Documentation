@@ -4,7 +4,7 @@
     "version": "1.1", 
     "createdby": "hadley_king@gwmail.gwu.edu", 
     "created": "Jan 24, 2017 09:40:17", 
-    "modified": "Jun 02, 2017 15:35:09", 
+    "modified": "Jun 22, 2017 14:47:49", 
     "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658", 
     "verification_status": "unreviewed", 
     "publication_status": "draft", 
@@ -27,8 +27,7 @@
             "HCV1a", 
             "Ledipasvir", 
             "antiviral resistance", 
-            "SNP",
-		 "tst", 
+            "SNP", 
             "amino acid substitutions"
             "test2"
         ], 
@@ -103,17 +102,31 @@
             "https://www.ncbi.nlm.nih.gov/nuccore/AJ238799.1"
         ], 
         "input_uri_list": [
-            "https://hive/data/nuc-read/557406\nhttps://hive/data/nuc-read/557407\nhttps://hive/data/557413/allCount-aligned.csv\n"
+            "https://hive/data/nuc-read/557406", 
+            "https://hive/data/nuc-read/557407", 
+            "https://hive/data/557413/allCount-aligned.csv"
         ], 
         "output_uri_list": [
             "https://hive/data/557413/allCount-aligned.csv", 
             "https//hive/data/557416/SNPProfile.csv"
         ], 
         "output_subdomain": [
-            "hit_list \ntitle:hit list\nuri:https://hive/data/557413/allCount-aligned.csv\nmime-type:csv\nmutation_profile:\ntitle:mutation profile\nuri:https//hive/data/557416/SNPProfile.csv\nmime-type:csv"
+            "hit_list ", 
+            "title:hit list", 
+            "nuri:https://hive/data/557413/allCount-aligned.csv", 
+            "mime-type:csv", 
+            "mutation_profile:", 
+            "title:mutation profile", 
+            "uri:https//hive/data/557416/SNPProfile.csv", 
+            "mime-type:csv"
         ], 
         "input_subdomain": [
-            "HCV1a_reference genome\nhttps://www.ncbi.nlm.nih.gov/nuccore/NC_004102.1        https://www.ncbi.nlm.nih.gov/nuccore/AJ238799.1\n\nHCV1a_reads\nhttps://hive/data/nuc-read/557406\nhttps://hive/data/nuc-read/557407\n\n"
+            "Read_Files:", 
+            "https://hive/data/nuc-read/557406", 
+            "https://hive/data/nuc-read/557407", 
+            "HCV1a_reference_genome", 
+            "https://www.ncbi.nlm.nih.gov/nuccore/NC_004102.1", 
+            "https://www.ncbi.nlm.nih.gov/nuccore/AJ238799.1"
         ]
     }, 
     "error_domain": [
