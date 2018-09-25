@@ -59,7 +59,6 @@ For more information, see the project description on the [FDA Extramural Researc
 
 
 * **Collaboration use case:**
-
     Authors and pharmaceutical scientists are unaware of how the regulatory industry is using workflows to analyze data. Openness and transparency are hindered by the lack of ability to communicate, not a lack of willingness. Scientific merit is compromised as a result of not having a common "language" for communicating computations.
 
 * **Accountability use case:**
