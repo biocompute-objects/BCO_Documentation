@@ -133,7 +133,7 @@
             ]
         },
 
-        "description domain" : {
+        "description_domain" : {
             "keywords" : {
                 "_type" : "keymap",
                 "_multi_value" : true
