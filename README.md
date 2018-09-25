@@ -76,7 +76,12 @@ For more information, see the project description on the [FDA Extramural Researc
 
 * **Dataset use case:**
 
-   FDA data integrator or database curator can use the BCO schema to create records and track versioning for an integrated datasets. The dataset BCO type captures important information about the dataset that can be shared for understanding the dataset and reproducing it. The dataset BCO includes critical metadata while also describing the content of the dataset. The output files include column headers, header definitions, and statistics about the resulting dataset. 
+   A data integrator or database curator can use the BCO schema to create records and track versioning for an integrated datasets. The dataset BCO type captures important information about the dataset that can be shared for understanding the dataset and reproducing it. The dataset BCO includes critical metadata while also describing the content of the dataset. The output files include column headers, header definitions, and statistics about the resulting dataset. 
+   
+* **Data integration use case:**
+
+   A BCO can be used to provide clarity and transparency of the data integration process to both the new and existing collaborators. When new data is integrated into the existing data model, BCO can be used to describe data source information (eg- authors/contributors, data version etc), a QC workflow, data content, data modification. The BCO also allows reuse of the same workflow to integrate new data with same structure and source. BCO also provides a way to access and track data records which were eliminated in the integration/QC process due to rules or restrictions of the existing data model. 
+
 
 ### 1.6 BCO community
 The BioCompute Object working group facilitates a means for different stakeholders in the HTS communities to provide input on current practices on the BCO. This working group was formed during preparation for the 2017 HTS Computational Standards for Regulatory Sciences Workshop, and was initially made up of the workshop participants, both speakers and panelists. There has been a continual growth of the BCO working group as a direct result of the interaction between a variety of stakeholders from all interested communities in standardization of computational HTS data processing. The partnerships formed between universities, private genomic data companies, software platforms, government and regulatory institutions has been an easy point of entry for new individuals or institutions into the BCO project to participate in the discussion of best practices for the objects. 
