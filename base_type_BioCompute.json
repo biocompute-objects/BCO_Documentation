@@ -57,7 +57,7 @@
             },
             "version" : {
                 "_type" : "version",
-                "_comment" : "version of the BioCompute Object"
+                "_comment" : "version of this BioCompute Object"
             },
             "review" : {
                 "_multi_value" : true,
@@ -189,10 +189,10 @@
         },
 
         "execution_domain" : {
-            "script_type" : {
+            "script_access_type" : {
                "_type" :"string",
                 "_constraint" : {
-                    "_choice" : [ "uri", "text" ]
+                    "_choice" : [ "URI", "text" ]
                 }
             },
             "script" : {

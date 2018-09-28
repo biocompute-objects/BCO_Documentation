@@ -96,7 +96,7 @@
         "uri" : {
             "_type" : "uri"
         },
-        "mime-type": { 
+       "mediatype": { 
             "_type" : "string",
             "_optional" : true
         }

@@ -339,14 +339,14 @@
         }, 
         "output_subdomain": [
             {
-                "mime-type": "text/csv", 
+               "mediatype": "text/csv", 
                 "source": { 
                     "address": "https://hive.biochemistry.gwu.edudata/514769/dnaAccessionBased.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }, 
             {
-                "mime-type": "text/csv", 
+               "mediatype": "text/csv", 
                 "uri": {
                     "address": "https://hive.biochemistry.gwu.edudata/514801/SNPProfile*.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
