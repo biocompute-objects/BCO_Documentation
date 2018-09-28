@@ -1,11 +1,11 @@
 {
-    "BCO_id": "https://github.com/GW-HIVE/HIVE-lab/blob/master/HTS-CSRS/1_HCV1a_V2/HCV1a",
+    "BCO_id": "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/hadley_local/HCV1a.json",
     "type": "antiviral_resistance_detection", 
     "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658",
-    "bco_spec_version" : "v1.2-draft1",
+    "bco_spec_version" : "v1.2",
     "provenance_domain": {
         "name": "HCV1a ledipasvir resistance SNP detection", 
-        "structured_name": "HCV1a [taxID:31646] ledipasvir [PubChem:67505836] resistance SNP [SO:0000694] detection",
+        "structured_name": "HCV1a [taxonomy:31646] ledipasvir [pubchem.compound:67505836] resistance SNP [so:0000694] detection",
         "version": "2.9",
         "review": [
             {
@@ -62,33 +62,34 @@
         "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"
 	],
     "extension_domain":{
-        "FHIR_extension": [
-            {
-                "FHIRendpoint_Resource": "sequence",
-                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-                "FHIRendpoint_Ids": ["21376"]
-            },
-            {
-                "FHIRendpoint_Resource": "diagnostics-genetics",
-                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-                "FHIRendpoint_Ids": ["43135"]
-            },
-            {
-                "FHIRendpoint_Resource": "procedurerequest-genetics",
-                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-                "FHIRendpoint_Ids": ["25544"]
-            },
-            {
-                "FHIRendpoint_Resource": "observation-genetics",
-                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-                "FHIRendpoint_Ids": ["92440"]
-            },
-            {
-                "FHIRendpoint_ResourceType": "familymemberhistory-genetics",
-                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-                "FHIRendpoint_Ids": ["39025"]
-            }
-        ],
+	    "extension_domain":{
+	        "FHIR_extension": [
+	            {
+	                "FHIRendpoint_Resource": "Sequence",
+	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+	                "FHIRendpoint_Ids": ["21376"]
+	            },
+	            {
+	                "FHIRendpoint_Resource": "DiagnosticReport",
+	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+	                "FHIRendpoint_Ids": ["6288583"]
+	            },
+	            {
+	                "FHIRendpoint_Resource": "ProcedureRequest",
+	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+	                "FHIRendpoint_Ids": ["25544"]
+	            },
+	            {
+	                "FHIRendpoint_Resource": "Observation",
+	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+	                "FHIRendpoint_Ids": ["92440"]
+	            },
+	            {
+	                "FHIRendpoint_ResourceType": "FamilyMemberHistory",
+	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+	                "FHIRendpoint_Ids": ["4588936"]
+	            }
+	        ],
         "github_extension": {
             "github_repository": "https://github.com/common-workflow-language/hive-cwl-examples", 
             "github_URI":"https://github.com/common-workflow-language/hive-cwl-examples/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
@@ -221,8 +222,8 @@
         }
     },
     "execution_domain": {
-        "script_type": "text",
-        "script": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=home",
+        "script_access_type": "text",
+        "script": {"https://example.com/workflows/antiviral_resistance_detection_hive.py"},
         "script_driver": "manual",
         "pipeline_version": "2.0", 
         "platform": "hive", 
@@ -258,7 +259,11 @@
             {
                 "name": "access to e-utils", 
                 "url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
-            }
+            },
+			{
+				"name": "generic name",
+			    "url": "protocol://domain:port/application/path",
+				}
         ], 
         "env_parameters": {
             "key": "HOSTTYPE", 
