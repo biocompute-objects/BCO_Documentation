@@ -25,9 +25,6 @@
                 "_comment" : ["linkage to GitHub"],
                 "_multi_value" : true,
                 "_fields":{
-                    "github_URL": {
-                        "_type" : "string"
-                    },
                     "gitHub_URI": {
                         "_type" : "uri"
                     },

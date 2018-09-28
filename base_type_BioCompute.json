@@ -112,9 +112,9 @@
                 "_multi_value" : true
             },
             "license" : {
-                "_type" : "uri",
+                "_type" : "string",
                 "_optional" : true,
-                "_comment" : ["Creative Commons licence or other licence information space. Recommended licence can be Attribution 4.0"]
+                "_comment" : ["Creative Commons licence or other licence information (text) space. The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html"]
             }
         },
 

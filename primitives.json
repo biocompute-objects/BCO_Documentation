@@ -49,7 +49,7 @@
     },
     "uri": {
         "address": {
-            "_type": "objectid",
+            "_type": "objectid"
         },
         "access_time": {
             "_type" : "dateTime",
@@ -65,6 +65,7 @@
     },
     "contribution": {
         "_type" : "string",
+        "_multi_value" : true,
         "_comment": "taken from https://doi.org/10.1186/2041-1480-4-37",
         "_constraint" :{
            "_choice" : ["authoredBy", "contributedBy", "createdAt", "createdBy", "createdWith", "curatedBy", "derivedFrom", "importedBy", "importedFrom", "providedBy", "retrievedBy", "retrievedFrom", "sourceAccessedBy"]
@@ -87,7 +88,7 @@
         "contribution": {
             "_type": "contribution"
         },
-        "orc_id": {
+        "orcid": {
             "_type": "objectid"
         }
     },
