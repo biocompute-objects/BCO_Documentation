@@ -35,6 +35,11 @@
                 "regex" : "[A-Za-z0-9]+"
             }
         },
+        "bco_spec_version" : {
+            "_type" : "string",
+            "_read_only" : true,
+            "_comment" : ["The version of the BCO specification used to define this document."]
+        },
 
         "provenance_domain": {
             "name" : {
