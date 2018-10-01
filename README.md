@@ -18,7 +18,7 @@ Knowledge of input data is intended to be captured according to existing efforts
 
 ## User Guide
 
-The [BioCompute Objects user guide](https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/master/user_guide.md) provides a
+The [BioCompute Objects user guide](/user_guide.md) provides a
 gentle introduction to implementing/writing a BCO for pipeline and workflow
 descriptions.
 
