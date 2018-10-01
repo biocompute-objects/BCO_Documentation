@@ -35,6 +35,11 @@
                 "regex" : "[A-Za-z0-9]+"
             }
         },
+        "bco_spec_version" : {
+            "_type" : "string",
+            "_read_only" : true,
+            "_comment" : ["The version of the BCO specification used to define this document."]
+        },
 
         "provenance_domain": {
             "name" : {
@@ -52,7 +57,7 @@
             },
             "version" : {
                 "_type" : "version",
-                "_comment" : "version of the BioCompute Object"
+                "_comment" : "version of this BioCompute Object"
             },
             "review" : {
                 "_multi_value" : true,
@@ -112,9 +117,9 @@
                 "_multi_value" : true
             },
             "license" : {
-                "_type" : "uri",
+                "_type" : "string",
                 "_optional" : true,
-                "_comment" : ["Creative Commons licence or other licence information space. Recommended licence can be Attribution 4.0"]
+                "_comment" : ["Creative Commons licence or other licence information (text) space. The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html"]
             }
         },
 
@@ -133,7 +138,7 @@
             ]
         },
 
-        "description domain" : {
+        "description_domain" : {
             "keywords" : {
                 "_type" : "keymap",
                 "_multi_value" : true
@@ -184,10 +189,10 @@
         },
 
         "execution_domain" : {
-            "script_type" : {
+            "script_access_type" : {
                "_type" :"string",
                 "_constraint" : {
-                    "_choice" : [ "uri", "text" ]
+                    "_choice" : [ "URI", "text" ]
                 }
             },
             "script" : {
