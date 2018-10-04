@@ -3,12 +3,12 @@
     "title" : "Base type for all BioCompute Object types",
     "description" : "All BioCompute object types must inherit from this type in order to be compliant with BioCompute framework",
     "_comment" : [
-        "Since JSON format do not allow comments '_comment' key is used for comments and should be ignored by parsers",
-        "As any object of type 'type' it has its own fields: _type, _id, _inherits, name, title and description",
-        "As base type this type inherits from none",
+        "Since JSON format does not allow comments, '_comment' key is used for comments and should be ignored by parsers",
+        "As any object of type 'type', it has its own fields: _type, _id, _inherits, name, title and description",
+        "As base type, this type inherits from none",
         "Identifier of the object since type itself is an object",
         "Type of this JSON object is 'type'",
-        "For each field default value for '_multi_value', '_optional', and '_read_only' key is 'false' "
+        "For each field default value for '_multi_value', '_optional', and '_read_only', key is 'false' "
     ],
     "_fields" : {
         "_comment" : [
@@ -19,7 +19,7 @@
             "_type" : "string",
             "_read_only" : true,
             "_comment" : [
-                "A unique identifier that should be applied to each BCO instance, assigned by a BCO database engine.",
+                "A unique identifier that should be applied to each BCO instance, generated and assigned by a BCO database engine.",
                 "IDs should never be reused"
             ]
         },
