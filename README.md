@@ -20,8 +20,6 @@ Knowledge of input data is intended to be captured according to existing efforts
 
 The [BioCompute Objects user guide](/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow.
 
-
-
 ## Specification
 
 For developers and advanced users, the current [BCO specification (v1.2)](/BCO_Spec_V1.2.pdf) provides authoritative documentation of the construction of BioCompute Objects.
@@ -35,4 +33,4 @@ Simonyan, V., Goecks, J., & Mazumder, R. (2017). ***Biocompute Objects — A Ste
 
 ## Support, Community and Contributing
 
-Please see our [OSF page](https://osf.io/h59uh/) or our [main page](http://biocomputeobject.org/)
+Please see our [OSF page](https://osf.io/h59uh/) or our [main page](http://biocomputeobject.org/) 
