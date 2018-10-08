@@ -60,40 +60,39 @@
         "Identify treatment emergent amino acid substitutions [so:SO:0000048] that correlate with antiviral drug treatment failure", 
         "Determine whether the treatment emergent amino acid substitutions [so:SO:0000048] identified correlate with treatment failure involving other drugs against the same virus", 
         "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"
-	],
+    ],
     "extension_domain":{
-	    "extension_domain":{
-	        "FHIR_extension": [
-	            {
-	                "FHIRendpoint_Resource": "Sequence",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["21376"]
-	            },
-	            {
-	                "FHIRendpoint_Resource": "DiagnosticReport",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["6288583"]
-	            },
-	            {
-	                "FHIRendpoint_Resource": "ProcedureRequest",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["25544"]
-	            },
-	            {
-	                "FHIRendpoint_Resource": "Observation",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["92440"]
-	            },
-	            {
-	                "FHIRendpoint_ResourceType": "FamilyMemberHistory",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["4588936"]
-	            }
-	        ],
-        "github_extension": {
-            "github_repository": "https://github.com/common-workflow-language/hive-cwl-examples", 
-            "github_URI":"https://github.com/common-workflow-language/hive-cwl-examples/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
+        "FHIR_extension": [
+            {
+                "FHIRendpoint_Resource": "Sequence",
+                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+                "FHIRendpoint_Ids": ["21376"]
+            },
+            {
+                "FHIRendpoint_Resource": "DiagnosticReport",
+                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+                "FHIRendpoint_Ids": ["6288583"]
+            },
+            {
+                "FHIRendpoint_Resource": "ProcedureRequest",
+                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+                "FHIRendpoint_Ids": ["25544"]
+            },
+            {
+                "FHIRendpoint_Resource": "Observation",
+                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+                "FHIRendpoint_Ids": ["92440"]
+            },
+            {
+                "FHIRendpoint_ResourceType": "FamilyMemberHistory",
+                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
+                "FHIRendpoint_Ids": ["4588936"]
             }
+        ],
+        "github_extension": {
+	        "github_repository": "https://github.com/common-workflow-language/hive-cwl-examples", 
+	        "github_URI":"https://github.com/common-workflow-language/hive-cwl-examples/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
+        }
     },
     "description_domain": {
         "keywords": [
@@ -223,7 +222,7 @@
     },
     "execution_domain": {
         "script_access_type": "text",
-        "script": {"https://example.com/workflows/antiviral_resistance_detection_hive.py"},
+        "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"],
         "script_driver": "manual",
         "pipeline_version": "2.0", 
         "platform": "hive", 
@@ -262,7 +261,7 @@
             },
 			{
 				"name": "generic name",
-			    "url": "protocol://domain:port/application/path",
+			    "url": "protocol://domain:port/application/path"
 				}
         ], 
         "env_parameters": {
