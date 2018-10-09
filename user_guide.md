@@ -810,7 +810,7 @@ BioCompute data types are defined as aggregates of the critical fields organized
 7) the input and output domains
 8) the error domain. 
 
-At the time of submission to the BioCompute Object database an instance of BCO type is created, populated with actual values compliant with the data type definitions and assigned a unique identifier. The object could then be assigned a unique digital signature and a unique digital object identifier. 
+At the time of submission to the BioCompute Object database values are validated for compliance with data type definitions and an uniquely identified instance of BCO type is created.  The object could then be assigned a unique digital signature and a unique digital object identifier. 
 
 Three of the domains in a BioCompute Object become immutable upon assignment of the digital signature: 
    1) the Parametric Domain
