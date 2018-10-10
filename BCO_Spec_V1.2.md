@@ -196,7 +196,7 @@ In such cases the connection between the new object and the older one may or may
 
 ### 2.1.4 Review "review"
 
-Describes the status of an object in the review process. The 'unreviewed' flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The ‘in-review’ flag indicates that verification is underway. The 'approved' flag indicates that the BCO has been verified and reviewed. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'rejected' flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the "contributor" object (described in section 2.1.10) is inherited to populate the reviewer section. 
+Describes the status of an object in the review process. The `unreviewed` flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The `in-review` flag indicates that verification is underway. The `approved` flag indicates that the BCO has been verified and reviewed. The `suspended` flag indicates an object that was once valid is no longer considered valid. The `rejected` flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the `contributor` object (described in section 2.1.10) is inherited to populate the reviewer section. 
 
 ```json
         "review": [
@@ -234,7 +234,7 @@ If the object is derived from another, this field will specify the parent object
 
 ### 2.1.6 Obsolescence "obsolete" 
 
-If the object has an expiration date this field will specify that using the ‘datetime’ type which is in ISO-8601 format as clarified by W3C <[https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime)>. This field is optional.
+If the object has an expiration date this field will specify that using the ‘datetime’ type which is in ISO-8601 format as clarified by W3C [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime). This field is optional.
 
 ```json
 "obsolete" : "2118-09-26T14:43:43-0400"
@@ -242,7 +242,7 @@ If the object has an expiration date this field will specify that using the ‘d
 
 ### 2.1.7 Embargo "embargo"
 
-If the object has a period of time that it is not public, that range can be specified using these fields.  Using the ‘datetime’ type a start and end time are specified for the embargo. These fields are optional.
+If the object has a period of time that it is not public, that range can be specified using these fields.  Using the `datetime`’` type a start and end time are specified for the embargo. These fields are optional.
 
 ```json
 "embargo" : {
@@ -253,7 +253,7 @@ If the object has a period of time that it is not public, that range can be spec
 
 ### 2.1.8 Created "created"
 
-Using the ‘datetime’ type the time of initial creation of the BCO is recorded in ISO-8601 format as clarified by W3C <[https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime)>.   
+Using the `datetime` type the time of initial creation of the BCO is recorded in ISO-8601 format as clarified by W3C [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime).
 
 ```json
 "created": "2017-01-20T09:40:17-0500"
@@ -261,7 +261,7 @@ Using the ‘datetime’ type the time of initial creation of the BCO is recorde
 
 ### 2.1.9 Modification "modified"
 
-Using the ‘datetime’ type the time of most recent modification of the BCO is recorded
+Using the `datetime` type the time of most recent modification of the BCO is recorded
 
 ```json
 "modified": "2018-03-21T18:31:48-0400"
@@ -269,7 +269,7 @@ Using the ‘datetime’ type the time of most recent modification of the BCO is
 
 ### 2.1.10 Contributors "contributors"
 
-This is a list to hold contributor identifiers and a description of their type of contribution, including a field for ORCIDs to record author information, as they allow for the author to curate their information after submission. ORCID identifiers must be [valid](https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier) and must have the prefix ‘[https://orcid.org/](https://orcid.org/)’. The contribution type is a choice taken from [PAV ontology](http://purl.org/pav/): provenance, authoring and versioning, which also maps to the [PROV-O](https://www.w3.org/TR/prov-o/).
+This is a list to hold contributor identifiers and a description of their type of contribution, including a field for ORCIDs to record author information, as they allow for the author to curate their information after submission. ORCID identifiers must be [valid](https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier) and must have the prefix `https://orcid.org/`. The `contribution` type is a choice taken from [PAV ontology](http://purl.org/pav/): provenance, authoring and versioning, which also maps to the [PROV-O](https://www.w3.org/TR/prov-o/).
 
 ```json
         "contributors": [
@@ -292,7 +292,7 @@ This is a list to hold contributor identifiers and a description of their type o
 
 ### 2.1.11 License "license"
 
-A space for Creative Commons licence or other licence information (text). The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html
+A space for Creative Commons licence or other licence information (text). The default or recommended licence can be _Creative Commons Attribution 4.0 International_ identified as https://spdx.org/licenses/CC-BY-4.0.html
 
 ```json
 "license": "https://spdx.org/licenses/CC-BY-4.0.html"
@@ -433,7 +433,7 @@ This is an optional structured domain for recording the specifics of a pipeline.
 
 #### 2.4.3.1 Step Number "step_number"
 
-This is a non-negative integer value representing the position of the tool in a one-dimensional representation of the pipeline. The number is a suggestion for a *[partial orde*r](https://en.wikipedia.org/wiki/Partially_ordered_set) for presentation purposes, e.g. parallel computations assigned the same number based on their first possible execution. Actual execution order might differ from the step number. Gaps are allowed (e.g. step 20 follows step 10). 
+This is a non-negative integer value representing the position of the tool in a one-dimensional representation of the pipeline. The number is a suggestion for a [partial order](https://en.wikipedia.org/wiki/Partially_ordered_set) for presentation purposes, e.g. parallel computations assigned the same number based on their first possible execution. Actual execution order might differ from the step number. Gaps are allowed (e.g. step 20 follows step 10). 
 
 ```json
 "step_number": "1"
@@ -575,7 +575,7 @@ The multi-value reference to a particular deployment of an existing platform whe
 
 ### 2.5.5 Script driver "script_driver"
 
-The reference to an executable that can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. For example, if the pipeline is driven by a HIVE script, the script driver is the "hive" execution engine. For CWL based scripts specify "cwl-runner". Another very general script driver commonly used in Linux based operating systems is "shell" and the type of scripts it can run are operating system shell scripts. The combination of script driver and script is a capability to run a particular sequence of computational steps in order to produce BCO outputs given the inputs and parameters. 
+The reference to an executable that can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. For example, if the pipeline is driven by a HIVE script, the script driver is the "hive" execution engine. For CWL based scripts specify `cwl-runner`. Another very general script driver commonly used in Linux based operating systems is `shell` and the type of scripts it can run are operating system shell scripts. The combination of script driver and script is a capability to run a particular sequence of computational steps in order to produce BCO outputs given the inputs and parameters. 
 
 It is noteworthy to mention that scripts and script drivers by themselves can be objects. These objects can exist in internal (BCO) or external databases and be publicly or privately accessible.
 
@@ -596,7 +596,7 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
 
 ### 2.5.7 Domain Prerequisites "domain_prerequisites"
 
-An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. The key "url" defines an endpoint to be accessed. If the "path" is "/" then any resource at the given domain may be accessed, while if the path is more specific than only resources which path prefix matches may be accessed.
+An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. The key "url" defines an endpoint to be accessed. If the `path` is `/` then any resource at the given domain may be accessed, while if the path is more specific than only resources which path prefix matches may be accessed.
 
 ```json
 "domain_prerequisites": [
@@ -629,16 +629,16 @@ This represents the list of parameters customizing the computational flow which 
 
 ```json
 "parametric_domain": {
-        "HIVE-hexagon" : { 
-            "seed": 14,
-            "minimum_match_len": 66, 
-            "divergence_threshold_percent": 0.30
-        },
+    "HIVE-hexagon" : { 
+        "seed": 14,
+        "minimum_match_len": 66, 
+        "divergence_threshold_percent": 0.30
+    },
 
-        "HIVE-heptagon": {
-            "minimum_coverage": 15, 
-            "freq_cutoff": 0.10
-        } 
+    "HIVE-heptagon": {
+        "minimum_coverage": 15, 
+        "freq_cutoff": 0.10
+    } 
 }
 ```
 
@@ -648,7 +648,7 @@ This represents the list of global input and output files created by the computa
 
 ### 2.7.1 Input Subdomain "input_subdomain"
 
-This field records the references and input files for the entire pipeline. Each type of input file is listed under a key for that type. The file types are specified when the BCO type is created. This allows the author to be very specific about a particular type of input file, if they so choose. For example: reference files have common names, and adding the common name here, in addition to the uri would make this more readable and understandable (eg, "HCV reference version..." or "human reference GRCH38"). For data integration workflows, the input files can be a table downloaded from a specific source which is then filtered for modified using rules described in the BCO.
+This field records the references and input files for the entire pipeline. Each type of input file is listed under a key for that type. The file types are specified when the BCO type is created. This allows the author to be very specific about a particular type of input file, if they so choose. For example: reference files have common names, and adding the common name here, in addition to the uri would make this more readable and understandable (eg, `"HCV reference version..."` or `"human reference GRCH38"`). For data integration workflows, the input files can be a table downloaded from a specific source which is then filtered for modified using rules described in the BCO.
 
 ```json
 "input_subdomain": {
