@@ -1,4 +1,4 @@
-GitHub: https://github.com/biocompute-objects<cr>
+GitHub: https://github.com/biocompute-objects
 	
 OSF page: https://osf.io/r6s4u/ biocomputeobject.org
 
@@ -60,7 +60,7 @@ The unpredictability of tangible physical, chemical, and biological experiments 
 
  
 
-For more information, see the project description on the **[FDA Extramural Researc**h](http://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm491893.htm) page. 
+For more information, see the project description on the [FDA Extramural Research](https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm227223.htm) page. 
 
 ### 1.2.1 Limitations of the initial effort
 
@@ -81,35 +81,35 @@ For more information, see the project description on the **[FDA Extramural Resea
 * Bioinformatics tool and platform developers who wish to operate in a regulatory environment, including cloud service (PaaS, IaaS, SaaS, FaaS) providers
 * Journals / Scientific Publishing / peer reviewing process
 * US National Institutes of Health (NIH) (particularly initiatives such as NCI/ITCR)
-* Public cloud companies operating in the Life Sciences sector including electronic health record (EHR) systems 
+* Public cloud companies operating in the Life Sciences sector including electronic health record (EHR) systems
 
 ## 1.5 BCO User stories
 
-* **Reproducibility and Interpretation use case:** 
+### Reproducibility and Interpretation use case
 
 A pharmaceutical company is submitting NGS data and the FDA conducts a reanalysis of the data. The reanalysis does not concur with the original results. It can be very lengthy and costly to figure out the location of the discrepancies. Attaching a BioCompute Object with the initial submission would prevent most of the ambiguity surrounding the discrepancies. 
 
-* **Reusability use case: **
+### Reusability use case
 
 A regulatory decision has been made where a computational analysis has been used as evidence. New data emerges after the product has been on the market over a year and the regulators cannot reproduce the original environment with the configuration of tools and parameters of pipelines to reanalyze the initial submission data or replicate the initial conclusion.
 
-* **Collaboration use case:** 
+### Collaboration use case
 
 Authors and pharmaceutical scientists are unaware of how the regulatory industry is using workflows to analyze data. Openness and transparency are hindered by the lack of ability to communicate, not a lack of willingness. Scientific merit is compromised as a result of not having a common "language" for communicating computations.
 
-* **Accountability use case: **
+### Accountability use case
 
 A bioinformatics platform provider can use BCO as part of its verification and validation process. A customer submits NGS data provided by a third party sequencing provider. The sequencing data is poor quality. Reproducible pipelines, validated and verified as a "BCO", were used to demonstrate the fault lies in the sequencing step and not the bioinformatics pipeline.
 
-* **Versioning use case: **
+### Versioning use case
 
 One potential use case related to this is one of 'differential impact' of how different choices in the workflow affect the outcome of the computational analysis/experiment (e.g. changing expression estimation procedure). 
 
-* **Provenance use case:** 
+### Provenance use case
 
 BCOs can serve as a history of what was computed. An example pertaining to provenance, from experience: data are generated and QC'ed as far as possible, and then passed on for analysis. The analysis diagnoses a problem with one or more samples (e.g., cryptic relatedness), which are then locally excluded from the analysis. But that exclusion is not reflected back to the original data, and the same bad samples are included in the next analysis. In this way, a record exists of which samples can be excluded in future analysis. 
 
-* **Data integration use case**:
+### Data integration use case
 
 A BCO can be used to provide clarity and transparency of the data integration process to both the new and existing collaborators. When new data is integrated into the existing data model, BCO can be used to describe data source information (eg- authors/contributors, data version etc), a QC workflow, data content, data modification if any. The BCO also allows reuse of the same workflow to integrate new data with same structure and source. BCO also provides a way to access and track data records which were eliminated in the integration/QC process due to rules or restrictions of the existing data model. Knowledgebases using BCOs in the form of ‘readme’ can provide provenance for every piece of data that is collected and presented to the user. Such granular tracking facilitates fair sharing of data and provides mechanisms for adherence to licensing requirements associated with specific datasets. 
 
@@ -125,7 +125,7 @@ BioCompute data types are defined as aggregates of the critical fields organized
 
 Three of the domains in a BioCompute Object become immutable upon assignment of the digital signature: 1) the Parametric Domain, 2) the Execution Domain and 3) the I/O Domain. Changing anything within these domains invalidates the verification and will break the digital signature. Required fields are indicated by the "vital": "True" flag, which is shown in the data typing section below (Appendix VI). 
 
-## 2.0 **Top Level**** Fields**
+## 2.0 Top Level Fields
 
 These header fields uniquely define this BCO. These fields are required for every BCO.
 
@@ -163,7 +163,7 @@ The version of the BCO specification used to define this document.
 "bco_spec_version": "v1.1-draft1" 
 ```
 
-## 2.1 **Provenance Domain ****"provenance_domain"**
+## 2.1 Provenance Domain "provenance_domain"
 
 ### 2.1.1 Name "name"
 
@@ -240,7 +240,7 @@ If the object has an expiration date this field will specify that using the ‘d
 "obsolete" : "2118-09-26T14:43:43-0400"
 ```
 
-### 2.1.7 Embargo ‘embargo’
+### 2.1.7 Embargo "embargo"
 
 If the object has a period of time that it is not public, that range can be specified using these fields.  Using the ‘datetime’ type a start and end time are specified for the embargo. These fields are optional.
 
@@ -251,7 +251,7 @@ If the object has a period of time that it is not public, that range can be spec
 },
 ```
 
-### 2.1.8 Created ‘created’
+### 2.1.8 Created "created"
 
 Using the ‘datetime’ type the time of initial creation of the BCO is recorded in ISO-8601 format as clarified by W3C <[https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime)>.   
 
@@ -259,7 +259,7 @@ Using the ‘datetime’ type the time of initial creation of the BCO is recorde
 "created": "2017-01-20T09:40:17-0500"
 ```
 
-### 2.1.9 Modification ‘modified’
+### 2.1.9 Modification "modified"
 
 Using the ‘datetime’ type the time of most recent modification of the BCO is recorded
 
@@ -277,7 +277,7 @@ This is a list to hold contributor identifiers and a description of their type o
                 "name": "Charles Hadley King", 
                 "affiliation": "George Washington University", 
                 "email": "hadley_king@gwu.edu",
-                "contribution": ["createdBy", "curatedBy"]
+                "contribution": ["createdBy", "curatedBy"],
                 "orcid": "https://orcid.org/0000-0003-1409-4549"
             },
 
@@ -594,7 +594,7 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
 ]
 ```
 
-### 2.5.7 Domain Prerequisites "domain_prerequisites" 
+### 2.5.7 Domain Prerequisites "domain_prerequisites"
 
 An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. The key "url" defines an endpoint to be accessed. If the "path" is "/" then any resource at the given domain may be accessed, while if the path is more specific than only resources which path prefix matches may be accessed.
 
@@ -736,9 +736,9 @@ The possible keys within each subdomains are workflow-specific free text which s
     }
 ```
 
-# 3 Appendices 
+# 3 Appendices
 
-## 3.1 Appendix-I: BCO expanded view example 
+## 3.1 Appendix-I: BCO expanded view example
 
 ```json
 {
@@ -1152,36 +1152,28 @@ This list contains the databases that are currently being used in our BCOs. We u
 In the entries below the "namespace" and identifier combine to become the CURIEs. 
 
     Recommended name: Taxonomy
-
     Namespace: taxonomy
     Identifier pattern: ^\d+$
     Registry identifier: MIR:00000006
-
     URI: http://identifiers.org/taxonomy/
 
 
     Recommended name: Sequence Ontology
-
     Namespace: so
     Identifier pattern: ^SO:\d{7}$
     Registry identifier: MIR:00000081
-
     URI: http://identifiers.org/so/
 
     Recommended name: PubMed
-
     Namespace: pubmed
     Identifier pattern: ^\d+$
     Registry identifier: MIR:00000015
-
     URI: http://identifiers.org/pubmed/
 
     Recommended name: PubChem-compound
-
     Namespace: pubchem.compound
     Identifier pattern: ^\d+$
     Registry identifier: MIR:00000034
-
     URI: http://identifiers.org/pubchem.compound/
 
 For instance, the inline CURIE [taxonomy:31646] expands to http://identifiers.org/taxonomy/31646 as the namespace "taxonomy" corresponds to the prefix [http://identifiers.org/taxonomy/](http://identifiers.org/taxonomy/) to be augmented with the identifier "31646". Resolving the resulting URI will redirect (currently to [https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=31646](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=31646)) showing that term [taxonomy:31646] means "Hepatitis C virus subtype 1a” in the NCBI Taxonomy browser. Note that some identifier patterns result in a repetition when combined with the prefix, e.g. [so:SO:0000667]  expands to [http://identifiers.org/so/SO:0000667](http://identifiers.org/so/SO:0000667) 
@@ -1198,13 +1190,13 @@ Relevant document link:
 
 [Part 11: Electronic Records](http://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 
-## 3.3 Appendix IV - Compatibility 
+## 3.3 Appendix IV - Compatibility
 
 ### 3.3.1 ISA for the experimental metadata
 
 ISA is a metadata framework to manage an increasingly diverse set of life science, environmental and biomedical experiments that employ one or a combination of technologies. Built around the **Investigation** (the project context), **Study** (a unit of research) and **Assay** (analytical measurements) concepts, ISA helps to provide rich descriptions of experimental metadata (i.e. sample characteristics, technology and measurement types, sample-to-data relationships) so that the resulting data and discoveries are reproducible and reusable. The ISA Model and Serialization Specifications define an Abstract Model of the metadata framework that has been implemented in two format specifications, ISA-Tab and ISA-JSON ([http://isa-tools.org/format/specification](http://isa-tools.org/format/specification)), both of which have supporting tools and services associated with them, including by a programmable Python AP ([http://isa-tools.org](http://isa-tools.org/format/specification)) and a varied user community and contributors ([http://www.isacommons.org](http://www.isacommons.org)). ISA focuses on structuring experimental metadata; raw and derived data files, codes, workflows etc are considered as external file that are referenced. An example, along its complementarity with other models and a computational workflow is illustrated in this paper, which shows how to explicitly declare elements of experimental design, variables, and findings: [http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127612](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127612) 
 
-## 3.4 Appendix V Data typing 
+## 3.4 Appendix V Data typing
 
 The conceptual schema for BCO creation is built on top of two layers: the data definition layer and the BCO layer. The first layer is where all fundamental data types are defined. Complex types are composed of multiple atomic or complex types, like a character string. Using these principles one can construct a datum that has the ability to represent any level of complexity that is needed. A BCO is, essentially, a federation of other objects.
 
@@ -1568,7 +1560,6 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "_multi_value" : true
             }
         },
-        
         "parametric_domain" : {
             "_type" : "json",
             "_comment" : [
@@ -1620,7 +1611,9 @@ In the person’s identity example mentioned in the previous section, the atomic
 
 Data typing is the process of creating a derived data type as a collection of primitive field types and previously defined complex types. During this process, field attributes such as name, type, constraints, and default value are specified for each of the fields. 
 
-*To construct the type "Identity" we define a collection of the fundamental fields that comprise this derived type. ***_Identity:_**
+*To construct the type "Identity" we define a collection of the fundamental fields that comprise this derived type. *
+
+**_Identity:_**
 
 * *First name is a free text string. *
 
@@ -1680,7 +1673,7 @@ The two proposed extensibility models allow avoiding the overuse of optional fie
 
 *For example, having an optional tissue-location field in all biological-sample objects might lead to sparse population of the field as it will be unpopulated for all environmental, metagenomic, bacterial, and viral samples where the notion of a tissue is irrelevant. However, designing an inherited animal-sample data type can have a mandatory tissue location field for instances when it is important to know from which part of the animal a particular sample was collected.* 
 
-The power of the inheritance and inclusion methods to extend and implement new data types is evident when one considers the need to create new subtypes or a branch of existing types after the initial data -type structure is established. This step can be accomplished without modification of existing database objects by defining the new intermediates within the framework of the pre-defined metadata type hierarchy. 
+The power of the inheritance and inclusion methods to extend and implement new data types is evident when one considers the need to create new subtypes or a branch of existing types after the initial data -type structure is established. This step can be accomplished without modification of existing database objects by defining the new intermediates within the framework of the pre-defined metadata type hierarchy.
 
 The relationship implemented by inheritance subtyping is a is-a relationship. For example, the type "fish" can have three subtypes "eel", "shark" and "salmon". Each subtype is a variety of the "fish" supertype and inherits all "fish" characteristics but has some specific differences.
 
