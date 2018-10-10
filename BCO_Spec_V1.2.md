@@ -170,17 +170,21 @@ The version of the BCO specification used to define this document.
 
 Name for the BCO. This public field should take free text value using common biological research terminology supporting external reference linkage identifiers whenever possible for use in the structured name.
 
+```json
 "name": "HCV1a ledipasvir resistance SNP detection"
+```
 
 ### 2.1.2  Structured name "structured_name"
 
 Structured name is an optional templated computable text field designed to represent a BCO instance name in visible interfaces. This field can refer to other fields within the same or other objects. For example, a string like "HCV1a [taxonomy:$taxonomy] mutation detection" will be visualized as "HCV1a [taxonomy:31646] mutation detection" assuming the BCO has a field called "taxonomy" with value “31646”.
 
+```json
 "structured_name": "HCV1a [taxonomy:$taxonomy] mutation detection", 
 "taxonomy": "31646",
 ...
+```
 
-=> HCV1a [taxonomy:31646] mutation detection
+=> `HCV1a [taxonomy:31646] mutation detection`
 
 ### 2.1.3 Version "version"
 
@@ -188,12 +192,15 @@ Records the versioning of this BCO instance object. In BCO versioning, a change 
 
 In such cases the connection between the new object and the older one may or may not be (on author’s discretion) retained in the form of references. Changes that cannot affect the results of the computation can be incorporated into a new version of the existing BCO. Such changes might include name and title, comments, authors, validity dates, etc. 
 
+```json
         "version": "2.1",
+```
 
 ### 2.1.4 Review "review"
 
 Describes the status of an object in the review process. The 'unreviewed' flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The ‘in-review’ flag indicates that verification is underway. The 'approved' flag indicates that the BCO has been verified and reviewed. The 'suspended' flag indicates an object that was once valid is no longer considered valid. The 'rejected' flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the "contributor" object (described in section 2.1.10) is inherited to populate the reviewer section. 
 
+```json
         "review": [
 
             {
@@ -239,91 +246,86 @@ Describes the status of an object in the review process. The 'unreviewed' flag i
             }
 
         ]
+```
 
 ### 2.1.5 Inheritance/derivation "derived_from"
 
 If the object is derived from another, this field will specify the parent object, in the form of the ‘objectid’. If the object inherits only from the base BioCompute Object or a type definition than the value here is null. 
 
-                "derived_from" : null,
+```json
+  "derived_from" : null,
+```
 
 ### 2.1.6 Obsolescence "obsolete" 
 
 If the object has an expiration date this field will specify that using the ‘datetime’ type which is in ISO-8601 format as clarified by W3C <[https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime)>. This field is optional.
-
-        "obsolete" : "2118-09-26T14:43:43-0400"
+```json
+  "obsolete" : "2118-09-26T14:43:43-0400"
+```
 
 ### 2.1.7 Embargo ‘embargo’
 
 If the object has a period of time that it is not public, that range can be specified using these fields.  Using the ‘datetime’ type a start and end time are specified for the embargo. These fields are optional.
 
+```json
             "embargo" : {
-
                 "start_time": "2000-09-26T14:43:43-0400",
-
                 "end_time": "2000-09-26T14:43:45-0400"
-
             },
+```
 
 ### 2.1.8 Created ‘created’
 
 Using the ‘datetime’ type the time of initial creation of the BCO is recorded in ISO-8601 format as clarified by W3C <[https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime)>.   
 
+```json
         "created": "2017-01-20T09:40:17-0500"
+```
 
 ### 2.1.9 Modification ‘modified’
 
 Using the ‘datetime’ type the time of most recent modification of the BCO is recorded
 
+```json
         "modified": "2018-03-21T18:31:48-0400"
+```
 
 ### 2.1.10 Contributors "contributors"
 
 This is a list to hold contributor identifiers and a description of their type of contribution, including a field for ORCIDs to record author information, as they allow for the author to curate their information after submission. ORCID identifiers must be [valid](https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier) and must have the prefix ‘[https://orcid.org/](https://orcid.org/)’. The contribution type is a choice taken from [PAV ontology](http://purl.org/pav/): provenance, authoring and versioning, which also maps to the [PROV-O](https://www.w3.org/TR/prov-o/).
 
+```json
         "contributors": [
-
             {
-
                 "name": "Charles Hadley King", 
-
                 "affiliation": "George Washington University", 
-
                 "email": "hadley_king@gwu.edu",
-
                 "contribution": ["createdBy", "curatedBy"]
-
                 "orcid": "https://orcid.org/0000-0003-1409-4549"
-
             },
 
             {
-
                 "name": "Eric Donaldson", 
-
                 "affiliation": "FDA", 
-
                 "email": "Eric.Donaldson@fda.hhs.gov",
-
                 "contribution": ["authoredBy"]
-
             }
-
         ]
+```
 
 ### 2.1.11 License "license"
 
 A space for Creative Commons licence or other licence information (text). The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html
 
+```json
         "license": "https://spdx.org/licenses/CC-BY-4.0.html"
-
-            
-
-        
+```        
 
 ## 2.2 Usability Domain "usability_domain"
 
 This field provides a space for the author to define the usability domain of the BCO. It is an array of free text values. This field is to aid in search-ability and provide a specific description of the object. The usability domain along with keywords can help determine when and how the BCO can be used. Novel use of the BCO could result in the creation of a new entry with a new usability domain.
 
+```json
     "usability_domain": [
 
         "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [so:SO:0000667], and deletions [so:SO:0000045] that correlate with reduced ledipasvir [pubchem.compound:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxonomy:31646]", 
@@ -333,21 +335,21 @@ This field provides a space for the author to define the usability domain of the
         "Determine whether the treatment emergent amino acid substitutions [so:SO:0000048] identified correlate with treatment failure involving other drugs against the same virus", 
 
         "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"],
+```
 
 ## 2.3 Extension Domain "extension_domain"
 
-## The extension domain is for a user to add more structured information that is defined in the type definition. This section is not evaluated by checks for BCO validity or computational correctness. Two examples follow: 
+The extension domain is for a user to add more structured information that is defined in the type definition. This section is not evaluated by checks for BCO validity or computational correctness. Two examples follow: 
 
 ### 2.3.1 Extension to External References: SMART on FHIR Genomics
 
 The external references include an optional extension to FHIR resource where specific data elements can be extracted from EHR systems or other secure FHIR endpoints via technologies such as SMART on FHIR Genomics (https://www.ncbi.nlm.nih.gov/pubmed/26198304) without compromising patient and providers’ information. This is because the portions being transferred contain no identifiable information about the patient. Instead there is a reference to the actual resource instance (via FHIR URL) through which all data is accessed.
 
- 
-
 The FHIR Endpoint URL coupled with the specific resource type and a unique FHIR identifier leads to a resource that can contain everything from the date and time of the procedure, specimen details, sequence information, linked sequence repositories, associated pedigrees, or even a set of observations linked from diagnostic reports. The link to FHIR can also be added to the usability domain.  More on FHIR Genomics in release 3 of FHIR can be found here: https://www.hl7.org/fhir/genomics.html
 
 SMART on FHIR Genomics provides a framework for EHR-based apps built on FHIR that integrate clinical and genomic information. For more information on how to use the SMART on FHIR Genomics apps, please visit http://projects.iq.harvard.edu/smartgenomics/.   
 
+```json
     "extension_domain":{
 
         "FHIR_extension": [
@@ -403,11 +405,13 @@ SMART on FHIR Genomics provides a framework for EHR-based apps built on FHIR tha
             }
 
         ],	
+```
 
 ### 2.3.2 Extension to External References: GitHub
 
 The external references also include an extension to GitHub repositories where HTS computational analysis pipelines, workflows, protocols, and tool or software source code can be stored/deposited/downloaded. The BCO would contain link to the GitHub repository where the information is stored and easily retrieved. The links to GitHub can be added to the usability domain.
 
+```json
         "github_extension": {
 
             "github_repository": "https://github.com/common-workflow-language/hive-cwl-examples", 
@@ -417,45 +421,37 @@ The external references also include an extension to GitHub repositories where H
             }
 
     },
+```    
 
 ## 2.4 Description Domain "description_domain"
 
-## Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in journal format. It is possible that in the future this field can be semi-automatically generated from the execution_domain information. 
+Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in journal format. It is possible that in the future this field can be semi-automatically generated from the execution_domain information. 
 
 ### 2.4.1 Keywords "keywords"
 
 This is a list of key map fields to hold a list of keywords to aid in search-ability and description of the object.
 
+```json
         "keywords": [
-
             {
-
                 "key": "search terms",
-
                 "value": [
-
                     "HCV1a", 
-
                     "Ledipasvir", 
-
                     "antiviral resistance", 
-
                     "SNP", 
-
                     "amino acid substitutions"
-
                 ]
-
             }
-
         ]
+```	
 
 ### 2.4.2 External References "xref"
 
 This field contains a list of the databases and/or ontology IDs that are cross-referenced in the BCO. The external references are used to provide more specificity in the information related to BCO entries. Cross-referenced resources need to be available in the public domain. The external references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by identifiers.org. See Appendix-II for a list of the CURIEs used in this example. 
 
+```json
         "xref": [
-
             {
 
                 "namespace": "pubchem.compound",
@@ -505,7 +501,8 @@ This field contains a list of the databases and/or ontology IDs that are cross-r
             }
 
         ], 
-
+```	
+	
 ### 2.4.3 Pipeline tools "pipeline_steps"
 
 This is an optional structured domain for recording the specifics of a pipeline. Each individual tool (or a well defined and reusable script) is represented as step, at the discretion of the author. Parallel processes are given the same step number. 
@@ -514,32 +511,39 @@ This is an optional structured domain for recording the specifics of a pipeline.
 
 This is a non-negative integer value representing the position of the tool in a one-dimensional representation of the pipeline. The number is a suggestion for a *[partial orde*r](https://en.wikipedia.org/wiki/Partially_ordered_set) for presentation purposes, e.g. parallel computations assigned the same number based on their first possible execution. Actual execution order might differ from the step number. Gaps are allowed (e.g. step 20 follows step 10). 
 
-#### "step_number": "1"
+```json
+    "step_number": "1"
+```
 
 #### 2.4.3.2 Name "name"
 
 Name for the specific tool. This field is a string (A-z, 0-1) and should be a single uniquely identifying word for the tool. 
 
-"name": "HIVE-hexagon"
+```json
+    "name": "HIVE-hexagon"
+```
 
 #### 2.4.3.2 Tool Description "description"
 
 A free text field for describing the specific use/purpose of the tool.
 
-	
-
-"description": "Alignment of reads to a set of references",
+```json
+    "description": "Alignment of reads to a set of references",
+```
 
 #### 2.4.3.3 Tool Version "version"
 
 The version assigned to the instance of the tool used corresponding to the upstream release.
 
-"version": "1.3",
+```json
+    "version": "1.3",
+```
 
 #### 2.4.3.4 Tool Prerequisites "prerequisite"
 
 A list of text values to indicate any packages or prerequisites for running the tool used. 
 
+```json
                     "prerequisite": [
 
                         {
@@ -613,11 +617,13 @@ A list of text values to indicate any packages or prerequisites for running the 
                         }
 
                     ]
+```	    
 
 #### 2.4.3.6 Input List "input_list"
 
 Each tool lists the URIs (expressed as a URN or URL) of the input files. These are a catchall for read files, reference files or any other type of input. All of these fields are optional and for descriptive purposes, therefore the structure here is less rigid than in other fields. 
 
+```json
                     "input_list": [
 
                         {
@@ -637,11 +643,13 @@ Each tool lists the URIs (expressed as a URN or URL) of the input files. These a
                         }
 
                     ],
+```		    
 
 #### 2.4.3.7 Output List "output_list"
 
 Each tool lists the URIs (expressed as a URN or URL) of the output files for that tool. 
 
+```json
                     "output_list": [
 
                         {
@@ -653,6 +661,7 @@ Each tool lists the URIs (expressed as a URN or URL) of the output files for tha
                         }
 
                     ]
+```		    
 
 ## 2.5 Execution Domain "execution_domain"
 
