@@ -1139,7 +1139,7 @@ The possible keys within each subdomains are workflow-specific free text which s
             "false_discovery": "0.005"
         }
     }
-    
+
 }
 ```
 
@@ -1214,247 +1214,126 @@ When defining a field in a data type, one can place any number of constraints on
 
 ```json
 {
-
     "primitives" : {
-
         "_comment": "primitive type hash with short descriptions",
-
         "_type" : {
-
             "string": "alphanumeric string",
-
             "integer": "integer number",
-
             "float": "floating point number", 
-
             "boolean": "can only be assigned true, false, or null",
-
             "date": "specified ISO 8601", 
-
             "time": "ISO 8601", 
-
             "dateTime": "ISO 8601",
-
             "blob": "binary data stored as a single object",
-
             "json" : "any json formatted subobject, the structure to json is not imposed by base biocompute type, but should follow guidelines of using the predefined primitives"
-
         }
-
     },
-
     "objectid": {
-
         "_type": "string",
-
         "_comment": ["a string of characters designed for unambiguous identification of resources and extensibility via the URI scheme (https://www.w3.org/wiki/UriSchemes)"],
-
         "_constraint": {
-
             "regex" : "url_regex"
-
         }
-
     },
-
     "version": {
-
         "_type": "string",
-
         "_comment": "suggestion major[.minor[.build_nunber]]"
-
     }, 
-
     "email":{ 
-
         "_type": "string",
-
         "_constraint": {
-
             "regex" : "email_regex"
-
         }
-
     },
-
     "keyval" : {
-
         "key" : {
-
             "_type" : "string"
-
         },
-
         "value" : {
-
             "_type" : "string"
-
         }
-
     },
-
     "keymap" : {
-
         "key" : {
-
             "_type" : "string"
-
         },
-
         "value" : {
-
             "_type" : "string",
-
             "_multi_value" : true
-
         }
-
     },
-
     "uri": {
-
         "address": {
-
             "_type": "objectid",
-
         },
-
         "access_time": {
-
             "_type" : "dateTime",
-
             "_optional" : true
-
         },
-
         "sha1_chksum": {
-
             "_type": "string",
-
             "_optional" : true,
-
             "_constraint" : {
-
                 "regex" : "[A-Za-z0-9]+"
-
             }
-
         }
-
     },
-
     "contribution": {
-
         "_type" : "string",
-
         "_comment": "taken from https://doi.org/10.1186/2041-1480-4-37",
-
         "_constraint" :{
-
            "_choice" : ["authoredBy", "contributedBy", "createdAt", "createdBy", "createdWith", "curatedBy", "derivedFrom", "importedBy", "importedFrom", "providedBy", "retrievedBy", "retrievedFrom", "sourceAccessedBy"]
-
         }
-
     },
-
     "contributor": {
-
         "_comment": [""],
-
         "name": {
-
             "_type": "string",
-
             "_optional" : true
-
         },
-
         "affiliation": {
-
             "_type": "string",
-
             "_optional" : true
-
         },
-
         "email" : {
-
             "_type" : "email",
-
             "_optional" : true
-
         },
-
         "contribution": {
-
             "_type": "contribution"
-
         },
-
         "orcid": {
-
             "_type": "objectid"
-
         }
-
     },
-
     "file": {
-
         "uri" : {
-
             "_type" : "uri"
-
         },
-
         "mime-type": { 
-
             "_type" : "string",
-
             "_optional" : true
-
         }
-
     },
-
     "xref" : {
-
         "namespace" : {
-
             "_type" : "string",
-
             "_comment" : "can be a prefix in identifiers.org or a db named in a source" 
-
         },
-
         "ids" : {
-
             "_type" : "string",
-
             "_multi_value" : true
-
         },
-
         "name" : {
-
             "_comment": "This can be the common name for the db",
-
             "_type" : "string",
-
             "_optional" :true
-
         },
-
         "access_time":{
-
             "_type": "dateTime",
-
             "_optional" : true
-
         }
-
     }
-
 }
 ```
 
@@ -1464,515 +1343,261 @@ The second layer is constructed with objects from first layer, producing a deriv
 
 ```json
 {
-
     "name" : "BioCompute_base_type",
-
     "title" : "Base type for all BioCompute Object types",
-
     "description" : "All BioCompute object types must inherit from this type in order to be compliant with BioCompute framework",
-
     "_comment" : [
-
         "Since JSON format do not allow comments '_comment' key is used for comments and should be ignored by parsers",
-
         "As any object of type 'type' it has its own fields: _type, _id, _inherits, name, title and description",
-
         "As base type this type inherits from none",
-
         "Identifier of the object since type itself is an object",
-
         "Type of this JSON object is 'type'",
-
         "For each field default value for '_multi_value', '_optional', and '_read_only' key is 'false' "
-
     ],
-
     "_fields" : {
-
         "_comment" : [
-
             "List of fields of the BioCompute Object type"
-
         ],
-
         "BCO_id":{
-
             "_type" : "string",
-
             "_read_only" : true,
-
             "_comment" : [
-
                 "A unique identifier that should be applied to each BCO instance, assigned by a BCO database engine.",
-
                 "IDs should never be reused"
-
             ]
-
         },
-
         "type": {
-
             "_type": "_type",
-
             "_read_only" : true
-
         },
-
         "digital_signature" : {
-
             "_type" : "string",
-
             "_read_only" : true,
-
             "_comment" : ["Digital signature of BioCompute Object by Authority"],
-
             "_constraint" : {
-
                 "regex" : "[A-Za-z0-9]+"
-
             }
-
         },
-
         "provenance_domain": {
-
             "name" : {
-
                 "_type" :"string",
-
                 "_comment" : "Public searchable name for BioCompute Object"
-
             },
-
             "structured_name" :{
-
                 "_type" :"string",
-
                 "_optional" : true,
-
                 "_comment" :[
-
                     "templated computable text field designed to represent a BCO instance name in visible interfaces.",
-
                     "This field can refer to other fields within the same or other objects."
-
                 ]
-
             },
-
             "version" : {
-
                 "_type" : "version",
-
                 "_comment" : "version of the BioCompute Object"
-
             },
-
             "review" : {
-
                 "_multi_value" : true,
-
                 "_optional" : true,
-
                 "status" : {
-
                     "_type" : "string",
-
                     "_constraint" : {
-
                         "_choice" : [ "unreviewed", "in-review", "approved", "rejected", "suspended" ]
-
                     },
-
                     "_comment" : "Current verification status of the BioCompute Object",
-
                     "_default_value" : "unreviewed"
-
                 },
-
                 "reviewer" : {
-
                     "_type": "contributor",
-
                     "_multi_value" : true
-
                 },
-
                 "date" : {
-
                     "_type" : "dateTime"
-
                 },
-
                 "reviewer_comment" : {
-
                     "_type" : "string",
-
                     "_optional" : true,
-
                     "_multi_value" : true
-
                 }
-
             },
-
             "derived_from": {
-
                 "_type": "objectid",
-
                 "_optional" : true,
-
                 "_comment" : ["value of _id field of another bio compute object"]
-
             },
-
             "obsolete_after" : {
-
                 "_type": "datetime" , 
-
                 "_optional" : true
-
             },
-
             "embargo" : {
-
                 "start_time" : { 
-
                     "_type" : "datetime", 
-
                     "_optional" : true
-
                 },
-
                 "end_time" : { 
-
                     "_type" : "datetime", 
-
                     "_optional" : true
-
                 }
-
             },
-
             "created" : {
-
                 "_type" :"datetime",
-
                 "_comment" : ["Date and time of the BioCompute Object creation"],
-
                 "_read_only" : true
-
             },
-
             "modified" : {
-
                 "_type" :"datetime",
-
                 "_comment" : ["Date and time of the BioCompute Object was last modified"],
-
                 "_read_only" : true
-
             },
-
             "contributors" : {
-
                 "_type" : "contributor",
-
                 "_multi_value" : true
-
             },
-
             "license" : {
-
                 "_type" : "uri",
-
                 "_optional" : true,
-
                 "_comment" : ["Creative Commons licence or other licence information space. Recommended licence can be Attribution 4.0"]
-
             }
-
         },
-
         "usability_domain" : {
-
             "_type" : "string",
-
             "_comment" : ["Text from biospec"],
-
             "_multi_value" : true
-
         },
-
         "extension_domain":{
-
             "_type" : "json",
-
             "_optional" : true,
-
             "_comment" : [
-
                 "all fields in this domain are BioCompute specific and should be defined in inherited BioCompute type",
-
                 "This domain allows for the addition of "
-
             ]
-
         },
-
         "description_domain" : {
-
             "keywords" : {
-
                 "_type" : "keymap",
-
                 "_multi_value" : true
-
             },
-
             "xref" : {
-
                 "_type" : "xref",
-
                 "_optional" : true,
-
                 "_multi_value" : true
-
             },
-
             "pipeline_steps" : {
-
                 "tool" : {
-
                     "_multi_value" : true,
-
                     "name" : {
-
                         "_type" : "string",
-
                         "_comment" : ["this is a recognized name of the software tool"] 
-
                     },
-
                     "description" : {
-
                        "_type" : "string"
-
                     },
-
                     "step_number": {
-
                         "_type": "integer"
-
                     },
-
                     "version" : {
-
                        "_type" : "version"
-
                     },
-
                     "prerequisite" : {
-
                         "_multi_value" : true,
-
                         "_optional" : true,
-
                         "_comment" : "reference or required prereqs",
-
                         "name" : {
-
                             "_type" :"string",
-
                             "_comment" : ["Public searchable name for reference or prereq"]
-
                         },
-
                         "source":{
-
                             "_type" : "uri"
-
                         }
-
                     },
-
                     "input_list" : {
-
                         "_type" : "uri",
-
                         "_multi_value" : true
-
                     },
-
                     "output_list" : {
-
                         "_type" : "uri",
-
                         "_multi_value" : true
-
                     }
-
                 }
-
             }
-
         },
 
-        "execution_domain" : {
-
+       "execution_domain" : {
             "script_type" : {
-
                "_type" :"string",
-
                 "_constraint" : {
-
                     "_choice" : [ "uri", "text" ]
-
                 }
-
             },
-
             "script" : {
-
                "_type" : "string"
-
             },
-
             "script_driver" : {
-
                "_type" : "string"
-
             },
-
             "pipeline_version" : {
-
                 "_type" : "version"
-
             },
-
             "platform" : {
-
                 "_type" : "string"
-
             },
-
             "software_prerequisites" : {
-
                 "_multi_value" : true,
-
                 "name" : {
-
                     "_type" : "string"
-
                 }, 
-
                 "version" : {
-
                     "_type" : "version"
-
                 },  
-
                 "uri" : {
-
                     "_type" : "uri",
-
                     "_optional" : true
-
                 }
-
             },
-
             "domain_prerequisites" : {
-
                 "_multi_value" : true,
-
                 "name" : {
-
                     "_type" : "string"
-
                 }, 
-
                 "url" : {
-
                     "_type" : "string",
-
                     "_multi_value" : true
-
                 }
-
             },
-
             "environment_variables" : {
-
                 "_type" : "keyval",
-
                 "_multi_value" : true
-
             }
-
         },
-
         
-
         "parametric_domain" : {
-
             "_type" : "json",
-
             "_comment" : [
-
                 "all fields in this domain should be defined in inheriting BioCompute subtypes",
-
                 "see example in bco_type_examples.json object parametric_domain_type_definition_examples"
-
             ]
-
         },
-
         "io_domain" : {
-
             "input_subdomain" : {
-
                 "_type" : "json",
-
                 "_comment" : "all fields in this domain are BioCompute specific and should be defined in inherited BioCompute type"
-
             },
-
             "output_subdomain" : {
-
                 "_type" : "file",
-
                 "_multi_value" : true,
-
                 "_comment" : "output is a file object"
-
             }
-
         },
-
         "error_domain": {
-
             "empirical_error": {
-
                 "_type" : "json",
-
                 "_comment" : "all fields in this domain are BioCompute specific and should be defined in inherited BioCompute type"
-
             },
-
             "algorithmic_error": {
-
                 "_type" : "json",
-
                 "_comment" : "all fields in this domain are BioCompute specific and should be defined in inherited BioCompute type"
-
             }
-
         }
-
     }
-}
 ```
 
 ### 3.4.3 Meaning associations
