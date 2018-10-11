@@ -26,6 +26,11 @@ The [BioCompute Objects user guide](/user_guide.md) provides an introduction to 
 
 For developers and advanced users, the current [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation of the construction of BioCompute Objects.
 
+See [releases](https://github.com/biocompute-objects/BCO_Specification/releases) for all releases of BCO object specification since moving to GitHub.
+
+The development draft towards the next release of the BCO specification can be examined in [bco-specification.md](bco-specification.md) - note that this draft is subject to change.
+
+
 ### Citation
 
 To reference the BCO standards, please use the following
@@ -35,4 +40,11 @@ Simonyan, V., Goecks, J., & Mazumder, R. (2017). ***Biocompute Objects — A Ste
 
 ## Support, Community and Contributing
 
-Please see our [OSF page](https://osf.io/h59uh/) or our [main page](http://biocomputeobject.org/) 
+To suggest changes to [bco-specification.md](bco-specification.md) we welcome contributions as a [pull request](https://github.com/biocompute-objects/BCO_Specification/pulls), [issue](https://github.com/biocompute-objects/BCO_Specification/issues).
+
+<!-- TODO: Something about license and IP transfer? -->
+
+
+Please also see our [OSF page](https://osf.io/h59uh/) or our [main page](http://biocomputeobject.org/) 
+
+<!-- something about mailing list? -->
