@@ -138,17 +138,24 @@ Specification:
 
 * [Top level fields](top-level.md)
 
+The remaining top level fields details different _domains_ of the BCO, as listed below.
+
+## 2.1 Provenance Domain "provenance_domain"
+
+The `provenance_domain` defines the history, version and status of this BCO as part of the review process.
+
+Specification:
+
+* [Provenance domain](provenance-domain.md)
+
 
 ## 2.2 Usability Domain "usability_domain"
 
 The `usability_domain` is meant to improve searchability by allowing free-text description of the BCO.
 
-<!-- TODO: Should this not also be part of top level? -->
-
 Specification:
 
 * [Usability domain](usability-domain.md)
-
 
 
 ## 2.3 Extension Domain "extension_domain"
