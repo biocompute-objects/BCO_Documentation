@@ -24,7 +24,7 @@ The [BioCompute Objects user guide](/user_guide.md) provides an introduction to 
 
 ## Specification
 
-For developers and advanced users, the current [BCO specification (v1.2)](/BCO_Spec_V1.2.pdf) provides authoritative documentation of the construction of BioCompute Objects.
+For developers and advanced users, the current [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation of the construction of BioCompute Objects.
 
 ### Citation
 
