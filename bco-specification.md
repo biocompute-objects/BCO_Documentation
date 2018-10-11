@@ -3,7 +3,13 @@ GitHub: https://github.com/biocompute-objects
 OSF page: https://osf.io/r6s4u/ biocomputeobject.org
 
 # BioCompute Object (BCO) specification document
-v1.2.0
+
+* This version: [draft](https://github.com/biocompute-objects/BCO_Specification/tree/master)
+* Previous version: [v1.2.0](https://github.com/biocompute-objects/BCO_Specification/releases/tag/v1.2)
+* Latest release: https://github.com/biocompute-objects/BCO_Specification/releases/latest
+* Latest editor's draft: https://github.com/biocompute-objects/BCO_Specification/tree/master
+
+<!-- FIXME: Ideally permalinks for all of the above links, say registering https://w3id.org/bco/ -->
 
 #### BioCompute Object Consortium members (BCOC):
 
@@ -29,7 +35,6 @@ The US Food and Drug Administration (FDA) and George Washington University (GW) 
 * Information about parameters and versions of the executable programs in a pipeline
 
 * Reference to input and output test data for verification of the pipeline
-
 * A usability domain
 
 * Keywords
