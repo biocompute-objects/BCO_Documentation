@@ -3,9 +3,20 @@ _This document is part of the [BioCompute Object specification](bco-specificatio
 
 ## 2.7 Input and Output Domain "io_domain"
 
-
+This section defines the `io_domain` part of the [BCO](bco-domains.md).
 
 This represents the list of global input and output files created by the computational workflow, excluding the intermediate files. These fields are pointers to objects that can reside in the system performing the computation or any other accessible system. Just like the fields of parametric domain, these fields are custom to every specific BCO implementation and can refer to named input output arguments of underlying pipelines. Please refer to documentation of individual scripts and specific BCO descriptions for further details.
+
+Condensed exampled:
+
+```json
+"io_domain": {
+        "input_subdomain": {
+        }, 
+        "output_subdomain": [
+        ]
+}, 
+```
 
 ### 2.7.1 Input Subdomain "input_subdomain"
 
