@@ -2,7 +2,37 @@ _This document is part of the [BioCompute Object specification](bco-specificatio
 
 ## 2.4 Description Domain "description_domain"
 
+
+This section defines the fields of the `description_domain` part of the [BCO](bco-domains.md) structure.
+
 Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in journal format. It is possible that in the future this field can be semi-automatically generated from the execution_domain information. 
+
+Condensed example:
+
+```json
+"description_domain": {
+        "keywords": [
+        ], 
+        "xref": [
+        ], 
+        "pipeline_steps": {
+            "tool": [
+                {
+                    "step_number": "2", 
+                    "name": "HIVE-heptagon", 
+                    "description": "variant calling", 
+                    "version": "1.3", 
+                    "prerequisites": null, 
+                    "input_list": [
+                    ], 
+                    "output_list": [
+                    ]
+                }
+            ]
+        }
+},
+```
+
 
 ### 2.4.1 Keywords "keywords"
 
