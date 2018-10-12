@@ -2,7 +2,28 @@ _This document is part of the [BioCompute Object specification](bco-specificatio
 
 ## 2.5 Execution Domain "execution_domain"
 
+This section defines the `execution_domain` part of the [BCO](bco-domains.md).
+
 The fields required for execution of the BCO have been encapsulated together in order to clearly separate information needed for deployment, software configuration and running applications in a dependent environment. One byproduct of an accurate BCO definition is facilitation of reproducibility as defined by the *Oxford English Dictionary* as "the extent to which consistent results are obtained when produced repeatedly."
+
+Condensed example:
+
+```json
+"execution_domain": {
+        "script_access_type": "text",
+        "script": [
+        ],
+        "script_driver": "manual",
+        "pipeline_version": "2.0", 
+        "platform": "hive", 
+        "software_prerequisites": [
+        ],
+        "domain_prerequisites": [
+        ], 
+        "env_parameters": {
+        }
+}
+```
 
 ### 2.5.1 Script Access Type "script_access_type"
 
@@ -17,7 +38,7 @@ This field indicates whether the code of the "script" to execute the BioCompute 
 The Script field points to an internal or external reference to a script object that was used to perform computations for this BCO instance. This may be a reference to Galaxy Project or Seven Bridges Genomics pipeline, a Common Workflow Language (CWL) object in GitHub, a High-performance Integrated Virtual Environment (HIVE) computational service or any other type of script.
 
 ```json
- "script": {"https://example.com/workflows/antiviral_resistance_detection_hive.py"}
+ "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"]
 ```
 
 ### 2.5.3 Pipeline Version "pipeline_version"
