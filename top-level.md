@@ -4,6 +4,30 @@ _This document is part of the [BioCompute Object specification](bco-specificatio
 
 These header fields uniquely define this BCO. These fields are required for every BCO and are represented at the top level object.
 
+Condensed example:
+
+```json
+{
+    "bco_spec_version" : "v1.2",
+    "BCO_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
+    "type": "antiviral_resistance_detection", 
+    "digital_signature": "d41d8cd98f00b204e9800998ecf8427e",
+    
+    "provenance_domain": {
+    },
+    "...": { }
+}
+```
+
+
+### 2.0.4 BCO version "bco_spec_version"
+
+The version of the BCO specification used to define this document.
+
+```json
+"bco_spec_version": "v1.1-draft1" 
+```
+
 ### 2.0.1 BioCompute Object Identifier "BCO_id"
 
 A unique identifier that should be applied to each BCO instance. These can be assigned by a BCO database engine. IDs should be URIs (expressed as a URN or URL). IDs should never be reused.
@@ -30,13 +54,7 @@ A string-type, read-only value generated and stored by a BCO database, protectin
 
 This value should not be submitted during deposition but can be read during downloading or transferring validated BCOs. The BCO server can provide an API validating the signature versus BCO content, allowing users to validate the signature "offline" on their own. The server will also must provide a reference to the signature creation algorithm, facilitating for greater interoperability.
 
-### 2.0.4 BCO version "bco_spec_version"
+### Additional domains
 
-The version of the BCO specification used to define this document.
-
-```json
-"bco_spec_version": "v1.1-draft1" 
-```
-
-Additional description about the BCO itself is also provided in the [provenance domain](provenance-domain.md), [description domain](description-domain.md) and [usability domain](usability-domain.md).
+Additional description about the BCO itself is also provided in the [provenance domain](provenance-domain.md), [description domain](description-domain.md) and [usability domain](usability-domain.md). Other [domains](bco-domains.md) detail areas like execution and error ranges.
 
