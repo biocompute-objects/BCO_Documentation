@@ -2,6 +2,8 @@ _This document is part of the [BioCompute Object specification](bco-specificatio
 
 ## 2.2 Usability Domain "usability_domain"
 
+This section defines the fields of the `usability_domain` part of the [BCO](bco-domains.md) structure.
+
 This field provides a space for the author to define the usability domain of the BCO. It is an array of free text values. This field is to aid in search-ability and provide a specific description of the object. The usability domain along with keywords can help determine when and how the BCO can be used. Novel use of the BCO could result in the creation of a new entry with a new usability domain.
 
 ```json
