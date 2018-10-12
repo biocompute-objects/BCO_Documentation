@@ -2,6 +2,29 @@ _This document is part of the [BioCompute Object specification](bco-specificatio
 
 ## 2.1 Provenance Domain "provenance_domain"
 
+This section defines the fields of the `provenance_domain` part of the [BCO](bco-domains.md) structure.
+
+Condensed example:
+
+```json
+"provenance_domain": {
+        "name": "HCV1a ledipasvir resistance SNP detection", 
+        "structured_name": "HCV1a [taxonomy:31646] ledipasvir [pubchem.compound:67505836] resistance SNP [so:0000694] detection",
+        "version": "2.9",
+        "review": [
+        ],
+        "derived_from" : null,
+        "obsolete" : "2118-09-26T14:43:43-0400",
+        "embargo" : {
+	},
+        "created": "2017-01-24T09:40:17-0500", 
+        "modified": "2018-09-21T14:06:14-0400", 
+        "contributors": [
+        ],
+        "license": "https://spdx.org/licenses/CC-BY-4.0.html"
+},
+```
+
 ### 2.1.1 Name "name"
 
 Name for the BCO. This public field should take free text value using common biological research terminology supporting external reference linkage identifiers whenever possible for use in the structured name.
