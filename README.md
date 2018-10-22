@@ -28,7 +28,11 @@ For developers and advanced users, the current [BCO specification (v1.2)](https:
 
 See [releases](https://github.com/biocompute-objects/BCO_Specification/releases) for all releases of BCO object specification since moving to GitHub.
 
-The development draft towards the next release of the BCO specification can be examined in [bco-specification.md](bco-specification.md) - note that this draft is subject to change.
+### Repository
+
+This repository contains the document that make up the the next release of the BCO specification. 
+
+Note that unless you are viewing a [release](https://github.com/biocompute-objects/BCO_Specification/releases) this is a draft is subject to change.
 
 Table of content:
 
@@ -50,7 +54,6 @@ Table of content:
     * [Primitive data types primitives.json](primitives.json)
     * [Base BioCompute Type base_type_BioCompute.json](base_type_BioCompute.json)
 
-
 ### Citation
 
 To reference the BCO standards, please use the following
@@ -60,7 +63,7 @@ Simonyan, V., Goecks, J., & Mazumder, R. (2017). ***Biocompute Objects — A Ste
 
 ## Support, Community and Contributing
 
-To suggest changes to [bco-specification.md](bco-specification.md) we welcome contributions as a [pull request](https://github.com/biocompute-objects/BCO_Specification/pulls), [issue](https://github.com/biocompute-objects/BCO_Specification/issues).
+To suggest changes to [this repository](#Repository) and friends we welcome contributions as a [pull request](https://github.com/biocompute-objects/BCO_Specification/pulls), [issue](https://github.com/biocompute-objects/BCO_Specification/issues).
 
 <!-- TODO: Something about license and IP transfer? -->
 
