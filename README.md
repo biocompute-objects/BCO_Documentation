@@ -30,6 +30,26 @@ See [releases](https://github.com/biocompute-objects/BCO_Specification/releases)
 
 The development draft towards the next release of the BCO specification can be examined in [bco-specification.md](bco-specification.md) - note that this draft is subject to change.
 
+Table of content:
+
+* [BioCompute Object (BCO) specification document](bco-specification.md)
+  * [Introduction to BioCompute Objects](introduction.md)
+  * [BCO domains](bco-domains.md)
+    * [Top level fields](top-level.md)
+    * [Provenance domain](provenance-domain.md)
+    * [Usability domain](usability-domain.md)
+    * [FHIR extension](extension-fhir.md)
+    * [GitHub extension](extension-github.md)
+    * [Description domain](description-domain.md)
+    * [Execution domain](execution-domain.md)
+    * [Parametric domain](parametric-domain.md)
+    * [Input and Output domain](io-domain.md)
+    * [Error domain](error-domain.md)
+  * [BCO expanded view example HCV1a.json](HCV1a.json)
+  * [Data Typing](data-typing.md)
+    * [Primitive data types primitives.json](primitives.json)
+    * [Base BioCompute Type base_type_BioCompute.json](base_type_BioCompute.json)
+
 
 ### Citation
 
