@@ -32,7 +32,7 @@ See [releases](https://github.com/biocompute-objects/BCO_Specification/releases)
 
 This repository contains the document that make up the release of the BCO specification. 
 
-Note that unless you are viewing a [release](https://github.com/biocompute-objects/BCO_Specification/releases) this is a draft is subject to change.
+Note that unless you are viewing a [release](https://github.com/biocompute-objects/BCO_Specification/releases) this is a draft subject to change.
 
 Table of content:
 
