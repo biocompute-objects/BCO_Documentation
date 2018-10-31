@@ -30,7 +30,7 @@ See [releases](https://github.com/biocompute-objects/BCO_Specification/releases)
 
 ### Repository
 
-This repository contains the document that make up the release of the BCO specification. 
+This repository contains the documents that make up the release of the BCO specification. 
 
 Note that unless you are viewing a [release](https://github.com/biocompute-objects/BCO_Specification/releases) this is a draft subject to change.
 
