@@ -20,7 +20,7 @@ To facilitate a means for different stakeholders in the HTS communities to provi
 
 ## User Guide 
 
-The [BioCompute Objects user guide](/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/bco-specification.md). This document was originaly written by [The BioCompute Object working group](/BCO_Spec_V1.2.md#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
+The [BioCompute Objects user guide](/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/bco-specification.md).
 
 ## Specification
 
@@ -55,6 +55,7 @@ Table of content:
     * [Base BioCompute Type base_type_BioCompute.json](base_type_BioCompute.json)
 
 ### Citation
+This standard was originaly prepared by [The BioCompute Object working group](/BCO_Spec_V1.2.md#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
 
 To reference the BCO standards, please use the following
 citation inclusive of the DOI:
@@ -63,7 +64,7 @@ Simonyan, V., Goecks, J., & Mazumder, R. (2017). ***Biocompute Objects — A Ste
 
 ## Support, Community and Contributing
 
-To suggest changes to [this repository](#Repository) and friends we welcome contributions as a [pull request](https://github.com/biocompute-objects/BCO_Specification/pulls), [issue](https://github.com/biocompute-objects/BCO_Specification/issues).
+To suggest changes to [this repository](#Repository) we welcome contributions as a [pull request](https://github.com/biocompute-objects/BCO_Specification/pulls) or [issue](https://github.com/biocompute-objects/BCO_Specification/issues) submission.
 
 <!-- TODO: Something about license and IP transfer? -->
 
