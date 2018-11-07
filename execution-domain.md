@@ -80,7 +80,11 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
 
 ### 2.5.7 Domain Prerequisites "domain_prerequisites"
 
-An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. The key "url" defines an endpoint to be accessed. If the `path` is `/` then any resource at the given domain may be accessed, while if the path is more specific than only resources which path prefix matches may be accessed.
+An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. 
+
+The key `url` defines an endpoint to be accessed. If the _path_ of the URL is `/` then any resource at the given domain may be accessed, while if the path is more specific than only resources which path prefix matches may be accessed.
+
+The key `Name` should describe the service that is accessed.
 
 ```json
 "domain_prerequisites": [
