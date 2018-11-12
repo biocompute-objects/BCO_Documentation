@@ -86,7 +86,7 @@ Describes the status of an object in the review process. The `unreviewed` flag i
 
 ### 2.1.5 Inheritance/derivation "derived_from"
 
-If the object is derived from another, this field will specify the parent object, in the form of the ‘objectid’. If the object inherits only from the base BioCompute Object or a type definition than the value here is null. 
+If the object is derived from another, this field will specify the parent object, in the form of the ‘BCO_ID’. If the object inherits only from the base BioCompute Object or a type definition than the value here is null. 
 
 ```json
 "derived_from" : null,
