@@ -1,0 +1,187 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
+  "type": "object",
+  "title": "TODO",
+  "description": "TODO",
+  "default": null,
+  "required": [
+    "script_access_type",
+    "script",
+    "script_driver",
+    "pipeline_version",
+    "platform",
+    "software_prerequisites",
+    "domain_prerequisites",
+    "env_parameters"
+  ],
+  "properties": {
+    "script_access_type": {
+      "type": "string",
+      "enum": [
+        "URI",
+        "text"
+      ],
+      "title": "TODO",
+      "description": "TODO"
+    },
+    "script": {
+      "type": "array",
+      "title": "TODO",
+      "description": "TODO",
+      "items": {
+        "type": "string",
+        "title": "TODO",
+        "description": "TODO",
+        "examples": [
+          "https://example.com/workflows/antiviral_resistance_detection_hive.py"
+        ]
+      }
+    },
+    "script_driver": {
+      "type": "string",
+      "title": "TODO",
+      "description": "TODO",
+      "examples": [
+        "hive",
+        "cwl-runner",
+        "shell"
+      ]
+    },
+    "pipeline_version": {
+      "type": "string",
+      "title": "TODO",
+      "description": "TODO",
+      "examples": [
+        "2.0"
+      ]
+    },
+    "platform": {
+      "type": "string",
+      "title": "TODO",
+      "description": "TODO",
+      "examples": [
+        "hive"
+      ]
+    },
+    "software_prerequisites": {
+      "type": "array",
+      "title": "TODO",
+      "description": "TODO",
+      "items": {
+        "type": "object",
+        "title": "TODO",
+        "description": "TODO",
+        "required": [
+          "name",
+          "version",
+          "uri"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "TODO",
+            "description": "TODO",
+            "examples": [
+              "HIVE-hexagon"
+            ]
+          },
+          "version": {
+            "type": "string",
+            "title": "TODO",
+            "description": "TODO",
+            "examples": [
+              "babajanian.1"
+            ]
+          },
+          "uri": {
+            "type": "object",
+            "title": "TODO",
+            "description": "TODO",
+            "required": [
+              "address",
+              "access_time"
+            ],
+            "properties": {
+              "address": {
+                "type": "string",
+                "title": "TODO",
+                "description": "TODO",
+                "examples": [
+                  "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=dna-hexagon&cmdMode=-"
+                ]
+              },
+              "access_time": {
+                "type": "string",
+                "title": "TODO",
+                "description": "TODO",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
+    },
+    "domain_prerequisites": {
+      "type": "array",
+      "title": "TODO",
+      "description": "TODO",
+      "items": {
+        "type": "object",
+        "title": "TODO",
+        "description": "TODO",
+        "required": [
+          "name",
+          "url"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "TODO",
+            "description": "TODO",
+            "examples": [
+              "HIVE"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "title": "TODO",
+            "description": "TODO",
+            "default": "",
+            "examples": [
+              "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=login"
+            ]
+          }
+        }
+      }
+    },
+    "env_parameters": {
+      "type": "object",
+      "title": "TODO",
+      "description": "TODO",
+      "required": [
+        "key",
+        "value"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "title": "TODO",
+          "description": "TODO",
+          "default": "",
+          "examples": [
+            "HOSTTYPE"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "title": "TODO",
+          "description": "TODO",
+          "examples": [
+            "x86_64-linux"
+          ]
+        }
+      }
+    }
+  }
+}

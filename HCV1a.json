@@ -30,7 +30,6 @@
                 }
             }
         ],
-        "derived_from" : null,
         "obsolete" : "2118-09-26T14:43:43-0400",
         "embargo" : {
             "start_time": "2000-09-26T14:43:43-0400",
@@ -136,7 +135,7 @@
         "pipeline_steps": {
             "tool": [
                 {
-                    "step_number": "1", 
+                    "step_number": 1, 
                     "name": "HIVE-hexagon", 
                     "description": "Alignment of reads to a set of references", 
                     "version": "1.3", 
@@ -195,7 +194,7 @@
                     ]
                 },
                 {
-                    "step_number": "2", 
+                    "step_number": 2, 
                     "name": "HIVE-heptagon", 
                     "description": "variant calling", 
                     "version": "1.3", 

@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://biocomputeobject.org/schemas/biocomputeobject.json",
+  "type": "object",
+  "title": "Base type for all BioCompute Object types",
+  "description": "All BioCompute object types must inherit from this type in order to be compliant with BioCompute framework",
+  "required": [
+    "BCO_id",
+    "type",
+    "digital_signature",
+    "bco_spec_version",
+    "provenance_domain"
+  ],
+  "definitions": {},
+  "properties": {
+    "BCO_id": {
+      "type": "string",
+      "title": "TODO: add title and change 'should' to 'must' in description",
+      "description": "A unique identifier that should be applied to each BCO instance, generated and assigned by a BCO database engine. IDs should never be reused",
+      "default": "",
+      "examples": [
+        "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/master/HCV1a.json"
+      ],
+      "readOnly": true
+    },
+    "type": {
+      "type": "string",
+      "title": "TODO",
+      "description": "TODO",
+      "examples": [
+        "antiviral_resistance_detection"
+      ],
+      "readOnly": true
+    },
+    "digital_signature": {
+      "type": "string",
+      "title": "TODO",
+      "description": "Digital signature of BioCompute Object by Authority",
+      "examples": [
+        "905d7fce3f3ac64c8ea86f058ca71658"
+      ],
+      "readOnly": true,
+      "pattern": "^([A-Za-z0-9]+)$"
+    },
+    "bco_spec_version": {
+      "type": "string",
+      "title": "TODO",
+      "description": "Version of the BCO specification used to define this document",
+      "examples": [
+        "v1.2"
+      ],
+      "readOnly": true
+    },
+    "provenance_domain": {
+      "$ref": "provenance_domain.json"
+    },
+    "usability_domain": {
+      "$ref": "usability_domain.json"
+    },
+    "extension_domain": {
+      "$ref": "extension_domain.json"
+    },
+    "description_domain": {
+      "$ref": "description_domain.json"
+    },
+    "execution_domain": {
+      "$ref": "execution_domain.json"
+    },
+    "parametric_domain": {
+      "$ref": "parametric_domain.json"
+    },
+    "io_domain": {
+      "$ref": "io_domain.json"
+    },
+    "error_domain": {
+      "$ref": "error_domain.json"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$id": "http://biocomputeobject.org/schemas/usability_domain.json",
+  "type": "array",
+  "title": "TODO",
+  "description": "TODO",
+  "items": {
+    "type": "string",
+    "title": "TODO",
+    "description": "TODO",
+    "examples": [
+      "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [so:SO:0000667], and deletions [so:SO:0000045] that correlate with reduced ledipasvir [pubchem.compound:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxonomy:31646]",
+      "Identify treatment emergent amino acid substitutions [so:SO:0000048] that correlate with antiviral drug treatment failure",
+      "Determine whether the treatment emergent amino acid substitutions [so:SO:0000048] identified correlate with treatment failure involving other drugs against the same virus",
+      "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"
+    ]
+  }
+}
