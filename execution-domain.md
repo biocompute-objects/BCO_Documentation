@@ -84,18 +84,18 @@ An optional multi-value field listing the minimal necessary domain specific exte
 
 The key `url` defines an endpoint to be accessed. If the _path_ of the URL is `/` then any resource at the given domain may be accessed, while if the path is more specific than only resources which path prefix matches may be accessed.
 
-The key `Name` should describe the service that is accessed.
+The key `name` should describe the service that is accessed.
 
 ```json
 "domain_prerequisites": [
 
-    {"url": "protocol://domain:port/application/path","Name": "generic name"},
+    {"url": "protocol://domain:port/application/path","name": "generic name"},
 
     {"url": "ftp://data.example.com:21/",
-    "Name": "access to ftp server"},
+    "name": "access to ftp server"},
 
     {"url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils",
-    "Name": "access to e-utils web service"}
+    "name": "access to e-utils web service"}
 ]
 ```
 
