@@ -8,7 +8,7 @@ The external references also include an extension to GitHub repositories where H
 "extension_domain":{
     "github_extension": {
         "github_repository": "https://github.com/common-workflow-language/hive-cwl-examples", 
-        "github_URI":"https://github.com/common-workflow-language/hive-cwl-examples/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
+        "github_address":"https://github.com/common-workflow-language/hive-cwl-examples/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
     }
 }
 ```
