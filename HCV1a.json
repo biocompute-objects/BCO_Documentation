@@ -123,7 +123,7 @@
             {
                 "namespace": "so",
                 "name": "Sequence Ontology",
-                "ids": ["0000048"], 
+                "ids": ["0000048", "0000694", "0000667", "0000045"], 
                 "access_time": "2018-13-02T10:15-05:00"
             },
             {
@@ -179,17 +179,17 @@
                     ], 
                     "input_list": [
                         {
-                            "address": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=514683",
+                            "address": "http://example.com/dna.cgi?cmd=objFile&ids=514683",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }, 
                         {
-                            "address": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=514682",
+                            "address": "http://example.com/dna.cgi?cmd=objFile&ids=514682",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     ],
                     "output_list": [
                         {
-                            "address": "https://hive.biochemistry.gwu.edudata/514769/allCount-aligned.csv",
+                            "address": "http://example.com/data/514769/allCount-aligned.csv",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     ]
@@ -202,17 +202,17 @@
                     "prerequisites": null, 
                     "input_list": [
                         {
-                            "address": "https://hive.biochemistry.gwu.edudata/514769/dnaAccessionBased.csv",
+                            "address": "http://example.com/data/514769/dnaAccessionBased.csv",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     ], 
                     "output_list": [
                         {
-                            "address": "https://hive.biochemistry.gwu.edudata/514801/SNPProfile.csv",
+                            "address": "http://example.com/data/514801/SNPProfile.csv",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }, 
                         {
-                            "address": "https://hive.biochemistry.gwu.edudata/14769/allCount-aligned.csv",
+                            "address": "http://example.com/data/14769/allCount-aligned.csv",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     ]
@@ -231,7 +231,7 @@
                 "name": "HIVE-hexagon", 
                 "version": "babajanian.1",
                 "uri": {
-                    "address": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=dna-hexagon&cmdMode=-",
+                    "address": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500",
                     "sha1_chksum": null
                 }
@@ -240,7 +240,7 @@
                 "name": "HIVE-heptagon", 
                 "version": "albinoni.2",
                 "uri": {
-                    "address": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=dna-heptagon&cmdMode=-",
+                    "address": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500",
                     "sha1_chksum": null
                 }
@@ -249,7 +249,7 @@
         "domain_prerequisites": [
             {
                 "name": "HIVE", 
-                "url": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=login"
+                "url": "http://example.com/dna.cgi?cmd=login"
             }, 
             {
                 "name": "access to ftp", 
@@ -323,14 +323,14 @@
                 {
                     "name": "HCV1a_drug_resistant_sample0001-01", 
                     "source": {
-                        "address": "https://hive.biochemistry.gwu.edunuc-read/514682",
+                        "address": "http://example.com/nuc-read/514682",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "HCV1a_drug_resistant_sample0001-02", 
                     "source": {
-                        "address": "https://hive.biochemistry.gwu.edunuc-read/514683",
+                        "address": "http://example.com/nuc-read/514683",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }
@@ -340,14 +340,14 @@
             {
                 "mediatype": "text/csv", 
                 "source": { 
-                    "address": "https://hive.biochemistry.gwu.edudata/514769/dnaAccessionBased.csv",
+                    "address": "http://example.com/data/514769/dnaAccessionBased.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }, 
             {
                 "mediatype": "text/csv", 
                 "uri": {
-                    "address": "https://hive.biochemistry.gwu.edudata/514801/SNPProfile*.csv",
+                    "address": "http://example.com/data/514801/SNPProfile*.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }
@@ -358,8 +358,7 @@
             "false_negative_alignment_hits": "<0.0010", 
             "false_discovery": "<0.05"
         }, 
-        "algorithmic_error": {
-            "false_positive_mutation_calls_discovery": "<0.0005", 
+        "algorithmic_error": { 
             "false_positive_mutation_calls_discovery": "<0.00005", 
             "false_discovery": "0.005"
         }
