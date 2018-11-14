@@ -35,7 +35,7 @@ This field indicates whether the code of the "script" to execute the BioCompute 
 
 ### 2.5.2 Script "script"
 
-The Script field points to an internal or external reference to a script object that was used to perform computations for this BCO instance. This may be a reference to Galaxy Project or Seven Bridges Genomics pipeline, a Common Workflow Language (CWL) object in GitHub, a High-performance Integrated Virtual Environment (HIVE) computational service or any other type of script.
+The Script field points to an internal or external reference to a script object that was used to perform computations for this BCO instance. This may be a reference to an object in GitHub, a computational service or any other type of script. 
 
 ```json
  "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"]
