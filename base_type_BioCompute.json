@@ -71,8 +71,7 @@
                     "_default_value" : "unreviewed"
                 },
                 "reviewer" : {
-                    "_type": "contributor",
-                    "_multi_value" : true
+                    "_type": "contributor"
                 },
                 "date" : {
                     "_type" : "dateTime"
