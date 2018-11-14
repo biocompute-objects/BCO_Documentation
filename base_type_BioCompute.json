@@ -80,7 +80,6 @@
                 "reviewer_comment" : {
                     "_type" : "string",
                     "_optional" : true,
-                    "_multi_value" : true
                 }
             },
             "derived_from": {
