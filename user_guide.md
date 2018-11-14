@@ -236,7 +236,6 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "reviewer_comment" : {
                     "_type" : "string",
                     "_optional" : true,
-                    "_multi_value" : true
                 }
             },
             "derived_from": {
