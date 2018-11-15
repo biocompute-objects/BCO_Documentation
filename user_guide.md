@@ -50,10 +50,6 @@ When defining a field in a data type, one can place any number of constraints on
             "_type" : "string"
         }
     },
-    "keymap" : {
-        "key" : {
-            "_type" : "string"
-        },
         "value" : {
             "_type" : "string",
             "_multi_value" : true
@@ -295,7 +291,7 @@ The second layer is constructed with objects from first layer, producing a deriv
 
         "description_domain" : {
             "keywords" : {
-                "_type" : "keymap",
+                "_type" : "string",
                 "_multi_value" : true
             },
             "xref" : {

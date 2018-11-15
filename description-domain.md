@@ -44,21 +44,15 @@ Condensed example:
 
 ### 2.4.1 Keywords "keywords"
 
-This is a list of key map fields to hold a list of keywords to aid in search-ability and description of the object.
+This is a list of keywords to aid in search-ability and description of the object.
 
 ```json
         "keywords": [
-            {
-                "key": "search terms",
-                "value": [
-                    "HCV1a", 
-                    "Ledipasvir", 
-                    "antiviral resistance", 
-                    "SNP", 
-                    "amino acid substitutions"
-                ]
-            }
-        ]
+                        "HCV1a", 
+                        "Ledipasvir", 
+                        "antiviral resistance", 
+                        "SNP", 
+                        "amino acid substitutions"
 ```
 
 ### 2.4.2 External References "xref"
