@@ -327,7 +327,7 @@ The second layer is constructed with objects from first layer, producing a deriv
                             "_type" :"string",
                             "_comment" : ["Public searchable name for reference or prereq"]
                         },
-                        "source":{
+                        "uri":{
                             "_type" : "uri"
                         }
                     },
@@ -575,35 +575,35 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
                     "prerequisite": [
                         {
                             "name": "Hepatitis C virus genotype 1", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus type 1b complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus clone J8CF, complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus S52 polyprotein gene", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
@@ -717,35 +717,35 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
             "subject": [
                 {
                     "name": "Hepatitis C virus genotype 1", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus type 1b complete genome", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus clone J8CF, complete genome", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus S52 polyprotein gene", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
@@ -754,14 +754,14 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
             "query": [
                 {
                     "name": "HCV1a_drug_resistant_sample0001-01", 
-                    "source": {
+                    "uri": {
                         "address": "https://hive.biochemistry.gwu.edunuc-read/514682",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "HCV1a_drug_resistant_sample0001-02", 
-                    "source": {
+                    "uri": {
                         "address": "https://hive.biochemistry.gwu.edunuc-read/514683",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
@@ -771,7 +771,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
         "output_subdomain": [
             {
                "mediatype": "text/csv", 
-                "source": { 
+                "uri": { 
                     "address": "https://hive.biochemistry.gwu.edudata/514769/dnaAccessionBased.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }

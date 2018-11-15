@@ -25,7 +25,7 @@ Condensed example:
                     "prerequisite": [
                         {
                             "name": "Hepatitis C virus genotype 1", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
@@ -141,35 +141,35 @@ A list of text values to indicate any packages or prerequisites for running the 
                     "prerequisite": [
                         {
                             "name": "Hepatitis C virus genotype 1", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus type 1b complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus clone J8CF, complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus S52 polyprotein gene", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }

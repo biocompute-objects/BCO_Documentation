@@ -76,7 +76,7 @@
                             "name":{
                                 "_type" : "string"
                             },
-                            "source": {
+                            "uri": {
                                 "_type" : "uri"
                             }
                         }
@@ -88,7 +88,7 @@
                             "name":{
                                 "_type" : "string"
                             },
-                            "source": {
+                            "uri": {
                                 "_type" : "uri"
                             }
                         }

@@ -170,7 +170,7 @@
                             "_type" :"string",
                             "_comment" : ["Public searchable name for reference or prereq"]
                         },
-                        "source":{
+                        "uri":{
                             "_type" : "uri"
                         }
                     },
