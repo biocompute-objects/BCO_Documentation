@@ -46,13 +46,11 @@ As any object of type 'type,' it has its own fields: _type, _id, _inherits, name
 
 ### 2.0.3 Digital signature "digital_signature"
 
-A string-type, read-only value generated and stored by a BCO database, protecting the object from internal or external alterations without proper validation. The string can be generated through the use of an MD5 SHA-256 or implementation specific hash function. 
+A string-type, read-only value generated and stored by a BCO database, protecting the object from internal or external alterations without proper validation. The string can be generated through the use of an MD5 SHA-256 or another implementation of a specific hash function. 
 
 ```json
 "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658"
 ```
-
-This value should not be submitted during deposition but can be read during downloading or transferring validated BCOs. The BCO server can provide an API validating the signature versus BCO content, allowing users to validate the signature "offline" on their own. The server will also must provide a reference to the signature creation algorithm, facilitating for greater interoperability.
 
 ### Additional domains
 
