@@ -56,7 +56,9 @@ In such cases the connection between the new object and the older one may or may
 
 ### 2.1.4 Review "review"
 
-Describes the status of an object in the review process. 
+This is a list to hold reviewer identifiers and a description of the status of an object in the review process, including the subtype "reviewer", which contains field(s) for name, affiliation, email, and contribution of each reviewer. To further record author information, ORCID IDs are included as they allow for the author to curate their information after submission. ORCID identifiers must be valid and must have the prefix https://orcid.org/. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the PROV-O.
+
+The "status" key describes the status of an object in the review process and the following are the possible values: 
 * `unreviewed` flag indicates that the object has been submitted, but no further evaluation or verification has occurred.  
 * `in-review` flag indicates that verification is underway. 
 * `approved` flag indicates that the BCO has been verified and reviewed. 
