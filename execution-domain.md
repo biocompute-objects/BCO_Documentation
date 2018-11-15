@@ -54,7 +54,7 @@ This field records the version of the pipeline implementation.
 The multi-value reference to a particular deployment of an existing platform where this BCO can be reproduced. A platform can be a bioinformatic platform such as Galaxy or HIVE or it can be a software package such as CASAVA or apps that includes multiple algorithms and software. 
 
 ```json
-"platform": "HIVE"
+"platform": ["HIVE"]
 ```
 
 ### 2.5.5 Script driver "script_driver"
