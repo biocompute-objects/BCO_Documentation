@@ -200,6 +200,7 @@
                "_type" : "st ring"
             },
             "pipeline_version" : {
+                "_multi_value" : true,
                 "_type" : "version"
             },
             "platform" : {

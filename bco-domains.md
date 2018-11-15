@@ -17,7 +17,7 @@ Condensed example:
     "usability_domain": [
     ],
     "extension_domain":{
-        "FHIR_extension": [
+        "fhir_extension": [
         ],
         "github_extension": {
         }
@@ -70,7 +70,7 @@ The `extension_domain` is for a user to add more structured information that is 
 
 Specifications:
 
-* [FHIR extension](extension-fhir.md)
+* [fhir extension](extension-fhir.md)
 * [GitHub extension](extension-github.md)
 
 

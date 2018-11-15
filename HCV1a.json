@@ -218,7 +218,7 @@
         "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"],
         "script_driver": "manual",
         "pipeline_version": "2.0", 
-        "platform": "hive", 
+        "platform": ["hive"], 
         "software_prerequisites": [
             {
                 "name": "HIVE-hexagon", 
