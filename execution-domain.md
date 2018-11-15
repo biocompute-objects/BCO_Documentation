@@ -59,9 +59,7 @@ The multi-value reference to a particular deployment of an existing platform whe
 
 ### 2.5.5 Script driver "script_driver"
 
-The reference to an executable that can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. For example, if the pipeline is driven by a HIVE script, the script driver is the "hive" execution engine. For CWL based scripts specify `cwl-runner`. Another very general script driver commonly used in Linux based operating systems is `shell` and the type of scripts it can run are operating system shell scripts. The combination of script driver and script is a capability to run a particular sequence of computational steps in order to produce BCO outputs given the inputs and parameters. 
-
-It is noteworthy to mention that scripts and script drivers by themselves can be objects. These objects can exist in internal (BCO) or external databases and be publicly or privately accessible.
+This field provides a space to indicate what kind of executable can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. 
 
 ```json
 "script_driver": "shell"
