@@ -94,10 +94,10 @@ The fields from the `contributor` object (described in section 2.1.10) is inheri
 
 ### 2.1.5 Inheritance/derivation "derived_from"
 
-If the object is derived from another, this field will specify the parent object, in the form of the ‘BCO_ID’. If the object inherits only from the base BioCompute Object or a type definition than the value here is null. 
+If the object is derived from another, this field will specify the parent object, in the form of the ‘bco_id’. If the object inherits only from the base BioCompute Object or a type definition than the field is not included. 
 
 ```json
-"derived_from" : null,
+"derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
 ```
 
 ### 2.1.6 Obsolescence "obsolete" 

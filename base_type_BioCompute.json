@@ -15,7 +15,7 @@
             "List of fields of the BioCompute Object type"
         ],
 
-        "BCO_id":{
+        "bco_id":{
             "_type" : "string",
             "_read_only" : true,
             "_comment" : [

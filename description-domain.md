@@ -18,13 +18,21 @@ Condensed example:
         "pipeline_steps": {
             "tool": [
                 {
-                    "step_number": "2", 
-                    "name": "HIVE-heptagon", 
-                    "description": "variant calling", 
+                    "step_number": "1", 
+                    "name": "HIVE-hexagon", 
+                    "description": "Alignment of reads to a set of references", 
                     "version": "1.3", 
-                    "prerequisites": null, 
-                    "input_list": [
+                    "prerequisite": [
+                        {
+                            "name": "Hepatitis C virus genotype 1", 
+                            "source": {
+                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                                "access_time": "2017-01-24T09:40:17-0500"
+                            }
+                        }
                     ], 
+                    "input_list": [
+                    ],
                     "output_list": [
                     ]
                 }
