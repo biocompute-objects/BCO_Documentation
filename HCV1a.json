@@ -95,16 +95,11 @@
     },
     "description_domain": {
         "keywords": [
-            {
-                "key": "search terms",
-                "value": [
-                    "HCV1a", 
-                    "Ledipasvir", 
-                    "antiviral resistance", 
-                    "SNP", 
-                    "amino acid substitutions"
-                ]
-            }
+            "HCV1a", 
+            "Ledipasvir", 
+            "antiviral resistance", 
+            "SNP", 
+            "amino acid substitutions"
         ], 
         "xref": [
             {

@@ -138,7 +138,7 @@
 
         "description_domain" : {
             "keywords" : {
-                "_type" : "keymap",
+                "_type" : "string",
                 "_multi_value" : true
             },
             "xref" : {
@@ -197,7 +197,7 @@
                "_type" : "string"
             },
             "script_driver" : {
-               "_type" : "string"
+               "_type" : "st ring"
             },
             "pipeline_version" : {
                 "_type" : "version"

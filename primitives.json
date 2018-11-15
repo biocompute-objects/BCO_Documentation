@@ -38,15 +38,6 @@
             "_type" : "string"
         }
     },
-    "keymap" : {
-        "key" : {
-            "_type" : "string"
-        },
-        "value" : {
-            "_type" : "string",
-            "_multi_value" : true
-        }
-    },
     "uri": {
         "address": {
             "_type": "objectid"
