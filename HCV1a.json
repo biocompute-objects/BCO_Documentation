@@ -83,7 +83,7 @@
                 "fhir_endpoint_ids": ["92440"]
             },
             {
-                "fhir_endpoint_resourceType": "FamilyMemberHistory",
+                "fhir_endpoint_resource": "FamilyMemberHistory",
                 "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
                 "fhir_endpoint_ids": ["4588936"]
             }
