@@ -429,7 +429,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
     "BCO_id": "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/hadley_local/HCV1a.json",
     "type": "antiviral_resistance_detection", 
     "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658",
-    "bco_spec_version" : "v1.2",
+    "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
     "provenance_domain": {
         "name": "HCV1a ledipasvir resistance SNP detection", 
         "structured_name": "HCV1a [taxonomy:31646] ledipasvir [pubchem.compound:67505836] resistance SNP [so:0000694] detection",
