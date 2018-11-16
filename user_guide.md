@@ -490,31 +490,31 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
 	],
     "extension_domain":{
 	    "extension_domain":{
-	        "FHIR_extension": [
+	        "fhir_extension": [
 	            {
-	                "FHIRendpoint_Resource": "Sequence",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["21376"]
+	                "fhir_endpoint_resource": "Sequence",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["21376"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "DiagnosticReport",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["6288583"]
+	                "fhir_endpoint_resource": "DiagnosticReport",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["6288583"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "ProcedureRequest",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["25544"]
+	                "fhir_endpoint_resource": "ProcedureRequest",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["25544"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "Observation",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["92440"]
+	                "fhir_endpoint_resource": "Observation",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["92440"]
 	            },
 	            {
-	                "FHIRendpoint_ResourceType": "FamilyMemberHistory",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["4588936"]
+	                "fhir_endpoint_resource": "FamilyMemberHistory",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_idsr": ["4588936"]
 	            }
 	        ],
         "github_extension": {
@@ -524,14 +524,11 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
     },
     "description_domain": {
         "keywords": [
-            {
-                "key": "search terms",
-                "value": [
-                    "HCV1a", 
-                    "Ledipasvir", 
-                    "antiviral resistance", 
-                    "SNP", 
-                    "amino acid substitutions"
+                 "HCV1a", 
+                 "Ledipasvir", 
+                 "antiviral resistance", 
+                 "SNP", 
+                 "amino acid substitutions"
                 ]
             }
         ], 
