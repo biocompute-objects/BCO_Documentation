@@ -18,13 +18,21 @@ Condensed example:
         "pipeline_steps": {
             "tool": [
                 {
-                    "step_number": "2", 
-                    "name": "HIVE-heptagon", 
-                    "description": "variant calling", 
+                    "step_number": "1", 
+                    "name": "HIVE-hexagon", 
+                    "description": "Alignment of reads to a set of references", 
                     "version": "1.3", 
-                    "prerequisites": null, 
-                    "input_list": [
+                    "prerequisite": [
+                        {
+                            "name": "Hepatitis C virus genotype 1", 
+                            "uri": {
+                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                                "access_time": "2017-01-24T09:40:17-0500"
+                            }
+                        }
                     ], 
+                    "input_list": [
+                    ],
                     "output_list": [
                     ]
                 }
@@ -36,21 +44,15 @@ Condensed example:
 
 ### 2.4.1 Keywords "keywords"
 
-This is a list of key map fields to hold a list of keywords to aid in search-ability and description of the object.
+This is a list of keywords to aid in search-ability and description of the object.
 
 ```json
         "keywords": [
-            {
-                "key": "search terms",
-                "value": [
-                    "HCV1a", 
-                    "Ledipasvir", 
-                    "antiviral resistance", 
-                    "SNP", 
-                    "amino acid substitutions"
-                ]
-            }
-        ]
+                        "HCV1a", 
+                        "Ledipasvir", 
+                        "antiviral resistance", 
+                        "SNP", 
+                        "amino acid substitutions"
 ```
 
 ### 2.4.2 External References "xref"
@@ -133,35 +135,35 @@ A list of text values to indicate any packages or prerequisites for running the 
                     "prerequisite": [
                         {
                             "name": "Hepatitis C virus genotype 1", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus type 1b complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus clone J8CF, complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus S52 polyprotein gene", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }

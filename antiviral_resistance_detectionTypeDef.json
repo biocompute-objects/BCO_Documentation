@@ -8,13 +8,13 @@
                 "_comment" : ["linkage to FHIR"],
                 "_multi_value" : true,
                 "_fields":{
-                    "FHIRendpoint_Resource": {
+                    "fhir_endpoint_resource": {
                         "_type" : "string"
                     },
-                    "FHIRendpoint_URL": {
+                    "fhir_endpoint_url": {
                         "_type" : "string"
                     },
-                    "FHIRendpoint_Ids": {
+                    "fhir_endpoint_ids": {
                         "_type" : "string",
                         "_multi_value" : true
                     }
@@ -25,7 +25,7 @@
                 "_comment" : ["linkage to GitHub"],
                 "_multi_value" : true,
                 "_fields":{
-                    "gitHub_URI": {
+                    "gitHub_address": {
                         "_type" : "uri"
                     },
                        "github_repository":{
@@ -76,7 +76,7 @@
                             "name":{
                                 "_type" : "string"
                             },
-                            "source": {
+                            "uri": {
                                 "_type" : "uri"
                             }
                         }
@@ -88,7 +88,7 @@
                             "name":{
                                 "_type" : "string"
                             },
-                            "source": {
+                            "uri": {
                                 "_type" : "uri"
                             }
                         }

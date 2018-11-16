@@ -50,10 +50,6 @@ When defining a field in a data type, one can place any number of constraints on
             "_type" : "string"
         }
     },
-    "keymap" : {
-        "key" : {
-            "_type" : "string"
-        },
         "value" : {
             "_type" : "string",
             "_multi_value" : true
@@ -236,7 +232,6 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "reviewer_comment" : {
                     "_type" : "string",
                     "_optional" : true,
-                    "_multi_value" : true
                 }
             },
             "derived_from": {
@@ -296,7 +291,7 @@ The second layer is constructed with objects from first layer, producing a deriv
 
         "description_domain" : {
             "keywords" : {
-                "_type" : "keymap",
+                "_type" : "string",
                 "_multi_value" : true
             },
             "xref" : {
@@ -328,7 +323,7 @@ The second layer is constructed with objects from first layer, producing a deriv
                             "_type" :"string",
                             "_comment" : ["Public searchable name for reference or prereq"]
                         },
-                        "source":{
+                        "uri":{
                             "_type" : "uri"
                         }
                     },
@@ -495,31 +490,31 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
 	],
     "extension_domain":{
 	    "extension_domain":{
-	        "FHIR_extension": [
+	        "fhir_extension": [
 	            {
-	                "FHIRendpoint_Resource": "Sequence",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["21376"]
+	                "fhir_endpoint_resource": "Sequence",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["21376"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "DiagnosticReport",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["6288583"]
+	                "fhir_endpoint_resource": "DiagnosticReport",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["6288583"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "ProcedureRequest",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["25544"]
+	                "fhir_endpoint_resource": "ProcedureRequest",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["25544"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "Observation",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["92440"]
+	                "fhir_endpoint_resource": "Observation",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["92440"]
 	            },
 	            {
-	                "FHIRendpoint_ResourceType": "FamilyMemberHistory",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["4588936"]
+	                "fhir_endpoint_resource": "FamilyMemberHistory",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_idsr": ["4588936"]
 	            }
 	        ],
         "github_extension": {
@@ -529,14 +524,11 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
     },
     "description_domain": {
         "keywords": [
-            {
-                "key": "search terms",
-                "value": [
-                    "HCV1a", 
-                    "Ledipasvir", 
-                    "antiviral resistance", 
-                    "SNP", 
-                    "amino acid substitutions"
+                 "HCV1a", 
+                 "Ledipasvir", 
+                 "antiviral resistance", 
+                 "SNP", 
+                 "amino acid substitutions"
                 ]
             }
         ], 
@@ -576,35 +568,35 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
                     "prerequisite": [
                         {
                             "name": "Hepatitis C virus genotype 1", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus type 1b complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus clone J8CF, complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus S52 polyprotein gene", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
@@ -718,35 +710,35 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
             "subject": [
                 {
                     "name": "Hepatitis C virus genotype 1", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus type 1b complete genome", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus clone J8CF, complete genome", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus S52 polyprotein gene", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
@@ -755,14 +747,14 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
             "query": [
                 {
                     "name": "HCV1a_drug_resistant_sample0001-01", 
-                    "source": {
+                    "uri": {
                         "address": "https://hive.biochemistry.gwu.edunuc-read/514682",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "HCV1a_drug_resistant_sample0001-02", 
-                    "source": {
+                    "uri": {
                         "address": "https://hive.biochemistry.gwu.edunuc-read/514683",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
@@ -772,7 +764,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
         "output_subdomain": [
             {
                "mediatype": "text/csv", 
-                "source": { 
+                "uri": { 
                     "address": "https://hive.biochemistry.gwu.edudata/514769/dnaAccessionBased.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }

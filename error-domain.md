@@ -16,8 +16,8 @@ The possible keys within each subdomains are workflow-specific free text which s
 ```json
     "error_domain": {
         "empirical_error": {
-            "false negative alignment hits": "<0.0010", 
-            "false discovery": "<0.05"
+            "false_negative_alignment_hits": "<0.0010", 
+            "false_discovery": "<0.05"
         }, 
 
         "algorithmic_error": { 

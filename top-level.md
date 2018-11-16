@@ -30,7 +30,7 @@ The version of the BCO specification used to define this document.
 
 ### 2.0.1 BioCompute Object Identifier "BCO_id"
 
-A unique identifier that should be applied to each BCO instance. These can be assigned by a BCO database engine. IDs should be URIs (expressed as a URN or URL). IDs should never be reused.
+A unique identifier that should be applied to each BCO instance. These can be assigned by a BCO database engine. IDs should never be reused. It is RECOMMENDED that the BCO identifier is based on a [UUID](https://tools.ietf.org/html/rfc4122)s (sometimes called GUIDs) to ensure uniqueness, either as a location-independent URN (e.g. urn:uuid:2bf8397b-9aa8-47f2-80a7-235653e8e824) or as part of an identifier permalink, (e.g. http://repo.example.com/bco/2bf8397b-9aa8-47f2-80a7-235653e8e824). While the UUID is the preferred method, IDs expressed as a URN or URL are also acceptable.
 
 ```json
 "BCO_id":"https://github.com/biocompute-objects/BCO_Spec_V2.0/blob/master/HCV1a/HCV1a.json"
@@ -46,13 +46,11 @@ As any object of type 'type,' it has its own fields: _type, _id, _inherits, name
 
 ### 2.0.3 Digital signature "digital_signature"
 
-A string-type, read-only value generated and stored by a BCO database, protecting the object from internal or external alterations without proper validation. The string can be generated through the use of an MD5 SHA-256 or implementation specific hash function. 
+A string-type, read-only value generated and stored by a BCO database, protecting the object from internal or external alterations without proper validation. The string can be generated through the use of an MD5 SHA-256 or another implementation of a specific hash function. 
 
 ```json
 "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658"
 ```
-
-This value should not be submitted during deposition but can be read during downloading or transferring validated BCOs. The BCO server can provide an API validating the signature versus BCO content, allowing users to validate the signature "offline" on their own. The server will also must provide a reference to the signature creation algorithm, facilitating for greater interoperability.
 
 ### Additional domains
 

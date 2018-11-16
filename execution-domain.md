@@ -35,7 +35,7 @@ This field indicates whether the code of the "script" to execute the BioCompute 
 
 ### 2.5.2 Script "script"
 
-The Script field points to an internal or external reference to a script object that was used to perform computations for this BCO instance. This may be a reference to Galaxy Project or Seven Bridges Genomics pipeline, a Common Workflow Language (CWL) object in GitHub, a High-performance Integrated Virtual Environment (HIVE) computational service or any other type of script.
+The Script field points to an internal or external reference to a script object that was used to perform computations for this BCO instance. This may be a reference to an object in GitHub, a computational service or any other type of script. 
 
 ```json
  "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"]
@@ -54,14 +54,12 @@ This field records the version of the pipeline implementation.
 The multi-value reference to a particular deployment of an existing platform where this BCO can be reproduced. A platform can be a bioinformatic platform such as Galaxy or HIVE or it can be a software package such as CASAVA or apps that includes multiple algorithms and software. 
 
 ```json
-"platform": "HIVE"
+"platform": ["HIVE"]
 ```
 
 ### 2.5.5 Script driver "script_driver"
 
-The reference to an executable that can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. For example, if the pipeline is driven by a HIVE script, the script driver is the "hive" execution engine. For CWL based scripts specify `cwl-runner`. Another very general script driver commonly used in Linux based operating systems is `shell` and the type of scripts it can run are operating system shell scripts. The combination of script driver and script is a capability to run a particular sequence of computational steps in order to produce BCO outputs given the inputs and parameters. 
-
-It is noteworthy to mention that scripts and script drivers by themselves can be objects. These objects can exist in internal (BCO) or external databases and be publicly or privately accessible.
+This field provides a space to indicate what kind of executable can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. 
 
 ```json
 "script_driver": "shell"
@@ -84,18 +82,18 @@ An optional multi-value field listing the minimal necessary domain specific exte
 
 The key `url` defines an endpoint to be accessed. If the _path_ of the URL is `/` then any resource at the given domain may be accessed, while if the path is more specific than only resources which path prefix matches may be accessed.
 
-The key `Name` should describe the service that is accessed.
+The key `name` should describe the service that is accessed.
 
 ```json
 "domain_prerequisites": [
 
-    {"url": "protocol://domain:port/application/path","Name": "generic name"},
+    {"url": "protocol://domain:port/application/path","name": "generic name"},
 
     {"url": "ftp://data.example.com:21/",
-    "Name": "access to ftp server"},
+    "name": "access to ftp server"},
 
     {"url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils",
-    "Name": "access to e-utils web service"}
+    "name": "access to e-utils web service"}
 ]
 ```
 

@@ -27,14 +27,14 @@ This field records the references and input files for the entire pipeline. Each 
     "subject": [
         {
             "name": "Hepatitis C virus genotype 1", 
-            "source": {
+            "uri": {
                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                 "access_time": "2017-01-24T09:40:17-0500"
             }
         }, 
         {
             "name": "Hepatitis C virus type 1b complete genome", 
-            "source": {
+            "uri": {
                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                 "access_time": "2017-01-24T09:40:17-0500"
             }
@@ -42,14 +42,14 @@ This field records the references and input files for the entire pipeline. Each 
     "query": [
         {
             "name": "HCV1a_drug_resistant_sample0001-01", 
-            "source": {
+            "uri": {
                 "address": "https://hive.biochemistry.gwu.edunuc-read/514682",
                 "access_time": "2017-01-24T09:40:17-0500"
             }
         }, 
         {
             "name": "HCV1a_drug_resistant_sample0001-02", 
-            "source": {
+            "uri": {
                 "address": "https://hive.biochemistry.gwu.edunuc-read/514683",
                 "access_time": "2017-01-24T09:40:17-0500"
             }
@@ -66,7 +66,7 @@ This field records the outputs for the entire pipeline. Each file should be an o
         "output_subdomain": [
             {
                 "mediatype": "text/csv", 
-                "source": { 
+                "uri": { 
                     "address": "https://hive.biochemistry.gwu.edudata/514769/dnaAccessionBased.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }

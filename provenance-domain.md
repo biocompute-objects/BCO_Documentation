@@ -14,7 +14,7 @@ Condensed example:
         "review": [
         ],
         "derived_from" : null,
-        "obsolete" : "2118-09-26T14:43:43-0400",
+        "obsolete_after" : "2118-09-26T14:43:43-0400",
         "embargo" : {
 	},
         "created": "2017-01-24T09:40:17-0500", 
@@ -56,13 +56,23 @@ In such cases the connection between the new object and the older one may or may
 
 ### 2.1.4 Review "review"
 
-Describes the status of an object in the review process. The `unreviewed` flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The `in-review` flag indicates that verification is underway. The `approved` flag indicates that the BCO has been verified and reviewed. The `suspended` flag indicates an object that was once valid is no longer considered valid. The `rejected` flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the `contributor` object (described in section 2.1.10) is inherited to populate the reviewer section. 
+This is a list to hold reviewer identifiers and a description of the status of an object in the review process, including the subtype "reviewer", which contains field(s) for name, affiliation, email, and contribution of each reviewer. To further record author information, ORCID IDs are included as they allow for the author to curate their information after submission. ORCID identifiers must be valid and must have the prefix https://orcid.org/. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the PROV-O.
+
+The "status" key describes the status of an object in the review process and the following are the possible values: 
+* `unreviewed` flag indicates that the object has been submitted, but no further evaluation or verification has occurred.  
+* `in-review` flag indicates that verification is underway. 
+* `approved` flag indicates that the BCO has been verified and reviewed. 
+* `suspended` flag indicates an object that was once valid is no longer considered valid. 
+* `rejected` flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. 
+
+The fields from the `contributor` object (described in section 2.1.10) is inherited to populate the reviewer section. 
 
 ```json
         "review": [
             {
                 "status": "approved",
-                "reviewer_comment": ["Approved by GW staff. Waiting for approval from FDA Reviewer"],
+                "reviewer_comment": "Approved by GW staff. Waiting for approval from FDA Reviewer",
+		"date": "2017-11-12T12:30:48-0400"
                 "reviewer": {
                     "name": "Charles Hadley King", 
                     "affiliation": "George Washington University", 
@@ -73,7 +83,7 @@ Describes the status of an object in the review process. The `unreviewed` flag i
             },
             {
                 "status": "approved",
-                "reviewer_comment": ["The revised BCO looks fine"],
+                "reviewer_comment": "The revised BCO looks fine",
                 "reviewer": {
                     "name": "Eric Donaldson", 
                     "affiliation": "FDA", 
@@ -86,18 +96,18 @@ Describes the status of an object in the review process. The `unreviewed` flag i
 
 ### 2.1.5 Inheritance/derivation "derived_from"
 
-If the object is derived from another, this field will specify the parent object, in the form of the ‘BCO_ID’. If the object inherits only from the base BioCompute Object or a type definition than the value here is null. 
+If the object is derived from another, this field will specify the parent object, in the form of the ‘bco_id’. If the object inherits only from the base BioCompute Object or a type definition than the field is not included. 
 
 ```json
-"derived_from" : null,
+"derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
 ```
 
-### 2.1.6 Obsolescence "obsolete" 
+### 2.1.6 Obsolescence "obsolete_after" 
 
 If the object has an expiration date this field will specify that using the ‘datetime’ type which is in ISO-8601 format as clarified by W3C [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime). This field is optional.
 
 ```json
-"obsolete" : "2118-09-26T14:43:43-0400"
+"obsolete_after" : "2118-09-26T14:43:43-0400"
 ```
 
 ### 2.1.7 Embargo "embargo"
