@@ -9,7 +9,7 @@ Condensed example:
 ```json
 {
     "bco_spec_version" : "v1.2",
-    "BCO_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
+    "bco_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
     "type": "antiviral_resistance_detection", 
     "digital_signature": "d41d8cd98f00b204e9800998ecf8427e",
     
@@ -19,21 +19,12 @@ Condensed example:
 }
 ```
 
-
-### 2.0.4 BCO version "bco_spec_version"
-
-The version of the BCO specification used to define this document.
-
-```json
-"bco_spec_version": "v1.1-draft1" 
-```
-
-### 2.0.1 BioCompute Object Identifier "BCO_id"
+### 2.0.1 BioCompute Object Identifier "bco_id"
 
 A unique identifier that should be applied to each BCO instance. These can be assigned by a BCO database engine. IDs should never be reused. It is RECOMMENDED that the BCO identifier is based on a [UUID](https://tools.ietf.org/html/rfc4122)s (sometimes called GUIDs) to ensure uniqueness, either as a location-independent URN (e.g. urn:uuid:2bf8397b-9aa8-47f2-80a7-235653e8e824) or as part of an identifier permalink, (e.g. http://repo.example.com/bco/2bf8397b-9aa8-47f2-80a7-235653e8e824). While the UUID is the preferred method, IDs expressed as a URN or URL are also acceptable.
 
 ```json
-"BCO_id":"https://github.com/biocompute-objects/BCO_Spec_V2.0/blob/master/HCV1a/HCV1a.json"
+"bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json"
 ```
 
 ### 2.0.2 Type "type"
@@ -50,6 +41,14 @@ A string-type, read-only value generated and stored by a BCO database, protectin
 
 ```json
 "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658"
+```
+
+### 2.0.4 BCO version "bco_spec_version"
+
+The version of the BCO specification used to define this document.
+
+```json
+"bco_spec_version": "v1.1-draft1" 
 ```
 
 ### Additional domains
