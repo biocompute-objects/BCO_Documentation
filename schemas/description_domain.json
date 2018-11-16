@@ -7,28 +7,6 @@
     "keywords",
     "pipeline_steps"
   ],
-  "definitions": {
-    "resource": {
-      "description": "TODO",
-      "required": [
-        "address",
-        "access_time"
-      ],
-      "properties": {
-        "address": {
-          "type": "string",
-          "examples": [
-            "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=514683"
-          ],
-          "format": "uri"
-        },
-        "access_time": {
-          "type": "string",
-          "format": "date-time"
-        }
-      }
-    }
-  },
   "properties": {
     "keywords": {
       "type": "array",
@@ -159,8 +137,7 @@
                       ]
                     },
                     "uri": {
-                      "description": "FIXME: base_type_BioCompute.json defines this as a string uri, but the specs define it as an object",
-                      "$ref": "#/definitions/resource"
+                      "$ref": "biocomputeobject.json#/definitions/uri"
                     }
                   }
                 }
@@ -169,14 +146,14 @@
                 "type": "array",
                 "description": "TODO",
                 "items": {
-                  "$ref": "#/definitions/resource"
+                  "$ref": "biocomputeobject.json#/definitions/uri"
                 }
               },
               "output_list": {
                 "type": "array",
                 "description": "TODO",
                 "items": {
-                  "$ref": "#/definitions/resource"
+                  "$ref": "biocomputeobject.json#/definitions/uri"
                 }
               }
             }

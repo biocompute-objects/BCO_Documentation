@@ -23,6 +23,28 @@
       "$comment": "FIXME: how should schema(s) handle inherited types?",
       "type": "object",
       "description": "all fields in this domain are BioCompute specific and should be defined in inherited BioCompute type"
+    },
+    "uri": {
+      "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
+      "type": "object",
+      "required": [
+        "address"
+      ],
+      "properties": {
+        "address": {
+          "type": "string",
+          "format": "uri"
+        },
+        "access_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sha1_chksum": {
+          "$comment": "TODO: recommend definining 'sha1_chksum' as sha256 or any hash function",
+          "type": "string",
+          "pattern": "[A-Za-z0-9]+"
+        }
+      }
     }
   },
   "properties": {
@@ -95,14 +117,15 @@
           "type": "array",
           "items": {
             "$comment": "TODO: extract as 'file' definition. Refer to the primitives.json. It was not extracted for lack of multiple reference to the type",
+            "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/base_type_BioCompute.json#L252-L256",
+            "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L86-L94",
             "type": "object",
             "required": [
               "uri"
             ],
             "properties": {
               "uri": {
-                "type": "string",
-                "format": "uri"
+                "$ref": "#/definitions/uri"
               },
               "mediatype": {
                 "$comment": "TODO: how are values validated?",

@@ -83,26 +83,7 @@
             ]
           },
           "uri": {
-            "type": "object",
-            "description": "TODO",
-            "required": [
-              "address",
-              "access_time"
-            ],
-            "properties": {
-              "address": {
-                "type": "string",
-                "description": "TODO",
-                "examples": [
-                  "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=dna-hexagon&cmdMode=-"
-                ]
-              },
-              "access_time": {
-                "type": "string",
-                "description": "TODO",
-                "format": "date-time"
-              }
-            }
+            "$ref": "biocomputeobject.json#/definitions/uri"
           }
         }
       }
