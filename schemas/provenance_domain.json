@@ -128,21 +128,16 @@
           },
           "reviewer": {
             "$ref": "#/definitions/contributor",
-            "title": "NOTE: ignored base_type_BioCompute.json defining this as an array",
+            "title": "TODO",
             "description": "TODO"
           },
           "reviewer_comment": {
-            "type": "array",
+            "type": "string",
             "title": "TODO",
             "description": "TODO",
-            "items": {
-              "type": "string",
-              "title": "TODO",
-              "description": "TODO",
-              "examples": [
-                "Approved by GW staff. Waiting for approval from FDA Reviewer"
-              ]
-            }
+            "examples": [
+              "Approved by GW staff. Waiting for approval from FDA Reviewer"
+            ]
           },
           "status": {
             "type": "string",

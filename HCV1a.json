@@ -10,7 +10,7 @@
         "review": [
             {
                 "status": "approved",
-                "reviewer_comment": ["Approved by GW staff. Waiting for approval from FDA Reviewer"],
+                "reviewer_comment": "Approved by GW staff. Waiting for approval from FDA Reviewer",
                 "reviewer": {
                     "name": "Charles Hadley King", 
                     "affiliation": "George Washington University", 
@@ -21,7 +21,7 @@
             },
             {
                 "status": "approved",
-                "reviewer_comment": ["The revised BCO looks fine"],
+                "reviewer_comment": "The revised BCO looks fine",
                 "reviewer": {
                     "name": "Eric Donaldson", 
                     "affiliation": "FDA", 
