@@ -14,7 +14,7 @@ Condensed example:
         "review": [
         ],
         "derived_from" : null,
-        "obsolete" : "2118-09-26T14:43:43-0400",
+        "obsolete_after" : "2118-09-26T14:43:43-0400",
         "embargo" : {
 	},
         "created": "2017-01-24T09:40:17-0500", 
@@ -102,12 +102,12 @@ If the object is derived from another, this field will specify the parent object
 "derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
 ```
 
-### 2.1.6 Obsolescence "obsolete" 
+### 2.1.6 Obsolescence "obsolete_after" 
 
 If the object has an expiration date this field will specify that using the ‘datetime’ type which is in ISO-8601 format as clarified by W3C [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime). This field is optional.
 
 ```json
-"obsolete" : "2118-09-26T14:43:43-0400"
+"obsolete_after" : "2118-09-26T14:43:43-0400"
 ```
 
 ### 2.1.7 Embargo "embargo"
