@@ -9,7 +9,7 @@ Condensed example:
 ```json
 {
     "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
-    "BCO_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
+    "bco_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
     "type": "antiviral_resistance_detection", 
     "digital_signature": "d41d8cd98f00b204e9800998ecf8427e",
     "provenance_domain": {

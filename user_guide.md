@@ -167,7 +167,7 @@ The second layer is constructed with objects from first layer, producing a deriv
             "List of fields of the BioCompute Object type"
         ],
 
-        "BCO_id":{
+        "bco_id":{
             "_type" : "string",
             "_read_only" : true,
             "_comment" : [
@@ -426,7 +426,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
 
 ```JSON
 {
-    "BCO_id": "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/hadley_local/HCV1a.json",
+    "bco_id": "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/hadley_local/HCV1a.json",
     "type": "antiviral_resistance_detection", 
     "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658",
     "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
