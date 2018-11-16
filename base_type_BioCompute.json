@@ -197,7 +197,7 @@
                "_type" : "string"
             },
             "script_driver" : {
-               "_type" : "st ring"
+               "_type" : "string"
             },
             "pipeline_version" : {
                 "_type" : "version"

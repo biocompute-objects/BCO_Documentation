@@ -214,9 +214,9 @@
         }
     },
     "execution_domain": {
-        "script_access_type": "text",
+        "script_access_type": "URI",
         "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"],
-        "script_driver": "manual",
+        "script_driver": "shell",
         "pipeline_version": "2.0", 
         "platform": ["hive"], 
         "software_prerequisites": [
@@ -244,17 +244,9 @@
                 "url": "http://example.com/dna.cgi?cmd=login"
             }, 
             {
-                "name": "access to ftp", 
-                "url": "ftp://:22/"
-            }, 
-            {
                 "name": "access to e-utils", 
                 "url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
-            },
-			{
-				"name": "generic name",
-			    "url": "protocol://domain:port/application/path"
-				}
+            }
         ], 
         "env_parameters": {
             "key": "HOSTTYPE", 

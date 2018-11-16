@@ -67,13 +67,28 @@ This field provides a space to indicate what kind of executable can be launched 
 
 ### 2.5.6 Algorithmic tools and Software Prerequisites "software_prerequisites" 
 
-An optional multi-value field listing the minimal necessary prerequisites, library, tool versions needed to successfully run the script to produce BCO. Recommended keys are `name` and `version`, but their interpretation is implementation-dependent for a given script_driver.
+An optional multi-value field listing the minimal necessary prerequisites, library, tool versions needed to successfully run the script to produce BCO. The keys are `name`, `version`, and `uri`. 
 
 ```json
- "software_prerequisites": [
-    {"name": "HIVE_hexagon", "version": "1.3"},
-    {"name": "HIVE_heptagon","version": "1.3"}
-]
+        "software_prerequisites": [
+            {
+                "name": "HIVE-hexagon", 
+                "version": "babajanian.1",
+                "uri": {
+                    "address": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
+                    "access_time": "2017-01-24T09:40:17-0500",
+                    "sha1_chksum": "d60f506cddac09e9e816531e7905ca1ca6641e3c"
+                }
+            }, 
+            {
+                "name": "HIVE-heptagon", 
+                "version": "albinoni.2",
+                "uri": {
+                    "address": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }
+        ]
 ```
 
 ### 2.5.7 Domain Prerequisites "domain_prerequisites"
