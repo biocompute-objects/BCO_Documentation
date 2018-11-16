@@ -458,7 +458,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
             }
         ],
         "derived_from" : null,
-        "obsolete" : "2118-09-26T14:43:43-0400",
+        "obsolete_after" : "2118-09-26T14:43:43-0400",
         "embargo" : {
             "start_time": "2000-09-26T14:43:43-0400",
             "end_time": "2000-09-26T14:43:45-0400"
