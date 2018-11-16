@@ -46,9 +46,18 @@ Structured name is an optional templated computable text field designed to repre
 
 ### 2.1.3 Version "version"
 
-Records the versioning of this BCO instance object. In BCO versioning, a change in the BCO affecting the outcome of the computation should be deposited as a new BCO, not as a new version. If a parameter in a tool is changed within a BCO, which in turn changes the outcome of the pipeline and the original BCO, a new BCO, not a new version, will be created. 
+Records the versioning of this BCO instance object. [Semantic Versioning 2.0.0](https://semver.org/#semantic-versioning-200) describes versioning as follows: 
 
-In such cases the connection between the new object and the older one may or may not be (on author’s discretion) retained in the form of references. Changes that cannot affect the results of the computation can be incorporated into a new version of the existing BCO. Such changes might include name and title, comments, authors, validity dates, etc. 
+>Given a version number MAJOR.MINOR.PATCH, increment the:
+>
+>1. MAJOR version when you make incompatible API changes,
+>2. MINOR version when you add functionality in a backwards-compatible manner, and
+>3. PATCH version when you make backwards-compatible bug fixes.
+>Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+In BCO versioning, a change in the BCO affecting the outcome of the computation **MAJOR** should be deposited as a new BCO, not as a new version. If a parameter in a tool is changed within a BCO, which in turn changes the outcome of the pipeline and the original BCO, a new BCO, not a new version, will be created. 
+
+In such cases the connection between the new object and the older one may or may not be (on author’s discretion) retained in the form of a reference using the [`derived_from`](provenance-domain.md#215-inheritancederivation-derived_from) field. Changes that cannot affect the results of the computation can be incorporated into a new version of the existing BCO (**MINOR** and **PATCH**). Such changes might include name and title, comments, authors, validity dates, etc. 
 
 ```json
 "version": "2.1",

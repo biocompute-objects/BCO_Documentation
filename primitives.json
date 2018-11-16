@@ -22,7 +22,7 @@
     },
     "version": {
         "_type": "string",
-        "_comment": "suggestion major[.minor[.build_nunber]]"
+        "_comment": "suggestion major[.minor[.build_nunber]] as described at https://semver.org/"
     }, 
     "email":{ 
         "_type": "string",
