@@ -2,7 +2,6 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
   "type": "object",
-  "title": "TODO",
   "description": "TODO",
   "default": null,
   "required": [
@@ -22,16 +21,13 @@
         "URI",
         "text"
       ],
-      "title": "TODO",
       "description": "TODO"
     },
     "script": {
       "type": "array",
-      "title": "TODO",
       "description": "TODO",
       "items": {
         "type": "string",
-        "title": "TODO",
         "description": "TODO",
         "examples": [
           "https://example.com/workflows/antiviral_resistance_detection_hive.py"
@@ -40,7 +36,6 @@
     },
     "script_driver": {
       "type": "string",
-      "title": "TODO",
       "description": "TODO",
       "examples": [
         "hive",
@@ -50,13 +45,11 @@
     },
     "pipeline_version": {
       "type": "string",
-      "title": "TODO",
       "description": "TODO",
       "examples": [ "2.0" ]
     },
     "platform": {
       "type": "array",
-      "title": "TODO",
       "description": "TODO",
       "items": {
         "type": "string",
@@ -65,11 +58,9 @@
     },
     "software_prerequisites": {
       "type": "array",
-      "title": "TODO",
       "description": "TODO",
       "items": {
         "type": "object",
-        "title": "TODO",
         "description": "TODO",
         "required": [
           "name",
@@ -79,7 +70,6 @@
         "properties": {
           "name": {
             "type": "string",
-            "title": "TODO",
             "description": "TODO",
             "examples": [
               "HIVE-hexagon"
@@ -87,7 +77,6 @@
           },
           "version": {
             "type": "string",
-            "title": "TODO",
             "description": "TODO",
             "examples": [
               "babajanian.1"
@@ -95,7 +84,6 @@
           },
           "uri": {
             "type": "object",
-            "title": "TODO",
             "description": "TODO",
             "required": [
               "address",
@@ -104,7 +92,6 @@
             "properties": {
               "address": {
                 "type": "string",
-                "title": "TODO",
                 "description": "TODO",
                 "examples": [
                   "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=dna-hexagon&cmdMode=-"
@@ -112,7 +99,6 @@
               },
               "access_time": {
                 "type": "string",
-                "title": "TODO",
                 "description": "TODO",
                 "format": "date-time"
               }
@@ -123,11 +109,9 @@
     },
     "domain_prerequisites": {
       "type": "array",
-      "title": "TODO",
       "description": "TODO",
       "items": {
         "type": "object",
-        "title": "TODO",
         "description": "TODO",
         "required": [
           "name",
@@ -136,7 +120,6 @@
         "properties": {
           "name": {
             "type": "string",
-            "title": "TODO",
             "description": "TODO",
             "examples": [
               "HIVE"
@@ -144,7 +127,6 @@
           },
           "url": {
             "type": "string",
-            "title": "TODO",
             "description": "TODO",
             "default": "",
             "examples": [
@@ -156,7 +138,6 @@
     },
     "env_parameters": {
       "type": "object",
-      "title": "TODO",
       "description": "TODO",
       "required": [
         "key",
@@ -165,7 +146,6 @@
       "properties": {
         "key": {
           "type": "string",
-          "title": "TODO",
           "description": "TODO",
           "default": "",
           "examples": [
@@ -174,7 +154,6 @@
         },
         "value": {
           "type": "string",
-          "title": "TODO",
           "description": "TODO",
           "examples": [
             "x86_64-linux"
