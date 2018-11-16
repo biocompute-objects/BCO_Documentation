@@ -36,42 +36,18 @@
     "keywords": {
       "type": "array",
       "title": "TODO",
-      "description": "TODO",
+      "description": "Keywords to aid in search-ability and description of the object.",
       "items": {
-        "type": "object",
+        "type": "string",
         "title": "TODO",
         "description": "TODO",
-        "required": [
-          "key",
-          "value"
-        ],
-        "properties": {
-          "key": {
-            "type": "string",
-            "title": "TODO",
-            "description": "TODO",
-            "examples": [
-              "search terms"
-            ]
-          },
-          "value": {
-            "type": "array",
-            "title": "TODO",
-            "description": "TODO",
-            "items": {
-              "type": "string",
-              "title": "TODO",
-              "description": "TODO",
-              "examples": [
-                "HCV1a",
-                "Ledipasvir",
-                "antiviral resistance",
-                "SNP",
-                "amino acid substitutions"
-              ]
-            }
-          }
-        }
+        "examples": [
+          "HCV1a",
+          "Ledipasvir",
+          "antiviral resistance",
+          "SNP",
+          "amino acid substitutions"
+        ]
       }
     },
     "xref": {
