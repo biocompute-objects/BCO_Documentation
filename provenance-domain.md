@@ -84,6 +84,7 @@ The fields from the `contributor` object (described in section 2.1.10) is inheri
             {
                 "status": "approved",
                 "reviewer_comment": "The revised BCO looks fine",
+		"date": "2017-12-12T12:30:48-0400"
                 "reviewer": {
                     "name": "Eric Donaldson", 
                     "affiliation": "FDA", 
