@@ -52,17 +52,16 @@
       "type": "string",
       "title": "TODO",
       "description": "TODO",
-      "examples": [
-        "2.0"
-      ]
+      "examples": [ "2.0" ]
     },
     "platform": {
-      "type": "string",
+      "type": "array",
       "title": "TODO",
       "description": "TODO",
-      "examples": [
-        "hive"
-      ]
+      "items": {
+        "type": "string",
+        "examples": [ "hive" ]
+      }
     },
     "software_prerequisites": {
       "type": "array",

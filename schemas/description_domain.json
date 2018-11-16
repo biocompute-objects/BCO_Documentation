@@ -117,7 +117,6 @@
           "title": "TODO",
           "description": "TODO",
           "items": {
-            "$id": "#/properties/pipeline_steps/properties/tool/items",
             "type": "object",
             "title": "TODO",
             "description": "TODO",
@@ -169,7 +168,7 @@
                   "description": "TODO",
                   "required": [
                     "name",
-                    "source"
+                    "uri"
                   ],
                   "properties": {
                     "name": {
@@ -181,7 +180,7 @@
                         "Hepatitis C virus genotype 1"
                       ]
                     },
-                    "source": {
+                    "uri": {
                       "title": "FIXME: base_type_BioCompute.json defines this as a string uri, but the specs define it as an object",
                       "description": "TODO",
                       "$ref": "#/definitions/resource"
@@ -190,7 +189,6 @@
                 }
               },
               "input_list": {
-                "$id": "#/properties/pipeline_steps/properties/tool/items/properties/input_list",
                 "type": "array",
                 "title": "TODO",
                 "description": "TODO",

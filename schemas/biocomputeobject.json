@@ -5,22 +5,25 @@
   "title": "Base type for all BioCompute Object types",
   "description": "All BioCompute object types must inherit from this type in order to be compliant with BioCompute framework",
   "required": [
-    "BCO_id",
+    "bco_id",
     "type",
     "digital_signature",
     "bco_spec_version",
     "provenance_domain"
   ],
-  "definitions": {},
-  "properties": {
-    "BCO_id": {
+  "definitions": {
+    "bco_id": {
       "type": "string",
       "title": "TODO: add title and change 'should' to 'must' in description",
       "description": "A unique identifier that should be applied to each BCO instance, generated and assigned by a BCO database engine. IDs should never be reused",
-      "default": "",
       "examples": [
         "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/master/HCV1a.json"
-      ],
+      ]
+    }
+  },
+  "properties": {
+    "bco_id": {
+      "$ref": "#/definitions/bco_id",
       "readOnly": true
     },
     "type": {

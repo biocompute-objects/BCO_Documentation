@@ -156,9 +156,8 @@
       }
     },
     "derived_from": {
-      "title": "FIXME: move BCO_id from a property to a description; TODO: does $id need to be specified for a $ref?",
       "description": "value of _id field of another bio compute object",
-      "$ref": "biocomputeobject.json#/properties/BCO_id"
+      "$ref": "biocomputeobject.json#/definitions/bco_id"
     },
     "obsolete_after": {
       "type": "string",
