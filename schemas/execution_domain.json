@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
   "type": "object",
+  "title": "TODO",
   "description": "TODO",
-  "default": null,
   "required": [
     "script_access_type",
     "script",
@@ -14,6 +14,7 @@
     "domain_prerequisites",
     "env_parameters"
   ],
+  "additionalProperties": false,
   "properties": {
     "script_access_type": {
       "type": "string",
@@ -67,6 +68,7 @@
           "version",
           "uri"
         ],
+        "additionalProperties": false,
         "properties": {
           "name": {
             "type": "string",
@@ -98,6 +100,7 @@
           "name",
           "url"
         ],
+        "additionalProperties": false,
         "properties": {
           "name": {
             "type": "string",
@@ -124,6 +127,7 @@
         "key",
         "value"
       ],
+      "additionalProperties": false,
       "properties": {
         "key": {
           "type": "string",

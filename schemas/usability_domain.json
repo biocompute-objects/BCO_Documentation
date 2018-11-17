@@ -1,6 +1,7 @@
 {
   "$id": "http://biocomputeobject.org/schemas/usability_domain.json",
   "type": "array",
+  "title": "TODO",
   "description": "TODO",
   "items": {
     "type": "string",

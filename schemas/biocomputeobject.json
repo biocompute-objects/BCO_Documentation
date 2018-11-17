@@ -30,6 +30,7 @@
       "required": [
         "address"
       ],
+      "additionalProperties": false,
       "properties": {
         "address": {
           "type": "string",
@@ -47,6 +48,7 @@
       }
     }
   },
+  "additionalProperties": false,
   "properties": {
     "bco_id": {
       "$ref": "#/definitions/bco_id",
@@ -85,6 +87,8 @@
     },
     "extension_domain": {
       "$comment": "FIXME: how should schema(s) handle inherited types?",
+      "$comment": "TODO: remove 'additionalProperties: false' after handling inherited types is resolved. In the meantime it was set to avoid forgetting to write a schema for a new property because it is silently ignored during validation",
+      "additionalProperties": false,
       "properties": {
         "fhir_extension": {
           "type": "array",
@@ -92,8 +96,8 @@
             "$ref": "extension_domain/fhir_extension.json"
           }
         },
-        "github_extension": {
-          "$ref": "extension_domain/github_extension.json"
+        "scm_extension": {
+          "$ref": "extension_domain/scm_extension.json"
         }
       }
     },
