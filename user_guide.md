@@ -517,10 +517,13 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
 	                "fhir_endpoint_idsr": ["4588936"]
 	            }
 	        ],
-        "github_extension": {
-            "github_repository": "https://github.com/common-workflow-language/hive-cwl-examples", 
-            "github_URI":"https://github.com/common-workflow-language/hive-cwl-examples/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
-            }
+        "scm_extension": {
+            "scm_repository": "https://github.com/example/repo1",
+            "scm_type": "git",
+            "scm_branch": "c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21",
+            "scm_path": "workflow/hive-viral-mutation-detection.cwl",
+            "scm_preview": "https://github.com/example/repo1/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
+      }
     },
     "description_domain": {
         "keywords": [

@@ -20,15 +20,24 @@
                     }
                 }
             },
-            "github_extension": {
+            "scm_extension": {
                 "_type" : "json",
-                "_comment" : ["linkage to GitHub"],
+                "_comment" : ["linkage to Source Contorle Management software"],
                 "_multi_value" : true,
                 "_fields":{
-                    "gitHub_address": {
-                        "_type" : "uri"
+                    "scm_repository": {
+                        "_type" : "string"
                     },
-                       "github_repository":{
+                    "scm_type": {
+                        "_type" : "string"
+                    },
+                    "scm_branch": {
+                        "_type" : "string"
+                    },
+                    "scm_path": {
+                        "_type" : "string"
+                    },
+                    "scm_preview": {
                         "_type" : "string"
                     }
                 }

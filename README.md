@@ -43,7 +43,7 @@ Table of content:
     * [Provenance domain](provenance-domain.md)
     * [Usability domain](usability-domain.md)
     * [FHIR extension](extension-fhir.md)
-    * [GitHub extension](extension-github.md)
+    * [SCM extension](extension-scm.md)
     * [Description domain](description-domain.md)
     * [Execution domain](execution-domain.md)
     * [Parametric domain](parametric-domain.md)

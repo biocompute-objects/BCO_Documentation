@@ -34,7 +34,7 @@
         "embargo" : {
             "start_time": "2000-09-26T14:43:43-0400",
             "end_time": "2000-09-26T14:43:45-0400"
-		},
+        },
         "created": "2017-01-24T09:40:17-0500", 
         "modified": "2018-09-21T14:06:14-0400", 
         "contributors": [
@@ -88,10 +88,13 @@
                 "fhir_endpoint_ids": ["4588936"]
             }
         ],
-        "github_extension": {
-	        "github_repository": "https://github.com/common-workflow-language/hive-cwl-examples", 
-	        "github_address":"https://github.com/common-workflow-language/hive-cwl-examples/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
-        }
+        "scm_extension": {
+            "scm_repository": "https://github.com/example/repo1",
+            "scm_type": "git",
+            "scm_branch": "c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21",
+            "scm_path": "workflow/hive-viral-mutation-detection.cwl",
+            "scm_preview": "https://github.com/example/repo1/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
+      }
     },
     "description_domain": {
         "keywords": [

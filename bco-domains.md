@@ -19,7 +19,7 @@ Condensed example:
     "extension_domain":{
         "fhir_extension": [
         ],
-        "github_extension": {
+        "scm_extension": {
         }
     },
     "description_domain": {
@@ -71,7 +71,7 @@ The `extension_domain` is a space for a user to add more structured information 
 Specifications:
 
 * [fhir extension](extension-fhir.md)
-* [GitHub extension](extension-github.md)
+* [scm extension](extension-scm.md)
 
 
 ## 2.4 Description Domain "description_domain"
