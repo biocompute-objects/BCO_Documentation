@@ -9,11 +9,11 @@ This field provides a space for the author to define the usability domain of the
 ```json
     "usability_domain": [
 
-        "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [so:SO:0000667], and deletions [so:SO:0000045] that correlate with reduced ledipasvir [pubchem.compound:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxonomy:31646]", 
+        "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [SO:0000667], and deletions [SO:0000045] that correlate with reduced ledipasvir [pubchem.compound:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxonomy:31646]", 
 
-        "Identify treatment emergent amino acid substitutions [so:SO:0000048] that correlate with antiviral drug treatment failure", 
+        "Identify treatment emergent amino acid substitutions [SO:1000002] that correlate with antiviral drug treatment failure", 
 
-        "Determine whether the treatment emergent amino acid substitutions [so:SO:0000048] identified correlate with treatment failure involving other drugs against the same virus", 
+        "Determine whether the treatment emergent amino acid substitutions [SO:1000002] identified correlate with treatment failure involving other drugs against the same virus", 
 
         "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"]
 ]

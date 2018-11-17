@@ -78,7 +78,7 @@ This field contains a list of the databases and/or ontology IDs that are cross-r
             {
                 "namespace": "so",
                 "name": "Sequence Ontology",
-                "ids": ["0000048"], 
+                "ids": ["SO:000002", "SO:0000694", "SO:0000667", "SO:0000045"],
                 "access_time": "2018-13-02T10:15-05:00"
             },
 

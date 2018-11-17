@@ -55,9 +55,9 @@
         "license": "https://spdx.org/licenses/CC-BY-4.0.html"
     },
     "usability_domain": [
-        "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [so:SO:0000667], and deletions [so:SO:0000045] that correlate with reduced ledipasvir [pubchem.compound:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxonomy:31646]", 
-        "Identify treatment emergent amino acid substitutions [so:SO:0000048] that correlate with antiviral drug treatment failure", 
-        "Determine whether the treatment emergent amino acid substitutions [so:SO:0000048] identified correlate with treatment failure involving other drugs against the same virus", 
+        "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [SO:0000667], and deletions [SO:0000045] that correlate with reduced ledipasvir [pubchem.compound:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxonomy:31646]", 
+        "Identify treatment emergent amino acid substitutions [SO:1000002] that correlate with antiviral drug treatment failure", 
+        "Determine whether the treatment emergent amino acid substitutions [SO:1000002] identified correlate with treatment failure involving other drugs against the same virus", 
         "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"
     ],
     "extension_domain":{
@@ -117,7 +117,7 @@
             {
                 "namespace": "so",
                 "name": "Sequence Ontology",
-                "ids": ["0000048", "0000694", "0000667", "0000045"], 
+                "ids": ["SO:000002", "SO:0000694", "SO:0000667", "SO:0000045"], 
                 "access_time": "2018-13-02T10:15-05:00"
             },
             {
