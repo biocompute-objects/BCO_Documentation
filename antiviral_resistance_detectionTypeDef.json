@@ -22,7 +22,7 @@
             },
             "scm_extension": {
                 "_type" : "json",
-                "_comment" : ["linkage to Source Contorle Management software"],
+                "_comment" : ["linkage to Source Control Management software"],
                 "_multi_value" : true,
                 "_fields":{
                     "scm_repository": {
