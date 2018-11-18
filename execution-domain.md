@@ -43,7 +43,7 @@ The Script field points to an internal or external reference to a script object 
 
 ### 2.5.3 Pipeline Version "pipeline_version"
 
-This field records the version of the pipeline implementation.
+This field records the version of the pipeline.
 
 ```json
 "pipeline_version": "2.0"
