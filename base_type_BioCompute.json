@@ -111,13 +111,11 @@
                 "_comment" : ["Creative Commons licence or other licence information (text) space. The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html"]
             }
         },
-
         "usability_domain" : {
             "_type" : "string",
-            "_comment" : ["Text from biospec"],
+            "_comment" : ["This field provides a space for the author to define the usability domain of the BCO. This field is to aid in search-ability and provide a specific description of the function of the object. It is recomended that a novel use of the BCO could result in the creation of a new entry with a new usability domain."],
             "_multi_value" : true
         },
-
         "extension_domain":{
             "_type" : "json",
             "_optional" : true,
@@ -126,7 +124,6 @@
                 "This domain allows for the addition of "
             ]
         },
-
         "description_domain" : {
             "keywords" : {
                 "_type" : "string",
@@ -225,7 +222,6 @@
                 "_multi_value" : true
             }
         },
-        
         "parametric_domain" : {
             "_type" : "json",
             "_comment" : [
@@ -233,13 +229,11 @@
                 "see example in bco_type_examples.json object parametric_domain_type_definition_examples"
             ]
         },
-
         "io_domain" : {
             "input_subdomain" : {
                 "_type" : "json",
                 "_comment" : "all fields in this domain are BioCompute specific and should be defined in inherited BioCompute type"
             },
-
             "output_subdomain" : {
                 "_type" : "file",
                 "_multi_value" : true,
