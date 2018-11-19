@@ -9,7 +9,7 @@
         "review": [
             {
                 "status": "approved",
-                "reviewer_comment": ["Approved by GW staff. Waiting for approval from FDA Reviewer"],
+                "reviewer_comment": "Approved by GW staff. Waiting for approval from FDA Reviewer",
                 "reviewer": {
                     "name": "Charles Hadley King", 
                     "affiliation": "George Washington University", 
@@ -20,7 +20,7 @@
             },
             {
                 "status": "approved",
-                "reviewer_comment": ["The revised BCO looks fine"],
+                "reviewer_comment": "The revised BCO looks fine",
                 "reviewer": {
                     "name": "Eric Donaldson", 
                     "affiliation": "FDA", 
@@ -132,7 +132,7 @@
         "pipeline_steps": {
             "tool": [
                 {
-                    "step_number": "1", 
+                    "step_number": 1, 
                     "name": "HIVE-hexagon", 
                     "description": "Alignment of reads to a set of references", 
                     "version": "1.3", 
@@ -191,7 +191,7 @@
                     ]
                 },
                 {
-                    "step_number": "2", 
+                    "step_number": 2, 
                     "name": "HIVE-heptagon", 
                     "description": "variant calling", 
                     "version": "1.3", 

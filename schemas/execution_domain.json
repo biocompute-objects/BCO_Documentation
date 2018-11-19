@@ -1,0 +1,150 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
+  "type": "object",
+  "title": "TODO",
+  "description": "TODO",
+  "required": [
+    "script_access_type",
+    "script",
+    "script_driver",
+    "pipeline_version",
+    "platform",
+    "software_prerequisites",
+    "domain_prerequisites",
+    "env_parameters"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "script_access_type": {
+      "type": "string",
+      "enum": [
+        "URI",
+        "text"
+      ],
+      "description": "TODO"
+    },
+    "script": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "type": "string",
+        "description": "TODO",
+        "examples": [
+          "https://example.com/workflows/antiviral_resistance_detection_hive.py"
+        ]
+      }
+    },
+    "script_driver": {
+      "type": "string",
+      "description": "TODO",
+      "examples": [
+        "hive",
+        "cwl-runner",
+        "shell"
+      ]
+    },
+    "pipeline_version": {
+      "type": "string",
+      "description": "TODO",
+      "examples": [ "2.0" ]
+    },
+    "platform": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "type": "string",
+        "examples": [ "hive" ]
+      }
+    },
+    "software_prerequisites": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "type": "object",
+        "description": "TODO",
+        "required": [
+          "name",
+          "version",
+          "uri"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "TODO",
+            "examples": [
+              "HIVE-hexagon"
+            ]
+          },
+          "version": {
+            "type": "string",
+            "description": "TODO",
+            "examples": [
+              "babajanian.1"
+            ]
+          },
+          "uri": {
+            "$ref": "biocomputeobject.json#/definitions/uri"
+          }
+        }
+      }
+    },
+    "domain_prerequisites": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "type": "object",
+        "description": "TODO",
+        "required": [
+          "name",
+          "url"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "TODO",
+            "examples": [
+              "HIVE"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "description": "TODO",
+            "default": "",
+            "examples": [
+              "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=login"
+            ]
+          }
+        }
+      }
+    },
+    "env_parameters": {
+      "type": "object",
+      "description": "TODO",
+      "required": [
+        "key",
+        "value"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "TODO",
+          "default": "",
+          "examples": [
+            "HOSTTYPE"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "description": "TODO",
+          "examples": [
+            "x86_64-linux"
+          ]
+        }
+      }
+    }
+  }
+}
