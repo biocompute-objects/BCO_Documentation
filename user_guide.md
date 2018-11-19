@@ -264,13 +264,11 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "_comment" : ["Creative Commons licence or other licence information (text) space. The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html"]
             }
         },
-
         "usability_domain" : {
             "_type" : "string",
             "_comment" : ["Text from biospec"],
             "_multi_value" : true
         },
-
         "extension_domain":{
             "_type" : "json",
             "_optional" : true,
@@ -279,7 +277,6 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "This domain allows for the addition of "
             ]
         },
-
         "description_domain" : {
             "keywords" : {
                 "_type" : "string",
@@ -447,7 +444,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
                 }
             }
         ],
-        "derived_from" : null,
+        "derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
         "obsolete_after" : "2118-09-26T14:43:43-0400",
         "embargo" : {
             "start_time": "2000-09-26T14:43:43-0400",
