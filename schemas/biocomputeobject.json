@@ -15,9 +15,8 @@
     "bco_id": {
       "type": "string",
       "description": "A unique identifier that should be applied to each BCO instance, generated and assigned by a BCO database engine. IDs should never be reused",
-      "examples": [
-        "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/master/HCV1a.json"
-      ]
+      "$comment": "FIXME: the URL references the master branch instead of a commit hash; branches are moving targets",
+      "examples": [ "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/master/HCV1a.json" ]
     },
     "inherited": {
       "$comment": "FIXME: how should schema(s) handle inherited types?",
@@ -27,10 +26,8 @@
     "uri": {
       "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
       "type": "object",
-      "required": [
-        "address"
-      ],
       "additionalProperties": false,
+      "required": [ "address" ],
       "properties": {
         "address": {
           "type": "string",
@@ -57,27 +54,22 @@
     "type": {
       "type": "string",
       "description": "TODO",
-      "examples": [
-        "antiviral_resistance_detection"
-      ],
+      "examples": [ "antiviral_resistance_detection" ],
       "readOnly": true
     },
     "digital_signature": {
       "type": "string",
       "description": "Digital signature of BioCompute Object by Authority",
-      "examples": [
-        "905d7fce3f3ac64c8ea86f058ca71658"
-      ],
+      "examples": [ "905d7fce3f3ac64c8ea86f058ca71658" ],
       "readOnly": true,
       "pattern": "^([A-Za-z0-9]+)$"
     },
     "bco_spec_version": {
       "type": "string",
       "description": "Version of the BCO specification used to define this document",
-      "examples": [
-        "v1.2"
-      ],
-      "readOnly": true
+      "examples": [ "https://w3id.org/biocompute/spec/v1.2" ],
+      "readOnly": true,
+      "format": "uri"
     },
     "provenance_domain": {
       "$ref": "provenance_domain.json"

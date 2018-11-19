@@ -87,13 +87,6 @@
         "HCV1a ledipasvir resistance SNP detection"
       ]
     },
-    "structured_name": {
-      "type": "string",
-      "description": "Templated computable text field designed to represent a BCO instance name in visible interfaces. This field can refer to other fields within the same or other objects.",
-      "examples": [
-        "HCV1a [taxonomy:31646] ledipasvir [pubchem.compound:67505836] resistance SNP [so:0000694] detection"
-      ]
-    },
     "version": {
       "$comment": "TODO: add the semantic version recommendation to the description",
       "type": "string",
