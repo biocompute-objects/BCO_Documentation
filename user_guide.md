@@ -198,15 +198,6 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "_type" :"string",
                 "_comment" : "Public searchable name for BioCompute Object"
             },
-            "structured_name" :{
-                "_type" :"string",
-                "_optional" : true,
-                "_comment" :[
-                    "templated computable text field designed to represent a BCO instance name in visible interfaces.",
-                    "This field can refer to other fields within the same or other objects."
-                ]
-
-            },
             "version" : {
                 "_type" : "version",
                 "_comment" : "version of this BioCompute Object"
@@ -432,7 +423,6 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
     "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
     "provenance_domain": {
         "name": "HCV1a ledipasvir resistance SNP detection", 
-        "structured_name": "HCV1a [taxonomy:31646] ledipasvir [pubchem.compound:67505836] resistance SNP [so:0000694] detection",
         "version": "2.9",
         "review": [
             {

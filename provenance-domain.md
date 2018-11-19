@@ -9,7 +9,6 @@ Condensed example:
 ```json
 "provenance_domain": {
         "name": "HCV1a ledipasvir resistance SNP detection", 
-        "structured_name": "HCV1a [taxonomy:31646] ledipasvir [pubchem.compound:67505836] resistance SNP [so:0000694] detection",
         "version": "2.9",
         "review": [
         ],
@@ -33,18 +32,7 @@ Name for the BCO. This public field should take free text value using common bio
 "name": "HCV1a ledipasvir resistance SNP detection"
 ```
 
-### 2.1.2  Structured name "structured_name"
-
-Structured name is an optional templated computable text field designed to represent a BCO instance name in visible interfaces. This field can refer to other fields within the same or other objects. For example, a string like "HCV1a [taxonomy:$taxonomy] mutation detection" will be visualized as "HCV1a [taxonomy:31646] mutation detection" assuming the BCO has a field called "taxonomy" with value “31646”.
-
-```json
-"structured_name": "HCV1a [taxonomy:$taxonomy] mutation detection", 
-"taxonomy": "31646",
-```
-
-=> `HCV1a [taxonomy:31646] mutation detection`
-
-### 2.1.3 Version "version"
+### 2.1.2 Version "version"
 
 Records the versioning of this BCO instance object. [Semantic Versioning 2.0.0](https://semver.org/#semantic-versioning-200) describes versioning as follows: 
 
