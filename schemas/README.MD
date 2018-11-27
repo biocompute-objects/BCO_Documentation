@@ -2,8 +2,8 @@ Following up on #5, this change introduces a draft BCO JSON schema.
  
  * [x]  Use [HCV1a.json](https://github.com/biocompute-objects/BCO_Specification/blob/cb06839d482b4b645eadf9160c48cb8a2162475f/HCV1a.json) to generate an initial draft with https://www.jsonschema.net
  * [x]  Resolve inconsistencies with [base_type_BioCompute.json](https://github.com/biocompute-objects/BCO_Specification/blob/cb06839d482b4b645eadf9160c48cb8a2162475f/base_type_BioCompute.json)
- * [ ]  Resolve inconsistencies with *.md file
- * [ ]  Review, in particular, the following nebulous domains: error_domain, extensions_domain, io_domain, and parameters_domain
+ * [x]  Resolve inconsistencies with *.md file
+ * [x]  Review, in particular, the following nebulous domains: error_domain, extensions_domain, io_domain, and parameters_domain
  
  The following script was used to test the schema against [HCV1a.json](https://github.com/biocompute-objects/BCO_Specification/blob/cb06839d482b4b645eadf9160c48cb8a2162475f/HCV1a.json):
  
