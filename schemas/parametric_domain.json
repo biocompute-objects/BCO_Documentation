@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://biocomputeobject.org/schemas/parametric_domain",
+    "type": "array",
+    "title": "parametric_domain",
+	"description": "TODO",
+    "minItems": 1,
+    "required": [
+        "param",
+        "value",
+        "step"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "param": {
+            "type": "string",
+            "title": "param",
+            "description": "TODO",
+            "examples": [
+                "seed"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "value": {
+            "type": "string",
+            "description": "TODO",
+            "title": "value",
+            "examples": [
+                "14"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "step": {
+            "type": "string",
+            "title": "step",
+            "description": "TODO",
+            "examples": [
+                "1"
+            ],
+            "pattern": "^(.*)$"
+        }
+    }
+}
