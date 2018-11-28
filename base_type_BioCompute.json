@@ -222,7 +222,7 @@
                 "_multi_value" : true
             }
         },
-        "parametric_domain" : {
+        "external_data_endpoints" : {
             "_type" : "json",
             "_comment" : [
                 "all fields in this domain should be defined in inheriting BioCompute subtypes",

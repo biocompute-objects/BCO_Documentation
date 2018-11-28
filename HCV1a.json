@@ -241,7 +241,7 @@
                 }
             }
         ],
-        "domain_prerequisites": [
+        "external_data_endpoints": [
             {
                 "name": "HIVE", 
                 "url": "http://example.com/dna.cgi?cmd=login"

@@ -11,7 +11,7 @@
     "pipeline_version",
     "platform",
     "software_prerequisites",
-    "domain_prerequisites",
+    "external_data_endpoints",
     "env_parameters"
   ],
   "additionalProperties": false,
@@ -90,7 +90,7 @@
         }
       }
     },
-    "domain_prerequisites": {
+    "external_data_endpoints": {
       "type": "array",
       "description": "TODO",
       "items": {

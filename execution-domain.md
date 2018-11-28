@@ -18,7 +18,7 @@ Condensed example:
         "platform": "hive", 
         "software_prerequisites": [
         ],
-        "domain_prerequisites": [
+        "external_data_endpoints": [
         ], 
         "env_parameters": {
         }
@@ -91,7 +91,7 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
         ]
 ```
 
-### 2.5.7 Domain Prerequisites "domain_prerequisites"
+### 2.5.7 External Data Endpoints "external_data_endpoints"
 
 An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. 
 
@@ -100,7 +100,7 @@ The key `url` defines an endpoint to be accessed. If the _path_ of the URL is `/
 The key `name` should describe the service that is accessed.
 
 ```json
-"domain_prerequisites": [
+"external_data_endpoints": [
 
     {"url": "protocol://domain:port/application/path","name": "generic name"},
 

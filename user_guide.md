@@ -359,7 +359,7 @@ The second layer is constructed with objects from first layer, producing a deriv
                     "_optional" : true
                 }
             },
-            "domain_prerequisites" : {
+            "external_data_endpoints" : {
                 "_multi_value" : true,
                 "name" : {
                     "_type" : "string"
@@ -661,7 +661,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
                 }
             }
         ],
-        "domain_prerequisites": [
+        "external_data_endpoints": [
             {
                 "name": "HIVE", 
                 "url": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=login"
