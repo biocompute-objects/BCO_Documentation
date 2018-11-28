@@ -62,29 +62,30 @@
     "extension_domain":{
         "fhir_extension": [
             {
-                "fhir_endpoint_resource": "Sequence",
-                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
-                "fhir_endpoint_ids": ["21376"]
-            },
-            {
-                "fhir_endpoint_resource": "DiagnosticReport",
-                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
-                "fhir_endpoint_ids": ["6288583"]
-            },
-            {
-                "fhir_endpoint_resource": "ProcedureRequest",
-                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
-                "fhir_endpoint_ids": ["25544"]
-            },
-            {
-                "fhir_endpoint_resource": "Observation",
-                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
-                "fhir_endpoint_ids": ["92440"]
-            },
-            {
-                "fhir_endpoint_resource": "FamilyMemberHistory",
-                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
-                "fhir_endpoint_ids": ["4588936"]
+                "fhir_endpoint": "http://fhirtest.uhn.ca/baseDstu3",
+                "fhir_version": "3",
+                "fhir_resources": [
+                    {
+                        "fhir_resource": "Sequence",
+                        "fhir_id": "21376"
+                    },
+                    {
+                        "fhir_resource": "DiagnosticReport",
+                        "fhir_id": "6288583"
+                    },
+                    {
+                        "fhir_resource": "ProcedureRequest",
+                        "fhir_id": "25544"
+                    },
+                    {
+                        "fhir_resource": "Observation",
+                        "fhir_id": "92440"
+                    },
+                    {
+                        "fhir_resource": "FamilyMemberHistory",
+                        "fhir_id": "4588936"
+                    }
+                ]
             }
         ],
         "scm_extension": {
