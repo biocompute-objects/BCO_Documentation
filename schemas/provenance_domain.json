@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://biocomputeobject.org/schemas/provenance_domain.json",
   "type": "object",
-  "title": "TODO",
-  "description": "TODO",
+  "title": "Provenance domain",
+  "description": "Information of origin of data, its characteristics, and practical application",
   "required": [
     "name",
     "version",
@@ -16,7 +16,8 @@
   "definitions": {
     "contributor": {
       "type": "object",
-      "description": "TODO: recommend some piece of information regarding contributor's identity be required",
+      "description": "Contributor identifier and type of contribution (determined according to PAV ontology) is required",
+      "_minProperties": "1" 
       "required": [
         "contribution"
       ],
@@ -31,14 +32,14 @@
         },
         "affiliation": {
           "type": "string",
-          "description": "TODO",
+          "description": "Organization the particular contributor is connected to",
           "examples": [
             "George Washington University"
           ]
         },
         "email": {
           "type": "string",
-          "description": "TODO",
+          "description": "electronic means for identification and communication purposes",
           "examples": [
             "hadley_king@gwu.edu"
           ],
@@ -64,7 +65,7 @@
               "retrievedFrom",
               "sourceAccessedBy"
             ],
-            "description": "TODO: extract as definition"
+            "description": "type of contribution determined according to PAV ontology"
           }
         },
         "orcid": {
@@ -88,16 +89,16 @@
       ]
     },
     "version": {
-      "$comment": "TODO: add the semantic version recommendation to the description",
       "type": "string",
-      "description": "BioCompute Object Version",
+      "description": "BioCompute Object Version uses semantic versioning as recommended by Semantic Versioning 2.0.0",
+      "reference": "https://semver.org/",
       "examples": [
         "2.9"
       ]
     },
     "review": {
       "type": "array",
-      "description": "Describes the status of an object in the review process. The unreviewed flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The in-review flag indicates that verification is underway. The approved flag indicates that the BCO has been verified and reviewed. The suspended flag indicates an object that was once valid is no longer considered valid. The rejected flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the contributor object (described in section 2.1.10) is inherited to populate the reviewer section.",
+      "description": "Describes the current verification status of an object in the review process. The unreviewed flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The in-review flag indicates that verification is underway. The approved flag indicates that the BCO has been verified and reviewed. The suspended flag indicates an object that was once valid is no longer considered valid. The rejected flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the contributor object (described in section 2.1.10) is inherited to populate the reviewer section.",
       "items": {
         "type": "object",
         "description": "TODO",
@@ -143,22 +144,22 @@
     },
     "obsolete_after": {
       "type": "string",
-      "description": "TODO",
+      "description": "If applicable, the expiration date of the object",
       "format": "date-time"
     },
     "embargo": {
       "type": "object",
-      "description": "TODO",
+      "description": "If applicable, the period of time that the object is not public",
       "additionalProperties": false,
       "properties": {
         "start_time": {
           "type": "string",
-          "description": "TODO",
+          "description": "The start time specified for the embargo",
           "format": "date-time"
         },
         "end_time": {
           "type": "string",
-          "description": "TODO",
+          "description": "The end time specified for the embargo",
           "format": "date-time"
         }
       }
