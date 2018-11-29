@@ -256,73 +256,65 @@
             "value" : "x86_64-linux"
         }
     }, 
-    "parametric_domain": {
-        "HIVE-hexagon" : { 
-            "seed": 14,
-            "minimum_match_len": 66, 
-            "divergence_threshold_percent": 0.30
-        },
-        "HIVE-heptagon": {
-            "minimum_coverage": 15, 
-            "freq_cutoff": 0.10
-        } 
-    }, 
+	"parametric_domain": [
+	    {"param": "seed", "value": "14", "step": "1"},
+	    {"param":"minimum_match_len", "value": "66", "step": "1"},
+	    {"param": "divergence_threshold_percent", "value": 0.30, "step": "1"},
+	    {"param": "minimum_coverage", "value": "15", "step": "2"},
+	    {"param": "freq_cutoff", "value": 0.10, "step": "2"}
+	], 
     "io_domain": {
-        "input_subdomain": {
-            "subject": [
-                {
-                    "name": "Hepatitis C virus genotype 1", 
-                    "uri": {
-                        "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
-                        "access_time": "2017-01-24T09:40:17-0500"
-                    }
-                }, 
-                {
-                    "name": "Hepatitis C virus type 1b complete genome", 
-                    "uri": {
-                        "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
-                        "access_time": "2017-01-24T09:40:17-0500"
-                    }
-                }, 
-                {
-                    "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                    "uri": {
-                        "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
-                        "access_time": "2017-01-24T09:40:17-0500"
-                    }
-                }, 
-                {
-                    "name": "Hepatitis C virus clone J8CF, complete genome", 
-                    "uri": {
-                        "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
-                        "access_time": "2017-01-24T09:40:17-0500"
-                    }
-                }, 
-                {
-                    "name": "Hepatitis C virus S52 polyprotein gene", 
-                    "uri": {
-                        "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
-                        "access_time": "2017-01-24T09:40:17-0500"
-                    }
+        "input_subdomain": [
+            {
+                "name": "Hepatitis C virus genotype 1", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                    "access_time": "2017-01-24T09:40:17-0500"
                 }
-            ],
-            "query": [
-                {
-                    "name": "HCV1a_drug_resistant_sample0001-01", 
-                    "uri": {
-                        "address": "http://example.com/nuc-read/514682",
-                        "access_time": "2017-01-24T09:40:17-0500"
-                    }
-                }, 
-                {
-                    "name": "HCV1a_drug_resistant_sample0001-02", 
-                    "uri": {
-                        "address": "http://example.com/nuc-read/514683",
-                        "access_time": "2017-01-24T09:40:17-0500"
-                    }
+            }, 
+            {
+                "name": "Hepatitis C virus type 1b complete genome", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
+                    "access_time": "2017-01-24T09:40:17-0500"
                 }
-            ]
-        }, 
+            }, 
+            {
+                "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "name": "Hepatitis C virus clone J8CF, complete genome", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "name": "Hepatitis C virus S52 polyprotein gene", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            },
+            {
+                "name": "HCV1a_drug_resistant_sample0001-01", 
+                "uri": {
+                    "address": "http://example.com/nuc-read/514682",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "name": "HCV1a_drug_resistant_sample0001-02", 
+                "uri": {
+                    "address": "http://example.com/nuc-read/514683",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }
+        ], 
         "output_subdomain": [
             {
                 "mediatype": "text/csv", 
@@ -330,7 +322,7 @@
                     "address": "http://example.com/data/514769/dnaAccessionBased.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
-            }, 
+            },
             {
                 "mediatype": "text/csv", 
                 "uri": {
@@ -339,7 +331,7 @@
                 }
             }
         ]
-    }, 
+    },
     "error_domain": {
         "empirical_error": {
             "false_negative_alignment_hits": "<0.0010", 
