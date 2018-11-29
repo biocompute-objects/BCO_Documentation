@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://biocomputeobject.org/schemas/provenance_domain.json",
+  "type": "object",
+  "title": "TODO",
+  "description": "TODO",
+  "required": [
+    "name",
+    "version",
+    "embargo",
+    "created",
+    "modified",
+    "contributors",
+    "license"
+  ],
+  "definitions": {
+    "contributor": {
+      "type": "object",
+      "description": "TODO: recommend some piece of information regarding contributor's identity be required",
+      "required": [
+        "contribution"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "TODO",
+          "examples": [
+            "Charles Hadley King"
+          ]
+        },
+        "affiliation": {
+          "type": "string",
+          "description": "TODO",
+          "examples": [
+            "George Washington University"
+          ]
+        },
+        "email": {
+          "type": "string",
+          "description": "TODO",
+          "examples": [
+            "hadley_king@gwu.edu"
+          ],
+          "format": "email"
+        },
+        "contribution": {
+          "type": "array",
+          "description": "taken from https://doi.org/10.1186/2041-1480-4-37",
+          "items": {
+            "type": "string",
+            "enum": [
+              "authoredBy",
+              "contributedBy",
+              "createdAt",
+              "createdBy",
+              "createdWith",
+              "curatedBy",
+              "derivedFrom",
+              "importedBy",
+              "importedFrom",
+              "providedBy",
+              "retrievedBy",
+              "retrievedFrom",
+              "sourceAccessedBy"
+            ],
+            "description": "TODO: extract as definition"
+          }
+        },
+        "orcid": {
+          "type": "string",
+          "description": "NOTE: ignored base_type_BioCompute.json defining this as required",
+          "examples": [
+            "https://orcid.org/0000-0003-1409-4549"
+          ],
+          "format": "uri"
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Public searchable name for BioCompute Object",
+      "examples": [
+        "HCV1a ledipasvir resistance SNP detection"
+      ]
+    },
+    "version": {
+      "$comment": "TODO: add the semantic version recommendation to the description",
+      "type": "string",
+      "description": "BioCompute Object Version",
+      "examples": [
+        "2.9"
+      ]
+    },
+    "review": {
+      "type": "array",
+      "description": "Describes the status of an object in the review process. The unreviewed flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The in-review flag indicates that verification is underway. The approved flag indicates that the BCO has been verified and reviewed. The suspended flag indicates an object that was once valid is no longer considered valid. The rejected flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the contributor object (described in section 2.1.10) is inherited to populate the reviewer section.",
+      "items": {
+        "type": "object",
+        "description": "TODO",
+        "required": [
+          "status",
+          "reviewer"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "reviewer": {
+            "$ref": "#/definitions/contributor",
+            "description": "TODO"
+          },
+          "reviewer_comment": {
+            "type": "string",
+            "description": "TODO",
+            "examples": [
+              "Approved by GW staff. Waiting for approval from FDA Reviewer"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "unreviewed",
+              "in-review",
+              "approved",
+              "rejected",
+              "suspended"
+            ],
+            "description": "Current verification status of the BioCompute Object",
+            "default": "unreviewed"
+          }
+        }
+      }
+    },
+    "derived_from": {
+      "description": "value of _id field of another bio compute object",
+      "$ref": "biocomputeobject.json#/definitions/bco_id"
+    },
+    "obsolete_after": {
+      "type": "string",
+      "description": "TODO",
+      "format": "date-time"
+    },
+    "embargo": {
+      "type": "object",
+      "description": "TODO",
+      "additionalProperties": false,
+      "properties": {
+        "start_time": {
+          "type": "string",
+          "description": "TODO",
+          "format": "date-time"
+        },
+        "end_time": {
+          "type": "string",
+          "description": "TODO",
+          "format": "date-time"
+        }
+      }
+    },
+    "created": {
+      "type": "string",
+      "description": "Date and time of the BioCompute Object creation",
+      "readOnly": true,
+      "format": "date-time"
+    },
+    "modified": {
+      "type": "string",
+      "description": "Date and time of the BioCompute Object was last modified",
+      "readOnly": true,
+      "format": "date-time"
+    },
+    "contributors": {
+      "type": "array",
+      "description": "TODO",
+      "items": {
+        "$ref": "#/definitions/contributor"
+      }
+    },
+    "license": {
+      "type": "string",
+      "description": "Creative Commons licence or other licence information (text) space. The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html",
+      "examples": [
+        "https://spdx.org/licenses/CC-BY-4.0.html"
+      ]
+    }
+  }
+}

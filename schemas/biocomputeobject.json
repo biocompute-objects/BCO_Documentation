@@ -103,7 +103,7 @@
       "$ref": "parametric_domain.json"
     },
     "io_domain": {
-      "$ref": "execution_domain.json"
+      "$ref": "io_domain.json"
     },
     "error_domain": {
       "type": "object",

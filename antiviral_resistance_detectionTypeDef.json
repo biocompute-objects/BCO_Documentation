@@ -8,27 +8,36 @@
                 "_comment" : ["linkage to FHIR"],
                 "_multi_value" : true,
                 "_fields":{
-                    "FHIRendpoint_Resource": {
+                    "fhir_endpoint_resource": {
                         "_type" : "string"
                     },
-                    "FHIRendpoint_URL": {
+                    "fhir_endpoint_url": {
                         "_type" : "string"
                     },
-                    "FHIRendpoint_Ids": {
+                    "fhir_endpoint_ids": {
                         "_type" : "string",
                         "_multi_value" : true
                     }
                 }
             },
-            "github_extension": {
+            "scm_extension": {
                 "_type" : "json",
-                "_comment" : ["linkage to GitHub"],
+                "_comment" : ["linkage to Source Control Management software"],
                 "_multi_value" : true,
                 "_fields":{
-                    "gitHub_URI": {
-                        "_type" : "uri"
+                    "scm_repository": {
+                        "_type" : "string"
                     },
-                       "github_repository":{
+                    "scm_type": {
+                        "_type" : "string"
+                    },
+                    "scm_branch": {
+                        "_type" : "string"
+                    },
+                    "scm_path": {
+                        "_type" : "string"
+                    },
+                    "scm_preview": {
                         "_type" : "string"
                     }
                 }
@@ -76,7 +85,7 @@
                             "name":{
                                 "_type" : "string"
                             },
-                            "source": {
+                            "uri": {
                                 "_type" : "uri"
                             }
                         }
@@ -88,7 +97,7 @@
                             "name":{
                                 "_type" : "string"
                             },
-                            "source": {
+                            "uri": {
                                 "_type" : "uri"
                             }
                         }

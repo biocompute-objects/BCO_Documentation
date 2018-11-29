@@ -22,7 +22,7 @@
     },
     "version": {
         "_type": "string",
-        "_comment": "suggestion major[.minor[.build_nunber]]"
+        "_comment": "suggestion MAJOR.MINOR.PATCH as described at https://semver.org/"
     }, 
     "email":{ 
         "_type": "string",
@@ -36,15 +36,6 @@
         },
         "value" : {
             "_type" : "string"
-        }
-    },
-    "keymap" : {
-        "key" : {
-            "_type" : "string"
-        },
-        "value" : {
-            "_type" : "string",
-            "_multi_value" : true
         }
     },
     "uri": {

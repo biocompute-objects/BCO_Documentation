@@ -50,10 +50,6 @@ When defining a field in a data type, one can place any number of constraints on
             "_type" : "string"
         }
     },
-    "keymap" : {
-        "key" : {
-            "_type" : "string"
-        },
         "value" : {
             "_type" : "string",
             "_multi_value" : true
@@ -171,7 +167,7 @@ The second layer is constructed with objects from first layer, producing a deriv
             "List of fields of the BioCompute Object type"
         ],
 
-        "BCO_id":{
+        "bco_id":{
             "_type" : "string",
             "_read_only" : true,
             "_comment" : [
@@ -202,15 +198,6 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "_type" :"string",
                 "_comment" : "Public searchable name for BioCompute Object"
             },
-            "structured_name" :{
-                "_type" :"string",
-                "_optional" : true,
-                "_comment" :[
-                    "templated computable text field designed to represent a BCO instance name in visible interfaces.",
-                    "This field can refer to other fields within the same or other objects."
-                ]
-
-            },
             "version" : {
                 "_type" : "version",
                 "_comment" : "version of this BioCompute Object"
@@ -236,7 +223,6 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "reviewer_comment" : {
                     "_type" : "string",
                     "_optional" : true,
-                    "_multi_value" : true
                 }
             },
             "derived_from": {
@@ -278,13 +264,11 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "_comment" : ["Creative Commons licence or other licence information (text) space. The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html"]
             }
         },
-
         "usability_domain" : {
             "_type" : "string",
-            "_comment" : ["Text from biospec"],
+            "_comment" : ["This field provides a space for the author to define the usability domain of the BCO. This field is to aid in search-ability and provide a specific description of the function of the object. It is recomended that a novel use of the BCO could result in the creation of a new entry with a new usability domain."],
             "_multi_value" : true
         },
-
         "extension_domain":{
             "_type" : "json",
             "_optional" : true,
@@ -293,10 +277,9 @@ The second layer is constructed with objects from first layer, producing a deriv
                 "This domain allows for the addition of "
             ]
         },
-
         "description_domain" : {
             "keywords" : {
-                "_type" : "keymap",
+                "_type" : "string",
                 "_multi_value" : true
             },
             "xref" : {
@@ -328,7 +311,7 @@ The second layer is constructed with objects from first layer, producing a deriv
                             "_type" :"string",
                             "_comment" : ["Public searchable name for reference or prereq"]
                         },
-                        "source":{
+                        "uri":{
                             "_type" : "uri"
                         }
                     },
@@ -376,7 +359,7 @@ The second layer is constructed with objects from first layer, producing a deriv
                     "_optional" : true
                 }
             },
-            "domain_prerequisites" : {
+            "external_data_endpoints" : {
                 "_multi_value" : true,
                 "name" : {
                     "_type" : "string"
@@ -431,13 +414,12 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
 
 ```JSON
 {
-    "BCO_id": "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/hadley_local/HCV1a.json",
+    "bco_id": "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/hadley_local/HCV1a.json",
     "type": "antiviral_resistance_detection", 
     "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658",
-    "bco_spec_version" : "v1.2",
+    "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
     "provenance_domain": {
         "name": "HCV1a ledipasvir resistance SNP detection", 
-        "structured_name": "HCV1a [taxonomy:31646] ledipasvir [pubchem.compound:67505836] resistance SNP [so:0000694] detection",
         "version": "2.9",
         "review": [
             {
@@ -462,8 +444,8 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
                 }
             }
         ],
-        "derived_from" : null,
-        "obsolete" : "2118-09-26T14:43:43-0400",
+        "derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
+        "obsolete_after" : "2118-09-26T14:43:43-0400",
         "embargo" : {
             "start_time": "2000-09-26T14:43:43-0400",
             "end_time": "2000-09-26T14:43:45-0400"
@@ -488,55 +470,55 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
         "license": "https://spdx.org/licenses/CC-BY-4.0.html"
     },
     "usability_domain": [
-        "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [so:SO:0000667], and deletions [so:SO:0000045] that correlate with reduced ledipasvir [pubchem.compound:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxonomy:31646]", 
-        "Identify treatment emergent amino acid substitutions [so:SO:0000048] that correlate with antiviral drug treatment failure", 
-        "Determine whether the treatment emergent amino acid substitutions [so:SO:0000048] identified correlate with treatment failure involving other drugs against the same virus", 
-        "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"
+        "Identify baseline single nucleotide polymorphisms (SNPs)[SO:0000694], (insertions)[SO:0000667], and (deletions)[SO:0000045] that correlate with reduced (ledipasvir)[pubchem.compound:67505836] antiviral drug efficacy in (Hepatitis C virus subtype 1)[taxonomy:31646]", 
+        "Identify treatment emergent amino acid (substitutions)[SO:1000002] that correlate with antiviral drug treatment failure", 
+        "Determine whether the treatment emergent amino acid (substitutions)[SO:1000002] identified correlate with treatment failure involving other drugs against the same virus", 
+        "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"]
 	],
     "extension_domain":{
 	    "extension_domain":{
-	        "FHIR_extension": [
+	        "fhir_extension": [
 	            {
-	                "FHIRendpoint_Resource": "Sequence",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["21376"]
+	                "fhir_endpoint_resource": "Sequence",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["21376"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "DiagnosticReport",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["6288583"]
+	                "fhir_endpoint_resource": "DiagnosticReport",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["6288583"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "ProcedureRequest",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["25544"]
+	                "fhir_endpoint_resource": "ProcedureRequest",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["25544"]
 	            },
 	            {
-	                "FHIRendpoint_Resource": "Observation",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["92440"]
+	                "fhir_endpoint_resource": "Observation",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_ids": ["92440"]
 	            },
 	            {
-	                "FHIRendpoint_ResourceType": "FamilyMemberHistory",
-	                "FHIRendpoint_URL": "http://fhirtest.uhn.ca/baseDstu3",
-	                "FHIRendpoint_Ids": ["4588936"]
+	                "fhir_endpoint_resource": "FamilyMemberHistory",
+	                "fhir_endpoint_url": "http://fhirtest.uhn.ca/baseDstu3",
+	                "fhir_endpoint_idsr": ["4588936"]
 	            }
 	        ],
-        "github_extension": {
-            "github_repository": "https://github.com/common-workflow-language/hive-cwl-examples", 
-            "github_URI":"https://github.com/common-workflow-language/hive-cwl-examples/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
-            }
+        "scm_extension": {
+            "scm_repository": "https://github.com/example/repo1",
+            "scm_type": "git",
+            "scm_branch": "c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21",
+            "scm_path": "workflow/hive-viral-mutation-detection.cwl",
+            "scm_preview": "https://github.com/example/repo1/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
+      }
     },
     "description_domain": {
         "keywords": [
-            {
-                "key": "search terms",
-                "value": [
-                    "HCV1a", 
-                    "Ledipasvir", 
-                    "antiviral resistance", 
-                    "SNP", 
-                    "amino acid substitutions"
+                 "HCV1a", 
+                 "Ledipasvir", 
+                 "antiviral resistance", 
+                 "SNP", 
+                 "amino acid substitutions"
                 ]
             }
         ], 
@@ -556,7 +538,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
             {
                 "namespace": "so",
                 "name": "Sequence Ontology",
-                "ids": ["0000048"], 
+                "ids": ["SO:000002", "SO:0000694", "SO:0000667", "SO:0000045"],
                 "access_time": "2018-13-02T10:15-05:00"
             },
             {
@@ -576,35 +558,35 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
                     "prerequisite": [
                         {
                             "name": "Hepatitis C virus genotype 1", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus type 1b complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus clone J8CF, complete genome", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus S52 polyprotein gene", 
-                            "source": {
+                            "uri": {
                                 "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
@@ -679,7 +661,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
                 }
             }
         ],
-        "domain_prerequisites": [
+        "external_data_endpoints": [
             {
                 "name": "HIVE", 
                 "url": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=login"
@@ -718,35 +700,35 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
             "subject": [
                 {
                     "name": "Hepatitis C virus genotype 1", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus type 1b complete genome", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus clone J8CF, complete genome", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "Hepatitis C virus S52 polyprotein gene", 
-                    "source": {
+                    "uri": {
                         "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
@@ -755,14 +737,14 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
             "query": [
                 {
                     "name": "HCV1a_drug_resistant_sample0001-01", 
-                    "source": {
+                    "uri": {
                         "address": "https://hive.biochemistry.gwu.edunuc-read/514682",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 }, 
                 {
                     "name": "HCV1a_drug_resistant_sample0001-02", 
-                    "source": {
+                    "uri": {
                         "address": "https://hive.biochemistry.gwu.edunuc-read/514683",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
@@ -772,7 +754,7 @@ Three of the domains in a BioCompute Object become immutable upon assignment of 
         "output_subdomain": [
             {
                "mediatype": "text/csv", 
-                "source": { 
+                "uri": { 
                     "address": "https://hive.biochemistry.gwu.edudata/514769/dnaAccessionBased.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
@@ -810,7 +792,7 @@ BioCompute data types are defined as aggregates of the critical fields organized
 7) the input and output domains
 8) the error domain. 
 
-At the time of submission to the BioCompute Object database an instance of BCO type is created, populated with actual values compliant with the data type definitions and assigned a unique identifier. The object could then be assigned a unique digital signature and a unique digital object identifier. 
+At the time of submission to the BioCompute Object database values are validated for compliance with data type definitions and an uniquely identified instance of BCO type is created.  The object could then be assigned a unique digital signature and a unique digital object identifier. 
 
 Three of the domains in a BioCompute Object become immutable upon assignment of the digital signature: 
    1) the Parametric Domain
