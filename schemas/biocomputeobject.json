@@ -100,38 +100,10 @@
       "$ref": "execution_domain.json"
     },
     "parametric_domain": {
-      "$ref": "#/definitions/inherited"
+      "$ref": "parametric_domain.json"
     },
     "io_domain": {
-      "type": "object",
-      "description": "TODO",
-      "properties": {
-        "input_subdomain": {
-          "$ref": "#/definitions/inherited"
-        },
-        "output_subdomain": {
-          "type": "array",
-          "items": {
-            "$comment": "TODO: extract as 'file' definition. Refer to the primitives.json. It was not extracted for lack of multiple reference to the type",
-            "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/base_type_BioCompute.json#L252-L256",
-            "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L86-L94",
-            "type": "object",
-            "required": [
-              "uri"
-            ],
-            "properties": {
-              "uri": {
-                "$ref": "#/definitions/uri"
-              },
-              "mediatype": {
-                "$comment": "TODO: how are values validated?",
-                "type": "string",
-                "description": "https://www.iana.org/assignments/media-types/media-types.xhtml"
-              }
-            }
-          }
-        }
-      }
+      "$ref": "io_domain.json"
     },
     "error_domain": {
       "type": "object",
