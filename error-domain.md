@@ -9,7 +9,7 @@ The **empirical** error subdomain contains empirically determined values such as
 
 The **algorithmic** subdomain is descriptive of errors that originate by fuzziness of the algorithms, driven by stochastic processes, in dynamically parallelized multi-threaded executions, or in machine learning methodologies where the state of the machine can affect the outcome. This can be measured by taking a random subset of the data and re-running the analysis, or using some rigorous mathematical modeling of the accumulated errors and providing confidence values. For example, bootstrapping is frequently used with stochastic simulation based algorithms to accumulate sets of outcomes and estimate statistically significant variability for the results.
 
-For data integration BCOs used to develop knowledgebases, the error domain can, for example, contain rules that determine inclusion in the knowledgebase and data objects that pass and fail the set of rules.
+For data integration BCOs used to develop knowledgebases, the error domain can, for example, contain rules that determine inclusion in the knowledgebase and reference to data that pass and fail the set of rules.
 
 The possible keys within each subdomains are workflow-specific, free text which should be readable for a human.
 
