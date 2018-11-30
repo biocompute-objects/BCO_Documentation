@@ -51,25 +51,19 @@
       "$ref": "#/definitions/bco_id",
       "readOnly": true
     },
-    "type": {
-      "type": "string",
-      "description": "Category of research analysis specified by author of BCO",
-      "examples": [ "antiviral_resistance_detection" ],
-      "readOnly": true
-    },
-    "digital_signature": {
-      "type": "string",
-      "description": "Digital signature of BioCompute Object by Authority",
-      "examples": [ "905d7fce3f3ac64c8ea86f058ca71658" ],
-      "readOnly": true,
-      "pattern": "^([A-Za-z0-9]+)$"
-    },
     "bco_spec_version": {
       "type": "string",
       "description": "Version of the BCO specification used to define this document",
       "examples": [ "https://w3id.org/biocompute/spec/v1.2" ],
       "readOnly": true,
       "format": "uri"
+    },
+    "digital_signature": {
+      "type": "string",
+      "description": "A string-type, read-only value, protecting the object from internal or external alterations without proper validation generated with a SHA-256 hash function.",
+      "examples": [ "5986B05969341343E77A95B4023600FC8FEF48B7E79F355E58B0B404A4F50995" ],
+      "readOnly": true,
+      "pattern": "^([A-Za-z0-9]+)$"
     },
     "provenance_domain": {
       "$ref": "provenance_domain.json"
