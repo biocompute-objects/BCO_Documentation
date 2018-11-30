@@ -50,7 +50,7 @@ A string-type, read-only value, protecting the object from internal or external 
 will generate the following:
 
 ```json
-"digital_signature": "5986B05969341343E77A95B4023600FC8FEF48B7E79F355E58B0B404A4F50995"
+"digital_signature": "584C7FE128717E1712426AB19CAAEA8BC1E27365B54285BBEA1221284C7D3A48"
 ```
 
 ### Additional domains
