@@ -20,8 +20,10 @@
       "description": "Contributor identifier and type of contribution (determined according to PAV ontology) is required",
       "minProperties": 1
       "required": [
-        "contribution"
-      ],
+        "contribution",
+      ]
+    },
+  },
       "additionalProperties": false,
       "properties": {
         "name": {
