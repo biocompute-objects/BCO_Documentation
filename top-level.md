@@ -34,7 +34,7 @@ A unique identifier that should be applied to each BCO instance. These can be as
 "bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json"
 ```
 
-### 2.0.4 Digital signature "digital_signature"
+### 2.0.3 Digital signature "digital_signature"
 
 A string-type, read-only value generated and stored by a BCO database, protecting the object from internal or external alterations without proper validation. The string can be generated through the use of an MD5 SHA-256 or another implementation of a specific hash function. 
 
