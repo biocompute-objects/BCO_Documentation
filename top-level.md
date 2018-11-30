@@ -38,14 +38,14 @@ A unique identifier that should be applied to each BCO instance. These can be as
 A string-type, read-only value, protecting the object from internal or external alterations without proper validation. The string should be generated through the use of a SHA-256 hash function. Everything EXCEPT for the `digital_signature`, `bco_id` and `bco_spec_version` should be included in the generation of the hash. For example:
 
 ```json
-    "provenance_domain": {...},
-    "usability_domain": [...],
-    "extension_domain":{...},
-    "description_domain": {...},
-    "execution_domain": {...}, 
-	"parametric_domain": [...], 
-    "io_domain": {...},
-    "error_domain": {...}
+    "provenance_domain": {},
+    "usability_domain": [],
+    "extension_domain":{},
+    "description_domain": {},
+    "execution_domain": {}, 
+	"parametric_domain": [], 
+    "io_domain": {},
+    "error_domain": {}
 ```
 will generate the following:
 
