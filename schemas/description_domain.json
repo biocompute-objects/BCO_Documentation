@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://biocomputeobject.org/schemas/description_domain.json",
   "type": "object",
-  "title": "TODO",
-  "description": "TODO",
+  "title": "Description Domain",
+  "description": "Structured field for description of external references, the pipeline steps, and the relationship of I/O objects.",
   "required": [
     "keywords",
     "pipeline_steps"
@@ -69,6 +69,14 @@
             "format": "date-time"
           }
         }
+      }
+    },
+    "platform": {
+      "type": "array",
+      "description": "reference to a particular deployment of an existing platform where this BCO can be reproduced.",
+      "items": {
+        "type": "string",
+        "examples": [ "hive" ]
       }
     },
     "pipeline_steps": {

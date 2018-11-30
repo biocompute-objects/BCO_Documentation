@@ -128,99 +128,97 @@
                 "ids": ["31646"], 
                 "access_time": "2018-13-02T10:15-05:00"
             }
-        ], 
-        "pipeline_steps": {
-            "tool": [
-                {
-                    "step_number": 1, 
-                    "name": "HIVE-hexagon", 
-                    "description": "Alignment of reads to a set of references", 
-                    "version": "1.3", 
-                    "prerequisite": [
-                        {
-                            "name": "Hepatitis C virus genotype 1", 
-                            "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
-                                "access_time": "2017-01-24T09:40:17-0500"
-                            }
-                        }, 
-                        {
-                            "name": "Hepatitis C virus type 1b complete genome", 
-                            "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
-                                "access_time": "2017-01-24T09:40:17-0500"
-                            }
-                        }, 
-                        {
-                            "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
-                            "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
-                                "access_time": "2017-01-24T09:40:17-0500"
-                            }
-                        }, 
-                        {
-                            "name": "Hepatitis C virus clone J8CF, complete genome", 
-                            "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
-                                "access_time": "2017-01-24T09:40:17-0500"
-                            }
-                        }, 
-                        {
-                            "name": "Hepatitis C virus S52 polyprotein gene", 
-                            "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
-                                "access_time": "2017-01-24T09:40:17-0500"
-                            }
-                        }
-                    ], 
-                    "input_list": [
-                        {
-                            "address": "http://example.com/dna.cgi?cmd=objFile&ids=514683",
-                            "access_time": "2017-01-24T09:40:17-0500"
-                        }, 
-                        {
-                            "address": "http://example.com/dna.cgi?cmd=objFile&ids=514682",
+        ],
+        "platform": ["HIVE"],
+        "pipeline_steps": [
+            {
+                "step_number": 1, 
+                "name": "HIVE-hexagon", 
+                "description": "Alignment of reads to a set of references", 
+                "version": "1.3", 
+                "prerequisite": [
+                    {
+                        "name": "Hepatitis C virus genotype 1", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
-                    ],
-                    "output_list": [
-                        {
-                            "address": "http://example.com/data/514769/allCount-aligned.csv",
+                    }, 
+                    {
+                        "name": "Hepatitis C virus type 1b complete genome", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
-                    ]
-                },
-                {
-                    "step_number": 2, 
-                    "name": "HIVE-heptagon", 
-                    "description": "variant calling", 
-                    "version": "1.3", 
-                    "input_list": [
-                        {
-                            "address": "http://example.com/data/514769/dnaAccessionBased.csv",
+                    }, 
+                    {
+                        "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
-                    ], 
-                    "output_list": [
-                        {
-                            "address": "http://example.com/data/514801/SNPProfile.csv",
-                            "access_time": "2017-01-24T09:40:17-0500"
-                        }, 
-                        {
-                            "address": "http://example.com/data/14769/allCount-aligned.csv",
+                    }, 
+                    {
+                        "name": "Hepatitis C virus clone J8CF, complete genome", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
-                    ]
-                }
-            ]
-        }
+                    }, 
+                    {
+                        "name": "Hepatitis C virus S52 polyprotein gene", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
+                            "access_time": "2017-01-24T09:40:17-0500"
+                        }
+                    }
+                ], 
+                "input_list": [
+                    {
+                        "address": "http://example.com/dna.cgi?cmd=objFile&ids=514683",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }, 
+                    {
+                        "address": "http://example.com/dna.cgi?cmd=objFile&ids=514682",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "address": "http://example.com/data/514769/allCount-aligned.csv",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }
+                ]
+            },
+            {
+                "step_number": 2, 
+                "name": "HIVE-heptagon", 
+                "description": "variant calling", 
+                "version": "1.3", 
+                "input_list": [
+                    {
+                        "address": "http://example.com/data/514769/dnaAccessionBased.csv",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }
+                ], 
+                "output_list": [
+                    {
+                        "address": "http://example.com/data/514801/SNPProfile.csv",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }, 
+                    {
+                        "address": "http://example.com/data/14769/allCount-aligned.csv",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }
+                ]
+            }
+        ]
     },
     "execution_domain": {
         "script_access_type": "URI",
         "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"],
         "script_driver": "shell",
         "pipeline_version": "2.0", 
-        "platform": ["hive"], 
         "software_prerequisites": [
             {
                 "name": "HIVE-hexagon", 
