@@ -1,0 +1,114 @@
+{
+    "primitives" : {
+        "_comment": "primitive type hash with short descriptions",
+        "_type" : {
+            "string": "alphanumeric string",
+            "integer": "integer number",
+            "float": "floating point number", 
+            "boolean": "can only be assigned true, false, or null",
+            "date": "specified ISO 8601", 
+            "time": "ISO 8601", 
+            "dateTime": "ISO 8601",
+            "blob": "binary data stored as a single object",
+            "json" : "any json formatted subobject, the structure to json is not imposed by base biocompute type, but should follow guidelines of using the predefined primitives"
+        }
+    },
+    "objectid": {
+        "_type": "string",
+        "_comment": ["a string of characters designed for unambiguous identification of resources and extensibility via the URI scheme (https://www.w3.org/wiki/UriSchemes)"],
+        "_constraint": {
+            "regex" : "url_regex"
+        }
+    },
+    "version": {
+        "_type": "string",
+        "_comment": "suggestion MAJOR.MINOR.PATCH as described at https://semver.org/"
+    }, 
+    "email":{ 
+        "_type": "string",
+        "_constraint": {
+            "regex" : "email_regex"
+        }
+    },
+    "keyval" : {
+        "key" : {
+            "_type" : "string"
+        },
+        "value" : {
+            "_type" : "string"
+        }
+    },
+    "uri": {
+        "address": {
+            "_type": "objectid"
+        },
+        "access_time": {
+            "_type" : "dateTime",
+            "_optional" : true
+        },
+        "sha1_chksum": {
+            "_type": "string",
+            "_optional" : true,
+            "_constraint" : {
+                "regex" : "[A-Za-z0-9]+"
+            }
+        }
+    },
+    "contribution": {
+        "_type" : "string",
+        "_multi_value" : true,
+        "_comment": "taken from https://doi.org/10.1186/2041-1480-4-37",
+        "_constraint" :{
+           "_choice" : ["authoredBy", "contributedBy", "createdAt", "createdBy", "createdWith", "curatedBy", "derivedFrom", "importedBy", "importedFrom", "providedBy", "retrievedBy", "retrievedFrom", "sourceAccessedBy"]
+        }
+    },
+    "contributor": {
+        "_comment": [""],
+        "name": {
+            "_type": "string",
+            "_optional" : true
+        },
+        "affiliation": {
+            "_type": "string",
+            "_optional" : true
+        },
+        "email" : {
+            "_type" : "email",
+            "_optional" : true
+        },
+        "contribution": {
+            "_type": "contribution"
+        },
+        "orcid": {
+            "_type": "objectid"
+        }
+    },
+    "file": {
+        "uri" : {
+            "_type" : "uri"
+        },
+       "mediatype": { 
+            "_type" : "string",
+            "_optional" : true
+        }
+    },
+    "xref" : {
+        "namespace" : {
+            "_type" : "string",
+            "_comment" : "can be a prefix in identifiers.org or a db named in a source" 
+        },
+        "ids" : {
+            "_type" : "string",
+            "_multi_value" : true
+        },
+        "name" : {
+            "_comment": "This can be the common name for the db",
+            "_type" : "string",
+            "_optional" :true
+        },
+        "access_time":{
+            "_type": "dateTime",
+            "_optional" : true
+        }
+    }
+}
