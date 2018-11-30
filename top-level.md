@@ -35,10 +35,22 @@ A unique identifier that should be applied to each BCO instance. These can be as
 
 ### 2.0.3 Digital signature "digital_signature"
 
-A string-type, read-only value generated and stored by a BCO database, protecting the object from internal or external alterations without proper validation. The string can be generated through the use of an MD5 SHA-256 or another implementation of a specific hash function. 
+A string-type, read-only value, protecting the object from internal or external alterations without proper validation. The string should be generated through the use of a SHA-256 hash function. Everything EXCEPT for the `digital_signature`, `bco_id` and `bco_spec_version` should be included in the generation of the hash. For example:
 
 ```json
-"digital_signature": "905d7fce3f3ac64c8ea86f058ca71658"
+    "provenance_domain": {...},
+    "usability_domain": [...],
+    "extension_domain":{...},
+    "description_domain": {...},
+    "execution_domain": {...}, 
+	"parametric_domain": [...], 
+    "io_domain": {...},
+    "error_domain": {...}
+```
+will generate the following:
+
+```json
+"digital_signature": "5986B05969341343E77A95B4023600FC8FEF48B7E79F355E58B0B404A4F50995"
 ```
 
 ### Additional domains
