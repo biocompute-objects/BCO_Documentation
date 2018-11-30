@@ -107,7 +107,7 @@ This is an optional structured domain for recording the specifics of a pipeline.
 This is a non-negative integer value representing the position of the tool in a one-dimensional representation of the pipeline. The number is a suggestion for a [partial order](https://en.wikipedia.org/wiki/Partially_ordered_set) for presentation purposes, e.g. parallel computations assigned the same number based on their first possible execution. Actual execution order might differ from the step number. Gaps are allowed (e.g. step 20 follows step 10). 
 
 ```json
-"step_number": "1"
+"step_number": 1
 ```
 
 #### 2.4.4.2 Name "name"

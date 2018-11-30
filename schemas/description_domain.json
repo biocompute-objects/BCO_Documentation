@@ -1,174 +1,163 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://biocomputeobject.org/schemas/description_domain.json",
-  "type": "object",
-  "title": "Description Domain",
-  "description": "Structured field for description of external references, the pipeline steps, and the relationship of I/O objects.",
-  "required": [
-    "keywords",
-    "pipeline_steps"
-  ],
-  "properties": {
-    "keywords": {
-      "type": "array",
-      "description": "Keywords to aid in search-ability and description of the object.",
-      "items": {
-        "type": "string",
-        "description": "TODO",
-        "examples": [
-          "HCV1a",
-          "Ledipasvir",
-          "antiviral resistance",
-          "SNP",
-          "amino acid substitutions"
-        ]
-      }
-    },
-    "xref": {
-      "type": "array",
-      "description": "TODO",
-      "items": {
-        "type": "object",
-        "description": "TODO",
-        "required": [
-          "namespace",
-          "name",
-          "ids",
-          "access_time"
-        ],
-        "properties": {
-          "namespace": {
-            "type": "string",
-            "description": "TODO",
-            "examples": [
-              "pubchem.compound"
-            ]
-          },
-          "name": {
-            "type": "string",
-            "description": "TODO",
-            "default": "",
-            "examples": [
-              "PubChem-compound"
-            ]
-          },
-          "ids": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://biocomputeobject.org/schemas/description_domain.json",
+    "type": "object",
+    "title": "Description Domain",
+    "description": "Structured field for description of external references, the pipeline steps, and the relationship of I/O objects.",
+    "required": [
+        "keywords",
+        "pipeline_steps"
+    ],
+    "properties": {
+        "keywords": {
+            "type": "array",
+            "description": "Keywords to aid in search-ability and description of the object.",
+            "items": {
+                "type": "string",
+                "description": "TODO",
+                "examples": [
+                    "HCV1a",
+                    "Ledipasvir",
+                    "antiviral resistance",
+                    "SNP",
+                    "amino acid substitutions"
+                ]
+            }
+        },
+        "xref": {
             "type": "array",
             "description": "TODO",
             "items": {
-              "type": "string",
-              "description": "TODO",
-              "examples": [
-                "67505836"
-              ]
+                "type": "object",
+                "description": "TODO",
+                "required": [
+                    "namespace",
+                    "name",
+                    "ids",
+                    "access_time"
+                ],
+                "properties": {
+                    "namespace": {
+                        "type": "string",
+                        "description": "TODO",
+                        "examples": [
+                            "pubchem.compound"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "TODO",
+                        "default": "",
+                        "examples": [
+                            "PubChem-compound"
+                        ]
+                    },
+                    "ids": {
+                        "type": "array",
+                        "description": "TODO",
+                        "items": {
+                            "type": "string",
+                            "description": "TODO",
+                            "examples": [
+                                "67505836"
+                            ]
+                        }
+                    },
+                    "access_time": {
+                        "type": "string",
+                        "description": "TODO",
+                        "format": "date-time"
+                    }
+                }
             }
-          },
-          "access_time": {
-            "type": "string",
-            "description": "TODO",
-            "format": "date-time"
-          }
-        }
-      }
-    },
-    "platform": {
-      "type": "array",
-      "description": "reference to a particular deployment of an existing platform where this BCO can be reproduced.",
-      "items": {
-        "type": "string",
-        "examples": [ "hive" ]
-      }
-    },
-    "pipeline_steps": {
-      "type": "object",
-      "description": "TODO",
-      "required": [
-        "tool"
-      ],
-      "properties": {
-        "tool": {
-          "type": "array",
-          "description": "TODO",
-          "items": {
+        },
+        "platform": {
+            "type": "array",
+            "description": "reference to a particular deployment of an existing platform where this BCO can be reproduced.",
+            "items": {
+                "type": "string",
+                "examples": [
+                    "hive"
+                ]
+            }
+        },
+        "pipeline_steps": {
             "type": "object",
             "description": "TODO",
             "required": [
-              "step_number",
-              "name",
-              "description",
-              "version",
-              "input_list",
-              "output_list"
+                "step_number",
+                "name",
+                "description",
+                "version",
+                "input_list",
+                "output_list"
             ],
             "properties": {
-              "step_number": {
-                "type": "integer",
-                "description": "TODO"
-              },
-              "name": {
-                "type": "string",
-                "description": "this is a recognized name of the software tool",
-                "examples": [
-                  "HIVE-hexagon"
-                ]
-              },
-              "description": {
-                "type": "string",
-                "description": "TODO",
-                "examples": [
-                  "Alignment of reads to a set of references"
-                ]
-              },
-              "version": {
-                "type": "string",
-                "description": "TODO",
-                "examples": [
-                  "1.3"
-                ]
-              },
-              "prerequisite": {
-                "type": "array",
-                "description": "reference or required prereqs",
-                "items": {
-                  "type": "object",
-                  "description": "TODO",
-                  "required": [
-                    "name",
-                    "uri"
-                  ],
-                  "properties": {
-                    "name": {
-                      "type": "string",
-                      "description": "Public searchable name for reference or prereq",
-                      "default": "",
-                      "examples": [
-                        "Hepatitis C virus genotype 1"
-                      ]
-                    },
-                    "uri": {
-                      "$ref": "biocomputeobject.json#/definitions/uri"
+                "step_number": {
+                    "type": "integer",
+                    "description": "TODO"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "this is a recognized name of the software tool",
+                    "examples": [
+                        "HIVE-hexagon"
+                    ]
+                },
+                "description": {
+                    "type": "string",
+                    "description": "TODO",
+                    "examples": [
+                        "Alignment of reads to a set of references"
+                    ]
+                },
+                "version": {
+                    "type": "string",
+                    "description": "TODO",
+                    "examples": [
+                        "1.3"
+                    ]
+                },
+                "prerequisite": {
+                    "type": "array",
+                    "description": "reference or required prereqs",
+                    "items": {
+                        "type": "object",
+                        "description": "TODO",
+                        "required": [
+                            "name",
+                            "uri"
+                        ],
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "Public searchable name for reference or prereq",
+                                "default": "",
+                                "examples": [
+                                    "Hepatitis C virus genotype 1"
+                                ]
+                            },
+                            "uri": {
+                                "$ref": "biocomputeobject.json#/definitions/uri"
+                            }
+                        }
                     }
-                  }
+                },
+                "input_list": {
+                    "type": "array",
+                    "description": "TODO",
+                    "items": {
+                        "$ref": "biocomputeobject.json#/definitions/uri"
+                    }
+                },
+                "output_list": {
+                    "type": "array",
+                    "description": "TODO",
+                    "items": {
+                        "$ref": "biocomputeobject.json#/definitions/uri"
+                    }
                 }
-              },
-              "input_list": {
-                "type": "array",
-                "description": "TODO",
-                "items": {
-                  "$ref": "biocomputeobject.json#/definitions/uri"
-                }
-              },
-              "output_list": {
-                "type": "array",
-                "description": "TODO",
-                "items": {
-                  "$ref": "biocomputeobject.json#/definitions/uri"
-                }
-              }
             }
-          }
         }
-      }
     }
-  }
 }
