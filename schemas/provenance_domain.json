@@ -107,7 +107,6 @@
         "required": [
           "status",
           "reviewer"
-              "description" : ("TODO: establish the constraint: "reviewer" and "reviewer_comment" only required if review "status" is anything BUT unreviewed. JPAT- define each of the status' as separate object and nest the fields I want under that)
         ],
         "additionalProperties": false,
         "properties": {
@@ -118,6 +117,7 @@
           "reviewer": {
             "$ref": "#/definitions/contributor",
             "description": "TODO"
+            "description" : ("TODO: establish the constraint: "reviewer" and "reviewer_comment" only required if review "status" is anything BUT unreviewed. JPAT- define each of the status' as separate object and nest the fields I want under that)
           },
           "reviewer_comment": {
             "type": "string",
