@@ -1,6 +1,5 @@
 {
     "bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
-    "type": "antiviral_resistance_detection", 
     "digital_signature": "905d7fce3f3ac64c8ea86f058ca71658",
     "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
     "provenance_domain": {

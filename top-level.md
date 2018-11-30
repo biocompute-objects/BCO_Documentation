@@ -34,14 +34,6 @@ A unique identifier that should be applied to each BCO instance. These can be as
 "bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json"
 ```
 
-### 2.0.3 Type "type"
-
-As any object of type 'type,' it has its own fields: _type, _id, _inherits, name, title and description. Type of this JSON object is "antiviral_resistance_detection"
-
-```json
-"type": "antiviral_resistance_detection"
-```
-
 ### 2.0.4 Digital signature "digital_signature"
 
 A string-type, read-only value generated and stored by a BCO database, protecting the object from internal or external alterations without proper validation. The string can be generated through the use of an MD5 SHA-256 or another implementation of a specific hash function. 
