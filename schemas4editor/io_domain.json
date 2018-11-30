@@ -1,50 +1,21 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/schemas/io_domain.json",
+    "$id": "https://hive.biochemistry.gwu.edu/tst/biocompute/json/io_domain.json",
     "type": "object",
-    "title": "The Io_domain Schema",
-    "description": "TODO",
+    "title": "io_domain",
+    "description": "",
     "required": [
         "input_subdomain",
         "output_subdomain"
     ],
-	"definitions": {
-	    "uri": {
-	      "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
-	      "type": "object",
-	      "additionalProperties": false,
-	      "required": [ "address" ],
-	      "properties": {
-	        "address": {
-	          "type": "string",
-	          "format": "uri"
-	        },
-	        "access_time": {
-	          "type": "string",
-	          "format": "date-time"
-	        },
-	        "sha1_chksum": {
-	          "type": "string",
-	          "pattern": "[A-Za-z0-9]+"
-	        }
-	      }
-	    },
-        "name": {
-            "type": "string",
-            "description": "human readable designition for the input",
-            "examples": [
-                "Hepatitis C virus genotype 1"
-            ],
-            "pattern": "^(.*)$"
-        }
-	},
     "properties": {
         "input_subdomain": {
             "type": "array",
 			"title": "input_domain",
-            "description": "TODO",
+            "description": "",
             "items": {
                 "type": "object",
+                "title":"input",
                 "required": [
                     "name",
                     "uri"
@@ -59,7 +30,7 @@
                         "pattern": "^(.*)$"
                     },
                     "uri": {
-						"type": "object",
+			"type": "object",
                         "$ref": "#/definitions/uri"
                     }
                 }
@@ -68,10 +39,10 @@
         "output_subdomain": {
             "type": "array",
             "title": "output_subdomain",
-			"description": "TODO",
+	    "description": "",
             "items": {
                 "type": "object",
-                "title": "The Items Schema",
+                "title": "output",
                 "required": [
                     "mediatype",
                     "uri"
