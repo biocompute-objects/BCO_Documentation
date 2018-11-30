@@ -10,7 +10,6 @@ Condensed example:
 {
     "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
     "bco_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
-    "type": "antiviral_resistance_detection", 
     "digital_signature": "d41d8cd98f00b204e9800998ecf8427e",    
     "provenance_domain": {
     },
@@ -34,15 +33,7 @@ A unique identifier that should be applied to each BCO instance. These can be as
 "bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json"
 ```
 
-### 2.0.3 Type "type"
-
-As any object of type 'type,' it has its own fields: _type, _id, _inherits, name, title and description. Type of this JSON object is "antiviral_resistance_detection"
-
-```json
-"type": "antiviral_resistance_detection"
-```
-
-### 2.0.4 Digital signature "digital_signature"
+### 2.0.3 Digital signature "digital_signature"
 
 A string-type, read-only value generated and stored by a BCO database, protecting the object from internal or external alterations without proper validation. The string can be generated through the use of an MD5 SHA-256 or another implementation of a specific hash function. 
 
