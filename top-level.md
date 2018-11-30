@@ -43,7 +43,7 @@ A string-type, read-only value, protecting the object from internal or external 
     "extension_domain":{},
     "description_domain": {},
     "execution_domain": {}, 
-	"parametric_domain": [], 
+    "parametric_domain": [], 
     "io_domain": {},
     "error_domain": {}
 ```
