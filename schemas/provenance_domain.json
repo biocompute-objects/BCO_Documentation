@@ -120,7 +120,7 @@
           },
           "reviewer_comment": {
             "type": "string",
-            "description": "TODO",
+            "description": "Brief statement on the BCO review status provided by reviewer",
             "examples": [
               "Approved by GW staff. Waiting for approval from FDA Reviewer"
             ]
@@ -180,7 +180,7 @@
     },
     "contributors": {
       "type": "array",
-      "description": "TODO",
+      "description": "This is a list to hold contributor identifiers and a description of their type of contribution, including a field for ORCIDs to record author information, as they allow for the author to curate their information after submission. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the PROV-O.",
       "items": {
         "$ref": "#/definitions/contributor"
       }
