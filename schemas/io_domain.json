@@ -3,7 +3,7 @@
     "$id": "http://biocomputeobject.org/schemas/io_domain.json",
     "type": "object",
     "title": "The Io_domain Schema",
-    "description": "TODO",
+    "description": "The list of global input and output files created by the computational workflow, excluding the intermediate files. Custom to every specific BCO implementation, these fields are pointers to objects that can reside in the system performing the computation or any other accessible system.",
     "required": [
         "input_subdomain",
         "output_subdomain"
@@ -42,7 +42,7 @@
         "input_subdomain": {
             "type": "array",
 			"title": "input_domain",
-            "description": "TODO",
+            "description": "A record of the references and input files for the entire pipeline. Each type of input file is listed under a key for that type.",
             "items": {
                 "type": "object",
                 "required": [
@@ -68,7 +68,7 @@
         "output_subdomain": {
             "type": "array",
             "title": "output_subdomain",
-			"description": "TODO",
+			"description": "A record of the outputs for the entire pipeline.",
             "items": {
                 "type": "object",
                 "title": "The Items Schema",
