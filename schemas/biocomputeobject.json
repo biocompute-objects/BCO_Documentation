@@ -144,16 +144,16 @@
       "readOnly": true
     },
     "provenance_domain":{
-        "$ref":""
+        "$ref":"provenance_domain.json"
     },
     "usability_domain":{
-        "$ref":""
+        "$ref":"usability_domain.json"
     },
     "execution_domain":{
-        "$ref":""
+        "$ref":"execution_domain.json"
     },
     "description_domain":{
-        "$ref":""
+        "$ref":"description_domain.json"
     },
     "extension_domain": {
         "type": "object",
@@ -165,15 +165,15 @@
         ],
         "properties": {
             "fhir_extension": {
-                "$ref":""
+                "$ref":"fhir_extension.json"
             },
             "scm_extension": {
-                "$ref":""
+                "$ref":"scm_extension.json"
             }
         }
     },
     "parametric_domain":{
-        "$ref":""
+        "$ref":"parametric_domain.json"
     }
   }
 }
