@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "type": "object",
   "title": "descsription_domain",
   "description": "",
@@ -179,32 +178,9 @@
                 "type": "string",
                 "title": "version",
                 "description": "",
-=======
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/schemas/description_domain.json",
-    "type": "object",
-    "title": "Description Domain",
-    "description": "Structured field for description of external references, the pipeline steps, and the relationship of I/O objects.",
-    "required": [
-        "keywords",
-        "pipeline_steps"
-    ],
-    "properties": {
-        "keywords": {
-            "type": "array",
-            "description": "Keywords to aid in search-ability and description of the object.",
-            "items": {
-                "type": "string",
-                "description": "This field should take free text value using common biological research terminology.",
->>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
                 "examples": [
-                    "HCV1a",
-                    "Ledipasvir",
-                    "antiviral resistance",
-                    "SNP",
-                    "amino acid substitutions"
+                  "1.3"
                 ]
-<<<<<<< HEAD
               },
               "prerequisite": {
                 "type": "array",
@@ -251,145 +227,12 @@
                 "description": "",
                 "items": {
                   "$ref": "#/definitions/resource"
-=======
-            }
-        },
-        "xref": {
-            "type": "array",
-            "description": "List of the databases and/or ontology IDs that are cross-referenced in the BCO.",
-            "items": {
-                "type": "object",
-                "description": "External references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by Identifiers.org.",
-                "reference": "https://identifiers.org/",
-			 "required": [
-                    "namespace",
-                    "name",
-                    "ids",
-                    "access_time"
-                ],
-                "properties": {
-                    "namespace": {
-                        "type": "string",
-                        "description": "External resource vendor prefix",
-                        "examples": [
-                            "pubchem.compound"
-                        ]
-                    },
-                    "name": {
-                        "type": "string",
-                        "description": "Name of external reference",
-                        "default": "",
-                        "examples": [
-                            "PubChem-compound"
-                        ]
-                    },
-                    "ids": {
-                        "type": "array",
-                        "description": "FIX: list of reference identifiers, TODO: TALK TO HADLEY ABOUT CLEANING THESE EXAMPLES",
-                        "items": {
-                            "type": "string",
-                            "description": "Reference identifier",
-                            "examples": [
-                                "67505836"
-                            ]
-                        }
-                    },
-                    "access_time": {
-                        "type": "string",
-                        "description": "Date and time the external reference was accessed",
-                        "format": "date-time"
-                    }
                 }
+              }
             }
-        },
-        "platform": {
-            "type": "array",
-            "description": "reference to a particular deployment of an existing platform where this BCO can be reproduced.",
-            "items": {
-                "type": "string",
-                "examples": [
-                    "hive"
-                ]
-            }
-        },
-        "pipeline_steps": {
-            "type": "object",
-            "description": "Each individual tool (or a well defined and reusable script) is represented as a step. Parallel processes are given the same step number.",
-            "required": [
-                "step_number",
-                "name",
-                "description",
-                "version",
-                "input_list",
-                "output_list"
-            ],
-            "properties": {
-                "step_number": {
-                    "type": "integer",
-                    "description": "Non-negative integer value representing the position of the tool in a one-dimensional representation of the pipeline."
-                },
-                "name": {
-                    "type": "string",
-                    "description": "This is a recognized name of the software tool",
-                    "examples": [
-                        "HIVE-hexagon"
-                    ]
-                },
-                "description": {
-                    "type": "string",
-                    "description": "Specific use/purpose of the tool.",
-                    "examples": [
-                        "Alignment of reads to a set of references"
-                    ]
-                },
-                "version": {
-                    "type": "string",
-                    "description": "Version assigned to the instance of the tool used corresponding to the upstream release.",
-                    "examples": [
-                        "1.3"
-                    ]
-                },
-                "prerequisite": {
-                    "type": "array",
-                    "description": "Reference or required prereqs",
-                    "items": {
-                        "type": "object",
-                        "description": "Text value to indicate a package or prerequisite for running the tool used.",
-                        "required": [
-                            "name",
-                            "uri"
-                        ],
-                        "properties": {
-                            "name": {
-                                "type": "string",
-                                "description": "Public searchable name for reference or prereq.",
-                                "default": "",
-                                "examples": [
-                                    "Hepatitis C virus genotype 1"
-                                ]
-                            },
-                            "uri": {
-                                "$ref": "biocomputeobject.json#/definitions/uri"
-                            }
-                        }
-                    }
-                },
-                "input_list": {
-                    "type": "array",
-                    "description": "URIs (expressed as a URN or URL) of the input files for each tool.",
-                    "items": {
-                        "$ref": "biocomputeobject.json#/definitions/uri"
-                    }
-                },
-                "output_list": {
-                    "type": "array",
-                    "description": "URIs (expressed as a URN or URL) of the output files for each tool.",
-                    "items": {
-                        "$ref": "biocomputeobject.json#/definitions/uri"
-                    }
->>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
-                }
-            }
+          }
         }
+      }
     }
+  }
 }

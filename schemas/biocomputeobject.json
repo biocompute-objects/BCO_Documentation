@@ -115,7 +115,6 @@
     "BCO_id": {
       "$ref": "#/definitions/BCO_id"
     },
-<<<<<<< HEAD
     "type": {
       "type": "string",
       "title": "type",
@@ -143,43 +142,6 @@
         "v1.2"
       ],
       "readOnly": true
-=======
-    "bco_spec_version": {
-      "type": "string",
-      "description": "Version of the BCO specification used to define this document",
-      "examples": [ "https://w3id.org/biocompute/spec/v1.2" ],
-      "readOnly": true,
-      "format": "uri"
-    },
-    "digital_signature": {
-      "type": "string",
-      "description": "A string-type, read-only value, protecting the object from internal or external alterations without proper validation generated with a SHA-256 hash function.",
-      "examples": [ "5986B05969341343E77A95B4023600FC8FEF48B7E79F355E58B0B404A4F50995" ],
-      "readOnly": true,
-      "pattern": "^([A-Za-z0-9]+)$"
-    },
-    "provenance_domain": {
-      "$ref": "provenance_domain.json"
-    },
-    "usability_domain": {
-      "$ref": "usability_domain.json"
-    },
-    "extension_domain": {
-      "$comment": "FIXME: how should schema(s) handle inherited types?",
-      "$comment": "TODO: remove 'additionalProperties: false' after handling inherited types is resolved. In the meantime it was set to avoid forgetting to write a schema for a new property because it is silently ignored during validation",
-      "additionalProperties": false,
-      "properties": {
-        "fhir_extension": {
-          "type": "array",
-          "items": {
-            "$ref": "extension_domain/fhir_extension.json"
-          }
-        },
-        "scm_extension": {
-          "$ref": "extension_domain/scm_extension.json"
-        }
-      }
->>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
     },
     "provenance_domain":{
         "$ref":""

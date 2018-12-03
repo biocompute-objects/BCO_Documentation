@@ -2,13 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://hive.biochemistry.gwu.edu/tst/biocompute/json/io_domain.json",
     "type": "object",
-<<<<<<< HEAD
     "title": "io_domain",
     "description": "",
-=======
-    "title": "The Io_domain Schema",
-    "description": "The list of global input and output files created by the computational workflow, excluding the intermediate files. Custom to every specific BCO implementation, these fields are pointers to objects that can reside in the system performing the computation or any other accessible system.",
->>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
     "required": [
         "input_subdomain",
         "output_subdomain"
@@ -16,13 +11,8 @@
     "properties": {
         "input_subdomain": {
             "type": "array",
-<<<<<<< HEAD
 	    "title": "input_subdomain",
             "description": "",
-=======
-			"title": "input_domain",
-            "description": "A record of the references and input files for the entire pipeline. Each type of input file is listed under a key for that type.",
->>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
             "items": {
                 "type": "object",
                 "title":"input",
@@ -49,11 +39,7 @@
         "output_subdomain": {
             "type": "array",
             "title": "output_subdomain",
-<<<<<<< HEAD
 	    "description": "",
-=======
-			"description": "A record of the outputs for the entire pipeline.",
->>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
             "items": {
                 "type": "object",
                 "title": "output",
