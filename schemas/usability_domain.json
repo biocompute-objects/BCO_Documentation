@@ -3,10 +3,10 @@
   "$id": "http://biocomputeobject.org/schemas/usability_domain.json",
   "type": "array",
   "title": "Usability domain",
-  "description": "Author-defined  usability domain of the BCO. This field is to aid in search-ability and provide a specific description of the function of the object. It is recomended that a novel use of the BCO could result in the creation of a new entry with a new usability domain",
+  "description": "Author-defined usability domain of the BCO. This field is to aid in search-ability and provide a specific description of the function of the object. It is recommended that a novel use of the BCO could result in the creation of a new entry with a new usability domain",
   "items": {
     "type": "string",
-    "description": "TODO",
+    "description": "Free text values that can accept template language to indicate values from the external_references",
     "examples": [
       "Identify baseline single nucleotide polymorphisms SNPs [SO:0000694], insertions [so:SO:0000667], and deletions [so:SO:0000045] that correlate with reduced ledipasvir [pubchem.compound:67505836] antiviral drug efficacy in Hepatitis C virus subtype 1 [taxonomy:31646]",
       "Identify treatment emergent amino acid substitutions [so:SO:0000048] that correlate with antiviral drug treatment failure",
