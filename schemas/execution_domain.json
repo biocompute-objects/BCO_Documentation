@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
   "type": "object",
-  "title": "TODO",
+  "title": "The Execution_domain Schema",
   "description": "TODO",
   "required": [
     "script_access_type",
@@ -20,14 +20,14 @@
         "URI",
         "text"
       ],
-      "description": "TODO"
+      "description": "Indication of whether the code of the "script" to execute the BioCompute Object is accessed as an external file via HTTP (URI) or in-line text in the script field."
     },
     "script": {
       "type": "array",
-      "description": "TODO",
+      "description": "Points to internal or external references to a script object that was used to perform computations for this BCO instance",
       "items": {
         "type": "string",
-        "description": "TODO",
+        "description": "An internal or external reference to a script object",
         "examples": [
           "https://example.com/workflows/antiviral_resistance_detection_hive.py"
         ]
@@ -35,7 +35,7 @@
     },
     "script_driver": {
       "type": "string",
-      "description": "TODO",
+      "description": "Specification of the kind of executable that can be launched in order to perform a sequence of commands described in the script in order to run the pipelin",
       "examples": [
         "hive",
         "cwl-runner",
@@ -44,10 +44,10 @@
     },
     "software_prerequisites": {
       "type": "array",
-      "description": "TODO",
+      "description": "Minimal necessary prerequisites, library, tool versions needed to successfully run the script to produce BCO.",
       "items": {
         "type": "object",
-        "description": "TODO",
+        "description": "A necessary prerequisite, library, or tool version.",
         "required": [
           "name",
           "version",
@@ -77,10 +77,10 @@
     },
     "external_data_endpoints": {
       "type": "array",
-      "description": "TODO",
+      "description": "Minimal necessary domain-specific external data source access in order to successfully run the script to produce BCO.",
       "items": {
         "type": "object",
-        "description": "TODO",
+        "description": "Requirement for network protocol endpoints used by a pipeline’s scripts, or other software.",
         "required": [
           "name",
           "url"
@@ -89,14 +89,15 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "TODO",
+            "description": "Description of the service that is accessed",
             "examples": [
               "HIVE"
+		    "access to ftp server"
             ]
           },
           "url": {
             "type": "string",
-            "description": "TODO",
+            "description": "The endpoint to be accessed.",
             "default": "",
             "examples": [
               "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=login"
@@ -107,7 +108,7 @@
     },
     "env_parameters": {
       "type": "object",
-      "description": "TODO",
+      "description": "Environmental parameters that are useful to configure the execution environment on the target platform.",
       "required": [
         "key",
         "value"
@@ -116,7 +117,7 @@
       "properties": {
         "key": {
           "type": "string",
-          "description": "TODO",
+          "description": "Specific to each platform",
           "default": "",
           "examples": [
             "HOSTTYPE"
