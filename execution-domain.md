@@ -14,8 +14,6 @@ Condensed example:
         "script": [
         ],
         "script_driver": "manual",
-        "pipeline_version": "2.0", 
-        "platform": "hive", 
         "software_prerequisites": [
         ],
         "external_data_endpoints": [
@@ -41,23 +39,7 @@ The Script field points to an internal or external reference to a script object 
  "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"]
 ```
 
-### 2.5.3 Pipeline Version "pipeline_version"
-
-This field records the version of the pipeline.
-
-```json
-"pipeline_version": "2.0"
-```
-
-### 2.5.4 Platform/Environment "platform"
-
-The multi-value reference to a particular deployment of an existing platform where this BCO can be reproduced. A platform can be a bioinformatic platform such as Galaxy or HIVE or it can be a software package such as CASAVA or apps that includes multiple algorithms and software. 
-
-```json
-"platform": ["HIVE"]
-```
-
-### 2.5.5 Script driver "script_driver"
+### 2.5.3 Script driver "script_driver"
 
 This field provides a space to indicate what kind of executable can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. 
 
@@ -65,7 +47,7 @@ This field provides a space to indicate what kind of executable can be launched 
 "script_driver": "shell"
 ```
 
-### 2.5.6 Algorithmic tools and Software Prerequisites "software_prerequisites" 
+### 2.5.4 Algorithmic tools and Software Prerequisites "software_prerequisites" 
 
 An optional multi-value field listing the minimal necessary prerequisites, library, tool versions needed to successfully run the script to produce BCO. The keys are `name`, `version`, and `uri`. 
 
@@ -91,7 +73,7 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
         ]
 ```
 
-### 2.5.7 External Data Endpoints "external_data_endpoints"
+### 2.5.5 External Data Endpoints "external_data_endpoints"
 
 An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. 
 
@@ -112,7 +94,7 @@ The key `name` should describe the service that is accessed.
 ]
 ```
 
-### 2.5.8 Environmental parameters "env_parameters"
+### 2.5.6 Environmental parameters "env_parameters"
 
 Multi-value additional key value pairs useful to configure the execution environment on the target platform. For example, one might specify the number of compute cores, or available memory use of the script. The possible keys are specific to each platform. The "value" should be a JSON string.
 

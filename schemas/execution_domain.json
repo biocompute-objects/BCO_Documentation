@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "type": "object", 
     "title": "execution_domain", 
     "description": "", 
@@ -27,6 +28,67 @@
             "type": "string", 
             "title": "script_driver", 
             "description": "", 
+=======
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
+  "type": "object",
+  "title": "The Execution_domain Schema",
+  "description": "TODO",
+  "required": [
+    "script_access_type",
+    "script",
+    "script_driver",
+    "software_prerequisites",
+    "external_data_endpoints",
+    "env_parameters"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "script_access_type": {
+      "type": "string",
+      "enum": [
+        "URI",
+        "text"
+      ],
+      "description": "Indication of whether the code of the "script" to execute the BioCompute Object is accessed as an external file via HTTP (URI) or in-line text in the script field."
+    },
+    "script": {
+      "type": "array",
+      "description": "Points to internal or external references to a script object that was used to perform computations for this BCO instance",
+      "items": {
+        "type": "string",
+        "description": "An internal or external reference to a script object",
+        "examples": [
+          "https://example.com/workflows/antiviral_resistance_detection_hive.py"
+        ]
+      }
+    },
+    "script_driver": {
+      "type": "string",
+      "description": "Specification of the kind of executable that can be launched in order to perform a sequence of commands described in the script in order to run the pipelin",
+      "examples": [
+        "hive",
+        "cwl-runner",
+        "shell"
+      ]
+    },
+    "software_prerequisites": {
+      "type": "array",
+      "description": "Minimal necessary prerequisites, library, tool versions needed to successfully run the script to produce BCO.",
+      "items": {
+        "type": "object",
+        "description": "A necessary prerequisite, library, or tool version.",
+        "required": [
+          "name",
+          "version",
+          "uri"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "TODO",
+>>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
             "examples": [
                 "hive", 
                 "cwl-runner", 
@@ -40,14 +102,49 @@
             "examples": [
                 "2.0"
             ]
+<<<<<<< HEAD
         }, 
         "platform": {
             "type": "string", 
             "title": "platform", 
             "description": "", 
+=======
+          },
+          "uri": {
+            "$ref": "biocomputeobject.json#/definitions/uri"
+          }
+        }
+      }
+    },
+    "external_data_endpoints": {
+      "type": "array",
+      "description": "Minimal necessary domain-specific external data source access in order to successfully run the script to produce BCO.",
+      "items": {
+        "type": "object",
+        "description": "Requirement for network protocol endpoints used by a pipeline’s scripts, or other software.",
+        "required": [
+          "name",
+          "url"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Description of the service that is accessed",
+            "examples": [
+              "HIVE"
+		    "access to ftp server"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "description": "The endpoint to be accessed.",
+            "default": "",
+>>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
             "examples": [
                 "hive"
             ]
+<<<<<<< HEAD
         }, 
         "script": {
             "type": "array",
@@ -61,6 +158,28 @@
                     "https://example.com/workflows/antiviral_resistance_detection_hive.py"
                 ]
             }
+=======
+          }
+        }
+      }
+    },
+    "env_parameters": {
+      "type": "object",
+      "description": "Environmental parameters that are useful to configure the execution environment on the target platform.",
+      "required": [
+        "key",
+        "value"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "Specific to each platform",
+          "default": "",
+          "examples": [
+            "HOSTTYPE"
+          ]
+>>>>>>> 4fd5710119849a0d54ff7249ca15473d73c65f76
         },
         "software_prerequisites": {
             "type": "array", 
