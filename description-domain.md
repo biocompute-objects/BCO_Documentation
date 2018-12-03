@@ -100,7 +100,7 @@ The multi-value reference to a particular deployment of an existing platform whe
 ```
 ### 2.4.4 Pipeline tools "pipeline_steps"
 
-This is an optional structured domain for recording the specifics of a pipeline. Each individual tool (or a well defined and reusable script) is represented as step, at the discretion of the author. Parallel processes are given the same step number. This is required.
+This is an optional structured domain for recording the specifics of a pipeline. Each individual tool (or a well defined and reusable script) is represented as a step, at the discretion of the author. Parallel processes are given the same step number. This is required.
 
 #### 2.4.4.1 Step Number "step_number"
 
