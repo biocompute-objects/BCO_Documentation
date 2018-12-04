@@ -65,13 +65,10 @@ BCO_Specification is licensed under the [BSD 3-Clause "New" or "Revised" License
 
 >A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
 
-
-Please also see our [OSF page](https://osf.io/h59uh/) or our [main page](http://biocomputeobject.org/) 
-
 ## Mailing List
 
 As a subscriber to the BCO mailing list, you can post to it by sending a message tobiocomputels@hermes.gwu.edu (using the email address that is subscribed). This list is semi-automated and will send your message for review. 
 
-To subscribe or unsubscribe, please visit https://hermes.gwu.edu/cgi-bin/wa?A0=BIOCOMPUTELS and click `Subscribe` or `Unsubscribe`` on the lower right. You can also unsubscribe from the list at any time by sending an email to listserv@hermes.gwu.edu, in which the body says:
+To subscribe or unsubscribe, please visit https://hermes.gwu.edu/cgi-bin/wa?A0=BIOCOMPUTELS and click `Subscribe` or `Unsubscribe` on the lower right. You can also unsubscribe from the list at any time by sending an email to listserv@hermes.gwu.edu, in which the body says: `unsubscribe biocomputels`
 
-`unsubscribe biocomputels`
+Please also see our [OSF page](https://osf.io/h59uh/) or our [main page](http://biocomputeobject.org/) 
