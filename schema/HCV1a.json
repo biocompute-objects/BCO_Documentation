@@ -1,0 +1,341 @@
+{
+    "bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
+    "digital_signature": "0B61E7C0EFF537CADADE475AA6386262FCDBC4DC",
+    "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
+    "provenance_domain": {
+        "name": "HCV1a ledipasvir resistance SNP detection", 
+        "version": "2.9",
+        "review": [
+            {
+                "status": "approved",
+                "reviewer_comment": "Approved by GW staff. Waiting for approval from FDA Reviewer",
+                "reviewer": {
+                    "name": "Charles Hadley King", 
+                    "affiliation": "George Washington University", 
+                    "email": "hadley_king@gwu.edu",
+                    "contribution": ["curatedBy"],
+                    "orcid": "https://orcid.org/0000-0003-1409-4549"
+                }
+            },
+            {
+                "status": "approved",
+                "reviewer_comment": "The revised BCO looks fine",
+                "reviewer": {
+                    "name": "Eric Donaldson", 
+                    "affiliation": "FDA", 
+                    "email": "Eric.Donaldson@fda.hhs.gov",
+                    "contribution": ["curatedBy"]
+                }
+            }
+        ],
+        "obsolete_after" : "2118-09-26T14:43:43-0400",
+        "embargo" : {
+            "start_time": "2000-09-26T14:43:43-0400",
+            "end_time": "2000-09-26T14:43:45-0400"
+        },
+        "created": "2017-01-24T09:40:17-0500", 
+        "modified": "2018-09-21T14:06:14-0400", 
+        "contributors": [
+            {
+                "name": "Charles Hadley King", 
+                "affiliation": "George Washington University", 
+                "email": "hadley_king@gwu.edu",
+                "contribution": ["createdBy", "curatedBy"],
+                "orcid": "https://orcid.org/0000-0003-1409-4549"
+            },
+            {
+                "name": "Eric Donaldson", 
+                "affiliation": "FDA", 
+                "email": "Eric.Donaldson@fda.hhs.gov",
+                "contribution": ["authoredBy"]
+            }
+        ],
+        "license": "https://spdx.org/licenses/CC-BY-4.0.html"
+    },
+    "usability_domain": [
+        "Identify baseline single nucleotide polymorphisms (SNPs)[SO:0000694], (insertions)[SO:0000667], and (deletions)[SO:0000045] that correlate with reduced (ledipasvir)[pubchem.compound:67505836] antiviral drug efficacy in (Hepatitis C virus subtype 1)[taxonomy:31646]", 
+        "Identify treatment emergent amino acid (substitutions)[SO:1000002] that correlate with antiviral drug treatment failure", 
+        "Determine whether the treatment emergent amino acid (substitutions)[SO:1000002] identified correlate with treatment failure involving other drugs against the same virus", 
+        "GitHub CWL example: https://github.com/mr-c/hive-cwl-examples/blob/master/workflow/hive-viral-mutation-detection.cwl#L20"
+    ],
+    "extension_domain":{
+        "fhir_extension": [
+            {
+                "fhir_endpoint": "http://fhirtest.uhn.ca/baseDstu3",
+                "fhir_version": "3",
+                "fhir_resources": [
+                    {
+                        "fhir_resource": "Sequence",
+                        "fhir_id": "21376"
+                    },
+                    {
+                        "fhir_resource": "DiagnosticReport",
+                        "fhir_id": "6288583"
+                    },
+                    {
+                        "fhir_resource": "ProcedureRequest",
+                        "fhir_id": "25544"
+                    },
+                    {
+                        "fhir_resource": "Observation",
+                        "fhir_id": "92440"
+                    },
+                    {
+                        "fhir_resource": "FamilyMemberHistory",
+                        "fhir_id": "4588936"
+                    }
+                ]
+            }
+        ],
+        "scm_extension": {
+            "scm_repository": "https://github.com/example/repo1",
+            "scm_type": "git",
+            "scm_branch": "c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21",
+            "scm_path": "workflow/hive-viral-mutation-detection.cwl",
+            "scm_preview": "https://github.com/example/repo1/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
+      }
+    },
+    "description_domain": {
+        "keywords": [
+            "HCV1a", 
+            "Ledipasvir", 
+            "antiviral resistance", 
+            "SNP", 
+            "amino acid substitutions"
+        ], 
+        "xref": [
+            {
+                "namespace": "pubchem.compound",
+                "name": "PubChem-compound",
+                "ids": ["67505836"], 
+                "access_time": "2018-13-02T10:15-05:00"
+            },
+            {
+                "namespace": "pubmed",
+                "name": "PubMed",
+                "ids": ["26508693"], 
+                "access_time": "2018-13-02T10:15-05:00"
+            },
+            {
+                "namespace": "so",
+                "name": "Sequence Ontology",
+                "ids": ["SO:000002", "SO:0000694", "SO:0000667", "SO:0000045"], 
+                "access_time": "2018-13-02T10:15-05:00"
+            },
+            {
+                "namespace": "taxonomy",
+                "name": "Taxonomy",
+                "ids": ["31646"], 
+                "access_time": "2018-13-02T10:15-05:00"
+            }
+        ],
+        "platform": ["HIVE"],
+        "pipeline_steps": [
+            {
+                "step_number": 1, 
+                "name": "HIVE-hexagon", 
+                "description": "Alignment of reads to a set of references", 
+                "version": "1.3", 
+                "prerequisite": [
+                    {
+                        "name": "Hepatitis C virus genotype 1", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                            "access_time": "2017-01-24T09:40:17-0500"
+                        }
+                    }, 
+                    {
+                        "name": "Hepatitis C virus type 1b complete genome", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
+                            "access_time": "2017-01-24T09:40:17-0500"
+                        }
+                    }, 
+                    {
+                        "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
+                            "access_time": "2017-01-24T09:40:17-0500"
+                        }
+                    }, 
+                    {
+                        "name": "Hepatitis C virus clone J8CF, complete genome", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
+                            "access_time": "2017-01-24T09:40:17-0500"
+                        }
+                    }, 
+                    {
+                        "name": "Hepatitis C virus S52 polyprotein gene", 
+                        "uri": {
+                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
+                            "access_time": "2017-01-24T09:40:17-0500"
+                        }
+                    }
+                ], 
+                "input_list": [
+                    {
+                        "address": "http://example.com/dna.cgi?cmd=objFile&ids=514683",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }, 
+                    {
+                        "address": "http://example.com/dna.cgi?cmd=objFile&ids=514682",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "address": "http://example.com/data/514769/allCount-aligned.csv",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }
+                ]
+            },
+            {
+                "step_number": 2, 
+                "name": "HIVE-heptagon", 
+                "description": "variant calling", 
+                "version": "1.3", 
+                "input_list": [
+                    {
+                        "address": "http://example.com/data/514769/dnaAccessionBased.csv",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }
+                ], 
+                "output_list": [
+                    {
+                        "address": "http://example.com/data/514801/SNPProfile.csv",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }, 
+                    {
+                        "address": "http://example.com/data/14769/allCount-aligned.csv",
+                        "access_time": "2017-01-24T09:40:17-0500"
+                    }
+                ]
+            }
+        ]
+    },
+    "execution_domain": {
+        "script_access_type": "URI",
+        "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"],
+        "script_driver": "shell", 
+        "software_prerequisites": [
+            {
+                "name": "HIVE-hexagon", 
+                "version": "babajanian.1",
+                "uri": {
+                    "address": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
+                    "access_time": "2017-01-24T09:40:17-0500",
+                    "sha1_chksum": "d60f506cddac09e9e816531e7905ca1ca6641e3c"
+                }
+            }, 
+            {
+                "name": "HIVE-heptagon", 
+                "version": "albinoni.2",
+                "uri": {
+                    "address": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }
+        ],
+        "external_data_endpoints": [
+            {
+                "name": "HIVE", 
+                "url": "http://example.com/dna.cgi?cmd=login"
+            }, 
+            {
+                "name": "access to e-utils", 
+                "url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+            }
+        ], 
+        "env_parameters": {
+            "key": "HOSTTYPE", 
+            "value" : "x86_64-linux"
+        }
+    }, 
+	"parametric_domain": [
+	    {"param": "seed", "value": "14", "step": "1"},
+	    {"param":"minimum_match_len", "value": "66", "step": "1"},
+	    {"param": "divergence_threshold_percent", "value": 0.30, "step": "1"},
+	    {"param": "minimum_coverage", "value": "15", "step": "2"},
+	    {"param": "freq_cutoff", "value": 0.10, "step": "2"}
+	], 
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "name": "Hepatitis C virus genotype 1", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "name": "Hepatitis C virus type 1b complete genome", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "name": "Hepatitis C virus clone J8CF, complete genome", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "name": "Hepatitis C virus S52 polyprotein gene", 
+                "uri": {
+                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            },
+            {
+                "name": "HCV1a_drug_resistant_sample0001-01", 
+                "uri": {
+                    "address": "http://example.com/nuc-read/514682",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "name": "HCV1a_drug_resistant_sample0001-02", 
+                "uri": {
+                    "address": "http://example.com/nuc-read/514683",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }
+        ], 
+        "output_subdomain": [
+            {
+                "mediatype": "text/csv", 
+                "uri": { 
+                    "address": "http://example.com/data/514769/dnaAccessionBased.csv",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            },
+            {
+                "mediatype": "text/csv", 
+                "uri": {
+                    "address": "http://example.com/data/514801/SNPProfile*.csv",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }
+        ]
+    },
+    "error_domain": {
+        "empirical_error": {
+            "false_negative_alignment_hits": "<0.0010", 
+            "false_discovery": "<0.05"
+        }, 
+        "algorithmic_error": { 
+            "false_positive_mutation_calls_discovery": "<0.00005", 
+            "false_discovery": "0.005"
+        }
+    }
+}

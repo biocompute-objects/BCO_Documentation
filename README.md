@@ -24,13 +24,11 @@ The [BioCompute Objects user guide](/user_guide.md) provides an introduction to 
 
 ## Specification
 
-For developers and advanced users, the current [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation of the construction of BioCompute Objects.
+For developers and advanced users, the [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation on the construction of BioCompute Objects.
 
 See [releases](https://github.com/biocompute-objects/BCO_Specification/releases) for all releases of BCO object specification since moving to GitHub.
 
 ### Repository
-
-This repository contains the documents that make up the release of the BCO specification. 
 
 Note that unless you are viewing a [release](https://github.com/biocompute-objects/BCO_Specification/releases) this is a draft subject to change.
 
@@ -50,9 +48,6 @@ Table of content:
     * [Input and Output domain](io-domain.md)
     * [Error domain](error-domain.md)
   * [BCO expanded view example HCV1a.json](HCV1a.json)
-  * [Data Typing](data-typing.md)
-    * [Primitive data types primitives.json](primitives.json)
-    * [Base BioCompute Type base_type_BioCompute.json](base_type_BioCompute.json)
 
 ### Citation
 This standard was originaly prepared by [The BioCompute Object working group](/BCO_Spec_V1.2.md#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
@@ -66,9 +61,17 @@ Simonyan, V., Goecks, J., & Mazumder, R. (2017). ***Biocompute Objects — A Ste
 
 To suggest changes to [this repository](#Repository) we welcome contributions as a [pull request](https://github.com/biocompute-objects/BCO_Specification/pulls) or [issue](https://github.com/biocompute-objects/BCO_Specification/issues) submission.
 
-<!-- TODO: Something about license and IP transfer? -->
+BCO_Specification is licensed under the [BSD 3-Clause "New" or "Revised" License](./LICENSE)
+
+>A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
 
 
 Please also see our [OSF page](https://osf.io/h59uh/) or our [main page](http://biocomputeobject.org/) 
 
-<!-- something about mailing list? -->
+## Mailing List
+
+As a subscriber to the BCO mailing list, you can post to it by sending a message tobiocomputels@hermes.gwu.edu (using the email address that is subscribed). This list is semi-automated and will send your message for review. 
+
+To subscribe or unsubscribe, please visit https://hermes.gwu.edu/cgi-bin/wa?A0=BIOCOMPUTELS and click `Subscribe` or `Unsubscribe`` on the lower right. You can also unsubscribe from the list at any time by sending an email to listserv@hermes.gwu.edu, in which the body says:
+
+`unsubscribe biocomputels`

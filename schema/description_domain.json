@@ -31,7 +31,7 @@
                 "type": "object",
                 "description": "External references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by Identifiers.org.",
                 "reference": "https://identifiers.org/",
-			 "required": [
+                "required": [
                     "namespace",
                     "name",
                     "ids",
@@ -48,7 +48,6 @@
                     "name": {
                         "type": "string",
                         "description": "Name of external reference",
-                        "default": "",
                         "examples": [
                             "PubChem-compound"
                         ]
@@ -133,7 +132,6 @@
                             "name": {
                                 "type": "string",
                                 "description": "Public searchable name for reference or prereq.",
-                                "default": "",
                                 "examples": [
                                     "Hepatitis C virus genotype 1"
                                 ]
