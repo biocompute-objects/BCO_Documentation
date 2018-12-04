@@ -114,25 +114,58 @@
             "type": "string",
             "format": "date-time"
           },
-          "reviewer": {
-            "$ref": "#/definitions/contributor",
-            "description": "TODO: establish the constraint: "reviewer" and "reviewer_comment" only required if review "status" is anything BUT unreviewed. JPAT- define each of the status' as separate object and nest the fields I want under that"
-          },
-          "reviewer_comment": {
-            "type": "string",
-            "description": "Brief statement on the BCO review status provided by reviewer",
-            "examples": [
-              "Approved by GW staff. Waiting for approval from FDA Reviewer"
-            ]
-          },
           "status": {
             "type": "string",
             "enum": [
               "unreviewed",
               "in-review",
+                "reviewer": {
+                  "$ref": "#/definitions/contributor",
+                	"description": "TOEDIT review-status dependent JPAT- define each of the status' as separate object and nest the fields I want under that"
+		              "reviewer_comment": {
+		                "type": "string",
+		                "description": "Brief statement on the BCO review status provided by reviewer",
+		                "examples": [
+		                  "Approved by GW staff. Waiting for approval from FDA Reviewer"
+		            ]
+		          },
+              },
               "approved",
+             	  "reviewer": {
+               	  "$ref": "#/definitions/contributor",
+                	"description": "TOEDIT: review-status dependent JPAT- define each of the status' as separate object and nest the fields I want under that"
+		            "reviewer_comment": {
+		              "type": "string",
+		              "description": "Brief statement on the BCO review status provided by reviewer",
+		              "examples": [
+		               "Approved by GW staff. Waiting for approval from FDA Reviewer"
+		            ]
+		          },
+             		},
               "rejected",
+             	  "reviewer": {
+                	"$ref": "#/definitions/contributor",
+                	"description": "TOEDIT: review-status dependent"
+		            "reviewer_comment": {
+		              "type": "string",
+		              "description": "Brief statement on the BCO review status provided by reviewer",
+		              "examples": [
+		                "Approved by GW staff. Waiting for approval from FDA Reviewer"
+		            ]
+		          },
+             },
               "suspended"
+             	  "reviewer": {
+               	  "$ref": "#/definitions/contributor",
+               	  "description": "TOEDIT: review-status dependent"
+		            "reviewer_comment": {
+		              "type": "string",
+		              "description": "Brief statement on the BCO review status provided by reviewer",
+		              "examples": [
+		                "Approved by GW staff. Waiting for approval from FDA Reviewer"
+		            ]
+		          },
+             },
             ],
             "description": "Current verification status of the BioCompute Object",
             "default": "unreviewed"
