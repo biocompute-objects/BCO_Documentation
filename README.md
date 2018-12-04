@@ -46,7 +46,7 @@ Table of content:
 ## Specification
 ### Current Release [WIP]
 
-For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_docs/standard.doc) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
+For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_docs/standard.md) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
 
 
 ### Previous Release
