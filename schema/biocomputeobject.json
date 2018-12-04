@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://biocomputeobject.org/schemas/biocomputeobject.json",
+  "type": "object",
+  "title": "Base type for all BioCompute Object types",
+  "description": "All BioCompute object types must inherit from this type in order to be compliant with BioCompute framework",
+  "required": [
+    "bco_id",
+    "type",
+    "digital_signature",
+    "bco_spec_version",
+    "provenance_domain"
+  ],
+  "definitions": {
+    "bco_id": {
+      "type": "string",
+      "description": "A unique identifier that should be applied to each BCO instance, generated and assigned by a BCO database engine. IDs should never be reused",
+      "$comment": "FIXME: the URL references the master branch instead of a commit hash; branches are moving targets",
+      "examples": [ "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/master/HCV1a.json" ]
+    },
+    "inherited": {
+      "$comment": "FIXME: how should schema(s) handle inherited types?",
+      "type": "object",
+      "description": "all fields in this domain are BioCompute specific and should be defined in inherited BioCompute type"
+    },
+    "uri": {
+      "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "address" ],
+      "properties": {
+        "address": {
+          "type": "string",
+          "format": "uri"
+        },
+        "access_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sha1_chksum": {
+          "type": "string",
+          "description": "Sha256 or any hash function that produces a message digest",
+          "pattern": "[A-Za-z0-9]+"
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "bco_id": {
+      "$ref": "#/definitions/bco_id",
+      "readOnly": true
+    },
+    "bco_spec_version": {
+      "type": "string",
+      "description": "Version of the BCO specification used to define this document",
+      "examples": [ "https://w3id.org/biocompute/spec/v1.2" ],
+      "readOnly": true,
+      "format": "uri"
+    },
+    "digital_signature": {
+      "type": "string",
+      "description": "A string-type, read-only value, protecting the object from internal or external alterations without proper validation generated with a SHA-256 hash function.",
+      "examples": [ "5986B05969341343E77A95B4023600FC8FEF48B7E79F355E58B0B404A4F50995" ],
+      "readOnly": true,
+      "pattern": "^([A-Za-z0-9]+)$"
+    },
+    "provenance_domain": {
+      "$ref": "provenance_domain.json"
+    },
+    "usability_domain": {
+      "$ref": "usability_domain.json"
+    },
+    "extension_domain": {
+      "$comment": "FIXME: how should schema(s) handle inherited types?",
+      "$comment": "TODO: remove 'additionalProperties: false' after handling inherited types is resolved. In the meantime it was set to avoid forgetting to write a schema for a new property because it is silently ignored during validation",
+      "additionalProperties": false,
+      "properties": {
+        "fhir_extension": {
+          "type": "array",
+          "items": {
+            "$ref": "extension_domain/fhir_extension.json"
+          }
+        },
+        "scm_extension": {
+          "$ref": "extension_domain/scm_extension.json"
+        }
+      }
+    },
+    "description_domain": {
+      "$ref": "description_domain.json"
+    },
+    "execution_domain": {
+      "$ref": "execution_domain.json"
+    },
+    "parametric_domain": {
+      "$ref": "parametric_domain.json"
+    },
+    "io_domain": {
+      "$ref": "io_domain.json"
+    },
+    "error_domain": {
+      "type": "object",
+      "properties": {
+        "empirical_error": {
+          "$ref": "#/definitions/inherited"
+        },
+        "algorithmic_error": {
+          "$ref": "#/definitions/inherited"
+        }
+      }
+    }
+  }
+}
