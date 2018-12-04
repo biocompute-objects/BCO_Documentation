@@ -1,7 +1,10 @@
 # [WIP] BioCompute Object (BCO) User Guide
 ### BCO_Spec_1.3.0
 
-## BCO expanded view example 
+## BioCompute Schema
+The BioCompute Obeject captures relevant information from a high throughput sequencing workflow in order to enable a user to understand and interpret the workflow efficiently and with high confidence. 
+
+A BCO is a text file that follows the JSON data structure and shall consist of all domains required by the BioCompute schema. A BCO shall be written in [JSON schema](https://json-schema.org/). The minimum requirement to execute the standard is the fully organized BCO containing all domains in proper JSON Schema format. Pursuant to JSON schema, the required fields are listed at the top of the [BioCompute schema](./schema/biocomputeobject.json). The fully organized BCO example file is hosted in the schemas folder, along with related files. All files in the schema folder are linked together, being referenced by the 'biocomputeobject.json' file. 
 
 BioCompute data types are defined as aggregates of the critical fields organized into a few domains: 
 1) the identification and provenance domain
@@ -12,11 +15,6 @@ BioCompute data types are defined as aggregates of the critical fields organized
 6) the parametric domain
 7) the input and output domains
 8) the error domain. 
-
-Three of the domains in a BioCompute Object SHOULD become immutable upon assignment of the `bco_id`: 
-   1) the Parametric Domain
-   2) the Execution Domain and 
-   3) the I/O Domain. 
 
 # BioCompute Object Consortium members (BCOC):
 **FDA:** Mark Walderhaug, Ruth Bandler, Eric Donaldson, Elaine Thompson, Alin Voskanian, Anton Golikov, Konstantinos Karagiannis, Elaine Johanson, Adrian Myers, Errol Strain, Khaled Bouri, Tong Weida, Wenming Xiao, Md Shamsuzzaman 

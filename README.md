@@ -20,11 +20,17 @@ To facilitate a means for different stakeholders in the HTS communities to provi
 
 ## User Guide 
 
-The [BioCompute Objects user guide](/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/bco-specification.md).
+The [BioCompute Objects user guide](/schema/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/bco-specification.md).
 
 ## Specification
+### Current Release [WIP]
 
-For developers and advanced users, the [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation on the construction of BioCompute Objects.
+For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_docs/standard.doc) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
+
+
+### Previous Release
+
+For developers and advanced users, the [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation on the construction of BioCompute Objects before the implementation of JSON schema.
 
 See [releases](https://github.com/biocompute-objects/BCO_Specification/releases) for all releases of BCO object specification since moving to GitHub.
 
