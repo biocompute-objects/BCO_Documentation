@@ -22,18 +22,6 @@ To facilitate a means for different stakeholders in the HTS communities to provi
 
 The [BioCompute Objects user guide](/schema/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/bco-specification.md).
 
-## Specification
-### Current Release [WIP]
-
-For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_docs/standard.doc) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
-
-
-### Previous Release
-
-For developers and advanced users, the [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation on the construction of BioCompute Objects before the implementation of JSON schema.
-
-See [releases](https://github.com/biocompute-objects/BCO_Specification/releases) for all releases of BCO object specification since moving to GitHub.
-
 ### Repository
 
 Note that unless you are viewing a [release](https://github.com/biocompute-objects/BCO_Specification/releases) this is a draft subject to change.
@@ -54,6 +42,18 @@ Table of content:
     * [Input and Output domain](io-domain.md)
     * [Error domain](error-domain.md)
   * [BCO expanded view example HCV1a.json](HCV1a.json)
+
+## Specification
+### Current Release [WIP]
+
+For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_docs/standard.doc) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
+
+
+### Previous Release
+
+For developers and advanced users, the [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation on the construction of BioCompute Objects before the implementation of JSON schema.
+
+See [releases](https://github.com/biocompute-objects/BCO_Specification/releases) for all releases of BCO object specification since moving to GitHub.
 
 ### Citation
 This standard was originaly prepared by [The BioCompute Object working group](/BCO_Spec_V1.2.md#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
