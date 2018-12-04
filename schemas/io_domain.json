@@ -8,27 +8,29 @@
         "input_subdomain",
         "output_subdomain"
     ],
-	"definitions": {
-	    "uri": {
-	      "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
-	      "type": "object",
-	      "additionalProperties": false,
-	      "required": [ "address" ],
-	      "properties": {
-	        "address": {
-	          "type": "string",
-	          "format": "uri"
-	        },
-	        "access_time": {
-	          "type": "string",
-	          "format": "date-time"
-	        },
-	        "sha1_chksum": {
-	          "type": "string",
-	          "pattern": "[A-Za-z0-9]+"
-	        }
-	      }
-	    },
+    "definitions": {
+        "uri": {
+            "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "address"
+            ],
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "access_time": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "sha1_chksum": {
+                    "type": "string",
+                    "pattern": "[A-Za-z0-9]+"
+                }
+            }
+        },
         "name": {
             "type": "string",
             "description": "human readable designition for the input",
@@ -37,11 +39,11 @@
             ],
             "pattern": "^(.*)$"
         }
-	},
+    },
     "properties": {
         "input_subdomain": {
             "type": "array",
-			"title": "input_domain",
+            "title": "input_domain",
             "description": "A record of the references and input files for the entire pipeline. Each type of input file is listed under a key for that type.",
             "items": {
                 "type": "object",
@@ -59,7 +61,7 @@
                         "pattern": "^(.*)$"
                     },
                     "uri": {
-						"type": "object",
+                        "type": "object",
                         "$ref": "#/definitions/uri"
                     }
                 }
@@ -68,7 +70,7 @@
         "output_subdomain": {
             "type": "array",
             "title": "output_subdomain",
-			"description": "A record of the outputs for the entire pipeline.",
+            "description": "A record of the outputs for the entire pipeline.",
             "items": {
                 "type": "object",
                 "title": "The Items Schema",
@@ -86,7 +88,7 @@
                         "pattern": "^(.*)$"
                     },
                     "uri": {
-						"type": "object",
+                        "type": "object",
                         "$ref": "#/definitions/uri"
                     }
                 }

@@ -82,7 +82,7 @@
             }
         },
         "pipeline_steps": {
-            "type": "object",
+            "type": "array",
             "description": "Each individual tool (or a well defined and reusable script) is represented as a step. Parallel processes are given the same step number.",
             "required": [
                 "step_number",
