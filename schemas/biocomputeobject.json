@@ -2,8 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://biocomputeobject.org/schemas/biocomputeobject.json",
     "type": "object",
-    "title": "Base type for all BioCompute Object types",
-    "description": "All BioCompute object types must inherit from this type in order to be compliant with BioCompute framework",
+    "title": "Base type for all BioCompute Objects",
+    "description": "All BioCompute object types must adhear to this type in order to be compliant with BioCompute framework",
     "required": [
         "bco_id",
         "digital_signature",
