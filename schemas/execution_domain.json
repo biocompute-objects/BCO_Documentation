@@ -10,7 +10,7 @@
         "script_driver",
         "software_prerequisites",
         "external_data_endpoints",
-        "env_parameters"
+        "environment_variables"
     ],
     "additionalProperties": false,
     "properties": {
@@ -106,31 +106,33 @@
                 }
             }
         },
-        "env_parameters": {
-            "type": "object",
+        "environment_variables": {
+            "type": "array",
             "description": "Environmental parameters that are useful to configure the execution environment on the target platform.",
             "required": [
-                "key",
+                "param",
                 "value"
             ],
             "additionalProperties": false,
-            "properties": {
-                "key": {
-                    "type": "string",
-                    "description": "Specific to each platform",
-                    "default": "",
-                    "examples": [
-                        "HOSTTYPE"
-                    ]
-                },
-                "value": {
-                    "type": "string",
-                    "description": "TODO",
-                    "examples": [
-                        "x86_64-linux"
-                    ]
-                }
-            }
+            "items":{
+	            "properties": {
+	                "param": {
+	                    "type": "string",
+	                    "description": "Specific to each platform",
+	                    "default": "",
+	                    "examples": [
+	                        "HOSTTYPE"
+	                    ]
+	                },
+	                "value": {
+	                    "type": "string",
+	                    "description": "TODO",
+	                    "examples": [
+	                        "x86_64-linux"
+	                    ]
+	                }
+	            }
+			}
         }
     }
 }

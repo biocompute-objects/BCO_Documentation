@@ -247,10 +247,12 @@
                 "url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
             }
         ], 
-        "env_parameters": {
-            "key": "HOSTTYPE", 
-            "value" : "x86_64-linux"
-        }
+        "environment_variables": [
+            {
+				"key": "HOSTTYPE", 
+				"value" : "x86_64-linux"
+        	}
+		]
     }, 
 	"parametric_domain": [
 	    {"param": "seed", "value": "14", "step": "1"},
