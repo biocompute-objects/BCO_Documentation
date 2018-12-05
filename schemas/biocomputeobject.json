@@ -6,9 +6,8 @@
     "description": "All BioCompute object types must adhear to this type in order to be compliant with BioCompute framework",
     "required": [
         "bco_id",
-        "bco_spec_version"
-        "digital_signature",
         "bco_spec_version",
+        "digital_signature",
         "provenance_domain",
         "usability_domain",
         "description_domain",
