@@ -25,3 +25,5 @@ def main():
 #______________________________________________________________________________#
 if __name__ == "__main__":
     main()
+#print a validation mesage 
+    print("Schema Valid")

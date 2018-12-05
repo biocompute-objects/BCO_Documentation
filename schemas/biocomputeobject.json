@@ -112,15 +112,7 @@
             "$ref": "io_domain.json"
         },
         "error_domain": {
-            "type": "object",
-            "properties": {
-                "empirical_error": {
-                    "$ref": "#/definitions/inherited"
-                },
-                "algorithmic_error": {
-                    "$ref": "#/definitions/inherited"
-                }
-            }
+            "$ref": "error_domain.json"
         }
     }
 }
