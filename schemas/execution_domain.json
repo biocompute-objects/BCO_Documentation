@@ -115,24 +115,24 @@
             ],
             "additionalProperties": false,
             "items":{
-	            "properties": {
-	                "param": {
-	                    "type": "string",
-	                    "description": "Specific to each platform",
-	                    "default": "",
-	                    "examples": [
-	                        "HOSTTYPE"
-	                    ]
-	                },
-	                "value": {
-	                    "type": "string",
-	                    "description": "TODO",
-	                    "examples": [
-	                        "x86_64-linux"
-	                    ]
-	                }
-	            }
-			}
+                "properties": {
+                    "param": {
+                        "type": "string",
+                        "description": "Specific to each platform",
+                        "default": "",
+                        "examples": [
+                            "HOSTTYPE"
+                        ]
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "TODO",
+                        "examples": [
+                            "x86_64-linux"
+                        ]
+                    }
+                }
+            }
         }
     }
 }

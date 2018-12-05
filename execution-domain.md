@@ -18,7 +18,7 @@ Condensed example:
         ],
         "external_data_endpoints": [
         ], 
-        "env_parameters": {
+        "environment_variables": {
         }
 }
 ```
@@ -94,14 +94,16 @@ The key `name` should describe the service that is accessed.
 ]
 ```
 
-### 2.5.6 Environmental parameters "env_parameters"
+### 2.5.6 Environment Variables "environment_variables"
 
 Multi-value additional key value pairs useful to configure the execution environment on the target platform. For example, one might specify the number of compute cores, or available memory use of the script. The possible keys are specific to each platform. The "value" should be a JSON string.
 
 ```json
-        "env_parameters": {
-            "key": "HOSTTYPE", 
-            "value" : "x86_64-linux"
-        }
+        "environment_variables": [
+            {
+                "key": "HOSTTYPE", 
+                "value" : "x86_64-linux"
+            }
+        ]
     }
 ```

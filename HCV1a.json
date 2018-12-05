@@ -249,7 +249,7 @@
         ], 
         "environment_variables": [
             {
-				"key": "HOSTTYPE", 
+				"param": "HOSTTYPE", 
 				"value" : "x86_64-linux"
         	}
 		]
