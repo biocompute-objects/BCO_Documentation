@@ -84,76 +84,79 @@
         "pipeline_steps": {
             "type": "array",
             "description": "Each individual tool (or a well defined and reusable script) is represented as a step. Parallel processes are given the same step number.",
-            "required": [
-                "step_number",
-                "name",
-                "description",
-                "version",
-                "input_list",
-                "output_list"
-            ],
-            "properties": {
-                "step_number": {
-                    "type": "integer",
-                    "description": "Non-negative integer value representing the position of the tool in a one-dimensional representation of the pipeline."
-                },
-                "name": {
-                    "type": "string",
-                    "description": "This is a recognized name of the software tool",
-                    "examples": [
-                        "HIVE-hexagon"
-                    ]
-                },
-                "description": {
-                    "type": "string",
-                    "description": "Specific use/purpose of the tool.",
-                    "examples": [
-                        "Alignment of reads to a set of references"
-                    ]
-                },
-                "version": {
-                    "type": "string",
-                    "description": "Version assigned to the instance of the tool used corresponding to the upstream release.",
-                    "examples": [
-                        "1.3"
-                    ]
-                },
-                "prerequisite": {
-                    "type": "array",
-                    "description": "Reference or required prereqs",
-                    "items": {
-                        "type": "object",
-                        "description": "Text value to indicate a package or prerequisite for running the tool used.",
-                        "required": [
-                            "name",
-                            "uri"
-                        ],
-                        "properties": {
-                            "name": {
-                                "type": "string",
-                                "description": "Public searchable name for reference or prereq.",
-                                "examples": [
-                                    "Hepatitis C virus genotype 1"
-                                ]
-                            },
-                            "uri": {
-                                "$ref": "biocomputeobject.json#/definitions/uri"
+            "items": {
+                "type": "object",
+                "required": [
+                    "step_number",
+                    "name",
+                    "description",
+                    "version",
+                    "input_list",
+                    "output_list"
+                ],
+                "properties": {
+                    "step_number": {
+                        "type": "integer",
+                        "description": "Non-negative integer value representing the position of the tool in a one-dimensional representation of the pipeline."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "This is a recognized name of the software tool",
+                        "examples": [
+                            "HIVE-hexagon"
+                        ]
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Specific use/purpose of the tool.",
+                        "examples": [
+                            "Alignment of reads to a set of references"
+                        ]
+                    },
+                    "version": {
+                        "type": "string",
+                        "description": "Version assigned to the instance of the tool used corresponding to the upstream release.",
+                        "examples": [
+                            "1.3"
+                        ]
+                    },
+                    "prerequisite": {
+                        "type": "array",
+                        "description": "Reference or required prereqs",
+                        "items": {
+                            "type": "object",
+                            "description": "Text value to indicate a package or prerequisite for running the tool used.",
+                            "required": [
+                                "name",
+                                "uri"
+                            ],
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "Public searchable name for reference or prereq.",
+                                    "examples": [
+                                        "Hepatitis C virus genotype 1"
+                                    ]
+                                },
+                                "uri": {
+                                    "$ref": "biocomputeobject.json#/definitions/uri"
+                                }
                             }
                         }
-                    }
-                },
-                "input_list": {
-                    "type": "array",
-                    "description": "URIs (expressed as a URN or URL) of the input files for each tool.",
-                    "items": {
-                        "$ref": "biocomputeobject.json#/definitions/uri"
-                    }
-                },
-                "output_list": {
-                    "type": "array",
-                    "description": "URIs (expressed as a URN or URL) of the output files for each tool.",
-                    "items": {
-                        "$ref": "biocomputeobject.json#/definitions/uri"
+                    },
+                    "input_list": {
+                        "type": "array",
+                        "description": "URIs (expressed as a URN or URL) of the input files for each tool.",
+                        "items": {
+                            "$ref": "biocomputeobject.json#/definitions/uri"
+                        }
+                    },
+                    "output_list": {
+                        "type": "array",
+                        "description": "URIs (expressed as a URN or URL) of the output files for each tool.",
+                        "items": {
+                            "$ref": "biocomputeobject.json#/definitions/uri"
+                        }
                     }
                 }
             }
