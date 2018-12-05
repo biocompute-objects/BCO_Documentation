@@ -29,8 +29,8 @@ This field is a reference to a revision within the scm repository. This SHOULD b
 
 #### 2.3.2.4 SCM Path "scm_path"
 
-`scm_path` should NOT start with `/`
+This is the path from the repository to the source code referenced. `scm_path` should NOT start with `/`
 
 #### 2.3.2.5 SCM Preview "scm_preview"
 
-The full uri for the source code referenced by the BioCompute
+The full uri for the source code referenced by the BioCompute.
