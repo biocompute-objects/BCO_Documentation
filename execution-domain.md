@@ -99,11 +99,9 @@ The key `name` should describe the service that is accessed.
 Multi-value additional key value pairs useful to configure the execution environment on the target platform. For example, one might specify the number of compute cores, or available memory use of the script. The possible keys are specific to each platform. The "value" should be a JSON string.
 
 ```json
-        "environment_variables": [
-            {
-                "key": "HOSTTYPE", 
-                "value" : "x86_64-linux"
-            }
-        ]
+        "environment_variables": {
+            "HOSTTYPE": "x86_64-linux",
+            "EDITOR": "vim"
+        }
     }
 ```

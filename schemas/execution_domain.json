@@ -107,30 +107,12 @@
             }
         },
         "environment_variables": {
-            "type": "array",
+            "type": "object",
             "description": "Environmental parameters that are useful to configure the execution environment on the target platform.",
-            "required": [
-                "param",
-                "value"
-            ],
             "additionalProperties": false,
-            "items":{
-                "properties": {
-                    "param": {
-                        "type": "string",
-                        "description": "Specific to each platform",
-                        "default": "",
-                        "examples": [
-                            "HOSTTYPE"
-                        ]
-                    },
-                    "value": {
-                        "type": "string",
-                        "description": "TODO",
-                        "examples": [
-                            "x86_64-linux"
-                        ]
-                    }
+            "patternProperties": {
+                "^[a-zA-Z_]+[a-zA-Z0-9_]*$": {
+                    "type": "string"
                 }
             }
         }
