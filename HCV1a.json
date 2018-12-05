@@ -90,7 +90,7 @@
         "scm_extension": {
             "scm_repository": "https://github.com/example/repo1",
             "scm_type": "git",
-            "scm_branch": "c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21",
+            "scm_commit": "c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21",
             "scm_path": "workflow/hive-viral-mutation-detection.cwl",
             "scm_preview": "https://github.com/example/repo1/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
       }

@@ -5,7 +5,7 @@
     "required": [
         "scm_repository",
         "scm_type",
-        "scm_branch",
+        "scm_commit",
         "scm_path",
         "scm_preview"
     ],
@@ -19,11 +19,14 @@
         },
         "scm_type": {
             "type": "string",
-            "examples": [
-                "git"
+            "enum": [
+                "git",
+                "svn",
+                "hg",
+                "other"
             ]
         },
-        "scm_branch": {
+        "scm_commit": {
             "type": "string",
             "examples": [
                 "c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21"

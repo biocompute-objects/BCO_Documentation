@@ -15,7 +15,7 @@ Condensed example:
         ], 
         "xref": [
         ],
-		"platform": ["HIVE"],
+        "platform": ["HIVE"],
         "pipeline_steps": [
             {
                 "step_number": "1", 
