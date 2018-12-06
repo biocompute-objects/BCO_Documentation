@@ -19,7 +19,7 @@ Condensed example:
 
 ### 2.0.1 BCO version "bco_spec_version"
 
-The version of the BCO specification used to define this document. It is recomended that this value be a permalink as defined in the [w3id.org/biocompute](https://github.com/perma-id/w3id.org/tree/master/biocompute) repository. 
+The version of the BCO specification used to define the BCO. It is recomended that this value be a permalink as defined in the [w3id.org/biocompute](https://github.com/perma-id/w3id.org/tree/master/biocompute) repository. 
 
 ```json
 "bco_spec_version": "https://w3id.org/biocompute/spec/v1.2" 
@@ -27,10 +27,10 @@ The version of the BCO specification used to define this document. It is recomen
 
 ### 2.0.2 BioCompute Object Identifier "bco_id"
 
-A unique identifier that should be applied to each BCO instance. These can be assigned by a BCO database engine. IDs should never be reused. It is RECOMMENDED that the BCO identifier is based on a [UUID](https://tools.ietf.org/html/rfc4122)s (sometimes called GUIDs) to ensure uniqueness, either as a location-independent URN (e.g. urn:uuid:2bf8397b-9aa8-47f2-80a7-235653e8e824) or as part of an identifier permalink, (e.g. http://repo.example.com/bco/2bf8397b-9aa8-47f2-80a7-235653e8e824). While the UUID is the preferred method, IDs expressed as a URN or URL are also acceptable.
+A unique identifier that should be applied to each BCO instance. These can be assigned by a BCO database engine or manualy generated. IDs should never be reused. It is RECOMMENDED that the BCO identifier is based on a [UUID](https://tools.ietf.org/html/rfc4122)s (sometimes called GUIDs) to ensure uniqueness, either as a location-independent URN (e.g. `urn:uuid:2bf8397b-9aa8-47f2-80a7-235653e8e824`) or as part of an identifier permalink, (e.g. `http://repo.example.com/bco/2bf8397b-9aa8-47f2-80a7-235653e8e824`). While the UUID is the preferred method, IDs expressed as a URN or URL are also acceptable.
 
 ```json
-"bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json"
+"bco_id": "https://w3id.org/biocompute/examples/HCV1a.json"
 ```
 
 ### 2.0.3 Checksum "checksum"
