@@ -1,9 +1,10 @@
 _This document is part of the [BioCompute Object User Guide](user_guide.md)_
 
+_Back to [BCO domains](bco-domains.md)_
 
 ## 2.8 Error Domain, acceptable range of variability "error_domain"
 
-The error domain can be used to determine what range of input returns outputs that are within the tolerance level defined in this subdomain and therefore can be used, for example, to optimize algorithm. It consists of two subdomains: _empirical_ and _algorithmic_.
+The error domain can be used to determine what range of input returns outputs that are within the tolerance level defined in this subdomain and therefore can be used to optimize algorithm. It consists of two subdomains: _empirical_ and _algorithmic_.
 
 The **empirical** error subdomain contains empirically determined values such as limits of detectability, false positives, false negatives, statistical confidence of outcomes, etc. This can be measured by running the algorithm on multiple data samples of the usability domain or through the use of carefully designed in-silico data. For example, a set of spiked, well-characterized samples can be run through the algorithm to determine the false positives, negatives, and limits of detection. 
 
