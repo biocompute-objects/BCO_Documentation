@@ -59,7 +59,7 @@ The "status" key describes the status of an object in the review process and the
 * `suspended` flag indicates an object that was once valid is no longer considered valid. 
 * `rejected` flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. 
 
-The fields from the `contributor` object (described in [section 2.1.8](#2.1.8-contributors-contributors)) are used to populate the reviewer section. Each BCO MUST have at least one `review`. 
+The fields from the `contributor` object (described in [section 2.1.8](/provenance-domain.md#218-contributors-contributors)) are used to populate the reviewer section. Each BCO MUST have at least one `review`. 
 
 ```json
         "review": [
