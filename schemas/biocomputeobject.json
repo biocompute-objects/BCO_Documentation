@@ -60,6 +60,7 @@
             ],
             "additionalProperties": false,
             "properties": {
+                "name": {
                     "type": "string",
                     "description": "TODO",
                     "examples": [
