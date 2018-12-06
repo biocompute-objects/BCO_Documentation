@@ -3,7 +3,7 @@
     "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
     "type": "object",
     "title": "The Execution_domain Schema",
-    "description": "TODO",
+    "description": "The fields required for execution of the BCO are herein encapsulated together in order to clearly separate information needed for deployment, software configuration, and running applications in a dependent environment",
     "required": [
         "script",
         "script_driver",
@@ -40,14 +40,14 @@
                 "properties": {
                     "name": {
                         "type": "string",
-                        "description": "TODO",
+                        "description": "Names of software prerequisites",
                         "examples": [
                             "HIVE-hexagon"
                         ]
                     },
                     "version": {
                         "type": "string",
-                        "description": "TODO",
+                        "description": "Versions of the software prerequisites",
                         "examples": [
                             "babajanian.1"
                         ]
