@@ -28,7 +28,7 @@ Note that unless you are viewing a [release](https://github.com/biocompute-objec
 
 Table of content:
 
-* [BioCompute Object (BCO) specification document](user_guide.md)
+* [BioCompute Object (BCO) User Guide](user_guide.md)
   * [Introduction to BioCompute Objects](introduction.md)
   * [BCO domains](bco-domains.md)
     * [Top level fields](top-level.md)
