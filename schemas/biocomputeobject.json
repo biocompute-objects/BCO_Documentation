@@ -51,6 +51,68 @@
                     "pattern": "[A-Za-z0-9]+"
                 }
             }
+        }, 
+        "contributor": {
+            "type": "object",
+            "description": "TODO: recommend some piece of information regarding contributor's identity be required",
+            "required": [
+                "contribution"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                    "type": "string",
+                    "description": "TODO",
+                    "examples": [
+                        "Charles Hadley King"
+                    ]
+                },
+                "affiliation": {
+                    "type": "string",
+                    "description": "TODO",
+                    "examples": [
+                        "George Washington University"
+                    ]
+                },
+                "email": {
+                    "type": "string",
+                    "description": "TODO",
+                    "examples": [
+                        "hadley_king@gwu.edu"
+                    ],
+                    "format": "email"
+                },
+                "contribution": {
+                    "type": "array",
+                    "description": "taken from https://doi.org/10.1186/2041-1480-4-37",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "authoredBy",
+                            "contributedBy",
+                            "createdAt",
+                            "createdBy",
+                            "createdWith",
+                            "curatedBy",
+                            "derivedFrom",
+                            "importedBy",
+                            "importedFrom",
+                            "providedBy",
+                            "retrievedBy",
+                            "retrievedFrom",
+                            "sourceAccessedBy"
+                        ],
+                        "description": "TODO: extract as definition"
+                    }
+                },
+                "orcid": {
+                    "type": "string",
+                    "description": "NOTE: ignored base_type_BioCompute.json defining this as required",
+                    "examples": [
+                        "https://orcid.org/0000-0003-1409-4549"
+                    ],
+                    "format": "uri"
+                }
+            }
         }
     },
     "additionalProperties": false,
