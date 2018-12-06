@@ -1,7 +1,7 @@
 BioCompute
 ==========
 
-Main website: http://biocomputeobject.org/
+BioCompute Partnership: http://biocomputeobject.org
 
 GitHub repository for BioCompute Objects:
 https://github.com/biocompute-objects/

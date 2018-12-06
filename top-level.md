@@ -10,7 +10,7 @@ Condensed example:
 {
     "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
     "bco_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
-    "digital_signature": "d41d8cd98f00b204e9800998ecf8427e",    
+    "checksum": "d41d8cd98f00b204e9800998ecf8427e",    
     "provenance_domain": {
     },
     "...": { }
@@ -33,9 +33,9 @@ A unique identifier that should be applied to each BCO instance. These can be as
 "bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json"
 ```
 
-### 2.0.3 Digital signature "digital_signature"
+### 2.0.3 Checksum "checksum"
 
-A string-type, read-only value, protecting the object from internal or external alterations without proper validation. The string should be generated through the use of a SHA-256 hash function. Everything EXCEPT for the `digital_signature`, `bco_id` and `bco_spec_version` should be included in the generation of the hash. For example:
+A string-type, read-only value, protecting the object from internal or external alterations without proper validation. The string should be generated through the use of a SHA-256 hash function. Everything EXCEPT for the `checksum`, `bco_id` and `bco_spec_version` should be included in the generation of the hash. For example:
 
 ```json
     "provenance_domain": {},
@@ -50,7 +50,7 @@ A string-type, read-only value, protecting the object from internal or external 
 will generate the following:
 
 ```json
-"digital_signature": "584C7FE128717E1712426AB19CAAEA8BC1E27365B54285BBEA1221284C7D3A48"
+"checksum": "584C7FE128717E1712426AB19CAAEA8BC1E27365B54285BBEA1221284C7D3A48"
 ```
 
 ### Additional domains
