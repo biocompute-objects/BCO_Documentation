@@ -17,15 +17,13 @@ This document was created by the [BioCompute Object Consortium members (BCOC)](#
 
 >A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
 
-#### High-throughput Sequencing Computational Standards for Regulatory Sciences (HTS-CSRS) Project
+# 1 Introduction
 
 This document specifies the structure of BioCompute Objects. 
 The specification is split into multiple parts linked to from this 
 top-level document and are maintained in a 
 [GithHub repository](https://github.com/biocompute-objects/BCO_Specification)
 where [contributions](README.md#support-community-and-contributing) are welcome.
-
-# 1 Introduction
 
 Read more:
 
