@@ -6,8 +6,7 @@
         "scm_repository",
         "scm_type",
         "scm_commit",
-        "scm_path",
-        "scm_preview"
+        "scm_path"
     ],
     "properties": {
         "scm_repository": {
@@ -37,7 +36,7 @@
             "examples": [
                 "workflow/hive-viral-mutation-detection.cwl"
             ],
-            "format": "uri-reference"
+            "format": "string"
         },
         "scm_preview": {
             "type": "string",
