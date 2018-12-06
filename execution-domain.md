@@ -1,4 +1,4 @@
-_This document is part of the [BioCompute Object specification](bco-specification.md)_
+_This document is part of the [BioCompute Object User Guide](user_guide.md)_
 
 ## 2.5 Execution Domain "execution_domain"
 
@@ -23,15 +23,7 @@ Condensed example:
 }
 ```
 
-### 2.5.1 Script Access Type "script_access_type"
-
-This field indicates whether the code of the "script" to execute the BioCompute Object is accessed as an external file via HTTP (URI) or in-line text in the `script` field. Valid options are `URI` or `text`.
-
-```json
- "script_access_type": "URI" OR "text"
- ```
-
-### 2.5.2 Script "script"
+### 2.5.1  Script "script"
 
 The Script field points to an internal or external reference to a script object that was used to perform computations for this BCO instance. This may be a reference to an object in GitHub, a computational service or any other type of script. 
 
@@ -39,7 +31,7 @@ The Script field points to an internal or external reference to a script object 
  "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"]
 ```
 
-### 2.5.3 Script driver "script_driver"
+### 2.5.2 Script driver "script_driver"
 
 This field provides a space to indicate what kind of executable can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. 
 
@@ -47,7 +39,7 @@ This field provides a space to indicate what kind of executable can be launched 
 "script_driver": "shell"
 ```
 
-### 2.5.4 Algorithmic tools and Software Prerequisites "software_prerequisites" 
+### 2.5.3 Algorithmic tools and Software Prerequisites "software_prerequisites" 
 
 An optional multi-value field listing the minimal necessary prerequisites, library, tool versions needed to successfully run the script to produce BCO. The keys are `name`, `version`, and `uri`. 
 
@@ -57,7 +49,7 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
                 "name": "HIVE-hexagon", 
                 "version": "babajanian.1",
                 "uri": {
-                    "address": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
+                    "uri": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500",
                     "sha1_chksum": "d60f506cddac09e9e816531e7905ca1ca6641e3c"
                 }
@@ -66,14 +58,14 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
                 "name": "HIVE-heptagon", 
                 "version": "albinoni.2",
                 "uri": {
-                    "address": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
+                    "uri": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }
         ]
 ```
 
-### 2.5.5 External Data Endpoints "external_data_endpoints"
+### 2.5.4 External Data Endpoints "external_data_endpoints"
 
 An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. 
 
@@ -94,7 +86,7 @@ The key `name` should describe the service that is accessed.
 ]
 ```
 
-### 2.5.6 Environment Variables "environment_variables"
+### 2.5.5 Environment Variables "environment_variables"
 
 Multi-value additional key value pairs useful to configure the execution environment on the target platform. For example, one might specify the number of compute cores, or available memory use of the script. The possible keys are specific to each platform. The "value" should be a JSON string.
 

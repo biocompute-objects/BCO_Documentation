@@ -1,8 +1,8 @@
-_This document is part of the [BioCompute Object specification](bco-specification.md)_
+_This document is part of the [BioCompute Object User Guide](user_guide.md)_
 
 # 1 Introduction to BioCompute Objects
 
-BioCompute is a paradigm and a BioCompute Object (BCO) is an instance of that paradigm. High-throughput sequencing (HTS), also referred to as next-generation sequencing (NGS) or massively parallel sequencing (MPS), has increased the pace at which we generate, compute and share genomic data in biomedical sciences. As a result, scientists, clinicians and regulators are now faced with a new data paradigm that is less portable, more complex and most of all poorly standardized. BCOs use a simple JSON format to encode important information on the execution of computational pipelines, or for the creation of knowledgebases. BioCompute can be process oriented (for software pipelines) and/or product oriented (for knowledge bases). So error domain can include information to do QA and/or QC. The goal of using a BCO is to streamline communication of these details between stakeholders in academia, industry and regulatory agencies. 
+BioCompute is a paradigm and a BioCompute Object (BCO) is an instance of that paradigm. High-throughput sequencing (HTS), also referred to as next-generation sequencing (NGS) or massively parallel sequencing (MPS), has increased the pace at which we generate, compute and share genomic data in biomedical sciences. As a result, scientists, clinicians and regulators are now faced with a new data paradigm that is less portable, more complex and most of all poorly standardized. BCOs use a simple implementation of the JSON schema to encode important information on the execution of computational pipelines, or for the creation of knowledgebases. BioCompute can be process oriented (for software pipelines) and/or product oriented (for knowledge bases). The goal of using a BCO is to streamline communication of these details between stakeholders in academia, industry and regulatory agencies. 
 
 The US Food and Drug Administration (FDA) and George Washington University (GW) have partnered to establish a framework for community-based standards development and harmonization of HTS computations and data formats. Standardized HTS data processing and data formats will promote interoperability and simplify the verification of bioinformatics protocols. To do this, a schema has been developed to represent instances of computational analysis as a BCO. A BCO includes: 
 
@@ -31,9 +31,7 @@ The unpredictability of tangible physical, chemical, and biological experiments 
 
  A BioCompute Object database record will be similar to a GenBank record in form; however, instead of describing a sequence, the BioCompute record will include information related to parameters, dependencies, usage, and other information related to the specific computational instance. This mechanism will extend similar efforts and also serve as a collaborative ground to ensure interoperability between different platforms, industries, scientists, regulators, and other stakeholders interested in biocomputing.
 
- 
-
-For more information, see the project description on the [FDA Extramural Research](https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm227223.htm) page. 
+For more information, see the project description on the [FDA Extramural Research](https://wayback.archive-it.org/7993/20180126133504/https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm491893.htm) page. 
 
 ### 1.2.1 Limitations of the initial effort
 
@@ -88,4 +86,4 @@ A BCO can be used to provide clarity and transparency of the data integration pr
 
 ## 1.6 BCO community
 
-The BioCompute Object working group facilitates a means for different stakeholders in the HTS communities to provide input on current practices on the BCO. This working group was formed during preparation for the 2017 HTS Computational Standards for Regulatory Sciences Workshop, and was initially made up of the workshop participants, both speakers and panelists. There has been a continual growth of the BCO working group as a direct result of the interaction between a variety of stakeholders from all interested communities in standardization of computational HTS data processing. 
+The BioCompute Object working group facilitates a means for different stakeholders in the HTS communities to provide input on current practices on the BCO. This working group was formed during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017), and was initially made up of the workshop participants, both speakers and panelists. There has been a continual growth of the BCO working group as a direct result of the interaction between the stakeholders interested in standardization of computational HTS data processing. 

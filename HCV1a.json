@@ -1,7 +1,7 @@
 {
-    "bco_id": "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
-    "digital_signature": "0B61E7C0EFF537CADADE475AA6386262FCDBC4DC",
-    "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
+    "bco_id": "https://w3id.org/biocompute/examples/HCV1a.json",
+    "checksum": "0B61E7C0EFF537CADADE475AA6386262FCDBC4DC",
+    "bco_spec_version" : "https://w3id.org/biocompute/spec/1.3.0",
     "provenance_domain": {
         "name": "HCV1a ledipasvir resistance SNP detection", 
         "version": "2.9",
@@ -9,6 +9,7 @@
             {
                 "status": "approved",
                 "reviewer_comment": "Approved by GW staff. Waiting for approval from FDA Reviewer",
+                "date": "2017-11-12T12:30:48-0400",
                 "reviewer": {
                     "name": "Charles Hadley King", 
                     "affiliation": "George Washington University", 
@@ -20,6 +21,7 @@
             {
                 "status": "approved",
                 "reviewer_comment": "The revised BCO looks fine",
+                "date": "2017-12-12T12:30:48-0400",
                 "reviewer": {
                     "name": "Eric Donaldson", 
                     "affiliation": "FDA", 
@@ -140,52 +142,52 @@
                     {
                         "name": "Hepatitis C virus genotype 1", 
                         "uri": {
-                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                            "uri": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     }, 
                     {
                         "name": "Hepatitis C virus type 1b complete genome", 
                         "uri": {
-                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
+                            "uri": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     }, 
                     {
                         "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
                         "uri": {
-                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
+                            "uri": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     }, 
                     {
                         "name": "Hepatitis C virus clone J8CF, complete genome", 
                         "uri": {
-                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
+                            "uri": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     }, 
                     {
                         "name": "Hepatitis C virus S52 polyprotein gene", 
                         "uri": {
-                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
+                            "uri": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     }
                 ], 
                 "input_list": [
                     {
-                        "address": "http://example.com/dna.cgi?cmd=objFile&ids=514683",
+                        "uri": "http://example.com/dna.cgi?cmd=objFile&ids=514683",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }, 
                     {
-                        "address": "http://example.com/dna.cgi?cmd=objFile&ids=514682",
+                        "uri": "http://example.com/dna.cgi?cmd=objFile&ids=514682",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 ],
                 "output_list": [
                     {
-                        "address": "http://example.com/data/514769/allCount-aligned.csv",
+                        "uri": "http://example.com/data/514769/allCount-aligned.csv",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 ]
@@ -197,17 +199,17 @@
                 "version": "1.3", 
                 "input_list": [
                     {
-                        "address": "http://example.com/data/514769/dnaAccessionBased.csv",
+                        "uri": "http://example.com/data/514769/dnaAccessionBased.csv",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 ], 
                 "output_list": [
                     {
-                        "address": "http://example.com/data/514801/SNPProfile.csv",
+                        "uri": "http://example.com/data/514801/SNPProfile.csv",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }, 
                     {
-                        "address": "http://example.com/data/14769/allCount-aligned.csv",
+                        "uri": "http://example.com/data/14769/allCount-aligned.csv",
                         "access_time": "2017-01-24T09:40:17-0500"
                     }
                 ]
@@ -215,15 +217,16 @@
         ]
     },
     "execution_domain": {
-        "script_access_type": "URI",
-        "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"],
+        "script": {
+			"uri": "https://example.com/workflows/antiviral_resistance_detection_hive.py"
+		},
         "script_driver": "shell", 
         "software_prerequisites": [
             {
                 "name": "HIVE-hexagon", 
                 "version": "babajanian.1",
                 "uri": {
-                    "address": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
+                    "uri": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500",
                     "sha1_chksum": "d60f506cddac09e9e816531e7905ca1ca6641e3c"
                 }
@@ -232,7 +235,7 @@
                 "name": "HIVE-heptagon", 
                 "version": "albinoni.2",
                 "uri": {
-                    "address": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
+                    "uri": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }
@@ -262,51 +265,51 @@
     "io_domain": {
         "input_subdomain": [
             {
-                "name": "Hepatitis C virus genotype 1", 
                 "uri": {
-                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                    "filename": "Hepatitis C virus genotype 1", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }, 
             {
-                "name": "Hepatitis C virus type 1b complete genome", 
                 "uri": {
-                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
+                    "filename": "Hepatitis C virus type 1b complete genome", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }, 
             {
-                "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
                 "uri": {
-                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
+                    "filename": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }, 
             {
-                "name": "Hepatitis C virus clone J8CF, complete genome", 
                 "uri": {
-                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }, 
             {
-                "name": "Hepatitis C virus S52 polyprotein gene", 
                 "uri": {
-                    "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
+                    "filename": "Hepatitis C virus S52 polyprotein gene", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             },
             {
-                "name": "HCV1a_drug_resistant_sample0001-01", 
                 "uri": {
-                    "address": "http://example.com/nuc-read/514682",
+                    "filename": "HCV1a_drug_resistant_sample0001-01", 
+                    "uri": "http://example.com/nuc-read/514682",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }, 
             {
-                "name": "HCV1a_drug_resistant_sample0001-02", 
+ 
                 "uri": {
-                    "address": "http://example.com/nuc-read/514683",
+                    "filename": "HCV1a_drug_resistant_sample0001-02",
+                    "uri": "http://example.com/nuc-read/514683",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }
@@ -315,14 +318,14 @@
             {
                 "mediatype": "text/csv", 
                 "uri": { 
-                    "address": "http://example.com/data/514769/dnaAccessionBased.csv",
+                    "uri": "http://example.com/data/514769/dnaAccessionBased.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             },
             {
                 "mediatype": "text/csv", 
                 "uri": {
-                    "address": "http://example.com/data/514801/SNPProfile*.csv",
+                    "uri": "http://example.com/data/514801/SNPProfile*.csv",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }

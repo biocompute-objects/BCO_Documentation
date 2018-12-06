@@ -1,14 +1,17 @@
-_This document is part of the [BioCompute Object specification](bco-specification.md)_
+_This document is part of the [BioCompute Object User Guide](user_guide.md)_
+
+_Back to [BCO domains](bco-domains.md)_
 
 ## 2.2 Usability Domain "usability_domain"
 
-This section defines the fields of the `usability_domain` part of the [BCO](bco-domains.md) structure.
+This section defines the `usability_domain` part of the [BCO](bco-domains.md) structure.
 
-This field provides a space for the author to define the usability domain of the BCO. It is an array of free text values that can accept template language to indicate values from the [external_references](https://github.com/biocompute-objects/BCO_Specification/blob/master/external-references.md). This field is to aid in search-ability and provide a specific **scientific use case** and a description of the function of the object. The usability domain along with keywords can help determine when and how the BCO can be used. It is recomended that a novel use of the BCO could result in the creation of a new entry with a new usability domain. The template takes the form of:
+This field provides a space for the author to define the usability domain of the BCO. It is an array of free text values that should be consistant with terminology used in the [`name`](provenance_domain.md#2.1.1-name-name), external references ([`xref`](/description-domain.md#242-external-references-xref)), and [`keywords`](/description-domain.md#241-keywords-keywords) sections. The `usability_domain` can accept template language to indicate values from the [`external_references`](https://github.com/biocompute-objects/BCO_Specification/blob/master/external-references.md). The template takes the form of:
 * `(SNP)[SO:0000694]` 
 
 where ($term) and [$identifier] are an entry in the `external_references` section.
 
+This field is to aid in search-ability and provide a specific **scientific use case** and a description of the function of the object. The usability domain along with keywords can help determine when and how the BCO can be used. It is recomended that a novel use of a specific BCO would result in the creation of a new entry with a new usability domain.
 
 ```json
     "usability_domain": [

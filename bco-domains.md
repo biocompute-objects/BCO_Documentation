@@ -1,4 +1,4 @@
-_This document is part of the [BioCompute Object specification](bco-specification.md)_
+_This document is part of the [BioCompute Object User Guide](user_guide.md)_
 
 # BCO domains
 
@@ -11,7 +11,7 @@ Condensed example:
     "bco_spec_version" : "https://w3id.org/biocompute/spec/v1.2",
     "bco_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
     "type": "antiviral_resistance_detection", 
-    "digital_signature": "584C7FE128717E1712426AB19CAAEA8BC1E27365B54285BBEA1221284C7D3A48",
+    "checksum": "584C7FE128717E1712426AB19CAAEA8BC1E27365B54285BBEA1221284C7D3A48",
     "provenance_domain": {
     },
     "usability_domain": [
@@ -66,7 +66,7 @@ Specification:
 
 ## 2.3 Extension Domain "extension_domain"
 
-The `extension_domain` is a space for a user to add more structured information that is defined in the BCO type definition. The `extension_domain` section is not evaluated by checks for BCO validity or computational correctness and as such is the place to add *ANY* type of additional **structured** information. We provide two examples that are neither exclusive or exhaustive.
+The `extension_domain` is a space for a user to add additional structured information that is not defined in the BioCompute shcema. The `extension_domain` section is not evaluated by checks for BCO validity or computational correctness and as such is the place to add *ANY* type of additional **structured** information. We provide two examples that are neither exclusive or exhaustive.
 
 Specifications:
 

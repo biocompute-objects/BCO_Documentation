@@ -1,8 +1,10 @@
 GitHub: https://github.com/biocompute-objects
 	
-OSF page: https://osf.io/r6s4u/ biocomputeobject.org
+OSF page: https://osf.io/h59uh/ 
 
-# BioCompute Object (BCO) specification document
+BioCompute Partnership: http://biocomputeobject.org
+
+# BioCompute Object (BCO) User Guide
 
 * This version: [draft](https://github.com/biocompute-objects/BCO_Specification/tree/master)
 * Previous version: [v1.2.0](https://github.com/biocompute-objects/BCO_Specification/releases/tag/v1.2)
@@ -11,32 +13,34 @@ OSF page: https://osf.io/r6s4u/ biocomputeobject.org
 <!-- FIXME: Ideally permalinks for all of the above links, say registering https://w3id.org/bco/ -->
 
 
-<!-- TODO: Authors/editors, IEEE etc -->
-<!-- TODO: License of this document -->
+This document was created by the [BioCompute Object Consortium members (BCOC)](#biocompute-object-consortium-members-bcoc)
 
-#### High-throughput Sequencing Computational Standards for Regulatory Sciences (HTS-CSRS) Project
+### BCO_Specification is licensed under the [BSD 3-Clause "New" or "Revised" License](./LICENSE)
+
+>A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
+
+# 1 Introduction
 
 This document specifies the structure of BioCompute Objects. 
 The specification is split into multiple parts linked to from this 
 top-level document and are maintained in a 
 [GithHub repository](https://github.com/biocompute-objects/BCO_Specification)
-where [contributions](README.md) are welcome.
-
-# 1 Introduction
+where [contributions](README.md#support-community-and-contributing) are welcome.
 
 Read more:
 
 * [Introduction to BioCompute Objects](introduction.md)
 
-# 2 Data type for BCOs
+# 2 BioCompute Domains
 
-The fundamentals of data typing (type primitives, class inheritance, etc.)  that are used to define BioCompute Objects are described in detail in section Appendix VI. Developers of BCO enabled platforms should reference this section for details on how to support the creation of BCO programmatically or manually. BCOs are represented in JSON (JavaScript Object Notation) formatted text. The JSON format was chosen because it is both human and machine readable/writable. For a detailed description of JSON see [www.json.org](http://www.json.org).
+BCOs are represented in JSON (JavaScript Object Notation) formatted text, adhearing to [JSON schema draft-07](https://json-schema.org/specification.html). The JSON format was chosen because it is both human and machine readable/writable. For a detailed description of JSON see [www.json.org](http://www.json.org).
 
-BioCompute data types are defined as aggregates of the critical fields organized into the following domains: the provenance domain, the usability domain, the extension domain, the description domain, the execution domain, the parametric domain, the input and output domains, and the error domain. At the time of submission to the BioCompute Object database an instance of BCO type is created, populated with actual values compliant with the data type definitions and assigned a unique identifier. The object could then be assigned a unique digital signature and a unique digital object identifier. (See security section, Appendix V.)
+BioCompute data types are defined as aggregates of the critical fields organized into the following domains: the provenance domain, the usability domain, the extension domain, the description domain, the execution domain, the parametric domain, the input and output domains, and the error domain. At the time of creation with actual values compliant to the schema the BCO should be assigned a unique identifier, a [`bco_id`](/top-level.md#202-biocompute-object-identifier-bco_id). The object could then be assigned a unique digital [`checksum`](/top-level.md#203-checksum-checksum).
 
-Three of the domains in a BioCompute Object become immutable upon assignment of the digital signature: 1) the Parametric Domain, 2) the Execution Domain and 3) the I/O Domain. Changing anything within these domains invalidates the verification and will break the digital signature. Required fields are indicated by the "vital": "True" flag, which is shown in the data typing section below (Appendix VI). 
-
-Specification:
+Three of the domains in a BioCompute Object SHOULD become immutable upon assignment of the digital `checksum`: 
+1) the Parametric Domain
+2) the Execution Domain and 
+3) the I/O Domain
 
 * [BCO domains](bco-domains.md)
 
@@ -56,9 +60,7 @@ Specifications:
 
 * [External references](external-references.md)
 
-### 3.2.2 Title 21 CFR Part 11
-
-<!-- TODO: Why is this part of 3.2?? -->
+## 3.3 Title 21 CFR Part 11
 
 *Code of Federal Regulations Title 21 Part 11: Electronic Records - Electronic Signatures*
 
@@ -70,24 +72,15 @@ Relevant document link:
 
 [Part 11: Electronic Records](http://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 
-## 3.3 Appendix IV - Compatibility
+## 3.4 Appendix IV - Compatibility
 
-### 3.3.1 ISA for the experimental metadata
+### 3.4.1 ISA for the experimental metadata
 
 ISA is a metadata framework to manage an increasingly diverse set of life science, environmental and biomedical experiments that employ one or a combination of technologies. Built around the **Investigation** (the project context), **Study** (a unit of research) and **Assay** (analytical measurements) concepts, ISA helps to provide rich descriptions of experimental metadata (i.e. sample characteristics, technology and measurement types, sample-to-data relationships) so that the resulting data and discoveries are reproducible and reusable. The ISA Model and Serialization Specifications define an Abstract Model of the metadata framework that has been implemented in two format specifications, ISA-Tab and ISA-JSON ([http://isa-tools.org/format/specification](http://isa-tools.org/format/specification)), both of which have supporting tools and services associated with them, including by a programmable Python AP ([http://isa-tools.org](http://isa-tools.org/format/specification)) and a varied user community and contributors ([http://www.isacommons.org](http://www.isacommons.org)). ISA focuses on structuring experimental metadata; raw and derived data files, codes, workflows etc are considered as external file that are referenced. An example, along its complementarity with other models and a computational workflow is illustrated in this paper, which shows how to explicitly declare elements of experimental design, variables, and findings: [http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127612](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127612) 
 
-
-## 3.4 Appendix V Data typing
-
-The conceptual schema for BCO creation can be defined in `???` schema language. <!-- TODO: What to call this language? -->
-
-Specifications:
-
-* [Data Typing](data-typing.md)
-
 ## 3.5 Appendix VI Acknowledgements
 
-This document began development during the 2017 HTS-CSRS workshop. The discussion during the workshop facilitated the refinement and completion of this document. The workshop participants were a major part of the initial BCO community, and the comments and suggestions collected during the sessions were incorporated into this document. The people who participated in the 2017 workshop, and therefore made significant contributions are listed here: [https://osf.io/h59uh/](https://osf.io/h59uh/)
+This document began development during the [2017 HTS-CSRS workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017). The discussion during the workshop led to the refinement and completion of this document. The workshop participants were a major part of the initial BCO community, and the comments and suggestions collected during the sessions were incorporated into this document. The people who participated in the 2017 workshop, and therefore made significant contributions are listed here: [https://osf.io/h59uh/](https://osf.io/h59uh/)
 
 ### BioCompute Object Consortium members (BCOC)
 

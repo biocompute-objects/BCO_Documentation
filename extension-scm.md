@@ -1,4 +1,6 @@
-_This document is part of the [BioCompute Object specification](bco-specification.md)_
+_This document is part of the [BioCompute Object User Guide](user_guide.md)_
+
+_Back to [BCO domains](bco-domains.md)_
 
 ### 2.3.2 Extension to External References: Software Configuration Management (SCM)
 
