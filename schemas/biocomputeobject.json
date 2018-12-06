@@ -26,7 +26,6 @@
             ]
         },
         "uri": {
-            "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
             "type": "object",
             "description": "TODO",
             "additionalProperties": false,
