@@ -1,5 +1,6 @@
 _This document is part of the [BioCompute Object User Guide](user_guide.md)_
-_[BCO domains](bco-domains.md)_
+
+_Back to [BCO domains](bco-domains.md)_
 
 ## 2.1 Provenance Domain "provenance_domain"
 
