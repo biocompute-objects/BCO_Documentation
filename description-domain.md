@@ -26,7 +26,7 @@ Condensed example:
                     {
                         "name": "Hepatitis C virus genotype 1", 
                         "uri": {
-                            "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                            "uri": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     }
@@ -143,35 +143,35 @@ A list of text values to indicate any packages or prerequisites for running the 
                         {
                             "name": "Hepatitis C virus genotype 1", 
                             "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                                "uri": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus type 1b complete genome", 
                             "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
+                                "uri": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
                             "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
+                                "uri": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus clone J8CF, complete genome", 
                             "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
+                                "uri": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }, 
                         {
                             "name": "Hepatitis C virus S52 polyprotein gene", 
                             "uri": {
-                                "address": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
+                                "uri": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
                                 "access_time": "2017-01-24T09:40:17-0500"
                             }
                         }
@@ -185,11 +185,11 @@ Each tool lists the URIs (expressed as a URN or URL) of the input files. These a
 ```json
                     "input_list": [
                         {
-                            "address": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=514683",
+                            "uri": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=514683",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }, 
                         {
-                            "address": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=514682",
+                            "uri": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=objFile&ids=514682",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     ],
@@ -202,7 +202,7 @@ Each tool lists the URIs (expressed as a URN or URL) of the output files for tha
 ```json
                     "output_list": [
                         {
-                            "address": "https://hive.biochemistry.gwu.edudata/514769/allCount-aligned.csv",
+                            "uri": "https://hive.biochemistry.gwu.edudata/514769/allCount-aligned.csv",
                             "access_time": "2017-01-24T09:40:17-0500"
                         }
                     ]

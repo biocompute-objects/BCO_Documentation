@@ -25,11 +25,6 @@
                 "https://github.com/biocompute-objects/BCO_Spec_V1.2/blob/master/HCV1a.json"
             ]
         },
-        "inherited": {
-            "$comment": "FIXME: how should schema(s) handle inherited types?",
-            "type": "object",
-            "description": "all fields in this domain are BioCompute specific and should be defined in inherited BioCompute type"
-        },
         "uri": {
             "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
             "type": "object",

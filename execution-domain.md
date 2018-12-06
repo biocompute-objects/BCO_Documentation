@@ -49,7 +49,7 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
                 "name": "HIVE-hexagon", 
                 "version": "babajanian.1",
                 "uri": {
-                    "address": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
+                    "uri": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500",
                     "sha1_chksum": "d60f506cddac09e9e816531e7905ca1ca6641e3c"
                 }
@@ -58,7 +58,7 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
                 "name": "HIVE-heptagon", 
                 "version": "albinoni.2",
                 "uri": {
-                    "address": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
+                    "uri": "http://example.com/dna.cgi?cmd=dna-heptagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500"
                 }
             }
