@@ -2,8 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://biocomputeobject.org/schemas/provenance_domain.json",
     "type": "object",
-    "title": "TODO",
-    "description": "TODO",
+    "title": "Provenance Domain",
+    "description": "Structured field for tracking data through transformations, including contributors, reviewers, and versioning.",
     "required": [
         "name",
         "version",
@@ -23,7 +23,7 @@
             ]
         },
         "version": {
-            "$comment": "TODO: add the semantic version recommendation to the description",
+            "$comment": "Records versioning of this BCO instance object; Semantic Versioning 2.0.0 (Major.Minor.Patch) is recommended",
             "type": "string",
             "description": "BioCompute Object Version",
             "examples": [
@@ -35,7 +35,6 @@
             "description": "Describes the status of an object in the review process. The unreviewed flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The in-review flag indicates that verification is underway. The approved flag indicates that the BCO has been verified and reviewed. The suspended flag indicates an object that was once valid is no longer considered valid. The rejected flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the contributor object (described in section 2.1.10) is inherited to populate the reviewer section.",
             "items": {
                 "type": "object",
-                "description": "TODO",
                 "required": [
                     "status",
                     "reviewer"
@@ -48,11 +47,11 @@
                     },
                     "reviewer": {
                         "$ref": "biocomputeobject.json#/definitions/contributor",
-                        "description": "TODO"
+                        "description": "Name of the reviewer of the BCO"
                     },
                     "reviewer_comment": {
                         "type": "string",
-                        "description": "TODO",
+                        "description": "Optional free text comment by reviewer",
                         "examples": [
                             "Approved by GW staff. Waiting for approval from FDA Reviewer"
                         ]
@@ -78,22 +77,22 @@
         },
         "obsolete_after": {
             "type": "string",
-            "description": "TODO",
+            "description": "If the object has an expiration date, this optional field will specify that using the ‘datetime’ type described in ISO-8601 format, as clarified by W3C https://www.w3.org/TR/NOTE-datetime.",
             "format": "date-time"
         },
         "embargo": {
             "type": "object",
-            "description": "TODO",
+            "description": "If the object has a period of time during which it shall not be made public, that range can be specified using these optional fields. Using the datetime type, a start and end time are specified for the embargo.",
             "additionalProperties": false,
             "properties": {
                 "start_time": {
                     "type": "string",
-                    "description": "TODO",
+                    "description": "Beginning date of embargo period.",
                     "format": "date-time"
                 },
                 "end_time": {
                     "type": "string",
-                    "description": "TODO",
+                    "description": "End date of embargo period.",
                     "format": "date-time"
                 }
             }
@@ -112,7 +111,6 @@
         },
         "contributors": {
             "type": "array",
-            "description": "TODO",
             "items": {
                 "$ref": "biocomputeobject.json#/definitions/contributor"
             }
