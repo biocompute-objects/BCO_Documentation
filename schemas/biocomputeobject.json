@@ -101,8 +101,7 @@
                             "retrievedBy",
                             "retrievedFrom",
                             "sourceAccessedBy"
-                        ],
-                        "description": "TODO: extract as definition"
+                        ]
                     }
                 },
                 "orcid": {
