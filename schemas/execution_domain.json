@@ -5,7 +5,6 @@
     "title": "The Execution_domain Schema",
     "description": "TODO",
     "required": [
-        "script_access_type",
         "script",
         "script_driver",
         "software_prerequisites",
@@ -14,24 +13,8 @@
     ],
     "additionalProperties": false,
     "properties": {
-        "script_access_type": {
-            "type": "string",
-            "enum": [
-                "URI",
-                "text"
-            ],
-            "description": "Indication of whether the code of the 'script' to execute the BioCompute Object is accessed as an external file via HTTP (URI) or in-line text in the script field."
-        },
         "script": {
-            "type": "array",
-            "description": "Points to internal or external references to a script object that was used to perform computations for this BCO instance",
-            "items": {
-                "type": "string",
-                "description": "An internal or external reference to a script object",
-                "examples": [
-                    "https://example.com/workflows/antiviral_resistance_detection_hive.py"
-                ]
-            }
+            "$ref": "biocomputeobject.json#/definitions/uri"
         },
         "script_driver": {
             "type": "string",

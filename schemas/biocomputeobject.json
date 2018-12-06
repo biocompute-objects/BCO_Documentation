@@ -33,12 +33,16 @@
         "uri": {
             "$comment": "https://github.com/biocompute-objects/BCO_Specification/blob/1935b9c2765a3d00e44e338ead5b637a5b20b648/primitives.json#L41-L56",
             "type": "object",
+            "description": "TODO",
             "additionalProperties": false,
             "required": [
-                "address"
+                "uri"
             ],
             "properties": {
-                "address": {
+                "filename": {
+                    "type": "string"
+                },
+                "uri": {
                     "type": "string",
                     "format": "uri"
                 },
@@ -48,7 +52,7 @@
                 },
                 "sha1_chksum": {
                     "type": "string",
-                    "description": "Sha256 or any hash function that produces a message digest",
+                    "description": "hash function that produces a message digest",
                     "pattern": "[A-Za-z0-9]+"
                 }
             }
