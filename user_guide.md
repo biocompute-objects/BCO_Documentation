@@ -2,7 +2,7 @@ GitHub: https://github.com/biocompute-objects
 	
 OSF page: https://osf.io/r6s4u/ biocomputeobject.org
 
-# BioCompute Object (BCO) specification document
+# BioCompute Object (BCO) User Guide
 
 * This version: [draft](https://github.com/biocompute-objects/BCO_Specification/tree/master)
 * Previous version: [v1.2.0](https://github.com/biocompute-objects/BCO_Specification/releases/tag/v1.2)
@@ -11,8 +11,11 @@ OSF page: https://osf.io/r6s4u/ biocomputeobject.org
 <!-- FIXME: Ideally permalinks for all of the above links, say registering https://w3id.org/bco/ -->
 
 
-<!-- TODO: Authors/editors, IEEE etc -->
-<!-- TODO: License of this document -->
+This document was created by the [BioCompute Object Consortium members (BCOC)](#biocompute-object-consortium-members-bcoc)
+
+### BCO_Specification is licensed under the [BSD 3-Clause "New" or "Revised" License](./LICENSE)
+
+>A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
 
 #### High-throughput Sequencing Computational Standards for Regulatory Sciences (HTS-CSRS) Project
 
@@ -20,7 +23,7 @@ This document specifies the structure of BioCompute Objects.
 The specification is split into multiple parts linked to from this 
 top-level document and are maintained in a 
 [GithHub repository](https://github.com/biocompute-objects/BCO_Specification)
-where [contributions](README.md) are welcome.
+where [contributions](README.md#support-community-and-contributing) are welcome.
 
 # 1 Introduction
 
