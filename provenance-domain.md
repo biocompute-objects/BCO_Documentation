@@ -59,14 +59,14 @@ The "status" key describes the status of an object in the review process and the
 * `suspended` flag indicates an object that was once valid is no longer considered valid. 
 * `rejected` flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. 
 
-The fields from the `contributor` object (described in [section 2.1.9](#2.1.8-Contributors-contributors)) are used to populate the reviewer section. Each BCO MUST have at least one `review`. 
+The fields from the `contributor` object (described in [section 2.1.8](#2.1.8-Contributors-contributors)) are used to populate the reviewer section. Each BCO MUST have at least one `review`. 
 
 ```json
         "review": [
             {
                 "status": "approved",
                 "reviewer_comment": "Approved by GW staff. Waiting for approval from FDA Reviewer",
-                "date": "2017-11-12T12:30:48-0400"
+                "date": "2017-11-12T12:30:48-0400",
                 "reviewer": {
                     "name": "Charles Hadley King", 
                     "affiliation": "George Washington University", 
@@ -78,7 +78,7 @@ The fields from the `contributor` object (described in [section 2.1.9](#2.1.8-Co
             {
                 "status": "approved",
                 "reviewer_comment": "The revised BCO looks fine",
-                "date": "2017-12-12T12:30:48-0400"
+                "date": "2017-12-12T12:30:48-0400",
                 "reviewer": {
                     "name": "Eric Donaldson", 
                     "affiliation": "FDA", 
