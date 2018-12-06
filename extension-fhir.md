@@ -1,5 +1,6 @@
-_This document is part of the [BioCompute Object User Guide](user_guide.md)_
+_This document is part of the [BioCompute Object specification](bco-specification.md)_
 
+_Back to [BCO domains](bco-domains.md)_
 
 ### 2.3.1 Extension to External References: SMART on FHIR Genomics
 
@@ -18,31 +19,30 @@ SMART on FHIR Genomics provides a framework for EHR-based apps built on FHIR tha
 ```json
     "extension_domain":{
         "fhir_extension": [
-            { "fhir_endpoint": "http://fhirtest.uhn.ca/baseDstu3",
-              "fhir_version": "3",
-              "fhrir_resources": [
-                {
-                    "fhir_resource": "Sequence",
-                    "fhir_id": "21376"
-                },
-                {
-                    "fhir_resource": "DiagnosticReport",
-                    "fhir_id": "6288583"
-                },
-                {
-                    "fhir_resource": "ProcedureRequest",
-                    "fhir_id": "25544"
-                },
-                {
-                    "fhir_resource": "Observation",
-                    "fhir_id": "92440"
-                },
-                {
-                    "fhir_resource": "FamilyMemberHistory",
-                    "fhir_id": "4588936"
-                }
-              ]
+            {
+                "fhir_endpoint": "http://fhirtest.uhn.ca/baseDstu3",
+                "fhir_version": "3",
+                "fhir_resources": [
+                    {
+                        "fhir_resource": "Sequence",
+                        "fhir_id": "21376"
+                    },
+                    {
+                        "fhir_resource": "DiagnosticReport",
+                        "fhir_id": "6288583"
+                    },
+                    {
+                        "fhir_resource": "ProcedureRequest",
+                        "fhir_id": "25544"
+                    },
+                    {
+                        "fhir_resource": "Observation",
+                        "fhir_id": "92440"
+                    },
+                    {
+                        "fhir_resource": "FamilyMemberHistory",
+                        "fhir_id": "4588936"
+                    }
+                ]
             }
-        ]
-    }
 ```
