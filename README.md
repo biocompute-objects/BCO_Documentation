@@ -20,7 +20,7 @@ To facilitate a means for different stakeholders in the HTS communities to provi
 
 ## User Guide 
 
-The [BioCompute Objects user guide](/schema/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/bco-specification.md).
+The [BioCompute Objects user guide](/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/IEEE_Docs/standard.md).
 
 ### Repository
 
@@ -28,7 +28,7 @@ Note that unless you are viewing a [release](https://github.com/biocompute-objec
 
 Table of content:
 
-* [BioCompute Object (BCO) specification document](bco-specification.md)
+* [BioCompute Object (BCO) specification document](user_guide.md)
   * [Introduction to BioCompute Objects](introduction.md)
   * [BCO domains](bco-domains.md)
     * [Top level fields](top-level.md)
