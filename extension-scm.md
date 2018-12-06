@@ -1,5 +1,7 @@
 _This document is part of the [BioCompute Object User Guide](user_guide.md)_
 
+_Back to [BCO domains](bco-domains.md)_
+
 ### 2.3.2 Extension to External References: Software Configuration Management (SCM)
 
 The external references **example** extension to a SCM repository demonstrates how a BioCompute Object software source code can be stored/deposited/downloaded. The BCO would contain links to the SCM repository where the information is stored and easily retrieved. The links to the SCM can be added to the usability domain as well.
