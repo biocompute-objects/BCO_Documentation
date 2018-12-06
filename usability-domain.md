@@ -6,7 +6,7 @@ _Back to [BCO domains](bco-domains.md)_
 
 This section defines the `usability_domain` part of the [BCO](bco-domains.md) structure.
 
-This field provides a space for the author to define the usability domain of the BCO. It is an array of free text values that should be consistant with terminology used in the [`name`](provenance_domain.md#2.1.1-name-name), external references ([xref](/description-domain.md#242-external-references-xref)), and [keywords](/description-domain.md#241-keywords-keywords) sections. The `usability_domain` can accept template language to indicate values from the [external_references](https://github.com/biocompute-objects/BCO_Specification/blob/master/external-references.md). The template takes the form of:
+This field provides a space for the author to define the usability domain of the BCO. It is an array of free text values that should be consistant with terminology used in the [`name`](provenance_domain.md#2.1.1-name-name), external references ([`xref`](/description-domain.md#242-external-references-xref)), and [`keywords`](/description-domain.md#241-keywords-keywords) sections. The `usability_domain` can accept template language to indicate values from the [`external_references`](https://github.com/biocompute-objects/BCO_Specification/blob/master/external-references.md). The template takes the form of:
 * `(SNP)[SO:0000694]` 
 
 where ($term) and [$identifier] are an entry in the `external_references` section.
