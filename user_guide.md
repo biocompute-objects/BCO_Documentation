@@ -42,8 +42,6 @@ Three of the domains in a BioCompute Object SHOULD become immutable upon assignm
 2) the Execution Domain and 
 3) the I/O Domain
 
-Specification:
-
 * [BCO domains](bco-domains.md)
 
 # 3 Appendices
