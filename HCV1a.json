@@ -9,6 +9,7 @@
             {
                 "status": "approved",
                 "reviewer_comment": "Approved by GW staff. Waiting for approval from FDA Reviewer",
+                "date": "2017-11-12T12:30:48-0400",
                 "reviewer": {
                     "name": "Charles Hadley King", 
                     "affiliation": "George Washington University", 
@@ -20,6 +21,7 @@
             {
                 "status": "approved",
                 "reviewer_comment": "The revised BCO looks fine",
+                "date": "2017-12-12T12:30:48-0400",
                 "reviewer": {
                     "name": "Eric Donaldson", 
                     "affiliation": "FDA", 
