@@ -25,7 +25,7 @@
         "version": {
             "type": "string",
             "description": "BioCompute Object Version uses semantic versioning as recommended by Semantic Versioning 2.0.0",
-		  "reference": "https://semver.org/",
+		    "reference": "https://semver.org/",
             "examples": [
                 "2.9"
             ]
@@ -46,7 +46,7 @@
                         "format": "date-time"
                     },
                     "reviewer": {
-                        "$ref": "#/definitions/contributor",
+                        "$ref": "biocomputeobject.json#/definitions/contributor",
                         "description": "Contributer that assigns BCO review status"
                     },
                     "reviewer_comment": {
