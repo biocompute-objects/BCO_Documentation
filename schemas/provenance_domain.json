@@ -7,7 +7,6 @@
     "required": [
         "name",
         "version",
-        "embargo",
         "created",
         "modified",
         "contributors",
