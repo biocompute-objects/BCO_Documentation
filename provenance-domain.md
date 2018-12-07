@@ -61,7 +61,7 @@ The "status" key describes the status of an object in the review process and the
 * `suspended` flag indicates an object that was once valid is no longer considered valid. 
 * `rejected` flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. 
 
-The fields from the `contributor` object (described in [section 2.1.8](/provenance-domain.md#218-contributors-contributors)) are used to populate the reviewer section. Each BCO MUST have at least one `review`. 
+The fields from the `contributor` object (described in [section 2.1.9](/provenance-domain.md#219-contributors-contributors)) are used to populate the reviewer section. Each BCO MUST have at least one `review`. 
 
 ```json
         "review": [
@@ -90,8 +90,16 @@ The fields from the `contributor` object (described in [section 2.1.8](/provenan
             }
         ]
 ```
+### 2.1.4 Inheritance/derivation "derived_from"
 
-### 2.1.4 Obsolescence "obsolete_after" 
+If the object is derived from another, this field will specify the parent object, in the form of the ‘bco_id’. If the object inherits only from the base BioCompute Object or a type definition than the field is not included. 
+
+```json
+"derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json"
+
+```
+
+### 2.1.5 Obsolescence "obsolete_after" 
 
 If the object has an expiration date this field will specify that using the ‘datetime’ type which is in ISO-8601 format as clarified by W3C [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime). This field is optional.
 
@@ -99,7 +107,7 @@ If the object has an expiration date this field will specify that using the ‘d
 "obsolete_after" : "2118-09-26T14:43:43-0400"
 ```
 
-### 2.1.5 Embargo "embargo"
+### 2.1.6 Embargo "embargo"
 
 If the object has a period of time that it is not public, that range can be specified using these fields.  Using the `datetime` type, a start and end time are specified for the embargo. These fields are optional.
 
@@ -110,7 +118,7 @@ If the object has a period of time that it is not public, that range can be spec
 },
 ```
 
-### 2.1.6 Created "created"
+### 2.1.7 Created "created"
 
 Using the `datetime` type the time of initial creation of the BCO is recorded in ISO-8601 format as clarified by W3C [https://www.w3.org/TR/NOTE-datetime](https://www.w3.org/TR/NOTE-datetime). This field should be `readOnly`. 
 
@@ -118,7 +126,7 @@ Using the `datetime` type the time of initial creation of the BCO is recorded in
 "created": "2017-01-20T09:40:17-0500"
 ```
 
-### 2.1.7 Modification "modified"
+### 2.1.8 Modification "modified"
 
 Using the `datetime` type the time of most recent modification of the BCO is recorded
 
@@ -126,7 +134,7 @@ Using the `datetime` type the time of most recent modification of the BCO is rec
 "modified": "2018-03-21T18:31:48-0400"
 ```
 
-### 2.1.8 Contributors "contributors"
+### 2.1.9 Contributors "contributors"
 
 This is a list to hold contributor identifiers and a description of their type of contribution, including a field for ORCIDs to record author information, as they allow for the author to curate their information after submission. ORCID identifiers must be [valid](https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier) and must have the prefix `https://orcid.org/`. The `contribution` type is a choice taken from [PAV ontology](http://purl.org/pav/): provenance, authoring and versioning, which also maps to the [PROV-O](https://www.w3.org/TR/prov-o/).
 
@@ -149,7 +157,7 @@ This is a list to hold contributor identifiers and a description of their type o
         ]
 ```
 
-### 2.1.9 License "license"
+### 2.1.10 License "license"
 
 A space for Creative Commons licence or other licence information (text). The default or recommended licence can be _Creative Commons Attribution 4.0 International_ identified as https://spdx.org/licenses/CC-BY-4.0.html
 
