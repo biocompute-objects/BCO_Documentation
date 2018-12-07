@@ -52,7 +52,7 @@
         }, 
         "contributor": {
             "type": "object",
-            "description": "TODO: recommend some piece of information regarding contributor's identity be required",
+            "description": "Contributor identifier and type of contribution (determined according to PAV ontology) is required",
             "required": [
                 "contribution"
             ],
@@ -60,21 +60,21 @@
             "properties": {
                 "name": {
                     "type": "string",
-                    "description": "TODO",
+                    "description": "Name of contributor",
                     "examples": [
                         "Charles Hadley King"
                     ]
                 },
                 "affiliation": {
                     "type": "string",
-                    "description": "TODO",
+                    "description": "Organization the particular contributor is connected to",
                     "examples": [
                         "George Washington University"
                     ]
                 },
                 "email": {
                     "type": "string",
-                    "description": "TODO",
+                    "description": "electronic means for identification and communication purposes",
                     "examples": [
                         "hadley_king@gwu.edu"
                     ],
@@ -82,7 +82,8 @@
                 },
                 "contribution": {
                     "type": "array",
-                    "description": "taken from https://doi.org/10.1186/2041-1480-4-37",
+                    "description": "type of contribution determined according to PAV ontology",
+		          "reference": "https://doi.org/10.1186/2041-1480-4-37",
                     "items": {
                         "type": "string",
                         "enum": [
