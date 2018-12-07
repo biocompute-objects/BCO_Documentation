@@ -26,7 +26,7 @@
         },
         "uri": {
             "type": "object",
-            "description": "A Unique Resource Identifer that must be expressed as a URN or URL",
+            "description": "A Uniform Resource Identifer that must be expressed as a URN or URL",
             "additionalProperties": false,
             "required": [
                 "uri"
