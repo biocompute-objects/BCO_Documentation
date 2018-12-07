@@ -1,0 +1,27 @@
+{
+    "type": "object", 
+    "title": "extension_domain", 
+    "description": "", 
+    "required": [
+        "fhir_extension", 
+        "scm_extension"
+    ], 
+    "properties": {
+        "fhir_extension": {
+            "type":"array",
+            "title":"fhir_extension",
+            "description": "",
+            "items": {
+                "$ref":""
+            }
+        }, 
+        "scm_extension": {
+            "type":"array",
+            "title":"scm_extension",
+            "description": "",
+            "items": {
+                "$ref":""
+            }
+        }
+    }
+}

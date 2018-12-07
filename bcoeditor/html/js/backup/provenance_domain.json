@@ -1,0 +1,134 @@
+{
+    "type": "object", 
+    "title": "", 
+    "description": "", 
+    "required": [
+        "name", 
+        "version", 
+        "embargo", 
+        "created", 
+        "modified", 
+        "contributors", 
+        "license",
+        "review",
+        "obsolete_after"
+    ], 
+    "properties": {
+        "name": {
+            "type": "string", 
+            "title": "name", 
+            "description": "", 
+            "examples": [
+                "HCV1a ledipasvir resistance SNP detection"
+            ]
+        }, 
+        "version": {
+            "type": "string", 
+            "title": "version", 
+            "description": "", 
+            "examples": [
+                "2.9"
+            ]
+        }, 
+        "created": {
+            "type": "string",
+            "title": "created",
+            "description": "",
+            "readOnly": true,
+            "format": "date-time"
+        },
+        "modified": {
+            "type": "string",
+            "title": "modified",
+            "description": "",
+            "readOnly": true,
+            "format": "date-time"
+        },
+        "obsolete_after": {
+            "type": "string",
+            "title": "obsolete_after",
+            "description": "",
+            "format": "date-time"
+        },
+        "license": {
+            "type": "string",
+            "title": "license",
+            "description": "",
+            "examples": [
+                "https://spdx.org/licenses/CC-BY-4.0.html"
+            ]
+        },
+        "embargo": {
+            "type": "object",
+            "title": "embargo",
+            "description": "",
+            "required": [
+                "start_time","end_time"
+            ],
+            "properties": {
+                "start_time": {
+                    "type": "string",
+                    "title": "start_time",
+                    "description": "",
+                    "format": "date-time"
+                },
+                "end_time": {
+                    "type": "string",
+                    "title": "end_time",
+                    "description": "",
+                    "format": "date-time"
+                }
+            }
+        },
+        "review": {
+            "type": "array", 
+            "title": "review", 
+            "description": "", 
+            "items": {
+                "type": "object", 
+                "title": "review", 
+                "description": "", 
+                "required": [
+                    "status", 
+                    "reviewer"
+                ], 
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "enum": [
+                            "unreviewed",
+                            "in-review",
+                            "approved",
+                            "rejected",
+                            "suspended"
+                        ],
+                        "title": "status",
+                        "description": "",
+                        "default": "unreviewed"
+                    },
+                    "reviewer_comment": {
+                        "type": "string", 
+                        "title": "reviewer_comment", 
+                        "description": "", 
+                        "examples": [
+                            "Approved by GW staff. Waiting for approval from FDA Reviewer"
+                        ]
+                    },
+                    "reviewer": {
+                        "$ref": "#/definitions/contributor",
+                        "title": "reviewer",
+                        "description": ""
+                    }
+                }
+            }
+        }, 
+        "contributors": {
+            "type": "array", 
+            "title": "contributors", 
+            "description": "", 
+            "items": {
+                "$ref": "#/definitions/contributor"
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "type": "array",
+    "title": "parametric_domain",
+    "description": "",
+    "minItems": 1,
+    "items": {
+        "$id": "#/items",
+        "type": "object",
+        "title": "parameter",
+        "description": "",
+        "required": [
+            "param",
+            "value",
+            "step"
+        ],
+        "properties": {
+            "param": {
+                "type": "string",
+                "title": "param",
+                "description": "",
+                "examples": [
+                    "seed"
+                ],
+                "pattern": "^(.*)$"
+            },
+            "value": {
+                "type": "string",
+                "description": "",
+                "title": "value",
+                "examples": [
+                    "14"
+                ],
+                "pattern": "^(.*)$"
+            },
+            "step": {
+                "type": "string",
+                "title": "step",
+                "description": "",
+                "examples": [
+                    "1"
+                ],
+                "pattern": "^(.*)$"
+            }
+        }
+    }
+}

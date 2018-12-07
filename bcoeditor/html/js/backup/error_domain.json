@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "empirical_error",
+    "algorithmic_error"
+  ],
+  "properties": {
+    "empirical_error": {
+	"type": "object",
+        "title":"empirical_error"
+    },
+    "algorithmic_error": {
+        "type": "object",
+        "title":"algorithmic_error"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/robelkahsay/work-projects/frontendcode/cgi-bin/bcoeditor/auth.py", line 23, in login
+    login_user = mongo_cl_users.find_one({'email' : in_json["email"]})
+KeyError: 'email'

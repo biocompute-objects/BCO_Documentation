@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://hive.biochemistry.gwu.edu/tst/biocompute/json/io_domain.json",
+    "type": "object",
+    "title": "io_domain",
+    "description": "",
+    "required": [
+        "input_subdomain",
+        "output_subdomain"
+    ],
+    "properties": {
+        "input_subdomain": {
+            "type": "array",
+	    "title": "input_subdomain",
+            "description": "",
+            "items": {
+                "type": "object",
+                "title":"input",
+                "required": [
+                    "name",
+                    "uri"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "human readable designition for the input",
+                        "examples": [
+                            "Hepatitis C virus genotype 1"
+                        ],
+                        "pattern": "^(.*)$"
+                    },
+                    "uri": {
+			"type": "object",
+                        "$ref": "#/definitions/uri"
+                    }
+                }
+            }
+        },
+        "output_subdomain": {
+            "type": "array",
+            "title": "output_subdomain",
+	    "description": "",
+            "items": {
+                "type": "object",
+                "title": "output",
+                "required": [
+                    "mediatype",
+                    "uri"
+                ],
+                "properties": {
+                    "mediatype": {
+                        "type": "string",
+                        "title": "mediatype",
+                        "examples": [
+                            "text/csv"
+                        ],
+                        "pattern": "^(.*)$"
+                    },
+                    "uri": {
+						"type": "object",
+                        "$ref": "#/definitions/uri"
+                    }
+                }
+            }
+        }
+    }
+}
