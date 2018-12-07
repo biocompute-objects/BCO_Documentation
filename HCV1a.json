@@ -1,6 +1,6 @@
 {
     "bco_id": "https://w3id.org/biocompute/examples/HCV1a.json",
-    "checksum": "0B61E7C0EFF537CADADE475AA6386262FCDBC4DC",
+    "checksum": "22B641C02C06553F00310A0E6816070FE2988476B7BC13BF87A2C286A7DE3583",
     "bco_spec_version" : "https://w3id.org/biocompute/spec/1.3.0",
     "provenance_domain": {
         "name": "HCV1a ledipasvir resistance SNP detection", 
