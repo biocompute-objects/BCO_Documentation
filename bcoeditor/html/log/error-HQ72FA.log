@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "bcoeditor", line 138, in get_object_edit_json
-    out_json = loads(open(mainschema_file, "r").read(), preserve_order=True)
-NameError: global name 'loads' is not defined

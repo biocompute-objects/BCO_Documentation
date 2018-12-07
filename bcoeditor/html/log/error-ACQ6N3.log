@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Library/WebServer/CGI-Executables/frontendcode/bcoeditor/bcoeditor", line 252, in main
-    out_json = register_user(in_json)
-TypeError: register_user() takes exactly 2 arguments (1 given)

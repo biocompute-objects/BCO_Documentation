@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/robelkahsay/work-projects/frontendcode/cgi-bin/bcoeditor/auth.py", line 58, in authenticate
-    email = c['email'].value
-KeyError: 'email'

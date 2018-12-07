@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Library/WebServer/CGI-Executables/frontendcode/bcoeditor/bcoeditor", line 46, in save_object
-    in_json["provenance_domain"]["modified"] = datetime.datetime.now().strftime("%b %d, %Y %H:%M:%S")
-NameError: global name 'datetime' is not defined
