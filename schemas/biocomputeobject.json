@@ -144,10 +144,6 @@
             "$ref": "usability_domain.json"
         },
         "extension_domain": {
-<<<<<<< HEAD
-=======
-            "$comment": "TODO: remove 'additionalProperties: false' after handling inherited types is resolved. In the meantime it was set to avoid forgetting to write a schema for a new property because it is silently ignored during validation",
->>>>>>> e03730b78e9bc81b59b06eac704ba6531f2616c6
             "additionalProperties": true,
             "properties": {
                 "fhir_extension": {
