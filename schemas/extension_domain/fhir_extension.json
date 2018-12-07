@@ -13,7 +13,7 @@
             "examples": [
                 "http://fhirtest.uhn.ca/baseDstu3"
             ],
-            "description": "Base uri of FHIR server where the resources are stored",
+            "description": "Base URI of FHIR server where the resources are stored",
             "format": "uri"
         },
         "fhir_version": {
@@ -35,7 +35,7 @@
                     },
                     "fhir_id": {
                         "type": "string",
-                        "description": "server-specific identifier string"
+                        "description": "Server-specific identifier string"
                     }
                 }
             }
