@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://biocomputeobject.org/schemas/io_domain.json",
     "type": "object",
-    "title": "The Io_domain Schema",
+    "title": "Input and Output domain",
     "description": "The list of global input and output files created by the computational workflow, excluding the intermediate files. Custom to every specific BCO implementation, these fields are pointers to objects that can reside in the system performing the computation or any other accessible system.",
     "required": [
         "input_subdomain",

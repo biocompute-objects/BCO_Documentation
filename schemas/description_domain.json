@@ -26,7 +26,7 @@
         },
         "xref": {
             "type": "array",
-            "description": "List of the databases and/or ontology IDs that are cross-referenced in the BCO.",
+            "description": "List of the databases or ontology IDs that are cross-referenced in the BCO.",
             "items": {
                 "type": "object",
                 "description": "External references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by Identifiers.org.",
@@ -108,7 +108,7 @@
                     },
                     "description": {
                         "type": "string",
-                        "description": "Specific use/purpose of the tool.",
+                        "description": "Specific purpose of the tool.",
                         "examples": [
                             "Alignment of reads to a set of references"
                         ]
