@@ -26,7 +26,7 @@
         },
         "uri": {
             "type": "object",
-            "description": "TODO",
+            "description": "A Unique Resource Identifer that must be expressed as a URN or URL",
             "additionalProperties": false,
             "required": [
                 "uri"
@@ -105,7 +105,7 @@
                 },
                 "orcid": {
                     "type": "string",
-                    "description": "NOTE: ignored base_type_BioCompute.json defining this as required",
+                    "description": "Field to record author information. ORCID identifiers allow for the author to curate their information after submission. ORCID identifiers must be valid and must have the prefix ‘https://orcid.org/’",
                     "examples": [
                         "https://orcid.org/0000-0003-1409-4549"
                     ],
