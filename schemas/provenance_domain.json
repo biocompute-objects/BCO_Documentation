@@ -184,7 +184,7 @@
         },
         "license": {
             "type": "string",
-            "description": "Creative Commons licence or other licence information (text) space. The default or recommended licence can be Attribution 4.0 International: for example https://spdx.org/licenses/CC-BY-4.0.html",
+            "description": "Creative Commons license or other license information (text) space. The default or recommended license can be Attribution 4.0 International as shown in example",
             "examples": [
                 "https://spdx.org/licenses/CC-BY-4.0.html"
             ]
