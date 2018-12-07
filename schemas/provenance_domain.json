@@ -72,7 +72,7 @@
             }
         },
         "derived_from": {
-            "description": "value of _id field of another bio compute object",
+            "description": "value of `bco_id` field of another BioCompute object",
             "$ref": "biocomputeobject.json#/definitions/bco_id"
         },
         "obsolete_after": {

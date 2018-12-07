@@ -1,0 +1,22 @@
+grep -rnw './' -e 'bco-specification.md'
+
+
+introduction.md -> So error domain can include information to do QA and/or QC. 
+
+user_guide.md -> At the time of submission to the BioCompute Object database an instance of BCO type is created, populated with actual values compliant with the data type definitions and assigned a unique identifier. The object could then be assigned a unique digital signature and a unique digital object identifier. (See security section, Appendix V.)
+	 (See security section, Appendix V.)
+	 Changing anything within these domains invalidates the verification and will break the digital signature. Required fields are indicated by the "vital": "True" flag, which is shown in the data typing section below (Appendix VI). 
+	 
+provenance_domain.md -> removed "derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json",
+	, a change in the BCO affecting the outcome of the computation **MAJOR** should be deposited as a new BCO, not as a new version. If a parameter in a tool is changed within a BCO, which in turn changes the outcome of the pipeline and the original BCO, a new BCO, not a new version, will be created. In such cases the connection between the new object and the older one may or may not be (on author’s discretion) retained in the form of a reference using the [`derived_from`](provenance-domain.md#215-inheritancederivation-derived_from) field. Changes that cannot affect the results of the computation can be incorporated into a new version of the existing BCO (**MINOR** and **PATCH**). Such changes might include name and title, comments, authors, validity dates, etc.
+	
+usability domain.md ->  
+	The template takes the form of: * `(SNP)[SO:0000694]` where ($term) and [$identifier] are an entry in the `external_references` section.
+
+
+ The regex is based on the following:
+ 
+> http://pubs.opengroup.org/onlinepubs/000095399/basedefs/xbd_chap08.html
+> Environment variable names used by the utilities in the Shell and Utilities volume of IEEE Std 1003.1-2001 consist solely of uppercase letters, digits, and the '_' (underscore) from the characters defined in Portable Character Set and do not begin with a digit. Other characters may be permitted by an implementation; applications shall tolerate the presence of such names. Uppercase and lowercase letters shall retain their unique identities and shall not be folded together. The name space of environment variable names containing lowercase letters is reserved for applications. Applications can define any environment variables with names from this name space without modifying the behavior of the standard utilities.
+> Note:
+> Other applications may have difficulty dealing with environment variable names that start with a digit. For this reason, use of such names is not recommended anywhere.

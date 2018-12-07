@@ -12,7 +12,6 @@
         "usability_domain",
         "description_domain",
         "execution_domain",
-        "parametric_domain",
         "io_domain",
         "error_domain"
     ],
