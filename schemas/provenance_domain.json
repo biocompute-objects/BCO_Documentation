@@ -105,7 +105,7 @@
         },
         "modified": {
             "type": "string",
-            "description": "Date and time of the BioCompute Object was last modified",
+            "description": "Date and time the BioCompute Object was last modified",
             "readOnly": true,
             "format": "date-time"
         },
