@@ -2,8 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
     "type": "object",
-    "title": "The Execution_domain Schema",
-    "description": "TODO",
+    "title": "The Execution Domain",
+    "description": "Information for deployment, software configuration and running applications in a dependent environment that is necessary for the execution of the BCO",
     "required": [
         "script",
         "script_driver",
@@ -40,14 +40,14 @@
                 "properties": {
                     "name": {
                         "type": "string",
-                        "description": "TODO",
+                        "description": "Name of the tool used",
                         "examples": [
                             "HIVE-hexagon"
                         ]
                     },
                     "version": {
                         "type": "string",
-                        "description": "TODO",
+                        "description": "Version of the tool used",
                         "examples": [
                             "babajanian.1"
                         ]
