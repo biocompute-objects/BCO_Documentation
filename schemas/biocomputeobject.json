@@ -146,7 +146,7 @@
         },
         "extension_domain": {
             "$comment": "TODO: remove 'additionalProperties: false' after handling inherited types is resolved. In the meantime it was set to avoid forgetting to write a schema for a new property because it is silently ignored during validation",
-            "additionalProperties": false,
+            "additionalProperties": true,
             "properties": {
                 "fhir_extension": {
                     "type": "array",
