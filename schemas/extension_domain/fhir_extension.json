@@ -10,10 +10,10 @@
     "properties": {
         "fhir_endpoint": {
             "type": "string",
+            "description": "Base URI of FHIR server where the resources are stored",
             "examples": [
                 "http://fhirtest.uhn.ca/baseDstu3"
             ],
-            "description": "Base URI of FHIR server where the resources are stored",
             "format": "uri"
         },
         "fhir_version": {

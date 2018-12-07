@@ -2,8 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://biocomputeobject.org/schemas/provenance_domain.json",
     "type": "object",
-    "title": "Provenance domain",
-    "description": "Information of origin of data, its characteristics, and practical application",
+    "title": "Provenance Domain",
+    "description": "Structured field for tracking data through transformations, including contributors, reviewers, and versioning.",
     "required": [
         "name",
         "version",
@@ -13,71 +13,6 @@
         "contributors",
         "license"
     ],
-    "definitions": {
-        "contributor": {
-            "type": "object",
-            "description": "Contributor identifier and type of contribution (determined according to PAV ontology) is required",
-            "required": [
-                "contribution"
-            ],
-            "additionalProperties": false,
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "description": "Name of contributor",
-                    "examples": [
-                        "Charles Hadley King"
-                    ]
-                },
-                "affiliation": {
-                    "type": "string",
-                    "description": "Organization the particular contributor is connected to or affiliated with",
-                    "examples": [
-                        "George Washington University"
-                    ]
-                },
-                "email": {
-                    "type": "string",
-                    "description": "electronic means for identification and communication purposes",
-                    "examples": [
-                        "hadley_king@gwu.edu"
-                    ],
-                    "format": "email"
-                },
-                "contribution": {
-                    "type": "array",
-                    "description": "taken from https://doi.org/10.1186/2041-1480-4-37",
-                    "items": {
-                        "type": "string",
-                        "enum": [
-                            "authoredBy",
-                            "contributedBy",
-                            "createdAt",
-                            "createdBy",
-                            "createdWith",
-                            "curatedBy",
-                            "derivedFrom",
-                            "importedBy",
-                            "importedFrom",
-                            "providedBy",
-                            "retrievedBy",
-                            "retrievedFrom",
-                            "sourceAccessedBy"
-                        ],
-                        "description": "TODO: extract as definition"
-                    }
-                },
-                "orcid": {
-                    "type": "string",
-                    "description": "NOTE: ignored base_type_BioCompute.json defining this as required",
-                    "examples": [
-                        "https://orcid.org/0000-0003-1409-4549"
-                    ],
-                    "format": "uri"
-                }
-            }
-        }
-    },
     "additionalProperties": false,
     "properties": {
         "name": {
@@ -100,7 +35,6 @@
             "description": "Describes the current verification status of an object in the review process. The unreviewed flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The in-review flag indicates that verification is underway. The approved flag indicates that the BCO has been verified and reviewed. The suspended flag indicates an object that was once valid is no longer considered valid. The rejected flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the contributor object (described in section 2.1.10) is inherited to populate the reviewer section.",
             "items": {
                 "type": "object",
-                "description": "TODO",
                 "required": [
                     "status",
                     "reviewer"
@@ -117,7 +51,7 @@
                     },
                     "reviewer_comment": {
                         "type": "string",
-                        "description": "Brief statement on the BCO review status provided by reviewer",
+                        "description": "Optional free text comment by reviewer",
                         "examples": [
                             "Approved by GW staff. Waiting for approval from FDA Reviewer"
                         ]
@@ -138,27 +72,28 @@
             }
         },
         "derived_from": {
-            "description": "value of _id field of another bio compute object",
+            "description": "value of `bco_id` field of another BioCompute object",
             "$ref": "biocomputeobject.json#/definitions/bco_id"
         },
         "obsolete_after": {
             "type": "string",
-            "description": "If applicable, the expiration date of the object",
+            "description": "If the object has an expiration date, this optional field will specify that using the ‘datetime’ type described in ISO-8601 format, as clarified by W3C https://www.w3.org/TR/NOTE-datetime.",
+
             "format": "date-time"
         },
         "embargo": {
             "type": "object",
-            "description": "If applicable, the period of time that the object is not public",
+            "description": "If the object has a period of time during which it shall not be made public, that range can be specified using these optional fields. Using the datetime type, a start and end time are specified for the embargo.",
             "additionalProperties": false,
             "properties": {
                 "start_time": {
                     "type": "string",
-                    "description": "The start time specified for the embargo",
+                    "description": "Beginning date of embargo period.",
                     "format": "date-time"
                 },
                 "end_time": {
                     "type": "string",
-                    "description": "The end time specified for the embargo",
+                    "description": "End date of embargo period.",
                     "format": "date-time"
                 }
             }
@@ -179,7 +114,7 @@
             "type": "array",
             "description": "This is a list to hold contributor identifiers and a description of their type of contribution, including a field for ORCIDs to record author information, as they allow for the author to curate their information after submission. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the PROV-O.",
             "items": {
-                "$ref": "#/definitions/contributor"
+                "$ref": "biocomputeobject.json#/definitions/contributor"
             }
         },
         "license": {

@@ -1,11 +1,12 @@
 _This document is part of the [BioCompute Object User Guide](user_guide.md)_
 
+_Back to [BCO domains](bco-domains.md)_
 
 ## 2.7 Input and Output Domain "io_domain"
 
 This section defines the `io_domain` part of the [BCO](bco-domains.md).
 
-This represents the list of global input and output files created by the computational workflow, excluding the intermediate files. These fields are pointers to objects that can reside in the system performing the computation or any other accessible system. Just like the fields of parametric domain, these fields are custom to every specific BCO implementation and can refer to named input output arguments of underlying pipelines. Please refer to documentation of individual scripts and specific BCO descriptions for further details.
+This represents the list of global input and output files created by the computational workflow, excluding the intermediate files. These fields are pointers to objects that can reside in the system performing the computation or any other accessible system. Just like the fields of parametric domain, these fields are expected to vary depending on the specific BCO implementation and can refer to named input output arguments of underlying pipelines. Please refer to documentation of individual scripts and specific BCO descriptions for further details.
 
 Condensed exampled:
 
@@ -20,7 +21,7 @@ Condensed exampled:
 
 ### 2.7.1 Input Subdomain "input_subdomain"
 
-This field records the references and input files for the entire pipeline. Each type of input file is listed under a key for that type. The file types are specified when the BCO type is created. This allows the author to be very specific about a particular type of input file, if they so choose. For example: reference files have common names, and adding the common name here, in addition to the uri would make this more readable and understandable (eg, `"HCV reference version..."` or `"human reference GRCH38"`). For data integration workflows, the input files can be a table downloaded from a specific source which is then filtered for modified using rules described in the BCO.
+This field records the references and input files for the entire pipeline. Each input file is listed as a `uri` object. This allows the author to be very specific about a particular type of input file, if they so choose. For example: reference files have common names, and adding the common name here, in addition to the uri would make this more readable and understandable (eg, `"HCV reference version..."` or `"human reference GRCH38"`). For data integration workflows, the input files can be a table downloaded from a specific source which is then filtered for modified using rules described in the BCO. It is _recommended_ that the values here include `filename`, `uri`, and `access_time`.
 
 ```json
         "input_subdomain": [
@@ -43,7 +44,7 @@ This field records the references and input files for the entire pipeline. Each 
 
 ### 2.7.2 Output Subdomain "output_subdomain"
 
-This field records the outputs for the entire pipeline. Each file should be an object with a key, and a title, URI, and media type ([https://www.iana.org/assignments/media-types/](https://www.iana.org/assignments/media-types/)) value.  
+This field records the outputs for the entire pipeline. Each output object is represented as a `uri` with the addition of a [`mediatype`](https://www.iana.org/assignments/media-types/) value. 
 
 ```json
         "output_subdomain": [
