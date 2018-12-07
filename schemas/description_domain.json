@@ -54,7 +54,7 @@
                     },
                     "ids": {
                         "type": "array",
-                        "description": "FIX: list of reference identifiers, TODO: TALK TO HADLEY ABOUT CLEANING THESE EXAMPLES",
+                        "description": "List of reference identifiers",
                         "items": {
                             "type": "string",
                             "description": "Reference identifier",
