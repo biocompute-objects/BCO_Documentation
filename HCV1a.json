@@ -262,9 +262,9 @@
     "parametric_domain": [
         {"param": "seed", "value": "14", "step": "1"},
         {"param":"minimum_match_len", "value": "66", "step": "1"},
-        {"param": "divergence_threshold_percent", "value": 0.30, "step": "1"},
+        {"param": "divergence_threshold_percent", "value": "0.30", "step": "1"},
         {"param": "minimum_coverage", "value": "15", "step": "2"},
-        {"param": "freq_cutoff", "value": 0.10, "step": "2"}
+        {"param": "freq_cutoff", "value": "0.10", "step": "2"}
     ], 
     "io_domain": {
         "input_subdomain": [

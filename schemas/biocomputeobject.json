@@ -82,7 +82,7 @@
                 "contribution": {
                     "type": "array",
                     "description": "type of contribution determined according to PAV ontology",
-		          "reference": "https://doi.org/10.1186/2041-1480-4-37",
+		            "reference": "https://doi.org/10.1186/2041-1480-4-37",
                     "items": {
                         "type": "string",
                         "enum": [
@@ -144,7 +144,6 @@
             "$ref": "usability_domain.json"
         },
         "extension_domain": {
-            "additionalProperties": true,
             "properties": {
                 "fhir_extension": {
                     "type": "array",
