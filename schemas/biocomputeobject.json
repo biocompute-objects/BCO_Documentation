@@ -53,7 +53,8 @@
             "type": "object",
             "description": "Contributor identifier and type of contribution (determined according to PAV ontology) is required",
             "required": [
-                "contribution"
+                "contribution",
+                "name"
             ],
             "additionalProperties": false,
             "properties": {
@@ -66,7 +67,7 @@
                 },
                 "affiliation": {
                     "type": "string",
-                    "description": "Organization the particular contributor is connected to",
+                    "description": "Organization the particular contributor is affiliated with",
                     "examples": [
                         "George Washington University"
                     ]
@@ -82,7 +83,7 @@
                 "contribution": {
                     "type": "array",
                     "description": "type of contribution determined according to PAV ontology",
-		            "reference": "https://doi.org/10.1186/2041-1480-4-37",
+                    "reference": "https://doi.org/10.1186/2041-1480-4-37",
                     "items": {
                         "type": "string",
                         "enum": [

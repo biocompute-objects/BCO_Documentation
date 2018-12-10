@@ -77,7 +77,6 @@
         "obsolete_after": {
             "type": "string",
             "description": "If the object has an expiration date, this optional field will specify that using the ‘datetime’ type described in ISO-8601 format, as clarified by W3C https://www.w3.org/TR/NOTE-datetime.",
-
             "format": "date-time"
         },
         "embargo": {
