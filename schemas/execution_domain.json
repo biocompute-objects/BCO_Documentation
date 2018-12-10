@@ -14,7 +14,16 @@
     "additionalProperties": false,
     "properties": {
         "script": {
-            "$ref": "biocomputeobject.json#/definitions/uri"
+            "type": "array",
+            "description": "points to internal or external references to a script object that was used to perform computations for this BCO instance.",
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "uri": {
+                        "$ref": "biocomputeobject.json#/definitions/uri"
+                    }
+                }
+			}
         },
         "script_driver": {
             "type": "string",

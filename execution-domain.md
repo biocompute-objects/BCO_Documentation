@@ -1,5 +1,7 @@
 _This document is part of the [BioCompute Object User Guide](user_guide.md)_
 
+_Back to [BCO domains](bco-domains.md)_
+
 ## 2.5 Execution Domain "execution_domain"
 
 This section defines the `execution_domain` part of the [BCO](bco-domains.md).
@@ -25,7 +27,7 @@ Condensed example:
 
 ### 2.5.1  Script "script"
 
-The Script field points to an internal or external reference to a script object that was used to perform computations for this BCO instance. This may be a reference to an object in GitHub, a computational service or any other type of script. 
+The Script field points to internal or external references to a script object that was used to perform computations for this BCO instance. This may be a reference to an object in GitHub, a computational service or any other type of script. 
 
 ```json
  "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"]

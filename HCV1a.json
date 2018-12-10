@@ -217,9 +217,13 @@
         ]
     },
     "execution_domain": {
-        "script": {
-			"uri": "https://example.com/workflows/antiviral_resistance_detection_hive.py"
-		},
+        "script":[
+            {
+                "uri": {
+                    "uri": "https://example.com/workflows/antiviral_resistance_detection_hive.py"
+                }
+            }
+        ],
         "script_driver": "shell", 
         "software_prerequisites": [
             {
