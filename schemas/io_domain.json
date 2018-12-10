@@ -13,7 +13,6 @@
             "type": "array",
             "title": "input_domain",
             "description": "A record of the references and input files for the entire pipeline. Each type of input file is listed under a key for that type.",
-            "$comment": "TODO: Need to find a way to specify 'filename' is required here.",
             "items": {
                 "additionalProperties": false,
                 "type": "object",
