@@ -1,6 +1,6 @@
 # Schema Validation
 
-The following script was used to test the schema against [HCV1a.json](https://github.com/biocompute-objects/BCO_Specification/blob/cb06839d482b4b645eadf9160c48cb8a2162475f/HCV1a.json):
+The following script was used to test the schema against [HCV1a.json](https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json):
  
  ```python
  import json
