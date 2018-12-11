@@ -91,7 +91,6 @@
                     "step_number",
                     "name",
                     "description",
-                    "version",
                     "input_list",
                     "output_list"
                 ],
