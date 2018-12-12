@@ -16,14 +16,14 @@
     "properties": {
         "name": {
             "type": "string",
-            "description": "Public searchable name for BioCompute Object",
+            "description": "Public searchable name for BioCompute Object. This public field should take free text value using common biological research terminology supporting the terminology used in the usability_domain, external references (xref), and keywords sections.",
             "examples": [
                 "HCV1a ledipasvir resistance SNP detection"
             ]
         },
         "version": {
             "type": "string",
-            "description": "BioCompute Object Version uses semantic versioning as recommended by Semantic Versioning 2.0.0",
+            "description": "Records the versioning of this BCO instance object. BioCompute Object Version should adhere to semantic versioning as recommended by Semantic Versioning 2.0.0.",
 		    "reference": "https://semver.org/",
             "examples": [
                 "2.9"
@@ -31,7 +31,7 @@
         },
         "review": {
             "type": "array",
-            "description": "Describes the current verification status of an object in the review process. The unreviewed flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The in-review flag indicates that verification is underway. The approved flag indicates that the BCO has been verified and reviewed. The suspended flag indicates an object that was once valid is no longer considered valid. The rejected flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the contributor object (described in section 2.1.10) is inherited to populate the reviewer section.",
+            "description": "Description of the current verification status of an object in the review process. The unreviewed flag indicates that the object has been submitted, but no further evaluation or verification has occurred. The in-review flag indicates that verification is underway. The approved flag indicates that the BCO has been verified and reviewed. The suspended flag indicates an object that was once valid is no longer considered valid. The rejected flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. The fields from the contributor object (described in section 2.1.10) is inherited to populate the reviewer section.",
             "items": {
                 "type": "object",
                 "required": [
@@ -46,7 +46,7 @@
                     },
                     "reviewer": {
                         "$ref": "biocomputeobject.json#/definitions/contributor",
-                        "description": "Contributer that assigns BCO review status"
+                        "description": "Contributer that assigns BCO review status."
                     },
                     "reviewer_comment": {
                         "type": "string",
