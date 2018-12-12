@@ -45,7 +45,7 @@
                         "format": "date-time"
                     },
                     "reviewer": {
-                        "$ref": "biocomputeobject.json#/definitions/contributor",
+                        "$ref": "#/definitions/contributor",
                         "description": "Contributer that assigns BCO review status."
                     },
                     "reviewer_comment": {
@@ -72,7 +72,7 @@
         },
         "derived_from": {
             "description": "value of `bco_id` field of another BioCompute object",
-            "$ref": "biocomputeobject.json#/definitions/bco_id"
+            "$ref": "#/definitions/bco_id"
         },
         "obsolete_after": {
             "type": "string",
@@ -112,7 +112,7 @@
             "type": "array",
             "description": "This is a list to hold contributor identifiers and a description of their type of contribution, including a field for ORCIDs to record author information, as they allow for the author to curate their information after submission. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the PROV-O.",
             "items": {
-                "$ref": "biocomputeobject.json#/definitions/contributor"
+                "$ref": "#/definitions/contributor"
             }
         },
         "license": {

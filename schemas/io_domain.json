@@ -21,7 +21,7 @@
                 ],
                 "properties": {
                     "uri": {
-                        "$ref": "biocomputeobject.json#/definitions/uri"
+                        "$ref": "#/definitions/uri"
                     }
                 }
             }
@@ -48,7 +48,7 @@
                         "pattern": "^(.*)$"
                     },
                     "uri": {
-                        "$ref": "biocomputeobject.json#/definitions/uri"
+                        "$ref": "#/definitions/uri"
                     }
                 }
             }
