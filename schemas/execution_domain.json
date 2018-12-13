@@ -20,7 +20,7 @@
                 "additionalProperties": false,
                 "properties": {
                     "uri": {
-                        "$ref": "#/definitions/uri"
+                        "$ref": "biocomputeobject.json#/definitions/uri"
                     }
                 }
 			}
@@ -62,7 +62,7 @@
                         ]
                     },
                     "uri": {
-                        "$ref": "#/definitions/uri"
+                        "$ref": "biocomputeobject.json#/definitions/uri"
                     }
                 }
             }
