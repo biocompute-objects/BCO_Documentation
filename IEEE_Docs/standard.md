@@ -175,9 +175,9 @@ The following members of the individual/entity balloting committee voted on this
 When the IEEE-SA Standards Board approved this standard on `<Date Approved>`, it had the following membership:
 **[To be supplied by IEEE]**
  
-	`<Name>`, Chair
-	`<Name>`, Vice Chair
-	`<Name>`, Past Chair
+	<Name>, Chair
+	<Name>, Vice Chair
+	<Name>, Past Chair
 	Konstantinos Karachalios, Secretary
  
 	SBMember1
