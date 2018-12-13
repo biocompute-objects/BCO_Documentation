@@ -316,22 +316,22 @@ Additional helpful resources have been created, including a [Community User Guid
 ### Bibliography
 Bibliographical references are resources that provide additional or helpful material but do not need to be understood or used to implement this standard. Reference to these resources is made for informational use only. 
 
-Community User Guide for Best Practices
+[Community User Guide for Best Practices](https://w3id.org/biocompute/spec/1.3.0/user_guide.md)
 
 [B1]: https://w3id.org/biocompute/spec/1.3.0/user_guide.md 
 
-JSON Schema: A Media Type for Describing JSON Documents
+[JSON Schema: A Media Type for Describing JSON Documents](https://json-schema.org/latest/json-schema-core.html)
 
 [B2]: https://json-schema.org/latest/json-schema-core.html
 
-Example Repository
+[Example Repository](https://w3id.org/biocompute/examples/HCV1a.json)
 
-[B3]: w3id.org/biocompute/examples/HCV1a.json
+[B3]: https://w3id.org/biocompute/examples/HCV1a.json
 
-BCO Editor
+[BCO Editor](https://w3id.org/biocompute/bco_editor/html/js)
 
 [B4]: https://w3id.org/biocompute/bco_editor/html/js
 
-Validation Script
+[Validation Script](https://w3id.org/biocompute/validate.py)
 
 [B5]: https://w3id.org/biocompute/validate.py
