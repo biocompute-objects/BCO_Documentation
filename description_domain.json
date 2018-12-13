@@ -139,7 +139,7 @@
                                     ]
                                 },
                                 "uri": {
-                                    "$ref": "#/definitions/uri"
+                                    "$ref": "biocomputeobject.json#/definitions/uri"
                                 }
                             }
                         }
@@ -148,14 +148,14 @@
                         "type": "array",
                         "description": "URIs (expressed as a URN or URL) of the input files for each tool.",
                         "items": {
-                            "$ref": "#/definitions/uri"
+                            "$ref": "biocomputeobject.json#/definitions/uri"
                         }
                     },
                     "output_list": {
                         "type": "array",
                         "description": "URIs (expressed as a URN or URL) of the output files for each tool.",
                         "items": {
-                            "$ref": "#/definitions/uri"
+                            "$ref": "biocomputeobject.json#/definitions/uri"
                         }
                     }
                 }
