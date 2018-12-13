@@ -153,44 +153,44 @@ The following members of the individual/entity balloting committee voted on this
 
 **[To be supplied by IEEE]**
  
-`Balloter1
+	Balloter1
 
-Balloter2
+	Balloter2
 
-Balloter3
+	Balloter3
 
-Balloter4
+	Balloter4
 
-Balloter5
+	Balloter5
 
-Balloter6
+	Balloter6
 
-Balloter7
+	Balloter7
 
-Balloter8
+	Balloter8
 
-Balloter9`
+	Balloter9
  
 
-When the IEEE-SA Standards Board approved this standard on <Date Approved>, it had the following membership:
+When the IEEE-SA Standards Board approved this standard on `<Date Approved>`, it had the following membership:
 **[To be supplied by IEEE]**
  
-<Name>, Chair
-<Name>, Vice Chair
-<Name>, Past Chair
-Konstantinos Karachalios, Secretary
+	`<Name>`, Chair
+	`<Name>`, Vice Chair
+	`<Name>`, Past Chair
+	Konstantinos Karachalios, Secretary
  
-SBMember1
-SBMember2
-SBMember3
-SBMember4
-SBMember5
-SBMember6
-SBMember7
-SBMember8
-SBMember9
+	SBMember1
+	SBMember2
+	SBMember3
+	SBMember4
+	SBMember5
+	SBMember6
+	SBMember7
+	SBMember8
+	SBMember9
  
-*Member Emeritus
+	*Member Emeritus
 
  
 ### Introduction
