@@ -2,30 +2,34 @@
 
 Sponsor
 
->**Standards Committee**
+  **Standards Committee**
 
->of the
+  of the
 
->**IEEE Engineering in Medicine and Biology Society**
+  **IEEE Engineering in Medicine and Biology Society**
 
 
 Approved `<Date Approved>`
 
 **IEEE-SA Standards Board**
 
->Copyright © 2018 by The Institute of Electrical and Electronics Engineers, Inc.
+  Copyright © 2018 by The Institute of Electrical and Electronics Engineers, Inc.
 
->Three Park Avenue
+  Three Park Avenue
 
->New York, New York 10016-5997, USA
+  New York, New York 10016-5997, USA
 
 
->All rights reserved.
+  All rights reserved.
 
 
 This document is an unapproved draft of a proposed IEEE Standard. As such, this document is subject to change. USE AT YOUR OWN RISK! IEEE copyright statements SHALL NOT BE REMOVED from draft or approved IEEE standards, or modified in any way. Because this is an unapproved draft, this document must not be utilized for any conformance/compliance purposes. Permission is hereby granted for officers from each IEEE Standards Working Group or Committee to reproduce the draft document developed by that Working Group for purposes of international standardization consideration.  IEEE Standards Department must be informed of the submission for consideration prior to any reproduction for international standardization consideration (stds.ipr@ieee.org). Prior to adoption of this document, in whole or in part, by another standards development organization, permission must first be obtained from the IEEE Standards Department (stds.ipr@ieee.org). When requesting permission, IEEE Standards Department will require a copy of the standard development organization's document highlighting the use of IEEE content. Other entities seeking permission to reproduce this document, in whole or in part, must also obtain permission from the IEEE Standards Department.
+
+
 IEEE Standards Department
+
 445 Hoes Lane
+
 Piscataway, NJ 08854, USA
 
  
@@ -38,7 +42,6 @@ This standard establishes accurate and secure communication of bioinformatics pr
 genomics, next generation sequencing, high throughput sequencing, massively parallel sequencing, NGS, HTS, MPS, workflow, pipeline, bioinformatics, analysis, regulatory
 
 
-• 
 ### Important Notices and Disclaimers Concerning IEEE Standards Documents
 
 IEEE documents are made available for use subject to important notices and legal disclaimers. These notices and disclaimers, or a reference to this page, appear in all standards and may be found under the heading “Important Notices and Disclaimers Concerning IEEE Standards Documents.” They can also be obtained on request from IEEE or viewed at http://standards.ieee.org/ipr/disclaimers.html.
@@ -65,9 +68,13 @@ A statement, written or oral, that is not processed in accordance with the IEEE-
 Comments for revision of IEEE Standards documents are welcome from any interested party, regardless of membership affiliation with IEEE. However, IEEE does not provide consulting information or advice pertaining to IEEE Standards documents. Suggestions for changes in documents should be in the form of a proposed change of text, together with appropriate supporting comments. Since IEEE standards represent a consensus of concerned interests, it is important that any responses to comments and questions also receive the concurrence of a balance of interests. For this reason, IEEE and the members of its societies and Standards Coordinating Committees are not able to provide an instant response to comments or questions except in those cases where the matter has previously been addressed. For the same reason, IEEE does not respond to interpretation requests. Any person who would like to participate in revisions to an IEEE standard is welcome to join the relevant IEEE working group.
 
 Comments on standards should be submitted to the following address:
+
 	Secretary, IEEE-SA Standards Board 
+	
 	445 Hoes Lane 
+	
 	Piscataway, NJ 08854 USA
+
 
 ### Laws and regulations 
 
@@ -102,42 +109,43 @@ Essential Patent Claims may exist for which a Letter of Assurance has not been r
 At the time this draft standard was completed, the P2791 Working Group had the following membership:
 
 **Raja Mazumder**, Chair
+
 **Vahan Simonyan**, Vice Chair
 
-Ogan Abaan
-Jonas Almeida
-Gil Alterovitz
-Payal Banerjee
-Amanda Bell
-Surajit Bhattacharya
-Lee Black
-Ben Busby
-Kristy Cloyd-Warwick
-Ryan Connor
-Michael Crusoe
-Dennis Dean
-Paul Duncan
-Josep Gelpi
-Carole Goble
-Jeremy Goecks
-Jonathan Jacobs
-Robel Kahsay
-Jonathon Keeney
-Charles Hadley King
-Jonathan LoTempio
-Xeandong Meng
-David Michaels
-Hiroki Morizono
-Rahi Navelkar
-Asa Oudes
-Janisha Patel
-John Penn
-Megan Pottersbusch
-Jonathan Pryke
-Stian Soiland-Reyes
-Dan Taylor
-Jason Travis
-Paul Walsh
+Ogan Abaan,
+Jonas Almeida,
+Gil Alterovitz,
+Payal Banerjee,
+Amanda Bell,
+Surajit Bhattacharya,
+Lee Black,
+Ben Busby,
+Kristy Cloyd-Warwick,
+Ryan Connor,
+Michael Crusoe,
+Dennis Dean,
+Paul Duncan,
+Josep Gelpi,
+Carole Goble,
+Jeremy Goecks,
+Jonathan Jacobs,
+Robel Kahsay,
+Jonathon Keeney,
+Charles Hadley King,
+Jonathan LoTempio,
+Xeandong Meng,
+David Michaels,
+Hiroki Morizono,
+Rahi Navelkar,
+Asa Oudes,
+Janisha Patel,
+John Penn,
+Megan Pottersbusch,
+Jonathan Pryke,
+Stian Soiland-Reyes,
+Dan Taylor,
+Jason Travis,
+Paul Walsh,
 Jianchao Yao
  
 
