@@ -154,13 +154,21 @@ The following members of the individual/entity balloting committee voted on this
 **[To be supplied by IEEE]**
  
 `Balloter1
+
 Balloter2
+
 Balloter3
+
 Balloter4
+
 Balloter5
+
 Balloter6
+
 Balloter7
+
 Balloter8
+
 Balloter9`
  
 
