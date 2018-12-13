@@ -150,9 +150,10 @@ Jianchao Yao
  
 
 The following members of the individual/entity balloting committee voted on this standard. Balloters may have voted for approval, disapproval, or abstention.
+
 **[To be supplied by IEEE]**
  
-Balloter1
+`Balloter1
 Balloter2
 Balloter3
 Balloter4
@@ -160,7 +161,7 @@ Balloter5
 Balloter6
 Balloter7
 Balloter8
-Balloter9
+Balloter9`
  
 
 When the IEEE-SA Standards Board approved this standard on <Date Approved>, it had the following membership:
