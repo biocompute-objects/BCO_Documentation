@@ -2,23 +2,25 @@
 
 Sponsor
 
-**Standards Committee**
-of the
-**IEEE Engineering in Medicine and Biology Society**
+>**Standards Committee**
+
+>of the
+
+>**IEEE Engineering in Medicine and Biology Society**
 
 
-Approved <Date Approved>
+Approved `<Date Approved>`
 
 **IEEE-SA Standards Board**
 
-Copyright © 2018 by The Institute of Electrical and Electronics Engineers, Inc.
+>Copyright © 2018 by The Institute of Electrical and Electronics Engineers, Inc.
 
-Three Park Avenue
+>Three Park Avenue
 
-New York, New York 10016-5997, USA
+>New York, New York 10016-5997, USA
 
 
-All rights reserved.
+>All rights reserved.
 
 
 This document is an unapproved draft of a proposed IEEE Standard. As such, this document is subject to change. USE AT YOUR OWN RISK! IEEE copyright statements SHALL NOT BE REMOVED from draft or approved IEEE standards, or modified in any way. Because this is an unapproved draft, this document must not be utilized for any conformance/compliance purposes. Permission is hereby granted for officers from each IEEE Standards Working Group or Committee to reproduce the draft document developed by that Working Group for purposes of international standardization consideration.  IEEE Standards Department must be informed of the submission for consideration prior to any reproduction for international standardization consideration (stds.ipr@ieee.org). Prior to adoption of this document, in whole or in part, by another standards development organization, permission must first be obtained from the IEEE Standards Department (stds.ipr@ieee.org). When requesting permission, IEEE Standards Department will require a copy of the standard development organization's document highlighting the use of IEEE content. Other entities seeking permission to reproduce this document, in whole or in part, must also obtain permission from the IEEE Standards Department.
