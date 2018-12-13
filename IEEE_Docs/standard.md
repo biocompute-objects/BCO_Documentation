@@ -203,8 +203,13 @@ BioCompute standardizes bioinformatics workflows in the genomic analysis space. 
 3) to able to capture all details related to a workflow in such a way as to facilitate efficient communication and improve reproducibility and interoperability. 
 
 Every effort is made to accommodate any tool, platform or script, and to be adaptable to future developments in this field under a unified set of descriptions to standardize and streamline the representations of such complex bioinformatics processes.
+
+
 BioCompute is a standard and a BioCompute Object (BCO) is an instance of that standard. High throughput sequencing (HTS), also referred to as next-generation sequencing (NGS) or massively parallel sequencing (MPS), has increased the pace at which we generate, compute and share genomic data in biomedical sciences. As a result, scientists, clinicians and regulators are now faced with a new data paradigm that is less portable, more complex and most of all poorly standardized. The BCO uses a simple JSON format to encode important information on the execution of computational pipelines, or for the creation of knowledge bases. BioCompute can be process oriented (for software pipelines) and/or product oriented (for knowledge bases). So error domain can include information to do QA and/or QC. The goal of using a BCO is to streamline communication of these otherwise difficult to elucidate details between stakeholders in academia, industry and regulatory agencies. Encapsulating HTS data processing in a BCO will facilitate swift communications between the FDA and other stakeholders who seek regulatory review/approval hence reducing the burden and time to decision. 
+
+
 The US Food and Drug Administration (FDA) and George Washington University (GW) have partnered to establish a framework for community-based standards development and harmonization of HTS computations and data formats. Standardized HTS data processing descriptions and data formats will promote interoperability and simplify the verification of the bioinformatics protocols applied against data. To do this, a schema has been developed to represent instances of computational analysis as a BCO. A BCO includes:
+
 	- Information about parameters and versions of the executable programs in a pipeline
 	- Reference to input and output test data for verification of the pipeline
 	- A usability domain
