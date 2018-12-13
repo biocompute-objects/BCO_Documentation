@@ -309,24 +309,29 @@ The Usability Domain of a BioCompute Object  is a plain language description of 
 
 The Extension Domain allows a user to define additional fields and is optional. A separate folder called extension_domain exists within the schemas folder. Two Extension Domain example files exist in the extension_domain folder that describe how a BCO can include a reference to FHIR (Extension Domain example: FHIR ) and/or to SCM (Extension Domain example: SCM ).
 
-Additional helpful resources have been created, including a Community User Guide for Best Practices [B1]. This document describes ways in which the schema has been used and is known to be effective, using these to derive best practices. In addition, a repository of examples [B3] exists, which includes the use of optional Error Domain. A BCO Editor [B4] tool has also been generated. The BCO Editor is an example implementation of the schema, and can be used to create and edit BCO’s. Finally, a script [B5] to validate that documents have been created according to the BCO schema is also available for use. This python tool will check a document to ensure that it has been created according to the current BCO Schema.
+Additional helpful resources have been created, including a [Community User Guide for Best Practices][B1]. This document describes ways in which the schema has been used and is known to be effective, using these to derive best practices. In addition, a [repository of examples][B3] exists, which includes the use of optional Error Domain. A [BCO Editor][B4] tool has also been generated. The BCO Editor is an example implementation of the schema, and can be used to create and edit BCO’s. Finally, a [script to validate][B5] that documents have been created according to the BCO schema is also available for use. This python tool will check a document to ensure that it has been created according to the current BCO Schema.
 
 ## Annex A (informative)
 
 ### Bibliography
 Bibliographical references are resources that provide additional or helpful material but do not need to be understood or used to implement this standard. Reference to these resources is made for informational use only. 
 
-Community User Guide for Best Practices. 
+Community User Guide for Best Practices
+
 [B1]: https://w3id.org/biocompute/spec/1.3.0/user_guide.md 
 
-JSON Schema: A Media Type for Describing JSON Documents.
+JSON Schema: A Media Type for Describing JSON Documents
+
 [B2]: https://json-schema.org/latest/json-schema-core.html
 
-Example Repository. 
+Example Repository
+
 [B3]: w3id.org/biocompute/examples/HCV1a.json
 
 BCO Editor
+
 [B4]: https://w3id.org/biocompute/bco_editor/html/js
 
 Validation Script
+
 [B5]: https://w3id.org/biocompute/validate.py
