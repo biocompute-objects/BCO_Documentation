@@ -222,12 +222,12 @@ Knowledge of input data is intended to be captured according to existing efforts
 **Contents**
 
 * 1. [Overview](#1-overview)	
-*  1.1 [General](#11-general)	
-*  1.2 [Scope](#12-scope)	
-*  1.3 [Purpose](#13-purpose)
+* 1.1 [General](#11-general)	
+* 1.2 [Scope](#12-scope)	
+* 1.3 [Purpose](#13-purpose)
 * 2. [Normative references](#2-purpose)
 * 3. [Definitions, acronyms, and abbreviations](#3-definitions-acronyms-and-abbreviations)	
-*  3.1 [Acronyms and abbreviations]()
+* 3.1 [Acronyms and abbreviations]()
 * 4. [BioCompute Standard]()
 * 4.1 [General]()
 * [Annex A (informative) Bibliography]()
