@@ -1,6 +1,8 @@
 BioCompute
 ==========
 
+Version 1.3.0
+
 BioCompute Partnership: http://biocomputeobject.org
 
 GitHub repository for BioCompute Objects:
@@ -50,7 +52,7 @@ Table of content:
   * [BCO expanded view example HCV1a.json](HCV1a.json)
 
 ## Specification
-### Current Release [WIP]
+### Current Release - 1.3.0
 
 For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_Docs/standard.md) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
 

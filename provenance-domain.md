@@ -95,7 +95,7 @@ The fields from the `contributor` object (described in [section 2.1.9](/provenan
 If the object is derived from another, this field will specify the parent object, in the form of the ‘bco_id’. If the object is novel than the field is not included. 
 
 ```json
-"derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/master/HCV1a.json"
+"derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/1.2.1-beta/HCV1a.json"
 
 ```
 
