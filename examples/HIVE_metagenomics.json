@@ -1,0 +1,270 @@
+{
+    "bco_id": "https://w3id.org/biocompute/1.3.0/examples/HIVE_metagenomics.json",
+    "checksum": "ECD541AE0F61AAAAA1FAC14B2B08ABE18F610E1AA4677D54E89B292550F5058A",
+    "bco_spec_version" : "https://w3id.org/biocompute/1.3.0/",
+    "provenance_domain": {
+        "name": "Healthy human fecal metagenomic diversity", 
+        "version": "1.0.0",
+        "review": [
+            {
+                "status": "approved",
+                "reviewer_comment": "Approved by GW staff.",
+                "reviewer": {
+                    "name": "Charles Hadley King", 
+                    "affiliation": "George Washington University", 
+                    "email": "hadley_king@gwu.edu",
+                    "contribution": ["curatedBy"],
+                    "orcid": "https://orcid.org/0000-0003-1409-4549"
+                }
+            }
+        ],
+        "obsolete_after" : "2118-09-26T14:43:43-0400",
+        "embargo" : {
+            "start_time": "2000-09-26T14:43:43-0400",
+            "end_time": "2000-09-26T14:43:45-0400"
+        },
+        "created": "2018-11-29T11:29:08-0500", 
+        "modified": "2018-11-30T11:29:08-0500", 
+        "contributors": [
+            {
+                "name": "Charles Hadley King", 
+                "affiliation": "George Washington University", 
+                "email": "hadley_king@gwu.edu",
+                "contribution": ["createdBy", "curatedBy", "authoredBy"],
+                "orcid": "https://orcid.org/0000-0003-1409-4549"
+            },
+            {
+                "name": "Raja Mazumder", 
+                "affiliation": "George Washington University", 
+                "email": "mazumder@gwu.edu",
+                "contribution": ["createdBy", "curatedBy", "authoredBy"],
+                "orcid": "https://orcid.org/0000-0001-88238-9945"
+            }
+        ],
+        "license": "https://spdx.org/licenses/CC-BY-4.0.html"
+    },
+    "usability_domain": [
+        "Identify the most common organism present in a human [taxID:9606] fecal [UBERON:0001988] sample, ", 
+        "Identify the general community composition of organisms in a human [taxID:9606] fecal [UBERON:0001988] sample, ", 
+        "CensuScope is used to do a census of the composition of the read files. Based on a user-defined threshold, organisms identified are used for alignment in the Hexagon alignment."
+    ],
+    "extension_domain":{
+        "scm_extension": {
+            "scm_repository": "https://github.com/biocompute-objects/HIVE_metagenomics",
+            "scm_type": "git",
+            "scm_commit": "e4620f642fb20557f6c679397696614305ed07b1",
+            "scm_path": "biocompute-objects/HIVE_metagenomics",
+            "scm_preview": "https://github.com/example/repo1/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl"
+      }
+    },
+    "description_domain": {
+        "keywords": [
+            "metagenome", 
+            "metagenomic analysis", 
+            "fecal"
+        ], 
+        "xref": [
+            {
+                "namespace": "uberon",
+                "name": "Uber Anatomy Ontology",
+                "ids": ["0001988"], 
+                "access_time": "2016-11-30T06:46-0500"
+            },
+            {
+                "namespace": "taxonomy",
+                "name": "Taxonomy",
+                "ids": ["9606"], 
+                "access_time": "2016-11-30T06:46-0500"
+            }
+        ], 
+        "platform": ["hive"], 
+        "pipeline_steps": [
+            {
+                "step_number": 1,
+                "name": "CensuScope", 
+                "description": "Detect taxonomic composition of a metagenomic data set.", 
+                "version": "1.3", 
+                "prerequisite": [
+                    {
+                        "name": "Filtered_NT_feb18_2016", 
+                        "uri": {
+                            "uri": "https://hive.biochemistry.gwu.edu/genome/513957",
+                            "access_time": "2016-11-30T06:46-0500"
+                        }
+                    }
+                ],
+                "input_list": [
+                    {
+                        "uri": "https://hive.biochemistry.gwu.edu/nuc-read/545722",
+                        "access_time": "2016-11-30T06:46-0500"
+                    }, 
+                    {
+                        "uri": "https://hive.biochemistry.gwu.edu/nuc-read/545721",
+                        "access_time": "2016-11-30T06:46-0500"
+                    }
+                ], 
+                "output_list": [
+                    {
+                        "uri": "https://hive.biochemistry.gwu.edu/546223/dnaAccessionBasedResult.csv",
+                        "access_time": "2016-11-30T06:46-0500"
+                    }
+                ]
+            },
+            {
+                "step_number": 2, 
+                "name": "HIVE-hexagon", 
+                "description": "Alignment of reads to a set of references", 
+                "version": "1.3", 
+                "input_list": [
+                    {
+                        "uri": "http://example.com/data/546223/dnaAccessionBased.csv",
+                        "access_time": "2016-11-30T06:46-0500"
+                    },
+                    {
+                        "uri": "https://hive.biochemistry.gwu.edu/nuc-read/545722",
+                        "access_time": "2016-11-30T06:46-0500"
+                    }, 
+                    {
+                        "uri": "https://hive.biochemistry.gwu.edu/nuc-read/545721",
+                        "access_time": "2016-11-30T06:46-0500"
+                    }
+                ], 
+                "output_list": [
+                    {
+                        "uri": "https://hive.biochemistry.gwu.edu/546232/alCount-Unalignedo524569-alCount--1.csv",
+                        "access_time": "2016-11-30T06:46-0500"
+                    }
+                ]
+            }
+        ]
+    },
+    "execution_domain": {
+        "script": [
+            {
+                "uri": {
+                    "uri": "https://github.com/biocompute-objects/HIVE_metagenomics/blob/master/driverHIVEmetagenomic.py"
+                }
+            }
+        ],
+        "script_driver": "shell",
+        "software_prerequisites": [
+            {
+                "name": "CensuScope", 
+                "version": "albinoni.2",
+                "uri": {
+                    "uri": "http://example.com/dna.cgi?cmd=dna-screening&cmdMode=-",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            },
+            {
+                "name": "HIVE-hexagon", 
+                "version": "babajanian.1",
+                "uri": {
+                    "uri": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }
+        ],
+        "external_data_endpoints": [
+            {
+                "name": "HIVE", 
+                "url": "https://hive.biochemistry.gwu.edu/dna.cgi?cmd=login"
+            }, 
+            {
+                "name": "access to e-utils", 
+                "url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+            }
+        ], 
+        "environment_variables": {
+            "key": "HOSTTYPE", 
+            "value" : "x86_64-linux"
+        }
+    }, 
+    "parametric_domain": [
+        {"param": "seed", "value": "14", "step": "2"},
+        {"param":"minimum_match_len", "value": "66", "step": "2"},
+        {"param": "divergence_threshold_percent", "value": "0.30", "step": "2"},
+        {"param": "minimum_coverage", "value": "15", "step": "2"},
+        {"param": "freq_cutoff", "value": "0.10", "step": "2"}
+    ], 
+    "io_domain": {
+        "input_subdomain": [
+            { 
+                "uri": {
+                    "filename": "Hepatitis C virus genotype 1",
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/22129792",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "uri": {
+                    "filename": "Hepatitis C virus type 1b complete genome", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/5420376",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "uri": {
+                    "filename": "Hepatitis C virus (isolate JFH-1) genomic RNA", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/13122261",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "uri": {
+                    "filename": "Hepatitis C virus clone J8CF, complete genome", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/386646758",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+                "uri": {
+                    "filename": "Hepatitis C virus S52 polyprotein gene", 
+                    "uri": "http://www.ncbi.nlm.nih.gov/nuccore/295311559",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            },
+            {
+                "uri": {
+                    "filename": "HCV1a_drug_resistant_sample0001-01", 
+                    "uri": "http://example.com/nuc-read/514682",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }, 
+            {
+
+                "uri": {
+                    "filename": "HCV1a_drug_resistant_sample0001-02", 
+                    "uri": "http://example.com/nuc-read/514683",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }
+        ], 
+        "output_subdomain": [
+            {
+                "mediatype": "text/csv", 
+                "uri": { 
+                    "uri": "http://example.com/data/514769/dnaAccessionBased.csv",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            },
+            {
+                "mediatype": "text/csv", 
+                "uri": {
+                    "uri": "http://example.com/data/514801/SNPProfile*.csv",
+                    "access_time": "2017-01-24T09:40:17-0500"
+                }
+            }
+        ]
+    },
+    "error_domain": {
+        "empirical_error": {
+            "false_negative_alignment_hits": "<0.0010", 
+            "false_discovery": "<0.05"
+        }, 
+        "algorithmic_error": { 
+            "false_positive_mutation_calls_discovery": "<0.00005", 
+            "false_discovery": "0.005"
+        }
+    }
+}
