@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/1.3.0/schemas/biocomputeobject.json",
+    "$id": "http://www.w3id.org/biocompute/1.3.0/schemas/biocomputeobject.json",
     "type": "object",
     "title": "Base type for all BioCompute Objects",
     "description": "All BioCompute object types must adhear to this type in order to be compliant with BioCompute specification",
@@ -42,7 +42,7 @@
                     "type": "string",
                     "format": "date-time"
                 },
-                "sha1_chksum": {
+                "sha1_checksum": {
                     "type": "string",
                     "description": "value of sha1 checksum of file",
                     "pattern": "[A-Za-z0-9]+"

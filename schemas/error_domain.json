@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/1.3.0/schemas/error_domain.json",
+    "$id": "http://www.w3id.org/biocompute/1.3.0/schemas/error_domain.json",
     "type": "object",
     "title": "Error Domain",
     "description": "",

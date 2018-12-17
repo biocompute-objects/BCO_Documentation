@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/1.3.0/schemas/io_domain.json",
+    "$id": "http://www.w3id.org/biocompute/1.3.0/schemas/io_domain.json",
     "type": "object",
     "title": "Input and Output Domain",
     "description": "The list of global input and output files created by the computational workflow, excluding the intermediate files. Custom to every specific BCO implementation, these fields are pointers to objects that can reside in the system performing the computation or any other accessible system.",

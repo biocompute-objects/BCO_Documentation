@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/1.3.0/schemas/description_domain.json",
+    "$id": "http://www.w3id.org/biocompute/1.3.0/schemas/description_domain.json",
     "type": "object",
     "title": "Description Domain",
     "description": "Structured field for description of external references, the pipeline steps, and the relationship of I/O objects.",
