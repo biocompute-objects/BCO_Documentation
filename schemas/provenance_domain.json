@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/schemas/provenance_domain.json",
+    "$id": "http://biocomputeobject.org/1.3.0/schemas/provenance_domain.json",
     "type": "object",
     "title": "Provenance Domain",
     "description": "Structured field for tracking data through transformations, including contributors, reviewers, and versioning.",

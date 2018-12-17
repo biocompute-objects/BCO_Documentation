@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/schemas/execution_domain.json",
+    "$id": "http://biocomputeobject.org/1.3.0/schemas/execution_domain.json",
     "type": "object",
     "title": "Execution Domain",
     "description": "The fields required for execution of the BCO are herein encapsulated together in order to clearly separate information needed for deployment, software configuration, and running applications in a dependent environment",

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/schemas/description_domain.json",
+    "$id": "http://biocomputeobject.org/1.3.0/schemas/description_domain.json",
     "type": "object",
     "title": "Description Domain",
     "description": "Structured field for description of external references, the pipeline steps, and the relationship of I/O objects.",
@@ -101,7 +101,7 @@
                     },
                     "name": {
                         "type": "string",
-                        "description": "This is a recognized name of the software tool",
+                        "description": "This is the common name of the software tool",
                         "examples": [
                             "HIVE-hexagon"
                         ]
@@ -115,7 +115,7 @@
                     },
                     "version": {
                         "type": "string",
-                        "description": "Version assigned to the instance of the tool used corresponding to the upstream release.",
+                        "description": "Version assigned to the instance of the tool used.",
                         "examples": [
                             "1.3"
                         ]

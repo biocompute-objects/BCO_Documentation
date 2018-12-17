@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://biocomputeobject.org/schemas/biocomputeobject.json",
+    "$id": "http://biocomputeobject.org/1.3.0/schemas/biocomputeobject.json",
     "type": "object",
     "title": "Base type for all BioCompute Objects",
-    "description": "All BioCompute object types must adhear to this type in order to be compliant with BioCompute framework",
+    "description": "All BioCompute object types must adhear to this type in order to be compliant with BioCompute specification",
     "required": [
         "bco_id",
         "bco_spec_version",
@@ -18,7 +18,7 @@
     "definitions": {
         "bco_id": {
             "type": "string",
-            "description": "A unique identifier that should be applied to each BCO instance, generated and assigned by a BCO database engine. IDs should never be reused",
+            "description": "A unique identifier that should be applied to each BCO instance. IDs should never be reused",
             "examples": [
                 "https://w3id.org/biocompute/examples/HCV1a.json"
             ]
@@ -44,7 +44,7 @@
                 },
                 "sha1_chksum": {
                     "type": "string",
-                    "description": "hash function that produces a message digest",
+                    "description": "value of sha1 checksum of file",
                     "pattern": "[A-Za-z0-9]+"
                 }
             }
