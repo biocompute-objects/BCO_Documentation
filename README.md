@@ -3,7 +3,7 @@ BioCompute
 
 Version 1.3.0
 
-BioCompute Partnership: http://biocomputeobject.org
+BioCompute Partnership: https://biocomputeobject.org
 
 GitHub repository for BioCompute Objects:
 https://github.com/biocompute-objects/
@@ -85,4 +85,4 @@ As a subscriber to the BCO mailing list, you can post to it by sending a message
 
 To subscribe or unsubscribe, please visit https://hermes.gwu.edu/cgi-bin/wa?A0=BIOCOMPUTELS and click `Subscribe` or `Unsubscribe` on the lower right. You can also unsubscribe from the list at any time by sending an email to listserv@hermes.gwu.edu, in which the body says: `unsubscribe biocomputels`
 
-Please also see our [OSF page](https://osf.io/h59uh/) or our [main page](http://biocomputeobject.org/) 
+Please also see our [OSF page](https://osf.io/h59uh/) or our [main page](https://biocomputeobject.org/) 

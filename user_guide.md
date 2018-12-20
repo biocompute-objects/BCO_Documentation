@@ -2,7 +2,7 @@ GitHub: https://github.com/biocompute-objects
 	
 OSF page: https://osf.io/h59uh/ 
 
-BioCompute Partnership: http://biocomputeobject.org
+BioCompute Partnership: https://biocomputeobject.org
 
 # BioCompute Object (BCO) User Guide
 
