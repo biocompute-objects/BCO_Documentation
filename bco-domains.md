@@ -66,7 +66,7 @@ Definition:
 
 ## 2.3 Extension Domain "extension_domain"
 
-The `extension_domain` is a space for a user to add additional structured information that is not defined in the BioCompute shcema. The `extension_domain` section is not evaluated by checks for BCO validity or computational correctness and as such is the place to add *ANY* type of additional **structured** information. We provide two examples that are neither exclusive or exhaustive.
+The `extension_domain` is a space for a user to add additional structured information that is not defined in the BioCompute shcema. The `extension_domain` section is not evaluated by checks for BCO validity or computational correctness and as such is the place to add *ANY* type of additional **structured** information. We provide two examples that are neither exclusive nor exhaustive.
 
 Definitions:
 
