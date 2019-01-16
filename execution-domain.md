@@ -90,7 +90,7 @@ The key `name` should describe the service that is accessed.
 
 ### 2.5.5 Environment Variables "environment_variables"
 
-Thisis an array of key-value pairs useful to configure the execution environment on the target platform. For example, one might specify the number of compute cores, or available memory use of the script. The possible keys are specific to each platform. The "value" should be a JSON string.
+This is an array of key-value pairs useful to configure the execution environment on the target platform. For example, one might specify the number of compute cores, or available memory use of the script. The possible keys are specific to each platform. The "value" should be a JSON string.
 The regex is based on the following:
  
 > http://pubs.opengroup.org/onlinepubs/000095399/basedefs/xbd_chap08.html
