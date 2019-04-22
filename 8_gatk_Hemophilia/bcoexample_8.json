@@ -8,7 +8,7 @@
     "verification_status": "unreviewed", 
     "publication_status": "draft", 
     "usability_domain": [
-        "Identify SNPs [SO:0000694] that corrilate with the development of an inhibitory response to recombinant antihemophilic factor VII in patiens with hemophilia A [DOID:12134]"
+        "Identify SNPs [SO:0000694] that correlate with the development of an inhibitory response to recombinant antihemophilic factor VII in patients with hemophilia A [DOID:12134]"
     ], 
     "authors": [
         {
