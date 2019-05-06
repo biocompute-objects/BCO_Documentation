@@ -232,7 +232,7 @@
                 "uri": {
                     "uri": "http://example.com/dna.cgi?cmd=dna-hexagon&cmdMode=-",
                     "access_time": "2017-01-24T09:40:17-0500",
-                    "sha1_chksum": "d60f506cddac09e9e816531e7905ca1ca6641e3c"
+                    "sha1_checksum": "d60f506cddac09e9e816531e7905ca1ca6641e3c"
                 }
             }, 
             {
