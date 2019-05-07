@@ -1,6 +1,6 @@
 {
     "bco_id": "https://w3id.org/biocompute/1.3.0/examples/HIVE_metagenomics.json",
-    "checksum": "ECD541AE0F61AAAAA1FAC14B2B08ABE18F610E1AA4677D54E89B292550F5058A",
+    "checksum": "09d55a44601184330b05dae6c3d49e9c3821f528a93f958edec92504fef41970",
     "bco_spec_version" : "https://w3id.org/biocompute/1.3.0/",
     "provenance_domain": {
         "name": "Healthy human fecal metagenomic diversity", 
