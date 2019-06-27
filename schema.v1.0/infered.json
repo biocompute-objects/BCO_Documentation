@@ -1,0 +1,420 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://example.com/root.json",
+	"type": "object",
+	"title": "BioCompute Schema",
+	"definitions": {
+	},
+	"required": [
+		"id",
+		"name",
+		"version",
+		"createdby",
+		"created",
+		"modified",
+		"digital_signature",
+		"verification_status",
+		"publication_status",
+		"usability_domain",
+		"authors",
+		"description_domain",
+		"execution_domain",
+		"parametric_domain",
+		"io_domain"
+	],
+	"properties": {
+		"id": {
+			"type": "string",
+			"title": "ID",
+			"examples": [
+				"obj.1283"
+			],
+			"pattern": "^(.*)$"
+		},
+		"name": {
+			"type": "string",
+			"title": "Name",
+			"examples": [
+				"Quasispecies analysis of HIV-1 [taxID:12721] samples taken from H1V-1 infected individuals [taxID:9606] and detection of novel HIV-1 recombinant subtypes"
+			],
+			"pattern": "^(.*)$"
+		},
+		"structured_name": {
+			"type": "string",
+			"title": "Structured Name",
+			"default": "",
+			"examples": [
+				"Quasispecies analysis of HIV-1"
+			],
+			"pattern": "^(.*)$"
+		},
+		"version": {
+			"type": "string",
+			"title": "Version",
+			"default": "1.0",
+			"examples": [
+				"1.0"
+			],
+			"pattern": "^(.*)$"
+		},
+		"digital_signature": {
+			"type": "string",
+			"title": "Digital Signature",
+			"examples": [
+				"324kjhgiufgioerfhlsjdhbfalskjd"
+			],
+			"pattern": "^(.*)$"
+		},
+		"verification_status": {
+			"type": "string",
+			"title": "Verification Status",
+			"default": "unreviewed",
+			"examples": [
+				"in_progress",
+				"unreviewed",
+				"reviewed",
+				"published",
+				"rejected"
+			],
+			"pattern": "^(.*)$"
+		},
+		"publication_status": {
+			"type": "string",
+			"title": "Publication Status",
+			"default": "draft",
+			"examples": [
+				"draft",
+				"in_progress",
+				"private",
+				"open_access"
+			],
+			"pattern": "^(.*)$"
+		},
+		"authors": {
+			"type": "array",
+			"title": "Authors",
+			"items": {
+				"type": "object",
+				"properties": {
+					"orcid": {
+						"type": "string",
+						"title": "Open Researcher and Contributor ID",
+						"examples": [
+							"https://orcid.org/0000-0003-1409-4549"
+						],
+						"pattern": "^(.*)$"
+					},
+					"name": {
+						"type": "string",
+						"title": "Name",
+						"examples": [
+							"John Doe"
+						],
+						"pattern": "^(.*)$"
+					}
+				},
+				"additionalProperties": false
+			}
+		},
+		"usability_domain": {
+			"type": "array",
+			"title": "Usability Domain",
+			"items": {
+				"type": "string",
+				"examples": [
+					"This pipeline can be used for discovering the new recombinant subtypes of viruses"
+				],
+				"pattern": "^(.*)$"
+			}
+		},
+		"createdby": {
+			"type": "string",
+			"title": "Created By",
+			"examples": [
+				"darwin@gwu.edu"
+			],
+			"pattern": "^(.*)$"
+		},
+		"created": {
+			"type": "string",
+			"title": "Created",
+			"examples": [
+				"Feb 02, 2017 14:37:50"
+			],
+			"pattern": "^(.*)$"
+		},
+		"modified": {
+			"type": "string",
+			"title": "Modified",
+			"examples": [
+				"Jun 16, 2017 15:04:43"
+			],
+			"pattern": "^(.*)$"
+		},
+		"description_domain": {
+			"type": "object",
+			"title": "Description Domain",
+			"required": [
+				"keywords",
+				"xref",
+				"pipeline_steps"
+			],
+			"properties": {
+				"keywords": {
+					"type": "array",
+					"title": "Keywords",
+					"items": {
+						"type": "string",
+						"examples": [
+							"clonal discovery",
+							"quasispecies",
+							"clonal contigs",
+							"HIV-1"
+						],
+						"pattern": "^(.*)$"
+					}
+				},
+				"xref": {
+					"type": "array",
+					"title": "External References",
+					"items": {
+						"type": "string",
+						"examples": [
+							"UBERON:0001969",
+							"taxID:9606",
+							"taxID:12721"
+						],
+						"pattern": "^(.*)$"
+					}
+				},
+				"pipeline_steps": {
+					"type": "array",
+					"title": "Pipeline Steps",
+					"items": {
+						"type": "object",
+						"required": [
+							"tool_name",
+							"tool_desc",
+							"tool_version",
+							"tool_package",
+							"step_number",
+							"input_uri_list",
+							"output_uri_list"
+						],
+						"properties": {
+							"tool_name": {
+								"type": "string",
+								"title": "Tool Name",
+								"examples": [
+									"HIVE-hexagon"
+								],
+								"pattern": "^(.*)$"
+							},
+							"tool_desc": {
+								"type": "string",
+								"title": "Tool Description",
+								"examples": [
+									"Aligns reads to a set of reference"
+								],
+								"pattern": "^(.*)$"
+							},
+							"tool_version": {
+								"type": "string",
+								"title": "Tool Version",
+								"examples": [
+									"1.4.3"
+								],
+								"pattern": "^(.*)$"
+							},
+							"tool_package": {
+								"type": "string",
+								"title": "Tool Requirements",
+								"examples": [
+									"HIVE"
+								],
+								"pattern": "^(.*)$"
+							},
+							"step_number": {
+								"type": "string",
+								"title": "Step Number",
+								"examples": [
+									"1"
+								],
+								"pattern": "^(.*)$"
+							},
+							"input_uri_list": {
+								"type": "array",
+								"title": "Input URI List",
+								"items": {
+									"type": "string",
+									"examples": [
+										"https://hive/data/nuc-read/645175"
+									],
+									"pattern": "^(.*)$"
+								}
+							},
+							"output_uri_list": {
+								"type": "array",
+								"title": "Output URI List",
+								"items": {
+									"type": "string",
+									"examples": [
+										"https://hive/data/hitlist/557006.csv"
+									],
+									"pattern": "^(.*)$"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"execution_domain": {
+			"type": "object",
+			"title": "Execution Domain",
+			"required": [
+				"script",
+				"pipeline_version",
+				"platform",
+				"driver",
+				"software_prerequisites",
+				"domain_prerequisites",
+				"env_parameters",
+				"script_type"
+			],
+			"properties": {
+				"script": {
+					"type": "string",
+					"title": "Script",
+					"examples": [
+						"hive://workflows/quasispecies_analysis_of_HIV-1_viruses_hive.py"
+					],
+					"pattern": "^(.*)$"
+				},
+				"pipeline_version": {
+					"type": "string",
+					"title": "Pipeline Version",
+					"examples": [
+						"1.0"
+					],
+					"pattern": "^(.*)$"
+				},
+				"platform": {
+					"type": "string",
+					"title": "Platform",
+					"examples": [
+						"HIVE"
+					],
+					"pattern": "^(.*)$"
+				},
+				"driver": {
+					"type": "string",
+					"title": "The Driver Schema",
+					"examples": [
+						"//hive.biochemistry.gwu.edu/hive-driver"
+					],
+					"pattern": "^(.*)$"
+				},
+				"software_prerequisites": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string",
+								"pattern": "^(.*)$"
+							},
+							"version": {
+								"type": "string",
+								"pattern": "^(.*)$"
+							}
+						}
+					}
+				},
+				"domain_prerequisites": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"url": {
+								"type": "string",
+								"pattern": "^(.*)$"
+							},
+							"name": {
+								"type": "string",
+								"pattern": "^(.*)$"
+							}
+						}
+					}
+				},
+				"env_parameters": {
+					"type": "array",
+					"title": "Environment Parameters",
+					"items": {
+						"type": "string",
+						"examples": [
+							"HIVEv1.4.3"
+						],
+						"pattern": "^(.*)$"
+					}
+				},
+				"script_type": {
+					"type": "string",
+					"title": "Script Type",
+					"examples": [
+						"URI"
+					],
+					"pattern": "^(.*)$"
+				}
+			}
+		},
+		"parametric_domain": {
+			"type": "object",
+			"title": "Parametric Domain"
+		},
+		"io_domain": {
+			"$id": "#/properties/io_domain",
+			"type": "object",
+			"title": "The Io_domain Schema",
+			"required": [
+				"input_uri_list",
+				"output_uri_list"
+			],
+			"properties": {
+				"reference_uri_list": {
+					"type": "array",
+					"title": "Reference URI List",
+					"items": {
+						"type": "string",
+						"examples": [
+							"hive://genomes/333333"
+						],
+						"pattern": "^(.*)$"
+					}
+				},
+				"input_uri_list": {
+					"type": "array",
+					"title": "Input URI List",
+					"items": {
+						"type": "string",
+						"examples": [
+							"hive://genomes/333333"
+						],
+						"pattern": "^(.*)$"
+					}
+				},
+				"output_uri_list": {
+					"type": "array",
+					"title": "Output URI List",
+					"items": {
+						"type": "string",
+						"examples": [
+							"hive://data/888888/popSummary"
+						],
+						"pattern": "^(.*)$"
+					}
+				}
+			}
+		}
+	}
+}

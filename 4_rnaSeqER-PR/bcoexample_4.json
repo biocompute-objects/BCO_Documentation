@@ -104,17 +104,43 @@
         "pipeline_version": "0.0", 
         "platform": "HIVE", 
         "driver": "http://128.164.35.92/cwl-tool", 
-        "prerequisites": [
-            "TopHat2", 
-            "Cufflinks", 
-            "Cuffmerge", 
-            "Cuffdif", 
-            "cwl-tool"
-        ], 
+		"software_prerequisites": [
+			{
+				"name": "TopHat2",
+				"version": "v2.0.13"
+			},
+			{
+				"name": "Cufflinks",
+				"version": "v2.0.13"
+			},
+			{
+				"name": "Cuffmerge",
+				"version": "v2.2.1"
+			},
+			{
+				"name": "Cuffdif",
+				"version": "v2.2.1"
+			},
+			{
+				"name": "cwl-tool",
+				"version": "v2.0.13"
+			}
+		],
+		"domain_prerequisites": [
+			{
+				"url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+				"name": "access to e-utils"
+			},
+			{
+				"url": "http://128.164.35.92/",
+				"name": "access to MGPC"
+			}
+		],
         "env_parameters": [
             "cwlVersion: cwl:draft-3"
-        ]
-    }, 
+        ],
+        "script_type": "CWL"
+    },
     "parametric_domain": {
         "tophat_threads": "4", 
         "tophat_no-coverage-search": "on", 

@@ -1,148 +1,162 @@
 {
-    "id": "obj.1300", 
-    "name": "Detection of EGFR [HGNC:3236] gene mutations in human [taxID:9606] non-small cell lung carcinoma [DOID:3908] patients", 
-    "title": "EGFR mutation detection", 
-    "version": "1.0", 
-    "createdby": "jeetvora@gwmail.gwu.edu", 
-    "created": "May 24, 2017 10:52:06", 
-    "modified": "Jun 16, 2017 13:59:11", 
-    "digital_signature": "QwErTy0ab07BocdNdXyZGwU", 
-    "verification_status": "unreviewed", 
-    "publication_status": "draft", 
-    "usability_domain": [
-        "Mutation analysis of epidermal growth factor receptor gene [HGNC:3236] in human [taxID:9606] non-small cell lung carcinoma [DOID:3908] patients", 
-        "Amino acid substitutions [SO:0001606] detection in epidermal growth factor receptor [UniProtKB:P00533] in human [taxID:9606] non-small cell lung carcinoma [DOID:3908] samples ", 
-        "Single-point substitution mutation L858R (c.2573T>G) [VariO:0136], [VariO:0316],  [dbSNP:rs121434568] [ClinVar:16609] in exon 21 is the most frequent in NSCLC and is termed as classical mutation. The point mutation T790M (c.2369C>T) [VariO:0136], [VariO:0313] [dbSNP:rs121434569] [ClinVar: 16613] accounts for resistances of antineoplastic agents such as gefitinib [PubChem:123631] and erlotinib [PubChem: 176870] resistances in about one-half of the case", 
-        "https://www.mycancergenome.org/content/disease/lung-cancer/egfr"
-    ], 
-    "authors": [
-        {
-            "orcid": "0000-0002-5317-1458"
-        }, 
-        {
-            "name": "Jeet Vora"
-        }
-    ], 
-    "description_domain": {
-        "keywords": [
-            "EGFR", 
-            "lung cancer", 
-            "Non-small cell lung carcinoma"
-        ], 
-        "xref": [
-            "HGNC:3236 ", 
-            "UniProtKB:P00533 ", 
-            "taxID:9606 ", 
-            "DOID:3908", 
-            "SO:0001606", 
-            "SO:0001583", 
-            "VariO:0136", 
-            "VariO:0316", 
-            "VariO:0313", 
-            "dbSNP:rs121434568", 
-            "dbSNP:rs121434569 ", 
-            "ClinVar:16609", 
-            "ClinVar:16613", 
-            "PubChem:123631", 
-            "PubChem: 176870", 
-            "PMID:19680293"
-        ], 
-        "pipeline_steps": [
-            {
-                "tool_name": "HIVE-hexagon", 
-                "tool_desc": "HIVE-hexagon is an alignment algorithm tool that finds short read alignments by seeding, extension and optimal alignment", 
-                "tool_version": "1.4.3", 
-                "tool_package": "HIVE", 
-                "step_number": "1", 
-                "input_uri_list": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/399923581", 
-                    "https://hive.biochemistry.gwu.edu/nuc-read/557363", 
-                    "https://hive.biochemistry.gwu.edu/nuc-read/557364"
-                ], 
-                "output_uri_list": [
-                    "https://hive.biochemistry.gwu/data/557365/allCount-aligned.csv"
-                ]
-            }, 
-            {
-                "tool_name": "HIVE-heptagon", 
-                "tool_desc": "HIVE-heptagon is a profiler that performs variant calling for a previously computed alignment and provides quality and noise assessment profiles", 
-                "tool_version": "1.4.3", 
-                "tool_package": "HIVE", 
-                "step_number": "2", 
-                "input_uri_list": [
-                    "https://hive.biochemistry.gwu/data/557365/allCount-aligned.csv"
-                ], 
-                "output_uri_list": [
-                    "https://hive.biochemistry.gwu/data/557367/SNPprofile.csv"
-                ]
-            }
-        ]
-    }, 
-    "execution_domain": {
-        "script": "https://hive/workflows/EGFR_mutation_detection_hive.py", 
-        "pipeline_version": "1.2", 
-        "platform": "HIVEv1.4.3", 
-        "driver": "driver: shell", 
-        "prerequisites": [
-            "name:HIVE-hexagon", 
-            "version:1.3 ", 
-            "name:HIVE-heptagon", 
-            "version:1.3"
-        ], 
-        "env_parameters": [
-            "{\"OSTYPE\":\"linux\"}", 
-            "{\"QPRIDE_BIN\":\"~qpride/bin\"}"
-        ], 
-        "access_prerequisites": [
-            "url:http://eutils.ncbi.nlm.nih.gov/entrez/eutils/399923581", 
-            "name:access to e-utils"
-        ], 
-        "script_type": "URI"
-    }, 
-    "parametric_domain": {
-        "Hexagon_mismatch_percent_allowed": "15", 
-        "Hexagon_shtrdfilt_window_size": "30", 
-        "Hexagon_matches_to_keep": "Random vote between equally best alternative matches", 
-        "Hexagon_referencemasking_minimal_shannons_entropy": "1-Lenient", 
-        "Hexagon_min_match_length": "45", 
-        "Hexagon_referencemasking_window_size": "30", 
-        "Hexagon_referencemasking_filterNN_lowquality": "Filter NNs only", 
-        "Hexagon_shrdfilt_minimal_shannons_entropy": "1.6-Strict", 
-        "Heptagon_minimal_coverage_allowed": "10"
-    }, 
-    "io_domain": {
-        "reference_uri_list": [
-            "https://www.ncbi.nlm.nih.gov/nuccore/399923581"
-        ], 
-        "input_uri_list": [
-            "https://hive.biochemistry.gwu.edu/nuc-read/557363", 
-            "https://hive.biochemistry.gwu.edu/nuc-read/557364", 
-            "https://hive.biochemistry.gwu.edu/data/557365/allCount-aligned.csv"
-        ], 
-        "output_uri_list": [
-            "https://hive.biochemistry.gwu.edu/data/557367/SNPProfile.csv", 
-            "https://hive.biochemistry.gwu.edu/data/557365/allCount-aligned.csv"
-        ], 
-        "output_subdomain": [
-            "hit_list: ", 
-            "title: hit list", 
-            "uri:https://hive.biochemistry.gwu.edu/data/557365/allCount-aligned.csv", 
-            "mime-type:csv", 
-            "SNP_profile", 
-            "title: snp profile", 
-            "uri: https://hive.biochemistry.gwu/data/557367/SNPprofile.csv", 
-            "mime-type: csv"
-        ], 
-        "input_subdomain": [
-            "Read Files for alignment", 
-            "https://hive.biochemistry.gwu.edu/nuc-read/557363", 
-            "https://hive.biochemistry.gwu.edu/nuc-read/557364", 
-            "EGFR Gene", 
-            "https://www.ncbi.nlm.nih.gov/nuccore/399923581"
-        ]
-    }, 
-    "error_domain": [
-        "false negative alignment hits < 0.0010", 
-        "false positive mutation calls discovery < 0.0005"
-    ]
+	"id": "obj.1300",
+	"name": "Detection of EGFR [HGNC:3236] gene mutations in human [taxID:9606] non-small cell lung carcinoma [DOID:3908] patients",
+	"title": "EGFR mutation detection",
+	"version": "1.0",
+	"createdby": "jeetvora@gwmail.gwu.edu",
+	"created": "May 24, 2017 10:52:06",
+	"modified": "Jun 16, 2017 13:59:11",
+	"digital_signature": "QwErTy0ab07BocdNdXyZGwU",
+	"verification_status": "unreviewed",
+	"publication_status": "draft",
+	"usability_domain": [
+		"Mutation analysis of epidermal growth factor receptor gene [HGNC:3236] in human [taxID:9606] non-small cell lung carcinoma [DOID:3908] patients",
+		"Amino acid substitutions [SO:0001606] detection in epidermal growth factor receptor [UniProtKB:P00533] in human [taxID:9606] non-small cell lung carcinoma [DOID:3908] samples ",
+		"Single-point substitution mutation L858R (c.2573T>G) [VariO:0136], [VariO:0316],  [dbSNP:rs121434568] [ClinVar:16609] in exon 21 is the most frequent in NSCLC and is termed as classical mutation. The point mutation T790M (c.2369C>T) [VariO:0136], [VariO:0313] [dbSNP:rs121434569] [ClinVar: 16613] accounts for resistances of antineoplastic agents such as gefitinib [PubChem:123631] and erlotinib [PubChem: 176870] resistances in about one-half of the case",
+		"https://www.mycancergenome.org/content/disease/lung-cancer/egfr"
+	],
+	"authors": [
+		{
+			"orcid": "0000-0002-5317-1458"
+		},
+		{
+			"name": "Jeet Vora"
+		}
+	],
+	"description_domain": {
+		"keywords": [
+			"EGFR",
+			"lung cancer",
+			"Non-small cell lung carcinoma"
+		],
+		"xref": [
+			"HGNC:3236 ",
+			"UniProtKB:P00533 ",
+			"taxID:9606 ",
+			"DOID:3908",
+			"SO:0001606",
+			"SO:0001583",
+			"VariO:0136",
+			"VariO:0316",
+			"VariO:0313",
+			"dbSNP:rs121434568",
+			"dbSNP:rs121434569 ",
+			"ClinVar:16609",
+			"ClinVar:16613",
+			"PubChem:123631",
+			"PubChem: 176870",
+			"PMID:19680293"
+		],
+		"pipeline_steps": [
+			{
+				"tool_name": "HIVE-hexagon",
+				"tool_desc": "HIVE-hexagon is an alignment algorithm tool that finds short read alignments by seeding, extension and optimal alignment",
+				"tool_version": "1.4.3",
+				"tool_package": "HIVE",
+				"step_number": "1",
+				"input_uri_list": [
+					"https://www.ncbi.nlm.nih.gov/nuccore/399923581",
+					"https://hive.biochemistry.gwu.edu/nuc-read/557363",
+					"https://hive.biochemistry.gwu.edu/nuc-read/557364"
+				],
+				"output_uri_list": [
+					"https://hive.biochemistry.gwu/data/557365/allCount-aligned.csv"
+				]
+			},
+			{
+				"tool_name": "HIVE-heptagon",
+				"tool_desc": "HIVE-heptagon is a profiler that performs variant calling for a previously computed alignment and provides quality and noise assessment profiles",
+				"tool_version": "1.4.3",
+				"tool_package": "HIVE",
+				"step_number": "2",
+				"input_uri_list": [
+					"https://hive.biochemistry.gwu/data/557365/allCount-aligned.csv"
+				],
+				"output_uri_list": [
+					"https://hive.biochemistry.gwu/data/557367/SNPprofile.csv"
+				]
+			}
+		]
+	},
+	"execution_domain": {
+		"script": "https://hive/workflows/EGFR_mutation_detection_hive.py",
+		"pipeline_version": "1.2",
+		"platform": "HIVEv1.4.3",
+		"driver": "driver: shell",
+		"software_prerequisites": [
+			{
+				"name": "HIVE_hexagon",
+				"version": "1.3"
+			},
+			{
+				"name": "HIVE_heptagon",
+				"version": "1.3"
+			}
+		],
+		"domain_prerequisites": [
+			{
+				"url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+				"name": "access to e-utils"
+			},
+			{
+				"url": "ftp://:22/",
+				"name": "access to ftp"
+			}
+		],
+		"env_parameters": [
+			"{\"OSTYPE\":\"linux\"}",
+			"{\"QPRIDE_BIN\":\"~qpride/bin\"}"
+		],
+		"access_prerequisites": [
+			"url:http://eutils.ncbi.nlm.nih.gov/entrez/eutils/399923581",
+			"name:access to e-utils"
+		],
+		"script_type": "URI"
+	},
+	"parametric_domain": {
+		"Hexagon_mismatch_percent_allowed": "15",
+		"Hexagon_shtrdfilt_window_size": "30",
+		"Hexagon_matches_to_keep": "Random vote between equally best alternative matches",
+		"Hexagon_referencemasking_minimal_shannons_entropy": "1-Lenient",
+		"Hexagon_min_match_length": "45",
+		"Hexagon_referencemasking_window_size": "30",
+		"Hexagon_referencemasking_filterNN_lowquality": "Filter NNs only",
+		"Hexagon_shrdfilt_minimal_shannons_entropy": "1.6-Strict",
+		"Heptagon_minimal_coverage_allowed": "10"
+	},
+	"io_domain": {
+		"reference_uri_list": [
+			"https://www.ncbi.nlm.nih.gov/nuccore/399923581"
+		],
+		"input_uri_list": [
+			"https://hive.biochemistry.gwu.edu/nuc-read/557363",
+			"https://hive.biochemistry.gwu.edu/nuc-read/557364",
+			"https://hive.biochemistry.gwu.edu/data/557365/allCount-aligned.csv"
+		],
+		"output_uri_list": [
+			"https://hive.biochemistry.gwu.edu/data/557367/SNPProfile.csv",
+			"https://hive.biochemistry.gwu.edu/data/557365/allCount-aligned.csv"
+		],
+		"output_subdomain": [
+			"hit_list: ",
+			"title: hit list",
+			"uri:https://hive.biochemistry.gwu.edu/data/557365/allCount-aligned.csv",
+			"mime-type:csv",
+			"SNP_profile",
+			"title: snp profile",
+			"uri: https://hive.biochemistry.gwu/data/557367/SNPprofile.csv",
+			"mime-type: csv"
+		],
+		"input_subdomain": [
+			"Read Files for alignment",
+			"https://hive.biochemistry.gwu.edu/nuc-read/557363",
+			"https://hive.biochemistry.gwu.edu/nuc-read/557364",
+			"EGFR Gene",
+			"https://www.ncbi.nlm.nih.gov/nuccore/399923581"
+		]
+	},
+	"error_domain": [
+		"false negative alignment hits < 0.0010",
+		"false positive mutation calls discovery < 0.0005"
+	]
 }

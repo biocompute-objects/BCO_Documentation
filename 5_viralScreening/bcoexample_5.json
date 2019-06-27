@@ -96,12 +96,34 @@
         "pipeline_version": "2.0", 
         "platform": "HIVE", 
         "driver": "shell", 
-        "prerequisites": [
-            "HIVE-seq, version1.3", 
-            "HIVE-IDBA-UD, version1.3", 
-            "HIVE-hexagon, version 1.3", 
-            "HIVE-heptagon, version 1.3"
-        ], 
+		"software_prerequisites": [
+	        {
+			    "name": "HIVE-seq",
+				"version": "1.3"
+	        },
+			{
+				"name": "HIVE-IDBA-UD",
+				"version": "1.3"
+			},
+			{
+			    "name": "HIVE-hexagon",
+				"version": "1.3"
+			}, 
+	        {
+			    "name": "HIVE-heptagon",
+				"version": "1.3"
+			}
+        ],
+		"domain_prerequisites": [
+			{
+				"url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+				"name": "access to e-utils"
+			},
+			{
+				"url": "ftp://:22/",
+				"name": "access to ftp"
+			}
+		],
         "env_parameters": [
             "HIVEv1.3"
         ], 

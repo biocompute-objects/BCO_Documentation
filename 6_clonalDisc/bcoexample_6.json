@@ -1,154 +1,179 @@
 {
-    "id": "obj.1283", 
-    "name": "Quasispecies analysis of HIV-1 [taxID:12721] samples taken from H1V-1 infected individuals [taxID:9606] and detection of novel HIV-1 recombinant subtypes", 
-    "title": "Quasispecies analysis of HIV-1", 
-    "version": "1.0", 
-    "createdby": "naila_gulzar@gwu.edu", 
-    "created": "Feb 02, 2017 14:37:50", 
-    "modified": "Jun 16, 2017 15:04:43", 
-    "digital_signature": "324kjhgiufgioerfhlsjdhbfalskjd", 
-    "verification_status": "unreviewed", 
-    "publication_status": "draft", 
-    "usability_domain": [
-        "This pipeline can be used for discovering the new recombinant subtypes of viruses"
-    ], 
-    "authors": [
-        {
-            "orcid": "0000-0002-8138-8312"
-        }, 
-        {
-            "name": "Bhavna Hora"
-        }, 
-        {
-            "name": "Konstantinos Karagiannis "
-        }, 
-        {
-            "name": "Krista Smith"
-        }, 
-        {
-            "name": "Raja Mazumder"
-        }, 
-        {
-            "name": "Feng Gao"
-        }
-    ], 
-    "description_domain": {
-        "keywords": [
-            "clonal discovery", 
-            "quasispecies", 
-            "clonal contigs", 
-            "HIV-1"
-        ], 
-        "xref": [
-            "UBERON:0001969", 
-            "taxID:9606", 
-            "taxID:12721"
-        ], 
-        "pipeline_steps": [
-            {
-                "tool_name": "HIVE-hexagon", 
-                "tool_desc": "Aligns reads to a set of reference", 
-                "tool_version": "1.4.3", 
-                "tool_package": "HIVE", 
-                "step_number": "1", 
-                "input_uri_list": [
-                    "https://hive/data/nuc-read/645175", 
-                    "https://hive/data/nuc-read/645176", 
-                    "https://hive/data/nuc-genome/545173"
-                ], 
-                "output_uri_list": [
-                    "https://hive/data/hitlist/557006.csv"
-                ]
-            }, 
-            {
-                "tool_name": "HIve-seq", 
-                "tool_desc": "Utility set that allows sequence manipulation", 
-                "tool_version": "1.4.3", 
-                "tool_package": "HIVE", 
-                "step_number": "2", 
-                "input_uri_list": [
-                    "https://hive/data/hitlist/557006.csv"
-                ], 
-                "output_uri_list": [
-                    "https://hive/data/seqtrim/557007.fasta"
-                ]
-            }, 
-            {
-                "tool_name": "HIVE-MAFFT", 
-                "tool_desc": "Multiple sequence alignment tool", 
-                "tool_version": "1.4.3", 
-                "tool_package": "HIVE", 
-                "step_number": "3", 
-                "input_uri_list": [
-                    "https://hive/data/seqtrim/557007.fasta"
-                ], 
-                "output_uri_list": [
-                    "https://hive/data/MAFFT/557008.fasta"
-                ]
-            }, 
-            {
-                "tool_name": "HIVE-hexagon", 
-                "tool_desc": "Aligns reads to the reference", 
-                "tool_version": "1.4.3", 
-                "tool_package": "HIVE", 
-                "step_number": "4", 
-                "input_uri_list": [
-                    "https://hive/data/MAFFT/557008.fasta"
-                ], 
-                "output_uri_list": [
-                    "https://hive/data/hexagon/557009/allcounts-aligned.csv"
-                ]
-            }, 
-            {
-                "tool_name": "HIVE-popolation_analysis", 
-                "tool_desc": "clone discovery tool", 
-                "tool_version": "1.4.3", 
-                "tool_package": "HIVE", 
-                "step_number": "5", 
-                "input_uri_list": [
-                    "https://hive/data/hexagon/557009/allcounts-aligned.csv"
-                ], 
-                "output_uri_list": [
-                    "https://hive/data/557010/popContig.fasta"
-                ]
-            }
-        ]
-    }, 
-    "execution_domain": {
-        "script": "hive://workflows/quasispecies_analysis_of_HIV-1_viruses_hive.py", 
-        "pipeline_version": "1.0", 
-        "platform": "HIVE", 
-        "driver": "//hive.biochemistry.gwu.edu/hive-driver", 
-        "prerequisites": [
-            "HIVE-hexagon, version1.4.3", 
-            "HIVE-seq, version1.4.3", 
-            "HIVE-MAFFT, version1.4.3", 
-            "HIVE-hexagon, version1.4.3", 
-            "HIVE-population analysis, version1.4.3"
-        ], 
-        "env_parameters": [
-            "HIVEv1.4.3"
-        ], 
-        "script_type": "URI"
-    }, 
-    "parametric_domain": {
-        "hexagon_seed": "0.01"
-    }, 
-    "io_domain": {
-        "reference_uri_list": [
-            "hive://genomes/333333"
-        ], 
-        "input_uri_list": [
-            "hive://nuc-read/111111", 
-            "hive://nuc-read/222222", 
-            "hive://genomes/333333"
-        ], 
-        "output_uri_list": [
-            "hive://data/888888/popContig ", 
-            "hive://data/888888/popAlignment ", 
-            "hive://data/888888/popCoverage ", 
-            "hive://data/888888/popBreakpoints ", 
-            "hive://data/888888/popSummary"
-        ]
-    }
+	"id": "obj.1283",
+	"name": "Quasispecies analysis of HIV-1 [taxID:12721] samples taken from H1V-1 infected individuals [taxID:9606] and detection of novel HIV-1 recombinant subtypes",
+	"structured_name": "Quasispecies analysis of HIV-1",
+	"version": "1.0",
+	"createdby": "naila_gulzar@gwu.edu",
+	"created": "Feb 02, 2017 14:37:50",
+	"modified": "Jun 16, 2017 15:04:43",
+	"digital_signature": "324kjhgiufgioerfhlsjdhbfalskjd",
+	"verification_status": "unreviewed",
+	"publication_status": "draft",
+	"usability_domain": [
+		"This pipeline can be used for discovering the new recombinant subtypes of viruses"
+	],
+	"authors": [
+		{
+			"orcid": "0000-0002-8138-8312"
+		},
+		{
+			"name": "Bhavna Hora"
+		},
+		{
+			"name": "Konstantinos Karagiannis "
+		},
+		{
+			"name": "Krista Smith"
+		},
+		{
+			"name": "Raja Mazumder"
+		},
+		{
+			"name": "Feng Gao"
+		}
+	],
+	"description_domain": {
+		"keywords": [
+			"clonal discovery",
+			"quasispecies",
+			"clonal contigs",
+			"HIV-1"
+		],
+		"xref": [
+			"UBERON:0001969",
+			"taxID:9606",
+			"taxID:12721"
+		],
+		"pipeline_steps": [
+			{
+				"tool_name": "HIVE-hexagon",
+				"tool_desc": "Aligns reads to a set of reference",
+				"tool_version": "1.4.3",
+				"tool_package": "HIVE",
+				"step_number": "1",
+				"input_uri_list": [
+					"https://hive/data/nuc-read/645175",
+					"https://hive/data/nuc-read/645176",
+					"https://hive/data/nuc-genome/545173"
+				],
+				"output_uri_list": [
+					"https://hive/data/hitlist/557006.csv"
+				]
+			},
+			{
+				"tool_name": "HIve-seq",
+				"tool_desc": "Utility set that allows sequence manipulation",
+				"tool_version": "1.4.3",
+				"tool_package": "HIVE",
+				"step_number": "2",
+				"input_uri_list": [
+					"https://hive/data/hitlist/557006.csv"
+				],
+				"output_uri_list": [
+					"https://hive/data/seqtrim/557007.fasta"
+				]
+			},
+			{
+				"tool_name": "HIVE-MAFFT",
+				"tool_desc": "Multiple sequence alignment tool",
+				"tool_version": "1.4.3",
+				"tool_package": "HIVE",
+				"step_number": "3",
+				"input_uri_list": [
+					"https://hive/data/seqtrim/557007.fasta"
+				],
+				"output_uri_list": [
+					"https://hive/data/MAFFT/557008.fasta"
+				]
+			},
+			{
+				"tool_name": "HIVE-hexagon",
+				"tool_desc": "Aligns reads to the reference",
+				"tool_version": "1.4.3",
+				"tool_package": "HIVE",
+				"step_number": "4",
+				"input_uri_list": [
+					"https://hive/data/MAFFT/557008.fasta"
+				],
+				"output_uri_list": [
+					"https://hive/data/hexagon/557009/allcounts-aligned.csv"
+				]
+			},
+			{
+				"tool_name": "HIVE-popolation_analysis",
+				"tool_desc": "clone discovery tool",
+				"tool_version": "1.4.3",
+				"tool_package": "HIVE",
+				"step_number": "5",
+				"input_uri_list": [
+					"https://hive/data/hexagon/557009/allcounts-aligned.csv"
+				],
+				"output_uri_list": [
+					"https://hive/data/557010/popContig.fasta"
+				]
+			}
+		]
+	},
+	"execution_domain": {
+		"script": "hive://workflows/quasispecies_analysis_of_HIV-1_viruses_hive.py",
+		"pipeline_version": "1.0",
+		"platform": "HIVE",
+		"driver": "//hive.biochemistry.gwu.edu/hive-driver",
+		"software_prerequisites": [
+			{
+				"name": "HIVE-hexagon",
+				"version": "1.4.3"
+			},
+			{
+				"name": "HIVE-seq",
+				"version": "1.4.3"
+			},
+			{
+				"name": "HIVE-MAFFT",
+				"version": "1.4.3"
+			},
+			{
+				"name": "HIVE-hexagon",
+				"version": "1.4.3"
+			},
+			{
+				"name": "HIVE-population analysis",
+				"version": "1.4.3"
+			}
+		],
+		"domain_prerequisites": [
+			{
+				"url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+				"name": "access to e-utils"
+			},
+			{
+				"url": "ftp://:22/",
+				"name": "access to ftp"
+			}
+		],
+		"env_parameters": [
+			"HIVEv1.4.3"
+		],
+		"script_type": "URI"
+	},
+	"parametric_domain": {
+		"hexagon_seed": "0.01"
+	},
+	"io_domain": {
+		"reference_uri_list": [
+			"hive://genomes/333333"
+		],
+		"input_uri_list": [
+			"hive://nuc-read/111111",
+			"hive://nuc-read/222222",
+			"hive://genomes/333333"
+		],
+		"output_uri_list": [
+			"hive://data/888888/popContig ",
+			"hive://data/888888/popAlignment ",
+			"hive://data/888888/popCoverage ",
+			"hive://data/888888/popBreakpoints ",
+			"hive://data/888888/popSummary"
+		]
+	}
 }
