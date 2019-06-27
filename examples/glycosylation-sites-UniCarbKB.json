@@ -1,6 +1,6 @@
 {
     "bco_id": "https://w3id.org/biocompute/1.3.0/examples/glycosylation-sites-UniCarbKB",
-    "checksum": "D231C92C660CD1DD818D412E10F86F07338BA730FBE6898EF8F7DF1B1ECBFD3C",
+    "checksum": "c0b41938a47f7b7689a34f5d89707f039e210f3cc22857b80070f73cbcd2e669",
     "bco_spec_version" : "https://w3id.org/biocompute/1.3.0/",
     "provenance_domain":{
         "name": "glycosylation-sites-UniCarbKB",
@@ -158,7 +158,7 @@
                 "uri": {
                     "uri": "https://www.python.org/downloads/release/python-2713/",
                     "access_time": "2017-01-24T09:40:17-0500",
-                    "sha1_chksum": "17add4bf0ad0ec2f08e0cae6d205c700"
+                    "sha1_checksum": "17add4bf0ad0ec2f08e0cae6d205c700"
                 }
             }
         ],
