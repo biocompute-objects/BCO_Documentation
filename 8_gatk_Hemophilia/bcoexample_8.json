@@ -1,0 +1,374 @@
+{
+	"id": "obj.1298",
+	"name": "Identification of recombinant antihemophilic factor VII [UniProt:P00451] inhibitor SNPs [SO:0000694] in human [taxID:9606] blood [UBERON:0000178] extracted from patients with hemophilia A [DOID:12134]",
+	"title": "Identification of recombinant antihemophilic factor",
+	"version": "1.0",
+	"createdby": "hadley_king@gwmail.gwu.edu",
+	"created": "Mar 12, 2017 16:50:32",
+	"modified": "Jun 15, 2017 11:43:35",
+	"digital_signature": "as243hgdfbvsh345354jnjhjfdf",
+	"verification_status": "unreviewed",
+	"publication_status": "draft",
+	"usability_domain": [
+		"Identify SNPs [SO:0000694] that correlate with the development of an inhibitory response to recombinant antihemophilic factor VII [UniProt:P00451] in patients with hemophilia A [DOID:12134]"
+	],
+	"authors": [
+		{
+			"orcid": "0000-0003-1409-4549"
+		},
+		{
+			"name": "Joe Mcgill"
+		}
+	],
+	"description_domain": {
+		"keywords": [
+			"hemophilia A",
+			"recombinant antihemophilic factor VII",
+			"SNPs"
+		],
+		"xref": [
+			"taxID:9606    ",
+			"UBERON:0000178    ",
+			"DB:00025    ",
+			"SO:0000694",
+			"UniProt:P00451"
+		],
+		"pipeline_steps": [
+			{
+				"tool_name": "samtools_faidx",
+				"tool_desc": "Index reference sequence in the FASTA format",
+				"tool_version": "0.1.19-96b5f2294a",
+				"tool_package": "",
+				"step_number": "1",
+				"input_uri_list": [
+					"ftp://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz"
+				],
+				"output_uri_list": [
+					"./biocompute/human_g1k_v37.fasta"
+				]
+			},
+			{
+				"tool_name": "picard_CreateSequenceDictionary",
+				"tool_desc": "Creates a sequence dictionary for a reference sequence",
+				"tool_version": "v2.6.0",
+				"tool_package": "",
+				"step_number": "2",
+				"input_uri_list": [
+					"ftp://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz"
+				],
+				"output_uri_list": [
+					"home/jmcgill/Desktop/biocompute/human_g1k_v37.dict"
+				]
+			},
+			{
+				"tool_name": "samtools_sort",
+				"tool_desc": "Sort alignments by leftmost coordinates",
+				"tool_version": "",
+				"tool_package": "",
+				"step_number": "3",
+				"input_uri_list": [
+					"./bam_files/biocompute/B_S30.bam",
+					"./bam_files/biocompute/C_S31.bam",
+					"./bam_files/biocompute/D_S32.bam",
+					"./bam_files/biocompute/Hai003_S3.bam",
+					"./bam_files/biocompute/Hai004_S4.bam",
+					"./bam_files/biocompute/Hai006_S6.bam",
+					"./bam_files/biocompute/Hai007_S7.bam",
+					"./bam_files/biocompute/Hai012_S41.bam",
+					"./bam_files/biocompute/Hawi010_S16.bam",
+					"./bam_files/biocompute/Hawi015_S21.bam",
+					"./bam_files/biocompute/Hawi028_S35.bam",
+					"./bam_files/biocompute/Hawi032_S39.bam"
+				],
+				"output_uri_list": [
+					"/home/biocompute/B_S30.bam_sorted",
+					"/home/biocompute/C_S31.bam_sorted",
+					"/home/biocompute/D_S32.bam_sorted",
+					"/home/biocompute/Hai003_S3.bam_sorted",
+					"/home/biocompute/Hai004_S4.bam_sorted",
+					"/home/biocompute/Hai006_S6.bam_sorted",
+					"/home/biocompute/Hai007_S7.bam_sorted",
+					"/home/biocompute/Hai012_S41.bam_sorted",
+					"/home/biocompute/Hawi010_S16.bam_sorted",
+					"/home/biocompute/Hawi015_S21.bam_sorted",
+					"/home/biocompute/Hawi028_S35.bam_sorted",
+					"/home/biocompute/Hawi032_S39.bam_so"
+				]
+			},
+			{
+				"tool_name": "picard_MarkDuplicates",
+				"tool_desc": "This tool locates and tags duplicate reads in a BAM or SAM file",
+				"tool_version": "0.1.19-96b5f2294a",
+				"tool_package": "",
+				"step_number": "4",
+				"input_uri_list": [
+					"B_sorted.bam",
+					"C_sorted.bam",
+					"D_sorted.bam",
+					"Hai003_sorted.bam",
+					"Hai004_sorted.bam",
+					"Hai006_sorted.bam",
+					"Hai007_sorted.bam",
+					"Hai012_sorted.bam",
+					"Hawi010_sorted.bam",
+					"Hawi015_sorted.bam",
+					"Hawi028_sorted.bam",
+					"Hawi032_sorted.bam"
+				],
+				"output_uri_list": [
+					"new_B_mark_duplicates.bam",
+					"new_C_mark_duplicates.bam",
+					"new_D_mark_duplicates.bam",
+					"new_Hai003_mark_duplicates.bam",
+					"new_Hai004_mark_duplicates.bam",
+					"new_Hai006_mark_duplicates.bam",
+					"new_Hai007_mark_duplicates.bam",
+					"new_Hai012_mark_duplicates.bam",
+					"new_Hawi010_mark_duplicates.bam",
+					"new_Hawi015_mark_duplicates.bam",
+					"new_Hawi028_mark_duplicates.bam",
+					"new_Hawi032_mark_duplicates.bam",
+					"B.txt",
+					"C.txt",
+					"D.txt",
+					"Hai003.txt",
+					"Hai004.txt",
+					"Hai006.txt",
+					"Hai007.txt",
+					"Hai012.txt",
+					"Hawi010.txt",
+					"Hawi015.txt",
+					"Hawi028.txt",
+					"Hawi032.txt"
+				]
+			},
+			{
+				"tool_name": "picard_AddOrReplaceReadGroups",
+				"tool_desc": "Replace read groups in a BAM file",
+				"tool_version": "0.1.19-96b5f2294a",
+				"tool_package": "",
+				"step_number": "5",
+				"input_uri_list": [
+					"new_B_mark_duplicates.bam",
+					"new_C_mark_duplicates.bam",
+					"new_D_mark_duplicates.bam",
+					"new_Hai003_mark_duplicates.bam",
+					"new_Hai004_mark_duplicates.bam",
+					"new_Hai006_mark_duplicates.bam",
+					"new_Hai007_mark_duplicates.bam",
+					"new_Hai012_mark_duplicates.bam",
+					"new_Hawi010_mark_duplicates.bam",
+					"new_Hawi015_mark_duplicates.bam",
+					"new_Hawi028_mark_duplicates.bam",
+					"new_Hawi032_mark_duplicates.bam"
+				],
+				"output_uri_list": [
+					"with_header_new_B_mark_duplicates.bam",
+					"with_header_new_C_mark_duplicates.bam",
+					"with_header_new_D_mark_duplicates.bam",
+					"with_header_new_Hai003_mark_duplicates.bam",
+					"with_header_new_Hai004_mark_duplicates.bam",
+					"with_header_new_Hai006_mark_duplicates.bam",
+					"with_header_new_Hai007_mark_duplicates.bam",
+					"with_header_new_Hai012_mark_duplicates.bam",
+					"with_header_new_Hawi010_mark_duplicates.bam",
+					"with_header_new_Hawi015_mark_duplicates.bam",
+					"with_header_new_Hawi028_mark_duplicates.bam",
+					"with_header_new_Hawi032_mark_duplicates.bam"
+				]
+			},
+			{
+				"tool_name": "GenomeAnalysisTK_RealignerTargetCreator",
+				"tool_desc": "Determining (small) suspicious intervals which are likely in need of realignment",
+				"tool_version": "3.7-0-gcfedb67",
+				"tool_package": "",
+				"step_number": "6",
+				"input_uri_list": [
+					"./biocompute/human_g1k_v37.fasta",
+					"with_header_new_B_mark_duplicates.bam",
+					"with_header_new_C_mark_duplicates.bam",
+					"with_header_new_D_mark_duplicates.bam",
+					"with_header_new_Hai003_mark_duplicates.bam",
+					"with_header_new_Hai004_mark_duplicates.bam",
+					"with_header_new_Hai006_mark_duplicates.bam",
+					"with_header_new_Hai007_mark_duplicates.bam",
+					"with_header_new_Hai012_mark_duplicates.bam",
+					"with_header_new_Hawi010_mark_duplicates.bam",
+					"with_header_new_Hawi015_mark_duplicates.bam",
+					"with_header_new_Hawi028_mark_duplicates.bam",
+					"with_header_new_Hawi032_mark_duplicates.bam"
+				],
+				"output_uri_list": [
+					"realignedB.list",
+					"realignedC.list",
+					"realignedD.list",
+					"realignedHai003.list",
+					"realignedHai004.list",
+					"realignedHai006.list",
+					"realignedHai007.list",
+					"realignedHai012.list",
+					"realignedHawi010.list",
+					"realignedHawi015.list",
+					"realignedHawi028.list",
+					"realignedHawi032.list"
+				]
+			},
+			{
+				"tool_name": "GenomeAnalysisTK_IndelRealigner",
+				"tool_desc": "Perform local realignment of reads around indels",
+				"tool_version": "3.7-0-gcfedb67",
+				"tool_package": "",
+				"step_number": "7",
+				"input_uri_list": [
+					"./biocompute/human_g1k_v37.fasta",
+					"with_header_new_B_mark_duplicates.bam-targetIntervals",
+					"with_header_new_C_mark_duplicates.bam-targetIntervals",
+					"with_header_new_D_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hai003_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hai004_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hai006_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hai007_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hai012_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hawi010_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hawi015_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hawi028_mark_duplicates.bam-targetIntervals",
+					"with_header_new_Hawi032_mark_duplicates.bam-targetIntervals",
+					"realignedB.list",
+					"realignedC.list",
+					"realignedD.list",
+					"realignedHai003.list",
+					"realignedHai004.list",
+					"realignedHai006.list",
+					"realignedHai007.list",
+					"realignedHai012.list",
+					"realignedHawi010.list",
+					"realignedHawi015.list",
+					"realignedHawi028.list",
+					"realignedHawi032.list"
+				],
+				"output_uri_list": [
+					"B_realigned_reads.bam",
+					"C_realigned_reads.bam",
+					"D_realigned_reads.bam",
+					"Hai003_realigned_reads.bam",
+					"Hai004_realigned_reads.bam",
+					"Hai006_realigned_reads.bam",
+					"Hai007_realigned_reads.bam",
+					"Hai012_realigned_reads.bam",
+					"Hawi010_realigned_reads.bam",
+					"Hawi015_realigned_reads.bam",
+					"Hawi028_realigned_reads.bam",
+					"Hawi032_realigned_reads.bam"
+				]
+			},
+			{
+				"tool_name": "GenomeAnalysisTK_HaplotypeCaller",
+				"tool_desc": "Perform local realignment of reads around indels",
+				"tool_version": "3.7-0-gcfedb67",
+				"tool_package": "",
+				"step_number": "8",
+				"input_uri_list": [
+					"B_realigned_reads.bam",
+					"C_realigned_reads.bam",
+					"D_realigned_reads.bam",
+					"Hai003_realigned_reads.bam",
+					"Hai004_realigned_reads.bam",
+					"Hai006_realigned_reads.bam",
+					"Hai007_realigned_reads.bam",
+					"Hai012_realigned_reads.bam",
+					"Hawi010_realigned_reads.bam",
+					"Hawi015_realigned_reads.bam",
+					"Hawi028_realigned_reads.bam",
+					"Hawi032_realigned_reads.bam"
+				],
+				"output_uri_list": [
+					"B_gatk_raw_snps.vcf",
+					"C_gatk_raw_snps.vcf",
+					"D_gatk_raw_snps.vcf",
+					"Hai003_gatk_raw_snps.vcf",
+					"Hai004_gatk_raw_snps.vcf",
+					"Hai006_gatk_raw_snps.vcf",
+					"Hai007_gatk_raw_snps.vcf",
+					"Hai012_gatk_raw_snps.vcf",
+					"Hawi010_gatk_raw_snps.vcf",
+					"Hawi015_gatk_raw_snps.vcf",
+					"Hawi028_gatk_raw_snps.vcf",
+					"Hawi032_gatk_raw_snps.vcf"
+				]
+			}
+		]
+	},
+	"execution_domain": {
+		"script": "https://github.com/biocompute-objects//HTS-CSRS/tree/master/8_gatk_Hemophilia/make_vcfs.py",
+		"pipeline_version": "1.0",
+		"platform": "linux",
+		"driver": "Python 2.7.10",
+		"software_prerequisites": [
+			{
+				"name": "GenomAnalysisToolKit",
+				"version": "3.6"
+			},
+			{
+				"name": "Picard",
+				"version": "v2.6.0"
+			},
+			{
+				"name": "samtools",
+				"version": "v0.1.19-96b5f2294a"
+			},
+			{
+				"name": "Python",
+				"version": "2.7.10"
+			}
+		],
+		"domain_prerequisites": [
+			{
+				"url": "ftp://:22/",
+				"name": "access to ftp"
+			}
+		],
+		"env_parameters": [
+			"10 GB memory required"
+		],
+		"script_type": "URI"
+	},
+	"parametric_domain": {
+		"picard_MarkDuplicates_REMOVE_DUPLICATES": "no",
+		"picard_AddOrReplaceReadGroups_ReadGroupPlatform": "illumina",
+		"GenomeAnalysisTK_HaplotypeCaller_Intervals": "X",
+		"GenomeAnalysisTK_RealignerTargetCreator_Num_threads": "22"
+	},
+	"io_domain": {
+		"reference_uri_list": [
+			"ftp://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz"
+		],
+		"input_uri_list": [
+			"B_gatk_raw_snps.vcf",
+			"C_gatk_raw_snps.vcf",
+			"D_gatk_raw_snps.vcf",
+			"Hai003_gatk_raw_snps.vcf",
+			"Hai004_gatk_raw_snps.vcf",
+			"Hai006_gatk_raw_snps.vcf",
+			"Hai007_gatk_raw_snps.vcf",
+			"Hai012_gatk_raw_snps.vcf",
+			"Hawi010_gatk_raw_snps.vcf",
+			"Hawi015_gatk_raw_snps.vcf",
+			"Hawi028_gatk_raw_snps.vcf",
+			"Hawi032_gatk_raw_snps.vcf"
+		],
+		"output_uri_list": [
+			"./B_S30.bam",
+			"./C_S31.bam",
+			"./D_S32.bam",
+			"./Hai003_S3.bam",
+			"./Hai004_S4.bam",
+			"./Hai006_S6.bam",
+			"./Hai007_S7.bam",
+			"./Hai012_S41.bam",
+			"./Hawi010_S16.bam",
+			"./Hawi015_S21.bam",
+			"./Hawi028_S35.bam",
+			"./Hawi032_S39.bam"
+		]
+	}
+}
