@@ -6,10 +6,10 @@ BioCompute Partnership: https://biocomputeobject.org
 
 # BioCompute Object (BCO) User Guide
 
-* This version: [draft](https://github.com/biocompute-objects/BCO_Specification/tree/master)
-* Previous version: [v1.2.0](https://github.com/biocompute-objects/BCO_Specification/releases/tag/v1.2)
+* This version: [draft-1.4.0](https://github.com/biocompute-objects/BCO_Specification/tree/dev)
+* Previous version: [v1.3.1](https://github.com/biocompute-objects/BCO_Specification/releases/tag/1.3.1)
 * Latest release: https://github.com/biocompute-objects/BCO_Specification/releases/latest
-* Latest editor's draft: https://github.com/biocompute-objects/BCO_Specification/tree/master
+* Latest editor's draft: https://github.com/biocompute-objects/BCO_Specification/tree/dev
 <!-- FIXME: Ideally permalinks for all of the above links, say registering https://w3id.org/bco/ -->
 
 
@@ -25,7 +25,7 @@ This document specifies the structure of BioCompute Objects.
 The specification is split into multiple parts linked to from this 
 top-level document and are maintained in a 
 [GithHub repository](https://github.com/biocompute-objects/BCO_Specification)
-where [contributions](README.md#support-community-and-contributing) are welcome.
+where [contributions](/README.md#support-community-and-contributing) are welcome.
 
 Read more:
 
@@ -35,7 +35,7 @@ Read more:
 
 BCOs are represented in JSON (JavaScript Object Notation) formatted text, adhearing to [JSON schema draft-07](https://json-schema.org/specification.html). The JSON format was chosen because it is both human and machine readable/writable. For a detailed description of JSON see [www.json.org](http://www.json.org).
 
-BioCompute data types are defined as aggregates of the critical fields organized into the following domains: the provenance domain, the usability domain, the extension domain, the description domain, the execution domain, the parametric domain, the input and output domains, and the error domain. At the time of creation with actual values compliant to the schema the BCO should be assigned a unique identifier, a [`bco_id`](/top-level.md#202-biocompute-object-identifier-bco_id). The object could then be assigned a unique digital [`checksum`](/top-level.md#203-checksum-checksum).
+BioCompute data types are defined as aggregates of the critical fields organized into the following domains: the provenance domain, the usability domain, the extension domain, the description domain, the execution domain, the parametric domain, the input and output domains, and the error domain. At the time of creation with actual values compliant to the schema the BCO should be assigned a unique identifier, a [`bco_id`](/docs/top-level.md#202-biocompute-object-identifier-bco_id). The object could then be assigned a unique digital [`checksum`](/docs/top-level.md#203-checksum-checksum).
 
 Three of the domains in a BioCompute Object SHOULD become immutable upon assignment of the digital `checksum`: 
 1) the Parametric Domain
@@ -50,7 +50,7 @@ Three of the domains in a BioCompute Object SHOULD become immutable upon assignm
 
 Complete example:
 
-* [HCV1a.json](HCV1a.json)
+* [HCV1a.json](/HCV1a.json)
 
 ## 3.2 Appendix-II: External reference database list
 

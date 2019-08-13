@@ -1,9 +1,13 @@
 BioCompute
 ==========
 
-Version 1.3.0
+This version: [draft-1.4.0](https://github.com/biocompute-objects/BCO_Specification/tree/dev)
+
+Previous version: [v1.3.1](https://github.com/biocompute-objects/BCO_Specification/releases/tag/1.3.1)
 
 BioCompute Partnership: https://biocomputeobject.org
+
+OSF page: https://osf.io/h59uh/ 
 
 GitHub repository for BioCompute Objects:
 https://github.com/biocompute-objects/
