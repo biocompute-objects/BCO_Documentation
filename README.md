@@ -29,7 +29,7 @@ A functional example of a BCO with associated input and output files, and includ
 
 ## User Guide 
 
-The [BioCompute Objects user guide](/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/IEEE_Docs/standard.md).
+The [BioCompute Objects user guide](/docs/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/IEEE_Docs/standard.md).
 
 ### Repository
 
@@ -37,19 +37,19 @@ Note that unless you are viewing a [release](https://github.com/biocompute-objec
 
 Table of content:
 
-* [BioCompute Object (BCO) User Guide](user_guide.md)
-  * [Introduction to BioCompute Objects](introduction.md)
-  * [BCO domains](bco-domains.md)
-    * [Top level fields](top-level.md)
-    * [Provenance domain](provenance-domain.md)
-    * [Usability domain](usability-domain.md)
-    * [FHIR extension](extension-fhir.md)
-    * [SCM extension](extension-scm.md)
-    * [Description domain](description-domain.md)
-    * [Execution domain](execution-domain.md)
-    * [Parametric domain](parametric-domain.md)
-    * [Input and Output domain](io-domain.md)
-    * [Error domain](error-domain.md)
+* [BioCompute Object (BCO) User Guide](/docs/user_guide.md)
+  * [Introduction to BioCompute Objects](/docs/introduction.md)
+  * [BCO domains](/docs/bco-domains.md)
+    * [Top level fields](/docs/top-level.md)
+    * [Provenance domain](/docs/provenance-domain.md)
+    * [Usability domain](/docs/usability-domain.md)
+    * [FHIR extension](/docs/extension-fhir.md)
+    * [SCM extension](/docs/extension-scm.md)
+    * [Description domain](/docs/description-domain.md)
+    * [Execution domain](/docs/execution-domain.md)
+    * [Parametric domain](/docs/parametric-domain.md)
+    * [Input and Output domain](/docs/io-domain.md)
+    * [Error domain](/docs/error-domain.md)
   * [BCO expanded view example HCV1a.json](HCV1a.json)
 
 ## Specification
