@@ -7,7 +7,7 @@ BioCompute Partnership: https://biocomputeobject.org
 # BioCompute Object (BCO) User Guide
 
 * This version: [draft-1.4.0](https://github.com/biocompute-objects/BCO_Specification/tree/dev)
-* Previous version: [v1.3.1](https://github.com/biocompute-objects/BCO_Specification/releases/tag/1.3.1)
+* Previous version: [v1.3.1](https://github.com/biocompute-objects/BCO_Specification/tree/1.3.1)
 * Latest release: https://github.com/biocompute-objects/BCO_Specification/releases/latest
 * Latest editor's draft: https://github.com/biocompute-objects/BCO_Specification/tree/dev
 <!-- FIXME: Ideally permalinks for all of the above links, say registering https://w3id.org/bco/ -->
