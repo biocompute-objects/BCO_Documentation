@@ -8,10 +8,10 @@ Condensed example:
 
 ```json
 {
-    "bco_spec_version" : "https://w3id.org/biocompute/1.3.0/",
-    "bco_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
+    "spec_version" : "https://w3id.org/biocompute/1.3.0/",
+    "object_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
     "type": "antiviral_resistance_detection", 
-    "checksum": "584C7FE128717E1712426AB19CAAEA8BC1E27365B54285BBEA1221284C7D3A48",
+    "etag": "584C7FE128717E1712426AB19CAAEA8BC1E27365B54285BBEA1221284C7D3A48",
     "provenance_domain": {
     },
     "usability_domain": [

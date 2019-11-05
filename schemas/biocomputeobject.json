@@ -1,26 +1,25 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://www.w3id.org/biocompute/1.3.0/schemas/biocomputeobject.json",
+    "$id": "http://www.w3id.org/biocompute/1.4.0/schemas/biocomputeobject.json",
     "type": "object",
     "title": "Base type for all BioCompute Objects",
     "description": "All BioCompute object types must adhear to this type in order to be compliant with BioCompute specification",
     "required": [
-        "bco_id",
-        "bco_spec_version",
-        "checksum",
+        "object_id",
+        "spec_version",
+        "etag",
         "provenance_domain",
         "usability_domain",
         "description_domain",
         "execution_domain",
-        "io_domain",
-        "error_domain"
+        "io_domain"
     ],
     "definitions": {
-        "bco_id": {
+        "object_id": {
             "type": "string",
             "description": "A unique identifier that should be applied to each BCO instance. IDs should never be reused",
             "examples": [
-                "https://w3id.org/biocompute/examples/HCV1a.json"
+                "https://w3id.org/biocompute/1.4.0/HCV1a.json"
             ]
         },
         "uri": {
@@ -62,21 +61,21 @@
                     "type": "string",
                     "description": "Name of contributor",
                     "examples": [
-                        "Charles Hadley King"
+                        "Charles Darwin"
                     ]
                 },
                 "affiliation": {
                     "type": "string",
                     "description": "Organization the particular contributor is affiliated with",
                     "examples": [
-                        "George Washington University"
+                        "HMS Beagle"
                     ]
                 },
                 "email": {
                     "type": "string",
                     "description": "electronic means for identification and communication purposes",
                     "examples": [
-                        "hadley_king@gwu.edu"
+                        "name@example.edu"
                     ],
                     "format": "email"
                 },
@@ -107,7 +106,7 @@
                     "type": "string",
                     "description": "Field to record author information. ORCID identifiers allow for the author to curate their information after submission. ORCID identifiers must be valid and must have the prefix ‘https://orcid.org/’",
                     "examples": [
-                        "https://orcid.org/0000-0003-1409-4549"
+                        "http://orcid.org/0000-0002-1825-0097"
                     ],
                     "format": "uri"
                 }
@@ -116,11 +115,11 @@
     },
     "additionalProperties": false,
     "properties": {
-        "bco_id": {
-            "$ref": "#/definitions/bco_id",
+        "object_id": {
+            "$ref": "#/definitions/object_id",
             "readOnly": true
         },
-        "bco_spec_version": {
+        "spec_version": {
             "type": "string",
             "description": "Version of the BCO specification used to define this document",
             "examples": [
@@ -129,9 +128,9 @@
             "readOnly": true,
             "format": "uri"
         },
-        "checksum": {
+        "etag": {
             "type": "string",
-            "description": "A string-type, read-only value, protecting the object from internal or external alterations without proper validation generated with a SHA-256 hash function.",
+            "description": "See https://tools.ietf.org/html/rfc7232#section-2.1 for full description. It is recommended that the ETag be deleted or updated if the object file is changed (except in cases using weak ETags in which the entirety of the change comprises a simple re-writing of the JSON).",
             "examples": [
                 "5986B05969341343E77A95B4023600FC8FEF48B7E79F355E58B0B404A4F50995"
             ],
@@ -145,15 +144,20 @@
             "$ref": "usability_domain.json"
         },
         "extension_domain": {
-            "properties": {
-                "fhir_extension": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "extension_domain/fhir_extension.json"
+            "type": "array",
+            "description": "An optional domain that contains user-defined fields.",
+            "items":{
+                "required":[
+                    "extension_schema"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                    "extension_schema":{
+                        "title": "Extension Schema",
+                        "description": "resolving this URI should provide this extension's JSON Schema",
+                        "type": "string",
+                        "format": "uri"
                     }
-                },
-                "scm_extension": {
-                    "$ref": "extension_domain/scm_extension.json"
                 }
             }
         },
