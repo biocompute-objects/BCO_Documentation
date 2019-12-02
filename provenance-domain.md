@@ -159,7 +159,7 @@ This is a list to hold contributor identifiers and a description of their type o
 
 ### 2.1.10 License "license"
 
-A space for Creative Commons licence or other licence information (text). The default or recommended licence can be _Creative Commons Attribution 4.0 International_ identified as https://spdx.org/licenses/CC-BY-4.0.html
+A space for Creative Commons licence or other license information (text). The default or recommended licence can be _Creative Commons Attribution 4.0 International_ identified as https://spdx.org/licenses/CC-BY-4.0.html
 
 ```json
 "license": "https://spdx.org/licenses/CC-BY-4.0.html"
