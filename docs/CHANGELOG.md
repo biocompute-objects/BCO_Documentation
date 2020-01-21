@@ -6,24 +6,144 @@ BioCompute Object Specification Release Notes
 
 
 ------------------------------------------------------------
-### Subject:    1.4.0-84
+### Subject:    Remove-IEEE_Docs
 
-Commit Hash:     8f7d1a64e3f82f6763032ab77ce7ef1e080aefed
+Commit Hash:     0aae6a81b096af8f2551bc8b5df9fc965a8d283a
 
-Author & Email:     Hadley King   HadleyKing@users.noreply.github.com
+Author & Email:     HadleyKing   hadley_king@gwu.edu
 
-Commit Date and Time:       Thu Jan 16 16:53:57 2020 -0500
+Commit Date and Time:       Sun Jan 19 09:09:45 2020 -0500
 
 #### Message: 
 
-    * test    test    * tsting  
+    Remove IEEE_Docs and update to scripts/log.sh 
+
+Changes 
+
+
+- FILE: examples/HCV1a.json
+
+    Deletions   126    Insirtions     173
+
+
+
+- FILE: scripts/log.sh
+
+    Deletions   0    Insirtions     2
+
+
+------------------------------------------------------------
+### Subject:    Add-CHANGELOG.md-and-log.sh
+
+Commit Hash:     3787b477413723dba89b70c7ae41592a6c18af40
+
+Author & Email:     HadleyKing   hadley_king@gwu.edu
+
+Commit Date and Time:       Sat Jan 18 23:35:07 2020 -0500
+
+#### Message: 
+
+    Add scripts to generate CHANGELOG.md 
+
+Changes 
+
+
+- FILE: docs/CHANGELOG.md
+
+    Deletions   0    Insirtions     319
+
+
+
+- FILE: docs/CHANGELOG_draft.md
+
+    Deletions   0    Insirtions     231
+
+
+
+- FILE: docs/release_protocol.md
+
+    Deletions   2    Insirtions     1
+
+
+
+- FILE: scripts/change_log.py
+
+    Deletions   0    Insirtions     98
+
+
+
+- FILE: scripts/git-log.json
+
+    Deletions   0    Insirtions     1
+
+
+
+- FILE: scripts/git-stat.json
+
+    Deletions   0    Insirtions     1
+
+
+
+- FILE: scripts/log.sh
+
+    Deletions   0    Insirtions     5
+
+
+------------------------------------------------------------
+### Subject:    Merge-branch-dev-into-1.4.0
+
+Commit Hash:     732272dc81965698eaac0f9aa6e31a7ff465c910
+
+Author & Email:     Hadley King   HadleyKing@users.noreply.github.com
+
+Commit Date and Time:       Thu Jan 16 16:52:23 2020 -0500
+
+#### Message: 
+
+    NA
+
+Changes 
+
+------------------------------------------------------------
+### Subject:    tsting
+
+Commit Hash:     bbd7715809c4034191d5387b56c7bd1ac253981f
+
+Author & Email:     HadleyKing   hadley_king@gwu.edu
+
+Commit Date and Time:       Thu Jan 16 16:33:53 2020 -0500
+
+#### Message: 
+
+    NA
 
 Changes 
 
 
 - FILE: docs/release_protocol.md
 
-    Deletions   17    Insirtions     2
+    Deletions   1    Insirtions     2
+
+
+------------------------------------------------------------
+### Subject:    test
+
+Commit Hash:     f06ebddcbc9b3b73d91165eb0bb709a471bb2ce6
+
+Author & Email:     HadleyKing   hadley_king@gwu.edu
+
+Commit Date and Time:       Thu Jan 16 16:32:38 2020 -0500
+
+#### Message: 
+
+    test 
+
+Changes 
+
+
+- FILE: docs/release_protocol.md
+
+    Deletions   0    Insirtions     4
 
 
 ------------------------------------------------------------

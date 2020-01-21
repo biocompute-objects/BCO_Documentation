@@ -14,29 +14,11 @@ import string
 import re
 import sys
 from string import Template
-
-release = '1.4.0'
- 
-year = datetime.date.today().year
-month = "{:%B}".format(datetime.date.today())
-day =  "{:%d}".format(datetime.date.today())
-
-with open('./scripts/git-log.json', 'rU') as log_file:
-    log = json.load(log_file)
-with open('./scripts/git-stat.json', 'rU') as stat_file:
-    stat = json.load(stat_file)
-for i in log:
-    if len(i['message']) < 1:
-        i['message'] = 'NA'
-    if i['commit'] in stat.keys():
-        i['stats'] = stat[i['commit']]
-        
-# ['stats', u'author', u'date', u'commit', u'message', u'email', u'subject']
-# [u'deletions', u'path', u'insertions']
+import argparse
 
 PROJECT_DIRECTORY = os.path.join(os.path.dirname(__file__), os.pardir)
 
-TEMPLATE_TOP = string.Template("""
+TEMPLATE_TOP = Template("""
 
 BioCompute Object Specification Release Notes
 ===========================================================
@@ -61,7 +43,7 @@ Commit Date and Time:       ${date}
 Changes 
 """)
 
-TEMPLATE_STATS = string.Template("""
+TEMPLATE_STATS = Template("""
 
 - FILE: ${path}
 
@@ -70,29 +52,75 @@ TEMPLATE_STATS = string.Template("""
 """)
 
 
-contents = ''
-for i in log:
-    log_params = i
-    contents += TEMPLATE_CONTENTS.safe_substitute(**log_params)
-    for s in i['stats']:
-        stats = ''
-        stat_params = s
-        stats += TEMPLATE_STATS.safe_substitute(**stat_params)
-        contents += stats
-
-TEMPLATE_BOTTOM = string.Template("""
+TEMPLATE_BOTTOM = Template("""
 
 ============================================================
 
 """)
-template_params = dict(
-    month_name=month,
-    year=year,
-    release=release
-)
-release_issue_contents = TEMPLATE_TOP.safe_substitute(**template_params)
-release_issue_contents += contents
-release_issue_contents += TEMPLATE_BOTTOM.safe_substitute(**template_params)
+#______________________________________________________________________________#
+def create_arg_parser():
+    """"
+    Creates and returns the ArgumentParser object.
+    """
 
-with open('docs/CHANGELOG.md', 'w') as change_log:
-    change_log.write(release_issue_contents)
+    parser = argparse.ArgumentParser(description='Parses git log output object for change-log generation.')
+
+    parser.add_argument('-b', '--branch', default='dev',
+                    help='current git branch checked out')
+
+    return parser
+#______________________________________________________________________________#
+def load_logs():
+    """
+    
+    """
+
+    with open('./scripts/git-log.json', 'rU') as log_file:
+        log = json.load(log_file)
+    with open('./scripts/git-stat.json', 'rU') as stat_file:
+        stat = json.load(stat_file)
+    for i in log:
+        if len(i['message']) < 1:
+            i['message'] = 'NA'
+        if i['commit'] in stat.keys():
+            i['stats'] = stat[i['commit']]
+    return log
+#______________________________________________________________________________#
+def release_contents( release, log ):
+    """
+    """
+
+    template_params = dict(
+        month_name="{:%B}".format(datetime.date.today()),
+        year=datetime.date.today().year,
+        day="{:%d}".format(datetime.date.today()),
+        release=release
+    )
+
+    contents = ''
+    for i in log:
+        log_params = i
+        contents += TEMPLATE_CONTENTS.safe_substitute(**log_params)
+        for s in i['stats']:
+            stats = ''
+            stat_params = s
+            stats += TEMPLATE_STATS.safe_substitute(**stat_params)
+            contents += stats
+
+    return template_params, contents
+#______________________________________________________________________________#
+def main( ):
+    arg_parser = create_arg_parser()
+    parsed_args = arg_parser.parse_args(sys.argv[1:])
+    log = load_logs()
+    template_params, contents = release_contents(parsed_args.branch, log)
+    release_issue_contents = TEMPLATE_TOP.safe_substitute(**template_params)
+    release_issue_contents += contents
+    release_issue_contents += TEMPLATE_BOTTOM.safe_substitute(**template_params)
+
+    with open('docs/CHANGELOG.md', 'w') as change_log:
+        change_log.write(release_issue_contents)
+    
+#______________________________________________________________________________#
+if __name__ == "__main__":
+    main()
