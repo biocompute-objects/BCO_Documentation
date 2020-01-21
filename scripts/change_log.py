@@ -47,7 +47,7 @@ TEMPLATE_STATS = Template("""
 
 - FILE: ${path}
 
-    Deletions   ${deletions}    Insirtions     ${insertions}
+    Deletions   ${deletions}    Insertions     ${insertions}
 
 """)
 

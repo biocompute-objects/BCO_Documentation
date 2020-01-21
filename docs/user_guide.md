@@ -35,7 +35,7 @@ Read more:
 
 BCOs are represented in JSON (JavaScript Object Notation) formatted text, adhearing to [JSON schema draft-07](https://json-schema.org/specification.html). The JSON format was chosen because it is both human and machine readable/writable. For a detailed description of JSON see [www.json.org](http://www.json.org).
 
-BioCompute data types are defined as aggregates of the critical fields organized into the following domains: the provenance domain, the usability domain, the extension domain, the description domain, the execution domain, the parametric domain, the input and output domains, and the error domain. At the time of creation with actual values compliant to the schema the BCO should be assigned a unique identifier, a [`object_id`](/docs/top-level.md#202-biocompute-object-identifier-object_id). The object could then be assigned a unique digital [`Etag`](/docs/top-level.md#203-checksum-checksum).
+BioCompute data types are defined as aggregates of the critical fields organized into the following domains: the provenance domain, the usability domain, the extension domain, the description domain, the execution domain, the parametric domain, the input and output domains, and the error domain. At the time of creation with actual values compliant to the schema the BCO should be assigned a unique identifier, a [`object_id`](/docs/top-level.md#202-biocompute-object-identifier-object_id). The object could then be assigned a unique digital [`Etag`](docs/top-level.md#203-etag-etag).
 
 Three of the domains in a BioCompute Object SHOULD become immutable upon assignment of the digital `etag`: 
 1) the Parametric Domain
@@ -50,7 +50,7 @@ Three of the domains in a BioCompute Object SHOULD become immutable upon assignm
 
 Complete example:
 
-* [HCV1a.json](/HCV1a.json)
+* [HCV1a.json](/examples/HCV1a.json)
 
 ## 3.2 Appendix-II: External reference database list
 

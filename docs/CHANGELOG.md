@@ -6,6 +6,255 @@ BioCompute Object Specification Release Notes
 
 
 ------------------------------------------------------------
+### Subject:    Deleted-IEEE-files
+
+Commit Hash:     a147cc6a45449098849fdf602d2ffa669fd04049
+
+Author & Email:     HadleyKing   hadley_king@gwu.edu
+
+Commit Date and Time:       Tue Jan 21 05:56:53 2020 -0500
+
+#### Message: 
+
+    Deleted IEEE files and updated the scripts files for change log creation 
+
+Changes 
+
+
+- FILE: HCV1a.json
+
+    Deletions   395    Insertions     0
+
+
+
+- FILE: IEEE_Docs/Draft
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/EMB
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/IEEE
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/IEEE
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/IEEE
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/IEEE
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/LC_Sponsor_Ballot_Overview_1July2016.ppt
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018August29/08292018_Agenda.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018August29/08292018_EMB
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018August29/08292018_Minutes.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018August29/08292018_P2791_PAR_Detail.pdf
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018August29/08292018_Roberts-Rules-of-Order.pdf
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018August29/08292018_VotingRoster_Original.docx
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018August29/08292018_Welcome
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018December03/12032018_Agenda.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018December03/12032018_Minutes.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018October22/10222018_Agenda.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018October22/10222018_Minutes.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2018October22/10222018_P2791_Draft_Standard.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2019May09/05092019_Agenda.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2019May09/05092019_Minutes.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2019May09/Comment
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/2019May09/Individual_Roster_Public.xlsx
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/Meetings/Individual_Roster_Public.xlsx
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/P2971_D3_Dec2018.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/P2971_D3_Dec2018_JGK.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/P2971_D3_Dec2018_JGK_Revised.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/P2971_D3_Dec2018_JGK_Revised_TrackChanges.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/P2971_D3_Dec2018_JGK_Revised_TrackChanges_C.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/P2971_D3_Dec2018_JGK_Revised_TrackChanges_C_OpenSourceNotice.doc
+
+    Deletions   -    Insertions     -
+
+
+
+- FILE: IEEE_Docs/README.md
+
+    Deletions   11    Insertions     0
+
+
+
+- FILE: IEEE_Docs/standard.md
+
+    Deletions   337    Insertions     0
+
+
+
+- FILE: docs/CHANGELOG.md
+
+    Deletions   5    Insertions     125
+
+
+
+- FILE: docs/CHANGELOG_draft.md
+
+    Deletions   231    Insertions     0
+
+
+
+- FILE: scripts/change_log.py
+
+    Deletions   43    Insertions     71
+
+
+
+- FILE: scripts/git-log.json
+
+    Deletions   1    Insertions     1
+
+
+
+- FILE: scripts/git-stat.json
+
+    Deletions   1    Insertions     1
+
+
+
+- FILE: scripts/log.sh
+
+    Deletions   3    Insertions     5
+
+
+------------------------------------------------------------
 ### Subject:    Remove-IEEE_Docs
 
 Commit Hash:     0aae6a81b096af8f2551bc8b5df9fc965a8d283a
@@ -23,13 +272,13 @@ Changes
 
 - FILE: examples/HCV1a.json
 
-    Deletions   126    Insirtions     173
+    Deletions   126    Insertions     173
 
 
 
 - FILE: scripts/log.sh
 
-    Deletions   0    Insirtions     2
+    Deletions   0    Insertions     2
 
 
 ------------------------------------------------------------
@@ -50,43 +299,43 @@ Changes
 
 - FILE: docs/CHANGELOG.md
 
-    Deletions   0    Insirtions     319
+    Deletions   0    Insertions     319
 
 
 
 - FILE: docs/CHANGELOG_draft.md
 
-    Deletions   0    Insirtions     231
+    Deletions   0    Insertions     231
 
 
 
 - FILE: docs/release_protocol.md
 
-    Deletions   2    Insirtions     1
+    Deletions   2    Insertions     1
 
 
 
 - FILE: scripts/change_log.py
 
-    Deletions   0    Insirtions     98
+    Deletions   0    Insertions     98
 
 
 
 - FILE: scripts/git-log.json
 
-    Deletions   0    Insirtions     1
+    Deletions   0    Insertions     1
 
 
 
 - FILE: scripts/git-stat.json
 
-    Deletions   0    Insirtions     1
+    Deletions   0    Insertions     1
 
 
 
 - FILE: scripts/log.sh
 
-    Deletions   0    Insirtions     5
+    Deletions   0    Insertions     5
 
 
 ------------------------------------------------------------
@@ -122,7 +371,7 @@ Changes
 
 - FILE: docs/release_protocol.md
 
-    Deletions   1    Insirtions     2
+    Deletions   1    Insertions     2
 
 
 ------------------------------------------------------------
@@ -143,7 +392,7 @@ Changes
 
 - FILE: docs/release_protocol.md
 
-    Deletions   0    Insirtions     4
+    Deletions   0    Insertions     4
 
 
 ------------------------------------------------------------
@@ -164,7 +413,7 @@ Changes
 
 - FILE: README.md
 
-    Deletions   1    Insirtions     1
+    Deletions   1    Insertions     1
 
 
 ------------------------------------------------------------
@@ -185,7 +434,7 @@ Changes
 
 - FILE: docs/release_protocol.md
 
-    Deletions   0    Insirtions     20
+    Deletions   0    Insertions     20
 
 
 ------------------------------------------------------------
@@ -206,67 +455,67 @@ Changes
 
 - FILE: HCV1a.json
 
-    Deletions   127    Insirtions     174
+    Deletions   127    Insertions     174
 
 
 
 - FILE: docs/bco-domains.md
 
-    Deletions   3    Insirtions     3
+    Deletions   3    Insertions     3
 
 
 
 - FILE: docs/provenance-domain.md
 
-    Deletions   1    Insirtions     1
+    Deletions   1    Insertions     1
 
 
 
 - FILE: docs/top-level.md
 
-    Deletions   10    Insirtions     10
+    Deletions   10    Insertions     10
 
 
 
 - FILE: docs/user_guide.md
 
-    Deletions   2    Insirtions     2
+    Deletions   2    Insertions     2
 
 
 
 - FILE: examples/HCV1a.json
 
-    Deletions   2    Insirtions     2
+    Deletions   2    Insertions     2
 
 
 
 - FILE: examples/HIVE_metagenomics.json
 
-    Deletions   2    Insirtions     2
+    Deletions   2    Insertions     2
 
 
 
 - FILE: examples/UVP.json
 
-    Deletions   2    Insirtions     2
+    Deletions   2    Insertions     2
 
 
 
 - FILE: examples/glycosylation-sites-UniCarbKB.json
 
-    Deletions   2    Insirtions     2
+    Deletions   2    Insertions     2
 
 
 
 - FILE: schemas/biocomputeobject.json
 
-    Deletions   25    Insirtions     29
+    Deletions   25    Insertions     29
 
 
 
 - FILE: schemas/provenance_domain.json
 
-    Deletions   2    Insirtions     2
+    Deletions   2    Insertions     2
 
 
 ------------------------------------------------------------
@@ -287,13 +536,13 @@ Changes
 
 - FILE: HCV1a.json
 
-    Deletions   1    Insirtions     1
+    Deletions   1    Insertions     1
 
 
 
 - FILE: docs/user_guide.md
 
-    Deletions   1    Insirtions     1
+    Deletions   1    Insertions     1
 
 
 ------------------------------------------------------------
@@ -314,13 +563,13 @@ Changes
 
 - FILE: README.md
 
-    Deletions   1    Insirtions     5
+    Deletions   1    Insertions     5
 
 
 
 - FILE: docs/user_guide.md
 
-    Deletions   6    Insirtions     6
+    Deletions   6    Insertions     6
 
 
 ------------------------------------------------------------
@@ -341,97 +590,97 @@ Changes
 
 - FILE: README.md
 
-    Deletions   14    Insirtions     14
+    Deletions   14    Insertions     14
 
 
 
 - FILE: bco-domains.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: description-domain.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: error-domain.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: execution-domain.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: extension-fhir.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: extension-scm.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: external-references.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: introduction.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: io-domain.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: parametric-domain.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: provenance-domain.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: top-level.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: usability-domain.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: user_guide.md
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
 - FILE: validate.py
 
-    Deletions   0    Insirtions     0
+    Deletions   0    Insertions     0
 
 
 
