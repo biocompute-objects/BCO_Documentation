@@ -12,8 +12,8 @@ Condensed exampled:
 
 ```json
 "io_domain": {
-        "input_subdomain": {
-        }, 
+        "input_subdomain": [
+        ], 
         "output_subdomain": [
         ]
 }, 
