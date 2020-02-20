@@ -6,6 +6,57 @@ BioCompute Object Specification Release Notes
 
 
 ------------------------------------------------------------
+### Subject:    WIP-release_protocol.md
+
+Commit Hash:     d9ac543435df32f581f2e0b492226bf6e7ea058d
+
+Author & Email:     HadleyKing   hadley_king@gwu.edu
+
+Commit Date and Time:       Tue Jan 21 12:15:32 2020 -0500
+
+#### Message: 
+
+    Add docs/release_protocol.md 
+
+Changes 
+
+
+- FILE: docs/CHANGELOG.md
+
+    Deletions   44    Insertions     293
+
+
+
+- FILE: docs/release_protocol.md
+
+    Deletions   3    Insertions     33
+
+
+
+- FILE: docs/user_guide.md
+
+    Deletions   2    Insertions     2
+
+
+
+- FILE: scripts/change_log.py
+
+    Deletions   1    Insertions     1
+
+
+
+- FILE: scripts/git-log.json
+
+    Deletions   1    Insertions     1
+
+
+
+- FILE: scripts/git-stat.json
+
+    Deletions   1    Insertions     1
+
+
+------------------------------------------------------------
 ### Subject:    Deleted-IEEE-files
 
 Commit Hash:     a147cc6a45449098849fdf602d2ffa669fd04049
