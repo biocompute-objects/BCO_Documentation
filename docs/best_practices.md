@@ -4,7 +4,7 @@ The [BioCompute Registry](https://biocomputeobject.org/tst/registry.html) is a d
 
 A BCO may be registered only by the author of the object, and the domain must be approved by the domain holder. Until automated systems are in place, register a BCO by sending the BCO ID and email of the registrant to the [BioCompute Team](mailto:keeneyjg@gwu.edu). The following institutional domains have been reserved:
 
-* GW
+* GWU
 * FDA
 * NIH
 * CDC
