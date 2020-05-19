@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://w3id.org/2791/usability_domain.json",
+    "$id": "https://w3id.org/ieee/ieee-2791-schema/usability_domain.json",
     "type": "array",
     "title": "Usability Domain",
     "description": "Author-defined usability domain of the IEEE-2791 Object. This field is to aid in search-ability and provide a specific description of the function of the object.",

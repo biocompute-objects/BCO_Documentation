@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://w3id.org/parametric_domain",
+    "$id": "https://w3id.org/ieee/ieee-2791-schema/parametric_domain.json",
     "type": "array",
     "title": "Parametric Domain",
     "description": "This represents the list of NON-default parameters customizing the computational flow which can affect the output of the calculations. These fields can be custom to each kind of analysis and are tied to a particular pipeline implementation",
