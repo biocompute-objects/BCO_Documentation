@@ -1,7 +1,7 @@
 BioCompute
 ==========
 
-This version: [draft-1.4.0](https://github.com/biocompute-objects/BCO_Specification/tree/dev)
+This version: [1.4.0](https://github.com/biocompute-objects/BCO_Specification/tree/1.4.0)
 
 Previous version: [v1.3.1](https://github.com/biocompute-objects/BCO_Specification/releases/tag/1.3.1)
 
