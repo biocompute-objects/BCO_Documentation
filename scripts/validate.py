@@ -6,7 +6,6 @@
 """Used to test a BCO against the schema. The following commands were used to run the script:
 
     cd BCO_specification/
-    python -m venv env
     source env/bin/activate
     pip install jsonschema jsonref
     python validate.py HCV1a.json $PWD/schemas/biocomputeobject.json
