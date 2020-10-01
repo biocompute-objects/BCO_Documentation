@@ -4,7 +4,7 @@ _Back to [BCO domains](bco-domains.md)_
 
 ## 2.6 Parametric Domain "parametric_domain"
 
-This represents the list of **NON-default** parameters customizing the computational flow which can affect the output of the calculations. These fields can be custom to each kind of analysis and are tied to a particular pipeline implementation. The `parametric_domain` is not used for running/reproducing a bco e.g. not used by the [`execution_domain`](/execution-domain.md). It is _recommended_ these feilds be generated automatically, but that may not allways be possible. Please refer to documentation of individual scripts and specific BCO descriptions for details. While this domain is NOT required, it is reccommended that it be populated. 
+This represents the list of **NON-default** parameters customizing the computational flow which can affect the output of the calculations. These fields can be custom to each kind of analysis and are tied to a particular pipeline implementation. The `parametric_domain` is not used for running/reproducing a bco e.g. not used by the [`execution_domain`](/execution-domain.md). It is _recommended_ these fields be generated automatically, but that may not always be possible. Please refer to documentation of individual scripts and specific BCO descriptions for details. While this domain is NOT required, it is recommended that it be populated. 
 
 ```json
 "parametric_domain": [
