@@ -1,10 +1,28 @@
-_This document is part of the [BioCompute Object User Guide](user_guide.md)_
+---
+title: "Provenance Domain"
+menu: "main"
+---
 
-_Back to [BCO domains](bco-domains.md)_
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+
+<br>
+
+_This document is part of the [BioCompute Object User Guide](/user_guide)_
+
+_Back to [BCO domains](/bco-domains)_
 
 ## 2.1 Provenance Domain "provenance_domain"
 
-This section defines the fields of the `provenance_domain` part of the [BCO](bco-domains.md) structure.
+This section defines the fields of the `provenance_domain` part of the [BCO](/bco-domains) structure.
 
 Condensed example:
 
@@ -44,10 +62,10 @@ Records the versioning of this BCO instance object. [Semantic Versioning 2.0.0](
 >3. PATCH version when you make backwards-compatible bug fixes.
 >Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-BCO versioning should adhere to semantic versioning.
+BCO versioning should adhere to semantic versioning. Given the above conditions a MAJOR version would qualify for a new BCO, and therefore it is RECCOMENDED that the versioning of a BCO only utilize MINOR and PATCH, or two digits. 
 
 ```json
-"version": "2.1.0",
+"version": "2.1",
 ```
 
 ### 2.1.3 Review "review"
@@ -61,7 +79,7 @@ The "status" key describes the status of an object in the review process and the
 * `suspended` flag indicates an object that was once valid is no longer considered valid. 
 * `rejected` flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. 
 
-The fields from the `contributor` object (described in [section 2.1.9](/provenance-domain.md#219-contributors-contributors)) are used to populate the reviewer section. Each BCO MUST have at least one `review`. 
+The fields from the `contributor` object (described in [section 2.1.9](/provenance-domain.md#219-contributors-contributors)) are used to populate the reviewer section. Each BCO SHOULD have at least one `review`. 
 
 ```json
         "review": [
@@ -93,7 +111,6 @@ The fields from the `contributor` object (described in [section 2.1.9](/provenan
 ### 2.1.4 Inheritance/derivation "derived_from"
 
 If the object is derived from another, this field will specify the parent object, in the form of the ‘object_id’. If the object is novel than the field is not included. 
-=======
 
 ```json
 "derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/1.2.1-beta/HCV1a.json"

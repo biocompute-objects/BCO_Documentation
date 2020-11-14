@@ -1,10 +1,28 @@
-_This document is part of the [BioCompute Object User Guide](user_guide.md)_
+---
+title: "Execution Domain"
+menu: "main"
+---
 
-_Back to [BCO domains](bco-domains.md)_
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+
+<br>
+
+_This document is part of the [BioCompute Object User Guide](/user_guide)_
+
+_Back to [BCO domains](/bco-domains)_
 
 ## 2.5 Execution Domain "execution_domain"
 
-This section defines the `execution_domain` part of the [BCO](bco-domains.md).
+This section defines the `execution_domain` part of the [BCO](/bco-domains).
 
 The fields required for execution of the BCO have been encapsulated together in order to clearly separate information needed for deployment, software configuration and running applications in a dependent environment. One byproduct of an accurate BCO definition is facilitation of reproducibility as defined by the *Oxford English Dictionary* as "the extent to which consistent results are obtained when produced repeatedly."
 

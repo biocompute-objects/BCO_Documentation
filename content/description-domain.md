@@ -1,11 +1,29 @@
-_This document is part of the [BioCompute Object User Guide](user_guide.md)_
+---
+title: "Description Domain"
+menu: "main"
+---
 
-_Back to [BCO domains](bco-domains.md)_
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+
+<br>
+
+_This document is part of the [BioCompute Object User Guide](/user_guide)_
+
+_Back to [BCO domains](/bco-domains)_
 
 ## 2.4 Description Domain "description_domain"
 
 
-This section defines the fields of the `description_domain` part of the [BCO](bco-domains.md) structure.
+This section defines the fields of the `description_domain` part of the [BCO](/bco-domains) structure.
 
 Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in journal format. It is possible that in the future this field can be semi-automatically generated from the execution_domain information. 
 

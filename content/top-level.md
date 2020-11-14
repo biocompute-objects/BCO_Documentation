@@ -1,6 +1,24 @@
-_This document is part of the [BioCompute Object User Guide](user_guide.md)_
+---
+title: "Top Level Domains"
+menu: "main"
+---
 
-_Back to [BCO domains](bco-domains.md)_
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+
+<br>
+
+_This document is part of the [BioCompute Object User Guide](/user_guide)_
+
+_Back to [BCO domains](/bco-domains)_
 
 ## 2.0 Top Level Fields
 
@@ -10,7 +28,7 @@ Condensed example:
 
 ```json
 {
-    "spec_version" : "https://w3id.org/biocompute/1.3.0/",
+    "spec_version" : "https://w3id.org/ieee/ieee-2791-schema/",
     "object_id": "https://example.com/bco/9487ae7e-c1aa-4a3c-b18f-3d3695b33ace",
     "etag": "d41d8cd98f00b204e9800998ecf8427e",    
     "provenance_domain": {
@@ -24,7 +42,7 @@ Condensed example:
 The version of the BCO specification used to define the BCO. It is recomended that this value be a permalink as defined in the [w3id.org/biocompute](https://github.com/perma-id/w3id.org/tree/master/biocompute) repository. 
 
 ```json
-"spec_version": "https://w3id.org/biocompute/1.3.0/" 
+"spec_version": "https://w3id.org/ieee/ieee-2791-schema/" 
 ```
 
 ### 2.0.2 BioCompute Object Identifier "object_id"
@@ -57,5 +75,5 @@ will generate the following:
 
 ### Additional domains
 
-Additional description about the BCO itself is also provided in the [provenance domain](provenance-domain.md), [description domain](description-domain.md) and [usability domain](usability-domain.md). Other [domains](bco-domains.md) detail areas like execution and error ranges.
+Additional description about the BCO itself is also provided in the [provenance domain](/provenance-domain), [description domain](/description-domain) and [usability domain](/usability-domain). Other [domains](/bco-domains) detail areas like execution and error ranges.
 

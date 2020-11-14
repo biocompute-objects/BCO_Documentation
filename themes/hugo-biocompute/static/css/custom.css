@@ -221,7 +221,7 @@ div.alert p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #7a7a7a;
-    border-left: 0.25rem solid #e5e5e5;
+    border-left: 0.25rem solid #595959;
 }
 
 .content .markdown blockquote p:last-child {

@@ -1,4 +1,22 @@
-_This document is part of the [BioCompute Object User Guide](user_guide.md)_
+---
+title: "BCO Introduction"
+menu: "main"
+---
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+
+<br>
+
+_This document is part of the [BioCompute Object User Guide](/user_guide)_
 
 # 1 Introduction to BioCompute Objects
 
