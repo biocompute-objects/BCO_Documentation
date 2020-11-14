@@ -1,3 +1,40 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "BioCompute Object Documentation"
+theme = "hugo-biocompute"
+
+enableEmoji = true
+hasCJKLanguage = true
+
+[params]
+copyright = "© 2018 - 2020 BioCompute. All rights reserved."
+faviconfile = "images/favicon.png"
+posts_navigation = true
+uselatex = false
+highlightjs = false
+highlightjslanguages = ["r"]
+progressively = false
+#google_tag_manager = "UA-79911051-3"
+
+contact = "object.biocompute@gmail.com"
+github = "biocompute-objects"
+twitter = "BioComputeObj"
+# linkedin = "example"
+
+[[menu.primary]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.primary]]
+identifier = "docs"
+name = "Documentation"
+url = "/docs/"
+weight = 2
+
+[[menu.primary]]
+identifier = "examples"
+name = "Examples"
+url = "/examples"
+weight = 3
