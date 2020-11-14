@@ -6,6 +6,11 @@ theme = "hugo-biocompute"
 enableEmoji = true
 hasCJKLanguage = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
 copyright = "© 2018 - 2020 BioCompute. All rights reserved."
 faviconfile = "images/favicon.png"

@@ -1,24 +1,21 @@
 ---
-title: "BioCompute"
-date: 2019-03-26T08:47:11+01:00
-draft: true
+title: "Home"
+menu: "main"
 ---
 
-BioCompute
-==========
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
-This version: [1.4.0](https://github.com/biocompute-objects/BCO_Specification/tree/1.4.0)
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
 
-Previous version: [v1.3.1](https://github.com/biocompute-objects/BCO_Specification/releases/tag/1.3.1)
+<br>
 
-BioCompute Partnership: https://biocomputeobject.org
-
-OSF page: https://osf.io/h59uh/ 
-
-GitHub repository for BioCompute Objects:
-https://github.com/biocompute-objects/
-
-[![Gitter](https://badges.gitter.im/biocompute-objects/community.svg)](https://gitter.im/biocompute-objects/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 ## Introduction
 
 The U.S. Food and Drug Administration (FDA) and George Washington University (GW) have partnered to establish a framework for community-based standards development and harmonization of HTS computations and data formats. Standardized HTS data processing and data formats will promote interoperability and simplify the verification of bioinformatics protocols. To do this, a schema has been developed to represent instances of computational analysis as a BCO. A BCO includes: 
@@ -39,7 +36,7 @@ A functional example of a BCO with associated input and output files, and includ
 
 ## User Guide 
 
-The [BioCompute Objects user guide](/content/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/IEEE_Docs/standard.md).
+The [BioCompute Objects user guide](/user_guide) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/IEEE_Docs/standard).
 
 ### Repository
 
@@ -47,25 +44,25 @@ Note that unless you are viewing a [release](https://github.com/biocompute-objec
 
 Table of content:
 
-* [BioCompute Object (BCO) User Guide](/content/user_guide.md)
-  * [Introduction to BioCompute Objects](/content/introduction.md)
-  * [BCO domains](/content/bco-domains.md)
-    * [Top level fields](/content/top-level.md)
-    * [Provenance domain](/content/provenance-domain.md)
-    * [Usability domain](/content/usability-domain.md)
-    * [FHIR extension](/content/extension-fhir.md)
-    * [SCM extension](/content/extension-scm.md)
-    * [Description domain](/content/description-domain.md)
-    * [Execution domain](/content/execution-domain.md)
-    * [Parametric domain](/content/parametric-domain.md)
-    * [Input and Output domain](/content/io-domain.md)
-    * [Error domain](/content/error-domain.md)
+* [BioCompute Object (BCO) User Guide](/user_guide)
+  * [Introduction to BioCompute Objects](/introduction)
+  * [BCO domains](/bco-domains)
+    * [Top level fields](/top-level)
+    * [Provenance domain](/provenance-domain)
+    * [Usability domain](/usability-domain)
+    * [FHIR extension](/extension-fhir)
+    * [SCM extension](/extension-scm)
+    * [Description domain](/description-domain)
+    * [Execution domain](/execution-domain)
+    * [Parametric domain](/parametric-domain)
+    * [Input and Output domain](/io-domain)
+    * [Error domain](/error-domain)
   * [BCO expanded view example HCV1a.json](HCV1a.json)
 
 ## Specification
 ### Current Release - 1.3.0
 
-For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_Docs/standard.md) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
+For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_Docs/standard) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
 
 
 ### Previous Release
@@ -75,7 +72,7 @@ For developers and advanced users, the [BCO specification (v1.2)](https://github
 See [releases](https://github.com/biocompute-objects/BCO_Specification/releases) for all releases of BCO object specification since moving to GitHub.
 
 ### Citation
-This standard was originaly prepared by [The BioCompute Object working group](/BCO_Spec_V1.2.md#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
+This standard was originaly prepared by [The BioCompute Object working group](/BCO_Spec_V1.2#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
 
 To reference the BCO standards, please use the following
 citation inclusive of the DOI:

@@ -1,3 +1,8 @@
+---
+title: "User Guide"
+menu: "main"
+---
+
 GitHub: https://github.com/biocompute-objects
 	
 OSF page: https://osf.io/h59uh/ 
