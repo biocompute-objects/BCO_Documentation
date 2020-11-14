@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ partial "header" . }}
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="markdown">
+                    <div class="landing">
+                        {{ partial "content" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ partial "footer" . }}
+{{ end }}

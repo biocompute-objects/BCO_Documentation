@@ -1,0 +1,33 @@
+<div class="my-4 my-lg-5 header">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <ul class="nav nav-primary">
+                    {{ range .Site.Menus.primary.ByWeight }}
+                        <li class="nav-item">
+                            <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
+                                {{ .Pre }}
+                                {{ .Name }}
+                            </a>
+                        </li>
+                    {{ end }}
+
+                    {{ if .IsTranslated }}
+                        <li class="ml-4">
+                            <ul class="nav nav-languages">
+                                {{ range .Translations }}
+                                    <li>
+                                        <a class="nav-link" href="{{ .Permalink }}">
+                                            <strong>{{ upper .Language }}</strong>
+                                        </a>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                    {{ end }}
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
