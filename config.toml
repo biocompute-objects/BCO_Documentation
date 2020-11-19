@@ -6,6 +6,8 @@ theme = "hugo-biocompute"
 enableEmoji = true
 hasCJKLanguage = true
 
+pygmentsstyle = "github"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
