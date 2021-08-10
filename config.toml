@@ -1,0 +1,60 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "BioCompute Object Documentation"
+theme = "hugo-biocompute"
+
+enableEmoji = true
+hasCJKLanguage = true
+
+pygmentsstyle = "github"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+copyright = "© 2018 - 2020 BioCompute. All rights reserved."
+faviconfile = "images/favicon.png"
+posts_navigation = true
+uselatex = false
+highlightjs = false
+highlightjslanguages = ["r"]
+progressively = false
+#google_tag_manager = "UA-79911051-3"
+
+contact = "object.biocompute@gmail.com"
+github = "biocompute-objects"
+twitter = "BioComputeObj"
+# linkedin = "example"
+
+[[menu.primary]]
+identifier = "home"
+name = "Documentation Home"
+url = "/"
+
+weight = 1
+
+[[menu.primary]]
+identifier = "user_guide"
+name = "User Guide"
+url = "/user_guide"
+weight = 2
+
+[[menu.primary]]
+identifier = "best_practices"
+name = "Best Practices"
+url = "/best_practices"
+weight = 3
+
+[[menu.primary]]
+identifier = "sop"
+name = "BioCompute Curation SOP"
+url = "/sop"
+weight = 4
+
+[[menu.primary]]
+identifier = "biocomputeobject.org"
+name = "BioCompute Object Home"
+url = "https://www.biocomputeobject.org/"
+weight = 5
