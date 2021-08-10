@@ -30,7 +30,7 @@ The **algorithmic** subdomain is descriptive of errors that originate by fuzzine
 
 For data integration BCOs used to develop knowledgebases, the error domain can, for example, contain rules that determine inclusion in the knowledgebase and reference to data that pass and fail the set of rules.
 
-The possible keys within each subdomains are workflow-specific, free text which should be readable for a human.
+The possible keys within each subdomain are workflow-specific, free text which should be readable for a human.
 
 ```json
     "error_domain": {
