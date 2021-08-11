@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> User Guide - BioCompute Object Documentation
+        </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="BioCompute Object Documentation" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/user_guide/" />
+    <meta property="og:title" content="User Guide" />
+    <meta property="og:image" content="/" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@BioComputeObj">
+    <meta name="twitter:creator" content="@BioComputeObj">
+    
+    <meta name="twitter:title" content="User Guide" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/" />
+
+    <link rel="canonical" href="/user_guide/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="/images/favicon.png">
+
+    
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="BioCompute Object Documentation" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-lg-5 header">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-home" href="/">
+                                
+                                Documentation Home
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-user_guide" href="/user_guide">
+                                
+                                User Guide
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-best_practices" href="/best_practices">
+                                
+                                Best Practices
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-sop" href="/sop">
+                                
+                                BioCompute Curation SOP
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-biocomputeobject.org" href="https://www.biocomputeobject.org/">
+                                
+                                BioCompute Object Home
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="markdown">
+                        
+    <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+<br>
+<h5 id="this-document-was-created-by-the-biocompute-object-consortium-members-bcocbiocompute-object-consortium-members-bcoc">This document was created by the <a href="#biocompute-object-consortium-members-bcoc">BioCompute Object Consortium members (BCOC)</a></h5>
+<h1 id="biocompute-object-bco-user-guide">BioCompute Object (BCO) User Guide</h1>
+<blockquote>
+<p>This version: <a href="http://w3id.org/biocompute/2.0.0">draft-2.0.0</a>
+<br> This version is offerd as support for <a href="https://standards.ieee.org/standard/2791-2020.html">2791-2020</a> - IEEE Approved Standard for Bioinformatics Computations and Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication. <br>
+Previous version: <a href="http://w3id.org/biocompute/1.4.0">1.4.0</a><br>
+Latest release: <a href="https://github.com/biocompute-objects/BCO_Specification/releases/latest">https://github.com/biocompute-objects/BCO_Specification/releases/latest</a> <br>
+Latest editor&rsquo;s draft: <a href="https://github.com/biocompute-objects/BCO_Specification/tree/dev">https://github.com/biocompute-objects/BCO_Specification/tree/dev</a> <br></p>
+</blockquote>
+<p>Note that unless you are viewing a <a href="https://github.com/biocompute-objects/BCO_Specification/releases">release</a> this is a draft subject to change.</p>
+<p>Table of contents:</p>
+<ul>
+<li><a href="/introduction">Introduction to BioCompute Objects</a></li>
+<li><a href="/bco-domains">BCO domains</a>
+<ul>
+<li><a href="/top-level">Top level fields</a></li>
+<li><a href="/provenance-domain">Provenance domain</a></li>
+<li><a href="/usability-domain">Usability domain</a></li>
+<li><a href="/extension-fhir">FHIR extension</a></li>
+<li><a href="/extension-scm">SCM extension</a></li>
+<li><a href="/description-domain">Description domain</a></li>
+<li><a href="/execution-domain">Execution domain</a></li>
+<li><a href="/parametric-domain">Parametric domain</a></li>
+<li><a href="/io-domain">Input and Output domain</a></li>
+<li><a href="/error-domain">Error domain</a></li>
+</ul>
+</li>
+<li><a href="/examples/HCV1a.json">BCO expanded view example HCV1a.json</a></li>
+</ul>
+<hr>
+<h2 id="1-introduction">1 Introduction</h2>
+<p>This document specifies the structure of BioCompute Objects.
+The specification is split into multiple parts linked to from this
+top-level document and are maintained in a
+<a href="https://github.com/biocompute-objects/BCO_Specification">GithHub repository</a>
+where <a href="/#support-community-and-contributing">contributions</a> are welcome.</p>
+<p>Read more:</p>
+<ul>
+<li><a href="/introduction">Introduction to BioCompute Objects</a></li>
+</ul>
+<hr>
+<h2 id="2-biocompute-domains">2 BioCompute Domains</h2>
+<p>BCOs are represented in JSON (JavaScript Object Notation) formatted text, adhearing to <a href="https://json-schema.org/specification.html">JSON schema draft-07</a>. The JSON format was chosen because it is both human and machine readable/writable. For a detailed description of JSON see <a href="http://www.json.org">www.json.org</a>.</p>
+<p>BioCompute data types are defined as aggregates of the critical fields organized into the following domains: the provenance domain, the usability domain, the extension domain, the description domain, the execution domain, the parametric domain, the input and output domains, and the error domain. At the time of creation with actual values compliant to the schema the BCO should be assigned a unique identifier, a <a href="/top-level#202-biocompute-object-identifier-object_id">object_id</a>. The object could then be assigned a unique digital <a href="/top-level#203-etag-etag">etag</a>.</p>
+<p>Three of the domains in a BioCompute Object SHOULD become immutable upon assignment of the digital <a href="/top-level#203-etag-etag">etag</a>:</p>
+<ol>
+<li>the <a href="/parametric-domain">Parametric Domain</a></li>
+<li>the <a href="/execution-domain">Execution Domain</a> and</li>
+<li>the <a href="/io-domain">I/O Domain</a></li>
+</ol>
+<ul>
+<li><a href="/bco-domains">BCO domains</a></li>
+</ul>
+<hr>
+<h2 id="3-appendices">3 Appendices</h2>
+<h3 id="31-appendix-i-bco-expanded-view-example">3.1 Appendix-I: BCO expanded view example</h3>
+<p>Complete example:</p>
+<ul>
+<li><a href="/examples/HCV1a.json">HCV1a.json</a></li>
+</ul>
+<h3 id="32-appendix-ii-external-reference-database-list">3.2 Appendix-II: External reference database list</h3>
+<p>CURIEs (short identifiers) like <code>[taxonomy:31646]</code> in BCOs can be expanded to complete identifiers.</p>
+<p>Specifications:</p>
+<ul>
+<li><a href="/external-references">External references</a></li>
+</ul>
+<h3 id="33-title-21-cfr-part-11">3.3 Title 21 CFR Part 11</h3>
+<p><em>Code of Federal Regulations Title 21 Part 11: Electronic Records - Electronic Signatures</em></p>
+<p>BioCompute project is being developed with Title 21 CFR Part 11 compliance in mind. The digital signatures incorporated into the format will provide the basis for provenance of BioCompute Object integrity using NIST proposed encryption algorithms. Execution domain and parametric domain (that have a potential impact on a result of computation) and identity domain will be used to create hash values and digital signature encryption keys which later can be used for computer or human validation of transmitted objects.</p>
+<p>Discussions are now taking place to consider relevance of BioCompute Objects with relation to Title 21 CFR part 11. We encourage continuous input from BioCompute stakeholders on this subject now and while the concept is becoming more mature and more widely accepted by scientific and regulatory communities.</p>
+<blockquote>
+<p>Relevant document link:	<a href="http://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm">Part 11: Electronic Records</a></p>
+</blockquote>
+<h3 id="34-appendix-iv---compatibility">3.4 Appendix IV - Compatibility</h3>
+<h4 id="341-isa-for-the-experimental-metadata">3.4.1 ISA for the experimental metadata</h4>
+<p>ISA is a metadata framework to manage an increasingly diverse set of life science, environmental and biomedical experiments that employ one or a combination of technologies. Built around the <strong>Investigation</strong> (the project context), <strong>Study</strong> (a unit of research) and <strong>Assay</strong> (analytical measurements) concepts, ISA helps to provide rich descriptions of experimental metadata (i.e. sample characteristics, technology and measurement types, sample-to-data relationships) so that the resulting data and discoveries are reproducible and reusable. The ISA Model and Serialization Specifications define an Abstract Model of the metadata framework that has been implemented in two format specifications, ISA-Tab and ISA-JSON (<a href="http://isa-tools.org/format/specification">http://isa-tools.org/format/specification</a>), both of which have supporting tools and services associated with them, including by a programmable Python AP (<a href="http://isa-tools.org/format/specification">http://isa-tools.org</a>) and a varied user community and contributors (<a href="http://www.isacommons.org">http://www.isacommons.org</a>). ISA focuses on structuring experimental metadata; raw and derived data files, codes, workflows etc are considered as external file that are referenced. An example, along its complementarity with other models and a computational workflow is illustrated in this paper, which shows how to explicitly declare elements of experimental design, variables, and findings: <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127612">http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0127612</a></p>
+<h3 id="35-appendix-vi-acknowledgements">3.5 Appendix VI Acknowledgements</h3>
+<p>This document began development during the <a href="https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017">2017 HTS-CSRS workshop</a>. The discussion during the workshop led to the refinement and completion of this document. The workshop participants were a major part of the initial BCO community, and the comments and suggestions collected during the sessions were incorporated into this document. The people who participated in the 2017 workshop, and therefore made significant contributions are listed here: <a href="https://osf.io/h59uh/">https://osf.io/h59uh/</a></p>
+<h3 id="biocompute-object-consortium-members-bcoc">BioCompute Object Consortium members (BCOC)</h3>
+<p><strong>FDA:</strong> Vahan Simonyan, Mark Walderhaug, Ruth Bandler, Eric Donaldson, Elaine Thompson, Alin Voskanian, Anton Golikov, Konstantinos Karagiannis, Elaine Johanson, Adrian Myers, Errol Strain, Khaled Bouri, Tong Weida, Wenming Xiao, Md Shamsuzzaman</p>
+<p><strong>GW:</strong> Raja Mazumder, Charles Hadley S. King IV, Amanda Bell, Jeet Vora, Krista M. Smith, Robel
+Kahsay</p>
+<p><strong>Documentation Community:</strong> Gil Alterovitz (Boston Children’s Hospital/Harvard Medical School, SMART/FHIR/HL7, GA4GH), Michael R. Crusoe (CWL), Marco Schito (C-Path), Konstantinos
+Krampis (CUNY), Alexander (Sasha) Wait Zaranek (Curoverse), John Quackenbush (DFCI/Harvard), Geet Duggal (DNAnexus), Singer Ma (DNAnexus), Yuching Lai (DDL), Warren Kibbe (Duke), Tony, Burdett (EBI), Helen Parkinson (EBI), Stuart Young (Engility Corp), Anupama Joshi (Epinomics), Vineeta Agarwala (Flatiron Health), James Hirmas (GenomeNext), David Steinberg (UCSC), Veronica Miller (HIV Forum), Dan Taylor (Internet 2), Paul Duncan (Merck), Jianchao Yao (Merck &amp; Co., Inc., Boston, MA USA), Marilyn Matz (Paradigm4), Ben Busby (NCBI), Eugene Yaschenko (NCBI), Zhining Wang (NCI), Hsinyi (Steve) Tsang (NCI), Durga Addepalli (NCI/Attain), Heidi Sofia (NIH), Scott Jackson (NIST), Paul Walsh (NSilico Life Science), Toby Bloom (NYGC), Hiroki Morizono (CNMC), Jeremy Goecks (Oregon Health and Science University), Srikanth Gottipati (Otsuka-US), Alex Poliakov (Paradigm4), Keith Nangle (Pistoia Alliance), Jonas S Almeida (Stony Brook Univ, SUNY), Dennis A. Dean, II (Seven Bridges Genomics), Dustin Holloway (Seven Bridges Genomics), Nisha Agarwal (Solvuu), Stian Soiland-Reyes (UNIMAN), Carole Goble (UNIMAN), Susanna-Assunta Sansone (University of Oxford), Philippe Rocca-Serra (University of Oxford), Phil Bourne (Univ. of Virginia), Joseph Nooraga (Fred Hutchinson Cancer Research Center)</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4 footer">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-6">
+                
+                <div class="mx-0 mx-md-4 site-copyright">
+                    © 2018 - 2020 BioCompute. All rights reserved.
+                </div>
+                
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="mx-0 mx-md-4 site-social">
+                    <ul>
+                        
+                        <li><a href="mailto:object.biocompute@gmail.com">Contact</a></li>
+                        
+
+                        
+                        <li><a href="https://github.com/biocompute-objects" target="_blank">GitHub</a></li>
+                        
+
+                        
+
+                        
+
+                        
+                        <li><a href="https://twitter.com/BioComputeObj" target="_blank">Twitter</a></li>
+                        
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+</body>
+
+</html>

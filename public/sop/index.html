@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> BCO Curation SOP - BioCompute Object Documentation
+        </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="BioCompute Object Documentation" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/sop/" />
+    <meta property="og:title" content="BCO Curation SOP" />
+    <meta property="og:image" content="/" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@BioComputeObj">
+    <meta name="twitter:creator" content="@BioComputeObj">
+    
+    <meta name="twitter:title" content="BCO Curation SOP" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/" />
+
+    <link rel="canonical" href="/sop/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="/images/favicon.png">
+
+    
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="BioCompute Object Documentation" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-lg-5 header">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-home" href="/">
+                                
+                                Documentation Home
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-user_guide" href="/user_guide">
+                                
+                                User Guide
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-best_practices" href="/best_practices">
+                                
+                                Best Practices
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-sop" href="/sop">
+                                
+                                BioCompute Curation SOP
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-biocomputeobject.org" href="https://www.biocomputeobject.org/">
+                                
+                                BioCompute Object Home
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="markdown">
+                        
+    <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+<br>
+<h1 id="bco-curation-sop">BCO Curation SOP</h1>
+<h4 id="author-biocompute-consortium">Author: BioCompute Consortium</h4>
+<h4 id="version-20">Version: 2.0</h4>
+<h4 id="effective-date-aug-2020">Effective Date: Aug 2020</h4>
+<p><em>Intended audience: authors and developers</em></p>
+<p>The following recommendations are intended to provide guidance on BCO™ creation, versioning, certification and authentication.</p>
+<h2 id="bco-ids-and-versioning">BCO IDs and Versioning</h2>
+<p><em>Intended Audience: BCO authors</em></p>
+<ul>
+<li>BioCompute IDs are used as persistent URLs. A novel usability domain must result in the creation of a new BCO with a new BCO ID. BCO IDs are immutable upon creation, and are never deleted or retired. If the usability domain (UD) remains unchanged, this results in a new version of the BCO. BCO ID example: OMX_000001</li>
+<li>BCO major and minor versions can be incremented based on project/institution documented policies.</li>
+<li>The BioCompute consortium maintains a database of registered authorities. Registered authorities are able to assign their reserved prefixes to their own IDs in the object_id field, such as OMX_000001. We encourage that everyone registers a prefix at biocomputeobject.org.</li>
+</ul>
+<h2 id="biocompute-certifications-and-authentication">BioCompute Certification(s) and Authentication</h2>
+<p><em>Intended Audience: commercial or academic entities looking for additional BCO support</em></p>
+<p><strong>Platform certification:</strong> A BioCompute &ldquo;audit&rdquo; will be conducted by the BioCompute Consortium.
+Requirements include:</p>
+<ul>
+<li>IEEE-2791 conformant BCOs can be created</li>
+<li>Security (ex: immutable upon creation, secure sharing, platform security)</li>
+<li>Data QC processes on input/output</li>
+</ul>
+<p><strong>Syntactical certification:</strong> Code is available on GitHub for download and use to ensure standard compliance.</p>
+<p><strong>Scientific certification:</strong> BCO consortium members will participate in the certification process; each certification process is projected to take ~ 3 months to 1 year for the development of pipelines. Verification Kit: Input+output file(s) (in-silico generated), and Template BCO (tBCO) that includes error domain).</p>
+<p><strong>Template and Run Authentication:</strong> The Template BCO (tBCO) is created once along with a Verification Kit. Verification Kit includes usually in silico generated input files, BCO (with error domain) and output files. Run BCOs (rBCO) uses the tBCOs, and the only changes allowed are in input (excluding reference files/databases) and output files field. tBCOs and rBCOs can be authenticated using secure blockchain technology.</p>
+<ul>
+<li>Template certification requirements: Input + output files</li>
+<li>Run certification requirements: certified template + run BCO (to confirm that parameters and error domain are within range etc.)</li>
+</ul>
+<div class="text-center">
+<img src="/images/certification_requirements.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div><br>
+<h2 id="bco-metadata">BCO Metadata</h2>
+<p>The three metadata fields are filled out at the time of submission. Validity check fills in the <code>spec_version</code> with the IEEE URL, an option to run a SHA256 (or just input your own hash value) for <code>etag</code>, and <code>object_id</code> is assigned (with option to choose from any prefix associated with the account).</p>
+<h2 id="domain-specific-guidance">Domain-specific guidance</h2>
+<h3 id="_execution-domain_"><em>Execution domain</em></h3>
+<p>When recording manual curation, the <code>script</code> field of the <code>execution_domain</code> should link to a Google Document or GitHub markdown that describes the steps, either programmatically or in a stepwise fashion. Manual curation steps should ALSO be properly documented in the <code>description_domain</code>. An easy way to conceptualize this is: Description domain is for people, Execution domain is for machine (or programmers).</p>
+<h3 id="_extension-domain_"><em>Extension domain</em></h3>
+<p>Format of how the schema would be defined: <a href="https://raw.githubusercontent.com/biocompute-objects/extension_domain/1.0.0/dataset/dataset_extension.json">Execution domain</a></p>
+<h3 id="_error-domain_"><em>Error domain</em></h3>
+<p>This domain can support a “QA/QC rules” subdomain which provides rules that, if the output file does not pass the appropriate criteria, then it is flagged as an error.</p>
+<h2 id="bco-form-based-portal">BCO Form-based portal</h2>
+<p><em>Intended Audience: BCO tool developers and authors</em></p>
+<p>BCOs can be created using any bioinformatics platform that has BCO read and write functionalities. For users who do not have access to a bioinformatics platform they can use the <a href="https://portal.aws.biochemistry.gwu.edu/sign-in">BCO Consortium Editor tool</a> which has some of the basic API functionalities:</p>
+<ul>
+<li>Create a BCO that is conformant to IEEE-2791.</li>
+<li>Upload BCOs in batch mode. The tool runs QA/QC processes on those uploads and create unique IDs</li>
+<li>Search for existing BCOs by author/title/usability/keywords</li>
+<li>Download and install an instance within an organization’s firewall</li>
+<li>View videos and documentation on tool use</li>
+</ul>
+<p>This documentation is currently in the comment phase until Sept. 15, 2020. Please send your comments to Jonathon Keeney.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4 footer">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-6">
+                
+                <div class="mx-0 mx-md-4 site-copyright">
+                    © 2018 - 2020 BioCompute. All rights reserved.
+                </div>
+                
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="mx-0 mx-md-4 site-social">
+                    <ul>
+                        
+                        <li><a href="mailto:object.biocompute@gmail.com">Contact</a></li>
+                        
+
+                        
+                        <li><a href="https://github.com/biocompute-objects" target="_blank">GitHub</a></li>
+                        
+
+                        
+
+                        
+
+                        
+                        <li><a href="https://twitter.com/BioComputeObj" target="_blank">Twitter</a></li>
+                        
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+</body>
+
+</html>

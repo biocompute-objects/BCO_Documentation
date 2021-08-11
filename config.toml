@@ -32,29 +32,40 @@ twitter = "BioComputeObj"
 identifier = "home"
 name = "Documentation Home"
 url = "/"
-
 weight = 1
+
+[[menu.primary]]
+identifier = "about"
+name = "About "
+url = "/about"
+weight = 2
 
 [[menu.primary]]
 identifier = "user_guide"
 name = "User Guide"
 url = "/user_guide"
-weight = 2
+weight = 3
 
 [[menu.primary]]
 identifier = "best_practices"
 name = "Best Practices"
 url = "/best_practices"
-weight = 3
-
-[[menu.primary]]
-identifier = "sop"
-name = "BioCompute Curation SOP"
-url = "/sop"
 weight = 4
 
 [[menu.primary]]
-identifier = "biocomputeobject.org"
-name = "BioCompute Object Home"
-url = "https://www.biocomputeobject.org/"
+identifier = "sop"
+name = "Curation SOP"
+url = "/sop"
 weight = 5
+
+[[menu.primary]]
+identifier = "events"
+name = "News & Events"
+url = "/events"
+weight = 6
+
+[[menu.primary]]
+identifier = "biocomputeobject.org"
+name = "BioCompute Portal"
+url = "http://portal.biochemistry.gwu.edu/"
+weight = 7

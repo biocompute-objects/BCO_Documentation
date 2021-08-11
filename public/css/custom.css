@@ -1,0 +1,352 @@
+/* Global styles */
+
+body {
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-feature-settings: "liga", "kern";
+}
+
+/* Fix jumping scrollbar when switching to long pages */
+
+html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+}
+
+/* link */
+
+a {
+    color: #0071bc;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover, a:focus, a:active {
+    color: #8cc53f;
+    text-decoration: none;
+}
+
+/* landing content */
+
+.landing {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+}
+
+.landing p {
+    margin-bottom: 1.5rem;
+}
+
+/* horizontal rule */
+
+hr {
+    border: 0;
+    border-top: 1px solid #e1e9f4;
+}
+
+.footer hr {
+    margin: 1.3rem 1.52rem 1.3rem 1.52rem;
+}
+
+/* Partial: Colors */
+
+.text-patreon {
+    color: #F96854 !important;
+}
+
+.text-ko-fi {
+    color: #DF5000 !important;
+}
+
+.text-bmc {
+    color: #FF813F !important;
+}
+
+/* Partial: Header */
+
+.header a:hover {
+    text-decoration: none;
+}
+
+.header ul.nav li {
+    font-size: 1rem;
+}
+
+.header ul.nav li a.text-events {
+    color: #8cc53f;
+}
+
+.header ul.nav li a.text-events:hover {
+    color: #0071bc;
+}
+
+/* Partial: Content */
+
+.content .page-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.005rem;
+    text-transform: "capitalize";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.content h1, h2, h3, h4, h5, h6 {
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.content .meta {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #738491;
+    margin-bottom: 10px;
+}
+
+.content .meta a {
+    text-decoration: none;
+}
+
+.content .middot:before {
+    margin: 0 3px;
+    content: "·";
+}
+
+.content .caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #738491;
+    font-size: 0.9rem;
+}
+
+.content .markdown {
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #333333;
+    line-height: 1.75rem;
+}
+
+.content .markdown li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content twitterwidget {
+    margin: auto;
+}
+
+.content .meta, .content .markdown h1, .content .markdown h2, .content .markdown h3, .content .markdown h4, .content .markdown h5, .content .markdown h6, .content .markdown p, .content .markdown ul, .content .markdown ol, .content .markdown dl, .content .markdown blockquote, .gist-file {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+div.alert {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+div.alert p {
+    margin-bottom: 0;
+}
+
+/* blog post typography */
+
+.content .blog-post-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.content .blog-post-content {
+    font-size: 1.3125rem;
+    line-height: 2rem;
+}
+
+/* centered, boxed blog post images */
+
+.content .figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 100%;
+}
+
+.content .markdown code, .content .markdown pre {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-color: #fff;
+}
+
+.content .markdown code {
+    /* enclosed by single backtick (`) */
+    color: #333;
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 1rem;
+    background-color: rgba(27, 31, 35, .05);
+    border-radius: 6px;
+}
+
+.content .markdown pre {
+    /* Hugo specific: consider using the 'highlight' shortcode */
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    line-height: 20px;
+    white-space: pre;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.content .markdown pre code, .content .markdown pre output {
+    /* enclosed by 4 backticks (````) */
+    padding: 0;
+    font-size: 0.75rem;
+    line-height: 20px;
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.content .markdown blockquote {
+    padding: 0.5rem 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #7a7a7a;
+    border-left: 0.25rem solid #595959;
+}
+
+.content .markdown blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.content .markdown figure {
+    background: #fff;
+}
+
+.content .groupby {
+    list-style: none;
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.content .post-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.content .post-item .meta-date {
+    font-size: 1.125rem;
+    color: #738491;
+    line-height: 2rem;
+    display: block;
+    min-width: 10rem;
+}
+
+.content .post-item .meta-title {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin-left: -3rem;
+}
+
+.content .navigation .icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Partial: Utterances Comments */
+
+.comments {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 100%;
+}
+
+/* Partial: Footer */
+
+.footer {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.footer a {
+    color: #333333;
+}
+
+.footer a:hover, .footer a:focus {
+    color: #0071bc;
+}
+
+.footer a {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.footer a:first-child {
+    margin-left: 0;
+}
+
+.footer a:last-child {
+    margin-right: 0;
+}
+
+.site-copyright {
+    min-width: 16em;
+}
+
+.site-social {
+    text-align: right;
+}
+
+.site-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.site-social li {
+    display: inline-block;
+}
+
+.site-social li:not(:last-child)::after {
+    content: '|';
+    color: #e1e9f4;
+    margin: 0 0.3rem 0 0.5rem;
+}
+
+/* < medium screens */
+
+@media (max-width: 767.98px) {
+    html {
+        font-size: 0.9rem;
+    }
+    .content .meta, .content .markdown h1, .content .markdown h2, .content .markdown h3, .content .markdown h4, .content .markdown h5, .content .markdown h6, .content .markdown p, .content .markdown ul, .content .markdown ol, .content .markdown dl, .content .markdown blockquote {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* < large screens */
+
+@media (max-width: 991.98px) {
+    .footer hr {
+        margin: 1.3rem 0rem 1.3rem 0rem;
+    }
+    .site-social {
+        text-align: left;
+    }
+}
