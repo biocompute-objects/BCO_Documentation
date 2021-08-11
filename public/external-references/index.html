@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> External References - BioCompute Object Documentation
+        </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="BioCompute Object Documentation" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/external-references/" />
+    <meta property="og:title" content="External References" />
+    <meta property="og:image" content="/" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@BioComputeObj">
+    <meta name="twitter:creator" content="@BioComputeObj">
+    
+    <meta name="twitter:title" content="External References" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/" />
+
+    <link rel="canonical" href="/external-references/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="/images/favicon.png">
+
+    
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="BioCompute Object Documentation" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-lg-5 header">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-home" href="/">
+                                
+                                Documentation Home
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-user_guide" href="/user_guide">
+                                
+                                User Guide
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-best_practices" href="/best_practices">
+                                
+                                Best Practices
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-sop" href="/sop">
+                                
+                                BioCompute Curation SOP
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-biocomputeobject.org" href="https://www.biocomputeobject.org/">
+                                
+                                BioCompute Object Home
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="markdown">
+                        
+    <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+<br>
+<p><em>This document is part of the <a href="/user_guide">BioCompute Object User Guide</a></em></p>
+<p><em>Back to <a href="/bco-domains">BCO domains</a></em></p>
+<h2 id="32-appendix-ii-external-reference-database-list">3.2 Appendix-II: External reference database list</h2>
+<p>This list contains the databases that are currently being used in our BCOs. We use the CURIEs that map to URIs maintained by <a href="http://identifiers.org/">http://identifiers.org/</a></p>
+<blockquote>
+<p><em>Identifiers.org</em> is an established resolving system the enables the referencing of data for the scientific community, with a current focus on the Life Sciences domain. <em>Identifiers.org</em> provides direct access to the identified data using one selected physical location (or resource). Where multiple physical locations are recorded in the <a href="http://identifiers.org/registry">registry</a> the most stable one is selected for resolution. This allows the location independent referencing (and resolution if required) of data records.&quot;</p>
+</blockquote>
+<p>In the entries below the <code>namespace</code> and identifier combine to become the CURIEs.</p>
+<pre><code>Recommended name: Taxonomy
+Namespace: taxonomy
+Identifier pattern: ^\d+$
+Registry identifier: MIR:00000006
+URI: http://identifiers.org/taxonomy/
+
+
+Recommended name: Sequence Ontology
+Namespace: so
+Identifier pattern: ^SO:\d{7}$
+Registry identifier: MIR:00000081
+URI: http://identifiers.org/so/
+
+Recommended name: PubMed
+Namespace: pubmed
+Identifier pattern: ^\d+$
+Registry identifier: MIR:00000015
+URI: http://identifiers.org/pubmed/
+
+Recommended name: PubChem-compound
+Namespace: pubchem.compound
+Identifier pattern: ^\d+$
+Registry identifier: MIR:00000034
+URI: http://identifiers.org/pubchem.compound/
+</code></pre>
+<p>For instance, the inline CURIE <code>[taxonomy:31646]</code> expands to <a href="http://identifiers.org/taxonomy/31646">http://identifiers.org/taxonomy/31646</a> as the namespace <code>taxonomy</code> corresponds to the prefix <a href="http://identifiers.org/taxonomy/">http://identifiers.org/taxonomy/</a> to be augmented with the identifier <code>31646</code>.  Resolving the resulting URI will redirect (currently to <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=31646">https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=31646</a>) showing that term <code>[taxonomy:31646]</code> means <em>Hepatitis C virus subtype 1a</em> in the NCBI Taxonomy browser.</p>
+<p>Note that some identifier patterns result in a repetition when combined with the prefix, e.g. <code>[so:SO:0000667]</code>  expands to <a href="http://identifiers.org/so/SO:0000667">http://identifiers.org/so/SO:0000667</a> where <code>so:</code> is the prefix and <code>SO:</code> is part of the Sequence Ontology identifier.</p>
+<h2 id="references">References</h2>
+<p>McMurry JA et al: <strong>Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data</strong>. <em>PLoS Biology</em> <strong>15</strong>(6): e2001414.
+<a href="https://doi.org/10.1371/journal.pbio.2001414">https://doi.org/10.1371/journal.pbio.2001414</a></p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4 footer">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-6">
+                
+                <div class="mx-0 mx-md-4 site-copyright">
+                    © 2018 - 2020 BioCompute. All rights reserved.
+                </div>
+                
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="mx-0 mx-md-4 site-social">
+                    <ul>
+                        
+                        <li><a href="mailto:object.biocompute@gmail.com">Contact</a></li>
+                        
+
+                        
+                        <li><a href="https://github.com/biocompute-objects" target="_blank">GitHub</a></li>
+                        
+
+                        
+
+                        
+
+                        
+                        <li><a href="https://twitter.com/BioComputeObj" target="_blank">Twitter</a></li>
+                        
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+</body>
+
+</html>

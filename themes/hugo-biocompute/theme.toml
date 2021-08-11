@@ -1,0 +1,10 @@
+name = "biocompute"
+description = "A Bootstrap-based theme for Hugo."
+homepage = "https://github.com/biocompute-objects/BCO_Specification/"
+tags = ["bootstrap", "responsive"]
+min_version = 0.17
+
+[author]
+  name = "HadleyKing"
+  homepage = "https://github.com/HadleyKing"
+  repo = "https://github.com/biocompute-objects/BCO_Specification/"

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> BCO Introduction - BioCompute Object Documentation
+        </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="BioCompute Object Documentation" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/introduction/" />
+    <meta property="og:title" content="BCO Introduction" />
+    <meta property="og:image" content="/" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@BioComputeObj">
+    <meta name="twitter:creator" content="@BioComputeObj">
+    
+    <meta name="twitter:title" content="BCO Introduction" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/" />
+
+    <link rel="canonical" href="/introduction/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="/images/favicon.png">
+
+    
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="BioCompute Object Documentation" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-lg-5 header">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-home" href="/">
+                                
+                                Documentation Home
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-user_guide" href="/user_guide">
+                                
+                                User Guide
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-best_practices" href="/best_practices">
+                                
+                                Best Practices
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-sop" href="/sop">
+                                
+                                BioCompute Curation SOP
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-biocomputeobject.org" href="https://www.biocomputeobject.org/">
+                                
+                                BioCompute Object Home
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="markdown">
+                        
+    <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+<br>
+<p><em>This document is part of the <a href="/user_guide">BioCompute Object User Guide</a></em></p>
+<h1 id="1-introduction-to-biocompute-objects">1 Introduction to BioCompute Objects</h1>
+<p>BioCompute is a paradigm and a BioCompute Object (BCO) is an instance of that paradigm. High-throughput sequencing (HTS), also referred to as next-generation sequencing (NGS) or massively parallel sequencing (MPS), has increased the pace at which we generate, compute and share genomic data in biomedical sciences. As a result, scientists, clinicians and regulators are now faced with a new data paradigm that is less portable, more complex and most of all poorly standardized. BCOs use a simple implementation of the JSON schema to encode important information on the execution of computational pipelines, or for the creation of knowledgebases. BioCompute can be process oriented (for software pipelines) and/or product oriented (for knowledge bases). The goal of using a BCO is to streamline communication of these details between stakeholders in academia, industry and regulatory agencies.</p>
+<p>The US Food and Drug Administration (FDA) and George Washington University (GW) have partnered to establish a framework for community-based standards development and harmonization of HTS computations and data formats. Standardized HTS data processing and data formats will promote interoperability and simplify the verification of bioinformatics protocols. To do this, a schema has been developed to represent instances of computational analysis as a BCO. A BCO includes:</p>
+<ul>
+<li>Information about parameters and versions of the executable programs in a pipeline</li>
+<li>Reference to input and output test data for verification of the pipeline</li>
+<li>A usability domain</li>
+<li>Keywords</li>
+<li>A list of agents involved along with other important metadata, such as their specific contribution</li>
+</ul>
+<p>Knowledge of input data is intended to be captured according to existing efforts, including <a href="https://www.ncbi.nlm.nih.gov/pubmed/24653214">MIRAGE</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/17687369">MIAPE</a>, and <a href="https://www.beilstein-strenda-db.org/strenda/">STRENDA</a>, and to be in accordance with <a href="https://www.ncbi.nlm.nih.gov/pubmed/18688244">Minimum Information Standards</a>. In addition to all the information captured in the BCO, the BCO itself must be independent of the execution environment, whether it is a local high-performance or a cloud-based infrastructure.</p>
+<p>Additional, non-normative, information on BCOs:</p>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5510742/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5510742/</a></p>
+<h2 id="11-mission-of-the-biocompute-project">1.1 Mission of the BioCompute project</h2>
+<ul>
+<li>Develop BioCompute Objects that will facilitate communication of HTS computational analysis details with the FDA.</li>
+<li>Develop a community of stakeholders to create a versatile data harmonization framework that allows the standardized definition of platform-independent bioinformatics pipelines for execution, and is easily read by humans AND machines.</li>
+<li>Facilitate the development of tools and facilities implementing data typing, instantiation, deposition, storage, and distribution of validated BioCompute Objects through a BioCompute database, in order to enable reproducible scientific research and regulatory submissions of data and computations.</li>
+<li>Facilitate portability of pipelines for execution on Public Cloud infrastructure.</li>
+</ul>
+<h2 id="12-motivation">1.2 Motivation</h2>
+<p>The unpredictability of tangible physical, chemical, and biological experiments due to the multitude of environmental and procedural factors is well documented. What is often systematically overlooked is that computational biology algorithms are affected by a multiplicity of parameters and are no less volatile. The complexities of computation protocols and interpretation of outcomes is only part of the challenge; there are also virtually no standardized and industry-accepted metadata schemas for reporting the computational pipelines and parameters together with their results. Thus, it is often impossible to reproduce the results of a previously performed computation due to missing information on parameters, versions, arguments, conditions, and procedures of application launch. The BCO concept has been developed specifically to satisfy regulatory research needs for evaluation, validation, and verification of bioinformatics pipelines; however, there is potential utility of BCO within the larger scientific community. This utility can be increased through the creation of a BCO database comprising records relevant to the U.S. Food and Drug Administration.</p>
+<p>A BioCompute Object database record will be similar to a GenBank record in form; however, instead of describing a sequence, the BioCompute record will include information related to parameters, dependencies, usage, and other information related to the specific computational instance. This mechanism will extend similar efforts and also serve as a collaborative ground to ensure interoperability between different platforms, industries, scientists, regulators, and other stakeholders interested in biocomputing.</p>
+<p>For more information, see the project description on the <a href="https://wayback.archive-it.org/7993/20180126133504/https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm491893.htm">FDA Extramural Research</a> page.</p>
+<h3 id="121-limitations-of-the-initial-effort">1.2.1 Limitations of the initial effort</h3>
+<ul>
+<li>At the initial stages of BioCompute development, we address the challenges of HTS (NGS) bioinformatics.</li>
+<li>BCOs could very easily be extended to other types of computational analysis, and at this stage, we are limiting our focus to HTS analysis and database creation.</li>
+</ul>
+<h2 id="13-audience-for-this-document">1.3 Audience for this document</h2>
+<ul>
+<li>Users performing HTS analysis with a regulatory science perspective</li>
+<li>HTS Platform Developers</li>
+<li>HTS related standard developers</li>
+</ul>
+<h2 id="14-potential-stakeholders-for-the-biocompute-project">1.4 Potential Stakeholders for the BioCompute project</h2>
+<ul>
+<li>US Food and Drug Administration, as well as other Regulatory Agencies</li>
+<li>Medical product manufacturers and their suppliers</li>
+<li>Laboratories developing clinical testing protocols</li>
+<li>Bioinformatics tool and platform developers who wish to operate in a regulatory environment, including cloud service (PaaS, IaaS, SaaS, FaaS) providers</li>
+<li>Journals / Scientific Publishing / peer reviewing process</li>
+<li>US National Institutes of Health (NIH) (particularly initiatives such as NCI/ITCR)</li>
+<li>Public cloud companies operating in the Life Sciences sector including electronic health record (EHR) systems</li>
+</ul>
+<h2 id="15-bco-user-stories">1.5 BCO User stories</h2>
+<h3 id="reproducibility-and-interpretation-use-case">Reproducibility and Interpretation use case</h3>
+<p>A pharmaceutical company is submitting NGS data and the FDA conducts a reanalysis of the data. The reanalysis does not concur with the original results. It can be very lengthy and costly to figure out the location of the discrepancies. Attaching a BioCompute Object with the initial submission would prevent most of the ambiguity surrounding the discrepancies.</p>
+<h3 id="reusability-use-case">Reusability use case</h3>
+<p>A regulatory decision has been made where a computational analysis has been used as evidence. New data emerges after the product has been on the market over a year and the regulators cannot reproduce the original environment with the configuration of tools and parameters of pipelines to reanalyze the initial submission data or replicate the initial conclusion.</p>
+<h3 id="collaboration-use-case">Collaboration use case</h3>
+<p>Authors and pharmaceutical scientists are unaware of how the regulatory industry is using workflows to analyze data. Openness and transparency are hindered by the lack of ability to communicate, not a lack of willingness. Scientific merit is compromised as a result of not having a common &ldquo;language&rdquo; for communicating computations.</p>
+<h3 id="accountability-use-case">Accountability use case</h3>
+<p>A bioinformatics platform provider can use BCO as part of its verification and validation process. A customer submits NGS data provided by a third party sequencing provider. The sequencing data is poor quality. Reproducible pipelines, validated and verified as a &ldquo;BCO&rdquo;, were used to demonstrate the fault lies in the sequencing step and not the bioinformatics pipeline.</p>
+<h3 id="versioning-use-case">Versioning use case</h3>
+<p>One potential use case related to this is one of &lsquo;differential impact&rsquo; of how different choices in the workflow affect the outcome of the computational analysis/experiment (e.g. changing expression estimation procedure).</p>
+<h3 id="provenance-use-case">Provenance use case</h3>
+<p>BCOs can serve as a history of what was computed. An example pertaining to provenance, from experience: data are generated and QC&rsquo;ed as far as possible, and then passed on for analysis. The analysis diagnoses a problem with one or more samples (e.g., cryptic relatedness), which are then locally excluded from the analysis. But that exclusion is not reflected back to the original data, and the same bad samples are included in the next analysis. In this way, a record exists of which samples can be excluded in future analysis.</p>
+<h3 id="data-integration-use-case">Data integration use case</h3>
+<p>A BCO can be used to provide clarity and transparency of the data integration process to both the new and existing collaborators. When new data is integrated into the existing data model, BCO can be used to describe data source information (eg- authors/contributors, data version etc), a QC workflow, data content, data modification if any. The BCO also allows reuse of the same workflow to integrate new data with same structure and source. BCO also provides a way to access and track data records which were eliminated in the integration/QC process due to rules or restrictions of the existing data model. Knowledgebases using BCOs in the form of ‘readme’ can provide provenance for every piece of data that is collected and presented to the user. Such granular tracking facilitates fair sharing of data and provides mechanisms for adherence to licensing requirements associated with specific datasets.</p>
+<h2 id="16-bco-community">1.6 BCO community</h2>
+<p>The BioCompute Object working group facilitates a means for different stakeholders in the HTS communities to provide input on current practices on the BCO. This working group was formed during preparation for the <a href="https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017">2017 HTS Computational Standards for Regulatory Sciences Workshop</a>, and was initially made up of the workshop participants, both speakers and panelists. There has been a continual growth of the BCO working group as a direct result of the interaction between the stakeholders interested in standardization of computational HTS data processing.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4 footer">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-6">
+                
+                <div class="mx-0 mx-md-4 site-copyright">
+                    © 2018 - 2020 BioCompute. All rights reserved.
+                </div>
+                
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="mx-0 mx-md-4 site-social">
+                    <ul>
+                        
+                        <li><a href="mailto:object.biocompute@gmail.com">Contact</a></li>
+                        
+
+                        
+                        <li><a href="https://github.com/biocompute-objects" target="_blank">GitHub</a></li>
+                        
+
+                        
+
+                        
+
+                        
+                        <li><a href="https://twitter.com/BioComputeObj" target="_blank">Twitter</a></li>
+                        
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+</body>
+
+</html>

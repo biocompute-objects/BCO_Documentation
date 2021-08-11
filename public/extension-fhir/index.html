@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> BCO Introduction - BioCompute Object Documentation
+        </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="BioCompute Object Documentation" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/extension-fhir/" />
+    <meta property="og:title" content="BCO Introduction" />
+    <meta property="og:image" content="/" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@BioComputeObj">
+    <meta name="twitter:creator" content="@BioComputeObj">
+    
+    <meta name="twitter:title" content="BCO Introduction" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/" />
+
+    <link rel="canonical" href="/extension-fhir/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="/images/favicon.png">
+
+    
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="BioCompute Object Documentation" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-lg-5 header">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-home" href="/">
+                                
+                                Documentation Home
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-user_guide" href="/user_guide">
+                                
+                                User Guide
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-best_practices" href="/best_practices">
+                                
+                                Best Practices
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-sop" href="/sop">
+                                
+                                BioCompute Curation SOP
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-biocomputeobject.org" href="https://www.biocomputeobject.org/">
+                                
+                                BioCompute Object Home
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="markdown">
+                        
+    <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+<br>
+<p><em>This document is part of the <a href="/user_guide">BioCompute Object User Guide</a></em></p>
+<p><em>Back to <a href="/bco-domains">BCO domains</a></em></p>
+<h3 id="231-extension-to-external-references-smart-on-fhir-genomics">2.3.1 Extension to External References: SMART on FHIR Genomics</h3>
+<p>The external references <strong>example</strong> extension to FHIR resource demonstrates how specific data elements can be extracted from EHR systems or other secure FHIR endpoints via technologies such as SMART on FHIR Genomics (<a href="https://www.ncbi.nlm.nih.gov/pubmed/26198304">https://www.ncbi.nlm.nih.gov/pubmed/26198304</a>) without compromising patient and providers’ information. This is because the portions being transferred contain no identifiable information about the patient. Instead there is a reference to the actual resource instance (via FHIR URL) through which all data is accessed.</p>
+<p>The <code>fhir_extension</code> is defined as an array of endpoints from which to fetch resources.</p>
+<p><code>fhir_endpoint</code> is a string containing the URL of the endpoint of the FHIR server containing the resource. <code>fhir_version</code> must be present showing the FHIR version used.</p>
+<p><code>fhir_resources</code> is an array of resources to fetch from the endpoint, where <code>fhir_resource</code> is a string containing the type of resource used according to the specified version. (a full list of permitted FHIR 3 resources is available at <a href="http://hl7.org/fhir/STU3/resourcelist.html">http://hl7.org/fhir/STU3/resourcelist.html</a>) <code>fhir_id</code> is a string containing the server-specific identifier for the resource instance.</p>
+<p>The link to FHIR can also be added to the usability domain.  More on FHIR Genomics in release 3 of FHIR can be found here: <a href="https://www.hl7.org/fhir/genomics.html">https://www.hl7.org/fhir/genomics.html</a></p>
+<p>SMART on FHIR Genomics provides a framework for EHR-based apps built on FHIR that integrate clinical and genomic information. For more information on how to use the SMART on FHIR Genomics apps, please visit <a href="http://projects.iq.harvard.edu/smartgenomics/">http://projects.iq.harvard.edu/smartgenomics/</a>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    <span style="color:#d14">&#34;extension_domain&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span>{
+        <span style="color:#000080">&#34;fhir_extension&#34;</span>: [
+            {
+                <span style="color:#000080">&#34;fhir_endpoint&#34;</span>: <span style="color:#d14">&#34;http://fhirtest.uhn.ca/baseDstu3&#34;</span>,
+                <span style="color:#000080">&#34;fhir_version&#34;</span>: <span style="color:#d14">&#34;3&#34;</span>,
+                <span style="color:#000080">&#34;fhir_resources&#34;</span>: [
+                    {
+                        <span style="color:#000080">&#34;fhir_resource&#34;</span>: <span style="color:#d14">&#34;Sequence&#34;</span>,
+                        <span style="color:#000080">&#34;fhir_id&#34;</span>: <span style="color:#d14">&#34;21376&#34;</span>
+                    },
+                    {
+                        <span style="color:#000080">&#34;fhir_resource&#34;</span>: <span style="color:#d14">&#34;DiagnosticReport&#34;</span>,
+                        <span style="color:#000080">&#34;fhir_id&#34;</span>: <span style="color:#d14">&#34;6288583&#34;</span>
+                    },
+                    {
+                        <span style="color:#000080">&#34;fhir_resource&#34;</span>: <span style="color:#d14">&#34;ProcedureRequest&#34;</span>,
+                        <span style="color:#000080">&#34;fhir_id&#34;</span>: <span style="color:#d14">&#34;25544&#34;</span>
+                    },
+                    {
+                        <span style="color:#000080">&#34;fhir_resource&#34;</span>: <span style="color:#d14">&#34;Observation&#34;</span>,
+                        <span style="color:#000080">&#34;fhir_id&#34;</span>: <span style="color:#d14">&#34;92440&#34;</span>
+                    },
+                    {
+                        <span style="color:#000080">&#34;fhir_resource&#34;</span>: <span style="color:#d14">&#34;FamilyMemberHistory&#34;</span>,
+                        <span style="color:#000080">&#34;fhir_id&#34;</span>: <span style="color:#d14">&#34;4588936&#34;</span>
+                    }
+                ]
+            }
+</code></pre></div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4 footer">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-6">
+                
+                <div class="mx-0 mx-md-4 site-copyright">
+                    © 2018 - 2020 BioCompute. All rights reserved.
+                </div>
+                
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="mx-0 mx-md-4 site-social">
+                    <ul>
+                        
+                        <li><a href="mailto:object.biocompute@gmail.com">Contact</a></li>
+                        
+
+                        
+                        <li><a href="https://github.com/biocompute-objects" target="_blank">GitHub</a></li>
+                        
+
+                        
+
+                        
+
+                        
+                        <li><a href="https://twitter.com/BioComputeObj" target="_blank">Twitter</a></li>
+                        
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+</body>
+
+</html>

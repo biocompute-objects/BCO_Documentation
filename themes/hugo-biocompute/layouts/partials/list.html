@@ -1,0 +1,8 @@
+<li class="post-item">
+    <div class="col-3 meta-date">
+        {{ .Date.Format  "2006-01-02" }}
+    </div>
+    <div class="col-9 meta-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </div>
+</li>

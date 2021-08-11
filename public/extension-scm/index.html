@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Extension to External References: Software Configuration Management (SCM) - BioCompute Object Documentation
+        </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="BioCompute Object Documentation" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/extension-scm/" />
+    <meta property="og:title" content="Extension to External References: Software Configuration Management (SCM)" />
+    <meta property="og:image" content="/" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@BioComputeObj">
+    <meta name="twitter:creator" content="@BioComputeObj">
+    
+    <meta name="twitter:title" content="Extension to External References: Software Configuration Management (SCM)" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/" />
+
+    <link rel="canonical" href="/extension-scm/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="/images/favicon.png">
+
+    
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="BioCompute Object Documentation" />
+    
+</head>
+
+<body>
+    
+    <div class="my-4 my-lg-5 header">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-home" href="/">
+                                
+                                Documentation Home
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-user_guide" href="/user_guide">
+                                
+                                User Guide
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-best_practices" href="/best_practices">
+                                
+                                Best Practices
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-sop" href="/sop">
+                                
+                                BioCompute Curation SOP
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-biocomputeobject.org" href="https://www.biocomputeobject.org/">
+                                
+                                BioCompute Object Home
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="markdown">
+                        
+    <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'biocompute-objects/BCO_Specification'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<div class="col-lg-6 offset-lg-3 text-center">
+<img src="/images/logo.about.png" class="img-fluid mx-auto d-block" width="75%" alt="BioCompute Logo">
+</div>
+<br>
+<p><em>This document is part of the <a href="/user_guide">BioCompute Object User Guide</a></em></p>
+<p><em>Back to <a href="/bco-domains">BCO domains</a></em></p>
+<h3 id="232-extension-to-external-references-software-configuration-management-scm">2.3.2 Extension to External References: Software Configuration Management (SCM)</h3>
+<p>The external references <strong>example</strong> extension to a SCM repository demonstrates how a BioCompute Object software source code can be stored/deposited/downloaded. The BCO would contain links to the SCM repository where the information is stored and easily retrieved. The links to the SCM can be added to the usability domain as well.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#d14">&#34;extension_domain&#34;</span><span style="color:#a61717;background-color:#e3d2d2">:</span>{
+        <span style="color:#000080">&#34;scm_extension&#34;</span>: {
+            <span style="color:#000080">&#34;scm_repository&#34;</span>: <span style="color:#d14">&#34;https://github.com/example/repo1&#34;</span>,
+            <span style="color:#000080">&#34;scm_type&#34;</span>: <span style="color:#d14">&#34;git&#34;</span>,
+            <span style="color:#000080">&#34;scm_commit&#34;</span>: <span style="color:#d14">&#34;c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21&#34;</span>,
+            <span style="color:#000080">&#34;scm_path&#34;</span>: <span style="color:#d14">&#34;workflow/hive-viral-mutation-detection.cwl&#34;</span>,
+            <span style="color:#000080">&#34;scm_preview&#34;</span>: <span style="color:#d14">&#34;https://github.com/example/repo1/blob/c9ffea0b60fa3bcf8e138af7c99ca141a6b8fb21/workflow/hive-viral-mutation-detection.cwl&#34;</span>
+      }
+}
+</code></pre></div><h4 id="2321-scm-repository-scm_repository">2.3.2.1 SCM Repository &ldquo;scm_repository&rdquo;</h4>
+<p>The base url for the SCM repository.</p>
+<h4 id="2322-scm-type-scm_type">2.3.2.2 SCM Type &ldquo;scm_type&rdquo;</h4>
+<p>A classifier for the type of SCM database. This feild is a list of predefined values. Third-party scm types can be used, and if so the <code>other</code> value MUST be used. The options for this field include <code>git</code> (Git, including GitHub/GitLab), <code>svn</code> (Subversion), <code>hg</code> (mercurial) and <code>other</code>.</p>
+<h4 id="2323-scm-commit-scm_commit">2.3.2.3 SCM Commit &ldquo;scm_commit&rdquo;</h4>
+<p>This field is a reference to a revision within the scm repository. This SHOULD be a repository-wide commit identifier (e.g. afba51a222e199f5b58f9d19450f189055e93c44 or name of a tag (e.g. v1.0.0), but MAY be a name of a branch (e.g. master).</p>
+<h4 id="2324-scm-path-scm_path">2.3.2.4 SCM Path &ldquo;scm_path&rdquo;</h4>
+<p>This is the path from the repository to the source code referenced. <code>scm_path</code> should NOT start with <code>/</code></p>
+<h4 id="2325-scm-preview-scm_preview">2.3.2.5 SCM Preview &ldquo;scm_preview&rdquo;</h4>
+<p>The full uri for the source code referenced by the BioCompute.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4 footer">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-6">
+                
+                <div class="mx-0 mx-md-4 site-copyright">
+                    © 2018 - 2020 BioCompute. All rights reserved.
+                </div>
+                
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="mx-0 mx-md-4 site-social">
+                    <ul>
+                        
+                        <li><a href="mailto:object.biocompute@gmail.com">Contact</a></li>
+                        
+
+                        
+                        <li><a href="https://github.com/biocompute-objects" target="_blank">GitHub</a></li>
+                        
+
+                        
+
+                        
+
+                        
+                        <li><a href="https://twitter.com/BioComputeObj" target="_blank">Twitter</a></li>
+                        
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+</body>
+
+</html>
