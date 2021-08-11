@@ -1,5 +1,5 @@
 ---
-title: "BCO Introduction"
+title: "Extension to External References: Software Configuration Management (SCM)"
 menu: "main"
 ---
 
