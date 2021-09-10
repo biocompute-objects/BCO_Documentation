@@ -13,6 +13,22 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <br>
 
+### Table of contents
+
+<a href="#7-28-21">Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</a> <br>
+<a href="#5-12-21">Workflow Preservation and Reproducibility with BCO-RO</a> <br>
+<a href="#11-20-20">Introduction to workflow portability with BCO-CWL</a> <br>
+<a href="#03-18-20">BioCompute Advisory Boards Workshop</a> <br>
+<a href="#06-24-20">BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</a> <br>
+<a href="#09-24-20">BioCompute Objects: Methods for communicating provenance of data and analysis</a> <br>
+<a href="#05-14-19">BioCompute Objects: Tools for Communicating NGS Data and Analysis</a> <br>
+<a href="#05-14-19">BioCompute Objects PoC Workshop</a> <br>
+<a href="#09-24-2014">2014 Public Workshop: Next Generation Sequencing Standards</a><br>
+<a href="#Previous Presentations">Previous Presentations</a><br>
+
+
+<br>
+
 
 <div class="row" >
 
