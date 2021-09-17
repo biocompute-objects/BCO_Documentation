@@ -15,8 +15,9 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 ### Table of contents
 
-<a href="#7-28-21">Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</a> <br>
+<a href="#3-27-21">BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</a> <br>
 <a href="#5-12-21">Workflow Preservation and Reproducibility with BCO-RO</a> <br>
+<a href="#7-28-21">Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</a> <br>
 <a href="#11-20-20">Introduction to workflow portability with BCO-CWL</a> <br>
 <a href="#03-18-20">BioCompute Advisory Boards Workshop</a> <br>
 <a href="#04-02-20">BioCompute in the AVTIG Webinar series</a> <br>
@@ -35,8 +36,25 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <div class="col-lg-9" markdown="1">
 
-<h2>Previous Workshops</h2>
+<h2>Previous Events</h2>
 <h3>2021</h3>
+<h4><a name="3-27-21"></a>BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</h4>
+
+<b>Date</b>: Saturday March 27 2021
+
+<b>Purpose</b>: 
+	<ul><li>Slides <a href="/content/GMU_27March2021.pdf">here</a></li></ul>
+
+	
+<br>
+
+<h4><a name="5-12-21"></a>Workflow Preservation and Reproducibility with BCO-RO</h4>
+
+<b>Date</b>: Wednesday May 12 at 11:00AM-12:30PM ET
+	
+<b>Purpose</b>: Training session showing how Research Objects (RO) can package BioCompute Objects (BCO) for Digital Preservation and Reproducibility. Research Objects (RO) are a machine-readable digital preservation effort that aims to package all constituent elements of an analysis together into one archive with very detailed provenance. Here, Stian Soiland-Reyes, a Technical Architect on the Research Objects project, will describe an example that packages the workflow as a descriptive, human-readable report in the form of a BioCompute Object (BCO), and which bundles everything in an RO "Crate." Stian will explain the Research Objects project, and introduce a tutorial for building an RO-BCO archive. RO-BCOs can be efficient solutions for scaling up data analyses, both for internal record keeping and logistics, and for communicating workflows to outside groups.
+	
+<br>
 <h3><a name="7-28-21"></a>Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</h3>
 
 <b>Date</b>: Wednesday July 28 at 11:00AM-12:30PM ET
@@ -45,14 +63,6 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <b>Speaker</b>: Dr. Dennis A. Dean, II is a Principal Investigator at Seven Bridges. He manages and builds interdisciplinary teams that develop complex tools and conduct data analyses from conception to deployment/completion. He leads the Translational Science and Analytics Team that includes data scientists, bioinformaticians, and genomic data scientists. He is responsible for the success of his team members across commercial, government, and internal projects. He leads collaborations with the U.S. Food and Drug Administration (FDA), the U.S. Department of Veteran Affairs Million Veteran Program (MVP) and collaborates with large pharmaceutical companies. Dr. Dean trained as a research fellow in medicine at the Harvard Medical School and Brigham and Women’s Hospital in the Program for Sleep Epidemiology and the Program for Sleep and Cardiovascular Medicine. He earned his Ph.D. in biomedical engineering and biotechnology and M.S. in computer science from the University of Massachusetts. He earned his B.S. in computer science from SUNY, Empire State College.
 	
-<br>
-
-<h4><a name="5-12-21"></a>Workflow Preservation and Reproducibility with BCO-RO</h4>
-
-<b>Date</b>: Wednesday May 12 at 11:00AM-12:30PM ET
-	
-	
-<b>Purpose</b>: Training session showing how Research Objects (RO) can package BioCompute Objects (BCO) for Digital Preservation and Reproducibility. Research Objects (RO) are a machine-readable digital preservation effort that aims to package all constituent elements of an analysis together into one archive with very detailed provenance. Here, Stian Soiland-Reyes, a Technical Architect on the Research Objects project, will describe an example that packages the workflow as a descriptive, human-readable report in the form of a BioCompute Object (BCO), and which bundles everything in an RO "Crate." Stian will explain the Research Objects project, and introduce a tutorial for building an RO-BCO archive. RO-BCOs can be efficient solutions for scaling up data analyses, both for internal record keeping and logistics, and for communicating workflows to outside groups.
 
 	
 <h3>2020</h3>
