@@ -25,6 +25,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <a href="#04-21-20">BioCompute in the MODSIM Webinar series</a> <br>
 <a href="#06-24-20">BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</a> <br>
 <a href="#09-24-20">BioCompute at Biocuration 2020</a> <br>
+<a href="#11-5-20">BioCompute at FDA SCB 2020</a> <br>
 <a href="#05-14-19">BioCompute Objects: Tools for Communicating NGS Data and Analysis</a> <br>
 <a href="#05-14-19">BioCompute Objects PoC Workshop</a> <br>
 <a href="#09-24-2014">2014 Public Workshop: Next Generation Sequencing Standards</a><br>
@@ -116,10 +117,16 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <br>
 	
+<h4><a name="11-5-20"></a>BioCompute at FDA SCB 2020: Progress Towards the BioCompute Database </h4>
+
+<b>Date</b>: Thursday November 5th 2020
+	<ul><li>Slides available <a href="/content/SCB_5November2020_Public.pdf">here</a></li></ul>
+
+
+<br>	
 <h4><a name="11-20-20"></a>Introduction to workflow portability with BCO-CWL</h4>
 
 <b>Date</b>: Friday November 20th 2020 at 12-2PM ET
-
 	
 <b>Purpose</b>: BioCompute Objects (BCOs) were developed to aid in communicating a more thorough understanding of computational analyses. While BCOs can be leveraged for re-execution within the context of specific platforms that have integrated them, they are not used for cross platform implementations. Common Workflow Language (CWL) was developed to assist in the portability of execution, meaning the ability to reproduce a pipeline in a different computational environment. The BCO and CWL teams have partnered over the last year to develop a joint mechanism that enables both portability of execution and strong human- and machine-readable documentation through metadata records. New functionality of BCO-CWL means that a reviewer may be able to independently run a computational pipeline used by a sponsor if using a command line environment, or on a platform that supports CWL. This presentation will go over the project by introducing the concept of portability of execution, the concept of a CWL file, and demonstrate the initial draft of a BCO-CWL implementation.
 <br>
