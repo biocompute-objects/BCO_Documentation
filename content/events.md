@@ -70,6 +70,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Date</b>: Wednesday March 18, 2020 2-4pm ET
 
 <b>Purpose</b>: The purpose of this workshop is to facilitate dialogue between Advisory Board(s) members on BioCompute applications, vocabulary, and current + future progression of the project through a hands-on approach. These discussions are a means to obtain feedback, introduce potential use-cases, and bring everyone up to speed about BioCompute.
+	<ul><li>Slides <a href="/content/AdvisoryBoardWorkshop_18March2020.pdf">here</a></li></ul>
 <br>
 <br>
 <h4><a name="06-24-20"></a>BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</h4>
