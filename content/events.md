@@ -20,6 +20,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <a href="#7-28-21">Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</a> <br>
 <a href="#11-20-20">Introduction to workflow portability with BCO-CWL</a> <br>
 <a href="#03-18-20">BioCompute Advisory Boards Workshop</a> <br>
+<a href="#03-23-20">BioCompute in the Microbiome: Building a Healthy Gut Database and Microbial Populations in Epilepsy</a> <br>
 <a href="#04-02-20">BioCompute in the AVTIG Webinar series</a> <br>
 <a href="#06-24-20">BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</a> <br>
 <a href="#09-24-20">BioCompute at Biocuration 2020</a> <br>
@@ -45,12 +46,11 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Purpose</b>: 
 	<ul><li>Slides <a href="/content/GMU_27March2021.pdf">here</a></li></ul>
 
-	
 <br>
 
 <h4><a name="5-12-21"></a>Workflow Preservation and Reproducibility with BCO-RO</h4>
 
-<b>Date</b>: Wednesday May 12 at 11:00AM-12:30PM ET
+<b>Date</b>: Wednesday May 12 2021 at 11:00AM-12:30PM ET
 	
 <b>Purpose</b>: Training session showing how Research Objects (RO) can package BioCompute Objects (BCO) for Digital Preservation and Reproducibility. Research Objects (RO) are a machine-readable digital preservation effort that aims to package all constituent elements of an analysis together into one archive with very detailed provenance. Here, Stian Soiland-Reyes, a Technical Architect on the Research Objects project, will describe an example that packages the workflow as a descriptive, human-readable report in the form of a BioCompute Object (BCO), and which bundles everything in an RO "Crate." Stian will explain the Research Objects project, and introduce a tutorial for building an RO-BCO archive. RO-BCOs can be efficient solutions for scaling up data analyses, both for internal record keeping and logistics, and for communicating workflows to outside groups.
 	
@@ -74,6 +74,13 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Purpose</b>: The purpose of this workshop is to facilitate dialogue between Advisory Board(s) members on BioCompute applications, vocabulary, and current + future progression of the project through a hands-on approach. These discussions are a means to obtain feedback, introduce potential use-cases, and bring everyone up to speed about BioCompute.
 	<ul><li>Slides <a href="/content/AdvisoryBoardWorkshop_18March2020.pdf">here</a></li></ul>
 <br>
+<h4><a name="03-23-20"></a>BioCompute in the Microbiome: Building a Healthy Gut Database and Microbial Populations in Epilepsy</h4>
+
+<b>Date</b>: Wednesday March 23, 2020
+
+<b>Purpose</b>: 
+	<ul><li>Slides <a href="/content/Microbiome_GU_23March2020.pdf">here</a></li></ul>
+<br>		
 <h4><a name="04-02-20"></a>BioCompute: A Standardized Method to Communicate Bioinformatic Workflow Information and Ease Organizational Burden</h4>
 <h6><i>Part of the Advanced Virus Detection Technologies Interest Group Webinar series</i></h6>
 <b>Date</b>: Thursday April 2, 2020 
