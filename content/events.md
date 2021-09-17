@@ -38,7 +38,6 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <h2>Previous Workshops</h2>
 <h3>2021</h3>
 <h3><a name="7-28-21"></a>Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</h3>
-<h3><a href="https://www.eventbrite.com/e/workflow-capture-reproducibility-biocompute-objects-in-seven-bridges-p-tickets-162673277151">Register here! </a></h3>
 
 <b>Date</b>: Wednesday July 28 at 11:00AM-12:30PM ET
 	
@@ -78,12 +77,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Date</b>: Wednesday June 24, 2020 10am-12pm ET
 
 <b>Purpose</b>: The purpose of this workshop is to facilitate dialogue and show BCO utility specifically for FDA reviewers. We will be briefly discussing BioCompute applications, vocabulary, current + future progression of the project in addition to a hands-on approach to reviewing a BCO for. These discussions are a means to introduce BCO as a tool for submission evaluation mechanism obtain feedback.
-
-<ul>
-	<li><i>Slide deck available [here](/docs/ReviewerWorkshop_24June2020_Deck.pdf)</i></li>
-	<li><i>Quick reference guide can be found [here](/docs/BCOCheatSheet.pdf) (PDF)</i></li>
-	<li><i>Post-workshop attendee survey available [here](https://www.surveymonkey.com/r/Q9LXSC6)</i></li>
-</ul>
+	<ul><li>Slide deck available <a href="/content/ReviewerWorkshop_24June2020_BCOTeam2.pdf">here</a></li></ul>
 <br>
 
 <h4><a name="09-24-20"></a>BioCompute Objects: Methods for communicating provenance of data and analysis</h4>
