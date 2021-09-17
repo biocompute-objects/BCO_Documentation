@@ -41,10 +41,8 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <h2>Previous Events</h2>
 <h3>2021</h3>
 <h4><a name="3-27-21"></a>BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</h4>
-
 <b>Date</b>: Saturday March 27 2021
-
-<b>Purpose</b>: 
+	
 	<ul><li>Slides <a href="/content/GMU_27March2021.pdf">here</a></li></ul>
 
 <br>
@@ -54,6 +52,8 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Date</b>: Wednesday May 12 2021 at 11:00AM-12:30PM ET
 	
 <b>Purpose</b>: Training session showing how Research Objects (RO) can package BioCompute Objects (BCO) for Digital Preservation and Reproducibility. Research Objects (RO) are a machine-readable digital preservation effort that aims to package all constituent elements of an analysis together into one archive with very detailed provenance. Here, Stian Soiland-Reyes, a Technical Architect on the Research Objects project, will describe an example that packages the workflow as a descriptive, human-readable report in the form of a BioCompute Object (BCO), and which bundles everything in an RO "Crate." Stian will explain the Research Objects project, and introduce a tutorial for building an RO-BCO archive. RO-BCOs can be efficient solutions for scaling up data analyses, both for internal record keeping and logistics, and for communicating workflows to outside groups.
+	<ul><li>Slides <a href="/content/RO-BCO-Intro_12May2021_Public (1).pdf">here</a></li></ul>
+
 	
 <br>
 <h3><a name="7-28-21"></a>Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</h3>
