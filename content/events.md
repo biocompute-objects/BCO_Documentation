@@ -21,7 +21,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <a href="#03-18-20">BioCompute Advisory Boards Workshop</a> <br>
 <a href="#04-02-20">BioCompute in the AVTIG Webinar series</a> <br>
 <a href="#06-24-20">BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</a> <br>
-<a href="#09-24-20">BioCompute Objects: Methods for communicating provenance of data and analysis</a> <br>
+<a href="#09-24-20">BioCompute at Biocuration 2020</a> <br>
 <a href="#05-14-19">BioCompute Objects: Tools for Communicating NGS Data and Analysis</a> <br>
 <a href="#05-14-19">BioCompute Objects PoC Workshop</a> <br>
 <a href="#09-24-2014">2014 Public Workshop: Next Generation Sequencing Standards</a><br>
@@ -94,6 +94,8 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 	
 <b>Purpose</b>: Inform about BioCompute Object use and purpose and offer tutelage in the creation and use of BCOs
 <ul><li>Abstract available <a href="https://drive.google.com/file/d/1aYdfM6Ph2eJ9a1-1s96vFyiFQGkCtmsY/view">here</a></li></ul>
+<ul><li>Slides available <a href="/content/Biocuration_24Sep2020.pdf">here</a></li></ul>
+
 <br>
 	
 <h4><a name="11-20-20"></a>Introduction to workflow portability with BCO-CWL</h4>
