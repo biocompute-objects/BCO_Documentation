@@ -22,6 +22,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <a href="#03-18-20">BioCompute Advisory Boards Workshop</a> <br>
 <a href="#03-23-20">BioCompute in the Microbiome: Building a Healthy Gut Database and Microbial Populations in Epilepsy</a> <br>
 <a href="#04-02-20">BioCompute in the AVTIG Webinar series</a> <br>
+<a href="#04-21-20">BioCompute in the MODSIM Webinar series</a> <br>
 <a href="#06-24-20">BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</a> <br>
 <a href="#09-24-20">BioCompute at Biocuration 2020</a> <br>
 <a href="#05-14-19">BioCompute Objects: Tools for Communicating NGS Data and Analysis</a> <br>
@@ -87,6 +88,12 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <b>Purpose</b>: The purpose of this workshop is to []
 	<ul><li>Slides <a href="/content/AVDTIG_2April2020.pdf">here</a></li></ul>
+<br>
+<h4><a name="04-21-20"></a>MODSIM</h4>
+<h6><i>Part of the MODSIM Interest Group Webinar series</i></h6>
+<b>Date</b>: Thursday April 21, 2020 
+<b>Purpose</b>: The purpose of this workshop is to []
+	<ul><li>Slides <a href="/content/MODSIM_B_Public_21April2020.pdf">here</a></li></ul>
 <br>
 	
 <h4><a name="06-24-20"></a>BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</h4>
