@@ -19,6 +19,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <a href="#5-12-21">Workflow Preservation and Reproducibility with BCO-RO</a> <br>
 <a href="#11-20-20">Introduction to workflow portability with BCO-CWL</a> <br>
 <a href="#03-18-20">BioCompute Advisory Boards Workshop</a> <br>
+<a href="#04-02-20">BioCompute in the AVTIG Webinar series</a> <br>
 <a href="#06-24-20">BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</a> <br>
 <a href="#09-24-20">BioCompute Objects: Methods for communicating provenance of data and analysis</a> <br>
 <a href="#05-14-19">BioCompute Objects: Tools for Communicating NGS Data and Analysis</a> <br>
@@ -57,14 +58,6 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 	
 <h3>2020</h3>
 
-<h4><a name="11-20-20"></a>Introduction to workflow portability with BCO-CWL</h4>
-
-<b>Date</b>: Friday November 20th at 12-2PM ET
-
-	
-<b>Purpose</b>: BioCompute Objects (BCOs) were developed to aid in communicating a more thorough understanding of computational analyses. While BCOs can be leveraged for re-execution within the context of specific platforms that have integrated them, they are not used for cross platform implementations. Common Workflow Language (CWL) was developed to assist in the portability of execution, meaning the ability to reproduce a pipeline in a different computational environment. The BCO and CWL teams have partnered over the last year to develop a joint mechanism that enables both portability of execution and strong human- and machine-readable documentation through metadata records. New functionality of BCO-CWL means that a reviewer may be able to independently run a computational pipeline used by a sponsor if using a command line environment, or on a platform that supports CWL. This presentation will go over the project by introducing the concept of portability of execution, the concept of a CWL file, and demonstrate the initial draft of a BCO-CWL implementation.
-<br>
-<br>
 <h4><a name="03-18-20"></a>BioCompute Advisory Boards Workshop</h4>
 
 <b>Date</b>: Wednesday March 18, 2020 2-4pm ET
@@ -72,7 +65,14 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Purpose</b>: The purpose of this workshop is to facilitate dialogue between Advisory Board(s) members on BioCompute applications, vocabulary, and current + future progression of the project through a hands-on approach. These discussions are a means to obtain feedback, introduce potential use-cases, and bring everyone up to speed about BioCompute.
 	<ul><li>Slides <a href="/content/AdvisoryBoardWorkshop_18March2020.pdf">here</a></li></ul>
 <br>
+<h4><a name="04-02-20"></a>BioCompute: A Standardized Method to Communicate Bioinformatic Workflow Information and Ease Organizational Burden</h4>
+<h6><i>Part of the Advanced Virus Detection Technologies Interest Group Webinar series</i></h6>
+<b>Date</b>: Thursday April 2, 2020 
+
+<b>Purpose</b>: The purpose of this workshop is to []
+	<ul><li>Slides <a href="/content/AVDTIG_2April2020.pdf">here</a></li></ul>
 <br>
+	
 <h4><a name="06-24-20"></a>BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</h4>
 
 <b>Date</b>: Wednesday June 24, 2020 10am-12pm ET
@@ -90,14 +90,19 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <h6><i>Part of the <a href="https://www.biocuration.org/biocuration-2020-online-workshops/">Biocuration 2020 Online Workshop</a> series</i></h6>
 
-<b>Date</b>: Thursday September 24, 9am PT, 12pm ET, 5pm CET
-
-<b>Organizers</b>: Charles Hadley King, Raja Mazumder, Jonathon Keeney; George Washington University
-
+<b>Date</b>: Thursday September 24, 2020 9am PT, 12pm ET, 5pm CET
+	
 <b>Purpose</b>: Inform about BioCompute Object use and purpose and offer tutelage in the creation and use of BCOs
-
 <ul><li>Abstract available <a href="https://drive.google.com/file/d/1aYdfM6Ph2eJ9a1-1s96vFyiFQGkCtmsY/view">here</a></li></ul>
+<br>
+	
+<h4><a name="11-20-20"></a>Introduction to workflow portability with BCO-CWL</h4>
 
+<b>Date</b>: Friday November 20th 2020 at 12-2PM ET
+
+	
+<b>Purpose</b>: BioCompute Objects (BCOs) were developed to aid in communicating a more thorough understanding of computational analyses. While BCOs can be leveraged for re-execution within the context of specific platforms that have integrated them, they are not used for cross platform implementations. Common Workflow Language (CWL) was developed to assist in the portability of execution, meaning the ability to reproduce a pipeline in a different computational environment. The BCO and CWL teams have partnered over the last year to develop a joint mechanism that enables both portability of execution and strong human- and machine-readable documentation through metadata records. New functionality of BCO-CWL means that a reviewer may be able to independently run a computational pipeline used by a sponsor if using a command line environment, or on a platform that supports CWL. This presentation will go over the project by introducing the concept of portability of execution, the concept of a CWL file, and demonstrate the initial draft of a BCO-CWL implementation.
+<br>
 <br>
 
 <h2>2019<h2>
