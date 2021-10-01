@@ -102,7 +102,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Date</b>: Wednesday June 24, 2020 10am-12pm ET
 
 <b>Purpose</b>: The purpose of this workshop is to facilitate dialogue and show BCO utility specifically for FDA reviewers. We will be briefly discussing BioCompute applications, vocabulary, current + future progression of the project in addition to a hands-on approach to reviewing a BCO for. These discussions are a means to introduce BCO as a tool for submission evaluation mechanism obtain feedback.
-	<ul><li>Slide deck available <a href="/docs/ReviewerWorkshop_24June2020_BCOTeam2.pdf">here</a></li></ul>
+	<ul><li>Slide deck available <a href="/docs/ReviewerWorkshop_24June2020_Deck.pdf">here</a></li></ul>
 <br>
 
 <h4><a name="09-24-20"></a>BioCompute Objects: Methods for communicating provenance of data and analysis</h4>
