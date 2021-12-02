@@ -43,8 +43,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <h3>2021</h3>
 <h4><a name="3-27-21"></a>BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</h4>
 <b>Date</b>: Saturday March 27 2021
-	
-	<ul><li>Slides <a href="/content/GMU_27March2021.pdf">here</a></li></ul>
+	<ul><li>Slides <a href="/docs/GMU_27March2021.pdf">here</a></li></ul>
 
 <br>
 
@@ -53,7 +52,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Date</b>: Wednesday May 12 2021 at 11:00AM-12:30PM ET
 	
 <b>Purpose</b>: Training session showing how Research Objects (RO) can package BioCompute Objects (BCO) for Digital Preservation and Reproducibility. Research Objects (RO) are a machine-readable digital preservation effort that aims to package all constituent elements of an analysis together into one archive with very detailed provenance. Here, Stian Soiland-Reyes, a Technical Architect on the Research Objects project, will describe an example that packages the workflow as a descriptive, human-readable report in the form of a BioCompute Object (BCO), and which bundles everything in an RO "Crate." Stian will explain the Research Objects project, and introduce a tutorial for building an RO-BCO archive. RO-BCOs can be efficient solutions for scaling up data analyses, both for internal record keeping and logistics, and for communicating workflows to outside groups.
-	<ul><li>Slides <a href="/docs/RO-BCO-Intro_12May2021_Public (1).pdf">here</a></li></ul>
+	<ul><li>Slides <a href="/docs/RO-BCO-Intro_12May2021_Public.pdf">here</a></li></ul>
 
 	
 <br>
@@ -81,20 +80,20 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Date</b>: Wednesday March 23, 2020
 
 <b>Purpose</b>: 
-	<ul><li>Slides <a href="/content/Microbiome_GU_23March2020.pdf">here</a></li></ul>
+	<ul><li>Slides <a href="/docs/Microbiome_GU_23March2020.pdf">here</a></li></ul>
 <br>		
 <h4><a name="04-02-20"></a>BioCompute: A Standardized Method to Communicate Bioinformatic Workflow Information and Ease Organizational Burden</h4>
 <h6><i>Part of the Advanced Virus Detection Technologies Interest Group Webinar series</i></h6>
 <b>Date</b>: Thursday April 2, 2020 
 
 <b>Purpose</b>: The purpose of this workshop is to []
-	<ul><li>Slides <a href="/content/AVDTIG_2April2020.pdf">here</a></li></ul>
+	<ul><li>Slides <a href="/docs/AVDTIG_2April2020.pdf">here</a></li></ul>
 <br>
 <h4><a name="04-21-20"></a>MODSIM</h4>
 <h6><i>Part of the MODSIM Interest Group Webinar series</i></h6>
 <b>Date</b>: Thursday April 21, 2020 
 <b>Purpose</b>: The purpose of this workshop is to []
-	<ul><li>Slides <a href="/content/MODSIM_B_Public_21April2020.pdf">here</a></li></ul>
+	<ul><li>Slides <a href="/docs/MODSIM_B_Public_21April2020.pdf">here</a></li></ul>
 <br>
 	
 <h4><a name="06-24-20"></a>BioCompute Workshop for Reviewers: Tool for Communicating Sequencing Analysis</h4>
@@ -113,14 +112,14 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 	
 <b>Purpose</b>: Inform about BioCompute Object use and purpose and offer tutelage in the creation and use of BCOs
 <ul><li>Abstract available <a href="https://drive.google.com/file/d/1aYdfM6Ph2eJ9a1-1s96vFyiFQGkCtmsY/view">here</a></li></ul>
-<ul><li>Slides available <a href="/content/Biocuration_24Sep2020.pdf">here</a></li></ul>
+<ul><li>Slides available <a href="/docs/Biocuration_24Sep2020.pdf">here</a></li></ul>
 
 <br>
 	
 <h4><a name="11-5-20"></a>BioCompute at FDA SCB 2020: Progress Towards the BioCompute Database </h4>
 
 <b>Date</b>: Thursday November 5th 2020
-	<ul><li>Slides available <a href="/content/SCB_5November2020_Public.pdf">here</a></li></ul>
+	<ul><li>Slides available <a href="/docs/SCB_5November2020_Public.pdf">here</a></li></ul>
 
 
 <br>	

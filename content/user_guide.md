@@ -16,7 +16,7 @@ menu: "main"
 
 <br>
 
-BioCompute Quick Start Guide can be found [here](/content/documents/CheatSheet_V07_jgk1_hk1.pdf) 
+BioCompute Quick Start Guide can be found [here](/docs/CheatSheet_V07_jgk1_hk1.pdf) 
 
 ##### This document was created by the [BioCompute Object Consortium members (BCOC)](#biocompute-object-consortium-members-bcoc)
 
