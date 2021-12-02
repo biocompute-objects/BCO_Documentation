@@ -67,5 +67,5 @@ weight = 6
 [[menu.primary]]
 identifier = "biocomputeobject.org"
 name = "BioCompute Portal"
-url = "http://beta.portal.aws.biochemistry.gwu.edu/"
+url = "https://biocomputeobject.org/"
 weight = 7
