@@ -53,7 +53,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Date</b>: Wednesday May 12 2021 at 11:00AM-12:30PM ET
 	
 <b>Purpose</b>: Training session showing how Research Objects (RO) can package BioCompute Objects (BCO) for Digital Preservation and Reproducibility. Research Objects (RO) are a machine-readable digital preservation effort that aims to package all constituent elements of an analysis together into one archive with very detailed provenance. Here, Stian Soiland-Reyes, a Technical Architect on the Research Objects project, will describe an example that packages the workflow as a descriptive, human-readable report in the form of a BioCompute Object (BCO), and which bundles everything in an RO "Crate." Stian will explain the Research Objects project, and introduce a tutorial for building an RO-BCO archive. RO-BCOs can be efficient solutions for scaling up data analyses, both for internal record keeping and logistics, and for communicating workflows to outside groups.
-	<ul><li>Slides <a href="/content/RO-BCO-Intro_12May2021_Public (1).pdf">here</a></li></ul>
+	<ul><li>Slides <a href="/docs/RO-BCO-Intro_12May2021_Public (1).pdf">here</a></li></ul>
 
 	
 <br>
@@ -74,7 +74,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <b>Date</b>: Wednesday March 18, 2020 2-4pm ET
 
 <b>Purpose</b>: The purpose of this workshop is to facilitate dialogue between Advisory Board(s) members on BioCompute applications, vocabulary, and current + future progression of the project through a hands-on approach. These discussions are a means to obtain feedback, introduce potential use-cases, and bring everyone up to speed about BioCompute.
-	<ul><li>Slides <a href="/content/AdvisoryBoardWorkshop_18March2020.pdf">here</a></li></ul>
+	<ul><li>Slides <a href="/docs/AdvisoryBoardWorkshop_18March2020.pdf">here</a></li></ul>
 <br>
 <h4><a name="03-23-20"></a>BioCompute in the Microbiome: Building a Healthy Gut Database and Microbial Populations in Epilepsy</h4>
 
