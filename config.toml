@@ -42,7 +42,7 @@ weight = 2
 
 [[menu.primary]]
 identifier = "user_guide"
-name = "User Guide"
+name = "Quick Start & User Guide"
 url = "/user_guide"
 weight = 3
 
