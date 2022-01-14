@@ -45,15 +45,21 @@ Condensed example:
 
 ### 2.5.1  Script "script"
 
-The Script field points to internal or external references to a script object that was used to perform computations for this BCO instance. This may be a reference to an object in GitHub, a computational service or any other type of script. 
+The Script field is an array containing pointers to a script object or objects. These can be internal or external references to objects that were used to perform computations for this BCO instance. These may be references to an object in GitHub, a computational service, or any other type of script. 
 
 ```json
- "script": ["https://example.com/workflows/antiviral_resistance_detection_hive.py"]
+"script": [
+    {
+        "uri": {
+            "uri": "https://example.com/workflows/antiviral_resistance_detection_hive.py"
+        }
+    }
+]
 ```
 
 ### 2.5.2 Script driver "script_driver"
 
-This field provides a space to indicate what kind of executable can be launched in order to perform a sequence of commands described in the script (see above) in order to run the pipeline. 
+This field provides a space to indicate what kind of executable can be launched in order to perform a sequence of commands described in the script (see above).
 
 ```json
 "script_driver": "shell"
@@ -61,7 +67,7 @@ This field provides a space to indicate what kind of executable can be launched 
 
 ### 2.5.3 Algorithmic tools and Software Prerequisites "software_prerequisites" 
 
-An optional multi-value field listing the minimal necessary prerequisites, library, tool versions needed to successfully run the script to produce BCO. The keys are `name`, `version`, and `uri`. 
+An array listing the minimal necessary prerequisites, library, and  tool versions needed to successfully run the pipeline described by the BCO. The keys are `name`, `version`, and `uri`. 
 
 ```json
         "software_prerequisites": [
@@ -87,7 +93,7 @@ An optional multi-value field listing the minimal necessary prerequisites, libra
 
 ### 2.5.4 External Data Endpoints "external_data_endpoints"
 
-An optional multi-value field listing the minimal necessary domain specific external data source access in order to successfully run the script to produce BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. 
+An array listing the minimal necessary domain specific external data sources accessed in order to successfully run the workflow described by the BCO. The values under this field present the requirements for network protocol endpoints used by a pipeline’s scripts, or other software. 
 
 The key `url` defines an endpoint to be accessed. If the _path_ of the URL is `/` then any resource at the given domain may be accessed, while if the path is more specific than only resources which path prefix matches may be accessed.
 

@@ -25,7 +25,7 @@ _Back to [BCO domains](/bco-domains)_
 
 This section defines the fields of the `description_domain` part of the [BCO](/bco-domains) structure.
 
-Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in journal format. It is possible that in the future this field can be semi-automatically generated from the execution_domain information. 
+Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in journal format. It is possible that some of these fields be automatically generated from the execution_domain information, and that some of them may repeat. 
 
 Condensed example:
 
@@ -77,7 +77,7 @@ This is a list of keywords to aid in search-ability and description of the exper
 
 ### 2.4.2 External References "xref"
 
-This field contains a list of the databases and/or ontology IDs that are cross-referenced in the BCO. The external references are used to provide more specificity in the information related to BCO entries. Cross-referenced resources need to be available in the public domain. The external references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by identifiers.org. See Appendix-II for a list of the CURIEs used in this example. 
+This field contains a list of the databases and/or ontology IDs that are cross-referenced in the BCO. The external references are used to provide more specificity in the information related to BCO entries. Cross-referenced resources need to be available in the public domain. The external references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by identifiers.org.
 
 ```json
         "xref": [
@@ -120,7 +120,7 @@ The multi-value reference to a particular deployment of an existing platform whe
 ```
 ### 2.4.4 Pipeline tools "pipeline_steps"
 
-This is an optional structured domain for recording the specifics of a pipeline. Each individual tool (or a well defined and reusable script) is represented as a step, at the discretion of the author. Parallel processes are given the same step number. This is required.
+This is a required structured domain for recording the specifics of a pipeline. Each individual tool (or a well defined and reusable script) is represented as a step, at the discretion of the author. Parallel processes are given the same step number.
 
 #### 2.4.4.1 Step Number "step_number"
 
