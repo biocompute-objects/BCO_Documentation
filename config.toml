@@ -14,7 +14,7 @@ pygmentsstyle = "github"
       unsafe = true
 
 [params]
-copyright = "© 2018 - 2020 BioCompute. All rights reserved."
+copyright = "© 2018 - 2022 BioCompute. All rights reserved."
 faviconfile = "images/favicon.png"
 posts_navigation = true
 uselatex = false

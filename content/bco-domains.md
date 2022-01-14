@@ -35,10 +35,6 @@ Condensed example:
     "usability_domain": [
     ],
     "extension_domain":{
-        "fhir_extension": [
-        ],
-        "scm_extension": {
-        }
     },
     "description_domain": {
     },
@@ -84,12 +80,11 @@ Definition:
 
 ## 2.3 Extension Domain "extension_domain"
 
-The `extension_domain` is a space for a user to add additional structured information that is not defined in the BioCompute shcema. The `extension_domain` section is not evaluated by checks for BCO validity or computational correctness and as such is the place to add *ANY* type of additional **structured** information. We provide two examples that are neither exclusive nor exhaustive.
+The `extension_domain` is a space for a user to add additional structured information that is not defined in the BioCompute shcema. The `extension_domain` is not defined by IEEE-2791-2020, except that each extension in the extension domain MUST provide a reference to the schema that defines it.  The extension domain is the place to add *ANY* type of additional **structured** information. We provide an example here that is neither exclusive nor exhaustive.
 
 Definitions:
 
-* [fhir extension](/extension-fhir)
-* [scm extension](/extension-scm)
+* [Extension domain](/extension-domain)
 
 
 ## 2.4 Description Domain "description_domain"
