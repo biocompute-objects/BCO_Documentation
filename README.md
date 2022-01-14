@@ -1,15 +1,8 @@
 BioCompute
 ==========
+BioCompute Portal: https://biocomputeobject.org
 
-This version: [1.4.0](https://github.com/biocompute-objects/BCO_Specification/tree/1.4.0)
-
-Previous version: [v1.3.1](https://github.com/biocompute-objects/BCO_Specification/releases/tag/1.3.1)
-
-BioCompute Partnership: https://biocomputeobject.org
-
-OSF page: https://osf.io/h59uh/ 
-
-GitHub repository for BioCompute Objects:
+GitHub Organization for BioCompute Object Repositories:
 https://github.com/biocompute-objects/
 
 [![Gitter](https://badges.gitter.im/biocompute-objects/community.svg)](https://gitter.im/biocompute-objects/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -28,53 +21,35 @@ To facilitate a means for different stakeholders in the HTS communities to provi
 
 ## Example
 
-A functional example of a BCO with associated input and output files, and including the optional empirical error domain: 
+Functional examples of a BCO with associated input and output files, and including the optional empirical error domain: 
 * [UVP-BCO](https://github.com/biocompute-objects/UVP-BCO)
+Other BCO Examples:
+* [HCV1a](//content/examples/HCV1a.json)
+* [HIVE_metagenomics](//content/examples/HIVE_metagenomics.json)
+* [glycosylation-sites-UniCarbKB.json](//content/examples/glycosylation-sites-UniCarbKB.json)
 
 ## User Guide 
 
 The [BioCompute Objects user guide](/content/user_guide.md) provides an introduction to implementing/writing a BCO for a pipeline and/or a workflow, and is taken from the [BioCompute Objects Specification Document](/IEEE_Docs/standard.md).
 
 ### Repository
+This repository host the content used to generate the BioCompute Documentation site at https://docs.biocomputeobject.org/
 
-Note that unless you are viewing a [release](https://github.com/biocompute-objects/BCO_Specification/releases) this is a draft subject to change.
-
-Table of content:
-
-* [BioCompute Object (BCO) User Guide](/content/user_guide.md)
-  * [Introduction to BioCompute Objects](/content/introduction.md)
-  * [BCO domains](/content/bco-domains.md)
-    * [Top level fields](/content/top-level.md)
-    * [Provenance domain](/content/provenance-domain.md)
-    * [Usability domain](/content/usability-domain.md)
-    * [FHIR extension](/content/extension-fhir.md)
-    * [SCM extension](/content/extension-scm.md)
-    * [Description domain](/content/description-domain.md)
-    * [Execution domain](/content/execution-domain.md)
-    * [Parametric domain](/content/parametric-domain.md)
-    * [Input and Output domain](/content/io-domain.md)
-    * [Error domain](/content/error-domain.md)
-  * [BCO expanded view example HCV1a.json](HCV1a.json)
 
 ## Specification
-### Current Release - 1.3.0
+### Current Release - IEEE-2791-2020
 
-For developers and advanced users, the [BCO specification (1.3.0)](/IEEE_Docs/standard.md) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
-
-
-### Previous Release
-
-For developers and advanced users, the [BCO specification (v1.2)](https://github.com/biocompute-objects/BCO_Specification/blob/v1.2/BCO_Spec_V1.2.pdf) provides authoritative documentation on the construction of BioCompute Objects before the implementation of JSON schema.
-
-See [releases](https://github.com/biocompute-objects/BCO_Specification/releases) for all releases of BCO object specification since moving to GitHub.
+For developers and advanced users, the BCO specification id dreived from [IEEE-2791-2020](https://opensource.ieee.org/2791-object/ieee-2791-schema) provides authoritative documentation on the construction of BioCompute Objects using [JSON schema](https://json-schema.org/). 
 
 ### Citation
-This standard was originaly prepared by [The BioCompute Object working group](/BCO_Spec_V1.2.md#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
 
-To reference the BCO standards, please use the following
-citation inclusive of the DOI:
+To reference the BioCompute Objects, please use the following citations inclusive of the DOI:
 
 Simonyan, V., Goecks, J., & Mazumder, R. (2017). ***Biocompute Objects — A Step towards Evaluation and Validation of Biomedical Scientific Computations.*** PDA Journal of Pharmaceutical Science and Technology, 71(2), 136–146. doi: [10.5731/pdajpst.2016.006734](http://doi.org/10.5731/pdajpst.2016.006734)
+
+Alterovitz G, Dean D A, Goble C, Crusoe M R, Soiland-Reyes S, Bell A, Hayes A, King, C H S, Taylor D, Johanson E, Thompson E E, Donaldson E, Morizono H, Tsang H S, Goecks J, Yao J, Almeida J S, Krampis K, Guo L, Walderhaug M, Walsh P, Kahsay R, Gottipati S, Bloom T, Lai Y, Simonyan V, Mazumder R. **Enabling Precision Medicine via standard communication of HTS provenance, analysis, and results**. PLOS Biology; 16(12): e3000099.2018. https://doi.org/10.1371/journal.pbio.3000099
+
+Patel JA, Dean DA, King CH, Xiao N, Koc S, Minina E, Golikov A, Brooks P, Kahsay R, Navelkar R, Ray M, Roberson D, Armstrong C, Mazumder R, Keeney J. **Bioinformatics tools developed to support BioCompute Objects**. Database (Oxford).2021 March 31; [PMID: 33784373](https://www.ncbi.nlm.nih.gov/pubmed/27974626)).
 
 ## Support, Community and Contributing
 
@@ -83,11 +58,3 @@ To suggest changes to [this repository](#Repository) we welcome contributions as
 BCO_Specification is licensed under the [BSD 3-Clause "New" or "Revised" License](./LICENSE)
 
 >A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
-
-## Mailing List
-
-As a subscriber to the BCO mailing list, you can post to it by sending a message tobiocomputels@hermes.gwu.edu (using the email address that is subscribed). This list is semi-automated and will send your message for review. 
-
-To subscribe or unsubscribe, please visit https://hermes.gwu.edu/cgi-bin/wa?A0=BIOCOMPUTELS and click `Subscribe` or `Unsubscribe` on the lower right. You can also unsubscribe from the list at any time by sending an email to listserv@hermes.gwu.edu, in which the body says: `unsubscribe biocomputels`
-
-This repository is in support of [2791-2020](https://standards.ieee.org/standard/2791-2020.html) - IEEE Approved Draft Standard for Bioinformatics Computations and Analyses Generated by High-Throughput Sequencing (HTS) to Facilitate Communication. Please also see our [OSF page](https://osf.io/h59uh/) or our [main page](https://biocomputeobject.org/) 
