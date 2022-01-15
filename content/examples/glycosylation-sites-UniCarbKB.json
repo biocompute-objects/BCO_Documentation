@@ -1,7 +1,7 @@
 {
     "object_id": "https://raw.githubusercontent.com/biocompute-objects/BCO_Specification/1.4.2glycosylation-sites-UniCarbKB",
     "etag": "5741d66ddf7881db33f7075ce8b64b941bd7cc001965f31682e5da9966c7f3ba",
-    "spec_version" : "https://w3id.org/ieee/ieee-2791-schema/",
+    "spec_version" : "https://w3id.org/ieee/ieee-2791-schema/2791object.json",
     "provenance_domain":{
         "name": "glycosylation-sites-UniCarbKB",
         "version": "1.0",

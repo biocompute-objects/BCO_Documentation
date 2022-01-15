@@ -29,7 +29,7 @@ Condensed example:
 ```json
 {
     "object_id": "https://example.com/BCO_948701/1.0",
-    "spec_version" : "https://w3id.org/ieee/ieee-2791-schema/",
+    "spec_version" : "https://w3id.org/ieee/ieee-2791-schema/2791object.json",
     "etag": "d41d8cd98f00b204e9800998ecf8427e",    
     "provenance_domain": {
     },
@@ -42,7 +42,7 @@ Condensed example:
 The version of the BCO specification used to define the BCO. It is recomended that this value be a permalink as defined in the [w3id.org/biocompute](https://github.com/perma-id/w3id.org/tree/master/biocompute) repository. 
 
 ```json
-"spec_version": "https://w3id.org/ieee/ieee-2791-schema/" 
+"spec_version": "https://w3id.org/ieee/ieee-2791-schema/2791object.json" 
 ```
 
 ### 2.0.2 BioCompute Object Identifier "object_id"
