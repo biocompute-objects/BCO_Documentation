@@ -30,15 +30,9 @@ twitter = "BioComputeObj"
 
 [[menu.primary]]
 identifier = "home"
-name = "Documentation Home"
+name = "Home"
 url = "/"
 weight = 1
-
-[[menu.primary]]
-identifier = "about"
-name = "About "
-url = "/about"
-weight = 2
 
 [[menu.primary]]
 identifier = "user_guide"
@@ -47,9 +41,9 @@ url = "/user_guide"
 weight = 3
 
 [[menu.primary]]
-identifier = "best_practices"
-name = "Best Practices"
-url = "/best_practices"
+identifier = "faq"
+name = "FAQ"
+url = "/faq"
 weight = 4
 
 [[menu.primary]]
@@ -69,3 +63,9 @@ identifier = "biocomputeobject.org"
 name = "BioCompute Portal"
 url = "http://biocomputeobject.org"
 weight = 7
+
+[[menu.primary]]
+identifier = "about"
+name = "About "
+url = "/about"
+weight = 8
