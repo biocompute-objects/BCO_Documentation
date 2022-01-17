@@ -57,7 +57,7 @@ The `"object_id"` consists of four different parts:
 | ------------ | ---------------------- | ---------------- | -------------- |
 |   https://   | biocomputeobject.org/  |   /BCO_000001    |     /1.5       |
 ````
-1) Protocol: [see Scheme in RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986#section-3.1)
+1) Protocol: It is RECOMMENDED that this be `https` or at least `http` [see Scheme in RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986#section-3.1) for more detail on protocols.
 2) Hostname: [see Host in RFC_3986](https://datatracker.ietf.org/doc/html/rfc3986#section-3.2.2)
 3) BCO Accession: composed of 2 parts separated by an underscore( `_`): 
      - the BCO Prefix: A 3-5 alphanumeric charaters. Preferably one registed via the [BioCompute Registry](/best_practices)

@@ -1,5 +1,5 @@
 ---
-title: "BCO Best Practice"
+title: "BCO FAQ"
 menu: "main"
 ---
 

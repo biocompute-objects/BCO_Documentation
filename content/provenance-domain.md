@@ -70,7 +70,7 @@ BCO versioning should adhere to semantic versioning. Given the above conditions 
 
 ### 2.1.3 Review "review"
 
-This is an array to hold reviewer identifiers and a description of the status of an object in the review process. The subtype `reviewer` contains field(s) for name, affiliation, email, and the contribution type of the reviewer. To further record author information, ORC IDs are included as they allow for the author to curate their information after submission. ORCID identifiers must be valid and must have the prefix https://orcid.org/. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the [PROV-O](https://www.w3.org/TR/prov-o/).
+This is an array to hold reviewer identifiers and a description of the status of an object in the review process. The subtype `reviewer` contains field(s) for name, affiliation, email, and the contribution type of the reviewer. To further record author information, ORCIDs are included as they allow for the author to curate their information after submission. ORCID identifiers must be valid and must have the prefix https://orcid.org/. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the [PROV-O](https://www.w3.org/TR/prov-o/).
 
 The "status" key describes the status of an object in the review process and the following are the possible values: 
 * `unreviewed` flag indicates that the object has been submitted, but no further evaluation or verification has occurred.  
