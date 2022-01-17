@@ -25,6 +25,7 @@ Jump To:
 
 <table><tr><td> 
 
+* [General](#general)</td><td> 
 * [Pipeline Steps](#pipeline-steps)</td><td> 
 * [Inputs & Outputs](#inputs-and-outputs)</td>
 </tr><td> 
@@ -35,8 +36,12 @@ Jump To:
 <tr><td> 
 </table>
 
-
 ----
+
+### General 
+1) #### Where would information regarding data sources and standard operating procedures be? Which specific domain?
+
+	Data sources should be recorded as described by the `input_subdomain` in the  ["io_domain"](/io-domain) and the `input_list` in the ["description_domain"](/description-domain). Standard operating procedures and any other information about data transformations SHOULD be elaborated upon in the ["usability_domain"](/usability-domain).
 
 ### Pipeline Steps
 
