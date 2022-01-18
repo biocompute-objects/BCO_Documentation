@@ -120,7 +120,9 @@ The multi-value reference to a particular deployment of an existing platform whe
 ```
 ### 2.4.4 Pipeline tools "pipeline_steps"
 
-This is a required structured domain for recording the specifics of a pipeline. Each individual tool (or a well defined and reusable script) is represented as a step, at the discretion of the author. Parallel processes are given the same step number.
+This is a required, structured domain for tracing the steps of a pipeline. Each individual tool (or a well defined and reusable script) is represented as a step, at the discretion of the author (e.g. a spot check of the data may not be officially included in pipeline_steps; however for minor steps like these it is recommended to mention them in the Usability Domain).
+
+Steps can be run in parallel. While the standard does not mandate any particular numbering schema, it is best practices to pick the most logically intuitive numbering system, and to keep numbering unique (i.e. do not repeat step numbers), such that each step has its own, unique integer. For example, a user may run a somatic SNV profiling step at the same time as a structural CNV analysis. Assume that an alignment is step #2, and that SNV profiling and CNV analysis follow this step. The user might (arbitrarily) call the SNV profiling step #3, and the CNV analysis step #4, instead of number both as #3. The fact that they pull from the output of the same step (#2) can easily be detected programmatically and represented in whatever way is suitable (e.g. graphically), but both still retain a unique numbering value.
 
 #### 2.4.4.1 Step Number "step_number"
 
