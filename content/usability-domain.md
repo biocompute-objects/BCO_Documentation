@@ -34,9 +34,9 @@ terminology used in the [`name`](provenance_domain.md#2.1.1-name-name), external
 This field is to provide a specific **scientific use case** and a description of the function of the
 object. A `usability_domain` should read like an abstract and conceptually can be broken down into these sections 
 1) Need 
-2) method 
-3) results 
-4) how the results can be used/interpreted.
+2) Method 
+3) Results 
+4) How the results can be used/interpreted.
 
 The usability domain along with keywords can help determine when and how the BCO can
 be used. It is recomended that a novel use of a specific BCO would result in the creation of a new
