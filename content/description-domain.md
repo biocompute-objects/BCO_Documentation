@@ -25,7 +25,7 @@ _Back to [BCO domains](/bco-domains)_
 
 This section defines the fields of the `description_domain` part of the [BCO](/bco-domains) structure.
 
-Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in journal format. It is possible that some of these fields be automatically generated from the execution_domain information, and that some of them may repeat. 
+Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in a standardized format. It is possible that some of these fields be automatically generated from the execution_domain information, and that some of them may repeat. 
 
 Condensed example:
 
