@@ -77,7 +77,7 @@ This is a list of keywords to aid in search-ability and description of the exper
 
 ### 2.4.2 External References "xref"
 
-This field contains a list of the databases and/or ontology IDs that are cross-referenced in the BCO. The external references are used to provide more specificity in the information related to BCO entries. Full path to resource is not necessary, only namespace and identifier. Cross-referenced resources need to be available in the public domain. The external references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by identifiers.org. If external resources were used that do not conform to the criteria for inclusion in the xref field, they should be listed elsewhere (e.g. Extension Domain).
+This field contains a list of the databases and/or ontology IDs that are cross-referenced in the BCO. The external references are used to provide more specificity in the information related to BCO entries. Full path to resource is not necessary, only namespace and identifier. The external references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by identifiers.org. Therefore, cross-referenced resources need to be available in the public domain. If external resources were used that do not conform to the criteria for inclusion in the xref field, they should be listed elsewhere (e.g. Extension Domain).
 
 ```json
         "xref": [
