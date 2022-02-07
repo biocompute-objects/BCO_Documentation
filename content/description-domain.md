@@ -25,7 +25,7 @@ _Back to [BCO domains](/bco-domains)_
 
 This section defines the fields of the `description_domain` part of the [BCO](/bco-domains) structure.
 
-Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in journal format. It is possible that in the future this field can be semi-automatically generated from the execution_domain information. 
+Structured field for description of external references, the pipeline steps, and the relationship of I/O objects. Information in this domain is not used for computation. This domain is meant to capture information that is currently being provided in FDA submission in a standardized format. It is possible that some of these fields be automatically generated from the execution_domain information, and that some of them may repeat. 
 
 Condensed example:
 
@@ -77,7 +77,7 @@ This is a list of keywords to aid in search-ability and description of the exper
 
 ### 2.4.2 External References "xref"
 
-This field contains a list of the databases and/or ontology IDs that are cross-referenced in the BCO. The external references are used to provide more specificity in the information related to BCO entries. Cross-referenced resources need to be available in the public domain. The external references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by identifiers.org. See Appendix-II for a list of the CURIEs used in this example. 
+This field contains a list of the databases and/or ontology IDs that are cross-referenced in the BCO. The external references are used to provide more specificity in the information related to BCO entries. Full path to resource is not necessary, only namespace and identifier. The external references are stored in the form of prefixed identifiers (CURIEs). These CURIEs map directly to the URIs maintained by identifiers.org. Therefore, cross-referenced resources need to be available in the public domain. If external resources were used that do not conform to the criteria for inclusion in the xref field, they should be listed elsewhere (e.g. Extension Domain).
 
 ```json
         "xref": [
@@ -120,7 +120,9 @@ The multi-value reference to a particular deployment of an existing platform whe
 ```
 ### 2.4.4 Pipeline tools "pipeline_steps"
 
-This is an optional structured domain for recording the specifics of a pipeline. Each individual tool (or a well defined and reusable script) is represented as a step, at the discretion of the author. Parallel processes are given the same step number. This is required.
+This is a required, structured domain for tracing the steps of a pipeline. Each individual tool (or a well defined and reusable script) is represented as a step, at the discretion of the author (e.g. a spot check of the data may not be officially included in pipeline_steps; however for minor steps like these it is recommended to mention them in the Usability Domain).
+
+Steps can be run in parallel. While the standard does not mandate any particular numbering schema, it is best practices to pick the most logically intuitive numbering system, and to keep numbering unique (i.e. do not repeat step numbers), such that each step has its own, unique integer. For example, a user may run a somatic SNV profiling step at the same time as a structural CNV analysis. Assume that an alignment is step #2, and that SNV profiling and CNV analysis follow this step. The user might (arbitrarily) call the SNV profiling step #3, and the CNV analysis step #4, instead of number both as #3. The fact that they pull from the output of the same step (#2) can easily be detected programmatically and represented in whatever way is suitable (e.g. graphically), but both still retain a unique numbering value.
 
 #### 2.4.4.1 Step Number "step_number"
 

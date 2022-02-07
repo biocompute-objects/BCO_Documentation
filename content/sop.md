@@ -16,10 +16,10 @@ menu: "main"
 
 <br>
 
-# BCO Curation SOP
-#### Author: BioCompute Consortium 
-#### Version: 2.0
-#### Effective Date: Aug 2020
+<div class="text-center">
+<h1>BCO Curation SOP</h1>
+</div>
+
 
 _Intended audience: authors and developers_
 

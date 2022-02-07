@@ -45,7 +45,7 @@ Condensed example:
 
 ### 2.1.1 Name "name"
 
-Name for the BCO. This public field should take free text value using common biological research terminology supporting the terminology used in the [`usability_domain`](usability_domain.md), external references ([`xref`](/description-domain.md#242-external-references-xref)), and [`keywords`](/description-domain.md#241-keywords-keywords) sections.
+Name for the BCO. This public field should take free text value using common biological research terminology supporting the terminology used in the [`usability_domain`](usability_domain.md), external references ([`xref`](/description-domain.md#242-external-references-xref)), and [`keywords`](/description-domain.md#241-keywords-keywords) sections. It is reccomended that BCO names be short and easily recognizable. They should also not use special characters (spell things out).
 
 ```json
 "name": "HCV1a ledipasvir resistance SNP detection"
@@ -62,7 +62,7 @@ Records the versioning of this BCO instance object. [Semantic Versioning 2.0.0](
 >3. PATCH version when you make backwards-compatible bug fixes.
 >Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-BCO versioning should adhere to semantic versioning. Given the above conditions a MAJOR version would qualify for a new BCO, and therefore it is RECCOMENDED that the versioning of a BCO only utilize MINOR and PATCH, or two digits. 
+BCO versioning should adhere to semantic versioning. Given the above conditions a MAJOR version would qualify for a new BCO, and therefore it is recommended that the versioning of a BCO only utilize MINOR and PATCH, or two digits. 
 
 ```json
 "version": "2.1",
@@ -70,7 +70,7 @@ BCO versioning should adhere to semantic versioning. Given the above conditions 
 
 ### 2.1.3 Review "review"
 
-This is an array to hold reviewer identifiers and a description of the status of an object in the review process. The subtype `reviewer` contains field(s) for name, affiliation, email, and the contribution type of the reviewer. To further record author information, ORCID IDs are included as they allow for the author to curate their information after submission. ORCID identifiers must be valid and must have the prefix https://orcid.org/. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the [PROV-O](https://www.w3.org/TR/prov-o/).
+This is an array to hold reviewer identifiers and a description of the status of an object in the review process. The subtype `reviewer` contains field(s) for name, affiliation, email, and the contribution type of the reviewer. To further record author information, ORCIDs are included as they allow for the author to curate their information after submission. ORCID identifiers must be valid and must have the prefix https://orcid.org/. The contribution type is a choice taken from PAV ontology: provenance, authoring and versioning, which also maps to the [PROV-O](https://www.w3.org/TR/prov-o/).
 
 The "status" key describes the status of an object in the review process and the following are the possible values: 
 * `unreviewed` flag indicates that the object has been submitted, but no further evaluation or verification has occurred.  
@@ -79,7 +79,7 @@ The "status" key describes the status of an object in the review process and the
 * `suspended` flag indicates an object that was once valid is no longer considered valid. 
 * `rejected` flag indicates that an error or inconsistency was detected in the BCO, and it has been removed or rejected. 
 
-The fields from the `contributor` object (described in [section 2.1.9](/provenance-domain.md#219-contributors-contributors)) are used to populate the reviewer section. Each BCO SHOULD have at least one `review`. 
+The fields from the `contributor` object (described in [section 2.1.9](/provenance-domain.md#219-contributors-contributors)) are used to populate the reviewer section. It is strongly recommended that each BCO have at least one `review` (ideally by someone not listed with `createdBy` or `authoredBy`) upon publication. 
 
 ```json
         "review": [
@@ -113,7 +113,7 @@ The fields from the `contributor` object (described in [section 2.1.9](/provenan
 If the object is derived from another, this field will specify the parent object, in the form of the ‘object_id’. If the object is novel than the field is not included. 
 
 ```json
-"derived_from" : "https://github.com/biocompute-objects/BCO_Specification/blob/1.2.1-beta/HCV1a.json"
+"derived_from" : "https://example.com/BCO_948701/1.0"
 
 ```
 

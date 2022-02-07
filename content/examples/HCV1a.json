@@ -1,7 +1,7 @@
 {
     "object_id": "https://raw.githubusercontent.com/biocompute-objects/BCO_Specification/1.4.2/examples/HCV1a.json",
     "etag": "11ee4c3b8a04ad16dcca19a6f478c0870d3fe668ed6454096ab7165deb1ab8ea",
-    "spec_version": "https://w3id.org/ieee/ieee-2791-schema/",
+    "spec_version": "https://w3id.org/ieee/ieee-2791-schema/2791object.json",
     "provenance_domain": {
         "name": "HCV1a ledipasvir resistance SNP detection",
         "version": "2.9",
