@@ -80,7 +80,7 @@ Definition:
 
 ## 2.3 Extension Domain "extension_domain"
 
-The `extension_domain` is a space for a user to add additional structured information that is not defined in the BioCompute schema. The `extension_domain` is not defined by IEEE-2791-2020, except that each extension in the extension domain must provide a reference to the schema that defines it in order to validate.  The extension domain is the place to add any additional **structured** information. We provide an example here that is neither exclusive nor exhaustive.
+The `extension_domain` is a space for a user to add additional structured information that is not defined in the BioCompute schema. While the `extension_domain` is not defined by IEEE-2791-2020, each extension in the extension domain must provide a reference to the schema that defines it in order to validate.  The extension domain is the place to add any additional **structured** information. We provide an example here that is neither exclusive nor exhaustive.
 
 Definitions:
 
@@ -89,7 +89,7 @@ Definitions:
 
 ## 2.4 Description Domain "description_domain"
 
-The `description_domain` contain structured field for description of external references, the pipeline steps, and the relationship of I/O objects.
+The `description_domain` contains structured field for description of external references, the pipeline steps, and the relationship of I/O objects.
 
 Definition:
 
@@ -123,7 +123,7 @@ Definition:
 
 ## 2.8 Error Domain, acceptable range of variability "error_domain"
 
-The `error_domain` defines the empirical and algorithmic limits an d error sources of the BCO.
+The `error_domain` defines the empirical and algorithmic limits and error sources of the BCO.
 
 Definition:
 
