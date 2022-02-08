@@ -15,6 +15,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 ### Table of contents
 
+<a href="#1-12-22">BioCompute Database and Transfer Mechanism Development Workshop</a> <br>
 <a href="#3-27-21">BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</a> <br>
 <a href="#5-12-21">Workflow Preservation and Reproducibility with BCO-RO</a> <br>
 <a href="#7-28-21">Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</a> <br>
@@ -40,6 +41,13 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <div class="col-lg-9" markdown="1">
 
 <h2>Previous Events</h2>
+<h3>2022</h3>
+<h4><a name="1-12-22"></a>BioCompute Database and Transfer Mechanism Development Workshop</h4>
+<b>Date</b>: Wednesday January 12, 2022 <br><br>
+	<b>Purpose</b>: The purpose of this workshop is to demonstrate the tools available via the BioCompute Objects Portal, and how they enable interoperability in both research and regulatory review for scientists in the public or private spaces, and especially from the perspective of FDA personnel. As part of the larger goal of improving communication between the FDA and private sector and reducing organizational burden on both ends, this workshop will first introduce how the BioCompute Portal can build BioCompute Objects (BCOs) for workflow capture and reproducibility. The BioCompute Portal provides a framework for supporting workflow capture and improving reproducibility by providing user-friendly tools such as the BioCompute Object Builder (BCOB) that enables the creation of 2791-2020-compliant BCOs without requiring a user to know any code. We will demonstrate how the Portal can be securely used to manage, create, transfer, and publish objects that contain sensitive information. The BioCompute Portal presentation will also include the BioCompute Documentation site to introduce new users and acclimate current users to the newly restructured site. Following the introduction, we will walk through how a new user would sign up for an account on DB, the account activation process, and dashboard preview. This demo will also highlight the difference between a registered users’ dashboard and an unregistered public user’s, including access to user resources (best practices, user guide, etc.). Portal infrastructure could be extended to any company or institution that would like to establish their own private DB using the open-source repository and documentation on GitHub (https://github.com/biocompute-objects/bco_api). This workshop will demonstrate how the BCO framework is integrated into external platforms by showcasing the BCO transfer mechanism(s) from external resources to the Portal via API.
+	<ul><li>Slides <a href="/docs/">here</a></li></ul>
+
+<br>	
 <h3>2021</h3>
 <h4><a name="3-27-21"></a>BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</h4>
 <b>Date</b>: Saturday March 27 2021
