@@ -76,3 +76,15 @@ Jump To:
 1) #### What is the difference between `software_prerequisites` in `execution_domain` and `prerequisites` in the `description_domain`? Is the former global, while the latter only applies to one specific pipeline step?
 
 	Correct, Execution Domain is for anything related to the environment in which the pipeline was executed, and the Description Domain is specific to the softwares in those steps. So if I've written a shell script to run the pipeline, and in one step it includes myScript.py to comb through results and pick out elements of interest, myScript.py might be an Execution Domain prerequisite, and any packages or dependencies called from within the script are Description Domain level prerequisites. Alternatively, if I'm using the HIVE platform, any libraries needed to run HIVE are Execution Domain level.
+
+### Knowledgebases
+
+1) #### Can BCOs be used for curating databases?
+
+Yes. BCOs have been used in this capacity, such as in the [FDA's ARGOS database of infectious diseases](https://data.argosdb.org/) and the [GlyGen databse of glycosylation sites](https://data.glygen.org/). The following recommendations are compiled from these use cases. Although these recommendations are built from practical experience, they may not address the needs of every database. Users are free to make modifications at their own discretion.
+
+Using BioCompute's pre-defined fields and standards, knowledgebases can generate a BioCompute Object (BCO) to document the metadata, quality-control, and integration pipelines developed for different workflows. BCOs can be used to document each release. The structured data in a BCO makes it very easy to identify changes between releases (including changes to the curation/data processing pipeline, attribution to curators, or datasets processed), or revert to previous releases.
+
+BCOs can be generated via a user-friendly instance of a BCO editor and can be maintained and shared through versioned, stable IDs stored under a single domain of that knowledgebase. BCOs not only provides complete transparency to its data submitters (authors, curators, other databases, etc.), collaborators, and users, but also provide an efficient mechanism to reproduce the complete workflow through the information stored in different domains (such as description, execution, io, error, etc.) in machine and human-readable formats.
+
+The most common way of adapting BCOs for use in knowledgebases is by leveraging the Extension Domain. In this example, the Extension Domain is used for calling fields based on column headers. Note that the Extension Domain identifies its own schema, which defines the column headers and identifies them as required where appropriate. Because the JSON format of a BCO is human and machine readable (and can be further adapted for any manner of display or editing through a user interface), BCOs are amendable to either manual or automatic curation processes, such as the curation process that populates those fields in the above example.
