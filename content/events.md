@@ -147,7 +147,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <b>Organizers</b>: [FDA Center for Biologics Evaluation and Research (CBER)](https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber)
 
-**Purpose:** The BioCompute project has resulted in three prior workshops, two publications, several collaborations, and is currently undergoing formal balloting to become an official IEEE standard. The upcoming Workshop will engage more stakeholders in creating and using BioCompute for NGS and other bioinformatics data analysis communications with the FDA. Specifically, the Workshop will have two components: use case examples, and hands on & demonstrations of new tools that leverage BioCompute. A new Precision FDA-BioCompute Challenge will also be launched at the event.
+**Purpose:** The BioCompute project has resulted in three prior workshops, two publications, several collaborations, and is currently undergoing formal balloting to become an official IEEE standard. The upcoming Workshop will engage more stakeholders in creating and using BioCompute for NGS and other bioinformatics data analysis communications with the FDA. <br> Specifically, the Workshop will have two components: use case examples, and hands on & demonstrations of new tools that leverage BioCompute. A new Precision FDA-BioCompute Challenge will also be launched at the event.
 
 <ul>
 
@@ -169,11 +169,16 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <h2>2014</h2>
 
-<h4><a name="09-24-2014">2014 Public Workshop: Next Generation Sequencing Standards</h4>
+<h4><a name="09-24-2014">Public Workshop: Next Generation Sequencing Standards</h4>
+<b>Date</b>: Wednesday Sept 24 - Thursday Sept 25, 2014
+	
+<b>Purpose</b>: This public workshop on next-generation sequencing (NGS) technology, data formats standardization and promotion of interoperability protocols aims to facilitate establishing protocols for ensuring the safety and quality of next-generation sequencing (NGS)-related-information without sacrificing scientific merit or interfering with innovative processes. This will be achieved by engaging NGS stakeholders in a forum to discuss the current use of NGS technology and the development of standards for related information.
+<br><br>
+In addition, this workshop will highlight FDA-proposed guidelines for addressing NGS data storage, archival and quality control steps needed for computational biology protocols related to FDA relevant regulatory science.
 
 <ul>
 <li>
-<a href="http://wayback.archive-it.org/7993/20180125145708/https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm389561.htm">Agenda and meeting info</a>
+<a href="http://wayback.archive-it.org/7993/20180125145708/https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm389561.htm">Meeting info: transcripts, agenda, etc.</a>
 </li>
 </ul>
 
