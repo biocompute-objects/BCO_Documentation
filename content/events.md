@@ -30,8 +30,6 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <a href="#05-14-19">BioCompute Objects: Tools for Communicating NGS Data and Analysis</a> <br>
 <a href="#05-14-19">BioCompute Objects PoC Workshop</a> <br>
 <a href="#09-24-2014">2014 Public Workshop: Next Generation Sequencing Standards</a><br>
-<a href="#Previous Presentations">Previous Presentations</a><br>
-
 
 <br>
 
