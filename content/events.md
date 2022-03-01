@@ -151,7 +151,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <ul>
 
-<li>Agenda <a href="/2019-workshop-agenda">here</a></li>
+<li>Agenda <a href="/docs/2019BioComputeWorkshop_Agenda.pdf">here</a></li>
 <li>Meeting info <a href="https://www.fda.gov/vaccines-blood-biologics/workshops-meetings-conferences-biologics/biocompute-objects-tools-communicating-ngs-data-and-analysis-public-workshop-05142019-05152019">here</a></li>
 
 </ul>
