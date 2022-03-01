@@ -162,7 +162,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <h4><a name="05-14-19"></a>BioCompute Objects PoC Workshop</h4>
 <ul>
-<li>Agenda <a href="https://hive.biochemistry.gwu.edu/htscsrs/agenda_2018">here</a></li>
+<li>Agenda <a href="/docs/BCO_workshop_2018_agenda.pdf">here</a></li>
 </ul>
 
 <br>
