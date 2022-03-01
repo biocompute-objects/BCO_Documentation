@@ -173,7 +173,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <ul>
 <li>
-<a href="http://wayback.archive-it.org/7993/20180125145708/https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm389561.htm)">Agenda and meeting info</a>
+<a href="http://wayback.archive-it.org/7993/20180125145708/https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm389561.htm">Agenda and meeting info</a>
 </li>
 </ul>
 
