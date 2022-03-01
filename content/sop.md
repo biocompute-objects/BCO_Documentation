@@ -76,10 +76,8 @@ This domain can support a “QA/QC rules” subdomain which provides rules that,
 ## BCO Form-based portal
 _Intended Audience: BCO tool developers and authors_
 
-BCOs can be created using any bioinformatics platform that has BCO read and write functionalities. For users who do not have access to a bioinformatics platform they can use the [BCO Consortium Editor tool](https://portal.aws.biochemistry.gwu.edu/sign-in) which has some of the basic API functionalities:
+BCOs can be created using any bioinformatics platform that has BCO read and write functionalities. For users who do not have access to a bioinformatics platform they can use the [BCO Builder](https://biocomputeobject.org/builder) in the [BCO Portal](http://biocomputeobject.org/) which has some of the basic API functionalities:
 - Create a BCO that is conformant to IEEE-2791.
-- Upload BCOs in batch mode. The tool runs QA/QC processes on those uploads and create unique IDs
-- Search for existing BCOs by author/title/usability/keywords
 - Download and install an instance within an organization’s firewall
 - View videos and documentation on tool use
 
