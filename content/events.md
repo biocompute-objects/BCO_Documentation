@@ -170,6 +170,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <h2>2014</h2>
 
 <h4><a name="09-24-2014">Public Workshop: Next Generation Sequencing Standards</h4>
+
 <b>Date</b>: Wednesday Sept 24 - Thursday Sept 25, 2014
 	
 <b>Purpose</b>: This public workshop on next-generation sequencing (NGS) technology, data formats standardization and promotion of interoperability protocols aims to facilitate establishing protocols for ensuring the safety and quality of next-generation sequencing (NGS)-related-information without sacrificing scientific merit or interfering with innovative processes. This will be achieved by engaging NGS stakeholders in a forum to discuss the current use of NGS technology and the development of standards for related information.
