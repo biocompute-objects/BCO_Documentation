@@ -15,6 +15,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 ### Table of contents
 
+<a href="#1-12-22">BioCompute Database and Transfer Mechanism Development Workshop</a> <br>
 <a href="#3-27-21">BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</a> <br>
 <a href="#5-12-21">Workflow Preservation and Reproducibility with BCO-RO</a> <br>
 <a href="#7-28-21">Towards Interoperability: Generating BioCompute Objects on Cloud-Based Platforms for Advancing Precision Medicine</a> <br>
@@ -29,8 +30,6 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <a href="#05-14-19">BioCompute Objects: Tools for Communicating NGS Data and Analysis</a> <br>
 <a href="#05-14-19">BioCompute Objects PoC Workshop</a> <br>
 <a href="#09-24-2014">2014 Public Workshop: Next Generation Sequencing Standards</a><br>
-<a href="#Previous Presentations">Previous Presentations</a><br>
-
 
 <br>
 
@@ -40,6 +39,14 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <div class="col-lg-9" markdown="1">
 
 <h2>Previous Events</h2>
+<h3>2022</h3>
+<h4><a name="1-12-22"></a>BioCompute Database and Transfer Mechanism Development Workshop</h4>
+<b>Date</b>: Wednesday January 12, 2022 <br><br>
+	<b>Purpose</b>: The purpose of this workshop is to demonstrate the tools available via the BioCompute Objects Portal, and how they enable interoperability in both research and regulatory review for scientists in the public or private spaces, and especially from the perspective of FDA personnel. As part of the larger goal of improving communication between the FDA and private sector and reducing organizational burden on both ends, this workshop will first introduce how the BioCompute Portal can build BioCompute Objects (BCOs) for workflow capture and reproducibility. The BioCompute Portal provides a framework for supporting workflow capture and improving reproducibility by providing user-friendly tools such as the BioCompute Object Builder (BCOB) that enables the creation of 2791-2020-compliant BCOs without requiring a user to know any code. We will demonstrate how the Portal can be securely used to manage, create, transfer, and publish objects that contain sensitive information. The BioCompute Portal presentation will also include the BioCompute Documentation site to introduce new users and acclimate current users to the newly restructured site. Following the introduction, we will walk through how a new user would sign up for an account on DB, the account activation process, and dashboard preview. This demo will also highlight the difference between a registered users’ dashboard and an unregistered public user’s, including access to user resources (best practices, user guide, etc.). Portal infrastructure could be extended to any company or institution that would like to establish their own private DB using the open-source repository and documentation on GitHub (https://github.com/biocompute-objects/bco_api). This workshop will demonstrate how the BCO framework is integrated into external platforms by showcasing the BCO transfer mechanism(s) from external resources to the Portal via API.
+	<ul><li>Slides <a href="/docs/Jan2022_BioComputeDatabase&TransferMechanismDevelopmentWorkshop_deck.pdf">here</a></li></ul>
+	<ul><li>Workshop recording <a href="https://youtu.be/EEgV8R8G4dI">here</a></li></ul>
+
+<br>	
 <h3>2021</h3>
 <h4><a name="3-27-21"></a>BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</h4>
 <b>Date</b>: Saturday March 27 2021
@@ -53,6 +60,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 	
 <b>Purpose</b>: Training session showing how Research Objects (RO) can package BioCompute Objects (BCO) for Digital Preservation and Reproducibility. Research Objects (RO) are a machine-readable digital preservation effort that aims to package all constituent elements of an analysis together into one archive with very detailed provenance. Here, Stian Soiland-Reyes, a Technical Architect on the Research Objects project, will describe an example that packages the workflow as a descriptive, human-readable report in the form of a BioCompute Object (BCO), and which bundles everything in an RO "Crate." Stian will explain the Research Objects project, and introduce a tutorial for building an RO-BCO archive. RO-BCOs can be efficient solutions for scaling up data analyses, both for internal record keeping and logistics, and for communicating workflows to outside groups.
 	<ul><li>Slides <a href="/docs/RO-BCO-Intro_12May2021_Public.pdf">here</a></li></ul>
+	<ul><li>Workshop Recording <a href="/docs/RO-BCO-Intro_12May2021_Public.pdf">here</a></li></ul>
 
 	
 <br>
@@ -139,11 +147,11 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <b>Organizers</b>: [FDA Center for Biologics Evaluation and Research (CBER)](https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber)
 
-**Purpose:** The BioCompute project has resulted in three prior workshops, two publications, several collaborations, and is currently undergoing formal balloting to become an official IEEE standard. The upcoming Workshop will engage more stakeholders in creating and using BioCompute for NGS and other bioinformatics data analysis communications with the FDA. Specifically, the Workshop will have two components: use case examples, and hands on & demonstrations of new tools that leverage BioCompute. A new Precision FDA-BioCompute Challenge will also be launched at the event.
+**Purpose:** The BioCompute project has resulted in three prior workshops, two publications, several collaborations, and is currently undergoing formal balloting to become an official IEEE standard. The upcoming Workshop will engage more stakeholders in creating and using BioCompute for NGS and other bioinformatics data analysis communications with the FDA. <br> Specifically, the Workshop will have two components: use case examples, and hands on & demonstrations of new tools that leverage BioCompute. A new Precision FDA-BioCompute Challenge will also be launched at the event.
 
 <ul>
 
-<li>Agenda <a href="/2019-workshop-agenda">here</a></li>
+<li>Agenda <a href="/docs/2019BioComputeWorkshop_Agenda.pdf">here</a></li>
 <li>Meeting info <a href="https://www.fda.gov/vaccines-blood-biologics/workshops-meetings-conferences-biologics/biocompute-objects-tools-communicating-ngs-data-and-analysis-public-workshop-05142019-05152019">here</a></li>
 
 </ul>
@@ -154,18 +162,24 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 
 <h4><a name="05-14-19"></a>BioCompute Objects PoC Workshop</h4>
 <ul>
-<li>Agenda <a href="https://hive.biochemistry.gwu.edu/htscsrs/agenda_2018">here</a></li>
+<li>Agenda <a href="/docs/BCO_workshop_2018_agenda.pdf">here</a></li>
 </ul>
 
 <br>
 
 <h2>2014</h2>
 
-<h4><a name="09-24-2014">2014 Public Workshop: Next Generation Sequencing Standards</h4>
+<h4><a name="09-24-2014">Public Workshop: Next Generation Sequencing Standards</h4>
+
+<b>Date</b>: Wednesday Sept 24 - Thursday Sept 25, 2014
+	
+<b>Purpose</b>: This public workshop on next-generation sequencing (NGS) technology, data formats standardization and promotion of interoperability protocols aims to facilitate establishing protocols for ensuring the safety and quality of next-generation sequencing (NGS)-related-information without sacrificing scientific merit or interfering with innovative processes. This will be achieved by engaging NGS stakeholders in a forum to discuss the current use of NGS technology and the development of standards for related information.
+<br><br>
+In addition, this workshop will highlight FDA-proposed guidelines for addressing NGS data storage, archival and quality control steps needed for computational biology protocols related to FDA relevant regulatory science.
 
 <ul>
 <li>
-<a href="http://wayback.archive-it.org/7993/20180125145708/https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm389561.htm)">Agenda and meeting info</a>
+<a href="http://wayback.archive-it.org/7993/20180125145708/https://www.fda.gov/ScienceResearch/SpecialTopics/RegulatoryScience/ucm389561.htm">Meeting info: transcripts, agenda, etc.</a>
 </li>
 </ul>
 

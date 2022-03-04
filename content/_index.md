@@ -37,9 +37,9 @@ Simonyan, V., Goecks, J., & Mazumder, R. (2017). ***Biocompute Objects — A Ste
 
 ## Support, Community and Contributing
 
-To suggest changes to [this repository](#Repository) we welcome contributions as a [pull request](https://github.com/biocompute-objects/BCO_Specification/pulls) or [issue](https://github.com/biocompute-objects/BCO_Specification/issues) submission.
+To suggest changes to [this repository](https://github.com/biocompute-objects/BCO_Specification) we welcome contributions as a [pull request](https://github.com/biocompute-objects/BCO_Specification/pulls) or [issue](https://github.com/biocompute-objects/BCO_Specification/issues) submission.
 
-BCO_Specification is licensed under the [BSD 3-Clause "New" or "Revised" License](./LICENSE)
+BCO_Specification is licensed under the [BSD 3-Clause "New" or "Revised" License](./LICENSE.md)
 
 >A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
 
