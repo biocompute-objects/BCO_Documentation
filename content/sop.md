@@ -81,5 +81,8 @@ BCOs can be created using any bioinformatics platform that has BCO read and writ
 - Download and install an instance within an organization’s firewall
 - View videos and documentation on tool use
 
+## Versioning
+Any version previous to the current version of a BCO not be edited. 
+
 
 This documentation is currently in the comment phase until Sept. 15, 2020. Please send your comments to Jonathon Keeney.
