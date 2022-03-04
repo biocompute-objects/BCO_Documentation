@@ -31,8 +31,8 @@ Jump To:
 </tr><td> 
 
 * [Extensions](#extensions)</td><td>
-* [Prerequisets](#prerequisets)</td></tr>
-</tr>
+* [Prerequisets](#prerequisets)</td><td>
+* [Knowledgebase Recommendation](#extensions)</td>
 <tr><td> 
 </table>
 
@@ -70,6 +70,16 @@ Jump To:
 1) #### What is the role of `extension_domain`? How does it relate to other domains? Is it required in some pipeline steps? Or does it affect the execution? Or something else?
 
 	Extension Domain is never required, it is always optional. It is a user-defined space for capturing anything not already captured in the base BCO. To use it, one generates an extension schema (referenced in the `extension_schema`), and the associated fields within the BCO. For example, if a user wants to include a specialized ontology with definitions, it can be added here. It's meant to capture anything idiosyncratic to that workflow not already captured in the standard, and is very flexible.
+
+2) ### How can BCOs be used for knowledgebases?
+
+    Using BioCompute's pre-defined fields and standards, knowledgebases can generate a BioCompute Object (BCO) to document the metadata, quality-control, and integration pipelines developed for different workflows. BCOs can be used to document each release. The structured data in a BCO makes it very easy to identify changes between releases (including changes to the curation/data processing pipeline, attribution to curators, or datasets processed), or revert to previous releases.
+
+    BCOs can be generated via a user-friendly instance of a BCO editor and can be maintained and shared through versioned, stable IDs stored under a single domain of that knowledgebase. BCOs not only provides complete transparency to its data submitters (authors, curators, other databases, etc.), collaborators, and users, but also provide an efficient mechanism to reproduce the complete workflow through the information stored in different domains (such as description, execution, io, error, etc.) in machine and human-readable formats.
+
+    The most common way of adapting BCOs for use in knowledgebases is by leveraging the Extension Domain. In this example, the Extension Domain is used for calling fields based on column headers. Note that the Extension Domain identifies its own schema, which defines the column headers and identifies them as required where appropriate. Because the JSON format of a BCO is human and machine readable (and can be further adapted for any manner of display or editing through a user interface), BCOs are amendable to either manual or automatic curation processes, such as the curation process that populates those fields in the above example.
+
+
 
 ### Prerequisets
 
