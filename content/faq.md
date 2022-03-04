@@ -76,3 +76,9 @@ Jump To:
 1) #### What is the difference between `software_prerequisites` in `execution_domain` and `prerequisites` in the `description_domain`? Is the former global, while the latter only applies to one specific pipeline step?
 
 	Correct, Execution Domain is for anything related to the environment in which the pipeline was executed, and the Description Domain is specific to the softwares in those steps. So if I've written a shell script to run the pipeline, and in one step it includes myScript.py to comb through results and pick out elements of interest, myScript.py might be an Execution Domain prerequisite, and any packages or dependencies called from within the script are Description Domain level prerequisites. Alternatively, if I'm using the HIVE platform, any libraries needed to run HIVE are Execution Domain level.
+	
+### Saving and Publishing a BCO
+1) #### Why am I unable to save my BCO? 
+	If you were unable to save your BCO it most likely means that you did not "activate" after you registered for an account. The activation step is what activates the server for saving and publishing, so if you start using your account without that, it will not populate. If you did not respond to the email, you may need to re-register (the link may have expired by now). If so, please re-register and respond to the activation email, and then try to save your BCO as we did in class. If you still need help, please contact me directly.
+
+
