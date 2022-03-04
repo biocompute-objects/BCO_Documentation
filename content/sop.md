@@ -82,7 +82,7 @@ BCOs can be created using any bioinformatics platform that has BCO read and writ
 - View videos and documentation on tool use
 
 ## Versioning
-Any version previous to the current version of a BCO should not be edited. For example: Once an analysis has been recorded as a BCO, that version (v1.0) cannot be edited.  
+Any version previous to the current version of a BCO is considered immutable and should not be edited. For example: Once an analysis has been recorded as a BCO, and has undergone several versioning changes, v1.0 of theat BCO cannot be edited. 
 
 
 This documentation is currently in the comment phase until Sept. 15, 2020. Please send your comments to Jonathon Keeney.
