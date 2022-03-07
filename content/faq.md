@@ -31,9 +31,12 @@ Jump To:
 </tr><td> 
 
 * [Extensions](#extensions)</td><td>
-* [Prerequisets](#prerequisets)</td><td>
+* [Prerequisets](#prerequisets)</td><td> 
+* [Saving and Publishing](#saving-and-publishing-a-bco)</td>
+</tr><td> 
+
 * [Knowledgebase Recommendation](#extensions)</td>
-<tr><td> 
+</tr>
 </table>
 
 ----
@@ -87,6 +90,7 @@ Jump To:
 
 	Correct, Execution Domain is for anything related to the environment in which the pipeline was executed, and the Description Domain is specific to the softwares in those steps. So if I've written a shell script to run the pipeline, and in one step it includes myScript.py to comb through results and pick out elements of interest, myScript.py might be an Execution Domain prerequisite, and any packages or dependencies called from within the script are Description Domain level prerequisites. Alternatively, if I'm using the HIVE platform, any libraries needed to run HIVE are Execution Domain level.
 
+
 ### Knowledgebases
 
 1) #### Can BCOs be used for curating databases?
@@ -98,3 +102,9 @@ Using BioCompute's pre-defined fields and standards, knowledgebases can generate
 BCOs can be generated via a user-friendly instance of a BCO editor and can be maintained and shared through versioned, stable IDs stored under a single domain of that knowledgebase. BCOs not only provides complete transparency to its data submitters (authors, curators, other databases, etc.), collaborators, and users, but also provide an efficient mechanism to reproduce the complete workflow through the information stored in different domains (such as description, execution, io, error, etc.) in machine and human-readable formats.
 
 The most common way of adapting BCOs for use in knowledgebases is by leveraging the Extension Domain. In this example, the Extension Domain is used for calling fields based on column headers. Note that the Extension Domain identifies its own schema, which defines the column headers and identifies them as required where appropriate. Because the JSON format of a BCO is human and machine readable (and can be further adapted for any manner of display or editing through a user interface), BCOs are amendable to either manual or automatic curation processes, such as the curation process that populates those fields in the above example.
+
+	
+### Saving and Publishing a BCO
+1) #### Why am I unable to save my BCO? 
+	If you were unable to save your BCO it most likely means that you did not "activate" after you registered for an account. The activation step is what activates the server for saving and publishing, so if you start using your account without that, it will not populate. If you did not respond to the email, you may need to re-register (the link may have expired by now). If so, please re-register and respond to the activation email, and then try to save your BCO as we did in class. If you still need help, please contact me directly.
+
