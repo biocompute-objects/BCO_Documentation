@@ -45,7 +45,7 @@ Condensed example:
 
 ### 2.5.1  Script "script"
 
-The Script field is an array containing pointers to a script object or objects. These can be internal or external references to objects that were used to perform computations for this BCO instance. These may be references to an object in GitHub, a computational service, or any other type of script. 
+The Script field is an array containing pointers to a script object or objects. These can be internal or external references to objects that were used to perform computations for this BCO instance. These may be references to an object in GitHub, a computational service, or any other type of script. (Please note: A valid `uri` has to have the "protocol.domain.subdomain". Protocols: HTTP,HTTPS,etc)
 
 ```json
 "script": [
