@@ -158,7 +158,7 @@ The version assigned to the instance of the tool used corresponding to the upstr
 
 #### 2.4.4.4 Tool Prerequisites "prerequisite"
 
-A list of text values to indicate any packages or prerequisites for running the tool used. This consists of a `name` and `uri`. The `uri` object consists of the `filename`, `uri`, `access_time`, and `sha1_chksum` properties. The `uri` is the only REQUIRED property but it is reccomended that in the `prerequisites` here the `access_time` is used as well. Please note: A valid `uri` has to have the <protocol><domain><subdomain> (protocol is HTTP,HTTPS,etc).
+A list of text values to indicate any packages or prerequisites for running the tool used. This consists of a `name` and `uri`. The `uri` object consists of the `filename`, `uri`, `access_time`, and `sha1_chksum` properties. The `uri` is the only REQUIRED property but it is reccomended that in the `prerequisites` here the `access_time` is used as well. (Please note: a valid `uri` has to have the "protocol.domain.subdomain". Protocols: HTTP,HTTPS,etc)
 
 ```json
     "prerequisite": [
