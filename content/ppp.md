@@ -34,10 +34,6 @@ Members of the PPP are provided the following services:
 - BCO Consultations and Technical Support
 
 <br>
-
-### How to Join
-
-For membership inquiries, please contact Jonathon Keeney. For membership, please register <b>[here](https://www.biocomputeobject.org/ppp_registration/).</b>
  
 ### Current members
 
@@ -50,9 +46,7 @@ through participation in meetings. Specifically, we would like members to either
 contributions in kind to the development and/or use of BioCompute framework. This participation will allow our
 members to determine the course of the BioCompute standard and associated activities.
 
-### Contact
-
-To learn more about the BioCompute PPP, please fill out the form below.
+### Interested in joining the BioCompute PPP?
 
 <form name="contact" method="POST" data-netlify="true">
 
@@ -69,8 +63,10 @@ To learn more about the BioCompute PPP, please fill out the form below.
 <p>
 <label for="inputsubject">Subject:</label>
 <select name="subject" id="inputsubject" class="form-control">
-<option value="general">General question</option>
-<option value="training">Interested in joining the BioCompute PPP? Schedule a meeting to discuss membership</option>
+<option value="general">General inquiry about the PPP</option>
+<option value="training">Schedule a meeting to discuss PPP membership</option>
+<option value="training">Discuss existing PPP membership</option>
+
 
 </select>
 </p>
