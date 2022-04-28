@@ -45,7 +45,7 @@ Members of the PPP are provided the following services:
  
 ### Current members
 
-FDA | Embleema | Argentys | Millipore Sigma | Open Health Systems Laboratory (OHSL)|
+FDA | Embleema | Argentys | Millipore Sigma | Open Health Systems Laboratory (OHSL)| GW 
 
 
 ### Interested in joining the BioCompute PPP?
