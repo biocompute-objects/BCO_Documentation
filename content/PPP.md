@@ -18,7 +18,7 @@ database, in order to enable reproducible scientific research and regulatory sub
 Facilitate portability of pipelines for execution.
 
 <b>PPP governance plan</b>: The Partnership is guided by an Executive Steering Committee.
-<b>Types of activities members are expected to participate in</b>: Representing the company/institute/project&#39;s needs
+<br><br><b>Types of activities members are expected to participate in</b>: Representing the company/institute/project&#39;s needs
 through participation in meetings. Specifically, we would like members to either contribute through funding and/or
 contributions in kind to the development and/or use of BioCompute framework. This participation will allow our
 members to determine the course of the BioCompute standard and associated activities.
