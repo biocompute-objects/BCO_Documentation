@@ -1,5 +1,5 @@
 ---
-title: "Services WIP"
+title: "Services"
 menu: "main"
 ---
 
