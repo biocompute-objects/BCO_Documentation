@@ -41,7 +41,7 @@ For membership inquiries, please contact Jonathon Keeney. For membership, please
  
 ### Current members
 
-| Argentys | Millipore Sigma | Open Health Systems Laboratory (OHSL)|
+FDA | Embleema | Argentys | Millipore Sigma | Open Health Systems Laboratory (OHSL)|
 
 
 <b>PPP governance plan</b>: The Partnership is guided by an Executive Steering Committee.
