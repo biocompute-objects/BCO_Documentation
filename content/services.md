@@ -87,12 +87,33 @@ Databases provide a variety of other functionality as well. Workflows in publica
 
 <div class="col-sm-10 col-10">
 
-### BCO Support
+### BCO Consultation 
+
+**Hands-on help with analysis communication using BCO **
+
+The BioCompute Partnership also offers one-on-one consultations with individuals interested in using BioCompute Objects as a record of their workflows. This consulation would specifically be for the purpose of assisting with the creation and communication of BioCompute Objects. BCO Specialists can work with your group to assist with the generation of BioCompute Objects, or subject matter related to the standard itself. 
+
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-sm-2 col-2">
+<img src="/images/services.4.png" class="float-right" width="80%" alt="">
+</div>
+
+<div class="col-sm-10 col-10">
+
+### Technical Support
 
 **Help for every step of an FDA submission or analysis communication**
 
-The BioCompute Partnership also offers a BCO support service to assist with the creation and communication of BioCompute Objects. This includes work prepared for FDA submissions, research communications, and clinical and diagnostic purposes. Technical Specialists can work with you or directly with your platform provider such as [DNAnexus](https://www.dnanexus.com/) or [Seven Bridges](https://www.sevenbridges.com/) to assist with the generation and transmission of BioCompute Objects, or subject matter related to the standard itself. As the group that helped to develop the [genome analysis platform](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=main) used by the FDA and who coordinate public and private participation in developing the standard, our scientists the leading authorities in its implementation.
+The BioCompute Partnership also offers a technical support service to assist with the creation and communication of BioCompute Objects. This includes work prepared for FDA submissions, research communications, and clinical and diagnostic purposes. Technical Specialists can work with you or directly with your platform provider such as [DNAnexus](https://www.dnanexus.com/) or [Seven Bridges](https://www.sevenbridges.com/) to assist with the generation and transmission of BioCompute Objects, or subject matter related to the standard itself. As the group that helped to develop the [genome analysis platform](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=main) used by the FDA and who coordinate public and private participation in developing the standard, our scientists the leading authorities in its implementation.
 
 </div>
 
 </div>
+
