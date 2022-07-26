@@ -20,8 +20,8 @@ _This document is part of the [BioCompute Object User Guide](/user_guide)_
 
 ## Creating a BCO on Galaxy
 
-Galaxy has an extensive workflow system. They define a [workflow](https://galaxyproject.org/learn/advanced-workflow/) as ".. a series of tools and dataset actions that run in sequence as a batch operation". An instance of a Galaxy workflow is known as an "invocation". Since a BCO is a record of a specific instance of a computation, the Galaxy invocations are used to generate the Galaxy BCOs. 
-The first step in creating a well documented Galaxy BCO is to follow the [Best Practices for Maintaining Galaxy Workflows](https://planemo.readthedocs.io/en/latest/best_practices_workflows.html).
+Galaxy has an extensive workflow system. They define a [workflow](https://galaxyproject.org/learn/advanced-workflow/) as ".. a series of tools and dataset actions that run in sequence as a batch operation". An instance of a Galaxy workflow is known as an "invocation". Since a BCO is a record of a specific instance of computation, the Galaxy invocations are used to generate the Galaxy BCOs. 
+The first step in creating a well-documented Galaxy BCO is to follow the [Best Practices for Maintaining Galaxy Workflows](https://planemo.readthedocs.io/en/latest/best_practices_workflows.html).
 <br/>
 
 ## Galaxy workflow attributes used by BCO
@@ -29,13 +29,13 @@ The first step in creating a well documented Galaxy BCO is to follow the [Best P
 Proper annotation of the workflow is required BEFORE running it.
 Notice the following in the example below:
 * The Name of the workflow becomes the BCO Name
-* The workflow version translates to a sequental digit and is included as the BCO version
-* The workflow Annnotation block becomes the FIRST entry in the BCO Usability Domain
+* The workflow version translates to a sequential digit and is included as the BCO version
+* The workflow Annotation block becomes the FIRST entry in the BCO Usability Domain
     * The annotation from the history (if included) becomes the second entry in the BCO Usability Domain
 * The workflow License becomes the BCO License
 * The workflow 'creator/s' are added to the BCO contributors specification
 * The workflow Tags are added to the BCO description domain tags
-* It is also possible to annotate each workflow step or tool individually. Depending on the tool or step this incfomation will also be included. 
+* It is also possible to annotate each workflow step or tool individually. Depending on the tool or step this information will also be included. 
 
 <div class="col-lg-10 offset-lg-1 text-center">
 <img src="/images/workflow.png" class="img-fluid mx-auto d-block" alt="Workflow detail screen shot">
@@ -54,7 +54,7 @@ Notice the following in the example below:
 
 There are two methods for exporting a BCO from Galaxy. Download and Submission to a BCODB via API.
 
-* From the User menue select "Workflow Invocations"
+* From the User menu select "Workflow Invocations"
 * Expand the invocation you would like to convert to a BCO
 
 <div class="col-lg-10 offset-lg-1 text-center">
@@ -75,12 +75,12 @@ Downloading a BCO from Galaxy will save the raw JSON file to your local drive.
 
 ### Submission to a BCODB via API
 
-Submission to the BCODB requires that a user already have an authenticated account at the URL they wish to submit to. Once
-an account is verified you will need four peices of information to submit the BCO.
+Submission to the BCODB requires that a user already has an authenticated account at the URL they wish to submit to. Once
+an account is verified you will need four pieces of information to submit the BCO.
 
 #### BCODB Root URL
 
-This is the URL for the BCODD that you are submitting your object to. In most cases it will be the public server at 'https://biocomputeobject.org'. 
+This is the URL for the BCODD that you are submitting your object. In most cases, it will be the public server at 'https://biocomputeobject.org'. 
 
 #### BCODB User API key
 
@@ -93,11 +93,11 @@ The BCODB User API key OR user Token is found on the [account page](https://bioc
 
 #### BCODB Prefix
 
-The BCO Prefix is explained [here](https://docs.biocomputeobject.org/top-level/) in the section '2.0.2 BioCompute Object Identifier “object_id”'. The default prefix "BCO" is for general use. Other Prefixs require special permission. Please see the [BCO Prefix Registry](https://biocomputeobject.org/prefix) for more information. 
+The BCO Prefix is explained [here](https://docs.biocomputeobject.org/top-level/) in the section '2.0.2 BioCompute Object Identifier “object_id”'. The default prefix "BCO" is for general use. Other Prefixes require special permission. Please see the [BCO Prefix Registry](https://biocomputeobject.org/prefix) for more information. 
 
 #### BCODB User Name
 
-The BCODB User Name is found on the [account page](https://biocomputeobject.org/). Expand the "Database, Groups, and Permissions" tab. You will find the username listed in the card for the server you want to submit to, just like the token.
+The BCODB User Name is found on the [account page](https://biocomputeobject.org/). Expand the "Database, Groups, and Permissions" tab. You will find the username listed on the card for the server you want to submit to, just like the token.
 <div class="col-lg-10 offset-lg-1 text-center">
 <img src="/images/username.png" class="img-fluid mx-auto d-block" alt="invocation export detail">
 </div>
