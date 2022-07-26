@@ -38,7 +38,7 @@ Notice the following in the example below:
 * It is also possible to annotate each workflow step or tool individually. Depending on the tool or step this incfomation will also be included. 
 
 <div class="col-lg-10 offset-lg-1 text-center">
-<img src="/images/workflow.png" class="img-fluid mx-auto d-block" alt="">
+<img src="/images/workflow.png" class="img-fluid mx-auto d-block" alt="Workflow detail screen shot">
 </div>
 <br/>
 
@@ -46,7 +46,7 @@ Notice the following in the example below:
 
 * The Galaxy history will also contribute annotation and tags to the BCO 
 <div class="col-lg-10 offset-lg-1 text-center">
-<img src="/images/history.png" class="img-fluid mx-auto d-block" alt="">
+<img src="/images/history.png" class="img-fluid mx-auto d-block" alt="history pane screen shot">
 </div>
 <br/>
 
@@ -58,13 +58,13 @@ There are two methods for exporting a BCO from Galaxy. Download and Submission t
 * Expand the invocation you would like to convert to a BCO
 
 <div class="col-lg-10 offset-lg-1 text-center">
-<img src="/images/invocation.png" class="img-fluid mx-auto d-block" alt="">
+<img src="/images/invocation.png" class="img-fluid mx-auto d-block" alt="workflow invocation detail">
 </div>
 <br/>
 
 * Select the "Export" tab
 <div class="col-lg-10 offset-lg-1 text-center">
-<img src="/images/export.png" class="img-fluid mx-auto d-block" alt="">
+<img src="/images/export.png" class="img-fluid mx-auto d-block" alt="invocation export detail">
 </div>
 <br/>
 
@@ -79,4 +79,49 @@ Submission to the BCODB requires that a user already have an authenticated accou
 an account is verified you will need four peices of information to submit the BCO.
 
 #### BCODB Root URL
-#### 
+
+This is the URL for the BCODD that you are submitting your object to. In most cases it will be the public server at 'https://biocomputeobject.org'. 
+
+#### BCODB User API key
+
+The BCODB User API key OR user Token is found on the [account page](https://biocomputeobject.org/). Expand the "Database, Groups, and Permissions" tab. You will find the token listed in the card for the server you want to submit to. 
+
+<div class="col-lg-10 offset-lg-1 text-center">
+<img src="/images/token.png" class="img-fluid mx-auto d-block" alt="invocation export detail">
+</div>
+<br/>
+
+#### BCODB Prefix
+
+The BCO Prefix is explained [here](https://docs.biocomputeobject.org/top-level/) in the section '2.0.2 BioCompute Object Identifier “object_id”'. The default prefix "BCO" is for general use. Other Prefixs require special permission. Please see the [BCO Prefix Registry](https://biocomputeobject.org/prefix) for more information. 
+
+#### BCODB User Name
+
+The BCODB User Name is found on the [account page](https://biocomputeobject.org/). Expand the "Database, Groups, and Permissions" tab. You will find the username listed in the card for the server you want to submit to, just like the token.
+<div class="col-lg-10 offset-lg-1 text-center">
+<img src="/images/username.png" class="img-fluid mx-auto d-block" alt="invocation export detail">
+</div>
+<br/>
+
+## Submission and next steps
+
+The completed form should look something like the one below:
+
+<div class="col-lg-10 offset-lg-1 text-center">
+<img src="/images/submit.png" class="img-fluid mx-auto d-block" alt="invocation export detail">
+</div>
+<br/>
+
+Upon successful submission you should see the `objct_id` for the BCO just created:
+
+<div class="col-lg-10 offset-lg-1 text-center">
+<img src="/images/draft_success.png" class="img-fluid mx-auto d-block" alt="invocation export detail">
+</div>
+<br/>
+
+To find the object and modify further or publish go to the BCO Portal and search for the identifier Galaxy gave you.
+
+<div class="col-lg-10 offset-lg-1 text-center">
+<img src="/images/search.png" class="img-fluid mx-auto d-block" alt="invocation export detail">
+</div>
+<br/>
