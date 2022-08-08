@@ -28,7 +28,7 @@ The standard, officially known as 2791-2020, has two parts: the standards docume
 Since the base BioCompute schema is maintained as an open source repository, it can be cloned and integrated into an organization in unique ways, which allows organizations to build off of this schema to create dependent standards for specific applications. This is similar to the different versions of WiFi based on usage, such as the 802.11a standard for fast speed, but high cost and shorter range, or the 802.11b for slower top speed, but lower cost, etc. --- all of which are built on the 802.11 base standard. It can also be used to further extend the schema, such as for handling proprietary, internal content, while still being compatible with the base standard. The open source schema also enables individuals or organizations to suggest changes to be incorporated into future versions the standard.
 
 ### Citation
-This standard was originaly prepared by [The BioCompute Object working group](/BCO_Spec_V1.2.md#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
+This standard was originaly prepared by [The BioCompute Object working group](/user_guide.md#biocompute-object-consortium-members-bcoc) during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
 
 To reference the BCO standards, please use the following
 citation inclusive of the DOI:
