@@ -43,13 +43,13 @@ BioCompute is written in [Javascript Object Notation (JSON)](https://json.org/ex
 
 BioCompute was built through a collaboration between The George Washington University and the FDA to improve communication of bioinformatics pipelines, and has since been expanded and refined through the participation or collaboration of hundreds of participants from throughout the public and private sectors. While we welcome interest and membership from anyone, most users will fall into one of three categories:
 
-- [Research Community](/research) <br>
+- Research Community <br>
   The Biocompute standard can help substantially improve replicability, making it possible to repeat a pipeline on a different sample with high fidelity and high confidence.
 
-- [Clinical Community](/clinical) <br>
+- Clinical Community <br>
   As BioCompute Objects become tested and validated, they can be applied in the clinic to identify risk factors, flag pharmakogenetic information, and much more.
 
-- [Pharma, Biotech and Regulatory Pipeline](/regulatory) <br>
+- Pharma, Biotech and Regulatory Pipeline <br>
   Protracted communications with the FDA can extend the review process by months. A standardized method of communicating HTS data may help repeat results more quickly and without the need for additional communication.
 
 Research, clinical, and regulatory groups are key drivers of personalized medicine that is based on next generation sequencing, but there are barriers between these groups. BioCompute reduces these hurdles and brings transparency to the workflow, making it more clear what was done, and clearly delineating expectations for data sharing. The BioCompute specification can be layered with other privacy and security protocols to guard sensitive data, or be made open source depending on the needs of the user.
