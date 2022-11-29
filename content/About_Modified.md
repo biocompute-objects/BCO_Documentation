@@ -75,7 +75,7 @@ The major milestones of the BioCompute Partnership and future goals are paving t
 ### GWU Members
 <div class="row">
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 
@@ -98,7 +98,7 @@ Raja Mazumder<br>
 
 <div class="row">
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Keeney.png" class="mx-auto d-block" width="80%" alt="">
@@ -118,7 +118,7 @@ Jonathon Keeney<br>
 
 <div class="row">
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/King.png" class="mx-auto d-block" width="80%" alt="">
@@ -138,7 +138,7 @@ Charles Hadley King<br>
 
 <div class="row">
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/King.png" class="mx-auto d-block" width="80%" alt="">
@@ -158,7 +158,7 @@ Charles Hadley King<br>
 
 <div class="row">
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Wang.jpg" class="mx-auto d-block" width="80%" alt="">
@@ -177,7 +177,7 @@ Tianyi Wang<br>
 <br>
 
 ### External Collaborator
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Dean.png" class="mx-auto d-block" width="80%" alt="">
@@ -191,7 +191,7 @@ Dennis Dean<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Goecks.png" class="mx-auto d-block" width="80%" alt="">
@@ -205,7 +205,7 @@ Jeremy Goecks<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Goble.png" class="mx-auto d-block" width="80%" alt="">
@@ -219,7 +219,7 @@ Carole Goble<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Alterovitz.png" class="mx-auto d-block" width="80%" alt="">
@@ -233,7 +233,7 @@ Gil Alterovitz<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Simonyan.png" class="mx-auto d-block" width="80%" alt="">
@@ -247,7 +247,7 @@ Vahan Simonyan<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Almeida.jpg" class="mx-auto d-block" width="80%" alt="">
@@ -261,7 +261,7 @@ Jonas Almeida<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Taylor.jpg" class="mx-auto d-block" width="80%" alt="">
@@ -275,7 +275,7 @@ Dan Taylor<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Golikov.jpg" class="mx-auto d-block" width="80%" alt="">
@@ -289,7 +289,7 @@ Anton Golikov<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Krampis.jpg" class="mx-auto d-block" width="80%" alt="">
@@ -303,7 +303,7 @@ Ntino Krampis<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Crusoe.jpg" class="mx-auto d-block" width="80%" alt="">
@@ -317,7 +317,7 @@ Michael Crusoe<br>
 
 <br>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 	
 <div class="text-left">
 <img src="/images/Soiland-Reyes.jpg" class="mx-auto d-block" width="80%" alt="">
@@ -331,6 +331,296 @@ Stian Soiland-Reyes<br>
 
 <br>
 
+<div class="col-sm-3">
+	
+<div class="text-left">
+<img src="/images/Karagiannis.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Konstantinos Karagiannis<br>
+<span>
+<small>
+<i>Food and Drug Administration, MD</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-3">
+	
+<div class="text-left">
+<img src="/images/Thompson.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Elaine Thompson<br>
+<span>
+<small>
+<i>Henry M Jackson Foundation for the Advancement of Military Medicine, MD</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-3">
+	
+<div class="text-left">
+<img src="/images/Soranzo.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Nicola Soranzo<br>
+<span>
+<small>
+<i>Galaxy Platform, UK</i><br>
+</small>
+</span>
+
+<br>
+</div>
+
 ### Former GWU Members
+<div class="col-sm-3">
+	
+<div class="text-left">
+<img src="/images/Patel.jpg" class="mx-auto d-block" width="80%" alt="Janisha Patel">
+<br>
+Janisha Patel<br>
+<span class=leadershipsubtitlecn>
+<b>George Washington University, DC</b><br>
+</span>
+</div>
+</div>
+
+</div>
 
 ### Former Collaborators
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Ogan Abaan<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Payal Banerjee<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Amanda Bell<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Surajit Bhatta-charya<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Lee Black<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Ben Busby<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Kristy Cloyd-Warwick<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Ryan Connor<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Paul Duncan<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Josep Gelpi<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jeremy Goecks<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jonathan Jacobs<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+	
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Xeandong Meng<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Xeandong Meng<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+David Michaels<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Hiroki Morizono<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Rahi Navelkar<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Asa Oudes<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jason Travis<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Paul Walsh<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jianchao Yao<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+John Penn<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+Megan Potter-Sbusch<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+Jonathan Pryke<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="text-left">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+Dan Taylor<br>
+</span>
+</div>
+</div>
