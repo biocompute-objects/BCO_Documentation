@@ -96,7 +96,240 @@ Raja Mazumder<br>
 
 </div>
 
+<div class="row">
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Keeney.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jonathon Keeney<br>
+<span class=leadershipsubtitlecn>
+<b>Project Lead</b><br>
+</span>
+
+<span>
+<small>
+<i>The George Washington University, DC</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="row">
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/King.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Charles Hadley King<br>
+<span class=leadershipsubtitlecn>
+<b>Technical Lead</b><br>
+</span>
+
+<span>
+<small>
+<i>The George Washington University, DC</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="row">
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/King.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Charles Hadley King<br>
+<span class=leadershipsubtitlecn>
+<b>Technical Lead</b><br>
+</span>
+
+<span>
+<small>
+<i>The George Washington University, DC</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="row">
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Wang.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Tianyi Wang<br>
+<span class=leadershipsubtitlecn>
+<b>Outreach Lead</b><br>
+</span>
+
+<span>
+<small>
+<i>The George Washington University, DC</i><br>
+</small>
+</span>
+
+<br>
+
 ### External Collaborator
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Dean.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Dennis Dean<br>
+<span>
+<small>
+<i>Seven Bridges Genomics, MA</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Goecks.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jeremy Goecks<br>
+<span>
+<small>
+<i>Georgia Institute of Technology, GA</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Goble.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Carole Goble<br>
+<span>
+<small>
+<i>University of Manchester, UK</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Alterovitz.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Gil Alterovitz<br>
+<span>
+<small>
+<i>US Despt of Veterans Affairs, DC</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Simonyan.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Vahan Simonyan<br>
+<span>
+<small>
+<i>CRISPR Therapeutics, DC</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Almeida.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jonas Almeida<br>
+<span>
+<small>
+<i>National Cancer Institute, MD</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Taylor.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Dan Taylor<br>
+<span>
+<small>
+<i>Internet2</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Golikov.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Anton Golikov<br>
+<span>
+<small>
+<i>Food and Drug Administration, MD</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Krampis.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Ntino Krampis<br>
+<span>
+<small>
+<i>The City University of New York, NYC</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Crusoe.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Michael Crusoe<br>
+<span>
+<small>
+<i>Common Workflow Language</i><br>
+</small>
+</span>
+
+<br>
+
+<div class="col-sm-4">
+	
+<div class="text-left">
+<img src="/images/Soiland-Reyes.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Stian Soiland-Reyes<br>
+<span>
+<small>
+<i>University of Manchester, UK</i><br>
+</small>
+</span>
+
+<br>
 
 ### Former GWU Members
 
