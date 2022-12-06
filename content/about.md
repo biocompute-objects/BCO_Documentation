@@ -71,3 +71,613 @@ More information about The current BioCompute standard can be found on the [Open
 The major milestones of the BioCompute Partnership and future goals are paving the way for a consensus-driven, widely adopted standard. The FDA's Genomics Working Group (GWG) originally articulated the challenges of communicating genomic analysis pipelines in a regulatory context in 2013. Since then, the project has accumulated tremendous momentum, a testament to the GWG's efforts in describing communication challenges. More recently, the second BioCompute publication has recently been published, the 4th Workshop is scheduled, and the next major goal is the formal launch of the BioCompute Public Private Partnership. The [Executive Committee](https://www.biocomputeobject.org/leadership.html) will formalize the future roadmap beyond these goals.
 
 </div>
+
+### GWU Members
+<div class="row">
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+
+<img src="/images/Mazumder.png" class="mx-auto d-block" width="80%" alt="Raja Mazumder">
+<br>
+Raja Mazumder<br>
+<span class=leadershipsubtitlecn>
+<b>Co-Founder</b><br>
+</span>
+<span>
+<small>
+<i>The George Washington University, DC</i><br>
+</small>
+</span>
+</div>
+<br>
+
+</div>
+
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Keeney.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jonathon Keeney<br>
+<span class=leadershipsubtitlecn>
+<b>Project Lead</b><br>
+</span>
+
+<span>
+<small>
+<i>The George Washington University, DC</i><br>
+</small>
+<br>
+</div>
+</div>
+
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/King.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+Charles Hadley King<br>
+<span class=leadershipsubtitlecn>
+<b>Technical Lead</b><br>
+</span>
+<i>The George Washington University, DC</i><br>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="text-center">
+<img src="/images/Wang.jpg" class="mx-auto d-block" width="65%" alt="">
+<br>
+Tianyi Wang<br>
+<span class=leadershipsubtitlecn>
+<b>Outreach Lead</b><br>
+</span>
+<i>The George Washington University, DC</i><br>
+</div>
+</div>
+
+### External Collaborator
+<div class="row">
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Dean.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Dennis Dean</b><br>
+<span>
+<small>
+<i>Seven Bridges Genomics, MA</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Goecks.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Jeremy Goecks</b><br>
+<span>
+<small>
+<i>Georgia Institute of Technology, GA</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Goble.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Carole Goble</b><br>
+<span>
+<small>
+<i>University of Manchester, UK</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Alterovitz.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Gil Alterovitz</b><br>
+<span>
+<small>
+<i>US Despt of Veterans Affairs, DC</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Simonyan.png" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Vahan Simonyan</b><br>
+<span>
+<small>
+<i>CRISPR Therapeutics, DC</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Almeida.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Jonas Almeida</b><br>
+<span>
+<small>
+<i>National Cancer Institute, MD</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Taylor.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Dan Taylor</b><br>
+<span>
+<small>
+<i>Internet2</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Golikov.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Anton Golikov</b><br>
+<span>
+<small>
+<i>Food and Drug Administration, MD</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Krampis.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Ntino Krampis</b><br>
+<span>
+<small>
+<i>The City University of New York, NYC</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Crusoe.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Michael Crusoe</b><br>
+<span>
+<small>
+<i>Common Workflow Language</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Soiland-Reyes.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Stian Soiland-Reyes</b><br>
+<span>
+<small>
+<i>University of Manchester, UK</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/Karagiannis.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Konstantinos Karagiannis</b><br>
+<span>
+<small>
+<i>Food and Drug Administration, MD</i><br>
+</small>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="text-center">
+<img src="/images/Thompson.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Elaine Thompson</b><br>
+<span>
+<i>Henry M Jackson Foundation for the Advancement of Military Medicine, MD</i><br>
+</span>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="text-center">
+<img src="/images/Soranzo.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Nicola Soranzo</b><br>
+<span>
+<i>Galaxy Platform, UK</i><br>
+<br>
+</span>
+</div>
+</div>
+
+<div>
+
+### Former GWU Members
+<div class="col-sm-3">
+	
+<div class="text-center">
+<img src="/images/Patel.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+<b>Janisha Patel</b><br>
+<span class=leadershipsubtitlecn>
+George Washington University, DC<br>
+<br>
+</span>
+</div>
+</div>
+
+
+### Former Collaborators
+
+<div class="row">
+<div class="col-sm-2">	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Ogan Abaan<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Payal Banerjee<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Amanda Bell<br>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Surajit Bhatta-charya<br>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Lee Black<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Ben Busby<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Kristy Cloyd-Warwick<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Ryan Connor<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Paul Duncan<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Josep Gelpi<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jeremy Goecks<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jonathan Jacobs<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+	
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Xeandong Meng<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Xeandong Meng<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+David Michaels<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Hiroki Morizono<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Rahi Navelkar<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Asa Oudes<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jason Travis<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Paul Walsh<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jianchao Yao<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+John Penn<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>Megan Potter-Sbusch<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Jonathan Pryke<br>
+</span>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="text-center">
+<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
+<br>
+Dan Taylor<br>
+</span>
+</div>
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/internet2.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/hjf.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/gwu.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/embleema.jpg" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/cuny.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/US_Department_of_Veterans_Affairs_vertical_logo.svg.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/NCI.jpg" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/FDA.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/Earlham_Institute.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/CWL.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
+
+<div class="col-sm-3">	
+<div class="text-center">
+<img src="/images/manchester.png" class="mx-auto d-block" width="60%" alt="">
+</span>
+</div>
+</div>
