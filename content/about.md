@@ -371,6 +371,8 @@ George Washington University, DC<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Ogan Abaan<br>
+<span class=leadershipsubtitlecn>
+Illumina<br>
 </span>
 </div>
 </div>
@@ -381,6 +383,8 @@ Ogan Abaan<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Payal Banerjee<br>
+<span class=leadershipsubtitlecn>
+-<br>
 </span>
 </div>
 </div>
@@ -391,6 +395,8 @@ Payal Banerjee<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Amanda Bell<br>
+<span class=leadershipsubtitlecn>
+Frederick National Laboratory for Cancer Research<br>
 </div>
 </div>
 
@@ -400,6 +406,8 @@ Amanda Bell<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Surajit Bhatta-charya<br>
+<span class=leadershipsubtitlecn>
+Children's National Hospital<br>
 </div>
 </div>
 
@@ -409,6 +417,8 @@ Surajit Bhatta-charya<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Lee Black<br>
+<span class=leadershipsubtitlecn>
+-<br>
 </span>
 </div>
 </div>
@@ -419,6 +429,8 @@ Lee Black<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Ben Busby<br>
+<span class=leadershipsubtitlecn>
+DNAnexus<br>
 </span>
 </div>
 </div>
@@ -429,6 +441,8 @@ Ben Busby<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Kristy Cloyd-Warwick<br>
+<span class=leadershipsubtitlecn>
+DNAnexus<br>
 </span>
 </div>
 </div>
@@ -439,6 +453,8 @@ Kristy Cloyd-Warwick<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Ryan Connor<br>
+<span class=leadershipsubtitlecn>
+-<br>
 </span>
 </div>
 </div>
@@ -449,6 +465,8 @@ Ryan Connor<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Paul Duncan<br>
+<span class=leadershipsubtitlecn>
+-<br>
 </span>
 </div>
 </div>
@@ -459,6 +477,8 @@ Paul Duncan<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Josep Gelpi<br>
+<span class=leadershipsubtitlecn>
+University of Barcelona<br>
 </span>
 </div>
 </div>
@@ -469,6 +489,8 @@ Josep Gelpi<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Jeremy Goecks<br>
+<span class=leadershipsubtitlecn>
+Oregon Health and Science University<br>
 </span>
 </div>
 </div>
@@ -479,6 +501,8 @@ Jeremy Goecks<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Jonathan Jacobs<br>
+<span class=leadershipsubtitlecn>
+-<br>
 </span>
 </div>
 </div>
@@ -488,25 +512,21 @@ Jonathan Jacobs<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Xeandong Meng<br>
+Xiandong Meng<br>
+<span class=leadershipsubtitlecn>
+University of Science and Technology<br>
 </span>
 </div>
 </div>
 
-<div class="col-sm-2">
-<div class="text-center">
-<img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
-<br>
-Xeandong Meng<br>
-</span>
-</div>
-</div>
 
 <div class="col-sm-2">
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 David Michaels<br>
+<span class=leadershipsubtitlecn>
+George Washington University<br>
 </span>
 </div>
 </div>
@@ -516,6 +536,8 @@ David Michaels<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Hiroki Morizono<br>
+<span class=leadershipsubtitlecn>
+Children's National Medical Center<br>
 </span>
 </div>
 </div>
@@ -525,6 +547,8 @@ Hiroki Morizono<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Rahi Navelkar<br>
+<span class=leadershipsubtitlecn>
+Harcard Medical School<br>
 </span>
 </div>
 </div>
@@ -534,6 +558,8 @@ Rahi Navelkar<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Asa Oudes<br>
+<span class=leadershipsubtitlecn>
+Benchling<br>
 </span>
 </div>
 </div>
@@ -543,6 +569,8 @@ Asa Oudes<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Jason Travis<br>
+<span class=leadershipsubtitlecn>
+TGen<br>
 </span>
 </div>
 </div>
@@ -552,6 +580,8 @@ Jason Travis<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Paul Walsh<br>
+<span class=leadershipsubtitlecn>
+Accenture<br>
 </span>
 </div>
 </div>
@@ -561,6 +591,8 @@ Paul Walsh<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Jianchao Yao<br>
+<span class=leadershipsubtitlecn>
+Merck<br>
 </span>
 </div>
 </div>
@@ -570,6 +602,8 @@ Jianchao Yao<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 John Penn<br>
+<span class=leadershipsubtitlecn>
+DNAnexus<br>
 </span>
 </div>
 </div>
@@ -577,7 +611,9 @@ John Penn<br>
 <div class="col-sm-2">
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
-<br>Megan Potter-Sbusch<br>
+<br>Megan PotterSbusch<br>
+<span class=leadershipsubtitlecn>
+-<br>
 </span>
 </div>
 </div>
@@ -587,15 +623,20 @@ John Penn<br>
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Jonathan Pryke<br>
+<span class=leadershipsubtitlecn>
+AstraZeneca<br>
 </span>
 </div>
 </div>
+
 
 <div class="col-sm-2">
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
 Dan Taylor<br>
+<span class=leadershipsubtitlecn>
+Internet2<br>
 </span>
 </div>
 </div>
@@ -604,7 +645,7 @@ Dan Taylor<br>
 
 <br>
 
-<div class="row">
+<!-- <div class="row">
 <div class="col-sm-3">	
 <div class="text-center">
 <img src="/images/internet2.png" class="mx-auto d-block" width="60%" alt="">
@@ -680,4 +721,4 @@ Dan Taylor<br>
 <img src="/images/manchester.png" class="mx-auto d-block" width="60%" alt="">
 </span>
 </div>
-</div>
+</div> -->
