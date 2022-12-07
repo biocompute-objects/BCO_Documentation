@@ -59,10 +59,10 @@ BCO_Specification is licensed under the [BSD 3-Clause "New" or "Revised" License
 
 >A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent.
 
-### Static Site local generator
+# Static Site local generator
 
-# Hugo Installation: run command <code>brew install hugo</code> (https://gohugo.io/installation/)
-# Clone/copy git repository to local 
-# Open file of interest with VCS
-# Under Terminal, run <code>hugo server</code>
-# Make modifications to the script and go to localhost:1313/ to reflect changes
+* Hugo Installation: run command <code>brew install hugo</code> (https://gohugo.io/installation/)
+* Clone/copy git repository to local 
+* Open file of interest with VCS
+* Under Terminal, run <code>hugo server</code>
+* Make modifications to the script and go to localhost:1313/ to reflect changes
