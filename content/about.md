@@ -643,8 +643,6 @@ Internet2<br>
 
 </div>
 
-<br>
-
 <!-- <div class="row">
 <div class="col-sm-3">	
 <div class="text-center">
