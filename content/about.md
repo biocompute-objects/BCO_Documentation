@@ -370,7 +370,7 @@ George Washington University, DC<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Ogan Abaan<br>
+<b>Ogan Abaan</b><br>
 <span class=leadershipsubtitlecn>
 Illumina<br>
 </span>
@@ -382,7 +382,7 @@ Illumina<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Payal Banerjee<br>
+<b>Payal Banerjee</b><br>
 <span class=leadershipsubtitlecn>
 -<br>
 </span>
@@ -394,7 +394,7 @@ Payal Banerjee<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Amanda Bell<br>
+<b>Amanda Bell</b><br>
 <span class=leadershipsubtitlecn>
 Frederick National Laboratory for Cancer Research<br>
 </div>
@@ -405,7 +405,7 @@ Frederick National Laboratory for Cancer Research<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Surajit Bhatta-charya<br>
+<b>Surajit Bhatta-charya</b><br>
 <span class=leadershipsubtitlecn>
 Children's National Hospital<br>
 </div>
@@ -416,7 +416,7 @@ Children's National Hospital<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Lee Black<br>
+<b>Lee Black</b><br>
 <span class=leadershipsubtitlecn>
 -<br>
 </span>
@@ -428,7 +428,7 @@ Lee Black<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Ben Busby<br>
+<b>Ben Busby</b><br>
 <span class=leadershipsubtitlecn>
 DNAnexus<br>
 </span>
@@ -440,7 +440,7 @@ DNAnexus<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Kristy Cloyd-Warwick<br>
+<b>Kristy Cloyd-Warwick</b><br>
 <span class=leadershipsubtitlecn>
 DNAnexus<br>
 </span>
@@ -452,7 +452,7 @@ DNAnexus<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Ryan Connor<br>
+<b>Ryan Connor</b><br>
 <span class=leadershipsubtitlecn>
 -<br>
 </span>
@@ -464,7 +464,7 @@ Ryan Connor<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Paul Duncan<br>
+<b>Paul Duncan</b><br>
 <span class=leadershipsubtitlecn>
 -<br>
 </span>
@@ -476,7 +476,7 @@ Paul Duncan<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Josep Gelpi<br>
+<b>Josep Gelpi</b><br>
 <span class=leadershipsubtitlecn>
 University of Barcelona<br>
 </span>
@@ -488,7 +488,7 @@ University of Barcelona<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Jeremy Goecks<br>
+<b>Jeremy Goecks</b><br>
 <span class=leadershipsubtitlecn>
 Oregon Health and Science University<br>
 </span>
@@ -500,7 +500,7 @@ Oregon Health and Science University<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Jonathan Jacobs<br>
+<b>Jonathan Jacobs</b><br>
 <span class=leadershipsubtitlecn>
 -<br>
 </span>
@@ -512,7 +512,7 @@ Jonathan Jacobs<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Xiandong Meng<br>
+<b>Xiandong Meng</b><br>
 <span class=leadershipsubtitlecn>
 University of Science and Technology<br>
 </span>
@@ -524,7 +524,7 @@ University of Science and Technology<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-David Michaels<br>
+<b>David Michaels</b><br>
 <span class=leadershipsubtitlecn>
 George Washington University<br>
 </span>
@@ -535,7 +535,7 @@ George Washington University<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Hiroki Morizono<br>
+<b>Hiroki Morizono</b><br>
 <span class=leadershipsubtitlecn>
 Children's National Medical Center<br>
 </span>
@@ -546,7 +546,7 @@ Children's National Medical Center<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Rahi Navelkar<br>
+<b>Rahi Navelkar</b><br>
 <span class=leadershipsubtitlecn>
 Harcard Medical School<br>
 </span>
@@ -557,7 +557,7 @@ Harcard Medical School<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Asa Oudes<br>
+<b>Asa Oudes</b><br>
 <span class=leadershipsubtitlecn>
 Benchling<br>
 </span>
@@ -568,7 +568,7 @@ Benchling<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Jason Travis<br>
+<b>Jason Travis</b><br>
 <span class=leadershipsubtitlecn>
 TGen<br>
 </span>
@@ -579,7 +579,7 @@ TGen<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Paul Walsh<br>
+<b>Paul Walsh</b><br>
 <span class=leadershipsubtitlecn>
 Accenture<br>
 </span>
@@ -590,7 +590,7 @@ Accenture<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Jianchao Yao<br>
+<b>Jianchao Yao</b><br>
 <span class=leadershipsubtitlecn>
 Merck<br>
 </span>
@@ -601,7 +601,7 @@ Merck<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-John Penn<br>
+<b>John Penn</b><br>
 <span class=leadershipsubtitlecn>
 DNAnexus<br>
 </span>
@@ -611,7 +611,7 @@ DNAnexus<br>
 <div class="col-sm-2">
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
-<br>Megan PotterSbusch<br>
+<br>Megan PotterSbusch</b><br>
 <span class=leadershipsubtitlecn>
 -<br>
 </span>
@@ -622,7 +622,7 @@ DNAnexus<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Jonathan Pryke<br>
+<b>Jonathan Pryke</b><br>
 <span class=leadershipsubtitlecn>
 AstraZeneca<br>
 </span>
@@ -634,7 +634,7 @@ AstraZeneca<br>
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
 <br>
-Dan Taylor<br>
+<b>Dan Taylor</b><br>
 <span class=leadershipsubtitlecn>
 Internet2<br>
 </span>
