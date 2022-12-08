@@ -384,7 +384,7 @@ Illumina<br>
 <br>
 <b>Payal Banerjee</b><br>
 <span class=leadershipsubtitlecn>
--<br>
+National Human Genome Research Institute<br>
 </span>
 </div>
 </div>
@@ -454,7 +454,7 @@ DNAnexus<br>
 <br>
 <b>Ryan Connor</b><br>
 <span class=leadershipsubtitlecn>
--<br>
+National Center for Biotechnology Information <br>
 </span>
 </div>
 </div>
@@ -466,7 +466,7 @@ DNAnexus<br>
 <br>
 <b>Paul Duncan</b><br>
 <span class=leadershipsubtitlecn>
--<br>
+The Janssen Pharmaceutical Companies of Johnson & Johnson<br>
 </span>
 </div>
 </div>
@@ -502,7 +502,7 @@ Oregon Health and Science University<br>
 <br>
 <b>Jonathan Jacobs</b><br>
 <span class=leadershipsubtitlecn>
--<br>
+ATCC<br>
 </span>
 </div>
 </div>
@@ -611,7 +611,7 @@ DNAnexus<br>
 <div class="col-sm-2">
 <div class="text-center">
 <img src="/images/Anonymous.jpg" class="mx-auto d-block" width="80%" alt="">
-<br>Megan PotterSbusch</b><br>
+<br><b>Megan PotterSbusch</b><br>
 <span class=leadershipsubtitlecn>
 -<br>
 </span>
