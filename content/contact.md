@@ -13,7 +13,7 @@ menu: "main"
 
 For more information, training, resources, or to work with the BioCompute project, please fill out the form below.
 
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" method="POST" action="/success" data-netlify="true">
 
 <p>
 <label>Your Name:</label>
