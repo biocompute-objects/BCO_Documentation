@@ -1,5 +1,5 @@
 ---
-title: "Quick Start"
+title: "Galaxy Quick Start"
 menu: "main"
 ---
 
