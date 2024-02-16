@@ -9,7 +9,7 @@ menu: "secondary"
 
 <br>
 
-### Poster Abstract Submition for 2024 BioCompute Conference
+### Poster Abstract Submission for 2024 BioCompute Conference
 
 To submit an abstract for consideration, please fill out the form below. Abstracts are due by 11:59 pm April 15th 2024 (EDT). Posters should highlight or describe a workflow and the way it was used.
 
