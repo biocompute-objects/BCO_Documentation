@@ -9,9 +9,9 @@ menu: "secondary"
 
 <br>
 
-### Poster Abstract Submition for 2024 BioCompute Confrence
+### Poster Abstract Submition for 2024 BioCompute Conference
 
-To submit an abstract for consideration, please fill out the form below. Abstracts are due by 11:59 pm April 15th 2024 (EDT). Posters shoudl highlight or describe a workflow and the way it was used.
+To submit an abstract for consideration, please fill out the form below. Abstracts are due by 11:59 pm April 15th 2024 (EDT). Posters should highlight or describe a workflow and the way it was used.
 
 Out of all the submissions five posters will be selected to give a five minute lighting talk at the conference. Notification will be given at the latest by April 29th 2024. These posters will also have their workflows converted into a BCO by the BCO team and published in the BCO Portal.
 
