@@ -54,7 +54,7 @@ weight = 5
 
 [[menu.primary]]
 identifier = "events"
-name = "News & Events"
+name = "Workshops"
 url = "/events"
 weight = 6
 

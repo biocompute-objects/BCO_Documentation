@@ -14,7 +14,7 @@ Welcome! This is the BioCompute Events page. Workshops are listed on the schedul
 <br>
 
 ### Table of contents
-
+<a href="https://wiki.biocomputeobject.org/index.php?title=BioCompute_Conference_and_Workshop">2024 BioCompute Conference and Workshop</a> <br>
 <a href="#1-12-22">BioCompute Database and Transfer Mechanism Development Workshop</a> <br>
 <a href="#3-27-21">BioCompute Objects on High-performance Integrated Virtual Environment (HIVE)</a> <br>
 <a href="#5-12-21">Workflow Preservation and Reproducibility with BCO-RO</a> <br>
