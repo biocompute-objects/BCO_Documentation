@@ -18,7 +18,7 @@ menu: "main"
 
 ### The BioCompute Standard
 
-Because of the many different ways to organize data, a major goal of the BioCompute project is to build and maintain a formal standard through recognized, accredited standards setting organizations like the Institute for Electrical and Electronics Engineers (IEEE) and the International Standards Organization (ISO). A formal, consensus-based standard builds predictability and even more stability into the way in which bioinformatic methods are communicated.
+The main goal of the BioCompute project is to build and maintain a formal standard through recognized, accredited standards setting organizations like the Institute for Electrical and Electronics Engineers (IEEE) and the International Standards Organization (ISO). A formal, consensus-based standard builds predictability and even more stability into the way in which bioinformatic methods are communicated.
 
 The standard, officially known as 2791-2020, has two parts: the standards document and the schema, which is maintained in an open source repository:
 
