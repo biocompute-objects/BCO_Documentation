@@ -1,6 +1,6 @@
 BioCompute
 ==========
-BioCompute Portal: https://biocomputeobject.org
+BioCompute Portal: http://biocomputeobject.org
 
 GitHub Organization for BioCompute Object Repositories:
 https://github.com/biocompute-objects/
