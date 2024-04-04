@@ -60,7 +60,7 @@ The `"object_id"` consists of four different parts:
 1) Protocol: It is recommended that this be `https` or at least `http` [see Scheme in RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986#section-3.1) for more detail on protocols.
 2) Hostname: [see Host in RFC_3986](https://datatracker.ietf.org/doc/html/rfc3986#section-3.2.2)
 3) BCO Accession: composed of 2 parts separated by an underscore( `_`): 
-     - the BCO Prefix: A 3-5 alphanumeric charaters. Preferably one registed via the [BioCompute Registry](/best_practices)
+     - the BCO Prefix: A 3-5 alphanumeric characters. Preferably one registered via the [BioCompute Registry](/best_practices)
      - BCO identifier: a numeric identifier appended to the prefix
 4) BCO version: This is the version of the BCO, as recorded on the [Provenance Domain](/provenance-domain)
 
