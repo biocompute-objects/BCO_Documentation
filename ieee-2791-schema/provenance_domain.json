@@ -46,7 +46,7 @@
                     },
                     "reviewer": {
                         "$ref": "2791object.json#/definitions/contributor",
-                        "description": "Contributer that assigns IEEE-2791 review status."
+                        "description": "Contributor that assigns IEEE-2791 review status."
                     },
                     "reviewer_comment": {
                         "type": "string",

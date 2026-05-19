@@ -37,7 +37,7 @@ After several planning meetings to articulate the problem statement and project 
 Since then, the focus has shifted to building an ecosystem of tools, packages, and plugins for working with the standard, including support in the aforementioned bioinformatics platforms. This includes our own open source tool, the [BioCompute Portal](https://biocomputeobject.org/), for creating, editing, sharing, publishing, and viewing BioCompute Objects (BCOs; a BCO is an instance of a workflow written in conformance with the standard), including support for working with BCOs programmitically via API. One of the strongest original use cases was for medical devices, but the project has largely been used in high-throughput sequencing-based workflows, and for knowledgebase documentation (for example, the NIH Common Fund [GlyGen](https://www.glygen.org/) knowledgebase of glycans and glycoconjugates, and the FDA sponsored [Argos](https://data.argosdb.org/) repository of regulatory-grade infectious disease genomes).
 
 ### Citation
-This standard was originaly prepared by The BioCompute Object working group during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
+This standard was originally prepared by The BioCompute Object working group during preparation for the [2017 HTS Computational Standards for Regulatory Sciences Workshop](https://hive.biochemistry.gwu.edu/htscsrs/workshop_2017).
 
 To reference the BCO standards, please use the following
 citations inclusive of the DOI:

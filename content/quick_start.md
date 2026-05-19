@@ -28,7 +28,7 @@ Proper annotation of the workflow is required BEFORE running it.
 Notice the following in the example below:
 * The Name of the workflow: Becomes the BCO Name
 * The workflow version: Translated to a sequental digit and included as the BCO version
-* The workflow Annnotation block: Becomes the FIRST entry in the BCO Usability Domain
+* The workflow Annotation block: Becomes the FIRST entry in the BCO Usability Domain
     * The annotation from the history (if included) becomes the second entry in the BCO Usability Domain
 * 
 

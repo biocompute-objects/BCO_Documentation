@@ -434,7 +434,7 @@
             {
                 "step_number": 7,
                 "name": "IndelRealigner",
-                "description": "Perfoms re-alignment around insertions and deletions",
+                "description": "Performs re-alignment around insertions and deletions",
                 "version": "3.4.0",
                 "prerequisite": [
                     {
