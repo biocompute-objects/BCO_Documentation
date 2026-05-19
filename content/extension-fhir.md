@@ -4,7 +4,7 @@ _Back to [BCO domains](bco-domains)_
 
 ### 2.3.1 Extension to External References: SMART on FHIR Genomics
 
-The external references **example** extension to FHIR resource demonstrates how specific data elements can be extracted from EHR systems or other secure FHIR endpoints via technologies such as SMART on FHIR Genomics (https://www.ncbi.nlm.nih.gov/pubmed/26198304) without compromising patient and providers’ information. This is because the portions being transferred contain no identifiable information about the patient. Instead there is a reference to the actual resource instance (via FHIR URL) through which all data is accessed.
+The external references **example** extension to FHIR resource demonstrates how specific data elements can be extracted from HER systems or other secure FHIR endpoints via technologies such as SMART on FHIR Genomics (https://www.ncbi.nlm.nih.gov/pubmed/26198304) without compromising patient and providers’ information. This is because the portions being transferred contain no identifiable information about the patient. Instead there is a reference to the actual resource instance (via FHIR URL) through which all data is accessed.
 
 The `fhir_extension` is defined as an array of endpoints from which to fetch resources. 
 

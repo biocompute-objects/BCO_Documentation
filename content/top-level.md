@@ -39,7 +39,7 @@ Condensed example:
 
 ### 2.0.1 BCO version "spec_version"
 
-The version of the BCO specification used to define the BCO. It is recomended that this value be a permalink as defined in the [w3id.org/biocompute](https://github.com/perma-id/w3id.org/tree/master/biocompute) repository. 
+The version of the BCO specification used to define the BCO. It is recommended that this value be a permalink as defined in the [w3id.org/biocompute](https://github.com/perma-id/w3id.org/tree/master/biocompute) repository. 
 
 ```json
 "spec_version": "https://w3id.org/ieee/ieee-2791-schema/2791object.json" 
@@ -49,7 +49,7 @@ The version of the BCO specification used to define the BCO. It is recomended th
 
 A unique identifier that should be applied to each BCO instance. These can be assigned by a BCO database engine or manually generated. IDs should never be reused. It is recommended that the BCO identifier is based on a [UUID](https://tools.ietf.org/html/rfc4122)s (sometimes called GUIDs) to ensure uniqueness, either as a location-independent URN (e.g. `urn:uuid:2bf8397b-9aa8-47f2-80a7-235653e8e824`) or as part of an identifier permalink, (e.g. `http://repo.example.com/bco/2bf8397b-9aa8-47f2-80a7-235653e8e824`). While the UUID is the preferred method, IDs expressed as a URN or URL will satisfy the standard.
 
-The following is the recommended format for a BCO `object_id`, and what has been implementated by the [BCODB](https://github.com/biocompute-objects/bco_api/releases):
+The following is the recommended format for a BCO `object_id`, and what has been implemented by the [BCODB](https://github.com/biocompute-objects/bco_api/releases):
 
 The `"object_id"` consists of four different parts: 
 ````

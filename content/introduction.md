@@ -70,7 +70,7 @@ For more information, see the project description on the [FDA Extramural Researc
 * Bioinformatics tool and platform developers who wish to operate in a regulatory environment, including cloud service (PaaS, IaaS, SaaS, FaaS) providers
 * Journals / Scientific Publishing / peer reviewing process
 * US National Institutes of Health (NIH) (particularly initiatives such as NCI/ITCR)
-* Public cloud companies operating in the Life Sciences sector including electronic health record (EHR) systems
+* Public cloud companies operating in the Life Sciences sector including electronic health record (HER) systems
 
 ## 1.5 BCO User stories
 

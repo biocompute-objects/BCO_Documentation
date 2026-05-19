@@ -26,7 +26,7 @@ This section defines the `usability_domain` part of the [BCO](/bco-domains) stru
 
 The Usability Domain of an Object is a plain language description of what was done in the workflow.
 This should align with the actual steps described elsewhere in the Object. The Usability Domain
-conveys the purpose of the Object. It is an array of free text values that should be consistant with
+conveys the purpose of the Object. It is an array of free text values that should be consistent with
 terminology used in the [`name`](provenance_domain.md#2.1.1-name-name), external references
 ([`xref`](/description-domain.md#242-external-references-xref)), and
 [`keywords`](/description-domain.md#241-keywords-keywords) sections.
@@ -39,7 +39,7 @@ object. A `usability_domain` should read like an abstract and conceptually can b
 4) How the results can be used/interpreted.
 
 The usability domain along with keywords can help determine when and how the BCO can
-be used. It is recomended that a novel use of a specific BCO would result in the creation of a new
+be used. It is recommended that a novel use of a specific BCO would result in the creation of a new
 entry with a new usability domain. 
 
 ```json

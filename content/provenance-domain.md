@@ -45,7 +45,7 @@ Condensed example:
 
 ### 2.1.1 Name "name"
 
-Name for the BCO. This public field should take free text value using common biological research terminology supporting the terminology used in the [`usability_domain`](usability_domain.md), external references ([`xref`](/description-domain.md#242-external-references-xref)), and [`keywords`](/description-domain.md#241-keywords-keywords) sections. It is reccomended that BCO names be short and easily recognizable. They should also not use special characters (spell things out).
+Name for the BCO. This public field should take free text value using common biological research terminology supporting the terminology used in the [`usability_domain`](usability_domain.md), external references ([`xref`](/description-domain.md#242-external-references-xref)), and [`keywords`](/description-domain.md#241-keywords-keywords) sections. It is recommended that BCO names be short and easily recognizable. They should also not use special characters (spell things out).
 
 ```json
 "name": "HCV1a ledipasvir resistance SNP detection"

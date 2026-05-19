@@ -23,7 +23,7 @@ The base url for the SCM repository.
 
 #### 2.3.2.2 SCM Type "scm_type"
 
-A classifier for the type of SCM database. This feild is a list of predefined values. Third-party scm types can be used, and if so the `other` value MUST be used. The options for this field include `git` (Git, including GitHub/GitLab), `svn` (Subversion), `hg` (mercurial) and `other`.
+A classifier for the type of SCM database. This field is a list of predefined values. Third-party scm types can be used, and if so the `other` value MUST be used. The options for this field include `git` (Git, including GitHub/GitLab), `svn` (Subversion), `hg` (mercurial) and `other`.
 
 #### 2.3.2.3 SCM Commit "scm_commit"
 

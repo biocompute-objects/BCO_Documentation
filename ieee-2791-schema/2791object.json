@@ -21,7 +21,7 @@
         },
         "uri": {
             "type": "object",
-            "description": "Any of the four Resource Identifers defined at https://tools.ietf.org/html/draft-handrews-json-schema-validation-01#section-7.3.5",
+            "description": "Any of the four Resource Identifiers defined at https://tools.ietf.org/html/draft-handrews-json-schema-validation-01#section-7.3.5",
             "additionalProperties": false,
             "required": [
                 "uri"

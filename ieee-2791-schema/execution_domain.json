@@ -27,7 +27,7 @@
         },
         "script_driver": {
             "type": "string",
-            "description": "Indication of the kind of executable that can be launched in order to perform a sequence of commands described in the script in order to run the pipelin",
+            "description": "Indication of the kind of executable that can be launched in order to perform a sequence of commands described in the script in order to run the pipeline",
             "examples": [
                 "hive",
                 "cwl-runner",

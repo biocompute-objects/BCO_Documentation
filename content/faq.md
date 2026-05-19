@@ -88,14 +88,14 @@ Jump To:
 
 1) #### What is the difference between `software_prerequisites` in `execution_domain` and `prerequisites` in the `description_domain`? Is the former global, while the latter only applies to one specific pipeline step?
 
-	Correct, Execution Domain is for anything related to the environment in which the pipeline was executed, and the Description Domain is specific to the softwares in those steps. So if I've written a shell script to run the pipeline, and in one step it includes myScript.py to comb through results and pick out elements of interest, myScript.py might be an Execution Domain prerequisite, and any packages or dependencies called from within the script are Description Domain level prerequisites. Alternatively, if I'm using the HIVE platform, any libraries needed to run HIVE are Execution Domain level.
+	Correct, Execution Domain is for anything related to the environment in which the pipeline was executed, and the Description Domain is specific to the software in those steps. So if I've written a shell script to run the pipeline, and in one step it includes myScript.py to comb through results and pick out elements of interest, myScript.py might be an Execution Domain prerequisite, and any packages or dependencies called from within the script are Description Domain level prerequisites. Alternatively, if I'm using the HIVE platform, any libraries needed to run HIVE are Execution Domain level.
 
 
 ### Knowledgebases
 
 1) #### Can BCOs be used for curating databases?
 
-Yes. BCOs have been used in this capacity, such as in the [FDA's ARGOS database of infectious diseases](https://data.argosdb.org/) and the [GlyGen databse of glycosylation sites](https://data.glygen.org/). The following recommendations are compiled from these use cases. Although these recommendations are built from practical experience, they may not address the needs of every database. Users are free to make modifications at their own discretion.
+Yes. BCOs have been used in this capacity, such as in the [FDA's ARGOS database of infectious diseases](https://data.argosdb.org/) and the [GlyGen database of glycosylation sites](https://data.glygen.org/). The following recommendations are compiled from these use cases. Although these recommendations are built from practical experience, they may not address the needs of every database. Users are free to make modifications at their own discretion.
 
 Using BioCompute's pre-defined fields and standards, knowledgebases can generate a BioCompute Object (BCO) to document the metadata, quality-control, and integration pipelines developed for different workflows. BCOs can be used to document each release. The structured data in a BCO makes it very easy to identify changes between releases (including changes to the curation/data processing pipeline, attribution to curators, or datasets processed), or revert to previous releases.
 
